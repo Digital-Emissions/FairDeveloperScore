@@ -9,15 +9,7 @@ This project provides tools to acquire and analyze GitHub commit data to measure
 ## Features
 
 - **GitHub Commit Data Acquisition**: Fetches commit data from any public GitHub repository
-- **Deployment Frequency Analysis**: Calculates average commits per day over specified time periods
-- **Detailed Commit Analytics**: Extracts comprehensive commit information including:
-  - Commit SHA
-  - Author information
-  - Timestamp
-  - Code changes (additions, deletions, total)
-  - Commit messages
-- **CSV Export**: Saves detailed commit data to CSV files for further analysis
-- **Rate Limit Handling**: Supports both authenticated and unauthenticated GitHub API access
+- **Other Features Are Currently Being Developed :)**
 
 ## Installation
 
