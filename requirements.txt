@@ -1,4 +1,0 @@
-streamlit
-PyGithub
-pandas
-matplotlib
