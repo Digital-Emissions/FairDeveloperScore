@@ -1,4 +1,4 @@
-from torque_clustering import torque_clustering
+from doc.torque_clustering import torque_clustering
 
 import pandas as pd
 
