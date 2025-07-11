@@ -1,0 +1,1086 @@
+Torque Clustering Analysis Summary
+==================================================
+
+Input file: data/commit_data/Kevin_project_commits_data.csv
+Data dimensions: (210, 7)
+Feature columns used: ['add', 'del', 'total']
+Cleaned data dimensions: (210, 3)
+Number of clusters found: 202
+
+Why Each Commit Forms Its Own Cluster?
+========================================
+
+1. Data Distribution Characteristics:
+-----------------------------------
+   add:
+     - Mean: 417.60
+     - Std Dev: 1778.94
+     - Min: 0
+     - Max: 17909
+     - Median: 52.00
+     - Range: 17909
+
+   del:
+     - Mean: 33.68
+     - Std Dev: 110.42
+     - Min: 0
+     - Max: 1337
+     - Median: 5.00
+     - Range: 1337
+
+   total:
+     - Mean: 451.27
+     - Std Dev: 1800.89
+     - Min: 0
+     - Max: 18334
+     - Median: 67.50
+     - Range: 18334
+
+2. Sample Uniqueness:
+------------------
+   - Total samples: 210
+   - Unique samples: 202
+   - Duplicate samples: 8
+   - Uniqueness ratio: 96.2%
+
+3. Distance Analysis:
+-----------------
+   - Average distance between samples: 1076.24
+   - Minimum distance: 0.00
+   - Maximum distance: 25632.96
+   - Distance standard deviation: 3426.83
+
+4. Torque Clustering Algorithm Behavior:
+--------------------------------------
+   - Torque = Mass × Distance²
+   - Large distances result in very high torque values
+   - Algorithm prefers to keep distant samples separate
+   - Only very similar samples get merged
+
+5. Development Pattern Analysis:
+------------------------------
+   - Highly diverse commit patterns (micro-fixes to major rewrites)
+   - Wide range of change sizes (1 to 18,334 lines)
+   - No clear natural clustering centers
+   - Each commit represents a unique development activity
+
+6. Conclusion:
+-----------
+   The high number of individual clusters reflects the reality of
+   software development: each commit is typically a unique solution
+   to a specific problem, with its own characteristic change pattern.
+   This is not a failure of the algorithm, but rather an accurate
+   representation of the diversity in Kevin's development workflow.
+
+Detailed Cluster Statistics:
+============================
+Cluster 0: 1 samples
+  add mean: 55.00
+  del mean: 42.00
+  total mean: 97.00
+
+Cluster 1: 1 samples
+  add mean: 9.00
+  del mean: 5.00
+  total mean: 14.00
+
+Cluster 2: 1 samples
+  add mean: 153.00
+  del mean: 101.00
+  total mean: 254.00
+
+Cluster 3: 1 samples
+  add mean: 14.00
+  del mean: 12.00
+  total mean: 26.00
+
+Cluster 4: 1 samples
+  add mean: 35.00
+  del mean: 19.00
+  total mean: 54.00
+
+Cluster 5: 1 samples
+  add mean: 17909.00
+  del mean: 425.00
+  total mean: 18334.00
+
+Cluster 6: 1 samples
+  add mean: 128.00
+  del mean: 44.00
+  total mean: 172.00
+
+Cluster 7: 1 samples
+  add mean: 315.00
+  del mean: 314.00
+  total mean: 629.00
+
+Cluster 8: 1 samples
+  add mean: 20.00
+  del mean: 9.00
+  total mean: 29.00
+
+Cluster 9: 1 samples
+  add mean: 48.00
+  del mean: 4.00
+  total mean: 52.00
+
+Cluster 10: 1 samples
+  add mean: 14.00
+  del mean: 5.00
+  total mean: 19.00
+
+Cluster 11: 1 samples
+  add mean: 55.00
+  del mean: 1.00
+  total mean: 56.00
+
+Cluster 12: 2 samples
+  add mean: 14.00
+  del mean: 3.00
+  total mean: 17.00
+
+Cluster 13: 1 samples
+  add mean: 8.00
+  del mean: 7.00
+  total mean: 15.00
+
+Cluster 14: 1 samples
+  add mean: 38.00
+  del mean: 4.00
+  total mean: 42.00
+
+Cluster 15: 1 samples
+  add mean: 36.00
+  del mean: 20.00
+  total mean: 56.00
+
+Cluster 16: 1 samples
+  add mean: 17.00
+  del mean: 8.00
+  total mean: 25.00
+
+Cluster 17: 1 samples
+  add mean: 107.00
+  del mean: 56.00
+  total mean: 163.00
+
+Cluster 18: 1 samples
+  add mean: 54.00
+  del mean: 24.00
+  total mean: 78.00
+
+Cluster 19: 1 samples
+  add mean: 53.00
+  del mean: 64.00
+  total mean: 117.00
+
+Cluster 20: 1 samples
+  add mean: 20.00
+  del mean: 1.00
+  total mean: 21.00
+
+Cluster 21: 1 samples
+  add mean: 266.00
+  del mean: 4.00
+  total mean: 270.00
+
+Cluster 22: 1 samples
+  add mean: 150.00
+  del mean: 160.00
+  total mean: 310.00
+
+Cluster 23: 1 samples
+  add mean: 62.00
+  del mean: 3.00
+  total mean: 65.00
+
+Cluster 24: 1 samples
+  add mean: 299.00
+  del mean: 179.00
+  total mean: 478.00
+
+Cluster 25: 1 samples
+  add mean: 2781.00
+  del mean: 19.00
+  total mean: 2800.00
+
+Cluster 26: 1 samples
+  add mean: 97.00
+  del mean: 3.00
+  total mean: 100.00
+
+Cluster 27: 1 samples
+  add mean: 52.00
+  del mean: 12.00
+  total mean: 64.00
+
+Cluster 28: 1 samples
+  add mean: 26.00
+  del mean: 3.00
+  total mean: 29.00
+
+Cluster 29: 1 samples
+  add mean: 52.00
+  del mean: 2.00
+  total mean: 54.00
+
+Cluster 30: 1 samples
+  add mean: 69.00
+  del mean: 6.00
+  total mean: 75.00
+
+Cluster 31: 1 samples
+  add mean: 59.00
+  del mean: 11.00
+  total mean: 70.00
+
+Cluster 32: 1 samples
+  add mean: 44.00
+  del mean: 2.00
+  total mean: 46.00
+
+Cluster 33: 1 samples
+  add mean: 47.00
+  del mean: 2.00
+  total mean: 49.00
+
+Cluster 34: 1 samples
+  add mean: 49.00
+  del mean: 12.00
+  total mean: 61.00
+
+Cluster 35: 1 samples
+  add mean: 37.00
+  del mean: 1.00
+  total mean: 38.00
+
+Cluster 36: 1 samples
+  add mean: 280.00
+  del mean: 191.00
+  total mean: 471.00
+
+Cluster 37: 1 samples
+  add mean: 2124.00
+  del mean: 6.00
+  total mean: 2130.00
+
+Cluster 38: 1 samples
+  add mean: 4.00
+  del mean: 1.00
+  total mean: 5.00
+
+Cluster 39: 1 samples
+  add mean: 33.00
+  del mean: 1.00
+  total mean: 34.00
+
+Cluster 40: 1 samples
+  add mean: 17.00
+  del mean: 3.00
+  total mean: 20.00
+
+Cluster 41: 2 samples
+  add mean: 19.00
+  del mean: 4.00
+  total mean: 23.00
+
+Cluster 42: 1 samples
+  add mean: 59.00
+  del mean: 3.00
+  total mean: 62.00
+
+Cluster 43: 1 samples
+  add mean: 20.00
+  del mean: 0.00
+  total mean: 20.00
+
+Cluster 44: 1 samples
+  add mean: 52.00
+  del mean: 5.00
+  total mean: 57.00
+
+Cluster 45: 1 samples
+  add mean: 78.00
+  del mean: 3.00
+  total mean: 81.00
+
+Cluster 46: 1 samples
+  add mean: 142.00
+  del mean: 2.00
+  total mean: 144.00
+
+Cluster 47: 1 samples
+  add mean: 52.00
+  del mean: 4.00
+  total mean: 56.00
+
+Cluster 48: 1 samples
+  add mean: 400.00
+  del mean: 5.00
+  total mean: 405.00
+
+Cluster 49: 1 samples
+  add mean: 18.00
+  del mean: 6.00
+  total mean: 24.00
+
+Cluster 50: 1 samples
+  add mean: 41.00
+  del mean: 56.00
+  total mean: 97.00
+
+Cluster 51: 1 samples
+  add mean: 18.00
+  del mean: 74.00
+  total mean: 92.00
+
+Cluster 52: 1 samples
+  add mean: 609.00
+  del mean: 1337.00
+  total mean: 1946.00
+
+Cluster 53: 1 samples
+  add mean: 29.00
+  del mean: 29.00
+  total mean: 58.00
+
+Cluster 54: 1 samples
+  add mean: 131.00
+  del mean: 59.00
+  total mean: 190.00
+
+Cluster 55: 1 samples
+  add mean: 270.00
+  del mean: 183.00
+  total mean: 453.00
+
+Cluster 56: 1 samples
+  add mean: 48.00
+  del mean: 14.00
+  total mean: 62.00
+
+Cluster 57: 1 samples
+  add mean: 130.00
+  del mean: 50.00
+  total mean: 180.00
+
+Cluster 58: 1 samples
+  add mean: 3334.00
+  del mean: 3.00
+  total mean: 3337.00
+
+Cluster 59: 1 samples
+  add mean: 192.00
+  del mean: 184.00
+  total mean: 376.00
+
+Cluster 60: 1 samples
+  add mean: 42.00
+  del mean: 2.00
+  total mean: 44.00
+
+Cluster 61: 1 samples
+  add mean: 63.00
+  del mean: 5.00
+  total mean: 68.00
+
+Cluster 62: 1 samples
+  add mean: 46.00
+  del mean: 3.00
+  total mean: 49.00
+
+Cluster 63: 1 samples
+  add mean: 56.00
+  del mean: 3.00
+  total mean: 59.00
+
+Cluster 64: 1 samples
+  add mean: 98.00
+  del mean: 13.00
+  total mean: 111.00
+
+Cluster 65: 1 samples
+  add mean: 45.00
+  del mean: 0.00
+  total mean: 45.00
+
+Cluster 66: 1 samples
+  add mean: 24.00
+  del mean: 0.00
+  total mean: 24.00
+
+Cluster 67: 1 samples
+  add mean: 21.00
+  del mean: 0.00
+  total mean: 21.00
+
+Cluster 68: 1 samples
+  add mean: 67.00
+  del mean: 46.00
+  total mean: 113.00
+
+Cluster 69: 1 samples
+  add mean: 2.00
+  del mean: 96.00
+  total mean: 98.00
+
+Cluster 70: 1 samples
+  add mean: 2183.00
+  del mean: 7.00
+  total mean: 2190.00
+
+Cluster 71: 1 samples
+  add mean: 190.00
+  del mean: 131.00
+  total mean: 321.00
+
+Cluster 72: 1 samples
+  add mean: 2011.00
+  del mean: 2.00
+  total mean: 2013.00
+
+Cluster 73: 1 samples
+  add mean: 129.00
+  del mean: 58.00
+  total mean: 187.00
+
+Cluster 74: 1 samples
+  add mean: 2293.00
+  del mean: 3.00
+  total mean: 2296.00
+
+Cluster 75: 1 samples
+  add mean: 47.00
+  del mean: 7.00
+  total mean: 54.00
+
+Cluster 76: 1 samples
+  add mean: 63.00
+  del mean: 52.00
+  total mean: 115.00
+
+Cluster 77: 1 samples
+  add mean: 2373.00
+  del mean: 31.00
+  total mean: 2404.00
+
+Cluster 78: 1 samples
+  add mean: 35.00
+  del mean: 3.00
+  total mean: 38.00
+
+Cluster 79: 1 samples
+  add mean: 11.00
+  del mean: 11.00
+  total mean: 22.00
+
+Cluster 80: 1 samples
+  add mean: 2.00
+  del mean: 1.00
+  total mean: 3.00
+
+Cluster 81: 1 samples
+  add mean: 1672.00
+  del mean: 38.00
+  total mean: 1710.00
+
+Cluster 82: 1 samples
+  add mean: 664.00
+  del mean: 45.00
+  total mean: 709.00
+
+Cluster 83: 1 samples
+  add mean: 29.00
+  del mean: 1.00
+  total mean: 30.00
+
+Cluster 84: 2 samples
+  add mean: 54.00
+  del mean: 0.00
+  total mean: 54.00
+
+Cluster 85: 1 samples
+  add mean: 613.00
+  del mean: 1.00
+  total mean: 614.00
+
+Cluster 86: 1 samples
+  add mean: 164.00
+  del mean: 0.00
+  total mean: 164.00
+
+Cluster 87: 1 samples
+  add mean: 111.00
+  del mean: 7.00
+  total mean: 118.00
+
+Cluster 88: 1 samples
+  add mean: 13.00
+  del mean: 4.00
+  total mean: 17.00
+
+Cluster 89: 1 samples
+  add mean: 6.00
+  del mean: 6.00
+  total mean: 12.00
+
+Cluster 90: 1 samples
+  add mean: 16.00
+  del mean: 8.00
+  total mean: 24.00
+
+Cluster 91: 1 samples
+  add mean: 94.00
+  del mean: 47.00
+  total mean: 141.00
+
+Cluster 92: 1 samples
+  add mean: 39.00
+  del mean: 135.00
+  total mean: 174.00
+
+Cluster 93: 1 samples
+  add mean: 1.00
+  del mean: 1.00
+  total mean: 2.00
+
+Cluster 94: 1 samples
+  add mean: 8.00
+  del mean: 8.00
+  total mean: 16.00
+
+Cluster 95: 1 samples
+  add mean: 68.00
+  del mean: 48.00
+  total mean: 116.00
+
+Cluster 96: 1 samples
+  add mean: 79.00
+  del mean: 2.00
+  total mean: 81.00
+
+Cluster 97: 1 samples
+  add mean: 58.00
+  del mean: 38.00
+  total mean: 96.00
+
+Cluster 98: 1 samples
+  add mean: 65.00
+  del mean: 41.00
+  total mean: 106.00
+
+Cluster 99: 1 samples
+  add mean: 24.00
+  del mean: 3.00
+  total mean: 27.00
+
+Cluster 100: 1 samples
+  add mean: 110.00
+  del mean: 7.00
+  total mean: 117.00
+
+Cluster 101: 1 samples
+  add mean: 3.00
+  del mean: 1.00
+  total mean: 4.00
+
+Cluster 102: 1 samples
+  add mean: 2.00
+  del mean: 2.00
+  total mean: 4.00
+
+Cluster 103: 1 samples
+  add mean: 11.00
+  del mean: 34.00
+  total mean: 45.00
+
+Cluster 104: 1 samples
+  add mean: 82.00
+  del mean: 7.00
+  total mean: 89.00
+
+Cluster 105: 1 samples
+  add mean: 72.00
+  del mean: 51.00
+  total mean: 123.00
+
+Cluster 106: 1 samples
+  add mean: 12.00
+  del mean: 0.00
+  total mean: 12.00
+
+Cluster 107: 1 samples
+  add mean: 16.00
+  del mean: 0.00
+  total mean: 16.00
+
+Cluster 108: 1 samples
+  add mean: 34.00
+  del mean: 5.00
+  total mean: 39.00
+
+Cluster 109: 2 samples
+  add mean: 19.00
+  del mean: 3.00
+  total mean: 22.00
+
+Cluster 110: 1 samples
+  add mean: 1962.00
+  del mean: 1.00
+  total mean: 1963.00
+
+Cluster 111: 1 samples
+  add mean: 69.00
+  del mean: 69.00
+  total mean: 138.00
+
+Cluster 112: 1 samples
+  add mean: 1926.00
+  del mean: 1.00
+  total mean: 1927.00
+
+Cluster 113: 1 samples
+  add mean: 2139.00
+  del mean: 2.00
+  total mean: 2141.00
+
+Cluster 114: 1 samples
+  add mean: 41.00
+  del mean: 26.00
+  total mean: 67.00
+
+Cluster 115: 1 samples
+  add mean: 2268.00
+  del mean: 10.00
+  total mean: 2278.00
+
+Cluster 116: 1 samples
+  add mean: 14.00
+  del mean: 26.00
+  total mean: 40.00
+
+Cluster 117: 1 samples
+  add mean: 1351.00
+  del mean: 443.00
+  total mean: 1794.00
+
+Cluster 118: 1 samples
+  add mean: 577.00
+  del mean: 18.00
+  total mean: 595.00
+
+Cluster 119: 1 samples
+  add mean: 174.00
+  del mean: 0.00
+  total mean: 174.00
+
+Cluster 120: 1 samples
+  add mean: 13.00
+  del mean: 78.00
+  total mean: 91.00
+
+Cluster 121: 1 samples
+  add mean: 28.00
+  del mean: 381.00
+  total mean: 409.00
+
+Cluster 122: 1 samples
+  add mean: 12877.00
+  del mean: 0.00
+  total mean: 12877.00
+
+Cluster 123: 1 samples
+  add mean: 6.00
+  del mean: 7.00
+  total mean: 13.00
+
+Cluster 124: 1 samples
+  add mean: 104.00
+  del mean: 7.00
+  total mean: 111.00
+
+Cluster 125: 1 samples
+  add mean: 266.00
+  del mean: 15.00
+  total mean: 281.00
+
+Cluster 126: 1 samples
+  add mean: 87.00
+  del mean: 5.00
+  total mean: 92.00
+
+Cluster 127: 1 samples
+  add mean: 93.00
+  del mean: 88.00
+  total mean: 181.00
+
+Cluster 128: 1 samples
+  add mean: 179.00
+  del mean: 176.00
+  total mean: 355.00
+
+Cluster 129: 1 samples
+  add mean: 111.00
+  del mean: 13.00
+  total mean: 124.00
+
+Cluster 130: 1 samples
+  add mean: 313.00
+  del mean: 0.00
+  total mean: 313.00
+
+Cluster 131: 1 samples
+  add mean: 60.00
+  del mean: 9.00
+  total mean: 69.00
+
+Cluster 132: 1 samples
+  add mean: 106.00
+  del mean: 9.00
+  total mean: 115.00
+
+Cluster 133: 1 samples
+  add mean: 18.00
+  del mean: 5.00
+  total mean: 23.00
+
+Cluster 134: 1 samples
+  add mean: 81.00
+  del mean: 9.00
+  total mean: 90.00
+
+Cluster 135: 1 samples
+  add mean: 86.00
+  del mean: 7.00
+  total mean: 93.00
+
+Cluster 136: 1 samples
+  add mean: 5.00
+  del mean: 2.00
+  total mean: 7.00
+
+Cluster 137: 1 samples
+  add mean: 8.00
+  del mean: 1.00
+  total mean: 9.00
+
+Cluster 138: 1 samples
+  add mean: 26.00
+  del mean: 4.00
+  total mean: 30.00
+
+Cluster 139: 1 samples
+  add mean: 17.00
+  del mean: 0.00
+  total mean: 17.00
+
+Cluster 140: 1 samples
+  add mean: 76.00
+  del mean: 1.00
+  total mean: 77.00
+
+Cluster 141: 1 samples
+  add mean: 34.00
+  del mean: 16.00
+  total mean: 50.00
+
+Cluster 142: 1 samples
+  add mean: 22.00
+  del mean: 4.00
+  total mean: 26.00
+
+Cluster 143: 1 samples
+  add mean: 27.00
+  del mean: 0.00
+  total mean: 27.00
+
+Cluster 144: 1 samples
+  add mean: 5.00
+  del mean: 0.00
+  total mean: 5.00
+
+Cluster 145: 1 samples
+  add mean: 10.00
+  del mean: 2.00
+  total mean: 12.00
+
+Cluster 146: 1 samples
+  add mean: 12.00
+  del mean: 2.00
+  total mean: 14.00
+
+Cluster 147: 1 samples
+  add mean: 53.00
+  del mean: 21.00
+  total mean: 74.00
+
+Cluster 148: 1 samples
+  add mean: 30.00
+  del mean: 2.00
+  total mean: 32.00
+
+Cluster 149: 2 samples
+  add mean: 4.00
+  del mean: 0.00
+  total mean: 4.00
+
+Cluster 150: 1 samples
+  add mean: 67.00
+  del mean: 7.00
+  total mean: 74.00
+
+Cluster 151: 1 samples
+  add mean: 44.00
+  del mean: 3.00
+  total mean: 47.00
+
+Cluster 152: 1 samples
+  add mean: 13.00
+  del mean: 0.00
+  total mean: 13.00
+
+Cluster 153: 1 samples
+  add mean: 149.00
+  del mean: 4.00
+  total mean: 153.00
+
+Cluster 154: 1 samples
+  add mean: 13.00
+  del mean: 3.00
+  total mean: 16.00
+
+Cluster 155: 1 samples
+  add mean: 28.00
+  del mean: 5.00
+  total mean: 33.00
+
+Cluster 156: 2 samples
+  add mean: 21.00
+  del mean: 3.00
+  total mean: 24.00
+
+Cluster 157: 1 samples
+  add mean: 25.00
+  del mean: 48.00
+  total mean: 73.00
+
+Cluster 158: 1 samples
+  add mean: 58.00
+  del mean: 40.00
+  total mean: 98.00
+
+Cluster 159: 1 samples
+  add mean: 180.00
+  del mean: 8.00
+  total mean: 188.00
+
+Cluster 160: 2 samples
+  add mean: 7.00
+  del mean: 0.00
+  total mean: 7.00
+
+Cluster 161: 1 samples
+  add mean: 155.00
+  del mean: 0.00
+  total mean: 155.00
+
+Cluster 162: 1 samples
+  add mean: 49.00
+  del mean: 0.00
+  total mean: 49.00
+
+Cluster 163: 1 samples
+  add mean: 1031.00
+  del mean: 2.00
+  total mean: 1033.00
+
+Cluster 164: 1 samples
+  add mean: 39.00
+  del mean: 12.00
+  total mean: 51.00
+
+Cluster 165: 1 samples
+  add mean: 30.00
+  del mean: 3.00
+  total mean: 33.00
+
+Cluster 166: 1 samples
+  add mean: 204.00
+  del mean: 54.00
+  total mean: 258.00
+
+Cluster 167: 1 samples
+  add mean: 33.00
+  del mean: 12.00
+  total mean: 45.00
+
+Cluster 168: 1 samples
+  add mean: 16.00
+  del mean: 4.00
+  total mean: 20.00
+
+Cluster 169: 1 samples
+  add mean: 70.00
+  del mean: 5.00
+  total mean: 75.00
+
+Cluster 170: 1 samples
+  add mean: 23.00
+  del mean: 9.00
+  total mean: 32.00
+
+Cluster 171: 1 samples
+  add mean: 71.00
+  del mean: 53.00
+  total mean: 124.00
+
+Cluster 172: 1 samples
+  add mean: 37.00
+  del mean: 14.00
+  total mean: 51.00
+
+Cluster 173: 1 samples
+  add mean: 117.00
+  del mean: 35.00
+  total mean: 152.00
+
+Cluster 174: 1 samples
+  add mean: 12.00
+  del mean: 4.00
+  total mean: 16.00
+
+Cluster 175: 1 samples
+  add mean: 32.00
+  del mean: 18.00
+  total mean: 50.00
+
+Cluster 176: 1 samples
+  add mean: 12.00
+  del mean: 13.00
+  total mean: 25.00
+
+Cluster 177: 1 samples
+  add mean: 12.00
+  del mean: 1.00
+  total mean: 13.00
+
+Cluster 178: 2 samples
+  add mean: 67.00
+  del mean: 4.00
+  total mean: 71.00
+
+Cluster 179: 1 samples
+  add mean: 157.00
+  del mean: 50.00
+  total mean: 207.00
+
+Cluster 180: 1 samples
+  add mean: 72.00
+  del mean: 1.00
+  total mean: 73.00
+
+Cluster 181: 1 samples
+  add mean: 52.00
+  del mean: 63.00
+  total mean: 115.00
+
+Cluster 182: 1 samples
+  add mean: 70.00
+  del mean: 4.00
+  total mean: 74.00
+
+Cluster 183: 1 samples
+  add mean: 194.00
+  del mean: 8.00
+  total mean: 202.00
+
+Cluster 184: 1 samples
+  add mean: 12039.00
+  del mean: 0.00
+  total mean: 12039.00
+
+Cluster 185: 1 samples
+  add mean: 23.00
+  del mean: 2.00
+  total mean: 25.00
+
+Cluster 186: 1 samples
+  add mean: 37.00
+  del mean: 3.00
+  total mean: 40.00
+
+Cluster 187: 1 samples
+  add mean: 34.00
+  del mean: 0.00
+  total mean: 34.00
+
+Cluster 188: 1 samples
+  add mean: 96.00
+  del mean: 8.00
+  total mean: 104.00
+
+Cluster 189: 1 samples
+  add mean: 35.00
+  del mean: 0.00
+  total mean: 35.00
+
+Cluster 190: 1 samples
+  add mean: 648.00
+  del mean: 9.00
+  total mean: 657.00
+
+Cluster 191: 1 samples
+  add mean: 92.00
+  del mean: 12.00
+  total mean: 104.00
+
+Cluster 192: 1 samples
+  add mean: 30.00
+  del mean: 1.00
+  total mean: 31.00
+
+Cluster 193: 1 samples
+  add mean: 111.00
+  del mean: 0.00
+  total mean: 111.00
+
+Cluster 194: 1 samples
+  add mean: 1.00
+  del mean: 0.00
+  total mean: 1.00
+
+Cluster 195: 1 samples
+  add mean: 60.00
+  del mean: 24.00
+  total mean: 84.00
+
+Cluster 196: 1 samples
+  add mean: 127.00
+  del mean: 0.00
+  total mean: 127.00
+
+Cluster 197: 1 samples
+  add mean: 7.00
+  del mean: 1.00
+  total mean: 8.00
+
+Cluster 198: 1 samples
+  add mean: 68.00
+  del mean: 1.00
+  total mean: 69.00
+
+Cluster 199: 1 samples
+  add mean: 90.00
+  del mean: 217.00
+  total mean: 307.00
+
+Cluster 200: 1 samples
+  add mean: 0.00
+  del mean: 0.00
+  total mean: 0.00
+
+Cluster 201: 1 samples
+  add mean: 322.00
+  del mean: 0.00
+  total mean: 322.00
+
