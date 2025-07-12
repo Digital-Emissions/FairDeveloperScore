@@ -1,0 +1,301 @@
+repo,sha,author,date,message,additions,deletions,total_changes
+microsoft/vscode,7b1c3d3dcee38406280f67f9909508680da0898d,Connor Peet,2025-07-11T21:25:14Z,debug:  ignore cancellation errors during subsitution (#255488)  Fixes #254852 alongside https://github.com/microsoft/vscode-js-debug/pull/2247,3,1,4
+microsoft/vscode,72c0f44fbeaa04cddeb69d45cb7cf2b4a52c5eac,Connor Peet,2025-07-11T21:24:20Z,chat: fix undoing with a `Try again` action in the history doesn't make it dissapear (#255487)  Fixes #254880,1,1,2
+microsoft/vscode,40191dceacfa9f0efe8a30eb711fec4cf6c8c3dc,Matt Bierner,2025-07-11T20:09:05Z,Merge pull request #255442 from mjbvz/sudden-octopus  Move `multibyteAwareBtoa` out of dom,39,36,75
+microsoft/vscode,f4aa97320e7ff5eb5b8ba205e17d89aa158570aa,Copilot,2025-07-11T19:46:54Z,"Add ""Open Extension"" buttons to individual extension items in manage model access view (#255187)",13,1,14
+microsoft/vscode,092effaaebf07df9d38e11c8609094e592358bb6,Henning Dieterichs,2025-07-11T19:21:55Z,Fixes https://github.com/microsoft/vscode/issues/255127 (#255428)  * Fixes https://github.com/microsoft/vscode/issues/255127  * Fixes tests  * Fixes CI,115,67,182
+microsoft/vscode,df8db2972ef8c478fb548d37a65ab925c55fd502,Henning Dieterichs,2025-07-11T19:20:21Z,Fixes Illegal value for lineNumber (#255461)  Fixes https://github.com/microsoft/vscode/issues/249770,1,3,4
+microsoft/vscode,9e98cd365e454ab04ec25d77763e9da563304c06,Justin Chen,2025-07-11T17:58:58Z,disable edit when clicking on a link (#255454)  disable click if we are clicking on link,6,0,6
+microsoft/vscode,ff3d1466b1c647182d260e1ee148bb7940946708,Anthony Kim,2025-07-11T17:46:27Z,Shell type should be undefined when running unrecognized shell  (#255450)  Allow undefined shell type,7,4,11
+microsoft/vscode,2f9c1958320666616aca98630d03ba00ae97449c,Megan Rogge,2025-07-11T17:31:33Z,update distro (#255446),1,1,2
+microsoft/vscode,c5c02f98baf515a05801721e86572258e7ad3fdb,Justin Chen,2025-07-11T17:25:23Z,fix implicit context hover (#255451),1,1,2
+microsoft/vscode,7b0e2e414cd4630282d377c0369430ff0856625b,Logan Ramos,2025-07-11T17:18:51Z,Fix terminal events squatting on common props (#255444),12,12,24
+microsoft/vscode,29aba08e6335028f9d300ece2be76274513e5d0b,Benjamin Christopher Simmonds,2025-07-11T17:15:56Z,display location more dynamic (#255449),44,45,89
+microsoft/vscode,0b2676103b1a089c5e506e5c8e9a593e942f123c,Matt Bierner,2025-07-11T16:38:36Z,Move `multibyteAwareBtoa` out of dom,39,36,75
+microsoft/vscode,2c794e6453a62567dbaf6a4919b462af869172a8,Henning Dieterichs,2025-07-11T16:37:04Z,Fixes https://github.com/microsoft/vscode/issues/255128 (#255434),24,1,25
+microsoft/vscode,b89c6f26255f066c5628d4e4fe4ed5b25505fdc3,Matt Bierner,2025-07-11T16:22:30Z,Merge pull request #255429 from mjbvz/subsequent-jay  Make sure we still allow other attrs in chat markdown,5,3,8
+microsoft/vscode,e3ee71e1a67c106e313ddcbe4ada6151b4b111b2,Matt Bierner,2025-07-11T16:09:35Z,Make sure we still allow other attrs in chat markdown  Also fixes a class to correct some styling rules,5,3,8
+microsoft/vscode,534977fcc8729bd4060e1657d5397e42e9c513e4,Megan Rogge,2025-07-11T16:10:00Z,revert change (#255425)  fix #255423,76,76,152
+microsoft/vscode,2085a8ca1ebe186d07c2cb14b22dec2a1ee6eaf7,Josh Spicer,2025-07-11T15:56:01Z,"fix #253023 (#254509)  * fix https://github.com/microsoft/vscode/issues/253023  * remove previewFeature, add tags  * swap tag to 'Account'  * allTags -> hasAllTags  * no tag for agent mode",49,35,84
+microsoft/vscode,ee02bbaa82c012db5e83b1bc9f63e7708a7d1988,Megan Rogge,2025-07-11T15:41:23Z,modify the right arg (#255244),14,7,21
+microsoft/vscode,dd3b5a10de55039abaa1fc9ba709ba4ea3026e5d,Martin Aeschlimann,2025-07-11T15:40:45Z,Issue: Prompt file name cannot contain Unicode letters (#255402)  Issue: Prompt file cannot contain unicode letters,2,2,4
+microsoft/vscode,37e510f1effd3da275020a3ca1515f8d11be8747,Benjamin Pasero,2025-07-11T14:41:09Z,chore - update CLI state storage message format (#255400),1,2,3
+microsoft/vscode,18c19134dacfab0e9741acc814a1147cb2cbe93c,Henning Dieterichs,2025-07-11T14:15:41Z,"Adds ""onExP"" tag to editStats setting",1,1,2
+microsoft/vscode,f34628bcfce4fe7f61cc530b00cef8f927183837,Ladislau Szomoru,2025-07-11T13:58:59Z,SCM - fix bug with selection not being initialized correctly (#255392),2,2,4
+microsoft/vscode,6c8a25ae47508ad3152de7e6269b64f993e53859,Ladislau Szomoru,2025-07-11T13:35:09Z,"Git - distinguish between repository, submodule, and worktree (#255374)",38,10,48
+microsoft/vscode,36448b665d547318625bf3876eba77c8964b210a,Martin Aeschlimann,2025-07-11T13:22:01Z,Chatmode without tools should use global tools (#255378),5,4,9
+microsoft/vscode,2072458f50a1d354f309ad99f37eb754eeb652d8,Aiday Marlen Kyzy,2025-07-11T12:29:58Z,standalone color picker: changing the HSL regex to account for decimals and no commas (#255349)  * changing the regex to account for decimals and no commas  * making the group also a non capturing group  * allowing zeroes after the 1.  * removing logs,2,2,4
+microsoft/vscode,9e2c4d8298a1804bcfe56f5e7554c426d9cda64d,Benjamin Pasero,2025-07-11T11:37:46Z,chore - remove unused `test.ipynb` file (#255351),0,0,0
+microsoft/vscode,00e2e65ba10bd73f7e3a44ea5c8bff0779471a60,Raffaele Garofalo,2025-07-11T11:33:50Z,Feature/move editor menu (#247818)  * Add submenu for split editor actions and new move editor commands  * rename  * complete  ---------  Co-authored-by: Benjamin Pasero <benjamin.pasero@microsoft.com> Co-authored-by: Benjamin Pasero <benjamin.pasero@gmail.com>,30,15,45
+microsoft/vscode,97dbf96bffbb722460b3c97f06bf38ab488ac569,Benjamin Pasero,2025-07-11T11:33:06Z,fix - update constraint for command options validation (#255339),1,1,2
+microsoft/vscode,e45fddacfc33e9e628bfcad7cdeee890ba935061,Aiday Marlen Kyzy,2025-07-11T10:20:55Z,relayout color picker on hover content change (#255335)  relayout color picker on content change,19,9,28
+microsoft/vscode,dcb4e12e34de98f34408145ae4226be40ce8560b,Sandeep Somavarapu,2025-07-11T10:17:00Z,#254838 - Fix race conditions between extension install and uninstall operations (#255333),52,18,70
+microsoft/vscode,6dd2b84fa2d025273512d34f5e9dace4d8ad80ff,Martin Aeschlimann,2025-07-11T10:10:29Z,Merge pull request #254690 from madskristensen/schemastore-subdomain-fix  Updated references to schemastore.org,17,17,34
+microsoft/vscode,ae3e86a50bf14f6497aa0b60b005bc1fcf15e5a9,Benjamin Pasero,2025-07-11T10:07:50Z,fix - update markdown description for `sideBySideDirection` (#255332),1,1,2
+microsoft/vscode,acf993a2d1a4db0d07b0baf40fc97324ac764542,Henning Dieterichs,2025-07-11T09:53:46Z,merges back changes from copilot-chat,49,21,70
+microsoft/vscode,92a67e0262aacd646f240d6e0eb18f52888f07e4,Benjamin Pasero,2025-07-11T09:56:55Z,Dev Containers fails to start on VS Code 1.102.0 with TypeError: Cannot read properties of null (reading 'filesToOpen') (fix #255254) (#255329),1,1,2
+microsoft/vscode,ef1a8d739713b6672eb4a31ee12ee7ee04591308,Ladislau Szomoru,2025-07-11T09:56:38Z,SCM - fix leaked disposables (#255328),3,0,3
+microsoft/vscode,01d3c6661a0892ecebcf315cf18c5df153fa28fa,Benjamin Pasero,2025-07-11T09:56:14Z,chat - do not close tools picker on focus out (#255317),9,10,19
+microsoft/vscode,b55bd4a27adf495be33c8aa54cda0825fcab2dc8,Aiday Marlen Kyzy,2025-07-11T09:55:12Z,Default color decorators: adding length 3 hex values (#255311)  adding length 3 hex values,1,1,2
+microsoft/vscode,a0d2afee336ac57a5b4132bcf5b331fd204b7427,Ladislau Szomoru,2025-07-11T08:28:32Z,Engineering - do not run the PR check for the `main` branch (#255309),1,2,3
+microsoft/vscode,0e4ee5ff82101cfc67d6048ce8ae8a2678f8e10d,Matt Bierner,2025-07-11T07:16:25Z,Merge pull request #255299 from mjbvz/existing-swallow  Make sure inline chat math wrapped in parens is rendered,132,93,225
+microsoft/vscode,5d23ee74622d87e584b7720978eef724b4ac6f96,Matt Bierner,2025-07-11T07:05:44Z,Merge pull request #255293 from mjbvz/sensitive-aardvark  Fix header line height in chat,12,0,12
+microsoft/vscode,a0e680dc718b8753f6c6940edbda8c6198e7a0f8,Matt Bierner,2025-07-11T07:03:47Z,Make sure inline chat math wrapped in parens is rendered  Syntax like `a ($x$) b` is generated fairly often,132,93,225
+microsoft/vscode,31d05e298b2861d4a5aa487d8671af4e3f3e600c,Benjamin Pasero,2025-07-11T06:35:50Z,fix - correct provider access in chat setup logic (#255287),22,22,44
+microsoft/vscode,b6f4a9e07b0eb2a760cfd5dc3174158e8ecc1427,Matt Bierner,2025-07-11T05:53:32Z,Fix header line height in chat  Fixes #255292,12,0,12
+microsoft/vscode,2eeceaa3bca9371bfa321e7afd80825554ecb207,Matt Bierner,2025-07-11T04:14:52Z,Merge pull request #253528 from tmm1/tmm1/ts-integration-results  [engineering] ensure typescript integration tests emit junit reports,20,6,26
+microsoft/vscode,5562c89e343e9bcacb961d2e192295917e1296a0,Megan Rogge,2025-07-10T22:31:32Z,allow suggestions to show after backspace if prompt value is `''` (#255171)  fix #253422,1,1,2
+microsoft/vscode,37c61fd4a090db3cae05c0f0cbc84815c4e0914b,Aaron Munger,2025-07-10T22:29:52Z,"cell layout management refactor (#255201)  * isolate cell layouts from full editor widget, add tests  * dispose scheduled runners  * revert instruction file  * fix test",213,78,291
+microsoft/vscode,a72da85587ef6521a6e02c263c2004b48d4a51f3,Matt Bierner,2025-07-10T22:23:26Z,Merge branch 'main' into tmm1/ts-integration-results,10765,3855,14620
+microsoft/vscode,379182c2c765086f6cfc937ab976f620a60773bb,Megan Rogge,2025-07-10T22:04:20Z,change anchor for suggest widget if it overflows the container's size (#255194)  fix #244535,77,68,145
+microsoft/vscode,356a1562c2af175d476bb8a6f157f4cf19ef0e05,Matt Bierner,2025-07-10T21:47:02Z,Merge pull request #255236 from mjbvz/grim-rhinoceros  Fix possible disposable leak,6,11,17
+microsoft/vscode,d9211786bc38b3710aab8e29862db4ecb8b3be98,Matt Bierner,2025-07-10T21:45:56Z,Merge pull request #254995 from microsoft/dev/mjbvz/chat-katex  Adds basic katex support to chat,519,126,645
+microsoft/vscode,2188c90df51a8557c2bf62a0eb97bfe52d6dac78,Benjamin Pasero,2025-07-10T21:43:10Z,Add sign in option for Apple (microsoft/vscode-internalbacklog#5578) (#255155),95,114,209
+microsoft/vscode,008e8cf20f3c04a3e39538eaccd6b42dc14c4e4e,Matt Bierner,2025-07-10T21:27:29Z,Fix possible disposable leak  Fixes #254829,6,11,17
+microsoft/vscode,a9882f1344b73e407e4ef213242f45d3b9338a8f,Matt Bierner,2025-07-10T20:21:32Z,Different approach to async loading,172,191,363
+microsoft/vscode,141aa8582abb96f671badbb100bbd6dab3f85a7c,Megan Rogge,2025-07-10T20:03:07Z,check if thisArgs are defined (#255214),3,1,4
+microsoft/vscode,762754e6b86ea9df80fe554bda5fc966bdc1d39b,Raymond Zhao,2025-07-10T19:48:04Z,chore: bump webpack (#254987)  Brings in the latest fixes including perf improvements.  Co-authored-by: Benjamin Pasero <benjamin.pasero@microsoft.com>,199,188,387
+microsoft/vscode,d2b3e0a3d6c0002d83351786adf0abe6e14d16de,Osvaldo Ortega,2025-07-10T18:31:35Z,Merge pull request #254981 from microsoft/osortega/fix-cancel-search  Fix for canceling pending copilot search request,38,28,66
+microsoft/vscode,10b3a655ba5608785fa6c87479a7155cb36ca949,Matt Bierner,2025-07-10T18:26:43Z,Disable more checking for now,6,4,10
+microsoft/vscode,658bdeff2bbf6a70c6b9b1e56fbd224a46b8a3cb,Matt Bierner,2025-07-10T18:11:02Z,Inline type for now,3,1,4
+microsoft/vscode,c2058a02513ce3986c0541e8ee64726e1960a452,Matt Bierner,2025-07-10T18:08:24Z,Fix merge conflict,0,1,1
+microsoft/vscode,6b3bbd966c02dab6380c86420c981f75b754fe46,Matt Bierner,2025-07-10T18:06:03Z,Clean up implementation,68,36,104
+microsoft/vscode,22d9c6eb0d82ee2b4380f8f28898d7eabbf7266e,Matt Bierner,2025-07-10T17:38:53Z,Merge branch 'main' into dev/mjbvz/chat-katex,9956,3365,13321
+microsoft/vscode,73fbb0cccd17f892e8ade51199f7476ddd760ee1,Justin Chen,2025-07-10T16:49:51Z,trying new empty state! (#253689)  * exp welcome view  * use exp setting  * use exp setting  * positioned disclaimers under title to avoid overlap  * Updated chat placeholder text  * some fixes  * fix hygiene  * make sure to add additional message  * swap exp is active  * add new setting  ---------  Co-authored-by: Elijah King <elijahwilliamking@icloud.com>,72,18,90
+microsoft/vscode,30cfae0d788bbf3ad488f2d6a713b9ec40844a8c,Martin Aeschlimann,2025-07-10T16:16:09Z,use www.schemastore,3,3,6
+microsoft/vscode,4bd42b349fdb8c01aa2497772ed220fd60642351,Daniel Imms,2025-07-10T14:05:33Z,Merge pull request #255112 from microsoft/tyriar/242078  Use log service in TaskQueue,11,5,16
+microsoft/vscode,40603817d71c2e28786802fa16dd177dd3b34b08,Martin Aeschlimann,2025-07-10T13:59:38Z,TypeError thrown in instanceof DocumentSymbol (#255144),0,3,3
+microsoft/vscode,26bb572fb72f8b1827d615df843eebb10c03a90d,Daniel Imms,2025-07-10T12:21:43Z,Merge pull request #255123 from microsoft/tyriar/254893  Eliminate some flakiness when not verifying files save,1,0,1
+microsoft/vscode,ac3d4703b2b1bd8dd5da23eb138d240600cd1fbd,Daniel Imms,2025-07-10T12:06:22Z,"Eliminate some flakiness when not verifying files save  This test was flaking because before the suite runs a bunch of settings are added which are critical to making the test reliable. Inside the settings part it opens the editor, edits it and saves the file via ctrl/cmd+s. This is all fine, but it doesn't verify anything so the editor may end up closing before ctrl/cmd+s actually gets handled. We disable the modal in smoke tests since it needs to run headlessly, so it's difficult to see that the file never actually saves and a dirty file is closed and discarded.  The fix is to verify settings.json actually does save by changing the shared Editors.saveOpenedFile mechanism to ensure the dirty indicator isn't present on the active tab.  Fixes #254893 Part of #246731",1,0,1
+microsoft/vscode,2ff34581ea1ee3c0677a41984308b395da6a7933,Don Jayamanne,2025-07-10T11:57:40Z,Skip flaky Notebook Kernel API tests (#255119)  * Skip flaky Notebook Kernel API tests  * updates,1,1,2
+microsoft/vscode,7b269dac035ca2439d3bce193483e44dfba9127b,Don Jayamanne,2025-07-10T11:22:38Z,Await on notebook.cell.execute command in tests (#255111),1,1,2
+microsoft/vscode,de49b03b7cbd64bf6ad9d67c3a81cd55c0c403ca,Daniel Imms,2025-07-10T11:21:39Z,Use log service in TaskQueue  Fixes #242078,11,5,16
+microsoft/vscode,bc99eaeebb61685a10052554ff827351804b1527,Daniel Imms,2025-07-10T11:08:17Z,Merge pull request #254873 from microsoft/copilot/fix-254872  Fix terminal suggest providers default enablement logic,114,6,120
+microsoft/vscode,e31bfcad9dd70ce11dc45188f47824089f6fd362,Don Jayamanne,2025-07-10T11:05:27Z,Re-enabled some of the skipped notebook tests (#255087)  * Identify flaky test failures  * Updates,33,6,39
+microsoft/vscode,c195156400a06e82f7cb0519396d72f8605fd61e,Don Jayamanne,2025-07-10T11:05:02Z,Use open and show notebook instead of executeCommand in tests (#255106),1,1,2
+microsoft/vscode,d5ae7bbf1ebe48d04c00ef7d26ba812ded7b6a65,Matt Bierner,2025-07-10T10:51:46Z,Merge pull request #253635 from HolgerJeromin/webviewCompatibility  vscode api: Raise compatibility to webview content,4,4,8
+microsoft/vscode,8665a3e8ae0f521624a067c1e11d387af5e5dc81,Benjamin Pasero,2025-07-10T10:42:17Z,chat - always refresh tokens when setup ran (#255100),5,1,6
+microsoft/vscode,5d2088c19dd27269e8b64804d60e17dfa6260fc3,Ethan Reesor,2025-07-10T10:39:47Z,Context key `availableEditorIds` for diff editors (#250198),26,8,34
+microsoft/vscode,8ce742c78878fc0ba62b59982e0f59633e1fef88,Benjamin Pasero,2025-07-10T10:38:20Z,Restoring to a maximised secondary sidebar on startup needs workarounds (fix #252465) (#255046),24,56,80
+microsoft/vscode,32e71a8b6849c61d0d22cc6ddf0c39a088446a5c,Benjamin Pasero,2025-07-10T10:29:32Z,Merge branch 'main' into osortega/fix-cancel-search,3619,1635,5254
+microsoft/vscode,55cf9aa8640ecf8403c680df5c63242c4c4ab9d3,Don Jayamanne,2025-07-10T08:22:07Z,Stable sorting of notebook cell diff info (#255005),17,3,20
+microsoft/vscode,af0a171e61fa7bce22b53002bc2f3970315f7b73,Jason Kuo,2025-07-10T04:44:16Z,Fix popup message when hovering over an instruction breakpoint (#254925)  * Fix popup message when hovering over an instruction breakpoint  * Update src/vs/workbench/contrib/debug/browser/breakpointsView.ts  Co-authored-by: Connor Peet <connor@peet.io>  ---------  Co-authored-by: Connor Peet <connor@peet.io>,1,1,2
+microsoft/vscode,01d401258a44186d19e993cd98224efac6a1196b,Rob Lourens,2025-07-10T03:40:46Z,Remove agent killswitch (#255007),1,13,14
+microsoft/vscode,8e55c8d774e146782feeff1cc9efad1cee8c80d5,Matt Bierner,2025-07-10T00:09:56Z,Merge pull request #250778 from gabrielcsapo/gcsapo/adds-log-level-for-tsserver  feat: adds (requestTime) logLevel to match tsserver options,7,1,8
+microsoft/vscode,8746da1b14c368f466b3dc761bb3d5758704360b,Gabriel Csapo,2025-07-09T23:46:54Z,Merge branch 'main' into gcsapo/adds-log-level-for-tsserver,46927,25623,72550
+microsoft/vscode,dc0c9798e90737f738eb75fe2219069761a9d0ca,Elijah King,2025-07-09T22:55:44Z,Merge pull request #254978 from microsoft/eli/plg-strings  Removed 'Copilot',9,10,19
+microsoft/vscode,430f91e41b1c382c87f4c5487b06a56e70ab5374,Raymond Zhao,2025-07-09T22:42:03Z,chore: bump get-func-name (#254989)  Resolves an npm audit issue,4,3,7
+microsoft/vscode,200a319a72ff46a7c4e4a3cb8d852fb67d695188,Connor Peet,2025-07-09T22:04:55Z,tools: fix undo to a request keeping the initial request (#254935)  * tools: fix undo to a request keeping the initial request  * more timeline improvements  - Remove the special `postEdit` stop that was not very undo-able - Improve undo/redo to skip no-op points  * update tests,154,103,257
+microsoft/vscode,ab60c1e28533aeadc741f4dc6d3b3faf92300474,Osvaldo Ortega,2025-07-09T21:25:29Z,Fix for canceling pending copilot search request,38,28,66
+microsoft/vscode,660e830fdc04c48f29e7d041b2694a75546468d0,Martin Aeschlimann,2025-07-09T21:02:14Z,Avoid computing deserializeSnapshot twice in SnapshotComparer (#254860),3,2,5
+microsoft/vscode,c34f818e71a44b4f4c54b6ad28f0fa437cd0459d,Daniel Imms,2025-07-09T20:48:12Z,Fix overwrite of super,9,7,16
+microsoft/vscode,b6486d37a49d81f38123220d53c858d48f56b0ea,Daniel Imms,2025-07-09T20:47:06Z,"Revert ""fix issues""  This reverts commit 72b72d12f49f7ecf9f2f0992af03528d905196ba.",10,12,22
+microsoft/vscode,c3284e930af7d69236fdff710f20d9c253e09838,Michael Lively,2025-07-09T20:34:26Z,update my-work ghinb (#254964),2,2,4
+microsoft/vscode,72b72d12f49f7ecf9f2f0992af03528d905196ba,meganrogge,2025-07-09T20:14:17Z,fix issues,12,10,22
+microsoft/vscode,20a1aca71ed3be8cbc155a5f086c54cd6a4246d5,Megan Rogge,2025-07-09T20:10:57Z,add listeners to correct disposables (#254891)  fix #254890,6,2,8
+microsoft/vscode,e42d3b2c535d6a9ab9bd9c4d998f1d0fa96ceb98,Benjamin Pasero,2025-07-09T19:49:23Z,chat - go back to installing only after sign-in has finished (#254960),8,8,16
+microsoft/vscode,4b8eae3f4e6becc357b5324da2776f6137a611b6,Henning Dieterichs,2025-07-09T19:36:22Z,Includes delta modified characters and trigger (#254956),89,54,143
+microsoft/vscode,942dbe295ff4321383d794d7e7a3ecbc72a63f7e,Elijah King,2025-07-09T19:17:34Z,Removed 'Copilot' from 1. Right click menu 2. Genrate commit message 3. Search 4. Getting started walkthrough,9,10,19
+microsoft/vscode,d32a677a0387eedd91d26380272e5f0bb5a8b8df,Michael Lively,2025-07-09T19:10:13Z,Update issue templates (#254957),13,1,14
+microsoft/vscode,d2c7ed40fb8295943883e315e489270e3a5861a6,Michael Lively,2025-07-09T18:54:02Z,add Copilot issue template (#254954)  * add copilot bug template  * remove text about internal backlog or public vscode,19,0,19
+microsoft/vscode,a4495aaf9aab60b86505ada1e1e57f477037aa7c,Henning Dieterichs,2025-07-09T18:45:19Z,Monaco editor webworker fixes (#254951),45,27,72
+microsoft/vscode,bd8ade54cd9bb42ccfef33a8ed72b83baef47e6d,Henning Dieterichs,2025-07-09T18:34:11Z,improves observable dev tools (#254942),33,1,34
+microsoft/vscode,b2152a7418d0396d9043527dfdb04d72be3d495e,Gabriel Csapo,2025-07-09T18:29:39Z,chore: updates server.log enum,2,1,3
+microsoft/vscode,e3d6829b41d9964043213e9406facd0516960298,Justin Chen,2025-07-09T17:56:03Z,new implicit context flow (#254768)  * new implicit flow  * new implicit flow  * some logic cleanup:  * gate implicit context stuff behind setting  * cleanup  * hygiene weewoowewoo,129,22,151
+microsoft/vscode,0900bb815af61cd017096f264eedba165342a17a,Benjamin Pasero,2025-07-09T17:12:22Z,Agent Mode pauses when VS Code loses focus (fix #252384) (#254827)  * Agent Mode pauses when VS Code loses focus (fix #252384)  * add logging  * refactor - rename throttling parameter to allowed  * refactor - extend `IChatModel` with `IDisposable`,55,4,59
+microsoft/vscode,e52bb47e4148510862e790f7d0c01dfda7b1f0a2,Sandeep Somavarapu,2025-07-09T17:02:53Z,fix #254926 (#254928),23,10,33
+microsoft/vscode,b84fb5b4177671bb30ae7cbb143cf7c126cda3f3,Justin Chen,2025-07-09T16:59:12Z,only allow model/mode setting when not in input mode (#254927),6,6,12
+microsoft/vscode,7693191f993c5775e79ecc961accf06d1b0d200e,Raymond Zhao,2025-07-09T16:54:41Z,chore: remove vsce-sign results from baseline (#254923),1,46,47
+microsoft/vscode,ba25f9cd4cec7c9712f37c1f3cedfe5a7c7c9958,Copilot,2025-07-09T16:50:18Z,Fix PowerShell terminal link detection for paths with spaces (#254504),4,2,6
+microsoft/vscode,34d2ec438c64532ce1a35a21d3a423e9cfe9050c,Martin Aeschlimann,2025-07-09T16:28:31Z,Pylance mcp tools can not be deselected (#254917),3,3,6
+microsoft/vscode,1ea38ea6831a8c05cb071e9219f11ad546b1b748,Daniel Imms,2025-07-09T15:53:01Z,Merge pull request #254900 from microsoft/tyriar/234656  Remove broken test,0,10,10
+microsoft/vscode,5fea2c1a606e66add10820dda3fa94afebc088fe,Daniel Imms,2025-07-09T14:54:40Z,Remove broken test  This test never worked  Fixes #234656,0,10,10
+microsoft/vscode,95fbc18ca02ac20f0133d0e18ef39163419dd371,Benjamin Pasero,2025-07-09T14:51:41Z,Provide Maximized Chat View as an option for startup editor on workspace open. (fix microsoft/vscode-internalbacklog#5610) (#254874)  * Provide Maximized Chat View as an option for startup editor on workspace open. (fix microsoft/vscode-internalbacklog#5610)  * refactor - move initialization of isNew property,64,29,93
+microsoft/vscode,11c6ce5b951221c771298300cb15c5d081c21f34,Martin Aeschlimann,2025-07-09T14:20:06Z,"ChatEditingSessionStorage: improve saving a session: compute files hashes async, encode content only once (#254882)",35,29,64
+microsoft/vscode,f3ed1cdbb0d69c79b723f3f478bc2699eb284e0b,Megan Rogge,2025-07-09T14:18:07Z,set pwsh provider off by default (#254876)  fix #254867,1,1,2
+microsoft/vscode,c8ce8e255ec109fe29cd742ff840a3788abaecad,copilot-swe-agent[bot],2025-07-09T14:12:30Z,Extract provider filtering logic into protected method and move tests to main test file  Co-authored-by: Tyriar <2193314+Tyriar@users.noreply.github.com>,110,182,292
+microsoft/vscode,edb912556b9ed4b05151ced02338e2926b6b59f3,copilot-swe-agent[bot],2025-07-09T13:20:12Z,Fix terminal suggest providers default enablement logic  Co-authored-by: Tyriar <2193314+Tyriar@users.noreply.github.com>,179,1,180
+microsoft/vscode,a1fc17e0323c90e1a03957d47befe6d7215022e0,copilot-swe-agent[bot],2025-07-09T13:09:06Z,Initial plan,0,0,0
+microsoft/vscode,97c9f5c08ed96abfbe8b1917a9a00073a5377302,Aiday Marlen Kyzy,2025-07-09T13:05:48Z,refactoring : extracting coordinatesConverter code to a separate file (#254616)  * refactoring  * resolving merge conflict  * adding change,117,105,222
+microsoft/vscode,08b4bcb3078eb5b1d17f0e86844a3586ba68e2f4,Aiday Marlen Kyzy,2025-07-09T12:59:22Z,Ignore mouse events when context menu is shown (#254864)  ignore mouse events when context menu is shown,29,11,40
+microsoft/vscode,87113bc25fa4b174439b0efa089de473e8146714,Sandeep Somavarapu,2025-07-09T12:55:15Z,add button to browse mcp servers in welcome view (#254863),20,3,23
+microsoft/vscode,b3f848b4911cf61f3fe8dbccfc8c1910b01d1667,Sandeep Somavarapu,2025-07-09T12:28:55Z,add mcp servers feature contribution (#254862),45,1,46
+microsoft/vscode,1dc489a51970ff7805404540a45e9a303e07497d,Aiday Marlen Kyzy,2025-07-09T11:59:32Z,Allow also minimum and maximum on editor float options (#254856)  allowing also minimum and maximum on editor float options,11,2,13
+microsoft/vscode,fe3803eb3a4069445cda6712b1d455862b49b63b,Benjamin Christopher Simmonds,2025-07-09T11:44:43Z,Report snooze duration for inline completions (#254848)  report snooze duration,26,1,27
+microsoft/vscode,8bd52a173e3578dd5a71bffa11d520111b0a294b,Tyler James Leonhardt,2025-07-09T10:33:37Z,Redirect to vscode.dev/redirect and then vscode://.... (#254841)  So that the browser remembers who triggered the redirect.  Fixes https://github.com/microsoft/vscode/issues/254810,4,2,6
+microsoft/vscode,0f51f4269fa373831d1235e3756c2cd3545e7e3d,Benjamin Christopher Simmonds,2025-07-09T09:37:48Z,Log typing speed (#253656)  * log typing speed  * include character count as reference for reliable speed computation and include more characters if not many in recent session window  * call it typing interval,250,0,250
+microsoft/vscode,28738da36190fbb725d63bda84d82d854e33a641,Benjamin Christopher Simmonds,2025-07-09T09:24:35Z,managed hover handles native hover implementation (#254825)  * managed hover should handle native hover impl and not widgets  * :lipstick:,55,58,113
+microsoft/vscode,e3710cb6b808c1f2b968f77a490fb9617935acd5,Benjamin Pasero,2025-07-09T08:43:25Z,fix - update provider selection in chat setup (#254819),2,2,4
+microsoft/vscode,adb41290c8b832444272a9a488afb3a04290e674,Benjamin Pasero,2025-07-09T08:41:30Z,refactor: remove redundant actionRunner override in ChatEditorOverlayWidget (#254797),0,4,4
+microsoft/vscode,69a7f10fc3a48fd57298192be59d5a232359ef69,Benjamin Pasero,2025-07-09T07:36:20Z,"fix: make progressBar and progressIndicator optional, add null checks for viewWelcomeController (#254799)",5,6,11
+microsoft/vscode,c6e6e69a4ac1d2aca65ce4ff6a37ec49ca9baa51,Benjamin Pasero,2025-07-09T07:35:42Z,debt - lift assignment service into its only use (#254796),116,134,250
+microsoft/vscode,a40c65ef41c661b7c25c5266bc808ec5054bbd9c,Benjamin Pasero,2025-07-09T06:01:16Z,debt - global view container toolbar misses telemetry source (#254793),3,2,5
+microsoft/vscode,105b3664c08a085b19797aa5ad919f6e9bdb58e6,Connor Peet,2025-07-09T04:51:02Z,"chat: refactor out chatEditingTimeline, tests, bugs (#254788)  - Refactor out the ChatEditingTimeline into its own class. - Add some base unit tests for it. - Fix some off-by-1 errors and a logic error that caused diffs to not   show on some edit pills.",994,398,1392
+microsoft/vscode,435737ba80127c4a3485041e86ed91a3a2e304c4,Matt Bierner,2025-07-09T03:24:06Z,Merge pull request #254764 from microsoft/dev/mjbvz/bump-katex  Pick up latest md katex plugin,5,5,10
+microsoft/vscode,feda9dfea795372153d00c1cda5912af45e55c11,Matt Bierner,2025-07-09T03:04:10Z,Merge branch 'main' into dev/mjbvz/bump-katex,340,107,447
+microsoft/vscode,ea66f720013eb840da808551e841f0fe9bed1458,Don Jayamanne,2025-07-09T00:40:19Z,Do not change EOL in Noetbook Cell documents (#254759)  * Do not change EOL in Noetbook Cell documents  * Remove unused ref,1,4,5
+microsoft/vscode,aed497c521da4b9c600db8f26544c3eb432ec5a6,Megan Rogge,2025-07-08T23:17:35Z,add `onTerminal` activation event (#254444),15,2,17
+microsoft/vscode,48409cb2546b4f95e27732cde083ea29c2c5de60,Megan Rogge,2025-07-08T23:17:14Z,use `onTerminalShellIntegration` for terminal suggest activation (#252329),14,2,16
+microsoft/vscode,2f9b4d9d6516513905aa0be6a8795f66ea9f8879,Matt Bierner,2025-07-08T21:42:55Z,Merge pull request #254225 from remcohaszing/ignore-tsbuildinfo  Add *.tsbuildinfo to .gitignore,1,0,1
+microsoft/vscode,3a2103438a2ee970952bfdafa79b459050e894d5,Matt Bierner,2025-07-08T21:32:44Z,Merge pull request #254734 from microsoft/dev/mjbvz/eslint-native-local  Migrate off of `eslint-plugin-local`,231,47,278
+microsoft/vscode,f0fff8b44be5a8b32a63ec050f8af892f6dd8e60,Matt Bierner,2025-07-08T21:17:10Z,Update sha,1,1,2
+microsoft/vscode,fedb82ca4fb5d4554f0c0b714180a8aa1eafacca,Daniel Imms,2025-07-08T20:33:02Z,"Merge pull request #254710 from microsoft/tyriar/252689  Revert ""terminal: default 'terminal.integrated.inheritEnv' to false on Windows (#252325)",3,4,7
+microsoft/vscode,d2a794a71916e6aedb93619948001cc887274a75,Matt Bierner,2025-07-08T20:09:17Z,Migrate off of `eslint-plugin-local`  We can now do this natively,231,47,278
+microsoft/vscode,d8367188a0da1bb74a82a97dc0c278f81a9f0946,Ladislau Szomoru,2025-07-08T19:43:08Z,Engineering - use different token for topic branches (#254714)  Engineering - use different token from topic branches,18,18,36
+microsoft/vscode,e41da03302380bc637c6185311bc2de907d922b1,Daniel Imms,2025-07-08T19:40:01Z,Merge pull request #254726 from microsoft/tyriar/253590  Make before each step run with retries,16,4,20
+microsoft/vscode,bd9cc762113f4388d001943fb930408623d58295,Benjamin Pasero,2025-07-08T19:31:27Z,Refactor WorkbenchAssignmentService to remove unused IEnvironmentService dependency (#254709),15,19,34
+microsoft/vscode,a281c05b7e17bd6d7341dc4b68a100499117b54d,Daniel Imms,2025-07-08T19:27:43Z,Make before each step run with retries  Fixes #253590,16,4,20
+microsoft/vscode,770c3c8e95a567a66aff68786a2e84d1772eb35b,Megan Rogge,2025-07-08T19:22:44Z,fix terminal suggest bug (#254717)  fix #254713,1,1,2
+microsoft/vscode,03cbd01f6117e389805f879f32bdfe34afb8892e,Megan Rogge,2025-07-08T19:08:09Z,fix terminal suggest bug related to aliases (#254482)  fix #254457,2,2,4
+microsoft/vscode,4318ad2f5aa6ff41bab47b7d30fbc5b801c7a02a,Rob Lourens,2025-07-08T18:55:50Z,Fix mode switching back to ask mode when extension is slow to load (#254539)  * Fix mode switching back to ask mode when extension is slow to load Fix #254173  * fix test,7,3,10
+microsoft/vscode,983397225279176dbeecfaf0379ec285699e8f84,Megan Rogge,2025-07-08T18:50:49Z,only wrap for long lines if in screen reader mode (#254698)  only wrap if in screen reader mode,1,1,2
+microsoft/vscode,86d326db8e92cf28bcfabdaf134432ae890370f4,Bhavya U,2025-07-08T18:39:44Z,reset input in welcome view on context change for experimental mode (#254670),15,0,15
+microsoft/vscode,76d69433f51f0c92006883cc6ad7a68ee6cde7e2,Daniel Imms,2025-07-08T18:37:25Z,"Revert ""terminal: default 'terminal.integrated.inheritEnv' to false on Windows (#252325)""  This reverts commit ae6080018a4b9bd5987ac1afd47532e84c07170e.",3,4,7
+microsoft/vscode,0ba52498bf2ad63724a638dd8526e4e8bcc831f7,Matt Bierner,2025-07-08T18:03:47Z,Pick up latest md katex plugin,5,5,10
+microsoft/vscode,2d948e9d255055ed08d6138d30ece4db216185f6,Yusuke Yamada,2025-07-08T18:01:20Z,Fix invalid settings keys (#254609),1,1,2
+microsoft/vscode,6ba2ae25b32ed6a9ffa014770af23fd9fe07c6e9,Henning Dieterichs,2025-07-08T17:26:26Z,Also report ARC for edits with multiple replacements,11,6,17
+microsoft/vscode,24b090ca831fe79263b74629467855f9878df1e7,Matt Bierner,2025-07-08T17:29:31Z,Merge pull request #254544 from mjbvz/current-swordtail  Revert service-worker js -> ts rewrite,124,61,185
+microsoft/vscode,5890e0a51d0cb0c2dbaf29f70211814483f314c3,Matt Bierner,2025-07-08T17:17:09Z,Merge branch 'main' into current-swordtail,788,411,1199
+microsoft/vscode,9362739ef42d78d990745630f37dafcaa360bd34,Megan Rogge,2025-07-08T16:52:36Z,add `terminal` to `taskExecution` (#254477)  fix #234440,37,1,38
+microsoft/vscode,45bcb2d5fb8bedbaa536a51a3b3519cc7675effa,Michael Lively,2025-07-08T16:52:18Z,infinite response bot command (#254688),10,1,11
+microsoft/vscode,ecd0405577ee1c80fa5ce5a804fdc73bc09b64cf,Raymond Zhao,2025-07-08T16:49:57Z,feat: time the different search providers (#252700),59,12,71
+microsoft/vscode,434260839e92e21b715668030b502a93b3755607,Mads Kristensen,2025-07-08T16:48:52Z,Updated references to schemastore.org,14,14,28
+microsoft/vscode,8f023e48c8c7f4f8f4991898cc461a4ee17bf72a,Jason Kuo,2025-07-08T16:22:54Z,Use preserveFocus when focusing stack frames (#251964)  * Use preserveFocus when focusing stack frames  * Add preserveFocus in openEditor call for disassembly view,3,3,6
+microsoft/vscode,49e7cf8dbbaba0e983fb81bcb4e704697dcfdf70,Henning Dieterichs,2025-07-08T16:02:54Z,Adds sourceKeyWithoutExtId to editTelemetry.editSources.details,57,29,86
+microsoft/vscode,bbf6eaec0b732b2b99b77b162fb117446b7ee9fa,Henning Dieterichs,2025-07-08T13:07:23Z,includes extension version,70,17,87
+microsoft/vscode,d37ee81e3dea684c2a8b74c5bcafc2e4433d4a54,Jérôme Lécuyer,2025-07-08T16:18:12Z,Git - l10n discard changes dialogs (#254366),6,6,12
+microsoft/vscode,14595616a3303c7cfa7c8357b8992369822065e3,Daniel Imms,2025-07-08T15:31:34Z,Merge pull request #254669 from microsoft/tyriar/248001  Push sticky scroll line up if it obscures cursor line,3,2,5
+microsoft/vscode,02549ac3b8042e2d09e4af616573fc87a23b2844,Daniel Imms,2025-07-08T15:17:19Z,Merge remote-tracking branch 'origin/main' into tyriar/248001,6720,2127,8847
+microsoft/vscode,8391270b79698f70b49acbeeef75b6b5bc83d31a,Daniel Imms,2025-07-08T15:14:05Z,Push sticky scroll line up if it obscures cursor line  Fixes #248001,3,2,5
+microsoft/vscode,60950697d7c0778cf5712b75dbcdcc357240b5ba,Daniel Imms,2025-07-08T15:10:51Z,Merge pull request #254659 from microsoft/tyriar/254658  Simplify terminal initial hint,4,13,17
+microsoft/vscode,61943959520cf963837586f65118f7129356bb30,Daniel Imms,2025-07-08T15:07:52Z,Merge pull request #254650 from microsoft/copilot/fix-254649  Add current working directory to shell integration section in terminal hover,4,0,4
+microsoft/vscode,f6c92424f911efc00d286d1ba90d5aae4cc0cc53,Daniel Imms,2025-07-08T14:42:55Z,Simplify cwd fetching,1,1,2
+microsoft/vscode,8ca89245c549bd0d3a46ef1298f5ae487db53d1f,Daniel Imms,2025-07-08T14:24:30Z,Simplify terminal initial hint  Fixes #254658,4,13,17
+microsoft/vscode,769275a57550145c3c294e9a34ed7e4b26ca08af,Martin Aeschlimann,2025-07-08T14:04:37Z,Merge pull request #254114 from microsoft/aeschli/surprised-sparrow-106  chat models in prompts: qualify name with family,25,17,42
+microsoft/vscode,d1f33e87c353f510c4df60b37bc47a7376b51851,copilot-swe-agent[bot],2025-07-08T13:30:52Z,Add current working directory to shell integration tooltip  Co-authored-by: Tyriar <2193314+Tyriar@users.noreply.github.com>,4,0,4
+microsoft/vscode,9448ca54054612df13aa399bcf427fc639cf5c9d,Benjamin Pasero,2025-07-08T13:28:35Z,debt - harden disablement of experiments in code for tests (#254642),14,5,19
+microsoft/vscode,1c5aac43c2e7dc47146a81c1cc0201f77d541c9a,Benjamin Pasero,2025-07-08T13:27:47Z,tests - close editors from debug API tests (#254646),5,2,7
+microsoft/vscode,2084f6d0223b1b5e3d8d365c5cd8da38fb4bddfa,copilot-swe-agent[bot],2025-07-08T13:21:54Z,Initial plan,0,0,0
+microsoft/vscode,491bf7a849db928753841a6627aa081041d27ab4,Martin Aeschlimann,2025-07-08T12:53:29Z,Stray console log (#254645),0,2,2
+microsoft/vscode,4398d9f33d6fa7e4fd351658e4c427c05b71db04,Aiday Marlen Kyzy,2025-07-08T12:21:27Z,refactor: extracting ViewModelDecoration code into a separate file (#254615)  * exracting viewmodeldecoration code into a separate file  * adding changes,89,65,154
+microsoft/vscode,f3c6f6b37d056a7496789405c49ebdcbb1b28a0c,Henning Dieterichs,2025-07-08T12:07:56Z,Fixes ARC tracking (#254445)  * Fixes https://github.com/microsoft/vscode/issues/254419 (#254421)  * Fixes https://github.com/microsoft/vscode-internalbacklog/issues/5608 (#254423),23,6,29
+microsoft/vscode,f8bb386a48f799f890d00f217a90f615c9b3866c,Alex Ross,2025-07-08T10:59:18Z,Update grammars (#254634),214,90,304
+microsoft/vscode,a31b87c942bd79f0faa2fd0680d774daeb00f0b5,Sandeep Somavarapu,2025-07-08T10:34:58Z,fix #252206 (#254627),1,1,2
+microsoft/vscode,c7a34d136174a9393d632e3a5c76a89224877381,Aiday Marlen Kyzy,2025-07-08T10:21:41Z,refactor: extracting inlineDecoration types into separate file (#254611),67,55,122
+microsoft/vscode,8bf15c45c1845f9ab4bc5ea0757dd87c67a12c60,Sandeep Somavarapu,2025-07-08T09:28:39Z,update distro (#254607),2,2,4
+microsoft/vscode,80662bd27ca7de271e51d6b90961e055dcd8b6e0,Sandeep Somavarapu,2025-07-08T09:13:33Z,fix #252726 (#254602),1,2,3
+microsoft/vscode,6332b5db18e9422913cec28ee554063aa3b1739c,Benjamin Christopher Simmonds,2025-07-08T09:05:22Z,Fix ghost text view data (#254601)  fix ghosttext view data,11,8,19
+microsoft/vscode,91ddb4bcb500dad6adb9ce9c26e5bf5b9468b8a9,Matt Bierner,2025-07-08T08:43:42Z,Merge pull request #254540 from mjbvz/shared-hare  Pick up latest TS for building VSCode,5,5,10
+microsoft/vscode,3b14374c6ce8daa638588ba02a2f77bc8f6fd74a,Ladislau Szomoru,2025-07-08T08:22:40Z,Merge branch 'main' into shared-hare,80,69,149
+microsoft/vscode,c104dccddb7a0e8eebd29f0fe75302c5676cc15b,Sandeep Somavarapu,2025-07-08T08:08:08Z,fix #254589 (#254595),10,6,16
+microsoft/vscode,7fd9305b695af02e4a2b7eb0e71a8afaffbe51bf,Sandeep Somavarapu,2025-07-08T07:57:52Z,polish a bit (#254591),18,13,31
+microsoft/vscode,bcd950d6be13fc909a0758d2ef1145f01ce98f1c,Aman Karmani,2025-07-08T07:41:53Z,"[engineering] add label to packageTask (#253779)  previously appeared as ""(anonymous)"" in the logs",3,1,4
+microsoft/vscode,80154acf961538196ce8e83c319261e2b9e61704,Eugene Strizhok,2025-07-08T07:41:22Z,Correct capitalization of 'JetBrains' and 'ReSharper' in settings UI (#254472)  Proper casing for JetBrains & ReSharper,4,0,4
+microsoft/vscode,f158f622b2c111ce732c7bb59889661be3e5bde8,Don Jayamanne,2025-07-08T07:39:20Z,Ensure EOL of cell documents is as expected (#254578),1,0,1
+microsoft/vscode,b88394f67ff3e248f4ac8124934a264962eaddd4,Benjamin Pasero,2025-07-08T07:38:35Z,themes - define more default colors based on theme values (#254580),30,10,40
+microsoft/vscode,67ef9d7893208a4ac89dd026aff5f9af00324dbf,Benjamin Pasero,2025-07-08T07:09:08Z,layout - reduce flicker for startup editors (#254506),0,34,34
+microsoft/vscode,2a256ef7eb5472ea4883458cd1686d00a4afb4bf,Josh Spicer,2025-07-08T00:33:12Z,fix #248581 (#254536)  fix https://github.com/microsoft/vscode/issues/248581,14,5,19
+microsoft/vscode,2b3fe79f88285e7539717a5b94f52a94938ab608,Matt Bierner,2025-07-07T23:52:37Z,Revert service-worker js -> ts rewrite  This is causing build issues by pulling in the webworker typings,124,61,185
+microsoft/vscode,2f3845b686d1a757af2c682400649a6e487a8c23,Matt Bierner,2025-07-07T23:07:05Z,Pick up latest TS for building VSCode,5,5,10
+microsoft/vscode,6c8f575bec6dfaa5353a36775ddfd54b8ca9614a,Matt Bierner,2025-07-07T22:57:16Z,Merge branch 'main' into dev/mjbvz/chat-katex,26710,11422,38132
+microsoft/vscode,b922e2790c77a072a358995e6f376fa61cb171db,Connor Peet,2025-07-07T22:32:47Z,mcp: include correct scope when creating server install events (#254532)  Refs #254520,5,5,10
+microsoft/vscode,c8441f22c6c4ea4b63a3f63295280487d919c914,Don Jayamanne,2025-07-07T22:31:00Z,Live upadtes to Notebook Cell EOL in troubleshooting (#254525),9,2,11
+microsoft/vscode,0e1bbe8de0415ce5332260ab5c34224b89c1bd68,Rob Lourens,2025-07-07T22:21:35Z,"Add ""Show chats"" to chat editor menu (#254530)  For microsoft/vscode-copilot-release#10291",13,7,20
+microsoft/vscode,ffdc173416377252095a5cb3cd84c92b007aea7a,Josh Spicer,2025-07-07T22:13:11Z,add non-markdown description back for `chat.tools.autoApprove` (#254529)  add non-markdown description back for chat.tools.autoApprove,3,1,4
+microsoft/vscode,8f6286939c3f283cfbbe118d406442445cdae368,Connor Peet,2025-07-07T21:52:31Z,mcp: fix only keeping 1 MCP server per config file (#254521)  Fixes #254498,1,1,2
+microsoft/vscode,f90efa694b4bfd1669410168fd4053b59450f025,Elijah King,2025-07-07T21:41:25Z,Merge pull request #254514 from microsoft/eli/new-welcome-illustration-fix  revised new welcome experience intro slide illustration color tokens,28,33,61
+microsoft/vscode,bfed2b2b74263cc949c7427739de854552589652,Elijah King,2025-07-07T20:37:56Z,Merge branch 'main' into eli/new-welcome-illustration-fix,11,2,13
+microsoft/vscode,7deabf42e78c70999de7f2a7acca2a0525253fda,Aman Karmani,2025-07-07T20:34:30Z,[engineering] add testSplit option to unit-test runner (#253049)  helpful to run tests in parallel,11,2,13
+microsoft/vscode,f71150f8b0216e0cc58c767d77120a3e538735b7,Elijah King,2025-07-07T20:31:38Z,Merge branch 'main' into eli/new-welcome-illustration-fix,5541,1504,7045
+microsoft/vscode,d1d4aa663f8f516884d3477a2276f7363b9d7a3f,Elijah King,2025-07-07T20:28:14Z,"revised new welcome experience intro slide to use correct color tokens, updates to correct color per theme",28,33,61
+microsoft/vscode,dadbc584d9b02c5964621c67eebefa871c051655,Connor Peet,2025-07-07T18:25:52Z,chat: fix showing notebook cells is running out of panel chat (#254492)  Fixes #254336,5,1,6
+microsoft/vscode,716794e6389fd963b3d2635ca27dc85dc00ab317,Ladislau Szomoru,2025-07-07T18:23:11Z,Engineering - more descriptive cache names (#254496)  Engineering - mode descriptive cache names,8,8,16
+microsoft/vscode,1a79d96de103f7698e05dd9d71b0b4ef8f0a8ef6,Copilot,2025-07-07T17:54:28Z,Fix tiles wrapping OOTB in chat welcome view (#254209)  * Initial plan  * Fix tiles wrapping OOTB in chat welcome view  Change flex-wrap from wrap to nowrap in .chat-welcome-view-suggested-prompts to prevent tiles from wrapping unnecessarily out of the box.  Co-authored-by: bhavyaus <25044782+bhavyaus@users.noreply.github.com>  * Update chat welcome view to allow suggested prompts to wrap and add row gap  ---------  Co-authored-by: copilot-swe-agent[bot] <198982749+Copilot@users.noreply.github.com> Co-authored-by: bhavyaus <25044782+bhavyaus@users.noreply.github.com> Co-authored-by: bhavyaus <bhavyau@microsoft.com>,1,0,1
+microsoft/vscode,55b9191fe3772ad17a2e236ba5771a20a5347b2b,Benjamin Pasero,2025-07-07T15:40:56Z,ci - improve log message on failure (#254460),18,1,19
+microsoft/vscode,33936aa5fb1c35df6d22bdf64e1e9949d7eaf86b,Daniel Imms,2025-07-07T15:16:27Z,Merge pull request #254425 from microsoft/tyriar/253039  autoApprove warning,1,1,2
+microsoft/vscode,3641b928b008e4853ec1d6e6a62ca7cabd6983fe,Benjamin Christopher Simmonds,2025-07-07T14:41:17Z,Add notebook as an inline completion editor type (#254449),7,3,10
+microsoft/vscode,e8feeeaaae6d2626d5c8736b75350fabe9ad9bd1,Megan Rogge,2025-07-07T14:36:01Z,get value of ctx keys (#254448),3,1,4
+microsoft/vscode,c02c34fb43279b1c9424eb86348685ed3ad6411c,Copilot,2025-07-07T14:32:59Z,themes - ensure default colors match default themes (#254222),259,39,298
+microsoft/vscode,5dfa6a54681293eda87410a7eae7e1dba99c295b,Daniel Imms,2025-07-07T13:48:08Z,Merge pull request #253012 from microsoft/copilot/fix-253011  Allow completion providers for undefined shell types,11,14,25
+microsoft/vscode,526e37a973815d612a451434ec1bbdc8944ff2b2,Daniel Imms,2025-07-07T13:37:55Z,Merge pull request #253969 from microsoft/copilot/fix-253915  Fix hover button text selection by preventing user-select on button elements,11,0,11
+microsoft/vscode,4d5d3155bd89023b2598ff096a2b4b11721bb6dc,Henning Dieterichs,2025-07-07T13:07:55Z,Fixes https://github.com/microsoft/vscode/issues/253216 (#253910),1,0,1
+microsoft/vscode,69ca3cf7abc7d4effb127e5666143340385ff335,Daniel Imms,2025-07-07T12:40:49Z,"Polish comment, remove useless test",3,39,42
+microsoft/vscode,7f0a6c479fad715fa1662acef8b9174533c25e69,Daniel Imms,2025-07-07T12:36:36Z,Merge remote-tracking branch 'origin/main' into copilot/fix-253011,7765,1995,9760
+microsoft/vscode,b026898d94e723f0e04b370252ffc2d4257ce737,Daniel Imms,2025-07-07T12:24:36Z,"Revert ""Switch to :not approach to prevent text selection on buttons in hovers""  This reverts commit 49050d59b1e4c9750601edf017ff3ec982db4860.",13,6,19
+microsoft/vscode,864ce2e5107d4bc3a46f1d1a769c4c273dd6e44f,Daniel Imms,2025-07-07T12:10:06Z,Merge branch 'main' into copilot/fix-253915,2901,1009,3910
+microsoft/vscode,d1ec6173f2316df9ee53055170913b264f81f18e,Daniel Imms,2025-07-07T11:55:52Z,Merge pull request #253266 from microsoft/copilot/fix-253052  Add shell type to shell integration details in terminal tab hover,4,0,4
+microsoft/vscode,0c779fa53e0ee2538da9e7c7039351851b341d2f,Daniel Imms,2025-07-07T11:39:26Z,Update shell type when it changes,1,0,1
+microsoft/vscode,49050d59b1e4c9750601edf017ff3ec982db4860,copilot-swe-agent[bot],2025-07-07T11:28:30Z,Switch to :not approach to prevent text selection on buttons in hovers  Co-authored-by: Tyriar <2193314+Tyriar@users.noreply.github.com>,6,13,19
+microsoft/vscode,ad0e0ef046a68174a28c09aa4574afe91a53eed7,Daniel Imms,2025-07-07T11:26:11Z,Update src/vs/workbench/contrib/chat/browser/chat.contribution.ts  Co-authored-by: Nick Trogh <1908215+ntrogh@users.noreply.github.com>,1,1,2
+microsoft/vscode,0f91086c54ffef1cd76c4fdb236fa85d5f2932e2,Daniel Imms,2025-07-07T11:11:33Z,autoApprove warning  Fixes #253039,1,1,2
+microsoft/vscode,fd9e98cab8e5c2931052e0afec41b7e13cd6059f,Don Jayamanne,2025-07-07T10:48:47Z,Update notebook troubleshooting tool to display EOL (#254415),7,6,13
+microsoft/vscode,c5e55875cb7c7c83350a3f169ca42155f987cea5,Sandeep Somavarapu,2025-07-07T10:48:12Z,default to marketplace latest api for all extension name requests (#254417),9,22,31
+microsoft/vscode,aa65bacd06f0dc856c23845fa3e7c3b37accb599,Ladislau Szomoru,2025-07-07T08:27:15Z,"Engineering - use GITHUB_TOKEN in the ""Compile & Hygiene"" task (#254395)",2,0,2
+microsoft/vscode,09723854ed2d6161446b45c5b0a2b749eecb28d9,Benjamin Pasero,2025-07-07T05:46:30Z,cli - always print `--transient` info (#254383),1,3,4
+microsoft/vscode,9b592e0c0ab8ec0077e368c506f6561bbddced45,Copilot,2025-07-06T13:47:20Z,Implement `--transient` CLI option for stateless VS Code sessions (#254223),17,0,17
+microsoft/vscode,698b638444802ff62a78e5e4bb4933c04b769ca6,Ladislau Szomoru,2025-07-06T10:34:00Z,Engineering - Add VSCODE_QUALITY global variable (#254290)  Add VSCODE_QUALITY global variable,3,0,3
+microsoft/vscode,eb4b57f8438a77809b6838d208bb92541598c06f,Benjamin Pasero,2025-07-06T07:21:38Z,layout - ensure panel/auxbar are focused if maximised after startup (#254294)  * layout - ensure panel/auxbar are focused if maximised after startup  * fix: ensure whenReadyPromise is completed before focusing the layout,8,0,8
+microsoft/vscode,c315e865bf38bbf9cde54dbb4c04d84c40fc809e,Benjamin Pasero,2025-07-06T06:46:36Z,up `@playwright/test` to `1.53.2` (#254280)  * up `@playwright/test` to `1.53.2`  * enable tracing on CI always,14,14,28
+microsoft/vscode,1773a9fcc972da93f59b7d298632c0831ddbf240,Remco Haszing,2025-07-05T10:28:14Z,Add *.tsbuildinfo to .gitignore  The `.tsbuildinfo` file is generated by TypeScript when using certain compiler options or running `tsc --build`.,1,0,1
+microsoft/vscode,f62eaddb5f60c413d40604437fc2d2149465ddd5,Bhavya U,2025-07-05T06:07:20Z,Move createInput out of welcomeViewContent creation. (#254205),10,16,26
+microsoft/vscode,1e610b289a7c00c0b3a986b523e7b19884594f32,Bhavya U,2025-07-05T06:07:13Z,Focus input on  chat widget before setting prompt (#254204),1,0,1
+microsoft/vscode,f52e13bc6b127586b7c5c93e6c17147914aab8e0,Ladislau Szomoru,2025-07-04T19:12:56Z,Engineering - pull request actions should read from the cache (#254154),7,7,14
+microsoft/vscode,b76cdfbec12d55fd11d1bb8c0340724fc99951ff,Isidor Nikolic,2025-07-04T17:55:33Z,Merge pull request #254166 from microsoft/isidorn/musical-tarantula  update untitled editor placeholder,6,38,44
+microsoft/vscode,ef2abd908f1b3772520f877fbdaff98c361903fa,Henning Dieterichs,2025-07-04T17:28:32Z,Don't return the result list if operation got cancelled. (#254158),3,0,3
+microsoft/vscode,d40925ecf5caf7acefccfc47ca509510626ec3c3,Henning Dieterichs,2025-07-04T17:28:02Z,Improves fetch log (#254156),41,6,47
+microsoft/vscode,fd173fc37af764dfa483adec515e7d737347eb41,Henning Dieterichs,2025-07-04T17:25:40Z,Fixes https://github.com/microsoft/vscode/issues/254153 (#254159),4,0,4
+microsoft/vscode,e2d204cc35a68925bd2480525eeb6d7e03f54fe9,isidorn,2025-07-04T16:39:19Z,update untitled editor placeholder,6,38,44
+microsoft/vscode,27ab41b18c4703b6f4895d5830a61beb1cc041f4,Henning Dieterichs,2025-07-04T15:34:58Z,Initializes fields at declaration when possible (#254149),529,540,1069
+microsoft/vscode,005f93e50aa4aa1a333b73cbeff2b4a07ef34a70,Henning Dieterichs,2025-07-04T14:37:48Z,Fixes https://github.com/microsoft/vscode-internalbacklog/issues/5602 (#254099)  * Fixes https://github.com/microsoft/vscode-internalbacklog/issues/5602  * Aligns test,3,1,4
+microsoft/vscode,449fd6e036fc7d65b8f2e8ef86ae843a41b8d5ec,Martin Aeschlimann,2025-07-04T14:28:45Z,chat models in prompts: qualify name with family,25,17,42
+microsoft/vscode,2380d75ac839446a175f54b4ce8b8d8936d83afb,Ladislau Szomoru,2025-07-04T14:17:51Z,Engineering - add job the maintain the node_modules cache for the Compile stage and builtin extensions cache (#254126)  * Engineering - add job the maintain the node_modules cache for the Compile stage and builtin extensions cache  * Fix typo,73,0,73
+microsoft/vscode,6c0cbe007a3a9a658d8ee8782aab2efb0437eecc,Benjamin Pasero,2025-07-04T14:16:57Z,chat - disable custom welcome content for now (workaround endless loop) (#254129),2,1,3
+microsoft/vscode,48301d6c9e42c8b833ff1646d134ffe0d250647e,Henning Dieterichs,2025-07-04T13:28:09Z,Fixes https://github.com/microsoft/vscode/issues/254122 (#254123),39,8,47
+microsoft/vscode,2c76ee1b47c5e620ebe1d98cd4ebc1ab002c769b,Sandeep Somavarapu,2025-07-04T12:48:38Z,force auto update,29,2,31
+microsoft/vscode,3319d505f35a909e6b568c353ebed385b34da272,Benjamin Pasero,2025-07-04T11:37:19Z,Stop showing secondary sidebar if its empty (fix #253855) (#254087)  * Stop showing secondary sidebar if its empty (fix #253855)  * .  * .,25,5,30
+microsoft/vscode,69005e100266f9e8569aca6f9abea6f70b9bdcdd,Ladislau Szomoru,2025-07-04T11:16:38Z,Engineering - improve node_modules cache action (#254076),0,13,13
+microsoft/vscode,535bf22ea8a1229295a2c468250319b98a1c8e95,Sandeep Somavarapu,2025-07-04T10:36:50Z,move user mcp management to shared process (#254086),147,19,166
+microsoft/vscode,02506486470a2e1aab0efe537388e920866c0d2e,Martin Aeschlimann,2025-07-04T10:23:34Z,promptUrlHandler: Simplify the confirmation dialog (#254077)  promptUrlHandler: Simplify the confirmation dilaog,5,19,24
+microsoft/vscode,c809b74d173e305011fc1f7fcdde89a00e021138,Sandeep Somavarapu,2025-07-04T10:22:59Z,show iconUrl for mcp servers from gallery (#254081),17,0,17
+microsoft/vscode,116cbcd6054c2de004c0b9ee2b72389a9b99031a,Ladislau Szomoru,2025-07-04T09:42:56Z,Engineering - update CODEOWNERS (#254072),8,0,8
+microsoft/vscode,b3010d6447fe94bffa76701aec407cdbd0b47bd9,Benjamin Pasero,2025-07-04T09:30:38Z,chat - remove alternate fallback (#254070),0,4,4
+microsoft/vscode,74f72e008d2bef1c9c7d7dd5573c7a14dcec783a,Ladislau Szomoru,2025-07-04T09:27:58Z,Engineering - add GitHub action to maintain node_modules cache (#254069),228,0,228
+microsoft/vscode,367fc5f2437bf18e769b1add856f4d8d88db6b3b,Benjamin Pasero,2025-07-04T09:17:56Z,exp - introduce and use flag to disable experiments (#254057)  * exp - introduce and use flag to disable experiments  * fix,28,9,37
+microsoft/vscode,93858ca3600058322e0d86d2383708e06845e95f,Ladislau Szomoru,2025-07-04T09:05:45Z,Engineering - cancel PR build when a new commit is pushed (#254064),4,0,4
+microsoft/vscode,5b03be390e7646d0f6b880c4ec013f6d2c306d48,Benjamin Pasero,2025-07-04T08:24:09Z,editors - give better action label to unmaximize group (#254050),4,1,5
+microsoft/vscode,4d7c56ee824119599d2b8dc212bbc05da9c711ad,Ladislau Szomoru,2025-07-04T08:21:56Z,Engineering - Add GitHub action for pull requests (#254056)  * Test - handle running tests as part of a GitHub action  * Add GitHub action files,1072,37,1109
+microsoft/vscode,e93d38445442f8d707cc40cdc44f37fd2614a7f6,Benjamin Pasero,2025-07-04T07:30:48Z,perf - start to track aux sidebar (#254048),22,2,24
+microsoft/vscode,a758f9e8c846c2484c59e3242cacd28ed84e1cca,Alex Ross,2025-07-04T06:04:42Z,Bump version (#254031),3,3,6
+microsoft/vscode,751a38769af1a73f2f0f465f50a0e93257890ce9,Megan Rogge,2025-07-04T05:29:11Z,fix suggest bug when in `selectionMode:never` (#253887)  fix #253183,4,2,6
+microsoft/vscode,81989afd86a286184c41ce6845d58dbdc8daa59a,Megan Rogge,2025-07-04T01:08:37Z,ensure there's a space before reset char (#253925)  fix #253190,2,2,4
+microsoft/vscode,51aa46f271d60b8ef5f4f28a34ecb67c772c2af1,Martin Aeschlimann,2025-07-04T00:13:48Z,Constant flickering when typing in mode file (#253941)  Co-authored-by: Josh Spicer <23246594+joshspicer@users.noreply.github.com>,76,62,138
+microsoft/vscode,bcf133c1a7ee846a6d0a9bc58d2f516061dda55c,Raymond Zhao,2025-07-04T00:09:36Z,fix: settings toolbar lacks margin-right (#253716),3,2,5
+microsoft/vscode,e7d03805842e0051d0230f516a0316feada4239e,Megan Rogge,2025-07-04T00:02:55Z,Add logs for completion resolution (#253974),19,4,23
+microsoft/vscode,aeabf149f94cccc45c02f7745ab313e46dcda2b4,Martin Aeschlimann,2025-07-04T00:00:54Z,Unselected servers/tools in agent mode are not restored (#254004),37,59,96
+microsoft/vscode,39ca06bcdf4506b778cf2f7cc630c018ef1ba371,Rob Lourens,2025-07-03T23:56:10Z,"Add ""open mode picker"" action (#253965)  * Add ""open mode picker"" action  * poke ci  ---------  Co-authored-by: Josh Spicer <23246594+joshspicer@users.noreply.github.com>",29,1,30
+microsoft/vscode,9d9234fd33540be56aadb17f1fcec47ea2d81c2f,Josh Spicer,2025-07-03T23:39:46Z,Cloud button nits (#254015)  * acceptInput so that it goes to history  * hide stop button when remotejobCreating,13,3,16
+microsoft/vscode,d9f1bf8fed9ccec3f04ddb7b8644f16656f613fb,Sandeep Somavarapu,2025-07-03T22:44:17Z,fix #253356 (#253705),40,7,47
+microsoft/vscode,2fda72e83b8366530a4d455bd167f50026194054,Martin Aeschlimann,2025-07-03T22:10:20Z,Use existing setting icons for configure chat (#253984),1,1,2
+microsoft/vscode,5da12b49827c0a037453d4672bd7d7a8447f9d22,Connor Peet,2025-07-03T22:02:24Z,mcp: correctly fix authority-less MCP resources cannot be read by VS Code (#254003)  Closes https://github.com/microsoft/vscode/issues/250905,26,20,46
+microsoft/vscode,25ee562cba29e4256a144af0b1f3af9b2f8f7f04,Bhavya U,2025-07-03T21:42:14Z,Add cli override to control startupExp group (#253155)  * Add startup experiment group support to environment services  * refactor: streamline startup experiment group handling and remove unused code  * feat: add first session date check to initialize experiments,50,9,59
+microsoft/vscode,4bfa684c0655067cce36f859be56f83b5ca8f059,Benjamin Christopher Simmonds,2025-07-03T21:39:12Z,"minor fixes, 3rd try to get PRs merged (#253999)  3rd try to get the prs in",17,7,24
+microsoft/vscode,eebf50256e9aafec43755d3a25d1835d2bc9e8ec,Benjamin Christopher Simmonds,2025-07-03T21:29:22Z,Change 'Completions' to 'Code Completions' (#253992)  fixes https://github.com/microsoft/vscode/issues/253724,1,1,2
+microsoft/vscode,61bb9b414f62646618cc3a52fd5adcda3f9303c6,Connor Peet,2025-07-03T21:23:38Z,mcp: fix changes to MCP servers in mcp.json are not picked up (#253982),13,9,22
+microsoft/vscode,4fff4d204de5e6a8f0e7187e002ccf03ded16944,Martin Aeschlimann,2025-07-03T21:08:03Z,Modes not updated properly when changing (#253986),38,31,69
+microsoft/vscode,149c27734e30421e96173ea04dec6967a905f2aa,Martin Aeschlimann,2025-07-03T20:56:04Z,Referenced Copilot Instructions File not Referenced by Copilot (#253861),6,2,8
+microsoft/vscode,219f8f19184671f1a7b2e9f7adcedec4c99b5c25,Justin Chen,2025-07-03T20:44:44Z,never show prompt file (originally #253691) (#253973)  never show prompt file (oroginally #253691),13,13,26
+microsoft/vscode,4b6db63faa71640db1dabe06ba6501a2de37b9d2,Bhavya U,2025-07-03T20:44:04Z,refactor: update tool registration check to filter by 'copilot_' prefix (#253983)  * refactor: update tool registration check to filter by 'copilot_' prefix  * refactor: simplify tool ID check by removing redundant type check,2,2,4
+microsoft/vscode,264329bf8e8e1d623fe41b350e22ca2f88594212,Benjamin Christopher Simmonds,2025-07-03T20:39:36Z,use the snooze icon (#253950),8,0,8
+microsoft/vscode,f663acad336e79613285b495494d3f8132003abd,Bhavya U,2025-07-03T19:51:39Z,Add suggested prompts to chat widget welcome view and update experiment configurations (#253975),123,5,128
+microsoft/vscode,68196ad36bee379db8aa100fc90bda5367224818,Justin Chen,2025-07-03T19:26:00Z,add a bit more padding to container in inline chat (#253772)  add a bit more padding to container,4,0,4
+microsoft/vscode,6986b1c85614bf78d0f2241a5c91f85df1bbb6fd,Sandeep Somavarapu,2025-07-03T19:19:27Z,register missing services (#253747)  Co-authored-by: Josh Spicer <23246594+joshspicer@users.noreply.github.com>,3,1,4
+microsoft/vscode,2fd47d88fc2c12b15ec4da06515070a940c0953b,Benjamin Pasero,2025-07-03T19:14:22Z,"Revert ""layout - never show secondary sidebar by default if empty (fix #253855)"" (#253976)  Revert ""layout - never show secondary sidebar by default if empty (fix #25385…""  This reverts commit 4950db1f74217e09ceecb05fa51e826b69627251.",7,9,16
+microsoft/vscode,63a74fcb5de7aa6259ce7d4ca0a6157b3fa2099b,Justin Chen,2025-07-03T19:09:44Z,fix padding on first element (#253711)  Co-authored-by: Ladislau Szomoru <3372902+lszomoru@users.noreply.github.com>,1,1,2
+microsoft/vscode,1741b45cc278baeaf29e9d8c14ba5059797e1ae1,Copilot,2025-07-03T18:57:11Z,Fix welcome view padding to ensure adequate spacing when resized (#253959)  * Initial plan  * Fix welcome view padding to ensure adequate spacing when resized  Co-authored-by: bhavyaus <25044782+bhavyaus@users.noreply.github.com>  * Fix welcome view content padding for consistent spacing  * Fix padding values for chat welcome view for consistent layout  ---------  Co-authored-by: copilot-swe-agent[bot] <198982749+Copilot@users.noreply.github.com> Co-authored-by: bhavyaus <25044782+bhavyaus@users.noreply.github.com> Co-authored-by: bhavyaus <bhavyau@microsoft.com>,1,0,1
+microsoft/vscode,c23756cf752858f4d52088705547ad21a218704e,Peng Lyu,2025-07-03T18:47:59Z,Merge pull request #253907 from microsoft/traditional-basilisk  update distro,1,1,2
+microsoft/vscode,38cd3f135c2cc293782142adcd7dcbefe5d5f315,Peng Lyu,2025-07-03T18:47:30Z,Merge pull request #253727 from microsoft/hediet/b/skilled-salamander  Moves ARC telemetry tracking to core,0,0,0
+microsoft/vscode,d8a95448298e146c93ea659a345e00bf9836d799,Peng Lyu,2025-07-03T18:46:19Z,Merge pull request #253710 from justschen/justin/stantler  fix some edits papercuts,8,2,10
+microsoft/vscode,72bf73541776eea9f11243e7a96e0a0ed5e1dda4,Peng Lyu,2025-07-03T18:45:59Z,Merge pull request #253687 from microsoft/aeschli/blank-magpie-555  prompt files: fix for hovers,9,6,15
+microsoft/vscode,ebe7d20b38b4eee2cc8a7fecd33493f5dfcf6d7f,Megan Rogge,2025-07-03T18:32:24Z,update `Learn More` keybinding (#253891)  fix #253110,3,3,6
+microsoft/vscode,8470700d866d8a132ccdd3f4a97ca8816004124b,copilot-swe-agent[bot],2025-07-03T18:23:09Z,Add .action selector to prevent text selection in all action elements  Co-authored-by: Tyriar <2193314+Tyriar@users.noreply.github.com>,1,0,1
+microsoft/vscode,7e059a1cd7f021fdbb0f1bc0294a01e51ed0e318,copilot-swe-agent[bot],2025-07-03T18:19:21Z,Fix hover button text selection issue by preventing user-select on button elements  Co-authored-by: Tyriar <2193314+Tyriar@users.noreply.github.com>,10,0,10

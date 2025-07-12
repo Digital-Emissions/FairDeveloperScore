@@ -1,0 +1,301 @@
+repo,sha,author,date,message,additions,deletions,total_changes
+getify/You-Dont-Know-JS,e3f784bcb18ba47a9e6ced0866bc361393fb299f,Kyle Simpson,2025-05-20T14:22:36Z,adding affiliate link code,2,2,4
+getify/You-Dont-Know-JS,cf8aeaecacda7a0eb8536a2bae33c2f634acead3,Kyle Simpson,2025-05-05T04:48:25Z,list reformat,4,4,8
+getify/You-Dont-Know-JS,5750e5ffe9c16e69b8914692205a41589bfecb15,Kyle Simpson,2025-05-05T04:47:18Z,adding amazon link for purchase of book 3,1,1,2
+getify/You-Dont-Know-JS,762018690a7d4085017cc3f3c7322283b32f18ed,Kyle Simpson,2025-05-01T02:05:28Z,update mistake template,1,15,16
+getify/You-Dont-Know-JS,b92d9ed92a79d6a7ab2941b330885f606a7966bb,Kyle Simpson,2025-05-01T02:04:36Z,update typo template,1,15,16
+getify/You-Dont-Know-JS,57370f2397dcceb6bb81e935b27bd45beefd3bfa,Kyle Simpson,2025-04-24T20:29:41Z,"README: updating with new status from 'The Unbooks' ebook being published, closes #1899",41,20,61
+getify/You-Dont-Know-JS,7e08b2130dfe3eb2e70f400e5aa5551df266f90c,Dilip Valiya,2024-02-20T18:09:48Z,Update ch2.md,2,2,4
+getify/You-Dont-Know-JS,50ce656c38db11c33ce75f43e89659f9f77187c7,Kyle Simpson,2024-09-05T04:11:44Z,"updating contribution-guide for clarity on status, Re: #1883",4,6,10
+getify/You-Dont-Know-JS,8a3a08be0c4e4f01ee976524fb95748f3f7d0e7f,naveenTheEngineer,2024-08-02T19:25:03Z,Typo Corrected,1,1,2
+getify/You-Dont-Know-JS,e96cc1a99190aa75171ddd4580ba656a93c81085,snoppy,2024-06-18T02:09:16Z,chore: fix typos  Signed-off-by: snoppy <michaleli@foxmail.com>,5,5,10
+getify/You-Dont-Know-JS,63922c18b276da141f6e07ccebe25eca87fa09f4,Lilith,2023-12-26T20:01:20Z,Update ch4.md  Added consistent scoping syntax for the lessThen method,1,1,2
+getify/You-Dont-Know-JS,6806b5972056ee8d42e63bce3e121f069cef2a05,Norris Lau,2023-09-30T02:17:21Z,"Reordering of ""Why Closure?"" and ""An Alternative Perspective"" in the toc",1,1,2
+getify/You-Dont-Know-JS,5780d366bac282c13d972bc37505e9ccfa4afaf0,jasonbanboa,2023-11-22T07:10:55Z,added comma to prevent syntax error in code snippet,1,1,2
+getify/You-Dont-Know-JS,85b2e6c5fa03b95d044015d6e44b72b8beb6a53b,CheadleCheadle,2023-07-17T21:42:00Z,Fixed spelling errors within documentation,35,35,70
+getify/You-Dont-Know-JS,7d3a4b7351515fa41c8e3127376dda1ca98514d8,Kyle Simpson,2023-03-10T15:59:51Z,clean up formatting of thank-you pages,2,1,3
+getify/You-Dont-Know-JS,955d539da710a504ec4b30ea9247eb7f64edfdd4,Kyle Simpson,2023-03-10T15:45:26Z,Special thanks to 'William Greenlaw' for their generous backer support of this 2nd edition book series,2,0,2
+getify/You-Dont-Know-JS,3861ee3241774e804f1144f03f201d9fbdde0335,Kyle Simpson,2023-03-10T15:44:49Z,Special thanks to 'Travis Sauer' for their generous backer support of this 2nd edition book series,2,0,2
+getify/You-Dont-Know-JS,22663aa36cd9efa2f2094ba6b63e054b7aa1c8d8,Kyle Simpson,2023-03-10T15:44:22Z,Special thanks to 'Syed Ahmad' for their generous backer support of this 2nd edition book series,2,0,2
+getify/You-Dont-Know-JS,1a6e5ff08f03f7783e4c22d40b707711fa5437c6,Kyle Simpson,2023-03-10T15:43:57Z,Special thanks to 'John Liu' for their generous backer support of this 2nd edition book series,2,0,2
+getify/You-Dont-Know-JS,0184d9fd31a8099b1c46efe65f7f5724b6e6ba20,Kyle Simpson,2023-03-10T15:43:33Z,Special thanks to 'jmarti705' for their generous backer support of this 2nd edition book series,2,0,2
+getify/You-Dont-Know-JS,c158b527478898a5922d93f88c9ea9c558cdfa00,Kyle Simpson,2023-03-10T15:42:49Z,Special thanks to 'IonutBihari' for their generous backer support of this 2nd edition book series,2,0,2
+getify/You-Dont-Know-JS,0557654a53bf5985498a896cd015e0238f14346d,Kyle Simpson,2023-03-10T15:42:21Z,Special thanks to 'Gaspar Radu' for their generous backer support of this 2nd edition book series,2,0,2
+getify/You-Dont-Know-JS,a27e4cf141419e1bb30ac40866f8061b51621d74,Kyle Simpson,2023-03-10T15:41:23Z,Special thanks to 'Coyotiv School of Software Engineering' for their generous backer support of this 2nd edition book series,2,0,2
+getify/You-Dont-Know-JS,2aef93d59bb026229ab9b4975629e9f366670144,Kyle Simpson,2023-03-10T15:40:35Z,Special thanks to 'Appgrader' for their generous backer support of this 2nd edition book series,4,0,4
+getify/You-Dont-Know-JS,ea40deeb49b22f8d623d0fa76a123599624ddcb3,Kyle Simpson,2023-03-10T15:39:53Z,Special thanks to 'Alexandru' for their generous backer support of this 2nd edition book series,2,0,2
+getify/You-Dont-Know-JS,fc160977e17d3524f41920fa40cda242db9e56bc,Kyle Simpson,2023-03-10T15:39:13Z,Special thanks to 'A. Hitchcock' for their generous backer support of this 2nd edition book series,9,0,9
+getify/You-Dont-Know-JS,de245dabf490da647833c59a495a7950a8fddb63,Kyle Simpson,2023-03-10T15:33:48Z,"objects-classes, types-grammar: adding thank-yous for 371 kickstarter backers",20,1,21
+getify/You-Dont-Know-JS,5b3eda57d4175022df2626d94d6a473fdb78359e,Kyle Simpson,2022-10-23T13:09:44Z,Merge pull request #1808 from JEONGJIHUN/2nd-ed  fix typos,17,17,34
+getify/You-Dont-Know-JS,b6e0c9b883effc26aa8e8af0a77dd28a55d9a57e,Kyle Simpson,2022-10-17T22:18:30Z,saving first-edition 'fixed it for you' social media pic,0,0,0
+getify/You-Dont-Know-JS,9562e9d0c73777348512d18cf499edcdfb07fb1e,Kyle Simpson,2022-10-17T22:15:48Z,"objects-classes, ch3: more tweaks for clarity",7,5,12
+getify/You-Dont-Know-JS,f394631a320bb99998fa5220a352a99896c55259,Kyle Simpson,2022-10-16T16:22:01Z,"objects-classes, ch3: added info about nuances with class initialization ordering",40,3,43
+getify/You-Dont-Know-JS,73cac51a8a7ab1456764dbc3b2fd403f3328e561,Kyle Simpson,2022-10-16T16:21:06Z,"types-grammar, ch1: tweak to discussion of invalid places for backticks",1,1,2
+getify/You-Dont-Know-JS,d96b94ed03ebe4ff2ca1b56c683222c4c53eb591,Kyle Simpson,2022-09-19T03:28:01Z,removing sponsor from README,0,10,10
+getify/You-Dont-Know-JS,bc981ac6c579751bddda01183426accee68a9148,JEONGJIHUN,2022-09-13T04:43:12Z,fix(typo): fix typos,17,17,34
+getify/You-Dont-Know-JS,64e955bcf95bde1d0ff629f34d2231974f5f90bc,Kyle Simpson,2022-09-06T12:14:01Z,Merge pull request #1805 from py-cs/patch-1  Update ch1.md,1,1,2
+getify/You-Dont-Know-JS,6f7ae24313bd18f1be17e5591e8d20ef6a6bf051,py-cs,2022-09-06T08:39:22Z,Update ch1.md  Destructuring example fix,1,1,2
+getify/You-Dont-Know-JS,5b32c45a70b0a645bd13dd82708cc6e4cb1c0263,Kyle Simpson,2022-08-28T19:45:57Z,"types-grammar: filling out content in chapter 3, as well as adding related clarifications in chapters 1 and 2",264,19,283
+getify/You-Dont-Know-JS,5f36f4a562683f89c041eca7620764a8be2c2b00,Kyle Simpson,2022-08-28T15:09:32Z,"types-grammar, ch4: chapter summary",5,1,6
+getify/You-Dont-Know-JS,976d472c6d28cfb7c7b7d9481bb104b939033256,Kyle Simpson,2022-08-24T21:45:00Z,"types-grammar, ch4: adding huge section on 'type awareness', including tackling TypeScript",389,6,395
+getify/You-Dont-Know-JS,5d4681918bab94006adf9664840dbebded049f3d,Kyle Simpson,2022-08-24T05:57:13Z,"types-grammar, ch4: starting 'type awareness' discussion",12,0,12
+getify/You-Dont-Know-JS,a2a32fab0865f89a568dad0fe929bf0e58837547,Kyle Simpson,2022-08-24T05:23:31Z,"types-grammar, ch4: adding discussion of more numeric and string coercions, including property access",123,1,124
+getify/You-Dont-Know-JS,2dfe25829fe57e1a4a44fb35515028ecbecd66e2,Kyle Simpson,2022-08-24T05:22:45Z,"types-grammar, ch3: adding footnote reference for auto-boxing in the spec",3,1,4
+getify/You-Dont-Know-JS,0bfbe415d41e4405b4cfdf4d01293f552de4720b,Kyle Simpson,2022-08-24T04:51:59Z,Merge pull request #1802 from kyle1an/patch-1  fix: word redundancy,1,1,2
+getify/You-Dont-Know-JS,6dbb82aaad9a6f9bbe5294d4315785ca344359fa,Mitchell,2022-08-24T04:28:28Z,fix: word redundancy,1,1,2
+getify/You-Dont-Know-JS,07e2271ba9d6442f7796233bd019d1b5f69f9624,Kyle Simpson,2022-08-24T01:32:20Z,"types-grammar, ch4: improving 'to boolean' discussion by also briefly illustrating logical-AND and logical-OR operators",23,7,30
+getify/You-Dont-Know-JS,0e7674e4f4480623bbe67580477295622c598158,Kyle Simpson,2022-08-23T15:43:00Z,"types-grammar, ch1: adding footnote for 'signed zero' wikipedia page",3,1,4
+getify/You-Dont-Know-JS,f3ac3efed3668eb34abc998dddb0f0058963e6fe,Kyle Simpson,2022-08-23T06:11:34Z,"types-grammar, ch4: adding 'boolean gotcha' section",129,0,129
+getify/You-Dont-Know-JS,ebd507ffc01b472f5424257b72ed379dedb7c32b,Kyle Simpson,2022-08-23T05:02:52Z,"types-grammar, ch4: adding 'coercion corner cases' discussion",114,2,116
+getify/You-Dont-Know-JS,33f6bf485be498516035639bba78f6cc7c3a6d35,Kyle Simpson,2022-08-23T04:19:55Z,"types-grammar, ch4: adding 'nullish' equality discussion",68,2,70
+getify/You-Dont-Know-JS,f4ae6d85d4ef86a0eb836b688d6d0c453b5701e6,Kyle Simpson,2022-08-23T03:59:00Z,"types-grammar, ch4: discussing equality, including coercive '==' vs '==='",82,1,83
+getify/You-Dont-Know-JS,6f2cfc1ad51f58e243bd518668e9299301ee3fd9,Kyle Simpson,2022-08-22T19:14:11Z,"types-grammar, ch4: adding 'To Number' discussion, as well as some more details to 'To Primitive' section",142,18,160
+getify/You-Dont-Know-JS,a991880176cef1fcae12d7476d097871326eb9a0,Kyle Simpson,2022-08-22T18:14:49Z,"types-grammar, ch4: adding 'To Primitive' discussion",243,6,249
+getify/You-Dont-Know-JS,2d34934369794a0e241011d2778c240cf53d1ff7,Kyle Simpson,2022-08-22T15:26:10Z,"types-grammar, ch4: rearrangement for coherency",54,37,91
+getify/You-Dont-Know-JS,0717150ea6d00f3054f08e155bc2909723e24cad,Kyle Simpson,2022-08-22T05:35:18Z,"types-grammar, ch4: filling out discussion of explicit vs implicit coercions",203,11,214
+getify/You-Dont-Know-JS,48e94e8e9a25613d53fd6e0196a076535be357db,Kyle Simpson,2022-08-21T18:05:53Z,"types-grammar, ch4: filling out discussion of relational comparision operations",77,4,81
+getify/You-Dont-Know-JS,f0e7f612ffc25565447f9a65cb71ba2934a63c99,Kyle Simpson,2022-08-21T14:56:56Z,"objects-classes, ch4: clarifying nuance of concise methods not being valid with 'new' operator, closes #1801",11,1,12
+getify/You-Dont-Know-JS,9be25c4b66481da25a8c3aacfbcba57323da7fff,Kyle Simpson,2022-08-17T22:57:47Z,"types-grammar, ch4: adding discussion of abstract equality (samevalue, stict, and loose/coercive)",109,0,109
+getify/You-Dont-Know-JS,9fd73003f1e8aa3c2071a3ebf6d5407b09d83c94,Kyle Simpson,2022-08-17T21:42:47Z,"types-grammar, ch4: mentioning the other numeric abstract coercion operations",26,0,26
+getify/You-Dont-Know-JS,591e933c5ccbd196700e01cd434844df3e7a350e,Kyle Simpson,2022-08-17T21:09:55Z,"types-grammar, ch4: adding discussion of 'ToBoolean()' abstract operation",41,0,41
+getify/You-Dont-Know-JS,8090b3e3f9e459ce44faf57370875fe920ea8db1,Kyle Simpson,2022-08-16T04:36:51Z,"types-grammar, ch2: correcting inaccurate discussion around 'Number.EPSILON' and dealing with floating-point skew",30,7,37
+getify/You-Dont-Know-JS,a1d8ddf7f3d172ff2427c840ac1c1cb1d826ba7b,Kyle Simpson,2022-08-14T20:12:39Z,"types-grammar, ch4: starting chapter on coercion",184,4,188
+getify/You-Dont-Know-JS,a665a55903c6e05b1db93f77c3084a64d3d1534e,Kyle Simpson,2022-08-08T19:22:12Z,"types-grammar, ch3: starting chapter 3",36,1,37
+getify/You-Dont-Know-JS,5891f01356840659c9dac13991eddaf97891c90d,Kyle Simpson,2022-08-08T19:19:35Z,objects-classes: fixing foreword formatting/link,4,5,9
+getify/You-Dont-Know-JS,c0ec6109fdd2c11554eef5945c00e9fe0e8591b3,Kyle Simpson,2022-08-08T19:17:21Z,Merge pull request #1798 from rwaldron/rwaldron/2nd-ed/objects-classes/forward  Add foreward for Objects & Classes,13,3,16
+getify/You-Dont-Know-JS,5294de9e71bc40a22140e12858c702c72ca054f5,Kyle Simpson,2022-08-08T18:39:43Z,"types-grammar, ch2: finishing ch2 draft",52,1,53
+getify/You-Dont-Know-JS,7d446e8d5d7a183e47dd6bc609c2bab6c4446cb6,Kyle Simpson,2022-08-08T17:50:40Z,"types-grammar, ch2: fixing discussion of RTL languages and logical character positions",11,4,15
+getify/You-Dont-Know-JS,f383274206b30081bda1c66a55d34643cedd6603,Kyle Simpson,2022-08-08T01:20:57Z,types-grammar: finishing up the text (ch2) for discussing string behaviors,264,30,294
+getify/You-Dont-Know-JS,0a5ffd75f6d5593d55b467e2962daa95a5b8d946,Kyle Simpson,2022-08-06T16:27:48Z,"types-grammar, ch2: adding discussions of mathematical and bitwise operations",144,5,149
+getify/You-Dont-Know-JS,2cb92444a613004fd09a6696a6810f3986a01242,Kyle Simpson,2022-08-05T17:13:18Z,"types-grammar: rearranging some content from ch1 to ch2, filling out more details of string and number behaviors",197,80,277
+getify/You-Dont-Know-JS,6668deaa8a6f45c31e5eaf308d92b858fdbf4261,Kyle Simpson,2022-08-04T05:07:03Z,"types-grammar, ch2: filling in details for number behaviors",64,18,82
+getify/You-Dont-Know-JS,d665229cb8e8661eb5c918365f8e511d2e350466,Kyle Simpson,2022-08-03T15:14:02Z,"types-grammar, ch2: adding a few more bits about strings, sketched out skeleton of 'number behaviors' section",42,4,46
+getify/You-Dont-Know-JS,031f72217fb9e98640966a1253ce564bc8d0b9e6,Kyle Simpson,2022-08-03T14:49:59Z,"types-grammar, ch2: improving discussion of string methods and static utility functions",47,4,51
+getify/You-Dont-Know-JS,667c7416ec9964ec09c230c493a586b81d25b2d3,Kyle Simpson,2022-08-03T14:22:29Z,types-grammar: tweaked note about Twitter and Unicode length counting,8,6,14
+getify/You-Dont-Know-JS,c1e01fc2390002af194053b3969354c5c92410be,Kyle Simpson,2022-08-03T06:01:45Z,types-grammar: fixing issues with how unicode and length computation are discussed,119,45,164
+getify/You-Dont-Know-JS,e510c2c82acef46b4aef75e9fcf6e5be8b1948a0,Kyle Simpson,2022-08-02T22:26:31Z,"types-grammar: adding more clarification around unicode normalization, length computation, etc",133,12,145
+getify/You-Dont-Know-JS,9cfba8f62aa59922daaccfbf7911ce907582584a,Kyle Simpson,2022-08-02T18:35:31Z,"types-grammar, ch2: adding discussion of string behaviors like concatenation and methods",204,13,217
+getify/You-Dont-Know-JS,faa253cf3184607b6dcc1a7bd17dfbcdd2da7678,Kyle Simpson,2022-08-01T06:16:09Z,"types-grammar, ch1: finished chapter 1 draft",110,2,112
+getify/You-Dont-Know-JS,eb0ad3bc77e9db2ec51c9f16fa1e5b225076431a,Kyle Simpson,2022-08-01T05:21:51Z,"types-grammar, ch1: adding more about alternate numeric literal forms",113,15,128
+getify/You-Dont-Know-JS,6d8096404834393866715a50c2becbb7ce3996c1,Kyle Simpson,2022-07-31T22:49:57Z,types-grammar: rearranging to split ch1 and ch2,69,59,128
+getify/You-Dont-Know-JS,4366576f7eecb288ae0d3e192a4f830e5e647475,Kyle Simpson,2022-07-31T22:42:41Z,"types-grammar, ch1: added discussion of parsing-conversion vs coercive-conversion",90,5,95
+getify/You-Dont-Know-JS,2d93ee365fb3a0263d7555b74deb688e55159f19,Kyle Simpson,2022-07-31T21:44:35Z,"types-grammar, ch1: more about template literals",30,5,35
+getify/You-Dont-Know-JS,13771c02b8b8fe4b72a2b621dbb407ac8f8bab7c,Kyle Simpson,2022-07-31T21:27:07Z,"types-grammar, ch1: added discussion of -0 and NaN",80,0,80
+getify/You-Dont-Know-JS,c2d2aef05fb0ed005be57266e79af4830f8c8b7c,Kyle Simpson,2022-07-31T20:48:51Z,"types-grammar, ch1: clarifications to strings discussion",37,25,62
+getify/You-Dont-Know-JS,4c2a73033e6f52aad3a8c4c23ff3776c31c80e98,Kyle Simpson,2022-07-31T20:20:21Z,"types-grammar, ch1: tweaks to nullish and non-nullish discussion",32,6,38
+getify/You-Dont-Know-JS,3260c684bd011f563cae8303f91dbaba448dd379,Kyle Simpson,2022-07-31T16:06:26Z,"types-grammar, ch1: filling out the rest of the discussion on string values",115,13,128
+getify/You-Dont-Know-JS,d1bb48ae208cf87ba6978f3d3baeef665a5a6cfc,Kyle Simpson,2022-07-31T15:12:09Z,objects-classes: tweaking footnote citation style for consistency,7,7,14
+getify/You-Dont-Know-JS,0bb279a04ddfa75dd2651c4c4680e16a3c803ece,Kyle Simpson,2022-07-30T21:39:34Z,"types-grammar, ch1: adding a bunch of text about strings",63,1,64
+getify/You-Dont-Know-JS,afe159ab86570aef1e96bdf2b160c52eb8bf5b58,Kyle Simpson,2022-07-30T20:20:33Z,"types-grammar, ch1: add text about boolean values",23,1,24
+getify/You-Dont-Know-JS,e23a52aae02d619c876d0acd87405f7903e1853d,rwaldron,2022-07-29T18:38:19Z,Add foreward for Objects & Classes,13,3,16
+getify/You-Dont-Know-JS,a3909418ac969e8233b6080c294e575b33076d36,Kyle Simpson,2022-07-29T15:19:29Z,"types-grammar, ch1: discussion of nullish values and operations",82,7,89
+getify/You-Dont-Know-JS,da0a63602a98bbf8bee62750fcb44343234967d7,Kyle Simpson,2022-07-29T00:07:21Z,"types-grammar, ch1: added tons of text about numbers, IEEE-754, etc",283,6,289
+getify/You-Dont-Know-JS,00641769291d569a63a53fc5f90f29e206b8a822,Kyle Simpson,2022-07-28T15:28:52Z,"objects-classes, ch3+ch4: add brief mention of how ESM and 'class' code run in strict-mode by default",9,3,12
+getify/You-Dont-Know-JS,a65abe878ca3a6740b65bff82d6d86e29460a09d,Kyle Simpson,2022-07-24T15:50:07Z,"types-grammar, ch1: starting initial chapter draft, about primitive value types",130,425,555
+getify/You-Dont-Know-JS,ef5eb7346169fa87ad99f3b86588370030fc7c17,Kyle Simpson,2022-07-24T14:58:48Z,objects-classes: adding TODOs for possible future draft work,13,2,15
+getify/You-Dont-Know-JS,28531b422a980bc43cc455071bf94704d09be9af,Kyle Simpson,2022-07-23T18:36:24Z,"objects-classes, ch5: finishing chapter draft",340,3,343
+getify/You-Dont-Know-JS,041ef85a56a69ad2cd27ea784585e19cefe27ef9,Kyle Simpson,2022-07-22T14:58:27Z,"objects-classes, ch5: adding discussion of deconstructing the idea of a constructor",231,0,231
+getify/You-Dont-Know-JS,ec2e5b615236c63386d9424436225b22b6bdbaca,Kyle Simpson,2022-07-21T23:08:12Z,"objects-classes, ch5: starting the chapter draft",38,0,38
+getify/You-Dont-Know-JS,c517cddac8b17270b8a225b3044f6a5aa457f2c2,Kyle Simpson,2022-07-20T02:40:47Z,"objects-classes, ch4: finishing chapter 4 draft",45,4,49
+getify/You-Dont-Know-JS,38ce0d62264b3d53490e79b23a40e3661507f0c6,Kyle Simpson,2022-07-18T22:30:36Z,"objects-classes, ch4: text discussing indirect this assignment",127,10,137
+getify/You-Dont-Know-JS,fe9d4dd43bd89c34f2f370cdd1f7f56ecf1f1892,Kyle Simpson,2022-07-18T20:15:10Z,"objects-classes, ch4: discussing arrow functions and determining how/when to this-bind",717,3,720
+getify/You-Dont-Know-JS,94117e816e064d0a911ed227ffb07bf1302a91eb,Kyle Simpson,2022-07-17T23:11:32Z,"objects-classes, ch4: discussing the 4 'this' assignment rules",306,6,312
+getify/You-Dont-Know-JS,e5805baa0498d2bce115767080702200fa181eba,Kyle Simpson,2022-07-17T16:14:05Z,"objects-classes, ch4: added discussion of dynamic context",22,4,26
+getify/You-Dont-Know-JS,3af638733440140293e4bc4c755d5cf02ac46a2f,Kyle Simpson,2022-07-16T17:42:28Z,"objects-classes, ch4: discussion of 'this' awareness",73,0,73
+getify/You-Dont-Know-JS,7a106db569fa64cedeeec8b95cd5048bae34637e,Kyle Simpson,2022-07-16T17:24:40Z,"fixes weird/duplicate wording, closes #1796",1,1,2
+getify/You-Dont-Know-JS,e909d382e7dd902e2826857412f28054120b7311,Kyle Simpson,2022-07-16T14:43:27Z,"objects-classes, ch3: explaining the 'fix' for the statics subclass gotcha",30,4,34
+getify/You-Dont-Know-JS,25c405949ae4a9a69298752de2e958c93fc37a2b,Kyle Simpson,2022-07-16T13:48:07Z,"objects-classes, ch3: adding a bit more to the final full 'class' example",47,9,56
+getify/You-Dont-Know-JS,ebac5cc7e4aaf633b1d442184659a2ddbd165dc3,Kyle Simpson,2022-07-16T03:09:51Z,"objects-classes, ch3: adding text about 'isPrototypeOf(..)'",53,22,75
+getify/You-Dont-Know-JS,784a92dc89d67432ede51369cd7f98d9b8c0633c,Kyle Simpson,2022-07-15T23:30:28Z,"objects-classes, ch3: adding full 'class' example, finishes chapter 3 first-draft",140,1,141
+getify/You-Dont-Know-JS,45f68bf31c855ed8d82d2d970cd2657fe16930ce,Kyle Simpson,2022-07-15T23:19:27Z,"objects-classes, ch3: adding discussion of 'new.target', 'instanceof', and '.constructor', for instance introspections",73,1,74
+getify/You-Dont-Know-JS,b012697a5bd0c20994b28f79bb312077411007e2,Kyle Simpson,2022-07-15T21:50:49Z,"objects-classes, ch3: changing a bunch of code examples to be consistent with the rest of the chapter",187,170,357
+getify/You-Dont-Know-JS,2328050a5a4ff8ac1548dd478127c46fdd9945b7,Kyle Simpson,2022-07-15T21:04:47Z,"objects-classes, ch3: fixing inconsistency/confusion with privates/statics text, including changing code examples",215,66,281
+getify/You-Dont-Know-JS,8b2db22d8d442146929f347a95c84c4e96069c90,Kyle Simpson,2022-07-15T18:08:59Z,"objects-classes, ch3: adding lots of text about class privates",184,0,184
+getify/You-Dont-Know-JS,d54f53187978c2037ee311c2427d0d3c5ab579b5,Kyle Simpson,2022-07-15T15:56:59Z,"objects-classes, ch3: added a bunch of text about class statics",173,11,184
+getify/You-Dont-Know-JS,bc1ae62073eda774a0f97bfc46197a1b55757f15,Kyle Simpson,2022-07-15T13:45:41Z,"objects-classes, ch3: some text cleanup",10,14,24
+getify/You-Dont-Know-JS,0858f2141ed75dc8ffd5e827bfcf675d88302bd3,Kyle Simpson,2022-07-15T02:27:23Z,"objects-classes, ch3: added opinionated and somewhat disputed 'avoid this' section",71,1,72
+getify/You-Dont-Know-JS,1d2aa0d1d2f0a66bed2d56140db3792f8c8a383c,Kyle Simpson,2022-07-15T01:51:29Z,"objects-classes, ch3: a lot more text about class inheritance/polymorphism/etc",292,28,320
+getify/You-Dont-Know-JS,36c987cdf77ea2f2396b66a852d3aa94c93e3001,Kyle Simpson,2022-07-14T14:17:48Z,"objects-classes, ch3: more text about the philosophy of class-orientation",49,2,51
+getify/You-Dont-Know-JS,e8355dafc5ffdf3d730d5073cbdf006dcdb8066a,Kyle Simpson,2022-07-14T03:25:56Z,"objects-classes, ch3: filling out more text",168,2,170
+getify/You-Dont-Know-JS,df82d90f3be72e711a084902c57456efca1d2641,Kyle Simpson,2022-07-13T19:22:50Z,"objects-classes, ch3: starting work on the chapter introducing classes",68,17,85
+getify/You-Dont-Know-JS,537e9a0024280e5b654994562a5797014407f191,Kyle Simpson,2022-04-10T15:37:20Z,"tweaking some wording around integer-looking strings as property names, to be more precise (per #1791)",12,11,23
+getify/You-Dont-Know-JS,0d68246e0d707924e0026deb50872db5106c027a,Kyle Simpson,2022-04-09T13:55:04Z,tweaking affiliate link again,2,2,4
+getify/You-Dont-Know-JS,7164f79c8cc9cb7c82c52fb84f437665bc78035d,Kyle Simpson,2022-03-09T22:02:19Z,Merge pull request #1785 from adamyala/2nd-ed  fix function capitalization in apA.md,6,6,12
+getify/You-Dont-Know-JS,4f7fe65c2eabf9de9fa34f5c40a55c736363b9bb,Adam Yala,2022-03-09T20:03:24Z,fix function capitalization in apA.md,6,6,12
+getify/You-Dont-Know-JS,fcbd9b8d965f9c97508906c5739d4e919b067b0d,Kyle Simpson,2022-02-17T18:32:36Z,"FEM logo: per brand guidelines, updating black color to #e3e3e3",8,8,16
+getify/You-Dont-Know-JS,0ce55a933a3fed91ef0cc5208d31f79d8cd55950,Kyle Simpson,2022-02-17T15:59:51Z,README: correcting affiliate link,2,2,4
+getify/You-Dont-Know-JS,bae21ee2c21a6600c90f951ea9e58a7a9e3b72c2,Kyle Simpson,2022-02-16T20:46:19Z,README: updating with sponsor logos,144,4,148
+getify/You-Dont-Know-JS,58262fbe480b2bb5cae780bdcf67ca580bee091e,Kyle Simpson,2022-02-07T18:14:12Z,"get-started, ch2: fixed minor typo",1,1,2
+getify/You-Dont-Know-JS,7d6e458026f718e6a63f14262657af02ae01e5bb,Kyle Simpson,2022-02-07T18:12:45Z,"objects-classes, ch2: minor updates",3,3,6
+getify/You-Dont-Know-JS,f44ffc57f9af404d52212b8280a9cee13e95d574,Kyle Simpson,2022-01-26T18:53:48Z,objects-classes: more work on ch2,203,16,219
+getify/You-Dont-Know-JS,e1c033df32725340bbb57e0eddf214924c4501cf,Kyle Simpson,2022-01-26T18:53:48Z,objects-classes: more work on ch2,203,16,219
+getify/You-Dont-Know-JS,5c9d08867653965f5be96770ddae18cfb376b71f,Kyle Simpson,2022-01-26T17:13:25Z,objects-classes: finishing draft of first chapter,155,7,162
+getify/You-Dont-Know-JS,70914d1de6040b9fd39aea645c24f900e0279326,Kyle Simpson,2022-01-26T15:07:22Z,Merge pull request #1777 from anavalo/patch-1  Object.entries(myObj) typo,1,1,2
+getify/You-Dont-Know-JS,1cf62570dd0ae3ccbe6d520653afef3f9e844152,Tasos Tsournos,2022-01-26T12:06:21Z,"Update ch1.md  Line 362: `Object.entries(myObj)` should return `[ [""favoriteNumber"",42], [""isDeveloper"",true], [""firstName"",""Kyle""] ]`",1,1,2
+getify/You-Dont-Know-JS,57e740a965118a71fa9d0ce4ccad75bb7a8ad966,Kyle Simpson,2022-01-25T23:43:56Z,objects-classes: splitting out some ch1 content into ch2,251,226,477
+getify/You-Dont-Know-JS,251cc3e8dd54f16271b9d981525571c2819569c5,Kyle Simpson,2022-01-25T22:17:02Z,objects-classes: almost finished with ch1 draft,281,7,288
+getify/You-Dont-Know-JS,5f1f428134d80097f9b73f4a3ed3a3de79367c8f,Kyle Simpson,2022-01-25T17:17:40Z,objects + classes: still more content for ch1,137,1,138
+getify/You-Dont-Know-JS,c828fe7cb30e1b7123716985fb4ad4e094342564,Kyle Simpson,2022-01-25T16:01:52Z,README: adding link to in-progress 'objects and classes' book,16,16,32
+getify/You-Dont-Know-JS,e17d9b19a099534a2bbccf8477dfeb4e01eadc02,Kyle Simpson,2022-01-24T23:30:23Z,objects-classes: still more work on ch1,255,12,267
+getify/You-Dont-Know-JS,6727bcc73fd340a935f269207d67c3625d392eff,Kyle Simpson,2022-01-24T17:28:14Z,objects-classes: more work on ch1,82,6,88
+getify/You-Dont-Know-JS,e5960d27f2d1df569ec7d12cdccea728d70217a8,Kyle Simpson,2022-01-24T07:20:05Z,objects-classes: starting ch1,36,32,68
+getify/You-Dont-Know-JS,4c6b88f842694b3784b32024b552b7f07fb5f1fa,Kyle Simpson,2021-11-02T15:58:59Z,removing kickstarter banner,0,12,12
+getify/You-Dont-Know-JS,597fb74634b5692de97580055768df50d6eeb74c,Kyle Simpson,2021-09-16T19:40:49Z,updating kickstarter tracking links,3,3,6
+getify/You-Dont-Know-JS,acd1c5c25345528d296a2c41ca1913ec6fcf551d,Kyle Simpson,2021-09-16T19:39:29Z,adding kickstarter tracking graphic,2,0,2
+getify/You-Dont-Know-JS,ffac25c9abf132d9c858eb5a17bbfa0aff6f9000,Kyle Simpson,2021-09-15T03:50:30Z,adding kickstarter banner to main readme,10,0,10
+getify/You-Dont-Know-JS,8861041133f496edce0d03885e2e998d50c3414a,Kyle Simpson,2020-12-30T17:33:35Z,"get started: fixing references to images as png instead of svg (for dark mode), closes #1718",6,6,12
+getify/You-Dont-Know-JS,8a1cc1170f0e87d61b1d7add2b57561bc37f74e2,Kyle Simpson,2020-12-11T17:10:37Z,updating images to look correct even with github dark-mode turned on,1,0,1
+getify/You-Dont-Know-JS,74a7f6ab97198da2d20be135c63bedf2c853bfb0,Kyle Simpson,2020-08-06T02:04:52Z,Merge pull request #1665 from henrebotha/patch-1  Fix grammar,3,3,6
+getify/You-Dont-Know-JS,3fad40656b24578071d29af8d23fdf651316568a,Kyle Simpson,2020-08-06T02:02:41Z,"get started, apB: fixing mistake in solution code, closes #1678",1,1,2
+getify/You-Dont-Know-JS,4fdf7e0225b8c405f70fbb57594dd305646216c7,Henré Botha,2020-05-04T14:10:06Z,Fix grammar,3,3,6
+getify/You-Dont-Know-JS,b9563516ebaeddc2a1cab80e75120b2bd7e8449d,Kyle Simpson,2020-05-01T15:01:45Z,Merge pull request #1661 from hekkim/patch-1  Rearrange an order of TOC in get-started,1,1,2
+getify/You-Dont-Know-JS,5a94a7846ec95e2718d7323e531fa8b58dc2cb72,Heecheon Kim,2020-05-01T06:44:16Z,Rearrange an order of TOC in get-started,1,1,2
+getify/You-Dont-Know-JS,b3f7ca4980cd7b45f59a1cff2215f9f5994a32bb,Kyle Simpson,2020-04-27T14:50:47Z,Merge pull request #1658 from Li-YangZhong/2nd-ed  one word is missing from chapter 6,1,1,2
+getify/You-Dont-Know-JS,119cc325f16415b6764a081ab20813295ef56682,Li-YangZhong,2020-04-27T06:29:24Z,"one word is missing from chapter 6  Sentence ""Hopefully by you feel like you're standing on much more solid ground with understanding lexical scope. "" change to ""Hopefully by now you feel like you're standing on much more solid ground with understanding lexical scope. ""  One word ""now"" is missing from the original sentence in this chapter",1,1,2
+getify/You-Dont-Know-JS,0411e0d0cfac5e0c4d165a8d2a99cbfe70d1eda3,Kyle Simpson,2020-04-02T02:24:07Z,"scope and closures: apA, fixing minor mistake in code comments, closes #1651",1,2,3
+getify/You-Dont-Know-JS,529671508dde28147221addbf4038bf6e2f9db31,Kyle Simpson,2020-03-27T11:38:50Z,Merge pull request #1650 from RichardNilsson/patch-1  Update ch1.md,1,1,2
+getify/You-Dont-Know-JS,1d80dca433619f29d0afd27aea0fdb0ce2cde5a6,Richard,2020-03-27T10:38:45Z,Update ch1.md,1,1,2
+getify/You-Dont-Know-JS,0de72ebb88856a1858b1d206dd7306c7a6598634,Kyle Simpson,2020-03-27T10:32:49Z,more removal of first edition content,3,3,6
+getify/You-Dont-Know-JS,cb2a49e27dc893d1356f809990145dd48de686b2,Kyle Simpson,2020-03-27T10:26:16Z,es.next and beyond: removing all first edition text,3,8689,8692
+getify/You-Dont-Know-JS,545b7aad3824d57b1b76e192d4ec6d0d2254d828,Kyle Simpson,2020-03-27T10:23:56Z,objects and classes: removing more first edition text,0,264,264
+getify/You-Dont-Know-JS,0424741889ae8e175a4c899cc82dd91c409273f2,Kyle Simpson,2020-03-27T10:23:11Z,sync and async: removing all first edition text,3,8761,8764
+getify/You-Dont-Know-JS,733d19f6cac27d9bc74a17cdd9a81dcc5bad7d24,Kyle Simpson,2020-03-27T10:20:48Z,types and grammar: removing all first edition text,3,5228,5231
+getify/You-Dont-Know-JS,6af97c8ca7d08ff07666ba767d5c72a0a9cc37cd,Kyle Simpson,2020-03-25T16:02:16Z,Merge pull request #1648 from bmusin/patch-1  Typo: insert omitted 'function' keyword,1,1,2
+getify/You-Dont-Know-JS,7dec66e0f74118c11a0af587d5714e10c62d5852,Bulat Musin,2020-03-25T08:12:37Z,Typo: insert omitted 'function' keyword,1,1,2
+getify/You-Dont-Know-JS,f6e1e05bc2fb212bc38acfeb7461804d48975728,Kyle Simpson,2020-03-23T15:15:58Z,"scope and closures: ch8, fixing tech mistake, closes #1646",2,2,4
+getify/You-Dont-Know-JS,c3dcc597dc42bf38fbcf74ab00a196a64f9945b5,Kyle Simpson,2020-03-20T21:31:34Z,Update README.md,8,4,12
+getify/You-Dont-Know-JS,674d1d5576ce538b30c012ccc33f28c6c8719d17,Kyle Simpson,2020-03-20T21:24:59Z,Update ch1.md,0,299,299
+getify/You-Dont-Know-JS,eea17e6fa7eca451635cf59fa7e871942aacbc6a,Kyle Simpson,2020-03-20T21:24:28Z,Delete fig6.png,0,0,0
+getify/You-Dont-Know-JS,6bd2bbdfc8ce677f9757c516554efcf541696096,Kyle Simpson,2020-03-20T21:24:20Z,Delete fig5.png,0,0,0
+getify/You-Dont-Know-JS,dc453b93088879cfc7d1c6319b238afa9c297513,Kyle Simpson,2020-03-20T21:24:11Z,Delete fig4.png,0,0,0
+getify/You-Dont-Know-JS,57ad5c51bbf5acac4ff650835051846aff73e03b,Kyle Simpson,2020-03-20T21:24:02Z,Delete fig3.png,0,0,0
+getify/You-Dont-Know-JS,9dc4283372934b66cdbd284afe8886adc5d8916e,Kyle Simpson,2020-03-20T21:23:53Z,Delete fig2.png,0,0,0
+getify/You-Dont-Know-JS,8e21c6ee14c2f45e48b86bc0031823d2d3616082,Kyle Simpson,2020-03-20T21:23:45Z,Delete fig1.png,0,0,0
+getify/You-Dont-Know-JS,aa7042ff9f623e686338e0c408c2f3e401b9e45a,Kyle Simpson,2020-03-20T21:23:33Z,Delete ch6.md,0,941,941
+getify/You-Dont-Know-JS,ff5815a2666d3be77896f5b1650678e3f571df07,Kyle Simpson,2020-03-20T21:23:20Z,Delete ch5.md,0,776,776
+getify/You-Dont-Know-JS,e18f76b35e4fa2560e984b016516fff328c97bf3,Kyle Simpson,2020-03-20T21:23:08Z,Delete ch4.md,0,502,502
+getify/You-Dont-Know-JS,468944b1d4ef2da09cd5ee2aadbced6363d6b546,Kyle Simpson,2020-03-20T21:22:49Z,Delete ch3.md,0,970,970
+getify/You-Dont-Know-JS,28519b43c06dc247e18629ef54718d2090c3ce38,Kyle Simpson,2020-03-20T21:22:37Z,Delete ch2.md,0,881,881
+getify/You-Dont-Know-JS,2a740fe64e8c9a554d35b49cb0ec27ba957f99d1,Kyle Simpson,2020-03-20T21:22:08Z,Update ch1.md,1,1,2
+getify/You-Dont-Know-JS,071329089a85ac119afbdffca381b318a94e21d0,Kyle Simpson,2020-03-20T21:21:52Z,Update README.md,2,7,9
+getify/You-Dont-Know-JS,3147cdabf7cb1d5b77cce9f4842ce551da74d895,Kyle Simpson,2020-03-20T21:20:26Z,Update README.md,4,4,8
+getify/You-Dont-Know-JS,daca819734703f2c61df7f0507417a0370b5e30d,Kyle Simpson,2020-03-19T16:02:31Z,"scope and closures: ch8, fixing mistaken word choice",1,1,2
+getify/You-Dont-Know-JS,680703646a53d47ab2a88e796b76253d0e32dbfc,Kyle Simpson,2020-03-18T00:12:13Z,"scope and closures: apA, fixing technical mistake",1,1,2
+getify/You-Dont-Know-JS,671e4b8ff53a325e68b0b7f7015ac797ee5e8cf9,Kyle Simpson,2020-03-17T22:48:14Z,"scope and closures: apA, fixing typo",1,1,2
+getify/You-Dont-Know-JS,7098c8bcbd1697ea44b8a76255e475eeaeba772e,Kyle Simpson,2020-03-17T15:21:00Z,"get started: ch1, fix typo, per #1643",1,1,2
+getify/You-Dont-Know-JS,e0accd5884a21de9c7e4c7f32f098756d44b02a2,Kyle Simpson,2020-03-15T16:37:01Z,"adding cover images, removing links to not-yet-written titles",7,4,11
+getify/You-Dont-Know-JS,389e16dd859ef3f464b8b56ece2a95347b595ef2,Kyle Simpson,2020-03-08T16:09:03Z,"scope and closures: apA, fixing minor mistake per @joshuous",1,1,2
+getify/You-Dont-Know-JS,5731274916f3a4925bb7341fb212931a5ccfce4b,Kyle Simpson,2020-03-08T15:58:28Z,Merge pull request #1640 from MustLearnMore/patch-1  Update ch1.md,1,1,2
+getify/You-Dont-Know-JS,ec04cebdce96269b96ed6b1ac9903debbf4ab140,MustLearnMore,2020-03-08T13:23:42Z,"Update ch1.md  Line 44 typo (""revist"" should be ""revisit"")",1,1,2
+getify/You-Dont-Know-JS,c5c7fb84d1313d416f1dee2027738dc658cac807,Kyle Simpson,2020-03-05T02:31:44Z,scope and closures: adding cover image,8,0,8
+getify/You-Dont-Know-JS,b996159b3d8be7437eb8b91040a8a826ad52ed52,Kyle Simpson,2020-03-05T01:02:15Z,scope and closures: more line overflow typesetting,2,2,4
+getify/You-Dont-Know-JS,a8178656e91ed270fdb241b55d248bd17819f3ae,Kyle Simpson,2020-03-04T23:50:04Z,scope and closures: fixing uncaught typos,8,8,16
+getify/You-Dont-Know-JS,f77bc4bfb5f6656bfe1616c7b21bc07d84579090,Kyle Simpson,2020-03-04T21:08:54Z,scope and closures: final typesetting,108,205,313
+getify/You-Dont-Know-JS,e8f3a064a0dac4befa527bfa2a921a17c73da01a,Kyle Simpson,2020-03-04T14:30:01Z,scope and closures: more line overflow typesetting,17,17,34
+getify/You-Dont-Know-JS,39aadb4a6a0ddbe176e16d9cca8658ac3ea9f22e,Kyle Simpson,2020-03-04T13:52:55Z,scope and closures: initial typesetting for overflow lines,69,47,116
+getify/You-Dont-Know-JS,2dfb4af4afaffe0396d111bb0b7c8ddbc1c83db8,Kyle Simpson,2020-03-04T02:27:54Z,"scope and closures: apB, final readability tweaks",32,34,66
+getify/You-Dont-Know-JS,fb7c221c75fe9ccc872a03e342dad75b2383a197,Kyle Simpson,2020-03-03T22:27:30Z,"scope and closures: apA, final readability tweaks",119,118,237
+getify/You-Dont-Know-JS,bc11da0b7c53edba7e338e42417318799c8dd6d2,Kyle Simpson,2020-03-03T18:58:46Z,"scope and closures: ch8, final readability tweaks",35,27,62
+getify/You-Dont-Know-JS,4a72264fb323caa62e18e71b1cf25176dd44d901,Kyle Simpson,2020-03-03T18:34:02Z,"scope and closures: ch7, final readability tweaks",32,32,64
+getify/You-Dont-Know-JS,9a8feebdb7ff9fe3c2be1d3b73bd63a243781ef5,Kyle Simpson,2020-03-03T17:32:22Z,"scope and closures: ch6, final readability tweaks",71,59,130
+getify/You-Dont-Know-JS,3d812472383e8410e1d5fe59bee558bcdb603bf3,Kyle Simpson,2020-03-03T16:36:55Z,"scope and closures: ch5, final readability tweaks",78,63,141
+getify/You-Dont-Know-JS,d7d11d10878370e8da2c78bc2612d17f1cf534dd,Kyle Simpson,2020-03-03T15:51:16Z,"scope and closures: ch4, final readability tweaks",64,56,120
+getify/You-Dont-Know-JS,68bb7666fd4dd3e1b0143c752d2fd064cfc66745,Kyle Simpson,2020-03-03T15:06:06Z,"scope and closures: ch3, final readability tweaks",41,41,82
+getify/You-Dont-Know-JS,d7fbc9c8f1d6dad64c597ffec891a68601c9e5fe,Kyle Simpson,2020-03-03T13:23:10Z,"scope and closures: ch2, final readability tweaks",66,54,120
+getify/You-Dont-Know-JS,2adf637f6b8547a198c9c9b3c06e9582252fa31c,Kyle Simpson,2020-03-03T11:42:51Z,"scope and closures: ch1, typo fix",1,1,2
+getify/You-Dont-Know-JS,3577d07cf75b5a66585205261e2c1af18f24786c,Kyle Simpson,2020-03-03T05:36:57Z,"scope and closures: ch4, adding brief section about DOM element auto-globals",27,0,27
+getify/You-Dont-Know-JS,f90658fae043fd6848578c57884c1f5a7ceb8e24,Kyle Simpson,2020-03-03T05:13:20Z,"scope and closures: ch1, final readability tweaks",52,45,97
+getify/You-Dont-Know-JS,36ecbaece58914128671893af112cdfe4f85fd24,jtassia,2020-03-03T00:00:32Z,"scope and closures: copy edits per @jtassia, closes #1627 closes #1628 closes #1629 closes #1630 closes #1631 closes #1633 closes #1634 closes #1635 closes #1636 closes #1637 closes #1638",376,393,769
+getify/You-Dont-Know-JS,042b97e28e2126949268d2e70617c869d556b8e8,Kyle Simpson,2020-03-02T13:10:18Z,"scope and closures: apA, revisions per editorial feedback, closes #1632",77,11,88
+getify/You-Dont-Know-JS,1547d389c698e3c3339bd706dc9c0bbc899f721a,Kyle Simpson,2020-03-01T13:28:42Z,"scope and closures: ch8, revisions per editorial feedback, closes #1612",40,27,67
+getify/You-Dont-Know-JS,6c9c9534642bb37930c55fdf4b0013fb788616fd,Kyle Simpson,2020-03-01T13:27:59Z,scope and closures: removing 'wip' notices,4,12,16
+getify/You-Dont-Know-JS,175db4c34189a2e8f81a7c2c66e048b32db75d91,Kyle Simpson,2020-03-01T12:04:47Z,"scope and closures: ch7, tweaking wording in summary",3,3,6
+getify/You-Dont-Know-JS,a98fc239b1b41aa037ca389fb350900dc1838088,Kyle Simpson,2020-02-29T12:49:06Z,"scope and closures: ch7, finishing revisions per editorial feedback, closes #1610",21,19,40
+getify/You-Dont-Know-JS,0bd3d05f946308677c457102cc55e235d6b22e84,Kyle Simpson,2020-02-29T12:18:45Z,"scope and closures: ch7, rewording and clarifications per editorial #1610",45,54,99
+getify/You-Dont-Know-JS,e6854d74a96761f50243f76ee46fc09c005f0919,Kyle Simpson,2020-02-27T18:00:19Z,"get started: ch2, minor readabiliity tweaks",6,6,12
+getify/You-Dont-Know-JS,fe36a682076a8b1480bac8b1a59ad41da9e26161,Kyle Simpson,2020-02-23T18:01:50Z,"scope and closures: apB, adding final 'modules' exercise and solution",190,7,197
+getify/You-Dont-Know-JS,b9f602070e6e154c2500cbabc1f2b1a27b7d5820,Kyle Simpson,2020-02-23T17:27:22Z,"scope and closures: apB, adding 'closure part 1' exercise and solution",168,16,184
+getify/You-Dont-Know-JS,609c5136465999e8b1d811291ac969dc7880043e,Kyle Simpson,2020-02-23T15:13:10Z,"scope and closures: ch5, adding a bit of discussion on variable vs function hoist overriding",24,1,25
+getify/You-Dont-Know-JS,e77b89a4d66b33a248bced229a9e9d45820433a9,Kyle Simpson,2020-02-23T14:23:45Z,"scope and closures: apB, adding 'closure' part 2 and 3 exercises, plus solutions",275,0,275
+getify/You-Dont-Know-JS,ad4b3e84d20a2b50917f07011192c95c3633190f,Kyle Simpson,2020-02-23T02:32:29Z,"scope and closures: apB, added 'buckets of marbles' exercise and solution",79,1,80
+getify/You-Dont-Know-JS,68a4589fd5343aa9b257519252bbf9bdf72a6567,Kyle Simpson,2020-02-22T21:52:35Z,scope and closures: fixing several cross-chapter references,8,8,16
+getify/You-Dont-Know-JS,b2bced661b66a5b6b5d1146eec2e313d2a8e6716,Kyle Simpson,2020-02-22T21:26:19Z,"scope and closures: apA, finishing appendix with 'classic module variations' section",110,3,113
+getify/You-Dont-Know-JS,450e50ca942e376c43e87307da0bd0e21acd0a06,Kyle Simpson,2020-02-22T20:33:22Z,"scope and closures: apA, adding 'sync callbacks closure' section",148,2,150
+getify/You-Dont-Know-JS,c68bc9490d3aa0a3095d0836fda692b614fdd330,Kyle Simpson,2020-02-22T10:20:40Z,"get started: ch2, fixing confusion around using a variable name like 'name', which is a special corner case in the global scope, closes #1609",12,12,24
+getify/You-Dont-Know-JS,cd3fe55aeac8b9d2d0c487d0619656ced1a82cb0,Kyle Simpson,2020-02-22T09:49:24Z,"scope and closures: apA, adding 'tdz' section",56,1,57
+getify/You-Dont-Know-JS,313f66058896ad37a13f60b78061b704172361a4,Kyle Simpson,2020-02-22T08:02:32Z,"scope and closures: apA, adding 'var vs let' section",143,3,146
+getify/You-Dont-Know-JS,c7575c9434c4b821b4a90751f2323d96259454d2,Kyle Simpson,2020-02-21T14:31:53Z,"scope and closures: apA, added 'hoisting' section",134,0,134
+getify/You-Dont-Know-JS,6eff42f5a883fe0cfbb467e1a8a8d839b4988380,Kyle Simpson,2020-02-21T14:04:55Z,"scope and closures: apA, adding 'iife variations' section",52,2,54
+getify/You-Dont-Know-JS,ff1f2356c04355dfc0429b84ac502969de3f886c,Kyle Simpson,2020-02-21T13:49:01Z,"scope and closures: apA, adding 'anonymous vs named' and 'arrow functions' sections",203,2,205
+getify/You-Dont-Know-JS,b79ea170e1343e0c39e9fd1f6bf697475d72ff9b,Kyle Simpson,2020-02-21T12:26:50Z,"scope and closures: apA, revisions for readability",5,5,10
+getify/You-Dont-Know-JS,52e2a62e7a25e4db95112b2eb22cc30d48d173e6,Kyle Simpson,2020-02-21T11:44:40Z,"scope and closures: apA, improving intro",6,2,8
+getify/You-Dont-Know-JS,a0748c63dcd74e57688f304b2170b132a793edf2,Kyle Simpson,2020-02-21T08:24:17Z,"scope and closures: apA, adding 'implied scope' section",161,6,167
+getify/You-Dont-Know-JS,a52c794a308a218dee2cadeaae543451faf2a290,Kyle Simpson,2020-02-21T08:23:52Z,"scope and closures: ch8, minor readability tweaks",2,2,4
+getify/You-Dont-Know-JS,85a71d7645110937ce3336aa6a811edf8b4be941,Kyle Simpson,2020-02-20T11:22:48Z,"scope and closures: ch7, more revisions",48,34,82
+getify/You-Dont-Know-JS,8034b3253ecfa59fa17da206fdcc3ce0b4e20da1,Kyle Simpson,2020-02-20T08:07:24Z,"scope and closures: ch7, tweaks for readability, fixes and clarifications",80,76,156
+getify/You-Dont-Know-JS,ee75cac5eae792ddfe03af767f3c672c7675ea8d,Kyle Simpson,2020-02-19T19:56:13Z,"scope and closures: apA, laying out expected structure",42,1,43
+getify/You-Dont-Know-JS,f6a7b3c8a32679b0b99c7ffef4d0300ac205ebe5,Kyle Simpson,2020-02-19T10:34:42Z,"scope and closures: ch2, tweaking size of figure 3",1,1,2
+getify/You-Dont-Know-JS,aae04706be13c6ed3ccad8a7c2caa6fe35034703,Kyle Simpson,2020-02-19T09:00:54Z,scope and closures: small tweaks to Foreword,2,3,5
+getify/You-Dont-Know-JS,6d97b9e715943276656bbbe3fbbf9cb776653ac7,Kyle Simpson,2020-02-19T08:12:08Z,"scope and closures: ch8, finishing with summary 'out of scope' section",9,3,12
+getify/You-Dont-Know-JS,99ba0204755776a022ba15b6099cbde06852dfca,Kyle Simpson,2020-02-19T07:54:27Z,"scope and closures: ch8, filling out 'es modules' section",118,3,121
+getify/You-Dont-Know-JS,fa39379aa220cf1c134583285e7111f746eeb916,Kyle Simpson,2020-02-19T07:54:03Z,scope and closures: fixing references to strict-mode for consistency,7,7,14
+getify/You-Dont-Know-JS,b692133b5920f8b7fce7510815a1ec3de344a61a,Kyle Simpson,2020-02-19T06:23:06Z,"scope and closures: ch8, adding 'node commonjs module' section",100,23,123
+getify/You-Dont-Know-JS,412b99cb911d4475d34e28afe284d09c7c0850c5,Kyle Simpson,2020-02-18T21:04:35Z,"scope and closures: ch8, filling out 'what is a module' section",125,262,387
+getify/You-Dont-Know-JS,01fa4468b3764f22f2e82b45cc5e036c046cff49,Kyle Simpson,2020-02-18T07:08:52Z,"scope and closures: ch8, intro and encapsulation+POLE sections",55,18,73
+getify/You-Dont-Know-JS,b3c3f8f61de0f19f3669b17b3ca000c81469dd8a,Kyle Simpson,2020-02-17T14:47:13Z,"scope and closures: ch7, finishing summary section",12,2,14
+getify/You-Dont-Know-JS,abb7bbc33e2296c2c91f0b277f78374253800a89,Kyle Simpson,2020-02-17T14:30:31Z,"scope and closures: ch7, completing first pass of 'why closures?' section",129,2,131
+getify/You-Dont-Know-JS,18f0812715a4d2352947c491680b188a3eb12afb,Kyle Simpson,2020-02-17T09:51:51Z,"scope and closures: ch7, rewording for clarity",8,8,16
+getify/You-Dont-Know-JS,711618bfd685325b7d04b8b38d9e2481f357ef55,Kyle Simpson,2020-02-17T09:38:21Z,"scope and closures: ch3, fixing figure-image URL",1,1,2
+getify/You-Dont-Know-JS,078d60ad05687e470e84cbf0c3e4a17564d5375b,Kyle Simpson,2020-02-16T18:18:09Z,"scope and closures: ch7, added figures 4 and 5 to illustrate two mental models of closure, added 'an alternate perspective' section",118,21,139
+getify/You-Dont-Know-JS,9bf28fac94f473bb7c8d650e155ca6e97cbb0fd9,Kyle Simpson,2020-02-16T11:29:24Z,"scope and closures: broad sweep of readability tweaks, clarity revisions, and chapter renaming",170,132,302
+getify/You-Dont-Know-JS,8a76bda1ae51a1801d1ad2941eefe09f303db15c,Kyle Simpson,2020-02-15T12:51:15Z,"get started: ch1, fixing mistake in reference to figure, closes #1601",1,1,2
+getify/You-Dont-Know-JS,d2cf051bd9e5bbd36e09939afca5a6bb6fa5a27a,Kyle Simpson,2020-02-15T12:44:39Z,"scope and closures: ch7, adding 'big picture' section",13,1,14
+getify/You-Dont-Know-JS,d6143a328c1c4b80f4f2b0f712ca5f65cbf54288,Kyle Simpson,2020-02-15T12:16:25Z,"scope and closures: ch7, finishing 'closure lifecycle' section",125,14,139
+getify/You-Dont-Know-JS,b583c629c93de5027f499757a3fa4997c048111b,Kyle Simpson,2020-02-14T17:08:58Z,"scope and closures: ch7, adding to 'closure lifecycle' section",76,9,85
+getify/You-Dont-Know-JS,fefaebaa15e25d14ed7e4097684f75dd1e9be222,Kyle Simpson,2020-02-13T21:49:54Z,"scope and closures: ch7, adding several sections",137,348,485
+getify/You-Dont-Know-JS,6014eafb5f3931b06c72f31840141d441fdc29da,Kyle Simpson,2020-02-12T16:05:54Z,"scope and closures: ch7, starting 'closure lifecycle'",12,4,16
+getify/You-Dont-Know-JS,cac7df8c0e7f31228e7b330a23c8919fa49148da,Kyle Simpson,2020-02-12T15:43:56Z,"scope and closures: ch7, adding more to 'see the closure' section",234,11,245
+getify/You-Dont-Know-JS,1fedcce326ec971593ee35c6f8712ee6d79de182,Kyle Simpson,2020-02-12T04:16:25Z,"scope and closures: ch7, starting work on 'defined by observation' section",78,1,79
+getify/You-Dont-Know-JS,a317044ad3b0bb3550049493f39937569afdcb18,Kyle Simpson,2020-02-11T23:45:54Z,"scope and closures: revisions per editorial comments, closes #1584",57,42,99
+getify/You-Dont-Know-JS,be5ec64948d842da454662521ddf54b5943eddb5,Kyle Simpson,2020-02-11T20:34:55Z,"scope and closures: big reorg (splitting ch3 into three chapters, moving ch5 to ch7 and ch6 to ch8), addressing editorial revisions, closes #1578",1908,1857,3765
+getify/You-Dont-Know-JS,8cfb44814baeadb83a8db24b0adc851e1dcf41c2,Kyle Simpson,2020-02-05T03:32:09Z,"scope and closures: ch2, replacing fig3",1,1,2
+getify/You-Dont-Know-JS,ea0e4bc7e973ee150a2a6c0ead3148b3ac441bb9,Kyle Simpson,2020-02-05T03:08:07Z,"scope and closures: ch2, revisions per feedback, closes #1570",20,8,28
+getify/You-Dont-Know-JS,3f0c81d5d54610bc8e67a79cae3c14ec51ca6aa7,Kyle Simpson,2020-02-05T02:18:08Z,"scope and closures: ch2, improving color contrast of fig2",0,0,0
+getify/You-Dont-Know-JS,c64a17264cbe55571a004fcfe8f849faec290082,Kyle Simpson,2020-02-05T01:25:26Z,"scope and closures: ch1, adding figure 1",4,3,7
+getify/You-Dont-Know-JS,884de4fb39798f40305581f241077cd5a9040e7b,Kyle Simpson,2020-02-05T01:13:08Z,"scope and closures: ch2, moving fig2 -> fig3 and fig1 -> fig2",6,6,12
+getify/You-Dont-Know-JS,0240a43933bbdb6ef73f7972e8f01f552ae03ac0,Kyle Simpson,2020-02-05T01:10:56Z,"scope and closures: ch3, readability revisions and clarifications",27,23,50
+getify/You-Dont-Know-JS,9cda18f7d6022fd082beaa5664de6344d7327481,Kyle Simpson,2020-02-05T00:38:20Z,"scope and closures: ch1, tweaking intro's tone",2,2,4
+getify/You-Dont-Know-JS,1ee575e09c80b106c273f535f2318833d012ce2b,Kyle Simpson,2020-02-05T00:33:53Z,"scope and closures: ch1, revisions per editorial feedback, closes #1569",81,38,119
+getify/You-Dont-Know-JS,a525d848dcaad792dc2eac527ed7e751fdcc3089,Kyle Simpson,2020-02-01T19:39:58Z,"get started: ch2, fixing minor typo",1,1,2
+getify/You-Dont-Know-JS,37ae6313f8cce52db143317e0854a7844f24a385,Kyle Simpson,2020-01-28T06:13:35Z,"get started: README, adding book cover image",8,0,8
+getify/You-Dont-Know-JS,613f1e0f64698f948dbd9220cc682b0bb825c295,Kyle Simpson,2020-01-28T05:08:17Z,"get started: ch1 and ch2, fixing 2 typos",2,2,4
+getify/You-Dont-Know-JS,a6bdf0862676b7e25b72a3d25bbc4c740cab22ee,Kyle Simpson,2020-01-22T18:07:33Z,get started: syncing tweaks from typesetting,2,3,5
+getify/You-Dont-Know-JS,44089954010472723c96179235da832e11ea4748,Kyle Simpson,2020-01-22T16:55:17Z,"scope and closures: README, adding name/link for Foreword, closes #1585",1,1,2
+getify/You-Dont-Know-JS,2d132fcac8b75d457badae8a71a18d5d4b170365,Kyle Simpson,2020-01-22T16:52:08Z,"scope and closures: fixing mistake, closes #1572",1,1,2
+getify/You-Dont-Know-JS,4329ab2440019cc9a1e4af3ea961a1d315fdba44,Kyle Simpson,2020-01-22T16:50:40Z,"scope and closures: tweaking wording for clarity, closes #1590",1,1,2
+getify/You-Dont-Know-JS,1f165d86477fecc7adace68e1f1550fa6af5031f,WillClayworth,2020-01-22T16:46:50Z,Update ch4.md (#1591)  Fix typo from PLOP to POLP,1,1,2
+getify/You-Dont-Know-JS,7066f86788d4af9d1d4bd8445cef8ee4a91c56b5,Kyle Simpson,2020-01-22T16:41:25Z,"fixing some typos, per #1593",4,4,8
+getify/You-Dont-Know-JS,78c49f38e2de0a7ebd654e5196bd6b4f1d3e513d,Kyle Simpson,2020-01-20T21:34:45Z,get started: renaming 'resources' folder to 'images',6,6,12
+getify/You-Dont-Know-JS,1f54fc4e0df8714296e56748df1948ca5057386d,Kyle Simpson,2020-01-20T21:33:35Z,get started: fixing figure images,168,168,336
+getify/You-Dont-Know-JS,a4539038f303512fb7c5252d32fa37e98f8b15e5,Kyle Simpson,2020-01-18T20:29:33Z,get started: tweaks from typesetting,32,49,81
+getify/You-Dont-Know-JS,3c6502a847f176de8314f5e5292da0fae50eb163,Kyle Simpson,2020-01-17T02:57:29Z,get started: more tweaks for typesetting,7,3,10
+getify/You-Dont-Know-JS,90c4635f84cefd5426578794b58123a5417c4245,Kyle Simpson,2020-01-17T02:27:41Z,get started: tweaks for typesetting,77,47,124
+getify/You-Dont-Know-JS,be15f0ec19d04358994cb01ea0ae736916c52d7c,Kyle Simpson,2020-01-16T19:16:51Z,get started: content tweaks per publishing preparations,14,11,25
+getify/You-Dont-Know-JS,2504a04aeafaca079a3e9150cc6b92191ff00356,Kyle Simpson,2020-01-15T18:55:00Z,get started: switching to .svg for figure images,232,6,238
+getify/You-Dont-Know-JS,f52c63f494c6df4dda6150464f7a1f8ec32c5386,Kyle Simpson,2020-01-15T18:48:40Z,get started: moving images into 'resources' folder,6,6,12
+getify/You-Dont-Know-JS,21f45c76a58ad70f6c01d6075ebd9d75e93e11b2,Kyle Simpson,2020-01-15T18:25:33Z,removing old 'getting-started' redirect,0,1,1
+getify/You-Dont-Know-JS,8869546a2d27679cdcb31e0301bf31ca376ddbda,Kyle Simpson,2020-01-15T07:47:12Z,get started: tweaking typo in README,1,1,2
+getify/You-Dont-Know-JS,296d4bd4c5cec5ec86e023c9197da01d5196a168,Kyle Simpson,2020-01-15T07:44:46Z,"get started: apB, fixing solution mistake, closes #1586",1,1,2
+getify/You-Dont-Know-JS,e804ab950269e63883c9b58f4bf77cb4db2291f3,Kyle Simpson,2020-01-15T07:42:15Z,"get started: ch1, fixing polyfill for promise.finally",17,4,21
+getify/You-Dont-Know-JS,84808dabbf48c1339afece5a787903d177899140,Cruz Molina,2020-01-12T04:18:58Z,"tiny typo, closes #1587",1,1,2
+getify/You-Dont-Know-JS,da3f3b5d9a98b9b4d0ef9bdf644b2f4fa5208f4a,jtassia,2020-01-15T07:16:27Z,"get started: copy edits per @jtassia, closes #1574 closes #1576 closes #1577 closes #1579 closes #1580 closes #1581 closes #1582 closes #1583",165,165,330
+getify/You-Dont-Know-JS,48e3748c82420cbc2ab40841da9131c36bb30b44,Sarah Drasner,2020-01-06T23:48:20Z,add in foreword (#1571),16,3,19
+getify/You-Dont-Know-JS,ab5fdc081f75bfb6b1d677ec3e1a2c38776b4132,luotao,2019-12-16T17:16:52Z,"typo: 'strict mide' should be 'strict mode' ? (#1566)  * Fix typo  should be 'strict mode' I guess?  * fix typo: 2nd, get-started/ch4.md  * Revert ""fix typo: 2nd, get-started/ch4.md""  This reverts commit c53aa766bca015e15057989914b3384e9d0964d3.",1,1,2
+getify/You-Dont-Know-JS,58bc2ec2ebee732c46d5e4d2a8a0ede25a94f7a4,Kyle Simpson,2019-12-12T13:48:56Z,"get started: more editorial tweaks, per #1565",14,16,30
+getify/You-Dont-Know-JS,ed69b7dd755b8fa535b4761167ca4504ed7e7ec7,Kyle Simpson,2019-12-10T21:52:03Z,"get started: ch4, finishing revisions, now edit-complete on the book, closes #1553",40,66,106
+getify/You-Dont-Know-JS,6e91a4e80be477108fc178ff294582cd87ad32ba,Kyle Simpson,2019-12-10T20:42:02Z,"get started: ch3, added figures 4, 5, and 6, moved 'iteration' section, per #1552",185,161,346
+getify/You-Dont-Know-JS,647ec590b8f37b5034b5f828603043897496d8d3,Kyle Simpson,2019-12-10T15:26:50Z,"get started: ch3, clarifications per #1552",3,3,6
+getify/You-Dont-Know-JS,46e3ec7dc3b2894b73084c61688975e8b753fb5b,Kyle Simpson,2019-12-10T15:19:15Z,scope and closures: fixing style for template-literal expressions,2,2,4
+getify/You-Dont-Know-JS,b2f87614a0fb520fa2572db4559a46ab539c7055,Kyle Simpson,2019-12-10T15:17:36Z,get started: fixing style for template-literal expressions,23,23,46
+getify/You-Dont-Know-JS,c43eb0f13dec38aa494b4a48fff949dac7e2207e,Kyle Simpson,2019-12-10T15:08:55Z,"scope and closures: ch4, tweaking factorial example/discussion, closes #1561",11,8,19
+getify/You-Dont-Know-JS,5086dafbf18d06dff291821e5bc4c7404f650431,Kyle Simpson,2019-12-10T15:01:49Z,adding pull-request template,23,0,23

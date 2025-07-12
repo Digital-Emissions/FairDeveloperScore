@@ -1,0 +1,301 @@
+repo,sha,author,date,message,additions,deletions,total_changes
+sindresorhus/awesome,ae6009066696f7591894536940997849d57598a8,Isabela de Matos,2025-07-05T23:21:42Z,Add WebAssembly (#3398)  Co-authored-by: Sindre Sorhus <sindresorhus@gmail.com>,1,0,1
+sindresorhus/awesome,670f82b1a9b986d47359c514b0422e12dba82670,Really Him,2025-06-11T12:48:07Z,Add Claude Code (#3455)  Co-authored-by: Sindre Sorhus <sindresorhus@gmail.com>,1,0,1
+sindresorhus/awesome,d1d8343688949e9b3b1fdd48870325deaf540564,Yuri,2025-06-06T11:42:13Z,Improve clarity in badge usage explanation (#3471),1,1,2
+sindresorhus/awesome,1350de9bc333dee61d516ab486d055eb48be7931,Sindre Sorhus,2025-05-19T10:22:47Z,Meta tweaks,0,38,38
+sindresorhus/awesome,30f105b071b95e540f2923ac3d4393a6d0f13fec,Semyon Moroz,2025-05-15T13:13:42Z,Add Standards (#3351)  Co-authored-by: Sindre Sorhus <sindresorhus@gmail.com>,1,0,1
+sindresorhus/awesome,62f88598f2ea9640619739fab0d6ac354cd2944a,Sancarn,2025-05-15T13:01:57Z,Add VBA (#3153)  Co-authored-by: Sindre Sorhus <sindresorhus@gmail.com>,1,0,1
+sindresorhus/awesome,aea85d30bba5502d3da9dc713ff522a467aa3828,Dario Castañé,2025-05-15T12:37:25Z,Add ATProto (#3323)  Co-authored-by: Sindre Sorhus <sindresorhus@gmail.com>,1,0,1
+sindresorhus/awesome,74a7800ca6ceb30928ac4cf16452a99f05d883c1,Asi Greenholts,2025-05-15T12:13:17Z,Add CI/CD Attacks (#3111),1,0,1
+sindresorhus/awesome,629aad89f30881c80415ebd00d3c6e51caea8cab,Michael Brusegard,2025-05-15T11:53:01Z,Add WezTerm (#3234),1,0,1
+sindresorhus/awesome,1a3802b354fd8a1bfcb9f085c750f008191cd1e3,Fermin Lozano,2025-05-15T11:49:06Z,Add WebGPU (#3210)  Co-authored-by: Sindre Sorhus <sindresorhus@gmail.com>,1,0,1
+sindresorhus/awesome,10739d944f173f1ba1a07bfff14aa54d97edcecf,Will Foran,2025-05-15T11:44:00Z,Add Neuroimaging (#3171)  Co-authored-by: Sindre Sorhus <sindresorhus@gmail.com>,1,0,1
+sindresorhus/awesome,565212986aa916ba0f1c3fd4d4b270011a47021d,Xavier Portilla Edo,2025-05-15T11:33:25Z,Add Firebase Genkit (#3205)  Co-authored-by: Sindre Sorhus <sindresorhus@gmail.com>,1,0,1
+sindresorhus/awesome,2ed278fc84c140dc48b4d1bfb2dba10b80bd097f,Harshit Sethi,2025-05-15T11:25:39Z,Add J2ME (#3115),1,0,1
+sindresorhus/awesome,c1fa742ddbb0259441ba552276bc9d3d8414d94b,Saifeddine Rajhi,2025-05-15T11:04:08Z,Add Cilium (#2930),1,0,1
+sindresorhus/awesome,22310294d148ba1cc130d3d85623a04620947f54,Danail,2025-04-08T10:52:39Z,Add Payload (#3350),1,0,1
+sindresorhus/awesome,f4a2c36f1fe1b9d5a0784de816b749e2f6e01add,Noor E Mobeen,2025-03-13T11:57:42Z,Minor description improvements (#3375),7,7,14
+sindresorhus/awesome,7ac2054d73d003f2a4d7b3235c5d235975238eb0,Ankur Tyagi,2025-03-04T08:42:02Z,Add CodeRabbit (#3335)  Co-authored-by: Sindre Sorhus <sindresorhus@gmail.com>,1,0,1
+sindresorhus/awesome,f6d534211855dcfe39708f02377526e3e891a1e5,Isabela de Matos,2025-02-28T04:32:36Z,Add Permacomputing (#3293),1,0,1
+sindresorhus/awesome,56d5856a305f45ae25008ee3985ecdcddccde57e,Pranjal Pokharel,2025-02-05T17:54:43Z,Remove dead links (#3349),0,3,3
+sindresorhus/awesome,36d8bf5835c35f691f0ecdac9b05118c800d1cd4,Sindre Sorhus,2024-12-12T00:41:42Z,Meta tweaks,2,17,19
+sindresorhus/awesome,5d4b5fe199ba39276b36fa4ec06322aa414442da,Lutz Hühnken,2024-11-28T19:02:18Z,Add Event-Driven Architecture (#3152)  Co-authored-by: Sindre Sorhus <sindresorhus@gmail.com>,1,0,1
+sindresorhus/awesome,c729cae2aedeabe4d83a8a00a54eed42e5aa33f4,Adarsh Gourab Mahalik,2024-11-23T16:24:13Z,Add Reflex (#3228),1,0,1
+sindresorhus/awesome,61974e3bc905074402c514415c4a289788f0e50a,PandaDEV,2024-11-23T14:44:06Z,Add Windows (#3227)  Co-authored-by: Sindre Sorhus <sindresorhus@gmail.com>,1,1,2
+sindresorhus/awesome,843bbf9242284d80710ee8fe8e42ae094943d4d1,Jacob Wilson,2024-11-22T09:22:44Z,Add Annual Security Reports (#2850)  Co-authored-by: Sindre Sorhus <sindresorhus@gmail.com>,1,0,1
+sindresorhus/awesome,cece334d95d7bccdb1dd9361119c1324e00e7bbe,Sindre Sorhus,2024-11-21T08:53:20Z,Meta tweaks,11,0,11
+sindresorhus/awesome,422c90ac7968192a7bbdfbe0fc9a21f34bbddae1,Alex,2024-10-29T11:09:50Z,Add Babylon.js (#2960)  Co-authored-by: Sindre Sorhus <sindresorhus@gmail.com>,1,0,1
+sindresorhus/awesome,281714e50ddb6973ceec90ecf8e2946c8f40e50f,Michael Paul Coder,2024-10-29T06:59:03Z,Add Lucid Dreams (#3091)  Co-authored-by: Sindre Sorhus <sindresorhus@gmail.com>,1,0,1
+sindresorhus/awesome,9d2c6b5ef36ce5575acbf7be1c8b2e18b1c4fb37,Gökay Aydoğan,2024-10-28T18:19:48Z,Add VLM Architectures (#2996),1,0,1
+sindresorhus/awesome,d1448ed9dcdc1193de494d7279f0b8a28df0bb66,Steven Levithan,2024-10-22T18:14:51Z,Add Regex (#3071),1,0,1
+sindresorhus/awesome,460f1a944f3ac8b9f51967a244abf47f1edf6ab9,Henrik Lau Eriksson,2024-10-22T17:24:51Z,Add PowerToys Run Plugins (#3075),1,0,1
+sindresorhus/awesome,690366ac55d0044ac9de82833c9db65a1f1e8ef7,Sindre Sorhus,2024-09-09T16:20:04Z,Meta tweaks,0,19,19
+sindresorhus/awesome,2aa0c9a6eb5bd75eaff3ac1868d2b383251dcf59,Martin DONADIEU,2024-08-14T11:56:32Z,Update Ionic Framework title (#3149),1,1,2
+sindresorhus/awesome,993cee41a5ecc4199a4fa240a27005ebe7515c4d,Sindre Sorhus,2024-08-07T21:26:48Z,Meta tweaks,19,34,53
+sindresorhus/awesome,fd14af92d5942a45dd199fd7594546cbd44ae333,Polycarbohydrate,2024-07-23T12:14:43Z,Add Tor (#3081),1,0,1
+sindresorhus/awesome,128572f38998845791fc68303162abe534d34d8a,Ankur Tyagi,2024-07-22T12:20:45Z,Add Neon (#3103)  Co-authored-by: Sindre Sorhus <sindresorhus@gmail.com>,1,0,1
+sindresorhus/awesome,1b8146c0cf2b7b57ba6c7b67f9ce2fc8e204e11a,Remigiusz Samborski,2024-06-04T12:45:58Z,Add Google Cloud (#3003),1,0,1
+sindresorhus/awesome,b7a73e681b2ee0092e33c500bd61d5a4f0908e30,Philipp,2024-05-31T16:20:15Z,Add Geocaching (#3053),1,0,1
+sindresorhus/awesome,9a9f40160ee49a5d3ea9271836139d9eac51c45e,Sindre Sorhus,2024-05-29T00:06:22Z,Meta tweaks,24,9,33
+sindresorhus/awesome,d37f73b5dce436617daedcad58fe6e04de082045,Sindre Sorhus,2024-05-27T23:13:47Z,Fix wrong category for a list  Fixes #1764,1,1,2
+sindresorhus/awesome,4abfd72da95c83c4cb6a30ec6550501a09bc0779,jorgoose,2024-05-25T16:02:45Z,Add PocketBase (#2895),1,0,1
+sindresorhus/awesome,4b7c6d06e495472a8cd75dda66a98968a30a6dbe,Brendan Chamberlain,2024-05-25T15:55:45Z,Add Detection Engineering (#2829)  Co-authored-by: Sindre Sorhus <sindresorhus@gmail.com>,1,0,1
+sindresorhus/awesome,4ebef6afc223c28d5e7e328af8f8085894b2f483,Sindre Sorhus,2024-05-25T15:52:01Z,Meta tweaks,2,2,4
+sindresorhus/awesome,f0bdf003447dd11c9a20060153deef6f2a3835ef,Sindre Sorhus,2024-05-13T08:27:02Z,Meta tweaks,5,5,10
+sindresorhus/awesome,bff4772e2c4733e152c373e0f5f246f264fd9f0d,Gao Sun,2024-04-10T03:36:31Z,Meta tweaks (#3019),2,2,4
+sindresorhus/awesome,bbe1e6f5d75c642d7a40ca2cba044bef764b055b,Sindre Sorhus,2024-04-09T13:59:59Z,Meta tweaks,16,0,16
+sindresorhus/awesome,99355bc6277019412e675ac5868e83d1ad5c24a6,Alejandro Lazaro,2024-04-03T16:25:00Z,Add OpenTofu (#2978),1,0,1
+sindresorhus/awesome,924721c3f21d1ba7ce32ed454d83f029c957b9f4,Remigiusz Samborski,2024-03-25T17:16:11Z,Fix Firebase description (#3004),1,1,2
+sindresorhus/awesome,95fef0e8f8f7bc178c937f2cbea183746f8a751d,Dennis Shi-Rudo,2024-02-14T08:09:43Z,Add Stock Trading (#2736),1,0,1
+sindresorhus/awesome,f56121308d0bc068830c886042f60db6418c27a9,Joe Davies,2024-02-14T08:00:30Z,Add Frontend GIS (#2731),1,0,1
+sindresorhus/awesome,52eff1051a683c9f71a85bb806bd6816516622db,Matteo Crippa,2024-02-14T07:53:55Z,Add Bluetooth Low Energy (#2690),1,0,1
+sindresorhus/awesome,aebbfcaedae270cbde8652a736325ce05d95c5df,Martin Zikmund,2024-02-13T21:51:16Z,Add Uno Platform (#2622)  Co-authored-by: Sindre Sorhus <sindresorhus@gmail.com>,1,0,1
+sindresorhus/awesome,e02a0522cf7d95eee7a4a0bf08d96b36c2c243d0,Ahmed AbouZaid,2024-02-13T21:32:39Z,Add Kustomize (#2585),1,0,1
+sindresorhus/awesome,5afa2a80f97eb03c046d415883fd1a9e2030cf6c,Y,2024-02-13T21:14:38Z,Add Astrophotography (#2803),1,0,1
+sindresorhus/awesome,b0ff6129aae7759cd5268db1c7afecb81d1f47c8,Sindre Sorhus,2024-02-13T19:23:06Z,Meta tweaks,18,33,51
+sindresorhus/awesome,a20a1d816ca925212115494e27054cb0331e22d6,Sindre Sorhus,2023-12-20T12:21:51Z,Meta tweaks,1,1,2
+sindresorhus/awesome,07c6be2660992e9b70232ddae0bc66a18693d1c8,Marc Anguera,2023-11-14T19:49:31Z,Add “Open Source Heroes - Awesome” to Related section (#2858)  Co-authored-by: Sindre Sorhus <sindresorhus@gmail.com>,1,0,1
+sindresorhus/awesome,124c51bb98cde1a4a54159d1faa64ea0cdc5b597,Sindre Sorhus,2023-11-10T22:07:23Z,Meta tweaks,7,5,12
+sindresorhus/awesome,8e71414aea13959f183b193f0bb62b1034c44fb4,S A G A R,2023-10-26T14:59:56Z,Fix typos (#2835),9,9,18
+sindresorhus/awesome,4abe2c023a7e818376cb9289d983b241ffea274f,Vivek Gurudutt K,2023-10-26T11:42:32Z,Fix typo (#2834),1,1,2
+sindresorhus/awesome,5201a4acd085ba21df2629fa01ea8188c0890b61,Diamantis Sellis,2023-10-17T08:34:03Z,Add Complexity (#2389),1,0,1
+sindresorhus/awesome,86a0adeea2d01a15bf83768e04133951aced762b,Sindre Sorhus,2023-10-16T19:45:31Z,Meta tweaks,2,2,4
+sindresorhus/awesome,e443b28a228c113b1e136b71cb61632642b590f6,Hazana,2023-10-14T18:57:02Z,Add Prompt Injection (#2734),1,0,1
+sindresorhus/awesome,957bcf8950210d00b034227a25ca3fe31ea50efa,Sam Partington,2023-10-14T18:48:27Z,"Move Esolangs into ""Programming Languages"" section (#2799)",1,1,2
+sindresorhus/awesome,66605ca54d380cd21faaa71cfc08e9d413f0ee62,Hallvard A. Wæhler,2023-10-14T16:20:57Z,Add Biological Image Analysis (#2620)  Co-authored-by: Sindre Sorhus <sindresorhus@gmail.com>,1,0,1
+sindresorhus/awesome,2f7d2c71e6d7e0db8b99288779f78945d8b6c2b4,Sindre Sorhus,2023-10-14T16:00:09Z,Update guidelines,4,1,5
+sindresorhus/awesome,07510cb399a179d05069feef89bb40d7944c8dcf,akail,2023-10-14T15:58:54Z,Add HPC (#2640),1,0,1
+sindresorhus/awesome,ee60acf76eca5a22bfe41d26f2dca09a750a085a,Tomas Tauber,2023-10-14T15:35:28Z,Add Pest (#2601),1,0,1
+sindresorhus/awesome,4e1a1fcc75ac3756b0eb68b61bca97dfe7e32641,Edwin Kofler,2023-10-07T04:11:37Z,Update link to Awesome Mastodon (#2739),1,1,2
+sindresorhus/awesome,efc8cefb820d47fa818d192c42ebd98c1bbdc407,Francesco Sardone,2023-09-24T17:54:28Z,Add Steam Deck (#2743),1,0,1
+sindresorhus/awesome,7a3c09580eaad3842705d42f6eb1157da30f6982,Sindre Sorhus,2023-07-26T23:04:04Z,Meta tweaks,12,2,14
+sindresorhus/awesome,3a05b85ac2c175bce22f4cc791539f24d2ab06b3,Sindre Sorhus,2023-06-29T11:57:16Z,Add Whisper,1,0,1
+sindresorhus/awesome,5c9fded233a5332143ae18fe8f37552148c6647a,Sindre Sorhus,2023-06-29T11:56:09Z,Add ChatGPT,1,0,1
+sindresorhus/awesome,050d069408986a86dab5f2e3eb37a96ad5685eb9,Stephens Nunnally,2023-06-22T11:10:11Z,Add Game Engine Development (#2482),1,0,1
+sindresorhus/awesome,392719856b008969163faab5439ca95bd4ab5158,Rick Staa,2023-06-21T11:03:21Z,Add ADS-B (#2567)  Co-authored-by: Sindre Sorhus <sindresorhus@gmail.com>,1,0,1
+sindresorhus/awesome,7c4bdffb5fdf98a456f9469cf1769b0802db6d71,Sindre Sorhus,2023-06-21T10:41:53Z,Update guidelines,1,0,1
+sindresorhus/awesome,28a36d686525e55c44183e4a1094dad1e6a56891,Vitalii,2023-06-21T10:32:17Z,Add Game Production (#2509),1,0,1
+sindresorhus/awesome,16c1cc65affead7fd90696cee39f3f54c31cc128,Andreas Hunkeler,2023-06-21T10:16:28Z,Add Security Card Games (#2498)  Co-authored-by: Sindre Sorhus <sindresorhus@gmail.com>,1,0,1
+sindresorhus/awesome,1a8fd64c387e3129cfeb4d3422b847e1691b7bd8,Julien Robert,2023-06-21T10:07:48Z,Add Cosmos SDK (#2686),1,0,1
+sindresorhus/awesome,777789373bfa609fb4a80a4446bc1f6858bd89fd,Sascha Steinbiss,2023-06-21T10:01:47Z,Add Suricata (#2454),1,0,1
+sindresorhus/awesome,a0b0a2ce01cd7e9809089e4bf0d55367c473f7f7,Rahul Bir,2023-06-20T23:06:40Z,Add STEAM (#2453),1,0,1
+sindresorhus/awesome,e75eddb0c0f47cb680ca9a10c077adac84b86234,Matthias84,2023-06-20T13:12:57Z,Add Flying FPV (#2400),1,0,1
+sindresorhus/awesome,14874c92be830d4b0fe81290f6f1789157318adb,Sindre Sorhus,2023-05-04T18:48:57Z,Meta tweaks,2,66,68
+sindresorhus/awesome,6fec0ad89bc2e26922d47cb9a5bba54bcc7fae26,Vladimir Klepov,2023-05-19T10:35:17Z,Add Tiny JS (#2571),1,0,1
+sindresorhus/awesome,78bde71c34e21954ae2a526fb5e9d3f9be2c0eec,Benjamin Balder Bach,2023-05-08T19:31:52Z,Add Read the Docs (#2424),1,0,1
+sindresorhus/awesome,fe3210d42188e1f20cd8184f738957beb127291b,Mickaël Canouil,2023-04-24T19:43:58Z,Add Quarto (#2550)  Co-authored-by: Sindre Sorhus <sindresorhus@gmail.com>,1,0,1
+sindresorhus/awesome,4c6bfd9c17dc3ae6cecfcddb71a7fd6d0ab5ec2d,alexey semenyuk,2023-04-23T19:46:20Z,Add GitHub Wiki (#2383),1,0,1
+sindresorhus/awesome,8eba3f354b2d90ae22cf44428fd927de006a3f2b,Waleed Sadek,2023-04-23T18:36:05Z,Add Certificates (#2463),1,0,1
+sindresorhus/awesome,572026c53f6f420982cf43ae4f4d365a8067fc6b,bytecauldron,2023-04-23T17:55:21Z,Add GameMaker (#2448),1,0,1
+sindresorhus/awesome,94d1068e6d6447c8988022fd72168c7e4255b367,Oleg Lavrovsky,2023-04-23T08:31:52Z,Add Hackathon (#2433)  Co-authored-by: Sindre Sorhus <sindresorhus@gmail.com>,1,0,1
+sindresorhus/awesome,b26d26bd1ad3e80f971edd78640d5a98b2c8e875,Mickaël Canouil,2023-03-13T07:17:37Z,Use checkbox list for pull request template (#2551),32,32,64
+sindresorhus/awesome,81a63043156b3ae8fd8b77d4151dc10ed2090ea3,Sindre Sorhus,2023-03-12T18:09:50Z,Meta tweaks,16,0,16
+sindresorhus/awesome,283d6d531fdc798f45726187e9037d85d4189c11,Eric Carboni,2023-03-10T19:28:06Z,Remove dead link (#2546),0,1,1
+sindresorhus/awesome,76c17b22cc9d6b7ce9274cb3daf7c0141c6b6bda,Sindre Sorhus,2023-02-18T09:59:12Z,Meta tweaks,2,2,4
+sindresorhus/awesome,9729eeaee4e506aa8a46985a81a7adf848c5366f,Sindre Sorhus,2023-02-13T18:30:57Z,Update guidelines,6,6,12
+sindresorhus/awesome,c9da614a2b710079025c90803e2eb60ed3958965,Zola Gonano,2023-02-12T06:39:26Z,Add ZeroNet (#2327),1,0,1
+sindresorhus/awesome,abc8bb09858130d6867121c74864ec00ef4d531f,Steven Van Vaerenbergh,2023-02-11T17:08:46Z,Add Generative AI (#2445),1,0,1
+sindresorhus/awesome,91cd8040106383dc10fece5e88b265f0ff2c6807,Moritz Mähr,2023-02-11T06:57:35Z,Add Digital Humanities (#2394),1,0,1
+sindresorhus/awesome,8aa3455ca943cb64edbcfe9a5329d880759b94a0,Tomo,2023-02-03T14:12:47Z,Add ComputerCraft (#2405)  Co-authored-by: Sindre Sorhus <sindresorhus@gmail.com>,1,0,1
+sindresorhus/awesome,e78674dc2fe1b2d8043b7ec3e989fa2e8642f422,Sindre Sorhus,2023-01-18T11:02:48Z,Meta tweaks,2,11,13
+sindresorhus/awesome,75eac709f43c44128f1804257de4be99d5b60647,n0kovo,2022-12-26T12:24:46Z,Add Password Cracking (#2386)  Co-authored-by: Sindre Sorhus <sindresorhus@gmail.com>,1,0,1
+sindresorhus/awesome,2fe1c3705058df84124589686aaf79c5071a9123,Serhii Kulykov,2022-12-21T21:03:28Z,Update link to Web Components (#2459),1,1,2
+sindresorhus/awesome,9478bdd402e4841ca1e89f4c7817867872616c4e,Estee Tey,2022-12-17T17:27:19Z,Add Supabase (#2426)  Co-authored-by: Sindre Sorhus <sindresorhus@gmail.com>,1,0,1
+sindresorhus/awesome,49396c45738ebecfe6e7126d984a6c51e0a3920c,Aleix Morgadas,2022-12-16T23:29:47Z,Add Engineering Strategy (#2325),1,0,1
+sindresorhus/awesome,da84280d72bcde8cc556af8437eb698be88ef1f0,Lola,2022-12-07T13:45:04Z,Add Master CSS (#2382)  Co-authored-by: Sindre Sorhus <sindresorhus@gmail.com>,1,0,1
+sindresorhus/awesome,d206b4ec5c3eac70b1dae7942698ce95d5d2be9d,Sindre Sorhus,2022-11-28T07:13:26Z,Meta tweaks,0,45,45
+sindresorhus/awesome,fd554844f149ee50529468dea3bd145abd23735f,Hazel Kennedy,2022-11-20T13:16:03Z,Add Learn Gamedev (#2372),1,0,1
+sindresorhus/awesome,8d7eee662c0c5a39dc8e428a3013527fa4834941,Ville Sundell,2022-11-19T20:45:58Z,Add Move (#2302),1,0,1
+sindresorhus/awesome,b26b35ee63358d4a209dff3d1adf8ee27338be16,Benjamin Sehl,2022-11-19T20:26:56Z,Add Hydrogen (#2289),1,0,1
+sindresorhus/awesome,6e61355011bab89a66039524e12a3e775a64b19e,gpotter2,2022-11-19T20:16:15Z,Add Scapy (#2285)  Co-authored-by: Sindre Sorhus <sindresorhus@gmail.com>,1,0,1
+sindresorhus/awesome,369962ce0253f3ff9521df777325a40bfa80bd62,Aaron Kirtland,2022-11-19T20:10:08Z,Add Computational Geometry (#2275),1,0,1
+sindresorhus/awesome,7ab5dfeb9e9febdacae31ce2b25ea4f754da8a17,Michel Pereira,2022-09-27T08:50:44Z,Add Open Source Games (#2171)  Co-authored-by: Sindre Sorhus <sindresorhus@gmail.com>,1,1,2
+sindresorhus/awesome,52b6dbacde01c2595f2133a5378cb8d2f89906fa,Roland Siegbert,2022-09-22T11:22:20Z,Rename Higher Education (#2385),10,10,20
+sindresorhus/awesome,4735e7e6fe0307055be746c7c78bdaddd2da9bc6,Sindre Sorhus,2022-09-21T09:34:50Z,Meta tweaks,9,1,10
+sindresorhus/awesome,93ef511b7b70dc039b0b4ae6f7591488f41f8980,Sindre Sorhus,2022-08-02T11:08:22Z,Meta tweaks,25,72,97
+sindresorhus/awesome,d5832cebce13c2e91735c7ecf40bf26628042454,Yu-Zhe Shi,2022-07-23T10:37:54Z,Add AGI & CoCoSci (#2320),1,0,1
+sindresorhus/awesome,1870e51e0ae1438a0503854fa2b71f67bb434634,Alan Christian,2022-07-20T11:13:25Z,Move some lists to other categories (#2330),2,2,4
+sindresorhus/awesome,e55a7d007f3e29c21a444050a6bf33e557f7d09e,h3nk42,2022-06-26T19:50:44Z,Improve description for React (#2300)  Co-authored-by: Sindre Sorhus <sindresorhus@gmail.com>,2,2,4
+sindresorhus/awesome,6e4c2a13355020b9f57b330db12696f30b384ec1,Ege Can ÖZER,2022-06-13T07:38:12Z,Add SNMP (#2202),1,0,1
+sindresorhus/awesome,537ad564e517478a6909c4fcfe62c696e8850f29,Oaker Min,2022-06-09T14:29:01Z,Add Cyber Security University (#2268),1,0,1
+sindresorhus/awesome,c639cd18950b96c61efaa6cc570547420bc83a69,Philip Bauer,2022-06-05T11:24:05Z,Add Plone (#2267),1,0,1
+sindresorhus/awesome,e4a2009d81e1aeb085a590237089762fe136d136,Delft-Open-Hardware,2022-06-05T11:14:54Z,Add Open Hardware (#2266),1,0,1
+sindresorhus/awesome,54b8cf37d58195b9c2f7f2fd7f61d44f4192a8ce,Yoshitaka Inoue,2022-06-05T11:07:30Z,Add Computational Biology (#2257),1,0,1
+sindresorhus/awesome,724c91b6d7e76b2aac92455f8f6104e0941a4e28,Pan YANG,2022-06-05T11:02:13Z,Add TDengine (#2249),1,0,1
+sindresorhus/awesome,d0b5c50cae3939df37d1e4ec243daebd08b9f2d5,M. Efe Çetin,2022-06-05T10:55:45Z,Add Fiber (#2217),1,0,1
+sindresorhus/awesome,eafa6a51309a2329a1244a48632efc6c15f2dd72,Kevin Kandlbinder,2022-06-05T10:51:34Z,Add OpenStreetMap (#2215),1,0,1
+sindresorhus/awesome,693a32d71f900a08a0ce8e268186af3d6cb6bc7a,Jonathan Dupré,2022-06-05T10:47:59Z,Add EVM Security (#2213),1,0,1
+sindresorhus/awesome,cc269f471257bf3de7c7143e1bada0ef77e0d935,Raul Jimenez Ortega,2022-06-05T10:32:24Z,Add ArcGIS Developer (#2212),1,0,1
+sindresorhus/awesome,f48be5b58067325f94af8cbbc15818bc9222f730,Andreas Hunkeler,2022-06-05T10:04:53Z,Add Malware Persistence (#2184),1,0,1
+sindresorhus/awesome,a67b90a7ca6986456f368a2935616a56fc72d3d1,Martin DONADIEU,2022-06-02T13:53:53Z,Add Capacitor (#2161)  Co-authored-by: Sindre Sorhus <sindresorhus@gmail.com>,1,0,1
+sindresorhus/awesome,3eb93748644713d97108cdd8bff0489dda45c0ab,Jean-Yves Guyomarc'h,2022-06-02T12:24:33Z,Add Conversational AI (#2160)  Co-authored-by: Sindre Sorhus <sindresorhus@gmail.com>,1,0,1
+sindresorhus/awesome,d45cd96d283a1f1b7a787806a92f149047edad88,Nulo,2022-06-02T11:33:32Z,Add Zig (#2153),1,0,1
+sindresorhus/awesome,ada2c3feab52e05114176f2398b443ee7bd0efba,Pascal Jufer,2022-06-02T11:29:49Z,Add Directus (#2084),1,0,1
+sindresorhus/awesome,978f08ab7a4c0390af6e701c7f9a272058a66e2f,Erwan Le Merrer,2022-06-02T11:14:47Z,Add Audit Algorithms (#2023),1,0,1
+sindresorhus/awesome,4e919d9c1fbfbfb08e081f7f288277e797cd0c85,Sindre Sorhus,2022-05-18T20:24:23Z,Meta tweaks,1,1,2
+sindresorhus/awesome,ec33c665b0dcd37cf6868f096929e5eeec310e22,Sindre Sorhus,2022-05-10T09:21:53Z,Meta tweaks,97,0,97
+sindresorhus/awesome,93f976bd92a8fd2017c84e010b41c878c8fe2cbc,Kieran,2022-05-02T12:24:09Z,Remove Social Media Share Links (#2252),0,1,1
+sindresorhus/awesome,1574d4842d1a81baa33eca32d8c4f7e5203b68d4,Chris,2022-04-20T14:51:48Z,Mention list incubation in pull request guidelines (#2243),1,1,2
+sindresorhus/awesome,d98bcb69949593e822113f83067207077503b013,KeyboardInterrupt,2022-04-01T06:34:13Z,Update link to Ansible (#2223),1,1,2
+sindresorhus/awesome,768d4f1168bb69a6015cee01553e230485560c17,Leonardo Furtado,2022-03-30T09:11:43Z,Remove Contexture (#2219),0,1,1
+sindresorhus/awesome,a7b5b7805ecc00b3396acb35022cf6e2c0699e03,Sindre Sorhus,2022-03-14T17:39:21Z,#StandWithUkraine 🇺🇦,8,2,10
+sindresorhus/awesome,842bb421f1764ed07a1b14ad8b44f0fcce128044,Sindre Sorhus,2022-03-07T10:55:47Z,Meta tweaks,3,0,3
+sindresorhus/awesome,19da8fe76c271d6e3043008dd1e4607f1e548714,Sindre Sorhus,2022-03-06T17:01:13Z,Remove macOS list  It's badly maintained.,1,1,2
+sindresorhus/awesome,e6f699d651dbf53781a2394eccfa3e32a44386c1,Milad Nekofar,2022-02-27T08:48:06Z,Add Slim (#2067),1,0,1
+sindresorhus/awesome,3309d39da246aa0be2e6e622979df83f1a91ec0d,zoorat,2022-02-17T05:07:07Z,Remove list `RubyMotion` (#2188),0,1,1
+sindresorhus/awesome,9170c40dc9ae84fb4a6bd9708085de6dabea3a32,Sindre Sorhus,2022-02-15T10:06:36Z,Meta tweaks,0,3,3
+sindresorhus/awesome,aaa3b77b6a35abe85a77b20086bca8d64f0a430f,zoorat,2022-02-14T15:45:30Z,Update info about `lit` (#2181),1,1,2
+sindresorhus/awesome,f0167f76fc70849275d5098c12e829c5c373001b,zoorat,2022-02-14T15:44:27Z,Update redirected links (#2180),11,11,22
+sindresorhus/awesome,870dac642ac98274bc6ccae0fa8976694a9603c8,Al,2022-02-13T11:37:09Z,Add Algorand (#2165),1,0,1
+sindresorhus/awesome,fcc13119f531f89a31d9677b0d30a0281a5e0ec0,Alex,2022-02-13T11:12:27Z,Add Executable Packing (#2151)  Co-authored-by: Sindre Sorhus <sindresorhus@gmail.com>,1,0,1
+sindresorhus/awesome,cbcbed13785d120c34c6cb36132632a249e49e41,Sindre Sorhus,2022-02-09T08:11:05Z,Meta tweaks,3,0,3
+sindresorhus/awesome,4b6d2822f10b696dd77b96627c87dc73aabee78f,Michael Bargury,2022-01-24T07:52:42Z,Add Low Code (#2079),1,0,1
+sindresorhus/awesome,7f88000be2d4f265c83465fec4b0b3613af347dd,Strift,2022-01-23T14:22:43Z,Add Esports (#2136)  Co-authored-by: Sindre Sorhus <sindresorhus@gmail.com>,1,0,1
+sindresorhus/awesome,b91265dd1a200a2d1276a236875398be3f85715f,Aliaksandr Belik,2022-01-23T11:19:55Z,Add Gatling (#2076),1,0,1
+sindresorhus/awesome,4b3a8e2a6244304cbbfb6f779d1059cb6a6f93d4,Sindre Sorhus,2022-01-20T07:41:48Z,Meta tweaks,23,2,25
+sindresorhus/awesome,8b18e989a5574ede84af26a674d744c5e33d85be,Benjamin,2022-01-17T18:18:23Z,Add Node-RED (#2111)  Co-authored-by: Sindre Sorhus <sindresorhus@gmail.com>,1,0,1
+sindresorhus/awesome,6759a87def4bce1ee8b9713f497016a08d5549a9,Sindre Sorhus,2021-11-17T17:09:12Z,Meta tweaks,2,0,2
+sindresorhus/awesome,357dff6853964dc02ceda119b0e6048dcce8e0e0,Thomas Versteeg,2021-11-26T04:57:42Z,Add Neovim (#2053),1,0,1
+sindresorhus/awesome,3cba3ee1a3348bc11e11beaf16267b87aa18ff9d,Pascal Jufer,2021-10-20T16:54:58Z,Use absolute links in pull request template (#2083),3,3,6
+sindresorhus/awesome,f76c1cebad4ab84ad39b55e450ca1619d93349d8,Sindre Sorhus,2021-10-03T06:26:57Z,Remove Webpack  It's no longer an Awesome list.  Closes #2066,0,1,1
+sindresorhus/awesome,651ae50db0b85dc87ca6b14ed359e153193a453d,stn1slv,2021-09-22T11:14:55Z,Add Integration (#2054),1,0,1
+sindresorhus/awesome,e6f6fa997f578115c65c59f6f63d11d00be7d67d,probonopd,2021-09-19T08:45:45Z,Add AppImage (#2045),1,0,1
+sindresorhus/awesome,5ca60d7ab45c7729a9ac9ef0ced537b517bf9f51,Daniel Adams,2021-09-17T08:44:10Z,Add WebXR (#2052),1,0,1
+sindresorhus/awesome,fa3a1e8923198482dbacfb161dd7c1e665399784,Sindre Sorhus,2021-09-01T23:37:46Z,Prevent the lint script from affecting repo language stats,1,0,1
+sindresorhus/awesome,671fd919bb2029056e032994125e2de4ea104f4a,Mikael Finstad,2021-08-31T22:21:51Z,Remove macOS Command Line (#2051),1,2,3
+sindresorhus/awesome,c80a91168c6a11775b4586959b708534cc4669a0,Christian Cuevas,2021-08-16T17:56:53Z,Update link to Godot list (#1936),1,1,2
+sindresorhus/awesome,de091ca27633c8699512a308d4681f9a261b93bd,Sindre Sorhus,2021-08-15T09:23:32Z,Meta tweaks,8,0,8
+sindresorhus/awesome,19a60c36da4024ea5f7e169ae383becb0eee1016,Max Vorobev,2021-07-29T13:20:51Z,Update link to Grakn (#1987),1,1,2
+sindresorhus/awesome,9c86285be2bd654e93c1d98d5630ce5025166504,dersvenhesse,2021-07-29T11:58:23Z,Add Scriptable (#1953),1,0,1
+sindresorhus/awesome,781e6f2939b40b059af81cc955d4f7fbf69b55bc,Patrick Gray,2021-07-29T11:27:55Z,Add Stacks (#2039),1,0,1
+sindresorhus/awesome,761fc8c7043ddf8b54961de7e0e997df054cbb73,mfkl,2021-07-28T12:16:14Z,Add VLC (#2038),1,0,1
+sindresorhus/awesome,ec9127da2674958e10dba7188bb3cbb2c3137eb5,Igor Baliuk,2021-07-28T00:06:23Z,Add Internships (#2034),1,0,1
+sindresorhus/awesome,f277e8f160ba087a88a6ba369da680d372aede39,Kevin Deldycke,2021-07-27T12:24:44Z,Add Billing (#1926),1,0,1
+sindresorhus/awesome,5fd9bb2dae1c9ad1199060732c9b66ee1039fd33,Sindre Sorhus,2021-07-27T12:13:41Z,Add some missing guidelines,2,0,2
+sindresorhus/awesome,e8d6a8f82ce371c69ae61c3871b31668b0394045,Sindre Sorhus,2021-07-22T12:24:45Z,Meta tweaks,17,0,17
+sindresorhus/awesome,0d52f9038f1714008e52c5b20fc1b874b6b340ed,Mostafa Touny,2021-07-07T13:52:21Z,Add Theoretical Computer Science (#1960),1,0,1
+sindresorhus/awesome,c06e69bd30910cee1463f65780a40b3f43b19499,Owen Young,2021-07-05T16:49:56Z,Add Track Awesome List (#2037),1,0,1
+sindresorhus/awesome,1a41d47bc97ee9491293d4b1743ea6be05d88e9e,Mattias Nystrom,2021-07-05T16:46:14Z,Add Golem (#2024),1,0,1
+sindresorhus/awesome,b33748eaa472e1c10f3ca6dbe8c9946b86d56544,Mateusz,2021-07-04T12:30:29Z,Add MDBootstrap (#2025)  Co-authored-by: Sindre Sorhus <sindresorhus@gmail.com>,1,0,1
+sindresorhus/awesome,f3e167d9a2d259c53dae81b7599fefd739326682,Sindre Sorhus,2021-06-08T18:04:28Z,Meta tweaks,20,0,20
+sindresorhus/awesome,5a03b0f14238cd4476a184fef527f910a3056181,David Wasserman,2021-06-05T12:22:25Z,Add Urban & Regional Planning (#2013),1,0,1
+sindresorhus/awesome,4e59fba4e20926991c31f86ae4dc29539c4f0750,Raymond Berger,2021-06-01T19:07:57Z,Fix CI (GitHub actions) test failing (#2028),2,2,4
+sindresorhus/awesome,8514baa5f8cfb67b61fef6f1da15fef9b3715977,Sindre Sorhus,2021-05-21T12:00:11Z,Meta tweaks,10,0,10
+sindresorhus/awesome,7941b7adf4ac4187b0bf188a09e8d534959c4eba,Enzo Innocenzi,2021-05-17T17:24:31Z,Add Inertia.js (#2006)  Co-authored-by: Sindre Sorhus <sindresorhus@gmail.com>,1,0,1
+sindresorhus/awesome,60ff4edaf707bd8be3529bba94704b1606c489f4,Dan Grahn,2021-05-12T07:57:23Z,Add XAI (#1980),1,0,1
+sindresorhus/awesome,61264dab2ac860912413c49c7676e07b7c8b6e9b,Sindre Sorhus,2021-05-05T16:08:22Z,Meta tweaks,15,1,16
+sindresorhus/awesome,861c6c76b8b059d7aef7afd06dba35125087c2a0,brianmingus2,2021-05-03T18:44:04Z,Remove Chalice (#2005),0,1,1
+sindresorhus/awesome,9c7a5d03dc55b50eba9b74ffdaa29bc5d450d550,Raymond Berger,2021-05-02T18:20:26Z,Fix git diff command in repo linter (#2003),1,1,2
+sindresorhus/awesome,7597b9013e04d253390fed8d6a67e837501dcc07,Rahul Singh,2021-05-02T11:06:51Z,Add Cassandra (#1990),1,0,1
+sindresorhus/awesome,ec9672252a2cddca52f0e154bdd8444a48f3913b,Raymond Berger,2021-04-19T09:59:15Z,Run `awesome-lint` on new additions (#1962)  Co-authored-by: Sindre Sorhus <sindresorhus@gmail.com>,36,0,36
+sindresorhus/awesome,2573b98bb6e60e6f6c19c5ef5aef4208f16e5df0,brianmingus2,2021-04-19T09:23:48Z,Add Chalice (#1984)  Co-authored-by: Sindre Sorhus <sindresorhus@gmail.com>,1,0,1
+sindresorhus/awesome,b077f6fedd466d08b23dc586dc5daa5bbb24f8d0,David Houston,2021-04-02T19:51:59Z,Add Nix (#1973)  Co-authored-by: Sindre Sorhus <sindresorhus@gmail.com>,1,0,1
+sindresorhus/awesome,26686bd3bfda8d518e67fa10f09b87b8f1b0d568,aryamansharda,2021-03-19T07:05:00Z,Add Awesome Viewer to Related section (#1969)  Co-authored-by: Sindre Sorhus <sindresorhus@gmail.com>,1,0,1
+sindresorhus/awesome,74ebaa24cf9f9c731b07272b108bd5dab30df89c,Sindre Sorhus,2021-03-12T17:49:03Z,Meta tweaks,14,0,14
+sindresorhus/awesome,ddc616d1d22d44c883ce19bbd9cd4612a6515486,Sindre Sorhus,2021-03-11T07:06:17Z,Update redirected URLs and remove non-compliant lists,14,18,32
+sindresorhus/awesome,29dabb2fb8d8708a70ec900fb9e92193f315da63,Anas Fitiani,2021-03-10T08:33:26Z,Add Quality Assurance Roadmap (#1921),1,0,1
+sindresorhus/awesome,b9378ef88932c620d35b597bdf7ddb5da6eba2f8,Max Vorobev,2021-03-10T07:40:17Z,Add Grakn (#1938)  Co-authored-by: Sindre Sorhus <sindresorhus@gmail.com>,1,0,1
+sindresorhus/awesome,25449c05535c3576299f75ad61803a10b71ec71a,niedev,2021-03-09T16:29:49Z,Add Translations (#1907),1,0,1
+sindresorhus/awesome,c50d2d25f215306544c8898a2930fba0ce98dc5d,Kevin Deldycke,2021-03-07T14:33:17Z,Add IAM (#1916),1,0,1
+sindresorhus/awesome,fa47fcf48a0d4a0e8a64786abe2b74054187c572,Agam More,2021-03-07T12:03:41Z,Add Developer-First Products (#1914)  Co-authored-by: Sindre Sorhus <sindresorhus@gmail.com>,1,0,1
+sindresorhus/awesome,ab995548f66503330d5b440edcc6777699cadd6e,Nicholas Vadivelu,2021-03-07T11:42:18Z,Add JAX (#1935),1,0,1
+sindresorhus/awesome,7b7fb4343b9f29405acb68afbfb9daeac267ddaf,Aurélien Ooms,2021-02-26T10:35:35Z,Add QR Code (#1873)  Co-authored-by: Sindre Sorhus <sindresorhus@gmail.com>,1,0,1
+sindresorhus/awesome,3572eeb055f6eb7274445ab57464aaa10322f8d1,Sindre Sorhus,2021-02-09T18:50:20Z,Meta tweaks,0,2,2
+sindresorhus/awesome,efc2a482edd74dc7fdaa04f44af227226995cf49,Bálint Kiss,2021-01-31T09:42:19Z,Add DOS (#1917)  Co-authored-by: Sindre Sorhus <sindresorhus@gmail.com>,1,0,1
+sindresorhus/awesome,17790fbe4baff4e5cd34b347d0f75aebe245f7ef,Sindre Sorhus,2021-01-30T04:53:47Z,Update readme.md,6,0,6
+sindresorhus/awesome,8d820085bd4c54c3e68ff6e423d12fe524943419,Sindre Sorhus,2021-01-24T07:45:43Z,Fix a link,1,1,2
+sindresorhus/awesome,9cb69a731b9e9d02d5239741040e48f1a139df24,Sindre Sorhus,2021-01-20T07:45:54Z,Update a link,2,2,4
+sindresorhus/awesome,62888a9d0b49b84942794cfdffe644d09531f9e0,Michel Pereira,2021-01-18T07:42:45Z,Add Games of Coding (#1933),1,0,1
+sindresorhus/awesome,9b17814741167cda77c9e4dba77b8b86d2d692ed,Juan Carlos Ruiz,2021-01-17T09:55:33Z,Add Design Systems (#1876),1,0,1
+sindresorhus/awesome,f9a83507af4338df9c24dae49e41f063b120ef45,Sindre Sorhus,2021-01-12T07:58:55Z,Minor tweaks,0,4,4
+sindresorhus/awesome,ae93f1e1d27db5e264ce4b870ddb19528007619e,Simon Dassow,2021-01-12T07:47:36Z,Add Veganism (#1886),1,0,1
+sindresorhus/awesome,ad70d4236e9901ed3f5ab0a4b659ebcd60d7c15e,Mark Keller,2021-01-10T10:38:20Z,Add Biological Visualizations (#1862),1,0,1
+sindresorhus/awesome,3ddd9d2d1e6e7418a23d7976295de117d35dde48,Tobias Augspurger,2021-01-10T10:37:11Z,Add Robotic Tooling (#1905)  Co-authored-by: Sindre Sorhus <sindresorhus@gmail.com>,1,0,1
+sindresorhus/awesome,2152b9b624e28ae632b376c58dbd6ce5fef9fe9d,wernerkrauss,2021-01-10T10:35:25Z,Add Silverstripe CMS (#1879),1,0,1
+sindresorhus/awesome,bc500c8dbcf72e483298db3d90839193ee268873,José De Freitas,2021-01-09T19:27:31Z,Add YouTubers (#1868),1,0,1
+sindresorhus/awesome,c87acab1258a788ca50a4b7a612e167022f68d07,Dmitry Kolomiets,2021-01-07T07:53:39Z,Add CDK (#1827)  Co-authored-by: Sindre Sorhus <sindresorhus@gmail.com>,1,0,1
+sindresorhus/awesome,118ac19cc4210eb241fff0ca49282da31de5ecec,Ernő Horváth,2020-12-22T06:06:05Z,Add LIDAR (#1908)  Co-authored-by: Sindre Sorhus <sindresorhus@gmail.com>,1,0,1
+sindresorhus/awesome,353429f2cea9b1cc46b9dd69656838c07898722c,John Mars,2020-12-20T09:54:28Z,Add Creative Technology (#1895),2,0,2
+sindresorhus/awesome,c122c65763a9a7b795bb4bc99a691d989b1d96f8,TheComputerM,2020-12-19T17:39:16Z,Add Svelte (#1898),1,0,1
+sindresorhus/awesome,1b8e590609ac742974bf149933b6fd8b00afe717,Thomas Bnt,2020-12-19T17:35:21Z,Add Web Monetization (#1812),1,0,1
+sindresorhus/awesome,8c5da0be222f408f79596144b4c7b142b3a2854f,Michael Herman,2020-12-18T07:16:08Z,Update Flask (#1919),1,1,2
+sindresorhus/awesome,5beae2548627dc04e01576c9b714a9441921d101,0xACAB,2020-11-28T04:33:33Z,Correct links to two Awesome lists whose username had changed (#1913),2,2,4
+sindresorhus/awesome,7b76b8e720dc27779cdc53c1ef09ed8e5eb62bbd,Sindre Sorhus,2020-11-22T13:15:52Z,"Remove `Sysadmin` list  The repo has been archived.  Closes #1904",0,1,1
+sindresorhus/awesome,4a7a98b3e9141ca26498c16768a4ce8d917b30d4,Margaret Maynard-Reid,2020-11-20T11:16:09Z,Add TensorFlow Lite (#1865)  Co-authored-by: Sindre Sorhus <sindresorhus@gmail.com>,1,0,1
+sindresorhus/awesome,fabf71bb64188b2c358732b2148d3fce008c77d5,Dan Forbes,2020-11-20T10:57:52Z,Add Substrate (#1869)  Co-authored-by: Sindre Sorhus <sindresorhus@gmail.com>,1,0,1
+sindresorhus/awesome,03292bc4f03f8c36fe5a7380d8adf5437290b511,Dries Vints,2020-11-03T13:27:03Z,Add TALL Stack (#1866)  Co-authored-by: Sindre Sorhus <sindresorhus@gmail.com>,1,0,1
+sindresorhus/awesome,7d3269cf2b183b3cd3ecba169f28c23804e88bcd,KeyboardInterrupt,2020-11-02T00:45:44Z,Add Ansible (#1857)  Co-authored-by: Sindre Sorhus <sindresorhus@gmail.com>,1,0,1
+sindresorhus/awesome,4a42d1cf52b58981a53faec8c530ea2afde8b42f,Tobias Augspurger,2020-11-02T00:41:54Z,Add Sustainable Technology (#1891)  Co-authored-by: Sindre Sorhus <sindresorhus@gmail.com>,1,0,1
+sindresorhus/awesome,d9d6daa28f8fe80353b32e1a916227987285175f,Tobias V. Langhoff,2020-10-31T10:30:38Z,Add CHIP-8 (#1871)  Co-authored-by: Sindre Sorhus <sindresorhus@gmail.com>,1,0,1
+sindresorhus/awesome,0c86e0d3206baff23221baf006b541870dbc3151,Gaurav Makhecha,2020-10-29T23:50:25Z,Update pull request template link to use `main` branch (#1816),1,1,2
+sindresorhus/awesome,1c91d7e1c526c25df4e9f66cdf94df944fa36c16,mourarthur,2020-10-29T23:47:06Z,Add Credit Modeling (#1884),1,0,1
+sindresorhus/awesome,5165429049be31baaa89a5d39bfb21087802aece,Kevin Deldycke,2020-10-29T15:11:17Z,Fix link (#1889),1,1,2
+sindresorhus/awesome,a5a9fb16fc136d81d8f1ddae10c74b251ca6b83f,Kevin Deldycke,2020-10-29T14:31:36Z,Add Engineering Team Management (#1887),1,0,1
+sindresorhus/awesome,1a3ee406f070d73bd265539cf1be2e81c9e2d5ec,Eric Fletcher,2020-10-28T21:50:41Z,Add R Learning (#1882),2,1,3
+sindresorhus/awesome,693fa4ab8e17fe6399bf026f8a8a07d871d1bb3d,Raymond Berger,2020-10-13T20:33:39Z,Add Social Enterprise (#1850),1,0,1
+sindresorhus/awesome,488c1051a3089e386ed223a5b45ab8ff8c53397c,Kevin Deldycke,2020-10-12T16:11:54Z,Sync PR template with ToC rules about silenced sections (#1860)  Co-authored-by: Sindre Sorhus <sindresorhus@gmail.com>,5,1,6
+sindresorhus/awesome,21421ba38a3f17d93261f8544c06775561518e69,Sindre Sorhus,2020-09-11T11:28:25Z,Update pull request template,7,0,7
+sindresorhus/awesome,6bb73c1b3b2d534548bcf6cba89d0a851986308f,Sindre Sorhus,2020-09-09T15:52:13Z,Supporter update,5,0,5
+sindresorhus/awesome,0c87613023e56f68218d8695cc165afee779491c,Mahadi Xion,2020-09-02T11:29:25Z,Add Discord Communities (#1813),1,0,1
+sindresorhus/awesome,9b31d0b14c6273fc32ff288c68254b72f1d00bfd,Peter Thaleikis,2020-08-27T12:38:03Z,Remove Assembler (#1855),0,1,1
+sindresorhus/awesome,45c2205c47684ac75d855b8f0a9879250aa25248,GeorgeZou,2020-08-21T09:09:16Z,Add AI in Finance (#1829)  Co-authored-by: Sindre Sorhus <sindresorhus@gmail.com>,1,0,1
+sindresorhus/awesome,247cd3d33c029d90c377fa0a7ed70ad090e32495,Sindre Sorhus,2020-07-27T17:36:43Z,Update pull_request_template.md,1,0,1
+sindresorhus/awesome,2317e48b0aa21bd5155b7ebdafdcb4726dc1d587,Michael Herman,2020-07-03T19:25:10Z,Add FastAPI (#1800),1,0,1
+sindresorhus/awesome,f7c374bee51a49eaa4716b5f1f658af515793a9f,Jakob Pennington,2020-07-03T19:15:23Z,Add DevSecOps (#1811),1,0,1
+sindresorhus/awesome,e542031d6696460ae9b2d2eaf58aa9266244c100,Sting Alleman,2020-06-27T20:03:01Z,Add Audiovisual (#1795),1,0,1
+sindresorhus/awesome,3b0164cbc9b012f19b1f494c6b8906472b18fb55,Alex,2020-06-27T11:44:48Z,Add Software Engineering for Machine Learning (#1809)  Co-authored-by: Sindre Sorhus <sindresorhus@gmail.com>,1,0,1
+sindresorhus/awesome,46a58d72b62b9eefd0166be0ad8c2aa4c2079af5,impulse,2020-06-27T10:59:12Z,Add Flame (#1805)  Co-authored-by: Sindre Sorhus <sindresorhus@gmail.com>,1,0,1
+sindresorhus/awesome,6260b123cd7d5f58bd49bad18a10a7d6ee40d91f,Alain Schlesser,2020-06-27T10:38:30Z,Add WP-CLI (#1799),1,0,1
+sindresorhus/awesome,7acb34c61dbac2cbc47d8438eb57aa29d79bc650,Sindre Sorhus,2020-06-27T08:45:15Z,Update pull_request_template.md,1,1,2
+sindresorhus/awesome,0ddd5e277a7a39b733438e1f4b788e6509f12c5c,Moritz Mähr,2020-06-20T16:09:38Z,Add Scientific Writing (#1798),1,0,1
+sindresorhus/awesome,cf1b29deed3a80813398c93e05af8f4be5aa2331,Csaba Apagyi,2020-06-20T07:39:16Z,Add Building Blocks for Web Apps (#1796)  Co-authored-by: Sindre Sorhus <sindresorhus@gmail.com>,1,0,1
+sindresorhus/awesome,3d6bc0215721268d2972fd851cfed730057829ab,Sindre Sorhus,2020-06-17T09:07:05Z,Add related link to all the Awesome lists on GitHub,1,0,1
+sindresorhus/awesome,9d1890e8baab141df4f6c271b414dc941d37ebae,Sindre Sorhus,2020-06-15T05:53:16Z,Change default branch name from `master` to `main`  Fixes #1793,4,3,7
+sindresorhus/awesome,2c4f4545336f50321372d7fc01e6fc7ffdd0831a,Richie Bendall,2020-06-05T14:41:09Z,Add Ponyfills (#1692)  Co-Authored-By: Sindre Sorhus <sindresorhus@gmail.com>,1,0,1
+sindresorhus/awesome,b262d3892a638499e257cdaf8bb0a00cc1411939,Sindre Sorhus,2020-06-03T07:30:20Z,Add social preview to the repo,0,0,0
+sindresorhus/awesome,20c90a1e59ce9a806b9d3d5b228f9759d4b27d5f,Aaron Ma,2020-06-03T07:17:58Z,Add TensorFlow.js (#1766)  Co-authored-by: Sindre Sorhus <sindresorhus@gmail.com>,1,0,1
+sindresorhus/awesome,621c1b2df1945f50c674538d40f442c7ebbce7cc,Martin Miles,2020-06-01T18:18:22Z,Add Sitecore (#1747)  Co-authored-by: Sindre Sorhus <sindresorhus@gmail.com>,1,0,1
+sindresorhus/awesome,222f93ef2daa1affa27fba72962fb728b5ade4e6,Max Schmitt,2020-05-30T17:35:28Z,Add Playwright (#1756)  Co-authored-by: Sindre Sorhus <sindresorhus@gmail.com>,1,0,1
+sindresorhus/awesome,345cb657a1c211fd862f86b98e1fcb0531bc5275,Sindre Sorhus,2020-05-30T17:11:27Z,Meta tweaks,2,9,11
+sindresorhus/awesome,0ea9157ce47cc9b92535b85b04f47c092985b7e3,Sindre Sorhus,2020-05-30T17:12:15Z,Add Real-Time Communications (#1694),1,0,1
+sindresorhus/awesome,819715277c51ec4afe517f1dcf9947b16758cbd3,Zlatan Vasović,2020-05-22T13:47:40Z,Add the description for Julia language (#1777),1,1,2
+sindresorhus/awesome,1a3af55cd13775cf06b00b16282e1ef40a3455c5,Mike Causer,2020-05-17T09:02:34Z,Add MicroPython (#1776),1,0,1
+sindresorhus/awesome,ca65eb299b9facb5181d2741b1a3fedbfff78dd9,Yoshiya Hinosawa,2020-05-15T17:10:35Z,Add Deno (#1774),1,0,1
+sindresorhus/awesome,44d450d2a95139e0a7a45b609963c2e5fccd8b66,Sindre Sorhus,2020-05-13T06:35:46Z,Remove `Game Networking`  It’s no longer an “Awesome” list.  https://github.com/MFatihMAR/Game-Networking-Resources/commit/151df5041a8e6f813dfff4f614802caff949d111,0,1,1
+sindresorhus/awesome,0c867a71d68c103b21887f796754bb4164908e1e,Steven Stockhamer,2020-05-13T06:33:54Z,Update renamed users and repos (#1771),14,14,28
+sindresorhus/awesome,870200cf118092e954b3668d62c4dba25ad9a253,Steven Stockhamer,2020-05-12T05:08:44Z,Move `Plotters` list to Hardware section (#1768),1,1,2
+sindresorhus/awesome,8c10487566a64f4c8dec0effb9a4644510db57c2,Sindre Sorhus,2020-04-30T10:10:14Z,Meta tweaks,4,11,15
+sindresorhus/awesome,15370abb11d5d742c1c9f0f77e97fdf18181d33b,Swastik Baranwal,2020-04-27T09:55:29Z,Add V (#1684),1,0,1
+sindresorhus/awesome,e9466a6e8886d6de325263e48eae53214b110921,Maxim Smolyakov,2020-04-21T16:41:59Z,Add Waves (#1754),1,0,1
+sindresorhus/awesome,e4e8eb02dc9c96fe294173c62fb86459811228fa,Sindre Sorhus,2020-04-16T09:35:41Z,Use HTTPS links,6,6,12
+sindresorhus/awesome,fddf06307a9eb6551446d4b6731e88b560bfde98,mgramin,2020-04-05T10:01:28Z,Add Database Tools (#1679),1,0,1
+sindresorhus/awesome,fb4e2cbfea8cddbc9de47f26eb62bb5464c6de11,radek-sprta,2020-03-30T13:06:34Z,Add Game Remakes (#1745),1,0,1
+sindresorhus/awesome,f7e14ee53697ef272bc1d73b463638ce59957de1,Sawood Alam,2020-03-27T07:25:06Z,Add Web Archiving (#1704),1,0,1
+sindresorhus/awesome,bd23d06445527960e0a60062d8cf71c986eb2363,Nadun Indunil,2020-03-22T07:15:30Z,Add Material-UI (#1676)  Co-authored-by: Sindre Sorhus <sindresorhus@gmail.com>,1,0,1
+sindresorhus/awesome,3ad2511fe787df7f32594ff02bcfbd31b3a84cac,Aliaksandr Belik,2020-03-12T03:19:15Z,Create Testing section (#1731),11,7,18
+sindresorhus/awesome,b83399126ad414353cb18277408811897af5147f,ltchris,2020-03-09T13:43:45Z,Add Contexture (#1727)  Co-authored-by: Sindre Sorhus <sindresorhus@gmail.com>,1,0,1
+sindresorhus/awesome,ab786b54d041abd8ce09d7eb42024cf68e4a3283,Simon Aronsson,2020-03-09T11:23:05Z,Add k6 (#1721),1,0,1
+sindresorhus/awesome,e8e80ce708e853bae534cdeb57ed04bf1c8f6a6d,Umut Işık,2020-03-09T07:33:50Z,Add Awesome CLI (#1729)  Co-authored-by: Sindre Sorhus <sindresorhus@gmail.com>,1,0,1
+sindresorhus/awesome,f1ed8204ff7bb026a446046392febc564cc02df5,Sindre Sorhus,2020-03-06T07:06:38Z,Meta tweaks,1,20,21
+sindresorhus/awesome,6e19fff3b77e9cbec8a0b1118dc03c980f8b7991,Sindre Sorhus,2020-03-05T08:51:05Z,Add StumbleUponAwesome (#1724),1,0,1
+sindresorhus/awesome,0d755ef5872bcf6e27185e81bae00a0afcc3d6c9,Jet Li,2020-02-16T13:35:32Z,Add Yew (#1688)  Co-authored-by: Sindre Sorhus <sindresorhus@gmail.com>,1,0,1
+sindresorhus/awesome,701c28cc4711a74759d1f8c2f01e61c0f9d62512,Karl Palmskog,2020-02-12T18:05:25Z,Add Coq (#1697),1,0,1
+sindresorhus/awesome,434a2a95e295dd968603db753f3a14b628c4c116,Agustín Covarrubias,2020-02-01T05:53:30Z,Add ESP (#1689),1,0,1
+sindresorhus/awesome,4850f034a231f53a0d456756a882b81c1525b84f,Dan,2020-01-29T08:51:20Z,Move event-related lists to the new Events section (#1690),2,2,4
+sindresorhus/awesome,828b996a1e7ab1ab6069a27288fa6a758c8de4a4,Sergey Pimenov,2020-01-21T06:16:31Z,Add Web Animation (#1677)  Co-authored-by: Sindre Sorhus <sindresorhus@gmail.com>,1,0,1
+sindresorhus/awesome,18d0d8ea67b9f32d867910825aeb69f39f17cfdd,Ake Gaviar,2020-01-21T06:13:18Z,Add Corda (#1683),1,0,1
+sindresorhus/awesome,047235299c224c879b7653e5edf824dae43cb169,Dan,2020-01-21T06:09:32Z,Add Creative Tech Events (#1653)  Co-authored-by: Sindre Sorhus <sindresorhus@gmail.com>,5,0,5
+sindresorhus/awesome,f0a0ecdafe95b6bf78ff3fbbf09b91f487f5faf9,Gustav Bertram,2020-01-21T06:03:11Z,Add Common Lisp Learning (#1681),2,1,3
+sindresorhus/awesome,0d5eede3daf4b1b9a333350bf700bb8222086f3e,Ajaykumar,2019-12-24T13:22:55Z,Add Web Performance Budget (#1669),1,0,1
+sindresorhus/awesome,db953e7d2eb04d6c3e162b0ccb743c08adbdf09b,Žygimantas Medelis,2019-12-22T22:40:53Z,Add Natural Language Generation (#1656),1,0,1
+sindresorhus/awesome,ef36ebb54c430c347a3200cc9f1f26fd8265606e,Simon Duff,2019-12-22T22:36:58Z,Add Splunk (#1628),1,0,1
+sindresorhus/awesome,26642b394dd3d7519066b5e5f0f3901a32e3063d,Sindre Sorhus,2019-12-16T21:03:27Z,Readme improvements,7,31,38
+sindresorhus/awesome,b2c5ca9c05de4708d68bf674d409d56b63643b5d,Sarah Drasner,2019-12-16T14:10:01Z,Add GitHub Actions (#1671),1,0,1
+sindresorhus/awesome,0a48872fc4a54a8b437d240070616487f987e7d2,Martin Kavík,2019-12-12T19:48:07Z,Add Seed RS (#1670),1,0,1
+sindresorhus/awesome,a78a4f09a08fbd71ac185361b5b988ece18365c4,Harry Caufield,2019-11-26T15:21:10Z,Add Biomedical Information Extraction (#1620),1,0,1
+sindresorhus/awesome,bf5e2232e7a121fc20e71f741df2655a879001b5,Niklas Gruhn,2019-11-26T14:28:52Z,Add Naming (#1662),1,0,1
+sindresorhus/awesome,c7d941cd9f89f42b746ccc60c8dc07d069648994,Sindre Sorhus,2019-11-22T18:02:13Z,Botpress is a sponsor ❤️,31,9,40
+sindresorhus/awesome,dca30c9cb516546ddc94244dfa95a61c9ae4cd01,John Grant,2019-11-22T17:45:22Z,Add Wardley Maps (#1623),1,0,1
+sindresorhus/awesome,9dedb21ed7079f58c78caa482bd0542b735c1948,Mario Daniel Ruiz Saavedra,2019-11-22T17:41:37Z,Add Vala (#1647),1,0,1
+sindresorhus/awesome,cd5671f98ebd25369a17ee5259aee8303f627304,Phil Sturgeon,2019-11-22T08:39:32Z,Add Earth (#1652),1,0,1
+sindresorhus/awesome,8c077cbbc9ee19f46625aff52d6a44f95c39e92b,Max Ferrer,2019-11-18T03:50:19Z,Add Arch-based Projects (#1630),1,0,1

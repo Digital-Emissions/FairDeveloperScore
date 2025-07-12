@@ -1,0 +1,301 @@
+repo,sha,author,date,message,additions,deletions,total_changes
+codecrafters-io/build-your-own-x,a8bc6fbcf12498a35773e0a73c42b287797e3084,Vencyr Laurence Imbo Amores,2025-07-07T14:14:17Z,update to byox banner,1,1,2
+codecrafters-io/build-your-own-x,c56186ac2d02831062072c0f7c093c2a91616008,Vencyr Laurence Imbo Amores,2025-07-07T09:05:02Z,update byox banner,1,1,2
+codecrafters-io/build-your-own-x,cf5d7501331ee4fee8a50b1ed68a5236f85b53b8,Paul Kuruvilla,2025-04-11T19:13:28Z,Merge pull request #1414 from maysara-elshewehy/master,1,0,1
+codecrafters-io/build-your-own-x,d6ce7605f0d961be9ba77e261e0442dcfca3249c,Maysara,2025-04-11T18:00:24Z,Add a new tutorial link for zig.,1,0,1
+codecrafters-io/build-your-own-x,7b7d32b81907004aa3f2b79c8cb266f64bc1f43d,Paul Kuruvilla,2024-09-03T14:39:35Z,Merge pull request #1128 from MichaelHinrichs/patch-1  Enable Markdown detection.,2,0,2
+codecrafters-io/build-your-own-x,600322eb68bc886b230d64688403024bf00d412a,NintenHero,2024-08-13T21:13:52Z,Create .gitattributes  Enable Markdown detection.,2,0,2
+codecrafters-io/build-your-own-x,d45e4aa435c0939bd2970daab595567b81f5aefb,Paul Kuruvilla,2024-08-06T00:02:50Z,Merge pull request #1124 from gr0wnd-z33r0/patch-2  Update README.md,0,1,1
+codecrafters-io/build-your-own-x,b60615d8b50e5c68543564e17e7892783db68a8c,Will Squibb,2024-08-03T14:41:44Z,"Update README.md  removed uncatogorised python project for ""Build your own error-correction fountain code with Luby Transform Codes"" due to dead links and domain not being allocated",0,1,1
+codecrafters-io/build-your-own-x,b68e320fb32a43669ad6ca43a8562cc9fc0c6eca,Paul Kuruvilla,2024-07-17T13:30:56Z,Merge pull request #1021 from R055A/fix-dev-license-recognition-ml-in-py  Fix: broken README.md link to Python ML tutorial for license plate detection,1,1,2
+codecrafters-io/build-your-own-x,d3015cee7b19c957facfb1a40b18e9161c5bd759,Paul Kuruvilla,2024-07-10T15:58:16Z,Update README.md,1,1,2
+codecrafters-io/build-your-own-x,2c211140a9fad0511c6699e8247434915cb77184,Paul Kuruvilla,2024-07-10T15:57:57Z,Update README.md,1,1,2
+codecrafters-io/build-your-own-x,981cd2c113d57217c930f705c5af7223bfc0e66c,Paul Kuruvilla,2024-06-12T21:49:31Z,Merge pull request #1060 from davayd/patch-1  fix: fixed broken link from list,1,1,2
+codecrafters-io/build-your-own-x,a360c7a8da41c12ca931200f5b3fcd37c35e56e0,Dmitry Dreko,2024-06-06T16:11:10Z,Return the link in list with fixed value,1,0,1
+codecrafters-io/build-your-own-x,f1c9c2a7143b3bb8e74888113d89bcb0966ff098,Dmitry Dreko,2024-06-05T20:24:28Z,fix: remove dead link from list,0,1,1
+codecrafters-io/build-your-own-x,4ffe877393fd1098cba2739794b29e45cc415a8b,Paul Kuruvilla,2024-05-23T21:07:41Z,Merge pull request #1048 from NicolasMontone/patch-1  fix: remove pawned link from list,0,1,1
+codecrafters-io/build-your-own-x,0fc8171669304b178e93da57141e6d2ae2ff53b9,Nicolás Montone,2024-05-23T20:59:20Z,"fix: remove pawned link from list  I don't know if you want to remove it, but I will send this PR to at least notify that this is happening.  closes #1047",0,1,1
+codecrafters-io/build-your-own-x,3191380eaa4ae777bbc164ddcc5567e89ddfcb65,Paul Kuruvilla,2024-03-25T11:24:09Z,Merge pull request #1025 from joaorlima/fix/emphasize-missing-tutorials  emphasize for missing tutorials,2,2,4
+codecrafters-io/build-your-own-x,05f40aef71ed6260f8eb44ce542124cacb907e69,João Pedro Lima,2024-03-22T18:06:58Z,emphasize for missing tutorials,2,2,4
+codecrafters-io/build-your-own-x,8c82e32dce129f60acb6b1a01dc7ad71aa866151,Adam Ross,2024-03-17T07:06:52Z,Update README.md  Fix broken link: Python: Developing a License Plate Recognition System with Machine Learning in Python.,1,1,2
+codecrafters-io/build-your-own-x,39534a58d9e9ef58d3a90947b8e6122f3562eb88,Paul Kuruvilla,2024-03-14T09:56:57Z,Merge pull request #1020 from joaorlima/fix/missing-closing-underscore-for-go-db-tutorial  fix missing underscore for Go database tutorial,1,1,2
+codecrafters-io/build-your-own-x,eb772fdc956f538506137edcc950112a2591bd42,João Pedro Lima,2024-03-13T22:46:55Z,fix missing underscore for Go database tutorial,1,1,2
+codecrafters-io/build-your-own-x,0e4f2a7a74ab598e56ee06f00b7125ae370020a0,Paul Kuruvilla,2024-02-27T17:19:52Z,Merge pull request #1017 from DanyRenaudier/patch-1  Update README.md,1,1,2
+codecrafters-io/build-your-own-x,9bd74f0cef602aa5c0f9bbb6504216b47ed25ec9,DanyRenaudier,2024-02-27T16:50:33Z,Update README.md  Build a simple 2D physics engine for JavaScript games link corrected,1,1,2
+codecrafters-io/build-your-own-x,6e52d1d6ba7f54c11099f3e9b44afbb936d8c941,Paul Kuruvilla,2024-02-21T19:04:09Z,Merge pull request #1014 from karandeeppotato/issue#1013  Fixed broken link,1,1,2
+codecrafters-io/build-your-own-x,30c11bd7743d7612dc9f26c91625e8e37d943a4d,karandeeppotato,2024-02-21T04:18:33Z,"Fixed broken link  The broken link for ""Ruby: Build your own fast, persistent KV store in Ruby"" is replaced with a working link",1,1,2
+codecrafters-io/build-your-own-x,276f1c607526631041deb1c5d5fc009851f0263d,Paul Kuruvilla,2024-02-19T11:57:44Z,Merge pull request #1012 from aastik7/patch-1  Update README.md,1,1,2
+codecrafters-io/build-your-own-x,fe005dc52d63b8b1cb5111416064baf77b36aab0,Aastik,2024-02-18T00:27:39Z,"Update README.md  Changed the link for telegram bot with python, as the older link had outdated methods and incompatibilites. Replaced it with a more comprehensive and updated tutorial by freecodecamp.",1,1,2
+codecrafters-io/build-your-own-x,0f6fd6b8b0387fc157b2ab72961ea69217b9eca4,Paul Kuruvilla,2024-02-09T13:57:09Z,Merge pull request #1007 from erwanvivien/patch-1  fix: using https instead of http for createcommons,1,1,2
+codecrafters-io/build-your-own-x,a9278a147e54b1b2cb1e2bdf307c2fa75d75256b,erwanvivien,2024-02-09T11:59:12Z,fix: using https instead of http for createcommons,1,1,2
+codecrafters-io/build-your-own-x,3f97f8d90a814b454ff7d7e2b172b51a6c908610,Paul Kuruvilla,2024-01-25T13:41:45Z,Merge pull request #996 from joshburnsxyz/patch-1  Update broken git plugin tutorial link,1,1,2
+codecrafters-io/build-your-own-x,aa7d2f57153bf8caab0a1289fb36ca23241fcfa0,Josh Burns,2024-01-24T02:30:18Z,Update broken git plugin tutorial link,1,1,2
+codecrafters-io/build-your-own-x,24a385c09aeaad14b8cf52c3f1276af5ff4f5eef,Paul Kuruvilla,2023-12-29T16:48:25Z,Merge pull request #977 from ajaypremshankar/master  Fixed broken link for 'Command line tool in Rust',1,1,2
+codecrafters-io/build-your-own-x,7d66285eba8fc6de4a64d6e626a85815c1f74c39,Ajay Prem Shankar,2023-12-29T04:08:32Z,Fixed broken link for 'Command line tool in Rust',1,1,2
+codecrafters-io/build-your-own-x,e92dc3a6d57a15a71a464ac0dcfe1c951754206a,Paul Kuruvilla,2023-11-07T12:12:27Z,Merge pull request #954 from byo-books/byo-4  Add Build Your Own Web Server From Scratch In JavaScript,1,0,1
+codecrafters-io/build-your-own-x,ab20475e87ed90f73e26f9ee2bc5c70914ae30f3,root,2023-11-07T10:58:30Z,Add Build Your Own Web Server From Scratch In JavaScript.,1,0,1
+codecrafters-io/build-your-own-x,f645ec563b4df79cc0aba5646621deaa4d437c51,Paul Kuruvilla,2023-10-29T21:47:34Z,Merge pull request #950 from codecrafters-io/rust-tokio-and-substrate  Two rust tutorials,3,0,3
+codecrafters-io/build-your-own-x,4a5ee9408ee12820871615a3ea3ef2ad76830c58,Matthew,2023-10-29T21:43:06Z,"Update README.md  added some rust material - tokio's build your own redis  - substrate's build your own blockhain",3,0,3
+codecrafters-io/build-your-own-x,64621d7ffb21c994acd25d95afbd488ef3fd63d9,Paul Kuruvilla,2023-10-26T20:04:49Z,Merge pull request #934 from Gokul2003g/broken-link  Fix: Replaced a broken link with alternative from smashingmagazine.com,1,1,2
+codecrafters-io/build-your-own-x,52d7900223b12835bc2161cdf5d7e631cecf54a4,Sarup Banskota,2023-10-16T11:18:16Z,Update README.md,1,1,2
+codecrafters-io/build-your-own-x,56c1ac727d29e1bcd7db3ed7f818c2114f122dbe,Sarup Banskota,2023-10-13T08:06:00Z,Update README.md,1,1,2
+codecrafters-io/build-your-own-x,15f8c886789d426cd549846bac0b1e516849baac,Paul Kuruvilla,2023-10-10T15:28:01Z,Merge pull request #942 from sj902/fix-byo-db  Make links for databases alphabetical,4,4,8
+codecrafters-io/build-your-own-x,dac0bcf0e9b7d8d5c5b5c722fe749c3e3b2abd70,sj902,2023-10-10T15:25:49Z,Make links for databases alphabetical,4,4,8
+codecrafters-io/build-your-own-x,caec0ee95b7c99afb93a6f688b76297cd56b55c7,Paul Kuruvilla,2023-10-09T11:25:24Z,Merge pull request #941 from rhaeguard/master  Add Building Regex Engine in Go tutorial,1,0,1
+codecrafters-io/build-your-own-x,7a1d63a25cd32f38d9530bd5bde829b9ccba8561,Mansur,2023-10-07T08:59:10Z,Add Building Regex Engine in Go tutorial,1,0,1
+codecrafters-io/build-your-own-x,b15a0713d6d47e73f61e22987afe1a0cf762ba98,Gokul2003g,2023-09-30T06:54:59Z,Fix: Replaced a broken link with alternative from smashingmagazine.com,1,1,2
+codecrafters-io/build-your-own-x,ce73e251ef4a8fc497c1a561fba48854b1156dbd,Paul Kuruvilla,2023-09-20T17:36:20Z,Merge pull request #933 from ahmedash95/patch-1  Add Build your own Redis from scratch in Go,2,1,3
+codecrafters-io/build-your-own-x,5b416b5d4e774689386b23f03a2874fa038edc0d,Ahmed Ammar,2023-09-20T17:31:11Z,Add Build your own Redis from scratch in Go,2,1,3
+codecrafters-io/build-your-own-x,a7114fb8bb1e6b476146590024d365f40699081a,Paul Kuruvilla,2023-08-08T19:31:06Z,"Merge pull request #926 from xunterr/master  Article ""Java: How To Make a Scary Russian Twitter Bot With Java"" has been removed",0,1,1
+codecrafters-io/build-your-own-x,b5db085933f075538247159b10fce93a219dda04,xunterr,2023-08-08T19:23:22Z,"Article ""Java: How To Make a Scary Russian Twitter Bot With Java"" has been removed  Вeleted the article because it was removed from Medium",0,1,1
+codecrafters-io/build-your-own-x,647f2a440244aee06922f238023eacdf1d725935,M. Tolga Cangöz,2023-07-12T02:42:29Z,Update README.md (#916),1,1,2
+codecrafters-io/build-your-own-x,c4970fabdb1fcaa2f6513ddc972483e984bd2489,Paul Kuruvilla,2023-06-26T04:48:49Z,Merge pull request #903 from hasanisaeed/master  Write a `Shell` in `C`,1,0,1
+codecrafters-io/build-your-own-x,52c8e0801ff2e3fb83778e604046a7f7a559c869,Louis Nguyen,2023-06-05T16:29:06Z,Update README.md,1,1,2
+codecrafters-io/build-your-own-x,4fbbb9570ee5d99a122eb529ad6769ae2fe8e936,Paul Kuruvilla,2023-05-31T14:05:02Z,Update link,1,1,2
+codecrafters-io/build-your-own-x,5981ca72d4077a48f6c316e2ec9ae8e477be580b,Kasun Vithanage,2023-05-28T13:56:01Z,Update URL for Let's Create a Simple Load Balancer With Go (#878),1,1,2
+codecrafters-io/build-your-own-x,0db9fcbd82727ce355c3af38799538c83ee48d77,build-your-own.org,2023-05-22T10:50:58Z,Update the Build Your Own Compiler book URL. (#904)  Co-authored-by: root <root@localhost>,1,1,2
+codecrafters-io/build-your-own-x,193c40cb68432b3c890a42392e8b295553dcdcf9,Louis Nguyen,2023-05-22T06:18:39Z,update banner's link,1,1,2
+codecrafters-io/build-your-own-x,1d60feb58553d83401ef6bd3f3b695e913a63e01,Saeed Hasani Borzadaran,2023-05-20T17:31:31Z,Add Write a `Shell` in `C`,1,0,1
+codecrafters-io/build-your-own-x,e77a3edcdb7eb1febddf90e5c085e42282c60c6a,Vencyr Laurence Imbo Amores,2023-05-18T09:53:25Z,Update README.md,1,1,2
+codecrafters-io/build-your-own-x,995b06d4cd361e0c681f68c7bb04f153509182b7,Louis Nguyen,2023-05-18T09:44:19Z,Update README.md,1,1,2
+codecrafters-io/build-your-own-x,1ab690c24f6d6609cd1e863fb9e82d438e0eefec,Louis Nguyen,2023-05-18T09:40:46Z,Update README.md with banner GIF,1,1,2
+codecrafters-io/build-your-own-x,0badba4be1de4a2e50220a64cb76de05ec71e3ad,Paul Kuruvilla,2023-05-10T00:26:39Z,Merge pull request #893 from peiyuanix/master  add Build your own VPN/Virtual Switch,1,0,1
+codecrafters-io/build-your-own-x,87d0bea7ec48510a077102a27267bf27373075fb,Liu Peiyuan,2023-05-08T20:11:22Z,Build your own VPN/Virtual Switch,1,0,1
+codecrafters-io/build-your-own-x,48245785507ad01bc6d916635d0c0a2de1b877fa,Paul Kuruvilla,2023-05-09T09:01:40Z,Merge pull request #892 from 9bany/master  Add: Build your own - Adblocker,1,0,1
+codecrafters-io/build-your-own-x,086afcac196eeb82e057f53ab94411c5c9922e8b,9bany,2023-05-09T01:18:18Z,add Build Your Own AdBlocker in (Literally) 10 Minutes,1,0,1
+codecrafters-io/build-your-own-x,61fdc1c6d0af5227b3ddfab9fabbfeaff7e240d7,Paul Kuruvilla,2023-03-07T13:52:01Z,Merge pull request #864 from HexadecimalByte/master  Add the Game Engine Series by The Cherno,1,0,1
+codecrafters-io/build-your-own-x,4c645a433a727d87688327dd1872ba430b95f41a,HexadecimalByte,2023-03-07T07:02:37Z,Add the Game Engine Series by The Cherno,1,0,1
+codecrafters-io/build-your-own-x,df225b342e11dc1f6c349b81c04b21ab9dd55984,Paul Kuruvilla,2023-02-27T19:27:50Z,"Merge pull request #859 from byo-books/byo-2  Add the database, regex, and interpreter links from build-your-own.org.",3,0,3
+codecrafters-io/build-your-own-x,675af15d79ac982150fd09c8b00a4e4921d77137,root,2023-02-27T17:29:53Z,"Add the database, regex, and interpreter links from build-your-own.org.",3,0,3
+codecrafters-io/build-your-own-x,b5ca0911b939ec505c9f6634109b2e64fd9d0f2f,Paul Kuruvilla,2023-02-16T11:17:42Z,Merge pull request #855 from dineshgowda24/patch-1  Add KV store,1,0,1
+codecrafters-io/build-your-own-x,d43fcaeda42c39295491b3d8ad023daf91ca2b48,dineshgowda24,2023-02-14T21:07:15Z,move the listing from docker to database,1,1,2
+codecrafters-io/build-your-own-x,ece0157b3c9d8907ff4d0735e036a08a5fa9c604,dineshgowda24,2023-02-14T19:47:20Z,Add kv store in ruby,1,0,1
+codecrafters-io/build-your-own-x,8153e763cf90f2e2d4b92d51a3dbbecd3c2dee37,Paul Kuruvilla,2023-02-04T14:24:56Z,Merge pull request #853 from htcrefactor/patch-1  Fix typo,1,1,2
+codecrafters-io/build-your-own-x,8f780cba353c1d404ff09fbcd2aa69105c176538,Hyung-Taik Choi,2023-02-04T06:45:40Z,Fix typo  Fixed a simple punctuation error,1,1,2
+codecrafters-io/build-your-own-x,15066dd894703a2bb6b48cbfae10b9d54ef4a139,Paul Kuruvilla,2023-02-02T09:19:31Z,Add let's write a Lisp,1,0,1
+codecrafters-io/build-your-own-x,2ca60944c16020f7c95b9217e4c5c3770a8a85fd,Paul Kuruvilla,2023-02-02T09:15:50Z,Update README.md,1,0,1
+codecrafters-io/build-your-own-x,2d75e52debb63d04332f4b08e129828636ee9216,Paul Kuruvilla,2023-02-02T09:11:47Z,Add Rust CLI tools entries,3,0,3
+codecrafters-io/build-your-own-x,6556ff41722f43cceb08a7ac3a1abfc2e0c86b16,Paul Kuruvilla,2023-01-31T07:44:38Z,Merge pull request #551 from paralysedforce/master  Add Ray Tracing in One Weekend,1,0,1
+codecrafters-io/build-your-own-x,37e9e694b86b57f0e30a09b949c859490d42f35c,Paul Kuruvilla,2023-01-31T07:44:24Z,Minor formatting changes,1,1,2
+codecrafters-io/build-your-own-x,6d4108551a82cdf65def292761ef6ec589448ef0,Paul Kuruvilla,2023-01-31T07:42:00Z,Add https://osblog.stephenmarz.com/,1,0,1
+codecrafters-io/build-your-own-x,b6ad8069193c377bd96e4bd88493e7ec10354acb,Paul Kuruvilla,2023-01-31T07:38:01Z,"Merge pull request #542 from nikital/nikital-ugit  Add link to ""ugit: Building Git Yourself""",1,0,1
+codecrafters-io/build-your-own-x,8bf9cd564398ff7175fba76b3ef258015785033e,Paul Kuruvilla,2023-01-31T07:30:46Z,Merge pull request #849 from mzahran001/patch-1  [ADD] Adding Andrej Karpathy series,1,0,1
+codecrafters-io/build-your-own-x,6c64825a99688e223907f17433f7294fa3c1c0a6,Paul Kuruvilla,2023-01-31T07:30:25Z,Minor formatting change,1,1,2
+codecrafters-io/build-your-own-x,903b2a4985a19c495f2165bc343fc7efef043275,Paul Kuruvilla,2023-01-31T07:29:06Z,Merge pull request #821 from sujaldev/master  Create a category for web browsers,6,1,7
+codecrafters-io/build-your-own-x,534ee2cd6567e9d24424cbfd20cdb0354d0bdc91,Paul Kuruvilla,2023-01-31T07:27:58Z,Add https://www.chinedufn.com/3d-webgl-basic-water-tutorial/,1,0,1
+codecrafters-io/build-your-own-x,68f98553249e53006fcf891cb032135981bda3eb,Paul Kuruvilla,2023-01-31T07:24:54Z,Update README.md,1,1,2
+codecrafters-io/build-your-own-x,334e91d3d42574c2c9d59b2abaaeabd6fc4f6ac1,Mohamed Zahran,2023-01-30T12:24:08Z,"[ADD] Adding Andrej Karpathy series   Adding [Andrej Karpathy's series Neural Networks: Zero to Hero ]( https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ )",1,0,1
+codecrafters-io/build-your-own-x,cb884b674eab20d9d4710420dd46bf0c17dab1f1,Paul Kuruvilla,2023-01-30T06:38:17Z,Update primary programming language,1,1,2
+codecrafters-io/build-your-own-x,4219a10894c9e4d75557b365bc77270a8d59eebf,Paul Kuruvilla,2023-01-30T06:36:36Z,Add build your own CDN link,1,0,1
+codecrafters-io/build-your-own-x,671ff8ae955925df992f9a41c4b33b9613c4f39a,Paul Kuruvilla,2023-01-30T06:34:25Z,Merge pull request #846 from ConanChou/master  update the link for Hecto: Build your own text editor in Rust,1,1,2
+codecrafters-io/build-your-own-x,0f4d4640e472b2bc09a35c565b3bb5b9e7c7dc7a,Sarup Banskota,2023-01-23T13:27:38Z,Update banner,1,1,2
+codecrafters-io/build-your-own-x,b466b1da211727568f3848dfa49a1d86fba20c8b,Paul Kuruvilla,2023-01-20T17:48:00Z,Merge pull request #691 from fake-rookie/master  delete a useless item,0,1,1
+codecrafters-io/build-your-own-x,eabeeaac5e06759f22687a9153fdc4baf74bddc1,fake-rookie,2023-01-20T13:37:34Z,Merge branch 'codecrafters-io:master' into master,5,1,6
+codecrafters-io/build-your-own-x,987a60720cdeaa067bd8a12f02f1954dba949620,Conan,2023-01-20T01:31:56Z,update the link for Hecto: Build your own text editor in Rust,1,1,2
+codecrafters-io/build-your-own-x,4b7923f09fb30fd8bd6adc81701fa10556d69fa5,Paul Kuruvilla,2023-01-02T09:09:58Z,Merge pull request #841 from mister-goo/master  Add Build Your Own Redis from Scratch with C/C++,1,0,1
+codecrafters-io/build-your-own-x,03c7dda0656a9794d9a1b7fac7808e5361aade72,root,2022-12-31T16:10:43Z,Add Build Your Own Redis from Scratch with C/C++,1,0,1
+codecrafters-io/build-your-own-x,bf8c19d7c77b3e2e6c1f697886861f5b7aa14e5e,Paul Kuruvilla,2022-12-19T17:56:54Z,Merge pull request #833 from lakuapik/patch-1  Add linux from scratch,1,0,1
+codecrafters-io/build-your-own-x,69be78cf70be9d4d779776b66cee755acb9edc89,David Adi Nugroho,2022-12-19T10:20:01Z,Update LFS link,1,1,2
+codecrafters-io/build-your-own-x,0bea81df3a3877a4f9f07426bfcb3c1f869505f4,David Adi Nugroho,2022-12-17T10:20:55Z,Add linux from scratch,1,0,1
+codecrafters-io/build-your-own-x,d9bacab0e1ed261c251f53ff40c7491df5872d4a,Paul Kuruvilla,2022-12-13T17:37:51Z,Merge pull request #831 from Aegwenia/patch-1  Added two links (one previously available).,2,0,2
+codecrafters-io/build-your-own-x,608ac57ebfe25f888dff1aa169de3cfeb0911b92,Bezděk Miroslav,2022-12-11T08:34:18Z,Added two links (one previously available).,2,0,2
+codecrafters-io/build-your-own-x,765ae1c030f676c0c0dc83f78d248a75dff11798,Paul Kuruvilla,2022-12-08T09:54:49Z,Merge pull request #828 from kevmo314/patch-1  Add Video Encoding from Scratch,1,0,1
+codecrafters-io/build-your-own-x,25b8f74fe022ed41c42c5b1f25bcdaddcb9e145c,Cedric Martens,2022-12-05T18:15:46Z,Remove broken link (#830)  This link is broken and lands on a 404,0,1,1
+codecrafters-io/build-your-own-x,c73a50bb60f5778e5edfc3108b41757ae2abc1d8,fake-rookie,2022-12-04T17:05:07Z,Merge branch 'codecrafters-io:master' into master,7,3,10
+codecrafters-io/build-your-own-x,41d95d81c1e054d830e8a2f116aeb58793d1ec92,Kevin Wang,2022-12-03T04:52:58Z,Add Video Encoding from Scratch,1,0,1
+codecrafters-io/build-your-own-x,cf9952209f5c30e4e5cf4e337795f5d365729391,Paul Kuruvilla,2022-12-02T07:17:18Z,Merge pull request #827 from ishuah/golang-terminal-emulator  Add link to Golang terminal emulator article,1,0,1
+codecrafters-io/build-your-own-x,85d6aacb3a26ca2d154672c16118ae7219df351f,Ishuah E Kariuki,2022-11-29T14:04:38Z,Add link to Golang terminal emulator article,1,0,1
+codecrafters-io/build-your-own-x,c0946813d808951de87e7ec29ca9bf0c0ecf6169,Paul Kuruvilla,2022-11-28T04:34:50Z,Merge pull request #825 from joshburnsxyz/master  add link to git plugin tutorial,1,0,1
+codecrafters-io/build-your-own-x,b5e5bb677ba6502eb521612924febec239ae8b82,Josh Burns,2022-11-27T06:55:46Z,moved git plugin tutorial to uncategorised,1,1,2
+codecrafters-io/build-your-own-x,8e628eb428a55ea4909de4af9a82e99db346ed83,Sarup Banskota,2022-11-26T10:57:18Z,Update banner to use GIF,1,1,2
+codecrafters-io/build-your-own-x,31bac798ccc2ea16be3c3d906a9cd1d0af6d5a29,Josh Burns,2022-11-25T02:16:07Z,add link to git plugin tutorial,1,0,1
+codecrafters-io/build-your-own-x,68634bfe2caea425351859dd1c03b753d67e9c9d,Sarup Banskota,2022-11-24T10:41:51Z,Update banner + tweak header format,5,3,8
+codecrafters-io/build-your-own-x,1edad6cabbfd240c0f20357740c8546ec240fe58,Sujal Singh,2022-11-10T16:56:48Z,create a category for web browsers,6,1,7
+codecrafters-io/build-your-own-x,1ae173a96ad8f1f1c45ff95bcb3d89c3e818f904,fake-rookie,2022-11-02T08:00:04Z,Merge branch 'codecrafters-io:master' into master,0,1,1
+codecrafters-io/build-your-own-x,64afb51bfacb3197488c447017267c2f3b6129e8,JoseCutileiro,2022-10-29T09:08:11Z,REMOVED DEAD LINK (#817),0,1,1
+codecrafters-io/build-your-own-x,5a314058f0c830f3b0a99fd75dfdabbfa1fca140,fake-rookie,2022-10-12T07:48:08Z,Merge branch 'codecrafters-io:master' into master,1,0,1
+codecrafters-io/build-your-own-x,b6ed38590c08b5c4e329663ee1229aa13694da2b,Paul Kuruvilla,2022-10-09T10:17:48Z,Merge pull request #809 from yairhaimo/nodejs-cli-tool2  Add Create Your Own CLI Tool with NodeJS,1,0,1
+codecrafters-io/build-your-own-x,dcc4092441455d7998cad310eb8c9d8f0f5daad4,Yair Haimo,2022-10-05T17:55:05Z,add nodejs cli tool,1,0,1
+codecrafters-io/build-your-own-x,76f4404421ffb53a86117281fb1a153ae3261240,fake-rookie,2022-09-29T08:15:57Z,Merge branch 'codecrafters-io:master' into master,1,0,1
+codecrafters-io/build-your-own-x,feb9b2ba467f678a8e8ce46d849da7d13454b95c,Paul Kuruvilla,2022-09-28T21:12:29Z,Merge pull request #807 from engineerhead/dns-server-in-x-language  Build a DNS Server in Node.js,1,0,1
+codecrafters-io/build-your-own-x,3ae36986b216193a6f031f9e462cad229423b130,Umair Bussi,2022-09-28T13:08:42Z,Build a DNS Server in Node.js,1,0,1
+codecrafters-io/build-your-own-x,69b3feb930ae35f3760173684d9a4ba5b12aa10a,fake-rookie,2022-09-15T07:42:55Z,Merge branch 'codecrafters-io:master' into master,0,1,1
+codecrafters-io/build-your-own-x,664d7f17f8bb977dccb0cd128aea9598d2c757c5,Paul Kuruvilla,2022-09-13T08:20:10Z,Merge pull request #805 from GalindoSVQ/master  chore: remove unavailable tutorial,0,1,1
+codecrafters-io/build-your-own-x,88780ad7ab9f8f40b6a13cdb91f7583a4736d2f6,Antonio Galindo,2022-09-12T18:11:02Z,chore: remove unavailable tutorial,0,1,1
+codecrafters-io/build-your-own-x,2bc2dcaa8ea684394e7149dc9242ecee66aaeaa8,fake-rookie,2022-09-07T13:06:39Z,Merge branch 'codecrafters-io:master' into master,1,0,1
+codecrafters-io/build-your-own-x,fa93403f24514eb9d4b6bcdda10073b45ace6cba,Paul Kuruvilla,2022-09-04T17:41:37Z,Merge pull request #803 from imlakshay08/master  Update README.md,1,0,1
+codecrafters-io/build-your-own-x,160648ab228517b08cec6d3b9f82f34867ea3952,Lakshay Tyagi,2022-09-04T03:00:37Z,Merge pull request #1 from imlakshay08/imlakshay08-patch-1  Update README.md,1,1,2
+codecrafters-io/build-your-own-x,9d6f7b7e94296bd8ce37b06ca1b7ebea1eee4b67,Lakshay Tyagi,2022-09-04T03:00:17Z,Update README.md,1,1,2
+codecrafters-io/build-your-own-x,33fa557b9ec7e9579edfd238f24cb564cdcb74d3,Lakshay Tyagi,2022-09-04T02:59:11Z,Update README.md,1,0,1
+codecrafters-io/build-your-own-x,e2b7eb8a6dea16822a092515ad690d1e61dbe07e,fake-rookie,2022-08-05T08:04:59Z,Merge branch 'codecrafters-io:master' into master,1,1,2
+codecrafters-io/build-your-own-x,be9acbf75ad6f74cb4fca47f106d3484ff816a43,Paul Kuruvilla,2022-08-04T11:23:29Z,Merge pull request #751 from guuzaa/rust-text-editor-hecto  Add tutorial for building a Rust Text Editor.,1,0,1
+codecrafters-io/build-your-own-x,412fef4fc502f936427bc33419ed009f8d84b459,Paul Kuruvilla,2022-08-03T11:57:52Z,Merge pull request #763 from jefQuery/patch-1  Remove Web Search Engine dangling hashlink,0,1,1
+codecrafters-io/build-your-own-x,d97014ed498bf4366812109ebb4721f05b3aa61b,fake-rookie,2022-07-22T16:05:58Z,Merge branch 'codecrafters-io:master' into master,1,1,2
+codecrafters-io/build-your-own-x,cf4ca0a2c6707c3e9fe622beda24e084983b0e6b,Paul Kuruvilla,2022-07-20T14:00:56Z,Merge pull request #775 from aasisodiya/patch-1  Update Games With Go unavailable link,1,1,2
+codecrafters-io/build-your-own-x,8b1492ee134edd0a86d914656cd2a0006eb4e4b7,Akashsingh Sisodiya,2022-07-16T11:42:45Z,Update Games With Go unavailable link  [https://gameswithgo.org/](https://gameswithgo.org/) This website is no longer available. Hence update the URL to point to it's [Original YouTube Video Playlist](https://www.youtube.com/playlist?list=PLDZujg-VgQlZUy1iCqBbe5faZLMkA3g2x) instead,1,1,2
+codecrafters-io/build-your-own-x,0796177e8ebc40dec3aa1db13a144aeb5a9b575b,fake-rookie,2022-07-14T13:28:22Z,Merge branch 'codecrafters-io:master' into master,0,1,1
+codecrafters-io/build-your-own-x,059193c30c6d9997e4c86867e3a55492b632d5e2,Paul Kuruvilla,2022-07-11T00:35:19Z,Merge pull request #766 from ajohn5960/remove-unavailable-javascript-resource  Remove Javascript Neural network unavailable link,0,1,1
+codecrafters-io/build-your-own-x,3090fb2ce21a53c3ea952f7731ecfe168ed63c6d,ajohn5960,2022-07-10T20:26:58Z,Remove Javascript Neural network unavailable link,0,1,1
+codecrafters-io/build-your-own-x,0462634959d12c04a3ea108630d1e0399182f34b,fake-rookie,2022-07-08T06:06:23Z,Merge branch 'codecrafters-io:master' into master,1,1,2
+codecrafters-io/build-your-own-x,35a45d6e9a8b25e732832ed23882f39dfba0d5ff,Jeffrey Milberger,2022-07-07T22:55:19Z,Remove Web Search Engine dangling hashlink  Removes the markdown link to the section that is no longer,0,1,1
+codecrafters-io/build-your-own-x,b32f410e1cdbd4b0cbff45d0f6b5fcd8bdbb015b,Sarup Banskota,2022-07-01T17:09:17Z,Update banner,1,1,2
+codecrafters-io/build-your-own-x,bec43eace2798c8e8013c0f60e4f84fd8cb4f287,Paulden,2022-06-18T01:56:13Z,Add tutorial for building a Rust Text Editor.  Link to the link -- https://www.philippflenker.com/hecto/,1,0,1
+codecrafters-io/build-your-own-x,f2b2f23a1faf9082e8776a727e419a423761a16c,fake-rookie,2022-06-08T19:34:36Z,Merge branch 'codecrafters-io:master' into master,1,5,6
+codecrafters-io/build-your-own-x,13577c215a96fc67a04fa4787b5416a77fffd276,Paul Kuruvilla,2022-06-05T13:47:07Z,Merge pull request #737 from MoMMde/master  moved web search engine & removed blank line,1,5,6
+codecrafters-io/build-your-own-x,3b206058225207b5fc6f137e548164890441b690,Moritz,2022-06-04T23:30:44Z,"moved web search engine & removed blank line  Removed the blank line because nowhere else there were two blank lines. And moved a single entry of an section Uncategorized",1,5,6
+codecrafters-io/build-your-own-x,0e8797290230b66db23819990a46699af82a28e5,fake-rookie,2022-05-21T16:45:19Z,Merge branch 'codecrafters-io:master' into master,11,9,20
+codecrafters-io/build-your-own-x,36315f2b73d486245782638d0879bd71cc651e49,Sarup Banskota,2022-05-16T06:18:27Z,Add a title to toc,1,1,2
+codecrafters-io/build-your-own-x,c115dde26ca59fa1c96c02f8a5d194f267943f6e,Sarup Banskota,2022-05-16T03:15:00Z,Remove duplicate explainer,1,5,6
+codecrafters-io/build-your-own-x,4ebdcf33b43db0dd7b07f7595aefb027c48ffbe8,Sarup Banskota,2022-05-16T00:27:17Z,Request PR,3,1,4
+codecrafters-io/build-your-own-x,0b4f98fe1c86f26d3cb52bbb67efe05ab76794a8,Sarup Banskota,2022-05-15T23:49:12Z,Add short explainer at the top,5,1,6
+codecrafters-io/build-your-own-x,a964eea194db86193c2b0149f3850c0db2131dd2,Sarup Banskota,2022-05-15T23:42:58Z,Add banner,4,4,8
+codecrafters-io/build-your-own-x,c7cceb781a505af22eef53a496bc1a00958d8379,Sarup Banskota,2022-05-15T23:16:25Z,Fix linebreak,1,3,4
+codecrafters-io/build-your-own-x,224dc110db3ee2ad02e46ba974299c520e529027,Sarup Banskota,2022-05-15T23:15:35Z,Update license + history,4,2,6
+codecrafters-io/build-your-own-x,01d32e7a553c984b8318b21e7fbacb1443cc3d25,Sarup Banskota,2022-05-15T23:10:39Z,Update repo links,3,3,6
+codecrafters-io/build-your-own-x,3c6df0badd3ad15ab2a6beb86cf0a3c7c686ace2,Sarup Banskota,2022-05-15T23:08:25Z,Minor language update to issue template,1,1,2
+codecrafters-io/build-your-own-x,604281c36b9f573baa6c8272e49defc1c43163bf,Sarup Banskota,2022-05-15T23:02:29Z,Update license waiver,1,1,2
+codecrafters-io/build-your-own-x,615fb23ef8e99a84560453d7f08ebc0fbe02b9b6,fake-rookie,2022-02-20T16:48:46Z,Merge branch 'danistefanovic:master' into master,1,1,2
+codecrafters-io/build-your-own-x,85fb7579543ea9ce49f14000789fcd6f248a2abe,Daniel Stefanovic,2022-02-16T14:06:27Z,Merge pull request #696 from joaorlima/fix/emphasize-javascripts-regex-implementation-topic  Emphasize JavaScript's Regex Implementation Topic,1,1,2
+codecrafters-io/build-your-own-x,0da2f43bf5d4c015c36f82614e5ae60957eacd79,João Pedro Lima,2022-02-13T17:56:49Z,Emphasize JavaScript's Regex Implementation Topic,1,1,2
+codecrafters-io/build-your-own-x,415445a9f642cb224e09fc2d4d81fdb28c0606f7,fake-rookie,2021-12-26T15:38:14Z,delete a useless item  that item is nothing.,0,1,1
+codecrafters-io/build-your-own-x,4b8c62ca725fd655f9d137b766964c2995caefe0,Daniel Stefanovic,2021-11-30T08:41:01Z,Merge pull request #674 from erfanansari/remove-unavailable-react-resource  chore: remove reverse engineering react unavailable resourse,0,1,1
+codecrafters-io/build-your-own-x,37f2e6b0100150f428afd89c65c3220388fea4c5,Erfan Ansari,2021-11-05T16:12:48Z,chore: remove reverse engineering react unavailable resourse,0,1,1
+codecrafters-io/build-your-own-x,6fbd77bda5a0ae0cb87d8c36865bfb0651370f97,Daniel Stefanovic,2021-06-29T08:33:16Z,"Merge pull request #636 from jumang4423/master  Build your own VR headset is now $200, not $100",1,1,2
+codecrafters-io/build-your-own-x,60a7d996915eaf19816a1b16afdda49f625f5f1f,ryoma okuda,2021-06-28T05:42:47Z,_Build your own VR headset is now  from,1,1,2
+codecrafters-io/build-your-own-x,5f548a4f4c517e11e43fc5a50e5813cc3fba608a,Daniel Stefanovic,2021-03-13T10:44:12Z,Remove broken link #576,0,1,1
+codecrafters-io/build-your-own-x,3c9714eaddcf77391f8a2712d93c2b1319942d8b,Daniel Stefanovic,2021-03-13T10:40:07Z,Remove broken link,0,1,1
+codecrafters-io/build-your-own-x,458936621ea6231db568420016f88ea8196aa2aa,Daniel Stefanovic,2021-03-13T10:37:40Z,Fix broken link,1,1,2
+codecrafters-io/build-your-own-x,55c6016748e3556c29854fe4bd8c49fb1d6c55ec,Daniel Stefanovic,2021-03-13T10:35:49Z,Fix/remove broken links,3,6,9
+codecrafters-io/build-your-own-x,28a8181431ed04965fa5ba80bd02702b0f9f4a74,Daniel Stefanovic,2021-03-13T10:25:53Z,Remove dead link,0,1,1
+codecrafters-io/build-your-own-x,50fb1214f69e8edfc22a0f8d0c5c0a283ea7280f,Daniel Stefanovic,2021-01-05T15:48:06Z,Remove broken link #555,0,1,1
+codecrafters-io/build-your-own-x,b9fa3802f6931a597f0934d4ca3ade743e25aca0,Daniel Stefanovic,2021-01-05T15:38:16Z,Remove broken link #556,0,1,1
+codecrafters-io/build-your-own-x,4482d4b26493e5ab7a235a5c00d9db23f3d26b2f,Daniel Stefanovic,2020-12-07T20:47:17Z,Merge pull request #553 from micheleriva/master  fixed node.js blockchain domain,1,1,2
+codecrafters-io/build-your-own-x,d0ca6118b438e41095a775ce1f82945acf6b25da,Michele Riva,2020-12-07T12:31:19Z,fixed node.js blockchain domain,1,1,2
+codecrafters-io/build-your-own-x,dd7f3f7f9b7994a3c3864e37ee72d44e5bb9d7dd,Vyas Alwar,2020-11-17T02:34:55Z,Update README.md  Add Ray Tracing in One Weekend,1,0,1
+codecrafters-io/build-your-own-x,bc7af89fc101945ffbca6f41091b7ba30bebdd73,Nikita Leshenko,2020-10-11T11:27:30Z,"Add link to ""ugit: Building Git Yourself""",1,0,1
+codecrafters-io/build-your-own-x,d22c5e9f5ffd11d24542bd1f14295529b9710e52,Daniel Stefanovic,2020-09-29T09:40:34Z,Remove broken link #523,0,1,1
+codecrafters-io/build-your-own-x,2ec87972e37967ce2721478b5d082ba74fa4598c,Daniel Stefanovic,2020-07-17T07:37:21Z,Merge pull request #505 from M0nica/patch-2  Add link to  “Building a Custom React Renderer”,1,0,1
+codecrafters-io/build-your-own-x,8bc4154536f3cac7c38fac789337a8159b98f60c,Daniel Stefanovic,2020-07-17T07:36:58Z,Add video tag,1,1,2
+codecrafters-io/build-your-own-x,d95353d43c507d030a9828aa750da7697d389edb,Monica Powell,2020-07-16T17:44:02Z,Add link to  “Building a Custom React Renderer”   Add link to Sophie Alpert’s talk on  “Building a Custom React Renderer”,1,0,1
+codecrafters-io/build-your-own-x,ec383433bde8543c95a0ab062e65af0d77ff62ff,Daniel Stefanovic,2020-06-18T16:37:30Z,Merge pull request #492 from Marcosultymos/master  how to create a compiler from scratch with c,2,2,4
+codecrafters-io/build-your-own-x,1109a4a80bccf807831da44217fbf071b971ea3e,Daniel Stefanovic,2020-06-18T16:37:09Z,Update README.md,1,1,2
+codecrafters-io/build-your-own-x,91c8f99d20e46b698f5c4b58ec2842ae4f71d859,Marcos Vinicius,2020-06-15T23:48:28Z,up compiler in c,2,2,4
+codecrafters-io/build-your-own-x,b04c824bce8fd60889c430c15b5fc49c9ad42659,Daniel Stefanovic,2020-06-08T09:59:02Z,Merge pull request #489 from EduardoJM/nes-from-scratch  Add NES From Scratch,1,0,1
+codecrafters-io/build-your-own-x,be91cff4eca75697159a61641df98ab9f47b9d5d,Daniel Stefanovic,2020-06-08T09:58:41Z,Add [video] tag,1,1,2
+codecrafters-io/build-your-own-x,b6e27d488fd01ab0b07c86b27329b167640bf28d,EduardoJM,2020-06-08T00:29:37Z,Add NES From Scratch  Closes #488,1,0,1
+codecrafters-io/build-your-own-x,c3ec6ed4739ef729f059accc1ca03657bc36a4b3,Daniel Stefanovic,2020-05-02T08:05:03Z,Remove dead link #474,0,1,1
+codecrafters-io/build-your-own-x,6da1ae4a0a3e2f29595886b178c8f93556164c62,Daniel Stefanovic,2020-04-25T18:14:48Z,Merge pull request #472 from viniciusbds/patch-1  Updates the video about creating containers from scratch,1,1,2
+codecrafters-io/build-your-own-x,107a7524c93eb56037a13cac77853084c6b951d3,Vinicius Barbosa,2020-04-25T18:06:23Z,Update README.md,1,1,2
+codecrafters-io/build-your-own-x,737a2e27ab5e0b3566acd61feb80b16d2155f46a,Daniel Stefanovic,2020-04-19T16:33:01Z,Merge pull request #470 from fakturk/master  Add  a  golang tutorial to  `BitTorrent Client`,1,0,1
+codecrafters-io/build-your-own-x,a7cb2e0fef6fcc667f6306279de24658d0ba3e7a,Daniel Stefanovic,2020-04-19T16:32:27Z,Change position,1,1,2
+codecrafters-io/build-your-own-x,588bfa241bec77a789951c45910ece5578c7afe3,Fatih Akturk,2020-04-18T22:58:45Z,"Add  a  golang tutorial to  `BitTorrent Client`  added  * [**Go**: _Building a BitTorrent client from the ground up in Go_](https://blog.jse.li/posts/torrent/) to Build your own `BitTorrent Client`",1,0,1
+codecrafters-io/build-your-own-x,bc8375117e0c2500762a108055161a10cb9999e5,Daniel Stefanovic,2020-04-16T09:48:43Z,Merge pull request #468 from deniskyashif/master  add article on Regex implementation,1,0,1
+codecrafters-io/build-your-own-x,a773b94da05d6667bb64cce89f3224aa7b883235,Denis Kyashif,2020-04-16T07:24:44Z,add article on Regex implementation   https://deniskyashif.com/2019/02/17/implementing-a-regular-expression-engine/ describes how to implement a regex engine from the parsing to the matching stage.,1,0,1
+codecrafters-io/build-your-own-x,53886e14bbaea5cc18f3728f0bef3c95e65ae719,Daniel Stefanovic,2020-04-08T21:42:04Z,Merge pull request #459 from chroventer/patch-1  chore: remove TowerFall Physics,0,1,1
+codecrafters-io/build-your-own-x,8d89d3d8a2db7105283f425b8d33c6fc456ed0aa,Ayyan Lewis,2020-04-08T15:54:40Z,chore: remove TowerFall Physics,0,1,1
+codecrafters-io/build-your-own-x,65a858afec215ed8dc45ae34b2ba6ab15d93df17,Daniel Stefanovic,2020-04-06T10:08:46Z,Merge pull request #457 from jantinarella/fix-link  Fix the link for Building a neural network from scratch in Go.,1,1,2
+codecrafters-io/build-your-own-x,52b3c62c0bfd1268539c9b8333b6b3134b2b320e,Justin Antinarella,2020-04-05T22:37:40Z,Fix the link for Building a neural network from scratch in Go.,1,1,2
+codecrafters-io/build-your-own-x,c4c8671f4061904ee6222df5c6085d49f6ccfb52,Daniel Stefanovic,2020-02-11T16:21:39Z,Merge pull request #427 from mohamedspicer/master  Fix URL of 'Rust: Adventures in Rust: A Basic 2D Game' link,1,1,2
+codecrafters-io/build-your-own-x,6d8af5f158bfd899b7f2352c5a9934c102719f36,Mohamed,2020-02-11T11:46:19Z,Fix URL of 'Rust: Adventures in Rust: A Basic 2D Game' link,1,1,2
+codecrafters-io/build-your-own-x,168ccbf93b0a8b4e92e779aeefa2e94e1c4c294c,Daniel Stefanovic,2020-02-10T21:04:39Z,Merge pull request #426 from SeungUkLee/master  Fix URL of 'Haskell: Let's Build a Compiler',1,1,2
+codecrafters-io/build-your-own-x,6d1932f6076ae363f4181a145bb2e24c2ecb7602,SeungUkLee,2020-02-10T12:28:54Z,Fix URL of 'Haskell: Let's Build a Compiler',1,1,2
+codecrafters-io/build-your-own-x,aae33a12d7c339f89dcf9272789914d86503b4fe,Daniel Stefanovic,2019-11-22T04:50:04Z,Merge pull request #414 from Otman404/patch-1  Added ' Build your own react',1,0,1
+codecrafters-io/build-your-own-x,9be033d924c50d89f1378288341bd8e65fbf037e,Otman404,2019-11-21T21:31:35Z,Added ' Build your own react',1,0,1
+codecrafters-io/build-your-own-x,7f59ba6784beb226e688abd7b2b5f95053e3528d,Daniel Stefanovic,2019-11-20T04:46:53Z,Add tutorial #409,1,0,1
+codecrafters-io/build-your-own-x,94793787f9bb02c3dfe73cdd7e00e45d2e7817e1,Daniel Stefanovic,2019-11-20T04:42:10Z,Add tutorial #396,1,0,1
+codecrafters-io/build-your-own-x,9097f21225013b163d2880adeb83d68739f1c14e,Daniel Stefanovic,2019-11-05T17:46:54Z,Add tutorial #378,1,0,1
+codecrafters-io/build-your-own-x,7ee8299200a5f864142cc359799bcc8321036ab3,Daniel Stefanovic,2019-10-25T08:02:37Z,Merge pull request #390 from Fedelaus/master  update broken network programming link,1,1,2
+codecrafters-io/build-your-own-x,42625a81a9e5c5087b5661e5571d878054a25cd4,Nathan Dawson,2019-10-25T07:45:37Z,update broken network programming link,1,1,2
+codecrafters-io/build-your-own-x,b6eae98caf26731c47aa4064fa889c55f36746dd,Daniel Stefanovic,2019-10-07T11:37:27Z,"Merge pull request #372 from MacConsoli/master  Add ""Learning Parser Combinators With Rust""",1,0,1
+codecrafters-io/build-your-own-x,2734907ae750f2440947d3a8e3e04c0a503fb579,Daniel Stefanovic,2019-10-07T11:34:40Z,Merge pull request #362 from OAyomide/build-your-own-wasm-compiler  add build your own webassembly compiler,1,0,1
+codecrafters-io/build-your-own-x,a86ea7d77b9d8f14c041e9e09cc7d720603ac33b,Daniel Stefanovic,2019-10-07T11:34:24Z,Move tutorial so that the language is in alphabetical order,1,1,2
+codecrafters-io/build-your-own-x,a6c74c378e0628e830b27d11f8edfaec7e102c05,Daniel Stefanovic,2019-09-20T14:07:49Z,Merge pull request #375 from Fedelaus/master  remove dead javascript url shortener link,0,1,1
+codecrafters-io/build-your-own-x,92aa279037a259f0eda011ec927d7fa7db59707d,Nathan Dawson,2019-09-18T07:38:35Z,remove dead javascript url shortener link,0,1,1
+codecrafters-io/build-your-own-x,3ba5127e62950704bd9fc9713bad10c5e786323f,Consoli,2019-09-05T16:36:03Z,"Add ""Learning Parser Combinators With Rust""",1,0,1
+codecrafters-io/build-your-own-x,3163d708ec687c60de88e5d38395228d25d0dbea,Daniel Stefanovic,2019-08-31T13:35:04Z,"Merge pull request #369 from alexburrowsdev/master  Fix a few dead links, and update one or two.",2,9,11
+codecrafters-io/build-your-own-x,ec9328ed9a07b40877fe004c4f4f855da604c8d7,Alex,2019-08-31T07:28:51Z,"Fix a few dead links, and update one or two.",2,9,11
+codecrafters-io/build-your-own-x,5c6b1cf9200f88153110561ed224b04bb6473214,Daniel Stefanovic,2019-08-28T07:26:01Z,"Merge pull request #368 from jeremyBanks/patch-1  Remove ""C: Writing an SVG Library"" because the domain expired and it's just ads now.",0,1,1
+codecrafters-io/build-your-own-x,93952593df8f07c00c8d38d3855077dda77c0dfe,Jeremy Banks,2019-08-27T15:08:20Z,"Remove ""C: Writing an SVG Library"" because the domain expired and it's just ads now.",0,1,1
+codecrafters-io/build-your-own-x,709bcaf7f83f66a135ef6f7339b4fb05734b9aca,Ayomide Onigbinde,2019-07-16T20:25:31Z,add build your own webassembly compiler,1,0,1
+codecrafters-io/build-your-own-x,ec3d79226d0a91b5fef217ff55ddfe3a51905dea,Daniel Stefanovic,2019-07-09T11:54:08Z,Merge pull request #358 from togademi/fix-urls  Fix URL of Roguelike Tutorial Revised,1,1,2
+codecrafters-io/build-your-own-x,c68fd59e6c197021c795daac0d07856a39a97309,togademi,2019-07-09T10:19:50Z,Fix URL of Roguelike Tutorial Revised,1,1,2
+codecrafters-io/build-your-own-x,89eb55aff918899f28c499858b94d33bf62de793,Daniel Stefanovic,2019-06-07T06:50:25Z,Merge pull request #352 from Frezzle/go-container  Add Go container tutorial,1,0,1
+codecrafters-io/build-your-own-x,c9809119c47600007a8a28134bf2d9ca9c8eb076,Daniel Stefanovic,2019-06-07T06:48:48Z,Merge pull request #340 from UmanShahzad/patch-1  Add 'Write yourself a Git!',1,0,1
+codecrafters-io/build-your-own-x,838d3ee8645e06ddd5b9ed7c277cdb1ea7813db5,Daniel Stefanovic,2019-06-07T06:46:39Z,Merge pull request #351 from char16t/patch-1  Update dead link (#350),1,1,2
+codecrafters-io/build-your-own-x,12697f1508a147e5c169653d78697dbcd7f96977,Daniel Stefanovic,2019-06-07T06:44:09Z,Merge pull request #354 from lfaoro/go-neural-net  fix broken link to content,1,1,2
+codecrafters-io/build-your-own-x,0c3ef06bbc9a5c843845c29dc19570c9ed95a1b6,leonardo,2019-06-06T15:26:13Z,fix broken link to content,1,1,2
+codecrafters-io/build-your-own-x,c2c9b782e522738fc63d98c3965d48dc85d504d6,Frederico Mazzone,2019-04-23T20:04:12Z,Add Go container tutorial,1,0,1
+codecrafters-io/build-your-own-x,3904ed909814d7a1ac384917e4e6f798bd8c764a,char16t,2019-04-18T08:12:39Z,"Update dead link (#350)  Update dead link to ""Build a static site generator in 40 lines with Node.js""",1,1,2
+codecrafters-io/build-your-own-x,ddba5135b839f36930df122f1c28db0ee711ccec,Uman Shahzad,2019-03-15T05:39:30Z,Add 'Write yourself a Git!',1,0,1
+codecrafters-io/build-your-own-x,d287d1286e0025da18438ce60b48ff95b1e64b7e,Daniel Stefanovic,2019-03-11T18:38:23Z,Merge pull request #336 from vzhou842/master  Add Python Neural Network tutorial,1,0,1
+codecrafters-io/build-your-own-x,936696662f278362cf0f581a8c4ecd903a662c27,Victor Zhou,2019-03-11T17:19:42Z,Add Python Neural Network tutorial,1,0,1
+codecrafters-io/build-your-own-x,2a2ca7b3fdd2f73bf91862626eb49b6a5411eaec,Daniel Stefanovic,2019-03-10T12:10:50Z,Add tutorial #323,1,0,1
+codecrafters-io/build-your-own-x,3338d9b19af84e4ba642767e3c6ee5a548b95c73,Daniel Stefanovic,2019-03-10T12:05:04Z,Add tutorial #322,1,0,1
+codecrafters-io/build-your-own-x,88711a69acb2b3eab0b261452f0734f41f209961,Daniel Stefanovic,2019-03-10T12:02:12Z,Add tutorial #334,1,0,1
+codecrafters-io/build-your-own-x,fc7969716f717811c569066bd8594de41dab7856,Daniel Stefanovic,2019-03-10T11:58:16Z,Add tutorial #335,1,0,1
+codecrafters-io/build-your-own-x,1d441d33564c476d4f9acf78d9ef67f75041f17d,Daniel Stefanovic,2019-03-10T11:50:07Z,Add tutorial #318,1,0,1
+codecrafters-io/build-your-own-x,4cb210a0937580abc95185e60efa932c234f7135,Daniel Stefanovic,2019-03-10T11:28:46Z,Merge pull request #326 from NodeGG/master  Removed - Build your own Vuejs,0,1,1
+codecrafters-io/build-your-own-x,e9e86de6334ecb0f153df4b057e52abf7e055dd8,Warren Gates,2019-03-03T23:56:49Z,"Removed Build your own Vuejs  Removed * [**JavaScript**: _Build your own Vuejs_](https://github.com/jsrebuild/build-your-own-vuejs) -Repo was archived, unfinished, and abandoned.",0,1,1
+codecrafters-io/build-your-own-x,a3e2d666249070295f9af25a7ea1d1d8c1fecb4c,Daniel Stefanovic,2019-03-01T10:46:56Z,Remove broken link #307,0,1,1
+codecrafters-io/build-your-own-x,21227122de39110bdd9154f89dad652f7080d7a8,Daniel Stefanovic,2019-03-01T10:45:11Z,Merge pull request #310 from kezhenxu94/patch-1  Fix broken link,1,1,2
+codecrafters-io/build-your-own-x,4dd3f85ed31eac4b3afb8fb89e52a5560b8f8d95,Daniel Stefanovic,2019-03-01T10:43:21Z,Merge pull request #311 from sn99/master   First and second edition of Writing an OS in Rust added,1,1,2
+codecrafters-io/build-your-own-x,476faebbf502cfda1cae6c001f7cf1b89b0cf5e9,Daniel Stefanovic,2019-03-01T10:42:42Z,"Remove ""Writing an OS in Rust (first edition)""",1,2,3
+codecrafters-io/build-your-own-x,a8fe948b61aafd369a4df8e694ac0669dbc66bb4,Daniel Stefanovic,2019-02-20T08:52:04Z,Merge pull request #313 from 0xflotus/patch-1  fixed interprets,1,1,2
+codecrafters-io/build-your-own-x,5f4d9616577c62bb920f93611bfce7723b47eaf4,0xflotus,2019-02-20T02:12:23Z,fixed interprets,1,1,2
+codecrafters-io/build-your-own-x,b5b4593261c3e84c322b8bc9673580ae1ecdc0e4,Siddharth Naithani,2019-02-07T20:51:29Z,Update README.md,2,1,3
+codecrafters-io/build-your-own-x,0bfdbd0e590a2f20cd30c4e0460d1a00d3ab4bb7,kezhenxu94,2019-02-04T03:59:15Z,Fix broken link,1,1,2
+codecrafters-io/build-your-own-x,984f24106e2cd2184cff8dfbbefe46e1f4b4c319,Daniel Stefanovic,2019-01-13T10:29:35Z,Add tutorial #306,1,0,1
+codecrafters-io/build-your-own-x,435c2a7b67bb6db702c2e1fc0611734eaea430b0,Daniel Stefanovic,2019-01-13T10:24:48Z,Add tutorial #305,1,0,1
+codecrafters-io/build-your-own-x,55c019899c62b0608f982a524768d12cb9bca4de,Daniel Stefanovic,2019-01-13T10:20:34Z,Add tutorial #302,1,0,1
+codecrafters-io/build-your-own-x,9589d17d5c8e4c5d11ef4c3ff3cd876a9136909f,Daniel Stefanovic,2018-12-27T10:52:16Z,Add tutorial #297,1,0,1
+codecrafters-io/build-your-own-x,d42bb697775c8c738765309b3ea07334cff519b0,Daniel Stefanovic,2018-12-27T10:49:08Z,Add tutorial #298,1,0,1
+codecrafters-io/build-your-own-x,eb4ffe7d52b5b3b53b8fef70aae34969bcce401d,Daniel Stefanovic,2018-12-27T10:45:20Z,Extend 'Emulator' category with 'Virtual Machine',1,1,2
+codecrafters-io/build-your-own-x,5cd9aa12d3fa36976d1c3097f9efcb8edb9799aa,Daniel Stefanovic,2018-12-27T10:43:20Z,Combine 'Virtual Machine' with 'Emulator' #299,4,4,8
+codecrafters-io/build-your-own-x,f4097b1eb321248101257fbfb70aea29ea0e22b4,Daniel Stefanovic,2018-12-27T10:40:18Z,Add tutorial #299,1,0,1
+codecrafters-io/build-your-own-x,3c4c6cca65e4d252b0a3ae594ec18f2f27346d0d,Daniel Stefanovic,2018-12-27T10:27:31Z,Fix link #300,1,1,2
+codecrafters-io/build-your-own-x,b0f433dbf82eef9bf3f24192c07eba2335ef3208,Daniel Stefanovic,2018-12-27T10:24:28Z,Merge pull request #301 from Lucas-101/patch-1  Rename ISSUE_TEMPLATE to ISSUE_TEMPLATE.md,0,0,0
+codecrafters-io/build-your-own-x,ecf38bd126df8cd93366fc03bfc8ba942bcd76a5,Lucas-101,2018-12-26T02:08:27Z,Rename ISSUE_TEMPLATE to ISSUE_TEMPLATE.md,0,0,0
+codecrafters-io/build-your-own-x,22b9aef79ee874b303eb5dbdb25abe97926d951f,Daniel Stefanovic,2018-11-25T10:33:53Z,Add tutorial #292,1,0,1
+codecrafters-io/build-your-own-x,5af09ed51aef3b65a1af6aabcabb103cee904afc,Daniel Stefanovic,2018-11-24T14:34:05Z,Remove tutorial #290,0,1,1
+codecrafters-io/build-your-own-x,b534cb6ab0816ce1da0ac839584162c99e454807,Daniel Stefanovic,2018-11-19T11:15:15Z,Add tutorial #289,1,0,1
+codecrafters-io/build-your-own-x,6bd5c052ced553cf631e0ade8c8c2bef1db48b3c,Daniel Stefanovic,2018-11-16T22:25:38Z,Merge pull request #280 from devcat-forks/remove  remove outdated content,0,1,1
+codecrafters-io/build-your-own-x,528d9306f211f46cfe432591076e1d8fab92441e,Daniel Stefanovic,2018-11-16T22:24:35Z,"Merge pull request #277 from bauripalash/master  Added ""How to create a real-world Node CLI app with Node""",1,0,1
+codecrafters-io/build-your-own-x,b8a5bc632dcc0efd1a170c71b8d36ec5e22200e8,Daniel Stefanovic,2018-11-16T22:15:10Z,Add tutorial #286,1,0,1
+codecrafters-io/build-your-own-x,3d7fbc051b3f416516b188e9d0ccc1715aa8a3a9,Daniel Stefanovic,2018-11-16T22:12:27Z,Add tutorial #285,1,0,1
+codecrafters-io/build-your-own-x,2ed1192136d1210a33fbfd3fbddc4570f2f1cbbe,Daniel Stefanovic,2018-11-16T22:07:18Z,Add tutorial #283,1,0,1
+codecrafters-io/build-your-own-x,577fc7cfe5348510353ee9e732086a36705580c0,Daniel Stefanovic,2018-11-16T22:04:25Z,Add tutorial #288,1,0,1
+codecrafters-io/build-your-own-x,778984673c46c621a8ac6607a21a74a7be4d2638,「ネコ」,2018-10-22T16:03:32Z,remove video from readme,0,1,1
+codecrafters-io/build-your-own-x,9cae49d55c8d44c8f307911935536a99f0988162,Daniel Stefanovic,2018-10-22T09:07:51Z,Merge pull request #279 from RohithS98/master  Added python AR tutorial,1,0,1
+codecrafters-io/build-your-own-x,6476ca63c0be9a7b38873572778ca907b03339a7,Rohith Sudheer,2018-10-20T09:19:30Z,Added python AR tutorial,1,0,1
+codecrafters-io/build-your-own-x,d80cb1359db1adf10b8625e393e7b89377b03018,Palash Bauri,2018-10-13T03:35:31Z,Update README.md,1,1,2
+codecrafters-io/build-your-own-x,e173d82b0c3a3017b405d29e8f768f3c71ccc801,Palash Bauri,2018-10-13T03:34:42Z,Added new from medium  How to create a real-world Node CLI app with Node,1,0,1
+codecrafters-io/build-your-own-x,b284b8e8aa50a513246ffc8eaf44a56ebcc3da3e,Palash Bauri,2018-10-13T03:28:21Z,Merge pull request #2 from danistefanovic/master  Abcd,83,13,96
+codecrafters-io/build-your-own-x,a28fa741b5093cd37e506776521d154039513918,Daniel Stefanovic,2018-10-12T09:19:51Z,Update ISSUE_TEMPLATE,1,1,2
+codecrafters-io/build-your-own-x,ceb97c6798deb375a773d345c7e76a12b88415ef,Daniel Stefanovic,2018-10-12T09:01:50Z,Merge pull request #275 from danielbarnes175/master  Add api tutorial from issue #267,2,0,2
+codecrafters-io/build-your-own-x,8455255a507b6bbb7c5c5ed98bb334dba458c00d,Daniel Stefanovic,2018-10-12T08:52:13Z,Merge pull request #273 from bsinky/ruby-collaborative-text-editor  Add Build Your Own Collaborative Text Editor Using Rails,1,0,1
+codecrafters-io/build-your-own-x,887602eafa0d3485c28a4819a5c504c1806bfb1a,Daniel Stefanovic,2018-10-12T08:49:41Z,Merge pull request #272 from juliardi/master  Add 'Modern PHP without a Framework' tutorial,1,0,1
+codecrafters-io/build-your-own-x,4158a20ba2f7a4bd2ab9cedcbac292a6808a6420,Daniel Stefanovic,2018-10-12T08:47:02Z,Merge pull request #271 from humarh-dharnarh/master  Added react native uber clone tutorial,1,0,1
+codecrafters-io/build-your-own-x,531d772f490ba134097b77d95334731a15b373fc,Daniel Stefanovic,2018-10-12T08:46:40Z,Change link label,1,1,2
+codecrafters-io/build-your-own-x,3b82ddfc8fb307570ac5bcf043ee575635879f5d,Daniel Barnes,2018-10-12T02:14:10Z,Fixed formatting to group languages,2,1,3
+codecrafters-io/build-your-own-x,7ce8aa291c37810aa8c942806320ebc32ed10b0a,Daniel Barnes,2018-10-12T02:12:24Z,Add api tutorial from issue #267,1,0,1
+codecrafters-io/build-your-own-x,196e5790f2dabbbad820ecf938f60ec86e59f924,Benjamin Sinkula,2018-10-05T21:30:44Z,Add Build Your Own Collaborative Text Editor Using Rails,1,0,1
+codecrafters-io/build-your-own-x,c3e98aa9c0c546cd2501cc2428c308213adcf448,juliardi,2018-10-05T10:00:13Z,Add 'Modern PHP without a Framework' tutorial,1,0,1
+codecrafters-io/build-your-own-x,4df2b860d6734c0fe9c786279bf5caff660f1fc0,Umar Farouq,2018-10-05T02:07:06Z,Added react native uber clone tutorial,1,0,1
+codecrafters-io/build-your-own-x,3f60bfc0f884d71603a312507f863f473a1abc0d,Daniel Stefanovic,2018-10-03T20:16:48Z,Merge pull request #268 from danielbarnes175/master  Added a video tutorial for creating a Discord Bot,1,0,1
+codecrafters-io/build-your-own-x,ca44889e2ba4d46196a33c1aadc1cb0ca8401e0f,Daniel Stefanovic,2018-10-03T20:15:17Z,Merge pull request #264 from xmonader/master  Update Nim projects,9,6,15
+codecrafters-io/build-your-own-x,49d0240153e46a65c81aae57fc738925aaea9c5f,Daniel Barnes,2018-10-03T00:33:16Z,Added a video tutorial for creating a Discord Bot,1,0,1
+codecrafters-io/build-your-own-x,0c08ce55ebf2e47ccb4d788d65db6f7700d53576,Daniel Stefanovic,2018-09-24T12:05:37Z,Merge pull request #265 from musafarouk/master  Added Blockchain Tutorial in Go,1,0,1
+codecrafters-io/build-your-own-x,505881119b6d8f65156b8f0cd69fa1387045ea37,Daniel Stefanovic,2018-09-24T12:04:45Z,Merge pull request #266 from kaysiz/patch-1  Update README.md,0,1,1
+codecrafters-io/build-your-own-x,dac99c8d4d7de8bf97c43d65b5cbfa7065686958,kudakwashe siziva,2018-09-23T01:41:34Z,Update README.md  removed dead link (* [**C**: _Writing a shell in C_](https://prakashdanish.github.io/2018/01/15/write-a-shell.html)),0,1,1
+codecrafters-io/build-your-own-x,638a0f0602d7f88ea3304802586188e5d5b5fbcf,Musa Farouk,2018-09-15T19:19:41Z,Added Blockchain Tutorial in Go,1,0,1
+codecrafters-io/build-your-own-x,3dea0a2d470054eb18f30f423ff2c0074153850f,xmonader,2018-09-09T10:32:12Z,Update Nim projects,9,6,15
+codecrafters-io/build-your-own-x,9d80e67dbaed531be0ebee1f42981648f2ac5860,Daniel Stefanovic,2018-09-07T07:32:40Z,Add tutorial #258,1,0,1
+codecrafters-io/build-your-own-x,aa65dcb47a795ba50a106268c8a38ac6ad1e923e,Daniel Stefanovic,2018-09-07T07:27:38Z,Replace video link with playlist link #260,1,1,2
+codecrafters-io/build-your-own-x,5197d1bf21df1e4d6fed4c996861d329c58f15de,Daniel Stefanovic,2018-09-07T07:18:34Z,Add tutorial #259,1,0,1
+codecrafters-io/build-your-own-x,bebf5b790153ff6609d889761f240209d17d3df1,Daniel Stefanovic,2018-08-29T06:52:49Z,Add tutorial #252,1,0,1
+codecrafters-io/build-your-own-x,0749023595d7cd03e025a52837be70449105a8c5,Daniel Stefanovic,2018-08-29T06:47:06Z,Add tutorial #257,1,0,1
+codecrafters-io/build-your-own-x,4f5c77315b27520126fb70de00b4e6407ccd9929,Daniel Stefanovic,2018-08-29T06:43:22Z,Add tutorial #256,1,0,1
+codecrafters-io/build-your-own-x,88387db219f0c3cd9f7cdda823ba818bb2801672,Daniel Stefanovic,2018-08-29T06:41:10Z,Add tutorial #255,1,0,1
+codecrafters-io/build-your-own-x,be808809387128a3b70737b0df809528d3012a36,Daniel Stefanovic,2018-08-29T06:38:36Z,Add tutorial #254,1,0,1
+codecrafters-io/build-your-own-x,dca07be7a86939a1e2a3f1790d66eddcb7096e14,Daniel Stefanovic,2018-08-29T06:36:29Z,Add tutorial #253,1,0,1
+codecrafters-io/build-your-own-x,022ea73247930a436c472c12b23ca49e7d06b9bb,Daniel Stefanovic,2018-08-29T06:30:26Z,Add tutorial #248,1,0,1

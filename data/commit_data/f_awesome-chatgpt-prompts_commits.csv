@@ -1,0 +1,301 @@
+repo,sha,author,date,message,additions,deletions,total_changes
+f/awesome-chatgpt-prompts,fbfd6613db1936ac530778b90b69fad3bff93047,Fatih Kadir Akın,2025-07-10T18:23:02Z,"Merge pull request #873 from jcordon5/main  feat(prompt): add ""Reverse Prompt Engineer"" to README and prompts.csv",8,0,8
+f/awesome-chatgpt-prompts,945b72427924ff1ca970596cc9e209f834728e30,Fatih Kadir Akın,2025-07-10T00:28:25Z,Merge pull request #880 from leopardracer/main  Fix Typos in README.md,2,2,4
+f/awesome-chatgpt-prompts,e97a2200c1ee02b3e7204ea20e98790721ce03ff,leopardracer,2025-06-18T19:38:42Z,Update README.md,2,2,4
+f/awesome-chatgpt-prompts,9a5acf16fb1f75763222159764957bae247752b4,Fatih Kadir Akın,2025-06-18T17:50:34Z,update,7,0,7
+f/awesome-chatgpt-prompts,fd8782ae62b0aae1ab08dd4e1658f78ae4296686,Fatih Kadir Akın,2025-06-18T17:41:57Z,update,214,200,414
+f/awesome-chatgpt-prompts,e3b9457a4600d443676a3fa525874f01c1ac289e,Fatih Kadir Akın,2025-06-18T17:26:44Z,update,321,99,420
+f/awesome-chatgpt-prompts,fb3607e51fca0d09acaa8e7729f12ec7bcfbdde0,Fatih Kadir Akın,2025-06-18T14:28:14Z,update,503,61,564
+f/awesome-chatgpt-prompts,a9efb68d974071b95fd16558ed2db25c83ee8488,Fatih Kadir Akın,2025-06-18T13:38:40Z,update,4,2,6
+f/awesome-chatgpt-prompts,c60d434a4358aad7a9beb55170f5e2dca694a2db,Fatih Kadir Akın,2025-06-18T13:30:39Z,update,42,2,44
+f/awesome-chatgpt-prompts,38d0b26a0979601a7e985ebe55d8812fffa4ed05,Fatih Kadir Akın,2025-06-18T13:22:14Z,update,0,16767,16767
+f/awesome-chatgpt-prompts,5f12aab0a58e3c784a52f48cbf10597885c34ee1,Fatih Kadir Akın,2025-06-18T13:21:53Z,update,587,167,754
+f/awesome-chatgpt-prompts,e06e0e7e616bac3df9b8916551bbd975970cff3a,Fatih Kadir Akın,2025-06-17T17:32:06Z,update,113,59,172
+f/awesome-chatgpt-prompts,f19d1b23f1b4bc1d7844dd252644a8d24f0b87d7,Fatih Kadir Akın,2025-06-17T16:41:56Z,update,474,124,598
+f/awesome-chatgpt-prompts,6476e2c4378a537143d3cc94bf4daab5d466db6f,Fatih Kadir Akın,2025-06-16T21:34:42Z,Merge pull request #878 from vtjl10/main  Fix typos in README.md,2,2,4
+f/awesome-chatgpt-prompts,eee62fe4782aa2d7ab82a1846250e78c8ec19a07,Fatih Kadir Akın,2025-06-16T21:26:39Z,update,86,6,92
+f/awesome-chatgpt-prompts,a8a69caf7649bb8f02c225029af543967973a65f,Fatih Kadir Akın,2025-06-16T21:17:25Z,update,2,520,522
+f/awesome-chatgpt-prompts,d9a42a6bc7965a7a39231e80167b69854952e4a1,Fatih Kadir Akın,2025-06-16T21:14:45Z,update,520,2,522
+f/awesome-chatgpt-prompts,eb3aac66df729a0766ae01ccfa17c5ca307527dd,Fatih Kadir Akın,2025-06-16T21:00:45Z,update,10,9,19
+f/awesome-chatgpt-prompts,6eaf839c38bd08d088d00ca61df334cd3fba3890,Fatih Kadir Akın,2025-06-16T20:49:24Z,update,1,1,2
+f/awesome-chatgpt-prompts,6c38b61d7e1e15109e0c583d82999b0c5c91b137,Fatih Kadir Akın,2025-06-16T20:41:57Z,update,7,6,13
+f/awesome-chatgpt-prompts,e1bdee6e94e3559b33a3553fd7678d34e0d84420,Fatih Kadir Akın,2025-06-16T20:40:10Z,update,1,1,2
+f/awesome-chatgpt-prompts,5577824e5f065d21db60caceeef82aa0af13b9bf,Fatih Kadir Akın,2025-06-16T20:36:46Z,update,1,1,2
+f/awesome-chatgpt-prompts,b7146f0ae9d82af8438ce9d5decf2d536fdbb4de,Fatih Kadir Akın,2025-06-16T20:33:48Z,update,353,41,394
+f/awesome-chatgpt-prompts,02b85cf83506c024ac20fde0b38f51f24ed21336,Fatih Kadir Akın,2025-06-16T20:07:09Z,mobule responsove,1096,136,1232
+f/awesome-chatgpt-prompts,30d68386ccc36c5cd3aaa3773656bc130a8f1918,Fatih Kadir Akın,2025-06-16T13:28:19Z,update,22,26,48
+f/awesome-chatgpt-prompts,a4eb7b001e6af21f1b0bbfc80034ac3389652936,Fatih Kadir Akın,2025-06-16T13:24:18Z,update,148,14,162
+f/awesome-chatgpt-prompts,6e5d28e52e33c858f922569e07e75afa12589faf,Fatih Kadir Akın,2025-06-16T13:13:35Z,add embedding,8,0,8
+f/awesome-chatgpt-prompts,b5c10ec8cd8b44850b483e0e5f74250550d5ef80,Fatih Kadir Akın,2025-06-16T13:09:12Z,add embedding,152,11,163
+f/awesome-chatgpt-prompts,8ce5529288a9436a0b655b93b16162ed434789f1,Fatih Kadir Akın,2025-06-16T13:07:02Z,add embedding,17484,4,17488
+f/awesome-chatgpt-prompts,7afbbae1178c1a8f33c29f1124f4795921d614e2,fuder.eth,2025-06-14T11:02:50Z,Update README.md,2,2,4
+f/awesome-chatgpt-prompts,26f697229f39f02d22a588f2dd6b1222d1eeab69,Fatih Kadir Akın,2025-06-10T18:49:53Z,Merge pull request #877 from Kamyab7/main  feat(prompts): add fitness training prompt for remote workers,35,0,35
+f/awesome-chatgpt-prompts,115825a3df7517298a5fff8ad0f8f3299412b92b,Kamyab,2025-06-09T06:31:05Z,feat(prompts): add fitness training prompt for remote workers,35,0,35
+f/awesome-chatgpt-prompts,b6604e8336bfc9499628e02bed9d801305906a57,Fatih Kadir Akın,2025-06-05T23:13:20Z,Merge pull request #875 from jeff-nasseri/feature/conventional-commits-prompt  feat(prompts): add conventional commit message generator prompt,16,0,16
+f/awesome-chatgpt-prompts,6b365090f373cf14246e8785e91caf62a503216b,Jeff Nasseri,2025-06-02T10:19:57Z,feat(prompts): add conventional commit message generator prompt,16,0,16
+f/awesome-chatgpt-prompts,a7df088b93bbc51c708434daa425e2b8450dd22a,Fatih Kadir Akın,2025-05-24T05:14:25Z,Merge pull request #870 from MustafaEminn/fix-senior-frontend-prompt,4,3,7
+f/awesome-chatgpt-prompts,f488809875927838f28d55fa3496332a1a9bda52,Fatih Kadir Akın,2025-05-24T05:11:06Z,Merge pull request #874 from paulo-santo/main,2,2,4
+f/awesome-chatgpt-prompts,f5fe34032e3e017dd060985f04e693bc0fdbc8a8,Paulo Santos,2025-05-24T00:27:17Z,Update vibeprompts.csv (extra space removed)  Removed extra spaces that prevented github rendering,2,2,4
+f/awesome-chatgpt-prompts,3675f4747f9e47f2c95507fb0df2e28324092d4f,José A. Cordón,2025-05-22T08:37:39Z,added reverse prompt engineer prompt,2,0,2
+f/awesome-chatgpt-prompts,fb069b6956e7fc813f6eb7c3c61b114858f8723e,José A. Cordón,2025-05-22T08:34:33Z,added reverse prompt engineer prompt,6,0,6
+f/awesome-chatgpt-prompts,1910b690875719044a8f75406fdabc1feea65b17,m.bosnali,2025-05-21T13:53:27Z,Correct the username,1,1,2
+f/awesome-chatgpt-prompts,2cdf1a0f4b56e8f5cae0e97a603e25afb4a21c8f,m.bosnali,2025-05-21T13:52:39Z,Add contributed by,2,1,3
+f/awesome-chatgpt-prompts,349218af71f7c118ed0942dfb8d86b03b0107994,m.bosnali,2025-05-21T13:50:33Z,Update Senior Frontend Developer prompt to use Vite instead of Create React App in prompts.csv and README.md,2,2,4
+f/awesome-chatgpt-prompts,8f47993ea4525da929d9908a6a67d2180f492edc,Fatih Kadir Akın,2025-05-16T08:30:06Z,Merge pull request #862 from semihkislar/project-manager-prompt  Project manager prompt,14,0,14
+f/awesome-chatgpt-prompts,abd90ff0fe1558f48786d4fe68bdeca9c61eb70d,Semih,2025-05-16T08:02:36Z,remove space,1,1,2
+f/awesome-chatgpt-prompts,e49ef36d308eca5bf099f8df1d64bf4de4995b08,Semih,2025-05-16T08:01:19Z,remove space,1,1,2
+f/awesome-chatgpt-prompts,1c5860d52fedd8aec3e302b1281ed80c5ada2593,Semih,2025-05-16T07:47:54Z,added on csv file,1,0,1
+f/awesome-chatgpt-prompts,c28c60220a31b0f36996f7e250a28089330bfbd5,Semih,2025-05-16T07:45:33Z,project manager prompt added,13,0,13
+f/awesome-chatgpt-prompts,6ec0859ff3a2abb3ce91dd4a4a53bdd27f0f0316,Fatih Kadir Akın,2025-05-16T08:14:50Z,Update csv_linter.yml,1,1,2
+f/awesome-chatgpt-prompts,eaefd3a20d6b1dbdb6f926c932e0a6e682cf890d,Fatih Kadir Akın,2025-05-16T08:11:01Z,Update csv_linter.yml,3,3,6
+f/awesome-chatgpt-prompts,652fc08eba8e4c380527002ea5fe2b6ee5e50ba8,Fatih Kadir Akın,2025-05-16T08:05:12Z,Update csv_linter.yml,2,2,4
+f/awesome-chatgpt-prompts,7cf6e89aa75f7dc983ea6003b1c5904a7c7810ac,Fatih Kadir Akın,2025-04-30T18:06:32Z,Merge pull request #844 from viardant/main  Adds Linux Script Developer,10,2,12
+f/awesome-chatgpt-prompts,dee5351046cec5ed34b467c5a6dbcbefd999f33b,Fatih Kadir Akın,2025-04-24T17:25:53Z,Update README.md,2,3,5
+f/awesome-chatgpt-prompts,937345f45e2c42db578f0b5ecc94641eb847708c,Fatih Kadir Akın,2025-04-24T17:24:33Z,Update README.md,14,4,18
+f/awesome-chatgpt-prompts,0db580edad0978d2f1e62f1fc317417bbf80b632,Fatih Kadir Akın,2025-04-24T05:28:04Z,Merge pull request #852 from rajudandigam/prompt/act-as-accessibility-auditor  feat: added act as an Accessibility Auditor prompt,33,2,35
+f/awesome-chatgpt-prompts,659857f51bc43d8ec7f175a633196647df967e0b,Fatih Kadir Akın,2025-04-23T02:57:12Z,variables,37,10,47
+f/awesome-chatgpt-prompts,1553ce1ab8824665e2f332c48d1030553fabc3e9,Fatih Kadir Akın,2025-04-23T02:35:08Z,update,1,1,2
+f/awesome-chatgpt-prompts,3132b34e2c75dd30b20d24d0296e641692f3bc2f,Fatih Kadir Akın,2025-04-23T02:27:18Z,updatr,416,22,438
+f/awesome-chatgpt-prompts,64b23f149dae8a06e94bd485ec19398954bbe78f,rajudandigam,2025-04-15T07:39:43Z,removed space,1,1,2
+f/awesome-chatgpt-prompts,48ad4dcb433f44a304de7b14bd60b43a4b0e5992,rajudandigam,2025-04-15T07:38:44Z,removed space,1,1,2
+f/awesome-chatgpt-prompts,e4df9e7279ba8442c8cdbf78a3a67257be1b380f,rajudandigam,2025-04-15T07:30:17Z,removed space,1,1,2
+f/awesome-chatgpt-prompts,bf004d654e61c1aec7a3b631f08760de16e88434,rajudandigam,2025-04-15T07:26:55Z,feat: added act as an Accessibility Auditor prompt,11,0,11
+f/awesome-chatgpt-prompts,fb1e5f2641b3c44e0c6cebd381a9c98d5d01f610,Fatih Kadir Akın,2025-04-10T21:22:03Z,add new sponsor,7,0,7
+f/awesome-chatgpt-prompts,29e90d24807ffd74dd5cc0d082781fd15f830fb2,Fatih Kadir Akın,2025-04-10T04:59:30Z,Merge pull request #849 from rajudandigam/awesome-chatgpt-prompts/act-as-code-reviewer,10,0,10
+f/awesome-chatgpt-prompts,a2bffe14e2e90c0f9aef8695cad48e2f0441837a,Fatih Kadir Akın,2025-04-08T21:39:52Z,Update README.md,5,2,7
+f/awesome-chatgpt-prompts,f3a063977a2e830e08875847e93205834b98f8fb,Raju Dandigam,2025-04-08T06:38:37Z,Update prompts.csv  Co-authored-by: Fatih Kadir Akın <fatihkadirakin@gmail.com>,1,1,2
+f/awesome-chatgpt-prompts,6a9738d62ae5de585d1ae92869cab836d94dae36,rajudandigam,2025-04-07T03:07:37Z,feat: Added Act as a Code Reviewer prompt,10,0,10
+f/awesome-chatgpt-prompts,06708da20073a038a3970a1ebac25bd643afeefa,Fatih Kadir Akın,2025-03-18T23:06:43Z,Update .gitignore,3,1,4
+f/awesome-chatgpt-prompts,38ba9af141e5be66343a5c754459b6eecfca757b,f,2025-03-18T12:27:14Z,/vibe code examples,3,3,6
+f/awesome-chatgpt-prompts,29436b09bd4dc3ae1176f691b2d91baa9b3df44a,f,2025-03-18T12:26:30Z,/vibe code examples,2,2,4
+f/awesome-chatgpt-prompts,957a4c41dc48aa88dc41198327911004dc386f6c,f,2025-03-18T12:23:18Z,/vibe code examples,4,1,5
+f/awesome-chatgpt-prompts,b9f3c80ced74334056c97b4ad77ce0854503c756,f,2025-03-18T12:19:52Z,/vibe code -> fix scroll,10,4,14
+f/awesome-chatgpt-prompts,52bed5ba60a0de16f422ed085e94c60e9e6946bf,f,2025-03-18T12:15:02Z,/vibe code -> fix scroll,10,0,10
+f/awesome-chatgpt-prompts,130eb1b35e10ce7d0765e7171731ee60693e1dea,f,2025-03-18T12:11:24Z,/vibe code -> fix scroll,1,1,2
+f/awesome-chatgpt-prompts,0f7c3a233f717bb92a0f62e54f2bd988c1a5ae32,f,2025-03-16T19:57:51Z,/vibe code,8,1,9
+f/awesome-chatgpt-prompts,19f019eaebdff577f701607101d6117df5dac44b,f,2025-03-16T19:51:24Z,/vibe,13,47,60
+f/awesome-chatgpt-prompts,088bf500e2e381b55b4bda7a37f0a23f7a6e08b2,f,2025-03-16T01:28:21Z,remove unncecessary button,0,21,21
+f/awesome-chatgpt-prompts,d5ae572fe548a744a48d5f6e301f07a9927ee68e,f,2025-03-16T00:35:11Z,add vibes,80,20,100
+f/awesome-chatgpt-prompts,12e15893aa3a5df324dd8b8f8e0e35c908815a16,f,2025-03-16T00:31:33Z,add vibes,32,10,42
+f/awesome-chatgpt-prompts,53da3c5b27b87db899548452605d45faebb3d9b8,f,2025-03-16T00:26:21Z,add vibes,2451,1902,4353
+f/awesome-chatgpt-prompts,f69ade541f571c6bb12afd09c966ed35e5ac63f2,Fatih Kadir Akın,2025-03-15T21:19:52Z,Add vibecoding.csv with one-shot prompts for simple app building,11,0,11
+f/awesome-chatgpt-prompts,d19f4987900b2d5a5b821219865efa1dfe750741,Daniele Gargano,2025-03-14T15:31:38Z,Update prompts.csv  Adds Linux Script Developer,2,1,3
+f/awesome-chatgpt-prompts,7e8ffa74621182a9c939aa8610f9d12a87bc7045,Daniele Gargano,2025-03-14T15:31:08Z,Update README.md  Added Linux Script Developer,8,1,9
+f/awesome-chatgpt-prompts,38133d474775e4475604ab8e380857b94efbd654,Fatih Kadir Akın,2025-03-14T06:55:17Z,Merge pull request #843 from kemalersin/main,12,2,14
+f/awesome-chatgpt-prompts,ef3af895238da14976e84fb2448e7321ff73bdc6,Kemal Ersin,2025-03-12T18:08:35Z,Fix scrollbar appearance on Windows  Scrollbar appearance on Windows improved. Fixed sidebar and main content positioning below the footer.,12,2,14
+f/awesome-chatgpt-prompts,7c65334f534942a277b6615a8b5dbed4f6f41adb,f,2025-03-12T11:28:01Z,fix filtering,25,0,25
+f/awesome-chatgpt-prompts,b0e75bacb4d62ce3c120f440db711339edc46993,f,2025-03-12T11:23:48Z,add cursor logo,47,0,47
+f/awesome-chatgpt-prompts,24e7dc56037301a91cbc25bcec52e386bf915465,f,2025-03-03T23:13:53Z,add grok,2,2,4
+f/awesome-chatgpt-prompts,15543aa0c2b0c0d2b4e70a044159bbeeae2bbb3b,f,2025-03-03T23:10:25Z,add grok,1,1,2
+f/awesome-chatgpt-prompts,54b5477e1b0221d08418e7837ea67a2f807e5939,f,2025-03-03T23:07:43Z,add grok,1,1,2
+f/awesome-chatgpt-prompts,7c5879f24936d71b9b928197272d72e544cbf482,f,2025-03-03T23:05:22Z,add grok,95,11,106
+f/awesome-chatgpt-prompts,c1285c06319565949744562d376e5f06bdac20da,f,2025-03-03T20:06:13Z,add grok,3,2,5
+f/awesome-chatgpt-prompts,052891c9655b8e7d6bc5a4e3010fce0de7cf5b8f,f,2025-02-19T13:25:20Z,more tones,9,0,9
+f/awesome-chatgpt-prompts,b95c92fd8b8c9cfc0c5e05cce14e44f9bf9d6445,f,2025-02-19T13:14:34Z,add lang / tone feature,41,25,66
+f/awesome-chatgpt-prompts,778737f28a192b3728309dda707b0463ec8a7843,f,2025-02-19T12:55:18Z,init,559,58,617
+f/awesome-chatgpt-prompts,e5726360a8b85558a037d3fa9872de80f0f0e6e6,Fatih Kadir Akın,2025-02-13T09:26:49Z,Merge pull request #841 from fatihsolhan/add-chrome-extension-link,29,0,29
+f/awesome-chatgpt-prompts,61f9fefef815bba2103b4d04b4afbc2e44c769ba,Fatih Solhan,2025-02-13T09:21:38Z,feat: add Chrome extension link to header navigation,29,0,29
+f/awesome-chatgpt-prompts,94deb7a76c84283f6382cd8ee2793d8ad52a0fb8,f,2025-02-11T21:05:13Z,more custom examples,8,11,19
+f/awesome-chatgpt-prompts,f40693e3aaf2572bc5067f9839634e6a0d1fb846,f,2025-02-11T21:01:05Z,prewrap,1,1,2
+f/awesome-chatgpt-prompts,3682225a5f5d50424dca72bb550a42e0efa5a46b,Fatih Kadir Akın,2025-02-11T21:00:30Z,Merge pull request #840 from tscburak/main  Allow Users to Edit Prompt Variables via Input Fields,324,89,413
+f/awesome-chatgpt-prompts,b2815876844097acdcbfa0eae68fb7eeb2237953,Burak,2025-02-11T16:42:01Z,prettier and making updating simple one and simple,176,159,335
+f/awesome-chatgpt-prompts,0e910b6dbcf72bc96a7bf1056a75d0cf9fe9f185,Burak,2025-02-11T15:43:36Z,Act as Devops engineer prompt with variables,18,0,18
+f/awesome-chatgpt-prompts,cb05d1b632aab8986494ed3fb2be57830aa1cec1,Burak,2025-02-11T15:43:15Z,Editting prompt vith variables functinality is implemented,218,18,236
+f/awesome-chatgpt-prompts,3a1d66c8ca083ca340df11ed4c46e765181c50ae,f,2025-02-05T00:01:58Z,improve ui,26,0,26
+f/awesome-chatgpt-prompts,ffcfd9c0749e52a36de2a1c29edf153f9b23f1b8,f,2025-02-04T23:54:53Z,improve ui,3016,1306,4322
+f/awesome-chatgpt-prompts,7c68845eb0331cf6c6e163900876b03c537aa672,f,2025-02-04T23:04:18Z,improve ui,52,8,60
+f/awesome-chatgpt-prompts,1fbb25a0fee43baf67c8f4b161d47218b414dbbb,f,2025-02-04T23:00:20Z,improve ui,1,1,2
+f/awesome-chatgpt-prompts,9e8efd5ae05c03913474db984936cbbd75b3a312,Fatih Kadir Akın,2025-02-04T22:48:22Z,Update prompts.csv,1,1,2
+f/awesome-chatgpt-prompts,8c117f52adfdbdb95d24295dd1cc8ee935209cb6,Fatih Kadir Akın,2025-02-04T22:48:06Z,Update prompts.csv,1,1,2
+f/awesome-chatgpt-prompts,a3f75f52167ac7e39c25df57874f4c89f3d4f19e,Fatih Kadir Akın,2025-02-04T22:47:50Z,Update prompts.csv,1,1,2
+f/awesome-chatgpt-prompts,100a583fc1359fcf0cd9012375f747708b76aaf3,Fatih Kadir Akın,2025-02-04T22:47:03Z,Update prompts.csv,2,2,4
+f/awesome-chatgpt-prompts,62ad9a023f02eb987a65ccb243425c9bd642b240,Fatih Kadir Akın,2025-02-04T22:46:35Z,Update prompts.csv,1,1,2
+f/awesome-chatgpt-prompts,acd9013a09a69b98435cf767c407d703e98fce0e,Fatih Kadir Akın,2025-02-04T22:46:17Z,Update prompts.csv,2,2,4
+f/awesome-chatgpt-prompts,8da22ebc59d3ef2458dbaf6e0e394de24035a83a,f,2025-02-04T22:45:44Z,improve ui,721,332,1053
+f/awesome-chatgpt-prompts,dab74ce8d5866f3029ea090280cbdcc3effc0c09,Fatih Kadir Akın,2025-02-04T21:15:38Z,default copilot,1,1,2
+f/awesome-chatgpt-prompts,99390e94f4c332fb310b36477ef329d86c1044f0,Fatih Kadir Akın,2025-02-04T21:13:42Z,default copilot,1,1,2
+f/awesome-chatgpt-prompts,703e1a7e44cb78bb12ead689c4369b1bfe50730a,Fatih Kadir Akın,2025-02-04T21:11:23Z,github copilot,1,1,2
+f/awesome-chatgpt-prompts,15fa2c01f0d5208f6a9fcee5ca4cd433eca8d998,Fatih Kadir Akın,2025-02-04T21:09:54Z,add github copilot,4,0,4
+f/awesome-chatgpt-prompts,160b06f9d00839d51236c6c3abae51cf6b6d40d4,Fatih Kadir Akın,2025-02-03T19:46:46Z,"Merge pull request #834 from f/prompt/act-as-linkedin-ghostwriter  feat: Add ""Act as Linkedin Ghostwriter""",6,0,6
+f/awesome-chatgpt-prompts,72f6017854f6e6d023b08c613a71e6d0adfeee75,awesomesolution,2025-02-03T19:46:10Z,"feat: Add ""Act as Linkedin Ghostwriter"" to prompts.csv",1,0,1
+f/awesome-chatgpt-prompts,1041713cbf367e88b3ffae6802cf716ead1d859c,awesomesolution,2025-02-03T19:46:10Z,"feat: Add ""Act as Linkedin Ghostwriter"" to README",5,0,5
+f/awesome-chatgpt-prompts,cbef14e18170e286661930c02dc16e4fb5aceee3,Fatih Kadir Akın,2025-01-31T23:19:38Z,Update README.md,13,13,26
+f/awesome-chatgpt-prompts,c91fe3fcd1937815f14d9742284ee42e2d6152e3,Fatih Kadir Akın,2025-01-31T23:18:44Z,Merge pull request #832 from saidsef/main  feat: Add Act as a Virtual Event Planner,6,0,6
+f/awesome-chatgpt-prompts,c99705f16fff08561901bdcd9bf00baf0962339b,Fatih Kadir Akın,2025-01-31T23:18:16Z,Merge pull request #833 from omahs/patch-1  fix: typos,11,11,22
+f/awesome-chatgpt-prompts,8644c4f9f8a61806ebad29d391cd271e902d335e,omahs,2025-01-28T09:55:29Z,fix typos,11,11,22
+f/awesome-chatgpt-prompts,4cb4a05328fdbba831a45c72950bf0bac5684c95,Said Sef,2025-01-26T13:54:27Z,feat: Add Act as a Virtual Event Planner,6,0,6
+f/awesome-chatgpt-prompts,627aa2badccd80e765c991c015f565d61bdb2355,Fatih Kadir Akın,2025-01-14T08:28:46Z,"Merge pull request #827 from f/prompt/act-as-act-like-a-music-video-designer  feat: Add ""Act as Act Like a Music Video Designer""",7,1,8
+f/awesome-chatgpt-prompts,7aa5cf2554a8376ebf6d7c5c4ea1a921ef2b7445,Fatih Kadir Akın,2025-01-14T08:28:27Z,Update prompts.csv,2,2,4
+f/awesome-chatgpt-prompts,682de7e7fddfcc4747d754bcd1553a88d0bd0d12,Fatih Kadir Akın,2025-01-14T08:28:07Z,Update README.md,1,1,2
+f/awesome-chatgpt-prompts,95d16a229dfb9eb6ef2feb4e8f8b44fe947c059b,aliasgharheidaricom,2025-01-14T08:27:13Z,"feat: Add ""Act as Act Like a Music Video Designer"" to prompts.csv",1,0,1
+f/awesome-chatgpt-prompts,be602d8cc8082dbd95281e81d16ec12e6f4aee16,aliasgharheidaricom,2025-01-14T08:27:13Z,"feat: Add ""Act as Act Like a Music Video Designer"" to README",5,0,5
+f/awesome-chatgpt-prompts,2a3db3907b478ab21a15aca386b25824afbcd75c,Fatih Kadir Akın,2025-01-07T08:42:03Z,"Merge pull request #825 from f/prompt/act-as-ayurveda-food-tester  feat: Add ""Act as Ayurveda Food Tester""",6,0,6
+f/awesome-chatgpt-prompts,dcf2a5653914a769f31e3f53ce231f28d0a302df,duke79,2025-01-07T08:41:35Z,"feat: Add ""Act as Ayurveda Food Tester"" to prompts.csv",1,0,1
+f/awesome-chatgpt-prompts,596ce9d8452d4a27fd429f60e421d762bf992b1e,duke79,2025-01-07T08:41:34Z,"feat: Add ""Act as Ayurveda Food Tester"" to README",5,0,5
+f/awesome-chatgpt-prompts,0d65c8ee635eb5e5b7f779c85945b0fca5ea73ac,Fatih Kadir Akın,2025-01-07T08:39:53Z,"Merge pull request #824 from f/prompt/act-as-tech-troubleshooter  feat: Add ""Act as Tech Troubleshooter""",6,0,6
+f/awesome-chatgpt-prompts,1e594781826792ff804db2520d3a84949359c1ec,Smponi,2025-01-07T08:39:23Z,"feat: Add ""Act as Tech Troubleshooter"" to prompts.csv",1,0,1
+f/awesome-chatgpt-prompts,441fcc3109e004ceffbd434e7496622cb400394a,Smponi,2025-01-07T08:39:23Z,"feat: Add ""Act as Tech Troubleshooter"" to README",5,0,5
+f/awesome-chatgpt-prompts,020a11d956828c2f7cacfbcc4945408c97c39ad1,f,2025-01-07T08:28:30Z,chat buttons,114,27,141
+f/awesome-chatgpt-prompts,72df762e8738b7dbde69a5af4ceb5a3516b55d4d,f,2025-01-07T08:05:48Z,chat button,231,14,245
+f/awesome-chatgpt-prompts,768a390e9b69036342ba98c99f6527af6e7f3a3e,Fatih Kadir Akın,2025-01-07T06:59:23Z,Merge pull request #823 from majevva/patch-3  Added - LLM (Large Language Models) security specialist.,1,0,1
+f/awesome-chatgpt-prompts,c38965d20a98ae73f9176ec9f507e41960e0646e,Fatih Kadir Akın,2025-01-07T06:59:13Z,Merge pull request #822 from majevva/patch-1  Added - LLM (Large Language Models) security specialist.,5,0,5
+f/awesome-chatgpt-prompts,faef7554bf9726a674446ff4131c36de2377163c,Tomasz,2025-01-07T06:11:55Z,Added - LLM (Large Language Models) security specialist.   Added - LLM (Large Language Models) security specialist.,1,0,1
+f/awesome-chatgpt-prompts,8892b9a26587a7ff1fe8ae090318f7f0863693e7,Tomasz,2025-01-07T06:07:00Z,Update README.md  Added - LLM (Large Language Models) security specialist,5,0,5
+f/awesome-chatgpt-prompts,03fb117d4d8e0329657f918199f7dac390ebc927,Fatih Kadir Akın,2025-01-06T20:33:16Z,"Merge pull request #821 from f/prompt/act-as-rephraser-with-obfuscation  feat: Add ""Act as Rephraser with Obfuscation""",6,0,6
+f/awesome-chatgpt-prompts,70629a1e850cbcac44baf501e25262d23684e757,FahadBinHussain,2025-01-06T08:34:09Z,"feat: Add ""Act as Rephraser with Obfuscation"" to prompts.csv",1,0,1
+f/awesome-chatgpt-prompts,5523562cbab1c931c51fe282bf96dab75a3b75d7,FahadBinHussain,2025-01-06T08:34:09Z,"feat: Add ""Act as Rephraser with Obfuscation"" to README",5,0,5
+f/awesome-chatgpt-prompts,0036d04c9cd091a4903869e3d3c61f00602d494c,Fatih Kadir Akın,2025-01-06T08:33:28Z,"Merge pull request #820 from f/prompt/act-as-healing-grandma  feat: Add ""Act as Healing Grandma""",6,0,6
+f/awesome-chatgpt-prompts,61229c8c07ea12c6e219b2b2b728f23f2842901b,FlipTip,2025-01-06T08:20:29Z,"feat: Add ""Act as Healing Grandma"" to prompts.csv",1,0,1
+f/awesome-chatgpt-prompts,24a81ea0d2e40c6bfd2a5c0e5e5c1d6bc9eb99f6,FlipTip,2025-01-06T08:20:29Z,"feat: Add ""Act as Healing Grandma"" to README",5,0,5
+f/awesome-chatgpt-prompts,7ec9d057e0bdd8d1761f647c9f73717e50982d72,f,2025-01-06T08:19:25Z,fix bot,6,2,8
+f/awesome-chatgpt-prompts,2562eb19afafb9ef0d9c10ed0cf764032afe198a,f,2025-01-06T00:05:09Z,fix csv,12,1,13
+f/awesome-chatgpt-prompts,44f48d33e22d6f8c64ae9bd29239e2faa9ed279e,Fatih Kadir Akın,2025-01-06T00:03:05Z,Update prompts.csv,2,2,4
+f/awesome-chatgpt-prompts,44a141e24e90e0fa9881ddba0fd4c7bf68305668,f,2025-01-06T00:01:03Z,fix csv,1,1,2
+f/awesome-chatgpt-prompts,b55c0bff388f60e9beebe3b0a0d4f8bcf0caa9c4,f,2025-01-05T23:59:48Z,fix csv,28,28,56
+f/awesome-chatgpt-prompts,c6f3c5aaef807349d0572360a0b164a961946c62,Fatih Kadir Akın,2025-01-05T23:58:00Z,"Merge pull request #818 from f/prompt/act-as-yes-or-no-answer  feat: Add ""Act as Yes or No answer""",6,0,6
+f/awesome-chatgpt-prompts,8738e7a6028bd770568d6fe47859a1321f75e036,0x07CB,2025-01-05T23:57:16Z,"feat: Add ""Act as Yes or No answer"" to prompts.csv",1,0,1
+f/awesome-chatgpt-prompts,db349b18c902885488ea835b02a62040e814107d,0x07CB,2025-01-05T23:57:16Z,"feat: Add ""Act as Yes or No answer"" to README",5,0,5
+f/awesome-chatgpt-prompts,167718a74b7516eb561bf2a872e5ee2a3e828cf1,Fatih Kadir Akın,2025-01-05T23:55:04Z,"Merge pull request #817 from f/prompt/act-as-nutritionist  feat: Add ""Act as nutritionist""",6,0,6
+f/awesome-chatgpt-prompts,e1f43e3ee1d58d5c99ebad41568343525ea3cbf8,nababuddin,2025-01-05T23:54:17Z,"feat: Add ""Act as nutritionist"" to prompts.csv",1,0,1
+f/awesome-chatgpt-prompts,4e694aa260c9f639a8f9d53529c4085df1fb21a4,nababuddin,2025-01-05T23:54:17Z,"feat: Add ""Act as nutritionist"" to README",5,0,5
+f/awesome-chatgpt-prompts,49cdb0adb97f3a64d6c8be9ae7da6ef001b52eb9,Fatih Kadir Akın,2025-01-05T23:50:33Z,"Merge pull request #816 from f/prompt/act-as-note-taking-assistant  feat: Add ""Act as Note-Taking Assistant""",6,0,6
+f/awesome-chatgpt-prompts,b4095438d1dca06227ba44f398b19f98b05b5bb2,eltociear,2025-01-05T23:50:12Z,"feat: Add ""Act as Note-Taking Assistant"" to prompts.csv",1,0,1
+f/awesome-chatgpt-prompts,bca3fe6f1cfd760d1073c9e712a0c91805ac89d4,eltociear,2025-01-05T23:50:11Z,"feat: Add ""Act as Note-Taking Assistant"" to README",5,0,5
+f/awesome-chatgpt-prompts,365ce1384fccac22d46341448929bf8029088679,Fatih Kadir Akın,2025-01-05T23:45:00Z,"Merge pull request #815 from f/prompt/act-as-seo-specialist  feat: Add ""Act as SEO specialist""",7,0,7
+f/awesome-chatgpt-prompts,3face5317bd950918f94df5c41a524e6f1683997,suhailroushan13,2025-01-05T23:35:53Z,"feat: Add ""Act as SEO specialist"" to prompts.csv",1,0,1
+f/awesome-chatgpt-prompts,19d45da825052705a4966cfcfdeba53c8267a613,suhailroushan13,2025-01-05T23:35:53Z,"feat: Add ""Act as SEO specialist"" to README",6,0,6
+f/awesome-chatgpt-prompts,cc30fcb78602b8c5e8b201f0f75badc37c472238,Fatih Kadir Akın,2025-01-05T23:31:27Z,"Merge pull request #814 from f/prompt/act-as-study-planner  feat: Add ""Act as study planner""",6,0,6
+f/awesome-chatgpt-prompts,caeee74e931b4cff4ec4ef08370701d8590fc5ae,AhmedYasserIbrahim,2025-01-05T23:30:46Z,"feat: Add ""Act as study planner"" to prompts.csv",1,0,1
+f/awesome-chatgpt-prompts,bcbfcd35a5fecf264f87adf992a01c1588267a3e,AhmedYasserIbrahim,2025-01-05T23:30:46Z,"feat: Add ""Act as study planner"" to README",5,0,5
+f/awesome-chatgpt-prompts,019bd09b699d7040df43d3d00a6b90878022652a,Fatih Kadir Akın,2025-01-05T23:30:05Z,"Merge pull request #813 from f/prompt/act-as-book-summarizer  feat: Add ""Act as Book Summarizer""",6,0,6
+f/awesome-chatgpt-prompts,a16ceae376c30d6a12986282bbe95c3c2d17887a,riakashyap,2025-01-05T23:29:21Z,"feat: Add ""Act as Book Summarizer"" to prompts.csv",1,0,1
+f/awesome-chatgpt-prompts,f42eebf4eae98e3e43db1cd02766b7a0ce56f422,riakashyap,2025-01-05T23:29:21Z,"feat: Add ""Act as Book Summarizer"" to README",5,0,5
+f/awesome-chatgpt-prompts,ef2c38cd12af3cee59406de75ddf690ed019e20e,Fatih Kadir Akın,2025-01-05T23:28:18Z,"Merge pull request #812 from f/prompt/act-as-creative-branding-strategist  feat: Add ""Act as Creative Branding Strategist""",6,0,6
+f/awesome-chatgpt-prompts,3d663914f40921fd92ad96227a95be2a0277446e,waleedsid,2025-01-05T23:27:59Z,"feat: Add ""Act as Creative Branding Strategist"" to prompts.csv",1,0,1
+f/awesome-chatgpt-prompts,7ec36846b759aa0da9905fe2226755821d0de2a5,waleedsid,2025-01-05T23:27:58Z,"feat: Add ""Act as Creative Branding Strategist"" to README",5,0,5
+f/awesome-chatgpt-prompts,7bb22ea4096cf198ae323ccb9a0628d1e45be6af,Fatih Kadir Akın,2025-01-05T23:26:53Z,Update README.md,5,4,9
+f/awesome-chatgpt-prompts,fa45e7506a715f994bcb68e9ba332d660f891e1f,Fatih Kadir Akın,2025-01-05T23:23:47Z,Update pull_request_template.md,1,11,12
+f/awesome-chatgpt-prompts,64fbb7fee94d3841275d2a59a49d08012569a6b6,Fatih Kadir Akın,2025-01-05T23:21:47Z,"Merge pull request #810 from f/prompt/act-as-tech-challenged-customer  feat: Add ""Act as Tech-Challenged Customer""",9,0,9
+f/awesome-chatgpt-prompts,aab22fa6eabec7ad28cb6eadcd2d1db8ca6c45b4,ThobiasKH,2025-01-05T23:21:22Z,"feat: Add ""Act as Tech-Challenged Customer"" to prompts.csv",1,0,1
+f/awesome-chatgpt-prompts,06710c23a501cc6aad11351082311ac8a4123de4,ThobiasKH,2025-01-05T23:21:22Z,"feat: Add ""Act as Tech-Challenged Customer"" to README",8,0,8
+f/awesome-chatgpt-prompts,29ac367fcbc85561de7f0bffeaa228a84aa0bc1d,f,2025-01-05T23:20:13Z,duplicate,25,17,42
+f/awesome-chatgpt-prompts,bc8d21f52114d189b6125f48ee5fd002e3014f50,f,2025-01-05T23:17:35Z,duplicate,15,6,21
+f/awesome-chatgpt-prompts,ed3854aa26e8a7b53af7b8e279bddee6289eecc6,Fatih Kadir Akın,2025-01-05T23:14:03Z,"Merge pull request #807 from f/prompt/act-as-children-s-book-creator-children-s-book-creator  feat: Add multiple prompts (""Act as Children's Book Creator"", ""Children's Book Creator"")",6,0,6
+f/awesome-chatgpt-prompts,8ea9864d2a1a797c5122e2ec05f187eb7e71ac44,Fatih Kadir Akın,2025-01-05T23:13:50Z,Update prompts.csv,1,2,3
+f/awesome-chatgpt-prompts,500b29f5e2d0fe36a9466601e5f12bb125a1bec8,Fatih Kadir Akın,2025-01-05T23:13:28Z,Update README.md,0,2,2
+f/awesome-chatgpt-prompts,896cd709a90929b5d7642216f7cc214b704b350a,Fatih Kadir Akın,2025-01-05T23:13:03Z,Update README.md,0,5,5
+f/awesome-chatgpt-prompts,d7123321897e8ff4dbc5eb911af5cc3966a7ea9f,mitchhuang777,2025-01-05T23:12:18Z,feat: Add multiple prompts to prompts.csv,2,0,2
+f/awesome-chatgpt-prompts,c96f644860d06b56a39967408ff844ac5ee76516,mitchhuang777,2025-01-05T23:12:18Z,feat: Add multiple prompts to README,12,0,12
+f/awesome-chatgpt-prompts,d0238bb134c29c4b5d4438d9aaf14d26e190d22e,Fatih Kadir Akın,2025-01-05T23:11:35Z,"Merge pull request #806 from f/prompt/act-as-idea-clarifier-gpt-act-as-top-programming-expert-act-as-architect-guide-for-programmers-act-as-chatgpt-prompt-generator  feat: Add multiple prompts (""Act as Idea Clarifier GPT"", ""Act as top programming expert"", ""Act as Architect Guide for Programmers"", ""Act as ChatGPT prompt generator"")",54,0,54
+f/awesome-chatgpt-prompts,54d73943835ab41ae679ff2aeaef15ff53cc038d,Ai-trainee,2025-01-05T23:10:38Z,feat: Add multiple prompts to prompts.csv,4,0,4
+f/awesome-chatgpt-prompts,80ca765bdba62489a20b2afb8ad7cc37deec55e4,Ai-trainee,2025-01-05T23:10:38Z,feat: Add multiple prompts to README,50,0,50
+f/awesome-chatgpt-prompts,5c2d5936edecf638d894a0d85b0cf658c81bf06b,Fatih Kadir Akın,2025-01-05T23:09:35Z,"Merge pull request #805 from f/prompt/act-as-linkedin-ghostwriter  feat: Add ""Act as LinkedIn Ghostwriter""",6,0,6
+f/awesome-chatgpt-prompts,2a16acbfec5f669de4d52b63d3a3b029d105f1ad,siddqamar,2025-01-05T23:08:54Z,"feat: Add ""Act as LinkedIn Ghostwriter"" to prompts.csv",1,0,1
+f/awesome-chatgpt-prompts,4e36a34c5df3252d2e49db65413d2cc27aabc3c9,siddqamar,2025-01-05T23:08:54Z,"feat: Add ""Act as LinkedIn Ghostwriter"" to README",5,0,5
+f/awesome-chatgpt-prompts,438c33314fd79cf81fce47a2e05be0d78b397884,Fatih Kadir Akın,2025-01-05T23:08:14Z,"Merge pull request #804 from f/prompt/act-as-pirate  feat: Add ""Act as Pirate""",6,0,6
+f/awesome-chatgpt-prompts,ce41ab6d28d43cab26dbc9a63676a9f66653c2bf,Fatih Kadir Akın,2025-01-05T23:08:02Z,Update prompts.csv,1,1,2
+f/awesome-chatgpt-prompts,3f6262c7ca8814633108b605dc23900df071f96a,Fatih Kadir Akın,2025-01-05T23:07:43Z,Update README.md,0,2,2
+f/awesome-chatgpt-prompts,870632f6f4cd92a7ebc2d29ce7dd5d95d0d5177f,roachcord3,2025-01-05T23:06:54Z,"feat: Add ""Act as Pirate"" to prompts.csv",1,0,1
+f/awesome-chatgpt-prompts,6c425fc45be450fdcc65d55eb050e29534a30bf8,roachcord3,2025-01-05T23:06:54Z,"feat: Add ""Act as Pirate"" to README",7,0,7
+f/awesome-chatgpt-prompts,25dac0f708f212e756561982a8b3a670c9261f08,Fatih Kadir Akın,2025-01-05T23:05:44Z,"Merge pull request #803 from f/prompt/structured-iterative-reasoning-protocol-sirp-  feat: Add ""Structured Iterative Reasoning Protocol (SIRP)""",6,0,6
+f/awesome-chatgpt-prompts,6f972230206f31ac4a30da997c25cf001306d409,aousabdo,2025-01-05T23:04:53Z,"feat: Add ""Structured Iterative Reasoning Protocol (SIRP)"" to prompts.csv",1,0,1
+f/awesome-chatgpt-prompts,9d7a23e2566a0962ca308470dbb4f44849d6c9e6,aousabdo,2025-01-05T23:04:53Z,"feat: Add ""Structured Iterative Reasoning Protocol (SIRP)"" to README",5,0,5
+f/awesome-chatgpt-prompts,858df33c2bf8470b7066a62f5f9af8e2dad631ec,f,2025-01-05T23:03:41Z,prompts.csv,42,16,58
+f/awesome-chatgpt-prompts,5194a66eb1c66f69cf1183075cec3ae82063eebc,f,2025-01-05T22:59:22Z,branch name,1,1,2
+f/awesome-chatgpt-prompts,0eedd6845b6cea3cfea0a1881e258bfdac96917b,Fatih Kadir Akın,2025-01-05T22:57:29Z,"Merge pull request #802 from f/prompt/batch-1736117812894  feat: Add ""Act as DAX Terminal""",6,0,6
+f/awesome-chatgpt-prompts,7616f54f88fd244ccfc31a3ae80375b7f6efca02,n0hb0dy,2025-01-05T22:56:54Z,"feat: Add ""Act as DAX Terminal"" to prompts.csv",1,0,1
+f/awesome-chatgpt-prompts,79d15de3d659344db205d3e517d9e9ae5a5e61d6,n0hb0dy,2025-01-05T22:56:53Z,"feat: Add ""Act as DAX Terminal"" to README",5,0,5
+f/awesome-chatgpt-prompts,bafde83eb9e2c7ac4b57e9936e051f860020ba57,f,2025-01-05T22:54:52Z,lowercase,16,4,20
+f/awesome-chatgpt-prompts,53892044d9a04d3de3dff4d0ef5d8d36992edb3b,Fatih Kadir Akın,2025-01-05T22:52:53Z,"Merge pull request #801 from f/prompt/batch-1736117509836  feat: Add ""Act as chess player""",18,0,18
+f/awesome-chatgpt-prompts,7490961dfb1d09c6a72ae9eac8771402de843fa9,Mythli,2025-01-05T22:51:51Z,"feat: Add ""Act as chess player"" to prompts.csv",3,0,3
+f/awesome-chatgpt-prompts,7faeedc2aa9cb11e8d30728cdb3ed779d0e7cdfc,Mythli,2025-01-05T22:51:51Z,"feat: Add ""Act as chess player"" to README",15,0,15
+f/awesome-chatgpt-prompts,b79dbb2c18c72330918d78221b96b4b61cf4a8a7,f,2025-01-05T22:51:04Z,lowercase,1,1,2
+f/awesome-chatgpt-prompts,3e513bb5cc1732bfda0b1377a0f6a13a8f2750be,Fatih Kadir Akın,2025-01-05T22:49:43Z,"Merge pull request #799 from f/prompt/batch-1736117284912  feat: Add ""Act as Virtual Fitness Coach""",6,0,6
+f/awesome-chatgpt-prompts,1ea2554b5964243a197455a6c2e913c6d0be00db,webmonk,2025-01-05T22:48:06Z,"feat: Add ""Act as Virtual Fitness Coach"" to prompts.csv",1,0,1
+f/awesome-chatgpt-prompts,9ae774d5cfd172b1071ec388466105e631367c80,webmonk,2025-01-05T22:48:06Z,"feat: Add ""Act as Virtual Fitness Coach"" to README",5,0,5
+f/awesome-chatgpt-prompts,f200d8a0f496ce4bdeb8fac0d21fc743f1bababb,Fatih Kadir Akın,2025-01-05T22:46:57Z,"Merge pull request #798 from f/prompt/batch-1736117168402  feat: Add ""Act as Github Expert""",14,1,15
+f/awesome-chatgpt-prompts,56a38af854a96822896562d7392ea6b23f2a17cc,khushaljethava,2025-01-05T22:46:09Z,"feat: Add ""Act as Github Expert"" to prompts.csv",3,1,4
+f/awesome-chatgpt-prompts,c13272f213554e26fa99d679c8acec3336f16ff8,khushaljethava,2025-01-05T22:46:09Z,"feat: Add ""Act as Github Expert"" to README",11,0,11
+f/awesome-chatgpt-prompts,3d139411da0d7837c5fdbfa1129ba139db6b4a45,f,2025-01-05T22:41:01Z,multiple prompts,44,45,89
+f/awesome-chatgpt-prompts,7fcfc01c7f1e2360fb8aab543cb5f38a3f61f930,f,2025-01-05T22:38:05Z,update,14,6,20
+f/awesome-chatgpt-prompts,8886e7d1e2773cfcfa461d46712889ba9b3633e0,f,2025-01-05T22:34:43Z,update,43,0,43
+f/awesome-chatgpt-prompts,6329d42e883cb40fb1b9a9e93d626d40d0252407,Fatih Kadir Akın,2025-01-05T22:33:18Z,"Merge pull request #795 from f/prompt/act-as-teacher-of-react-js  feat: Add ""Act as Teacher of React.js""",7,1,8
+f/awesome-chatgpt-prompts,adbcad7a738c00c1ff680d9ade6a8c240ea2668c,marium-noor,2025-01-05T22:31:07Z,"feat: Add ""Act as Teacher of React.js"" to prompts.csv",2,1,3
+f/awesome-chatgpt-prompts,dad0bc8273b39439d28226e845a6b8c366971f12,marium-noor,2025-01-05T22:31:07Z,"feat: Add ""Act as Teacher of React.js"" to README",5,0,5
+f/awesome-chatgpt-prompts,cfeab175ee426a087f3c82ce2c71a9915b8c238a,Fatih Kadir Akın,2025-01-05T22:30:30Z,"Merge pull request #793 from f/prompt/act-as-guessing-game-master  feat: Add ""Act as Guessing Game Master""",7,1,8
+f/awesome-chatgpt-prompts,52f117b116020c52a31186c54d00c0438f388a55,EliasPereirah,2025-01-05T22:25:40Z,"feat: Add ""Act as Guessing Game Master"" to prompts.csv",2,1,3
+f/awesome-chatgpt-prompts,46f5a50050709213a1be95a18ecb1205c117e56c,EliasPereirah,2025-01-05T22:25:39Z,"feat: Add ""Act as Guessing Game Master"" to README",5,0,5
+f/awesome-chatgpt-prompts,82d9d7fc716d6b74db676fb64f58a78d74b0db96,Fatih Kadir Akın,2025-01-05T22:23:28Z,"Merge pull request #792 from f/prompt/act-as-logic-builder-tool  feat: Add ""Act as Logic Builder Tool""",7,1,8
+f/awesome-chatgpt-prompts,a2b018bbce88ee7c2ce4c48d66788e9eecc5f956,rukaiyatasnim,2025-01-05T22:22:25Z,"feat: Add ""Act as Logic Builder Tool"" to prompts.csv",2,1,3
+f/awesome-chatgpt-prompts,92afc91eca9a4815210200964c9262afc2217951,rukaiyatasnim,2025-01-05T22:22:24Z,"feat: Add ""Act as Logic Builder Tool"" to README",5,0,5
+f/awesome-chatgpt-prompts,0973f6f5d2c0dbf753ca46eaf595e388fa5aa63d,f,2025-01-05T22:21:32Z,update,23,3,26
+f/awesome-chatgpt-prompts,7705d14439f2d52b3d33774baa4500775cfbbd8b,Fatih Kadir Akın,2025-01-05T22:20:31Z,Update README.md,2,2,4
+f/awesome-chatgpt-prompts,45e4eba4870e704bff44a385f7d7e295d21853b3,Fatih Kadir Akın,2025-01-05T22:17:55Z,"Merge pull request #790 from f/prompt/act-as-knowledgeable-software-development-mentor  feat: Add ""Act as knowledgeable Software Development Mentor""",6,0,6
+f/awesome-chatgpt-prompts,1ad1c878d82da51aff36b1e6f9c1b2cceea9f161,yamanerkam,2025-01-05T22:16:47Z,"feat: Add ""Act as knowledgeable Software Development Mentor"" to prompts.csv",1,0,1
+f/awesome-chatgpt-prompts,e4b930864bc85f8b21a7719e9cf22cad694a5802,yamanerkam,2025-01-05T22:16:46Z,"feat: Add ""Act as knowledgeable Software Development Mentor"" to README",5,0,5
+f/awesome-chatgpt-prompts,789a5aea9f6cc6d9d3326091560e3bab3a0abc03,f,2025-01-05T22:16:09Z,update,29,1,30
+f/awesome-chatgpt-prompts,93de120f24cbc97766b21283941bd20f6f553fb3,Fatih Kadir Akın,2025-01-05T22:12:12Z,"Merge pull request #788 from f/prompt/act-as-acoustic-guitar-composer  feat: Add ""Act as Acoustic Guitar Composer""",6,0,6
+f/awesome-chatgpt-prompts,920aa7ff3c04b3e01ad392bbb269b97e4912e0d4,Fatih Kadir Akın,2025-01-05T22:11:23Z,Update prompts.csv,1,1,2
+f/awesome-chatgpt-prompts,ccd0fc07b6c7300373bbe4314456a0dc57cc8e90,leonardespi,2025-01-05T22:10:36Z,"feat: Add ""Act as Acoustic Guitar Composer"" to prompts.csv",1,0,1
+f/awesome-chatgpt-prompts,868e2397faab0e37f45ad68cdc18f93ffbf92388,leonardespi,2025-01-05T22:10:35Z,"feat: Add ""Act as Acoustic Guitar Composer"" to README",5,0,5
+f/awesome-chatgpt-prompts,61d1a94a0985c72f0490bbdb5e70d9ebaa013077,Fatih Kadir Akın,2025-01-05T22:09:45Z,Merge pull request #773 from seaniedan/patch-1  Update README.md to fix typo 'conversation',1,1,2
+f/awesome-chatgpt-prompts,012a0d8ddf998f3d20b5e041232672ac7459e9a7,Fatih Kadir Akın,2025-01-05T22:09:03Z,Merge pull request #774 from seaniedan/patch-2  docs: Update typo,1,1,2
+f/awesome-chatgpt-prompts,32cb65f4bae5f46bfa7c1cb8af2aeb6c1a57b098,Fatih Kadir Akın,2025-01-05T22:08:47Z,Update prompts.csv,1,1,2
+f/awesome-chatgpt-prompts,53d3b0f0fb2160a21a97576341b56788932788e7,Fatih Kadir Akın,2025-01-05T22:06:35Z,"Merge pull request #787 from f/prompt/act-as-career-coach  feat: Add ""Act as Career Coach""",6,0,6
+f/awesome-chatgpt-prompts,ff8223afe9188330a00e30244561a76722b8fd61,Fatih Kadir Akın,2025-01-05T22:05:56Z,Update prompts.csv,1,2,3
+f/awesome-chatgpt-prompts,7a4a9b4c272a3480206745dd99422c4de35ee068,f,2025-01-05T22:04:45Z,update,3,2,5
+f/awesome-chatgpt-prompts,c86c4f42d23cc2483afed29802c4bfa83443852d,adnan-kutay-yuksel,2025-01-05T22:02:07Z,"feat: Add ""Act as Career Coach"" to prompts.csv",2,0,2
+f/awesome-chatgpt-prompts,d49f540a2a02181062f7b443f66984f94a9056b4,adnan-kutay-yuksel,2025-01-05T22:02:06Z,"feat: Add ""Act as Career Coach"" to README",5,0,5
+f/awesome-chatgpt-prompts,926b5964a22742864b99e4fc803be3ad39ba6492,f,2025-01-05T21:59:32Z,update,20,0,20
+f/awesome-chatgpt-prompts,8a35568fe7d9752e363c5d8684505894e75883b1,f,2025-01-05T21:57:48Z,update,2,9,11
+f/awesome-chatgpt-prompts,63e8e1be916bdd9e6bbf432046519de5f2e64045,f,2025-01-05T21:55:45Z,update,7,8,15
+f/awesome-chatgpt-prompts,ef592f1d92073f59d3b1b9d036b2fb5b774e7270,f,2025-01-05T21:54:02Z,update,85,80,165
+f/awesome-chatgpt-prompts,c00f82031211bd8f72046ac30db88f55fe0d8e7f,f,2025-01-05T21:42:58Z,update,3,2,5
+f/awesome-chatgpt-prompts,d51a2c6ddb68fbea790076a292de2373cb3df2a7,f,2025-01-05T21:34:23Z,update,0,309,309
+f/awesome-chatgpt-prompts,9716956adeca8ab4f8262d8c633cf1ba12901b1d,f,2025-01-05T21:33:11Z,update,10,4,14
+f/awesome-chatgpt-prompts,3b0279fe5952fc4e6ac81605beac55aef1f37e40,f,2025-01-05T21:27:40Z,update,35,32,67
+f/awesome-chatgpt-prompts,cd0556297460c1c7b821ec5689de0fa2d9f57c38,f,2025-01-05T21:24:07Z,update,37,3,40
+f/awesome-chatgpt-prompts,d615b36bedb82eef728a01d161fb296b7299579b,f,2025-01-05T21:20:17Z,update,51,25,76
+f/awesome-chatgpt-prompts,2cf9dd17ae58cc40db9e66b4140acb2788ddd223,f,2025-01-05T21:17:51Z,update,1,1,2
+f/awesome-chatgpt-prompts,53caec22708b4c591c52566d8a5d122ff69ae8b4,f,2025-01-05T21:15:22Z,update,38,11,49
+f/awesome-chatgpt-prompts,a29a12721a129f47d173b9b0d061ffd2f414ccf9,f,2025-01-05T21:10:51Z,update,12,19,31
+f/awesome-chatgpt-prompts,3ef8f03ca920b9cb659d630456b05b26ddcaf616,f,2025-01-05T21:02:16Z,update,86,89,175
+f/awesome-chatgpt-prompts,6d21372c6051934a859b938b55762e322f10e77c,f,2025-01-05T20:57:20Z,update,15,39,54
+f/awesome-chatgpt-prompts,3b5a2ec51e64a13571137f927ade0123a6dfcbf0,f,2025-01-05T20:53:06Z,update,15,3,18
+f/awesome-chatgpt-prompts,f3645a615626726d92a5da36d0cf67a25f5523d1,f,2025-01-05T20:46:18Z,update,144,0,144
+f/awesome-chatgpt-prompts,f7c1996a688e1d8b6d32bf9805e5c1dc9f7be9bf,f,2025-01-05T20:42:16Z,update,3,3,6
+f/awesome-chatgpt-prompts,a88f5af663c834063662f8250f6b60096260319c,f,2025-01-05T20:39:17Z,update,21,7,28
+f/awesome-chatgpt-prompts,2507582478eb0ae270d22d8b8ef2f928982abafc,f,2025-01-05T20:35:55Z,update,86,5,91
+f/awesome-chatgpt-prompts,dcdd20bfaac959f4bf1284e352bb4fc2f7847ba5,Fatih Kadir Akın,2025-01-05T20:30:17Z,Merge pull request #780 from aiqwe/main  feat(prompts): Add act as a LLM Researcher,6,0,6
+f/awesome-chatgpt-prompts,6cc82cf1e89a2320b346ff942db598ab2730f59b,f,2025-01-05T20:29:41Z,update,172,89,261
+f/awesome-chatgpt-prompts,bbb41425fc8c4f233158031cd79b44034e3b010c,Fatih Kadir Akın,2025-01-05T20:25:04Z,Update README.md,0,1,1
+f/awesome-chatgpt-prompts,3222334698ac7fb2d002b02c8428f8fbb13c2004,Fatih Kadir Akın,2025-01-05T20:24:46Z,Update README.md,1,0,1
+f/awesome-chatgpt-prompts,fefd04928c199cba30e7d10a43a6beb03a51bfb8,f,2025-01-05T20:22:42Z,update,50,19,69
+f/awesome-chatgpt-prompts,8bc059a100164ff72e8f2441f892d52abff088dd,Fatih Kadir Akın,2025-01-05T20:20:54Z,Merge branch 'main' into main,1912,97,2009
+f/awesome-chatgpt-prompts,23ddd25fe3cc48a78dbeba240f03e069b75b7ee7,f,2025-01-05T20:16:26Z,update,53,15,68
+f/awesome-chatgpt-prompts,8b4f915c5a014d6df7697984091e33208a482aad,f,2025-01-05T20:13:45Z,Add GitHub workflow to improve PR titles,58,0,58
+f/awesome-chatgpt-prompts,de693ff5c2433db61f30f692814b56027649e87a,Fatih Kadir Akın,2025-01-05T20:09:49Z,Merge pull request #784 from demian-ae/main  Added prompt Unit Tester Assistant,8,1,9
+f/awesome-chatgpt-prompts,4c1c99628a0d0da7e913d96b0e06b56bbd836824,Fatih Kadir Akın,2025-01-05T20:09:32Z,Merge branch 'main' into main,1793,81,1874
+f/awesome-chatgpt-prompts,844bd46c359017d54a14dc55f1b5f64c11947cd6,f,2025-01-05T19:49:11Z,fix ui,31,27,58
+f/awesome-chatgpt-prompts,8b72452bb80de568e9c8fd30f4433e2fdee63197,f,2025-01-05T19:26:47Z,fix ui,1,0,1
+f/awesome-chatgpt-prompts,db6b8a14d2abce8c573f414cc561eb57cdd9d9f5,f,2025-01-05T19:26:11Z,fix ui,6,7,13
+f/awesome-chatgpt-prompts,e6c5fd6138a292fcfe4a3577a009e3fcc19efbf2,Fatih Kadir Akın,2025-01-05T19:20:01Z,Update README.md,6,38,44
+f/awesome-chatgpt-prompts,9cd46c9a0d977334b326b4769b33df1c451d0dcd,Fatih Kadir Akın,2025-01-05T19:15:11Z,Merge pull request #785 from sreyas-b-anand/main  Prompt title : Wisdom Generator,7,1,8
+f/awesome-chatgpt-prompts,22758c17ca1e20cee1002be348ea0aed3447f5f8,Fatih Kadir Akın,2025-01-05T19:14:53Z,Merge branch 'main' into main,150,9,159
+f/awesome-chatgpt-prompts,9f8682ba89f6fbb0e611ec2be241c4f055a3ea6d,f,2025-01-05T19:13:36Z,fix ui,8,2,10
+f/awesome-chatgpt-prompts,d037bbd5a5974685ea21f27ac5c2cff70b6f74bb,f,2025-01-05T19:11:29Z,fix ui,55,1,56
+f/awesome-chatgpt-prompts,76a9085717d1be1e187b69c18bebe35dd6253b5d,f,2025-01-05T19:03:00Z,fix ui,72,2,74
+f/awesome-chatgpt-prompts,3fa82d4884de61d462187a15a36379285888464c,f,2025-01-05T18:12:20Z,fix ui,12,5,17
+f/awesome-chatgpt-prompts,5c3d1d3631e529cb0c9a1d718343bf0e5b2cb86a,Fatih Kadir Akın,2025-01-05T19:02:10Z,Merge pull request #786 from aviral-trivedi/youtube-summarizer  Added Prompt: Act As Youtube Video Analyst,5,0,5
+f/awesome-chatgpt-prompts,f1498e4b6f96a8f423eeced0b71c6e1ddfaead15,Cleon,2025-01-05T17:31:36Z,Added Prompt: Act As Youtube Video Analyst,5,0,5
+f/awesome-chatgpt-prompts,4500273c322b0cb4c89ec9f4f5fbf94eecaea189,sreyas,2025-01-05T15:24:53Z,added a new prompt,7,0,7
+f/awesome-chatgpt-prompts,59de92bc48c74ab610fb1a1028078817002b8345,f,2025-01-05T14:27:16Z,fix ui,1,1,2
+f/awesome-chatgpt-prompts,e87f1b54dfdf9594237f04d8daf8d0748da34791,f,2025-01-05T13:58:24Z,fix ui,1628,36,1664
+f/awesome-chatgpt-prompts,3e37285a8a95c6b0371a038093d1c6d0203718a0,demian-ae,2025-01-04T02:49:04Z,add prompt Unit Tester Assistant,8,1,9
+f/awesome-chatgpt-prompts,078df58ab884d730740cad1bd503d9e104873357,JayLee,2024-12-23T17:27:14Z,feat(prompts): Add act as a LLM Researcher,6,0,6
+f/awesome-chatgpt-prompts,616903a033b090a93b5de8d4e64398812ee81b4f,Fatih Kadir Akın,2024-11-11T11:38:53Z,Update README.md,0,4,4
+f/awesome-chatgpt-prompts,783e955f518cf8c7288560d66826b78e0b8a5996,Sean Danischevsky,2024-10-28T13:55:52Z,Update prompts.csv  to fix typo 'conversation',1,1,2
+f/awesome-chatgpt-prompts,ef44e723c4e55a8c58cc028ca294a0a4de99a012,Sean Danischevsky,2024-10-28T13:53:53Z,Update README.md  fixed typo 'conversation',1,1,2
+f/awesome-chatgpt-prompts,b82b3854cb3c00306e1813af5b3e0bd809596b60,Fatih Kadir Akın,2024-09-26T13:36:46Z,add llmchat sponsor,5,2,7
+f/awesome-chatgpt-prompts,b61eb743c0ed9a4cb88c8f006df4b7f0cf4be484,Fatih Kadir Akın,2024-09-20T15:01:38Z,add clemta sponsorship,4,0,4
+f/awesome-chatgpt-prompts,0bf3297f03c4cd3de7d695fd288b059e76e5ba03,Fatih Kadir Akın,2024-09-17T19:54:09Z,Update README.md,1,1,2

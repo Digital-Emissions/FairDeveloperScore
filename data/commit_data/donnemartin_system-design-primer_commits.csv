@@ -1,0 +1,301 @@
+repo,sha,author,date,message,additions,deletions,total_changes
+donnemartin/system-design-primer,b02784ffeb2846d6b0418003b7529e68dfb69fd9,Kirill Artamonov,2025-05-21T11:13:33Z,Update all lecloud.net links (#1042)  * Update all lecloud.net links  Update all lecloud.net links to the web archive since the lecloud.net website does not exist anymore  * Update all languages,27,27,54
+donnemartin/system-design-primer,40d5d2edccd00b4a66fb0e24d887d8b1a0d7ea0e,Satya Vinay,2024-12-02T01:10:39Z,Add Stripe engineering blog (#592),4,0,4
+donnemartin/system-design-primer,3df19b2e4f3c020a20962960c92808404b9811a3,bali,2024-06-29T00:09:29Z,Fix links to Debunking the myths of RPC and REST (#855),8,8,16
+donnemartin/system-design-primer,c0132a3f4c6043345840c85a25b3cc3829d9f885,Aditya Vishwakarma,2024-06-23T17:36:45Z,Fix DNS routing hyperlinks (#872),2,2,4
+donnemartin/system-design-primer,a07e261677c012d37d26255de6e7b128a2643946,dgolant,2023-03-16T09:58:19Z,Fix Scalability Article links (#750)  Linking to Wayback Machine since it seems the domain expired,5,5,10
+donnemartin/system-design-primer,2d8231663fd0800720d25b9ac82dec3cda7e5a89,Iheb Haboubi,2022-12-11T20:06:51Z,Fix top k requests link (#717),1,1,2
+donnemartin/system-design-primer,e161b2a5164369a8168df422568552fb0643110f,Anand,2022-11-13T21:04:17Z,Update latency vs throughput blog link (#716),1,1,2
+donnemartin/system-design-primer,7e8f93e57db6c016906121b9a868d1d767dd5edb,Chetan Nair,2022-07-31T16:44:43Z,Fix typo (#694),1,1,2
+donnemartin/system-design-primer,7a094cec63795a3ebbaacebdf9dc4294cd3179b2,Kian-Meng Ang,2022-04-23T13:14:45Z,Fix typos (#661),3,3,6
+donnemartin/system-design-primer,79364dbbdcc305cf411719d0ea53345b5048d53c,mleers,2022-04-20T00:37:02Z,Fix # 650: Replace broken weighted round robin link (#651),1,1,2
+donnemartin/system-design-primer,578e29cff8f0f6f94572727f3efd4fb4df64d202,Nnachevvv,2022-02-13T02:52:00Z,Fix memcache architecture URL (#631),4,4,8
+donnemartin/system-design-primer,e8a867ee286d0848ba32a2709051b6f275214714,Lawrence Chou,2021-11-17T12:26:08Z,Update GitHub Engineering Blog link,4,4,8
+donnemartin/system-design-primer,4e70c54a5b7bddeb636ce22f7da041739b188ca3,ayyjohn,2021-05-09T18:20:50Z,Fix capitalization of Dropbox (#511),1,1,2
+donnemartin/system-design-primer,6984b4e956169cf967298897f9d8b1f12b28245b,Trần Tiến Đức,2021-02-16T02:14:06Z,Fix LRU cache link (#505),1,1,2
+donnemartin/system-design-primer,9107b8a1a7d37d8ddb2ef8521143c1939d596f1a,Donne Martin,2021-02-16T02:10:03Z,Fixing the indieflashblog address with archive.org since website has been discontinued (#500)  @lerignoux thank you!,4,4,8
+donnemartin/system-design-primer,ffc8123b4c5047b2dcb2282b187b17ce02d7fa21,Laurent Erignoux,2021-01-24T09:26:08Z,Fixing the indieflashblog address with archive.org since website has been discontinued,4,4,8
+donnemartin/system-design-primer,478a7d76fb07eb249f98fd9d998eff15c1d75ebc,Abdalla Mohamed,2020-12-29T02:51:32Z,Fix Celery URL (#486),1,1,2
+donnemartin/system-design-primer,f103307ce39b280df3d955426efaff681445d701,Peter Yao,2020-10-30T01:14:45Z,Update broken HBase architecture link (#481),2,2,4
+donnemartin/system-design-primer,53c0cf7de874b4aeb3e45cf8674fe07a3370c0cb,Ryo Shibayama,2020-08-02T18:13:17Z,Fix translations link in PR template (#451),1,1,2
+donnemartin/system-design-primer,b7f255e469d0274b4e5c21fb6234cb918d5b0bde,Isetty Ravi Teja Kumar,2020-08-02T18:10:22Z,Fix #335: Update OSI image to Open Systems Interconnection (#447),0,0,0
+donnemartin/system-design-primer,7d39c44293c08a931a3122125ccb406e43ad43ae,Daniel Julius Lasiman,2020-07-18T01:15:47Z,Remove Imgur dependency by storing images locally (#168),152,152,304
+donnemartin/system-design-primer,828014aaac217f66ef2183fc65655440c672cf9c,Donne Martin,2020-07-12T16:02:44Z,Remove extraneous __init__.py (#393),0,0,0
+donnemartin/system-design-primer,f471578b79f4568f8764956b53b47a71d04656b7,Donne Martin,2020-07-12T16:00:04Z,"Resolve #281: Add design stock exchange links (#441)  * Additional question, build an exchange  fixes https://github.com/donnemartin/system-design-primer/issues/281  * Update README.md  Co-authored-by: Donne Martin <donne.martin@gmail.com>",1,0,1
+donnemartin/system-design-primer,aaa0acc80d9c82d7433f75b536ba450b34186224,Donne Martin,2020-07-12T15:58:35Z,Update README.md,1,1,2
+donnemartin/system-design-primer,b5173d60d5a287e66aab97129537ea897e02beb4,Adam Dobrawy,2020-07-11T01:01:12Z,Change disk to HDD for clarity (#295),3,3,6
+donnemartin/system-design-primer,cbaae481a54f949b5db4e3b7ea878f19ac0839eb,Noe Brito,2020-07-10T00:49:43Z,Clarify CDN advantages (#310),1,1,2
+donnemartin/system-design-primer,ad5435ba0dcaa67773f45de945699788d9a47790,Varsha Muzumdar,2020-07-10T00:48:47Z,Add links for latency based and geolocation based routing (#319),2,2,4
+donnemartin/system-design-primer,78e2eb5df83a14c6569815a182c9aa9af682f3fb,Ganessh Kumar,2020-07-09T00:10:16Z,Update dead links (#321),2,3,5
+donnemartin/system-design-primer,06b3ed2adc8336ba068b1673c42c6762528efe7a,Joilson Cisne,2020-07-08T00:56:05Z,Fix loop bug in deck of cards exercise (#396),1,1,2
+donnemartin/system-design-primer,0beb557e8f2f239e961b0948bbf75504f9bf03c4,Manas Gupta,2020-07-08T00:54:01Z,Add CAP theorem video link (#400),1,0,1
+donnemartin/system-design-primer,2fe45a93914b322d07c0815a6e7f10f405519fff,Harry Moreno,2020-07-07T03:53:01Z,"Additional question, build an exchange  fixes https://github.com/donnemartin/system-design-primer/issues/281",1,0,1
+donnemartin/system-design-primer,727a2f8bba898010ee72a8d8405b16ef91630489,John Richardson,2020-07-07T01:05:50Z,Remove redundant SQL index in Pastebin exercise (#405),1,1,2
+donnemartin/system-design-primer,cc11a9b119799425879a935f5536b95e79f1b122,Vladimir Mikhaylov,2020-07-07T01:00:34Z,Fix Mint exercise bugs and typos (#409),8,8,16
+donnemartin/system-design-primer,6d700ab9e1b669d85e0ecdaacb701007b1cd3192,Youngchul Bang,2020-07-05T14:57:57Z,kr: Fix Korean translation link in language index (#340),4,4,8
+donnemartin/system-design-primer,d3b3e78966f15ee821697bbd48abd368c9a766c8,Rahil,2020-07-05T14:53:28Z,Add system design template link (#433),1,0,1
+donnemartin/system-design-primer,793f47297021bbdc3b0505c3d97454e3a9addd30,Nachiket Acharya,2020-07-05T14:50:31Z,Fix #313: Clarify availability patterns (#439),1,1,2
+donnemartin/system-design-primer,2ac6512f6d9f4ef4c925b68eab14ad697e7308ab,Agade09,2020-07-05T14:48:23Z,Fix typos in Twitter and web crawler exercises (#438),3,3,6
+donnemartin/system-design-primer,914736a29f2b1164c390b30bd8b53479f9ae8727,Kofi Forson,2020-07-04T14:55:42Z,Update Twitter back-of-the-envelope calculations (#414),1,0,1
+donnemartin/system-design-primer,5d4dac6bafe5e60d338e588f74426935c3efd949,Kevin Liu,2020-07-04T14:53:56Z,Fix typo: Change replication to federation (#418),1,1,2
+donnemartin/system-design-primer,60202315cc646b587185faa697ce70c8399dcd2f,Sainadh Devireddy,2020-07-04T01:24:24Z,Check dependencies in Ebook gen script (#406),15,1,16
+donnemartin/system-design-primer,d57b3d1f956a65fe5cfeeb0d8293ef006e5cff10,Neesara,2020-07-04T01:22:02Z,Resolve #164 - Fix phrasing with availability and partition tolerance (#350),1,1,2
+donnemartin/system-design-primer,fca96cafbb3b1e42ca263af3b430ad4b14342ebf,Donne Martin,2020-07-03T01:18:36Z,Highlight translation request (#437),2,0,2
+donnemartin/system-design-primer,661c029b574c0b419f0736a30e4e2e44adf4d1fd,Donne Martin,2020-07-03T01:11:07Z,Add status of translations (#436),163,0,163
+donnemartin/system-design-primer,b199766f440ce1af6454c7a81c2b830716b71388,Donne Martin,2020-07-02T00:54:05Z,Add pull request template (#435),11,0,11
+donnemartin/system-design-primer,b4a7a09db7b308f2d3b79b69fbc54f3f141f7611,Donne Martin,2020-07-02T00:48:43Z,Update contributing guidelines for translations (#434),20,14,34
+donnemartin/system-design-primer,42aa63b3c201f41048aa3380549848e77f2a9fc7,shiyujiucsb,2020-07-01T00:56:55Z,Fix layer 7 load balancers typo (#317),1,1,2
+donnemartin/system-design-primer,f2d7dd86f0835f5bf27f1a65dec032e013c4dd49,panguncle,2020-07-01T00:42:24Z,Fix single point of failure typo (#398),2,2,4
+donnemartin/system-design-primer,9a0248063275daddc51a99e3787760249b6a5d0a,Alexander Teno,2020-07-01T00:37:49Z,Add missing comma in Mint solution (#399),1,1,2
+donnemartin/system-design-primer,b2fffe6fd40bd22e5dbf9bd0b398fa76fd11537b,userstartupideas,2020-05-26T01:59:01Z,"Update ""Scaling up to your first 10 million users"" link (#411)",4,4,8
+donnemartin/system-design-primer,449dc27f33991fe558a83c6815eb28ae294428dd,根号三,2020-03-30T00:40:50Z,zh-Hans: Translate solutions (#392),2525,10,2535
+donnemartin/system-design-primer,ac806e46cb63b1b7955d43bf55291f52b0d3eeae,Donne Martin,2020-03-10T01:46:02Z,"Revert ""zh-cn: Sync with upstream to keep it up-to-date (#374)"" (#391)  This reverts commit 301b9d88e4aed1c34b3275301f18b14957c38c91.  #374 overwrote the English version of the solutions",1466,1458,2924
+donnemartin/system-design-primer,301b9d88e4aed1c34b3275301f18b14957c38c91,根号三,2020-03-10T01:34:18Z,zh-cn: Sync with upstream to keep it up-to-date (#374),1458,1466,2924
+donnemartin/system-design-primer,8e9c89129bc842df6ed8604bf511d6981d4e7d05,Danny Jung,2020-02-17T02:00:44Z,Fix broken link in CAP theorem section (#348),0,0,0
+donnemartin/system-design-primer,fc563ca297a4667e12c17fa3c41c82949928c9ac,vyq,2020-01-21T00:26:09Z,Fix broken CAP theorem link (#355),1,1,2
+donnemartin/system-design-primer,3b2264e5e87aa7907b86d521a266fda526a4042c,Dan Choi,2020-01-15T15:04:08Z,Fix broken round robin links (#351),2,2,4
+donnemartin/system-design-primer,e50f26960dde9adce5614d8ead8be48ee47053e5,Christian Clauss,2019-12-27T01:11:57Z,Change raise NotImplemented to raise NotImplementedError (#345),1,1,2
+donnemartin/system-design-primer,eaa447cc39d124a52eb31cf0a22ef9b3c1d3bba4,SATO Yusuke,2019-12-09T03:35:44Z,ja: Fix mistranslation in SQL tuning section (#305),11,11,22
+donnemartin/system-design-primer,3ea0b15b5088483d1e5d77196aacee1c15306cb6,Brandon,2019-12-09T03:34:17Z,zh-Hans: Change translation in SQL tuning (#318),1,1,2
+donnemartin/system-design-primer,fdba2a2586a30b78249e5daba8a807ee532b0af9,Duy Nguyen Hoang,2019-11-03T10:56:24Z,Add API security checklist (#328),1,0,1
+donnemartin/system-design-primer,7d4a13d8a28bc52178f0e25819128fabd505d4bb,SATO Yusuke,2019-08-13T23:51:20Z,ja: Fix translation in Service Discovery section (#308),1,1,2
+donnemartin/system-design-primer,3e55f5bd39811688cc1468afa194aea4797b0b08,SATO Yusuke,2019-08-13T23:50:53Z,ja: Fix translation in “Disadvantage(s): load balancer” (#307),1,1,2
+donnemartin/system-design-primer,4bef27e60ad8379973b433fdae30d72ecd49e254,SATO Yusuke,2019-08-13T23:50:09Z,"ja: Fix translation in ""Anki flashcards"" (#306)",1,1,2
+donnemartin/system-design-primer,9dc60cff3a44815bc2f22497b66d815378f21533,SATO Yusuke,2019-08-05T00:30:53Z,JA: Fix mistranslation in Federation section (#303),1,1,2
+donnemartin/system-design-primer,eef185e97e21eb969e5c2af9ccdf5c385296d5de,Donne Martin,2019-08-03T14:08:18Z,Merge pull request #302 from satob/ReverseProxy,1,1,2
+donnemartin/system-design-primer,041c42f2e42987b9cccbdb8252a2121bc53d0f23,Donne Martin,2019-08-03T14:07:59Z,"ja: Fix translation in horizontal scaling section (#301)  * JA: Fix mistranslation in Horizontal scaling section  - The Japanese translation is ambiguous about “vertical scaling” means scaling out or scaling up. - The word “expensive” is missing in the Japanese translation.  * ja: Fix mistranslation in ""Horizontal scaling""",1,1,2
+donnemartin/system-design-primer,edbe857b7b743425c1ea74f3cb294c558a551243,SATO Yusuke,2019-08-03T14:07:34Z,JA: Fix mistranslation in Push CDNs section (#300),1,1,2
+donnemartin/system-design-primer,b4135dd6b2f13ad24ec15349fec96559289f55c4,SATO Yusuke,2019-08-03T14:06:57Z,JA: Fix mistranslation in Weak consistency section (#299),2,2,4
+donnemartin/system-design-primer,78d15fd16a75ea55d9071f7f038238db1668ba34,SATO Yusuke,2019-07-26T15:22:56Z,"ja: Fix mistranslation in ""Horizontal scaling""",1,1,2
+donnemartin/system-design-primer,109235b486ab5dac804d54d85e6b35eb35606a46,SATO Yusuke,2019-07-10T15:13:11Z,"JA: Fix mistranslation in Reverse proxy (web server) section  - Fix mistranslation of parallel structure. (not information/blacklist/limit, but hide/blacklist/limit)",1,1,2
+donnemartin/system-design-primer,f78db9e5b0b4b3ddbb05d59541e24f642e0bedba,SATO Yusuke,2019-07-08T15:57:34Z,JA: Fix mistranslation in Horizontal scaling section  - The Japanese translation is ambiguous about “vertical scaling” means scaling out or scaling up. - The word “expensive” is missing in the Japanese translation.,1,1,2
+donnemartin/system-design-primer,c65a721b41e79506656d8c6d0c1f9256606c0143,Yuya Ma'emichi,2019-07-06T15:07:13Z,ja: Fix typo of Big-O notation in KVS section (#292),1,1,2
+donnemartin/system-design-primer,33431e61a9e6a636c902298fe3629da3a34c3c66,Kevin Xu,2019-06-16T15:21:21Z,zh-Hans: Translate Pastebin solution (#273),331,1,332
+donnemartin/system-design-primer,9ce0e9d734213807364831743b8b498607b3e46a,Donne Martin,2019-05-31T00:25:26Z,Add Hebrew translation link (#286),4,4,8
+donnemartin/system-design-primer,a95a2937bcd56569f8653ae71fb0b691d9a21481,Donne Martin,2019-05-14T01:56:36Z,Update language lists in translations (#280),4,2,6
+donnemartin/system-design-primer,dd15249b65cdfe907706a4b87252af5a0737aab6,minhaz,2019-05-12T11:19:23Z,Add availability in numbers section (#237),47,0,47
+donnemartin/system-design-primer,55d09f611d6c5ab1463365cb3079c35b13c5d700,Simon Knott,2019-05-12T10:21:14Z,Add Ebook generation script (#207),164,120,284
+donnemartin/system-design-primer,0022c9708e752c92a1d6686a0f8352110e4fc40e,Sébastien Puyet,2019-05-11T16:42:58Z,Translate language list (#252),1,1,2
+donnemartin/system-design-primer,116634f5b34a6f5c7eae61188045b717e32233e2,Manas Karekar,2019-05-07T10:24:41Z,Enable syntax highlighting in all python code snippets (#268),30,30,60
+donnemartin/system-design-primer,8b04d4d5fe64dfcd0bcf67b1f29b42477686737f,leontyr,2019-05-07T10:22:12Z,Update HDFS design link to the latest version (#275),1,1,2
+donnemartin/system-design-primer,1a9eefe629c6cc14ddc7c45eabc18956dd3e75ac,Donne Martin,2019-04-10T00:46:59Z,"Add article link: How Twitter Handles 3,000 Images/sec (#124)",1,1,2
+donnemartin/system-design-primer,fda859e4a407ac6071f9856118be2c35331b5c2d,Sean Han,2019-03-18T00:55:19Z,Fix broken SQL link in Scaling AWS exercise (#258)  Fix broken SQL link in Scaling AWS exercise,1,1,2
+donnemartin/system-design-primer,82d80a08a0f6bbfe192eb0f4d26899658d869098,Manas Karekar,2019-03-04T03:28:43Z,Enable Python syntax highlighting in Pastebin sample code (#257),1,1,2
+donnemartin/system-design-primer,38d18fb62b8608eb64d9d3409ac0645fbf7248a3,yiksanchan,2019-02-28T11:55:50Z,Update document-store to document store (#255),2,2,4
+donnemartin/system-design-primer,e276822d72c95b555f8146a845bcff862d4b321a,glusa8,2019-02-11T10:48:36Z,Fix typo in Twitter timeline and search solution (#251),1,1,2
+donnemartin/system-design-primer,970d006ff5fe8976849fb575cb07266a0f92a29e,glusa8,2019-02-03T12:35:24Z,Fix grammar in document store section (#247),1,1,2
+donnemartin/system-design-primer,1144b8ef4c441af73f7cbfd51f56b8eb62350a66,Guo,2019-01-20T19:59:42Z,zh-Hans: Fix typo (#246),1,1,2
+donnemartin/system-design-primer,9843e649cf006e04120c532d045ab073901e3825,Juan Eugenio Abadie,2019-01-05T17:20:17Z,Add missing word in cache write through discussion (#245),1,1,2
+donnemartin/system-design-primer,75298db50d39965748a251168b92547fdc08c8b1,Donne Martin,2018-12-28T00:39:11Z,Add Bengali translation link (#242),1,1,2
+donnemartin/system-design-primer,6a57d065a7524ec064afdf957592f500927a34e5,Saurav,2018-12-19T02:17:00Z,Fix #228: Address mutex latency discrepancy (#233),4,4,8
+donnemartin/system-design-primer,02c0827a4e199498e268c6cbba27eb6fe5072d9c,Chang Liu,2018-11-14T01:23:21Z,Add Link: A 360 Degree View Of The Entire Netflix Stack (#229),1,1,2
+donnemartin/system-design-primer,96ec8d5fc0f5f4d86df36796d4504427fa879168,reiscigit,2018-10-31T22:34:52Z,zh-TW: Update index anchors (#227),20,20,40
+donnemartin/system-design-primer,2269bf79946f41d77a4343999ffd5be65020f29a,Masao,2018-10-26T00:20:26Z,ja: Fix typo (#226),7,7,14
+donnemartin/system-design-primer,9d0316ff6bf5aef916bc13b9d0216dfc0a0b50fc,Michael de Cardery,2018-10-11T01:13:42Z,Update Scalability for Dummies link (#224),4,4,8
+donnemartin/system-design-primer,8437d77565d3cc39c6661be5edda4549bf27e228,Pramod Gupta,2018-10-01T00:38:28Z,Resolve #214: Add reference links to message queues section (#218),4,4,8
+donnemartin/system-design-primer,eb9107232c2f0cd6a9c3d82d531cad3725e02ffa,Donne Martin,2018-09-24T00:12:12Z,Update README intro (#216),1,1,2
+donnemartin/system-design-primer,74e0e9b3709627f07eb61d3d7ea2936858954a2e,brunoffsp,2018-09-19T00:10:26Z,Update Cassandra architecture links (#213),2,2,4
+donnemartin/system-design-primer,c816b4137f69574de31975c87ca8db918d9dc399,dajiao007,2018-09-16T07:48:51Z,zh-Hans: Update translation (#209),4,4,8
+donnemartin/system-design-primer,203bc822d59c623ebab7c57dd2c27c396e8c9050,Xu,2018-09-15T07:29:03Z,zh-Hans: Update translation (#212),1,1,2
+donnemartin/system-design-primer,b7037c02d7686a606b7c1af285ff4884514bee18,hi大头鬼hi,2018-09-14T21:10:39Z,zh-Hans: Fix translation (#208),1,1,2
+donnemartin/system-design-primer,4c37b06dda0645d4027fb91f0c6e89cddaf2df2d,Fabrizio Cucci,2018-09-08T00:47:43Z,Fix typo in Design Pastebin.com exercise (#210),1,1,2
+donnemartin/system-design-primer,e472695b77fe35ced7e0925b8d62a5d83057fa06,dvanbrug,2018-09-02T18:10:42Z,Fix #126: Update link to Anki decks (#206),3,3,6
+donnemartin/system-design-primer,cac4d754ef74070d5c395c980443192df9ca83d6,Karoliina Oksanen,2018-08-29T00:56:38Z,Fix broken links (#204),10,11,21
+donnemartin/system-design-primer,cc5d862a87821dc27b1ce5b3ee0edb9d0fd4dd23,Varun,2018-08-24T06:24:59Z,Fix typo in CAP theorem section (#205),1,1,2
+donnemartin/system-design-primer,ab5fbebd6a478e8b84e9c231433db22c95606155,Fabrizio Cucci,2018-08-20T04:38:43Z,Update Twitter/Facebook exercise description (#202),1,1,2
+donnemartin/system-design-primer,5a23f6b99261319db4c4bbd3bb206ca0dabb56c7,meteor,2018-08-14T02:32:16Z,zh-Hans: Fix typo: 'Twitter' (#200),1,1,2
+donnemartin/system-design-primer,1f939ec351014cbb84846cd5c9afc1531823f07a,Narendra Choudhary Legha,2018-08-13T00:49:30Z,Resolve #195: Fix broken GitHub URLs (#199),5,5,10
+donnemartin/system-design-primer,ffbcd9a381ad812b3fcfc06a9deac6b14ba0e754,Ali,2018-08-09T12:01:27Z,Fix wording in call center solution (#197),2,2,4
+donnemartin/system-design-primer,f5dde5faad2c057e2bc07f02257cf020fe533d5b,hekra01,2018-08-07T01:24:59Z,Fix error in Twitter timeline solution (#196),1,1,2
+donnemartin/system-design-primer,cd7ac6d2d0786f26e372befd5f3dcd4b1396f72d,Girish Raman,2018-08-05T13:52:03Z,Fix broken URL (#194),1,1,2
+donnemartin/system-design-primer,9c4c603b8ff15289aa715d07dafdea3b7d2dc8cd,Donne Martin,2018-08-01T22:18:41Z,Add Thai translation link (#190),1,1,2
+donnemartin/system-design-primer,c8392e3cb1a39217340f22e7a672343b2eed8c34,Donne Martin,2018-07-30T02:05:41Z,Add German translation link (#188),1,1,2
+donnemartin/system-design-primer,f350860cdc14c7dc7b3deb4e1144bd3fb805cf4e,Igor Zboichik,2018-07-25T01:55:54Z,Fix broken links (#180),15,15,30
+donnemartin/system-design-primer,136c0b9e17f412d9451b874a6f5016e46d46cdbe,Kevin Vandenborne,2018-07-23T06:13:03Z,Fix typo in LRU cache solution (#182),1,1,2
+donnemartin/system-design-primer,bda2a5f93c9245204c6d039fd6a382589d641a01,Davis,2018-07-20T04:46:35Z,zh-TW: Improve translations (#176),4,4,8
+donnemartin/system-design-primer,924570e4cbc80ea588d7206e2bc50b4aba2b20a9,cclauss,2018-07-19T06:09:09Z,Add newlines - PEP8 style (#173),3,1,4
+donnemartin/system-design-primer,17530912ac8a944c593457a488b547d0ff0cf32f,Donne Martin,2018-07-18T04:58:14Z,Add Arabic translation link (#177),1,1,2
+donnemartin/system-design-primer,e46d72a1203423d281f2cfaef1aefc0044a542e2,Yusuke Otsuka,2018-07-15T00:05:15Z,ja: Swap VARCHAR and CHAR translation error (#169),1,1,2
+donnemartin/system-design-primer,e116bd75fca589f0201fae062f94bf991298cd7b,cclauss,2018-07-15T00:01:57Z,Fix #148: Add State(Enum) to social_graph_snippets.py (#167),6,0,6
+donnemartin/system-design-primer,9069993cc023cf3af333f1fe249b34e7505f0305,breakliu,2018-07-13T11:32:14Z,zh-Hans: Fix PostgreSQL typo (#166),1,1,2
+donnemartin/system-design-primer,d832db4ac26135bd979168f470906c8fefec3346,Nikolas Kanakis,2018-06-29T03:18:11Z,Replace broken SQL tuning links (#163),2,2,4
+donnemartin/system-design-primer,6f135048951378f083649bb3a09729124d31da51,yangyangyang,2018-06-16T05:30:42Z,zh-Hans: Fix typo (#161),1,1,2
+donnemartin/system-design-primer,ad40b8e649e0db50959b7f6714536f7cba6189fe,cclauss,2018-05-23T03:15:42Z,Change variable seller to category in Mint solution (#159),1,1,2
+donnemartin/system-design-primer,a36048346e29a8ed866ff3dd79cabfbb1af3b692,cclauss,2018-05-07T01:26:01Z,Add missing enum imports (#157),6,2,8
+donnemartin/system-design-primer,4a7d2e45251750c9c7a35f70f2bdba3410510695,cclauss,2018-05-07T01:25:31Z,Adding missing self variable (#158),1,1,2
+donnemartin/system-design-primer,a70a8f3a04c3b51cade0b8de2b43de545f6e9471,Anton Hulikau,2018-04-26T01:22:26Z,Fix dict KeyError (#153),2,2,4
+donnemartin/system-design-primer,e50e2007f6442dc797088d6d6d283613226d406d,Anton Hulikau,2018-04-26T01:22:05Z,Fix dict KeyError (#152),2,2,4
+donnemartin/system-design-primer,fb6624215ada772cc09ac549ab42f56f55453b8d,cclauss,2018-04-26T01:19:04Z,Fix coding errors (#149),5,5,10
+donnemartin/system-design-primer,bb49172d9235c426d3559972d9926a769b0ee093,KUAN Hsuan-Tso,2018-04-11T00:28:15Z,zh-TW: Fix comment format (#155),1,1,2
+donnemartin/system-design-primer,1b339dbddeb1b3ec80d8d20a7f18f34cb268d15a,cclauss,2018-04-09T00:25:11Z,Change LARGE to VehicleSize.LARGE in parking lot solution (#146),2,2,4
+donnemartin/system-design-primer,ea262de564f8ab749e47960764a63a4cd7d48df4,cclauss,2018-03-24T23:38:34Z,Add deque import to Social Graph solution (#147),2,0,2
+donnemartin/system-design-primer,b156e48e4b1f515694f16bd29293ed6c28b8ad18,cclauss,2018-03-18T13:21:52Z,Add missing self variables to Deck of Cards solution (#145),3,3,6
+donnemartin/system-design-primer,0178943013f08cfc2a5c083e5d39be70ba72bbdc,cclauss,2018-03-18T13:19:08Z,Add missing colons to class methods (#143),2,2,4
+donnemartin/system-design-primer,38a93dc190092d20a95f7485fbe1d3735a53d716,Donne Martin,2018-03-08T01:38:49Z,Add Spanish translation link (#142),1,1,2
+donnemartin/system-design-primer,e53b20b5e5a912d2c3cc65a92962fd050312fdd0,Robert,2018-03-08T01:37:45Z,zh-Hans: Fix typos (#141),7,7,14
+donnemartin/system-design-primer,f099a0ad3f3e6ac16727bc29e77d1e3ac8d40e22,cclauss,2018-03-07T00:37:46Z,Convert all .py files to be valid Python (#98),78,39,117
+donnemartin/system-design-primer,3ca1f1d0d2f3b7e1bb76209ed129969f281463e2,Donne Martin,2018-03-06T01:29:07Z,Add Greek translation link (#140),1,1,2
+donnemartin/system-design-primer,b566126bab6a28bb6501b7b282100113659844db,kevingo,2018-03-04T19:14:45Z,zh-TW: Add proper line break to links (#139),16,16,32
+donnemartin/system-design-primer,c3c59c93a122452ddb60b604022ff3c209f208f5,kevingo,2018-02-28T02:41:23Z,Add Traditional Chinese translation (#133),1787,1,1788
+donnemartin/system-design-primer,8744c037908dfe7c6b0ca784a8c738163c4795bc,Chang Liu,2018-02-27T03:45:52Z,Merge branch 'master' into add-twitter,35,35,70
+donnemartin/system-design-primer,f952d6addc44e0bb7edb2cdee84245d41d7de882,George Javakhidze,2018-02-27T02:28:04Z,Update re:Invent url (#137),18,18,36
+donnemartin/system-design-primer,2e1627e0da0a8600ec0c67c9ba6861414cf1cbdf,Donne Martin,2018-02-23T03:49:17Z,Update contributing guidelines - PR squash (#135),1,0,1
+donnemartin/system-design-primer,8b29a8551027e8f4b70328a0f6dc5168f56a811e,Chang Liu,2018-02-16T01:37:45Z,Add Facebook Live Streams (#125),1,1,2
+donnemartin/system-design-primer,f6b7d3c8c07ead00388d3bb87d74811c04e2fe92,Christopher,2018-02-08T00:57:00Z,Update master-slave section anchor (#129),4,4,8
+donnemartin/system-design-primer,ca674d8bb572db5344e323d4cb9c33502000c314,Chang Liu,2018-02-02T23:08:50Z,Add Scaling Uber in Company Architecture (#123),1,1,2
+donnemartin/system-design-primer,017884eaf946d26e368882a7cb4a4bc9f2732484,Donne Martin,2018-01-24T05:26:59Z,Add Vietnamese translation link (#128),1,1,2
+donnemartin/system-design-primer,90b1bc4eaf67042be7d15ed2fa457f31c6cb536a,Chang Liu,2018-01-21T16:54:59Z,Add Netflix in Company Architectures (#122),1,0,1
+donnemartin/system-design-primer,f4fed1881432f98eb064ff541b2ec61777df8e0f,fluency03,2018-01-06T13:06:49Z,"add Twitter Handles 3,000 Images Per Second",1,1,2
+donnemartin/system-design-primer,9481662a171eaa7701ed35f3704e5317bdcdede9,Donne Martin,2018-01-06T00:25:20Z,Make some minor wording/formatting changes (#120),8,10,18
+donnemartin/system-design-primer,7310acfbaee9e583a55bfd596f6ed52af22fff92,Koudai Sakabe,2017-12-08T01:18:26Z,ja: Fix typo (#119),1,1,2
+donnemartin/system-design-primer,7bd31dcd1787299909229b7803afa5ff9e775807,Donne Martin,2017-12-03T12:09:41Z,Update Japanese translation link (#118),1,1,2
+donnemartin/system-design-primer,7dfeae60acb2f6394dff00da0cf56bb6b154999c,yutaka kobayashi,2017-12-02T01:15:57Z,Add Japanese Translation (#114),1787,0,1787
+donnemartin/system-design-primer,d62b4990137ab0b063427941e548f87f7ee8839c,Tony Yao,2017-11-30T01:12:15Z,Correct Redis list structure in Twitter solution (#116),1,1,2
+donnemartin/system-design-primer,f631baaef3c2e1f50e929e11bf599bb82974c07d,Donne Martin,2017-11-03T00:03:29Z,Add Persian translation link (#115),2,2,4
+donnemartin/system-design-primer,6c4c2abe00b13a63a823f5137488b555a84c4642,Bryan Jennings,2017-10-25T01:05:59Z,Simplify logic for is_ace and is_face_card in deck of cards solution (#113),2,2,4
+donnemartin/system-design-primer,2aa2166b2abea9976f2c3326bd862236b37a4e7d,Donne Martin,2017-10-14T00:26:47Z,Add Korean translation link (#111),1,1,2
+donnemartin/system-design-primer,a2d0a3dc5f69d43f10bcaede6dedd549f4f65cb0,Rishabh Maurya,2017-10-09T00:52:44Z,Add API rate limiter design link (#108),1,0,1
+donnemartin/system-design-primer,eb318fad5c728337d3b522482e2ef6c222b396f0,Samar Dhwoj Acharya,2017-10-07T16:06:37Z,Fix typo: considering to consider in scaling AWS solution (#109),1,1,2
+donnemartin/system-design-primer,98cf88efea560515bfc3dd8a496d65a22bf7d02b,Donne Martin,2017-09-24T11:43:54Z,Add Italian translation link (#106),1,1,2
+donnemartin/system-design-primer,9fca092d099774328528cf2dd28968c93e554743,Donne Martin,2017-09-19T23:30:44Z,Add traditional Chinese translation link (#105),1,1,2
+donnemartin/system-design-primer,7f9c998a03a91fa933a7bc16205e0a69d5d1ae3f,Donne Martin,2017-09-15T01:05:01Z,Add Japanese translation link (#101),1,1,2
+donnemartin/system-design-primer,2d94e2d99a3e081a3c35b984dba2bbf202f79497,Donne Martin,2017-08-30T00:13:02Z,Treat solution subdirectories as containing Python packages (#99),0,0,0
+donnemartin/system-design-primer,8fa019bd9c798a9c8a7a595945562067cf3deb4d,Donne Martin,2017-07-23T16:07:36Z,Add Russian translation link (#91),1,1,2
+donnemartin/system-design-primer,982304ba7a8e6e6b0fa4ac676099def56d3d534d,Tay Yang Shun,2017-07-18T02:29:28Z,Add policy for adding new blogs to Company engineering blogs section (#96),2,0,2
+donnemartin/system-design-primer,6914cd9160d98a6b4d592a493415ed30ff47ddf3,Olaf van der Spek,2017-07-18T02:08:36Z,Fix typo in denormalization section (#95),1,1,2
+donnemartin/system-design-primer,708756a36d7bd4ded7f3fe5f5284d3483fe3beed,Donne Martin,2017-07-01T16:07:08Z,Add polish translation link (#89),1,1,2
+donnemartin/system-design-primer,cc480586625d463638e7e87bf3f7b2b06c167e7c,Arash Rouhani,2017-06-14T00:43:11Z,Fix reducer argument in pastebin exercise (#85),1,1,2
+donnemartin/system-design-primer,17e5fb7d32e02281f30e1b138b59a500e67a4e3c,Ian Park,2017-06-06T00:25:04Z,"Add prev to Node class (#82)  For managing an LRU cache, we need to use a doubly linked list for move_to_front() operation.",2,1,3
+donnemartin/system-design-primer,4badddd78e4dcc098dfccfdeca51bb2eef32b9be,Ian Park,2017-05-30T00:55:32Z,Init spot_size member in parking lot exercise (#83),1,1,2
+donnemartin/system-design-primer,e168c588f534f3e87a037b1e3ffc9a59578e25cb,CharlesSantiago,2017-05-27T00:32:45Z,Fix typo (#75),1,1,2
+donnemartin/system-design-primer,960bf1be64aa8c126f5192031d6360998485c5d6,Kangkai Tang,2017-05-27T00:31:31Z,Fix #79: Inaccuracy in Twitter timeline and search example (#81),1,1,2
+donnemartin/system-design-primer,d0f018ae0ff4dbda1e8a18345fc90ca3d94be8a0,Sergey Saiyan,2017-05-16T04:17:24Z,Fix lowercase typo in Layer 7 load balancing title (#74),1,1,2
+donnemartin/system-design-primer,cbbb548c7de6045c3e2178e81c5e7703214eaa15,Larry Lv,2017-05-16T04:10:51Z,Fix asynchronism link in Mint README (#69),1,1,2
+donnemartin/system-design-primer,019eaafe5b9ad79d9c1a0c9ba06db2dc6a05cfc2,Donne Martin,2017-05-12T04:49:37Z,"Add license disclaimer (#76)  Clearly denote the repository license is from me, not my employer (Facebook).",10,0,10
+donnemartin/system-design-primer,5072dfe96c4428aac53db0500d713baac1986c60,Donne Martin,2017-04-16T22:06:31Z,Update translation links (#65)  Move the list of completed and in-progress translations to the top of the README.  Add a translate link to the Contributing section.,3,8,11
+donnemartin/system-design-primer,5517013458814e8f7cdd66173a1292a2f2d0b2d0,根号三,2017-04-16T21:49:15Z,zh-cn: Rename README-zh-Hant.md to README-zh-Hans.md (#64),0,0,0
+donnemartin/system-design-primer,1ae841afba2ad7a3d34e98345d46044e72424f4b,根号三,2017-04-15T13:32:32Z,zh-cn: Add Simplified Chinese translation v1.0 (#62),1797,0,1797
+donnemartin/system-design-primer,95b4d92667ec841721bb5122292e80c68b3365ef,Donne Martin,2017-04-15T00:35:50Z,Update translations section in contributing guidelines (#61)  Add credits section.  Remove currently non-existent AUTHORS.md.  Fix maintainer copy/paste error.,5,4,9
+donnemartin/system-design-primer,2986f71025b046a1e66b4f4f2b8e5db549fab1fc,Iñaki Abete,2017-04-14T01:04:38Z,Fix Coding deck broken link (#59),1,1,2
+donnemartin/system-design-primer,99acefaa01e237aee7d00ef49d53e7b2936aabe8,Donne Martin,2017-04-10T11:04:43Z,Update Translations section (#57),8,4,12
+donnemartin/system-design-primer,aecb070eb2bbc9ec4890de77cdbb6f9077b994df,Donne Martin,2017-04-09T17:15:57Z,Update system design flashcards (#56),0,0,0
+donnemartin/system-design-primer,424c3465aded9d84b9518b6c98f523c1b40b577c,Ben Gadbois,2017-04-08T00:20:37Z,Change Pull CDN wording for clarity (#55),1,1,2
+donnemartin/system-design-primer,32a537b1ecb358cb4ca2ff997938c58f78afaffc,zanemayo,2017-04-04T09:56:38Z,Change AP wording for clarity (#50),1,1,2
+donnemartin/system-design-primer,8a263f99257922b8fc49dabc325748a01c00139d,Donne Martin,2017-04-03T10:41:00Z,Add reference to interactive coding challenges repo (#49),13,0,13
+donnemartin/system-design-primer,15fe159b4837ed30c49520bbf28f06a1b8067c48,Donne Martin,2017-04-02T12:34:48Z,Merge pull request #48 from donnemartin/develop  Resolve #15: Add OmniGraffle template and diagrams,0,0,0
+donnemartin/system-design-primer,7f6d52e9fe0b89de5aaea337b3df3f46988cc71e,Donne Martin,2017-04-02T12:26:33Z,Add web crawler OmniGraffle diagrams,0,0,0
+donnemartin/system-design-primer,8fcd565377992e94c36c9ebd1ac25ac63397daf0,Donne Martin,2017-04-02T12:26:21Z,Add twitter OmniGraffle diagrams,0,0,0
+donnemartin/system-design-primer,d84d3f52fb4163b753850abc7497c92c855852ad,Donne Martin,2017-04-02T12:26:11Z,Add social graph OmniGraffle diagrams,0,0,0
+donnemartin/system-design-primer,9d4bec434e216c3716dfc8849bab3969d814b568,Donne Martin,2017-04-02T12:26:02Z,Add scaling aws OmniGraffle diagram,0,0,0
+donnemartin/system-design-primer,3544e62d7b66eefa63a879ff933b983035e12e27,Donne Martin,2017-04-02T12:25:47Z,Add sales rank OmniGraffle diagrams,0,0,0
+donnemartin/system-design-primer,1f7d78ba3e3d4623d31588520e8a9231053b1e2b,Donne Martin,2017-04-02T12:25:39Z,Add query cache OmniGraffle diagrams,0,0,0
+donnemartin/system-design-primer,0c3a785a8d5ccf02135460ca48cbb7811495c715,Donne Martin,2017-04-02T12:25:28Z,Add pastebin OmniGraffle diagrams,0,0,0
+donnemartin/system-design-primer,f8f32e91f2e641d36a1a97cd623c28b5a0f66df0,Donne Martin,2017-04-02T12:24:47Z,Add mint OmniGraffle diagrams,0,0,0
+donnemartin/system-design-primer,408a3f4aa5c1b197eb6e7581fd394724802ae19a,Donne Martin,2017-04-02T12:22:42Z,Add study guide OmniGraffle diagram and image,0,0,0
+donnemartin/system-design-primer,9a8a2fb47aac82960c9735b4e1c069c402c6a601,Donne Martin,2017-04-02T12:21:37Z,Add OmniGraffle base template,0,0,0
+donnemartin/system-design-primer,7ac68aa090ac0dec588dfdbb024cd8970e56a640,Donne Martin,2017-04-02T12:09:50Z,"Merge pull request #47 from donnemartin/develop  Polish up HTTP, RPC, and intro sections",11,10,21
+donnemartin/system-design-primer,591fa4f6a2f9e4651239e2f737f5db3eee3a62db,Donne Martin,2017-04-02T12:04:58Z,Change large scale -> large-scale,2,2,4
+donnemartin/system-design-primer,8fc20e606d643124187b9ff165aacb32b3e58cc6,Donne Martin,2017-04-02T12:02:03Z,Fix caps and punctuation in RPC section,4,4,8
+donnemartin/system-design-primer,d40ba34d64e9ced0ab76dcf8fcccfa1473adade9,Donne Martin,2017-04-02T12:00:20Z,Add sources and further reading to HTTP section,5,4,9
+donnemartin/system-design-primer,4d30304ef2967909bb4c6da141739fd6609452b5,JP,2017-03-29T10:19:14Z,Explain difference between PUT & PATCH (#35),2,0,2
+donnemartin/system-design-primer,b9acf6a0631dee95ea7c258dbe5823ba56600485,Donne Martin,2017-03-28T11:45:13Z,"Merge pull request #36 from donnemartin/mad01-change-zookeeper-as-sd  Update service discovery section to include consul, etcd, and additional details",1,1,2
+donnemartin/system-design-primer,53896a0fdde34c082b14a07219b50a4f948bbad3,Donne Martin,2017-03-27T11:21:07Z,Add translations to contributing guidelines (#37),29,0,29
+donnemartin/system-design-primer,ea461bf23a07f3f5a601fd36ddb63c7160d56661,Donne Martin,2017-03-26T16:50:23Z,Polish service discovery changes,1,4,5
+donnemartin/system-design-primer,619b5c97c106f4fd757be853ae82b2c3b665ce53,Alexander Brandstedt,2017-03-24T11:30:09Z,Change service discovery example to use consul/etcd,4,1,5
+donnemartin/system-design-primer,3021a3aed39ffbd083253739c126f3fb2917f078,Yadong Wen,2017-03-24T02:42:02Z,Fix typos (#33),2,2,4
+donnemartin/system-design-primer,0c8be40660b7ed7262ad1073e2ea794d9d1cbb6d,Donne Martin,2017-03-23T03:20:57Z,Add call for translations link (#30),4,0,4
+donnemartin/system-design-primer,ae13db3b6cdc6d84d53ea37e014831e4eb27c240,Yadong Wen,2017-03-23T02:53:15Z,Fix typo (#29),1,1,2
+donnemartin/system-design-primer,40b5be2d9ce33e7beebacfbd330bfae977dbfcaa,Roxas Shadow,2017-03-21T11:39:10Z,Declare variable key in the get_user example (#26),1,0,1
+donnemartin/system-design-primer,f1ae855ad0611c160373de5d0c055e76ad2b5575,Jakub Janarek,2017-03-19T19:24:13Z,Fix typo JSS -> JS (#25),1,1,2
+donnemartin/system-design-primer,e417324830eb56cbe9c07b44399a0efcb6e95d63,Federico Baldassarre,2017-03-19T19:23:03Z,Fix #6: Migrate links from exercises/solutions to use internal links (#23),35,35,70
+donnemartin/system-design-primer,eaed5dd016ebc0d2184207760e7f744e8a7f6320,Balki Kodarapu,2017-03-18T15:37:16Z,"Delete duplicate does in 3 design examples (#24)  Delete duplicate word ""does"" in design exercises",3,3,6
+donnemartin/system-design-primer,5fa4136b58d359f17eb8fda32d586f2a90ef5534,Donne Martin,2017-03-15T10:59:28Z,Add high scalability to credits (#22),1,0,1
+donnemartin/system-design-primer,390d0d5b66865ddb64958f55ea1914f852160e78,Donne Martin,2017-03-13T10:42:35Z,Update OO exercises index (#21),2,2,4
+donnemartin/system-design-primer,a071e4abc75d8b7fdb972a72bc564af0101f3783,Donne Martin,2017-03-13T10:40:02Z,Update Study guide section (#20),8,8,16
+donnemartin/system-design-primer,e5df3f5adaa77d021be25f852d43b760d63a76f4,Donne Martin,2017-03-12T21:17:29Z,Update Motivation section (#19),3,3,6
+donnemartin/system-design-primer,eb2a6cb43c620fdb7fa610b1bab6beec89c6d2b3,Luis de Bethencourt,2017-03-11T16:59:58Z,Fix typo in RPC section (#17),1,1,2
+donnemartin/system-design-primer,69d4e5a70b45cfe1867c1ccbe2a504cef3d4b90d,Sudarshan (Sid),2017-03-11T02:07:50Z,Add Dyn DDoS attack link (#13),1,1,2
+donnemartin/system-design-primer,65c056f6a649a9b665d4c1d1cd9fb182477efb0d,Mostafa Gaafar,2017-03-11T02:06:34Z,Fix multiple typos (#14),8,8,16
+donnemartin/system-design-primer,b34e167233e83a1441e3bce7c323f6366e28b669,Tay Yang Shun,2017-03-10T00:40:12Z,Add more disadvantages of REST (#9),2,0,2
+donnemartin/system-design-primer,aaecc59f6a22915ae3b4ce6918e682f9467d5ffb,James Hewitt,2017-03-10T00:37:39Z,Fix typo - lobsided -> lopsided (#11),1,1,2
+donnemartin/system-design-primer,16651d57d9ba7e0b6fb80558e3363f689f3ab5ca,Luis de Bethencourt,2017-03-10T00:36:11Z,Fix typo in Study Guide section (#10),2,2,4
+donnemartin/system-design-primer,684679f9a0b9dc25ce06ffdd6a22529b4db8bca7,Donne Martin,2017-03-09T04:31:08Z,Fix #1: Update reverse proxy image (#8),2,2,4
+donnemartin/system-design-primer,0889f04f0d8162b6513437d3171a8ebb9ef5e504,Donne Martin,2017-03-09T03:20:23Z,Resolve #3: Fix broken links in exercises (#5),403,403,806
+donnemartin/system-design-primer,7e9b9b265dad50bc208a6f7d1f6f5f6f940cb45b,Donne Martin,2017-03-08T11:00:32Z,Update system design flashcards,0,0,0
+donnemartin/system-design-primer,6e1ef2356db6251b25282856f8ed9cbb3828595f,Donne Martin,2017-03-08T13:52:19Z,Update header image,5,2,7
+donnemartin/system-design-primer,4fb0c677f40a4425cb91e17e3fc98753e694291d,Donne Martin,2017-03-08T13:51:02Z,Update Anki flashcards section,3,1,4
+donnemartin/system-design-primer,1276c8a9f9e6ff03a1360d70b307d7227c6e7544,Donne Martin,2017-03-08T05:37:26Z,Add Anki flashcards section,13,0,13
+donnemartin/system-design-primer,624e0c2ffe1eab6cb525bf6be1166e0cfcbc004f,Donne Martin,2017-03-08T05:37:11Z,Simplify online chat solution,3,25,28
+donnemartin/system-design-primer,992cd5b1f60ee9e61a1207a7ce35b7bd7d941d8a,Donne Martin,2017-03-08T05:36:02Z,Rework motivation and guide,17,23,40
+donnemartin/system-design-primer,ed2d35ebb7e32bc82e1acca51795e929c1df019d,Donne Martin,2017-03-08T05:27:48Z,Add Anki flashcards,0,0,0
+donnemartin/system-design-primer,dc2b8f7e0ce65a68a7181324576a8b16bf71f66c,Donne Martin,2017-03-08T04:05:10Z,Update Study Guide section,3,3,6
+donnemartin/system-design-primer,2c1329b4296f947fbbc4acbe9124fb882378af26,Donne Martin,2017-03-08T04:04:51Z,Update Motivation section,1,7,8
+donnemartin/system-design-primer,a9cc1c0cbb3f3eabeb55d5747f39ace444d26a3a,Donne Martin,2017-03-08T04:04:31Z,Move several sections to Appendix,152,148,300
+donnemartin/system-design-primer,28137d38f07b0bbf02b1af4cb0dd87dd372ee90b,Donne Martin,2017-03-08T03:50:36Z,Fix chat server solution link,1,1,2
+donnemartin/system-design-primer,18cb6ce1a7810d2446182ed12c188c051f8c657e,Donne Martin,2017-03-08T03:18:07Z,Clean up under dev index,0,4,4
+donnemartin/system-design-primer,50d3d7ecb3df073cf95dc93d7e96ade2e61e274a,Donne Martin,2017-03-08T03:16:25Z,Fix Remote procedure call (RPC) section header,1,1,2
+donnemartin/system-design-primer,43cd75f7bda804a368965e94c77478089f14a22b,Donne Martin,2017-03-08T03:15:39Z,Add Master-master replication link,1,0,1
+donnemartin/system-design-primer,dd618e263a8391b716af30fe6bc0607452ac375c,Donne Martin,2017-03-08T03:14:49Z,Remove dead Scaling SQL link,0,1,1
+donnemartin/system-design-primer,419f29a8bcdddce9fd3b773ffa00290c6716d027,Donne Martin,2017-03-08T03:14:19Z,Fix Relational database management system (RDBMS) link,7,8,15
+donnemartin/system-design-primer,eaf8fda3d75cff4d660e374a65e403c29a72981d,Donne Martin,2017-03-08T03:13:44Z,Fix availability and partition tolerance link,1,1,2
+donnemartin/system-design-primer,7027b8dc2a1149ac05e6233f33113a2e55967e4f,Donne Martin,2017-03-08T03:13:28Z,Fix consistency and partition tolerance link,3,3,6
+donnemartin/system-design-primer,4f987a2e21430f53ecc0c58a19de03e2e62cee96,Donne Martin,2017-03-06T03:30:00Z,Add CONTRIBUTING.md,41,0,41
+donnemartin/system-design-primer,4c4c0d9b1c01162040c8711240aa8be694b673a9,Donne Martin,2017-03-06T03:27:24Z,Add LICENSE.txt,3,0,3
+donnemartin/system-design-primer,6d884cf3e76e3e63c535b803ddccb7a398a1ec1b,Donne Martin,2017-03-06T03:25:59Z,Add .gitignore,63,0,63
+donnemartin/system-design-primer,547db248d83d012fa58308237873a74f77f802b1,Donne Martin,2017-03-06T03:25:43Z,Add .gitattributes,1,0,1
+donnemartin/system-design-primer,fab2df65faf223a5a624d5438acc93de09c3781f,Donne Martin,2017-03-05T05:07:31Z,Add Scaling AWS solution,403,0,403
+donnemartin/system-design-primer,e60de1775e4c0b44b2a8608704b5196550488202,Donne Martin,2017-03-05T05:06:58Z,Add Web Crawler solution,450,0,450
+donnemartin/system-design-primer,e577dda5d9c0fb95d087601faa42f4e907da7283,Donne Martin,2017-03-05T05:06:40Z,Add Twitter solution,332,0,332
+donnemartin/system-design-primer,66e4348db73139d03abc60f5baac8d11d5fef7c0,Donne Martin,2017-03-05T05:06:28Z,Add Social Graph solution,412,0,412
+donnemartin/system-design-primer,edc404ec5cfede05ec116bd4f610d998e99bf12c,Donne Martin,2017-03-05T05:06:17Z,Add Sales Rank solution,415,0,415
+donnemartin/system-design-primer,d484f80b1873ba0032ceec9a2c174cddfcbc34f4,Donne Martin,2017-03-05T05:06:04Z,Add Query Cache solution,395,0,395
+donnemartin/system-design-primer,a2e92178d71ba2a904c953291b59bcdef0a59b66,Donne Martin,2017-03-05T05:05:53Z,Add Pastebin solution,378,0,378
+donnemartin/system-design-primer,7fb0ca889fed6b3bf383a45b906114162754441c,Donne Martin,2017-03-05T05:05:31Z,Add Mint solution,545,0,545
+donnemartin/system-design-primer,831906f96c4799e5b2f6f975ae090428b1947ce2,Donne Martin,2017-03-04T02:54:23Z,Add Parking Lot Solution,325,0,325
+donnemartin/system-design-primer,616710f42ecce1f25f2c97e3ab10e7cc25f69465,Donne Martin,2017-03-04T02:54:08Z,Add Online Chat solution,273,0,273
+donnemartin/system-design-primer,ae9832c6b73629e9641f49dd7d2258affa767007,Donne Martin,2017-03-04T02:53:54Z,Add LRU Cache solution,201,0,201
+donnemartin/system-design-primer,7595e2a4996e3061ad1c1352ff4a3a16d949f8f8,Donne Martin,2017-03-04T02:53:41Z,Add Hash Table solution,159,0,159
+donnemartin/system-design-primer,0f517c709efcbad1643694189874f4f78fc32f00,Donne Martin,2017-03-04T02:51:00Z,Add Deck of Cards solution,311,0,311
+donnemartin/system-design-primer,98819e2a06e113955773de28d6b0c17505270512,Donne Martin,2017-03-04T02:50:44Z,Add Call Center solution,323,0,323
+donnemartin/system-design-primer,7eb69402aa41e85817622b92e990d47f8d69a7b2,Donne Martin,2017-03-03T03:49:59Z,Add License section,6,0,6
+donnemartin/system-design-primer,d4e48500f2ef951c520d928d33e66df3329ea028,Donne Martin,2017-03-03T03:49:38Z,Add Contact info section,6,0,6
+donnemartin/system-design-primer,cdcc34aa90545111ba035e07db7d8e75f24b3f41,Donne Martin,2017-03-03T03:49:19Z,Add Credits section,15,0,15
+donnemartin/system-design-primer,51ef417d1c733828d519bd79a220f41aa6fc4042,Donne Martin,2017-03-03T03:49:03Z,Add Under development section,9,0,9
+donnemartin/system-design-primer,4646b0942c421b91f40c6bfead9de4703cedabc6,Donne Martin,2017-03-03T03:48:45Z,Add Latency numbers every programmer should know section,48,0,48
+donnemartin/system-design-primer,1f30e7815388d476048cf10fcae6fa5073a17380,Donne Martin,2017-03-03T03:45:07Z,Add Powers of two table,23,0,23
+donnemartin/system-design-primer,609a75aa00ab06ce35c732da182cd65efb33119f,Donne Martin,2017-03-03T03:44:33Z,Add Security section,16,0,16
+donnemartin/system-design-primer,1721a84af4936374834992011b5f9eccbfcc7232,Donne Martin,2017-03-03T03:42:54Z,Add RPC and REST calls comparison section,27,0,27
+donnemartin/system-design-primer,33d26b8032d18ffc45668ecfd7ed4489004fe846,Donne Martin,2017-03-03T03:42:25Z,Add Representational state transfer (REST) section,27,0,27
+donnemartin/system-design-primer,9d9cd8c4e332825e5fc1a23ac23164e2a65e8631,Donne Martin,2017-03-03T03:31:16Z,Add Remote procedural call (RPC) section,49,0,49
+donnemartin/system-design-primer,9a3a2c4940d30b5cbf1e88c3a85cf25c1a81e304,Donne Martin,2017-03-02T04:44:42Z,Add User datagram protocol (UDP) section,29,0,29
+donnemartin/system-design-primer,d93918dc3a4118e43bb56e38f0a0a9d622e92573,Donne Martin,2017-03-02T04:44:16Z,Add Transmission control protocol (TCP) section,24,0,24
+donnemartin/system-design-primer,297af21b07a4aa8f25527d469f460a22e6199bab,Donne Martin,2017-03-02T04:44:00Z,Add Hypertext transfer protocol (HTTP) section,21,0,21
+donnemartin/system-design-primer,81756229afdc26fc0beff281f5cca5c00ac8ffdf,Donne Martin,2017-03-02T04:43:44Z,Add Communication intro image,8,0,8
+donnemartin/system-design-primer,09963c0f77ded40da8164c1a57d0056d2a9354f9,Donne Martin,2017-03-02T04:42:55Z,Add Async disadvantages and further reading sections,11,0,11
+donnemartin/system-design-primer,492a2be89146fe294d6951e0f143394852e51d8d,Donne Martin,2017-03-02T04:42:13Z,Add Back pressure section,4,0,4
+donnemartin/system-design-primer,fcb619502d15afcf03c999aad88be280fbf7b226,Donne Martin,2017-03-02T04:41:48Z,Add Task queues section,6,0,6
+donnemartin/system-design-primer,c931a8544c10b8f9d029a2f68515b37e17c3290e,Donne Martin,2017-03-02T04:41:24Z,Add Message queues section,15,0,15
+donnemartin/system-design-primer,87c4fafccb9072b3034cf034290b2ba6268ce268,Donne Martin,2017-03-02T04:40:25Z,Add Asynchronism intro section,10,0,10
+donnemartin/system-design-primer,8b974768f1c73205a571525c69df15611cfdbe4c,Donne Martin,2017-03-02T04:39:10Z,Add cache disadvantages and further reading sections,16,0,16
+donnemartin/system-design-primer,03ceca8500cbf02d7a0820966071b812f5c62c68,Donne Martin,2017-03-02T04:38:45Z,Add Refresh-ahead section,16,0,16
+donnemartin/system-design-primer,4b1cde229d291257da7d9b7772ac38c8b928b161,Donne Martin,2017-03-02T04:38:17Z,Add Write-behind (write-back) section,18,0,18
+donnemartin/system-design-primer,09ee77980dfe07cf0b0b3d0092cbcafd557f36da,Donne Martin,2017-03-02T04:37:59Z,Add Write-through section,35,0,35
+donnemartin/system-design-primer,adda68c28b2c52df0a5e0c382f7f4e89badfbe53,Donne Martin,2017-03-02T04:37:36Z,Add Cache-aside section,39,0,39
+donnemartin/system-design-primer,1945024e5bccc581d39143b1400051f5e0ae204f,Donne Martin,2017-03-02T04:37:12Z,Add Caching at the database query level vs obj level sections,21,0,21
+donnemartin/system-design-primer,e161b29eb1c61878ea17f1e1cb034610104ac0e4,Donne Martin,2017-03-02T04:36:47Z,Add Application caching section,18,0,18
+donnemartin/system-design-primer,707163811ed7586b6f9d5f261f69fc4b34bd6fbc,Donne Martin,2017-03-02T04:36:29Z,"Add client, CDN, web server, and DB caching sections",16,0,16
+donnemartin/system-design-primer,0d0814fa58dc82071e054394ad71078800f49ee8,Donne Martin,2017-02-28T13:08:07Z,Add Cache intro section,12,0,12
+donnemartin/system-design-primer,e32821de48d91764252b40f8aa68b5820fc8ddc3,Donne Martin,2017-02-28T13:06:59Z,Add SQL or NoSQL section,42,0,42
+donnemartin/system-design-primer,016665e9b7a0f4bcbabf974e03c0918a1617f4f5,Donne Martin,2017-02-28T13:06:42Z,Add Graph database section,28,0,28
+donnemartin/system-design-primer,52713ec309242352c3998c4eb0e665cb5b075d65,Donne Martin,2017-02-28T13:06:15Z,Add Wide column store section,23,0,23
+donnemartin/system-design-primer,b5f0815ffaf3468ded24493d591d0158a8fce26c,Donne Martin,2017-02-28T13:06:00Z,Add Document store section,19,0,19
+donnemartin/system-design-primer,c6ac09f0fc0d2ff1dafb1bbf035ee47f107ccddf,Donne Martin,2017-02-28T13:04:37Z,Add Key-value store section,17,0,17
+donnemartin/system-design-primer,c83d146def3008e18d6cd5d7e1fa8dd04ffcb893,Donne Martin,2017-02-28T13:04:09Z,Add NoSQL intro section,12,0,12
+donnemartin/system-design-primer,b549ea49ca5bedbda693c7719439e88a3365d9fd,Donne Martin,2017-02-28T13:03:48Z,Add SQL tuning section,50,0,50
+donnemartin/system-design-primer,4efe7fbc84425a70af45ce915eb399d675b050b8,Donne Martin,2017-02-28T13:03:29Z,Add Denormalization section,18,0,18
+donnemartin/system-design-primer,c361ea12a51df6f789cc6788cae34a992d20068b,Donne Martin,2017-02-28T13:03:08Z,Add Sharding section,28,0,28
+donnemartin/system-design-primer,18611be86cc3d11e3fa1f498e9a9e84c76b787ec,Donne Martin,2017-02-28T13:02:44Z,Add Federation section,21,0,21
+donnemartin/system-design-primer,d753508b060329b7e2fae66e058ed5a7a0c6f546,Donne Martin,2017-02-28T13:02:21Z,Add Master-master replication section,30,0,30
+donnemartin/system-design-primer,c4dc4b0f889a90beb75a687b1254223171b8188e,Donne Martin,2017-02-28T13:01:54Z,Add Master-slave replication section,15,0,15
+donnemartin/system-design-primer,e596fd90394857b7a9cfe04b94e38ce1d57e279c,Donne Martin,2017-02-28T13:01:31Z,Add Relational database management system section,21,0,21
+donnemartin/system-design-primer,94aea1576c7707cf4d02e94a0add4894081e9c95,Donne Martin,2017-02-28T13:01:15Z,Add Application layer section,37,0,37

@@ -1,0 +1,301 @@
+repo,sha,author,date,message,additions,deletions,total_changes
+github/gitignore,01d2bee6fa7bbe6930e4ebba4cf9ac9c6bef91bc,Devin Dooley,2025-07-07T17:18:21Z,Merge pull request #4682 from gh658804/patch-1  Update VisualStudio.gitignore - remove *.vbp extension,0,3,3
+github/gitignore,310d5c4fa48aaa215c33642165fe8745e28c138b,Tim Hunter,2025-07-04T16:39:10Z,Merge pull request #4420 from testwill/typo  fix: typo,1,1,2
+github/gitignore,105082db0691bd829df79b2cd693343f10877832,gh658804,2025-07-02T19:44:18Z,Update VisualStudio.gitignore - remove *.vbp extension  Remove *.vbp extension. Such files are the main Visual Basic 6 Project Files and should not be ignored. It's like ignoring .csproj or .vbproj files in .NET projects.,0,3,3
+github/gitignore,524ae7b4c771d6ca5053374c93fca2a23d072ef5,Devin Dooley,2025-07-01T17:02:27Z,Merge pull request #4162 from arnaudmiribel/main  Update Python.gitignore to include Streamlit secrets,3,0,3
+github/gitignore,b7cb2f27059321be78d9cda41502bb76f6a977e5,Arnaud,2025-07-01T15:32:02Z,Merge branch 'main' into main,1633,172,1805
+github/gitignore,1a3a16e9982022d5467a443172481a8b3b7f805e,Daniel Johnson,2025-06-27T20:13:14Z,Merge pull request #4340 from timheuer/master  Update VisualStudio.gitignore for ENV files,1,0,1
+github/gitignore,7ffb40c732473c1ba021b8236f0d799802a93cd3,Devin Dooley,2025-06-26T17:02:27Z,"Merge pull request #4298 from taronaeo/main  Node.gitignore include support for SvelteKit, Vite, Firebase, and .env.example",10,0,10
+github/gitignore,de28afe56c20c1adbbf88ec129db63ea91317bd8,Aaron Teo,2025-06-26T16:55:10Z,chore: revert .env.* changes,1,4,5
+github/gitignore,8c5178ac3ad64955915bea935799796ae7b35f41,Aaron Teo,2025-06-26T13:04:59Z,chore: add trailing-slash to firebase  Co-authored-by: Devin Dooley <dooleydevin@github.com>,1,1,2
+github/gitignore,a2d805bcd3bc00271c47187a57edb858e0816282,Aaron Teo,2025-06-26T13:04:44Z,chore: add trailing slash to svelte-kit  Co-authored-by: Devin Dooley <dooleydevin@github.com>,1,1,2
+github/gitignore,ad58833608fb1e945a0cc0a5d7c9c34f0bc5ce22,Aaron Teo,2025-06-26T13:04:22Z,Merge branch 'main' into main,349,53,402
+github/gitignore,df4a30a4065e1c0fc258843da7fb6c1867ac7277,Devin Dooley,2025-06-25T16:45:37Z,"Merge pull request #4563 from mark-lazarides/ftr/update-twincat3-libs-dir-update  modifies lib exclude, adds example lib include",4,0,4
+github/gitignore,aebe7c1afb2db47da571ede5740e64a75129fc90,Mark Lazarides,2025-06-25T13:29:38Z,Merge branch 'main' into ftr/update-twincat3-libs-dir-update,1167,121,1288
+github/gitignore,27735251815e8c8a7eafd0b91813b3a07ee8d6fa,Devin Dooley,2025-06-23T23:48:43Z,Merge pull request #4465 from scop/lefthook  Add Lefthook.gitignore,16,0,16
+github/gitignore,cccb1867b125f3e5f125d3bdf144cc01cc2a03af,Ville Skyttä,2025-06-21T08:05:46Z,"Update Lefthook doc links, add files in .config/",6,2,8
+github/gitignore,5f428c12269398f47cf57cb9e8012e44cf9cca4a,Ville Skyttä,2024-06-08T22:34:49Z,Add Lefthook.gitignore  https://lefthook.dev,12,0,12
+github/gitignore,57208bef833f2f8286cd6dae5a2eeb3d314e3b31,Daniel Johnson,2025-06-20T21:43:01Z,Merge pull request #4332 from Quantalabs/main  Use yarn v3 instead of v2,7,5,12
+github/gitignore,2f480b34597940b5e7caee92c2eb730cf3548a5e,Daniel Johnson,2025-06-20T21:42:16Z,Merge pull request #4663 from Young-TW/main  Add HIP.gitignore,50,0,50
+github/gitignore,02094efb9b0b22d57faf469a2d00a752dcf86900,Daniel Johnson,2025-06-20T21:40:47Z,Merge pull request #4464 from scop/mise  Add mise.gitignore,11,0,11
+github/gitignore,d0c6a25dd6ef2c8ab8345be36553574a248aea39,Daniel Johnson,2025-06-20T21:38:26Z,Merge pull request #4662 from mikerochip/main  Add TestFramework and fix Addressables in Unity.gitignore,12,6,18
+github/gitignore,14bc92d730331e91cbe28495bef820eaaa55f7fb,Daniel Johnson,2025-06-20T21:34:02Z,Merge pull request #4223 from sqltoolbox/sqltoolbox/gitignore-add-ssdt-sqlproj-template  Add SSDT sqlproj specific gitignore file for database development usi…,31,0,31
+github/gitignore,9bfaab8626106456bda93a93a56c86f2fe3160c9,Daniel Johnson,2025-06-20T21:24:31Z,Merge pull request #4378 from henriquewerlang/main  New extension to ignore in Delphi IDE.,1,0,1
+github/gitignore,975d0c3945bbc35e24e7ecc1180ae6288e3b6aeb,Daniel Johnson,2025-06-20T21:23:29Z,"Merge pull request #4671 from akaIDIOT/patch-python-pdm  Update documentation link for pdm, use recommended includes/excludes",3,4,7
+github/gitignore,4b412d5a4acb96d55e0de9d94f9c22cee9b811f6,Daniel Johnson,2025-06-20T20:23:25Z,Merge pull request #4240 from nowsprinting/unity-auto-generated-by-run-playmode-tests  Add auto-generated scenes by Unity play mode tests,3,0,3
+github/gitignore,820563a00f9e8319a840a37d6c200cdf21adac32,Daniel Johnson,2025-06-20T20:22:57Z,Merge pull request #4471 from kasi-x/main  add pixi configure in python gitignore,7,0,7
+github/gitignore,85c2818693ae4a7b664e60a48bff12f221858389,Daniel Johnson,2025-06-20T20:17:58Z,Merge pull request #4668 from mikerochip/rider  Add *.DotSettings.user for Rider to Unity.gitignore,2,0,2
+github/gitignore,56df371812b769fd97ca45f460e3149f1d6f05cf,Daniel Johnson,2025-06-20T20:15:28Z,Merge pull request #4461 from krishnans2006/main  Update KiCad.gitignore,7,3,10
+github/gitignore,a01aff74f33710fa2cc0923bdbe44f870017fc53,Daniel Johnson,2025-06-20T20:11:15Z,Merge pull request #4406 from TobiasKnauss/patch-1  Update TwinCAT3.gitignore,1,0,1
+github/gitignore,2bf67ae3998e848ea36903f690dc55499cb6b774,Daniel Johnson,2025-06-20T20:09:59Z,Merge pull request #4316 from singularitti/patch-1  Update Julia.gitignore to ignore `LocalPreferences.toml` & `JuliaLocalPreferences.toml`,4,0,4
+github/gitignore,f2d8703154546d40d45f29ee9c66ae9a7fb0afc5,Young,2025-06-19T07:29:09Z,Add HIP.gitignore,50,0,50
+github/gitignore,77b8cdb81610386ec48504c204b10c3acd322ecd,Tim Hunter,2025-06-18T15:36:39Z,Merge pull request #3985 from ojaswa1942/patch-1  Fix (Python.gitignore): Typo,1,1,2
+github/gitignore,47e5a2eae74d2761e77e1fc8ff95851375423695,sqltoolbox,2025-06-17T09:22:01Z,SSDT specific objects ignore  A trimmed down version of the gitignore file tailored specifically towards SSDT projects in Visual Studio.,18,348,366
+github/gitignore,75ec41f83a8a56749516a8e433fd70a30218e276,Mattijs Ugen,2025-06-16T14:40:50Z,"Update documentation link for pdm, use recommended includes/excludes",3,4,7
+github/gitignore,64824509a340e05408315ecc6a831cf2e21f1576,Koji Hasegawa,2025-06-15T13:40:43Z,Merge branch 'main' into unity-auto-generated-by-run-playmode-tests,1445,156,1601
+github/gitignore,8789ddbda3ec1a52fa51a8a90de82d17365a544d,Koji Hasegawa,2025-06-15T13:37:42Z,Fix conflicts,16,0,16
+github/gitignore,5902dd9543b3773f4fcbb4459af9b82a5f68db1e,Mike Schweitzer,2025-06-13T23:52:14Z,Add *.DotSettings.user for Rider to Unity.gitignore,2,0,2
+github/gitignore,b913fd9f3c1cb190e6a5aa33a0058e3380a134a0,Mike Schweitzer,2022-07-25T02:28:33Z,Add TestFramework files and fix Addressables coverage  * Fix incorrect comment - aa means Addressable Assets not Android Assets * Add more complete default Addressables coverage * Add TestRunner package generated files,12,6,18
+github/gitignore,b93d2b024a21982b2e593735ceaf794b21334d04,Krishnan Shankar,2024-06-05T22:39:38Z,Update KiCad.gitignore,7,3,10
+github/gitignore,15d684578f37580886f29e4b8462f3a27f722cb5,Daniel Johnson,2025-06-13T22:17:50Z,Merge pull request #4666 from JawherKl/patch-2  Create Nestjs.gitignore,24,0,24
+github/gitignore,1371bf29ff41e38bc62420bd4f76de7a74027604,Daniel Johnson,2025-06-13T22:16:46Z,Merge pull request #4665 from MikaeelMF/patch-1  Ignore marimo cache in Python.gitignore,5,0,5
+github/gitignore,49b922af6168f769cc4eab3873ba900c0aef5cb1,Daniel Johnson,2025-06-13T22:14:58Z,Merge pull request #4664 from aiyvyang/patch-2  Update JetBrains.gitignore to ignore Apifox Helper cache folders,4,0,4
+github/gitignore,72ce5d51436d8a5c0959f1a259090b3b66068a39,Daniel Johnson,2025-06-13T22:05:50Z,Merge pull request #4333 from FurkanKambay/vscode  Update VS Code (remove a path and add a missing one),1,3,4
+github/gitignore,d1b23127c38ec89e6f91a41c14f6008af2f9c7a2,Daniel Johnson,2025-06-13T22:03:09Z,Merge pull request #4511 from guillerodriguez/patch-1  Add generated libtool file and .libs/ directories,2,0,2
+github/gitignore,26007d137b5b1b277ad9f6910d8b4fc87d3e2c13,Daniel Johnson,2025-06-13T22:02:07Z,Merge pull request #4508 from Lamparter/cake  Update Cake comment line to match other comment lines,2,2,4
+github/gitignore,6ce069e0ba4a6beb8ba4238459f60262e55893f4,Daniel Johnson,2025-06-13T22:01:28Z,Merge pull request #4501 from oSumAtrIX/patch-1  Handle source folders inside subprojects in Gradle.gitignore,0,0,0
+github/gitignore,f1320c1344bbd829993cdce06a09c386039ebc4e,Daniel Johnson,2025-06-13T21:55:53Z,Merge pull request #4369 from hspaans/hspaans/pep441  Update Python.gitignore for PEP 441,1,1,2
+github/gitignore,29e37fdb518ba93208f854363f8bdec0f4715ec8,Daniel Johnson,2025-06-13T21:55:19Z,Merge pull request #4363 from rhys-vdw/patch-2  Ignore mono_crash files in Unity.gitignore,3,0,3
+github/gitignore,92800a52cc118463d47eef6b86be41a10476d0b0,Daniel Johnson,2025-06-13T21:50:36Z,Merge pull request #4346 from krishnakumarg1984/kg/c_cpp_split_dwarf  ignore split-dwarf debugging-related auxilary .dwo files for C and C+…,6,0,6
+github/gitignore,b1f858fdfd024dcc64276a19c8a48644f7d5be0b,Daniel Johnson,2025-06-13T21:49:08Z,Merge pull request #4320 from laschuet/patch-1  Support option abbreviations of glossaries-extra,3,0,3
+github/gitignore,8117159050c99d49b2b285d196031325cd13c9ad,Daniel Johnson,2025-06-13T21:48:16Z,Merge pull request #4315 from kaznovac/patch-1  JetBrains.gitignore: add ignore for the HTTP Client's private environment,2,1,3
+github/gitignore,2d390e4812422a8bfa26ad44f9921c013f740e15,Daniel Johnson,2025-06-13T21:47:13Z,"Merge pull request #4314 from christophnz/bugfix/dotnet-umbraco-includes  Updated ignore rule for ""umbraco"" folder with trailing *",1,1,2
+github/gitignore,bc0e698f51c15384069593a4cd6b3a4d07fc9fc4,Daniel Johnson,2025-06-13T21:46:20Z,Merge pull request #4312 from michaelstepner/stata-auto-backup  Update Stata.gitignore to ignore new auto backup files,1,0,1
+github/gitignore,171a3dc992f809998c1767c08b708e281589b89c,Daniel Johnson,2025-06-13T21:45:06Z,Merge pull request #4308 from chabala/update-mvn-wrapper-doc-link  Update reference to Maven Wrapper exclusion,0,0,0
+github/gitignore,0b5739e708defc549026b42e46dc93f457905bd5,Daniel Johnson,2025-06-13T21:43:53Z,Merge pull request #4299 from asukaminato0721/add-deb  add deb to arch gitignore,1,0,1
+github/gitignore,8bd706d8c026350c13df5826592a19dc8e42426f,Daniel Johnson,2025-06-13T21:42:21Z,Merge pull request #4264 from anoduck/main  Added undo-tree,2,0,2
+github/gitignore,31dfd29895b543d182cf75496098ea1da1811a55,Daniel Johnson,2025-06-13T21:41:09Z,Merge pull request #4250 from karlhorky/patch-1  Remove pnpm debug log,0,1,1
+github/gitignore,c4d2f77d8b17662f7b1d68e9e85b09bea4b6b13a,Daniel Johnson,2025-06-13T21:34:41Z,Merge pull request #4234 from cyber-amr/main  Ignore all `.env` files in `Node.gitignore` and unignore `.env.example`,2,4,6
+github/gitignore,141ed2367974d4cf0278715dcfb36090b0e92c15,Daniel Johnson,2025-06-13T21:28:57Z,Merge pull request #4222 from hdadhich01/main  Add latexindent,3,0,3
+github/gitignore,59e368e6f32b18014137b38f67d9e7b441919ce4,Daniel Johnson,2025-06-13T21:28:32Z,Merge pull request #4217 from scordio/patch-1  Update `maven-wrapper` URL,1,1,2
+github/gitignore,30715cedf87d24aa2ba3692171036daf57f020fc,Daniel Johnson,2025-06-13T21:26:42Z,Merge pull request #4153 from Jaxelr/patch-1  Add MSBuild_Logs directory to VisualStudio.gitignore,1,0,1
+github/gitignore,1400e1cab5f9e3b5fbe11f3dadd1be0b217c580f,Daniel Johnson,2025-06-13T21:26:08Z,Merge pull request #4124 from Khazbs/patch-1  Android.gitignore: Ignore *.aab,1,0,1
+github/gitignore,f4715ab20682a3f3af9f714593d045b944880e7b,Daniel Johnson,2025-06-13T21:19:41Z,Merge pull request #4083 from agilgur5/remove-dated-microbundle-rpt2-ignores  clean: remove outdated `microbundle` cache directories,0,6,6
+github/gitignore,bfe008ac3053413a3c551b4f76dfbccfbf806cdc,Daniel Johnson,2025-06-13T21:19:01Z,Merge pull request #4065 from lathropd/patch-1  Update Perl .gitignore to include Carton,6,0,6
+github/gitignore,818c9dc59281a53d3cbd738212f5fd7f626c22b2,Daniel Johnson,2025-06-13T21:16:44Z,Merge pull request #4044 from Bdeering1/patch-1  [VisualStudio.gitignore] Update VS Code ignores to match file in global,4,1,5
+github/gitignore,9a1c373b3b9eb6f5f29742759c47bfbeed6ee816,Daniel Johnson,2025-06-13T21:15:17Z,Merge pull request #4034 from ilankri/ocaml  Complete `OCaml.gitignore`,8,1,9
+github/gitignore,b4f994b118f6d6c25de61da9ef19a728a8f5acc7,Daniel Johnson,2025-06-13T21:14:10Z,Merge pull request #3619 from fslds/patch-1  Add direnv .envrc to python gitignore,1,0,1
+github/gitignore,7bbd186ebaf6b1c8a475e3e89a3b8bfe25c8f7b5,Daniel Johnson,2025-06-13T21:12:13Z,Merge pull request #3609 from xperiandri/patch-1  Fixed editor specific folder exclusion for subfolders,7,7,14
+github/gitignore,dbd59f91f4174da43ebfb943bcfe47b25ae554b1,Daniel Johnson,2025-06-13T21:07:21Z,"Merge pull request #3538 from adi-g15/master  Updated C++.gitignore to include *ilk, *pdb files",6,0,6
+github/gitignore,8d185ec95d87c310b47662a4bcbc9d087e280946,Daniel Johnson,2025-06-13T21:04:37Z,Merge pull request #3085 from mathstuf/patch-1  rust: allow /target to be a symlink,2,2,4
+github/gitignore,1d3848b1c4460a98d9631d2ed481a13a4dc5b10f,Daniel Johnson,2025-06-13T21:00:01Z,Merge pull request #4655 from arnav-42/react  Create Expo.gitignore,32,0,32
+github/gitignore,35ada6b74a082da8d57ad12bbacdc995da5a86df,Daniel Johnson,2025-06-13T20:35:55Z,Merge pull request #4040 from kkostrzewa-coupa/add-trx  Add *.trx to ignored files,1,0,1
+github/gitignore,d9d0cefdf9f96c46ff9c08b0f2d3791a927c5dfb,Daniel Johnson,2025-06-13T20:26:39Z,Merge pull request #4019 from jonathanduke/main  ignore temporary Microsoft Word template files (.dot/.dotx),1,0,1
+github/gitignore,6d846a2fdf78f0b31eaf35062d345bc51c9dc918,Daniel Johnson,2025-06-13T20:25:32Z,Merge pull request #4262 from martonmiklos/patch-5  Add #auto_saved_files# to the Kicad.gitignore,3,1,4
+github/gitignore,429b07b7d4d946e46678dece9e0740ec650a53eb,Furkan Kambay,2025-06-13T19:15:02Z,"VSCode: Unignore `.code-workspace`, remove `.history/` (3rd party extension)",1,3,4
+github/gitignore,2b1d7aec2c0ab9fbe9c7dda41ca4fd6e36a8d304,Martin Woodward,2025-06-13T18:42:41Z,Merge pull request #3736 from aruanoguate/handle_dot_refresh_files  Handle .dll.refresh,6,1,7
+github/gitignore,d52f8a215e35a1f51c701216aee48cedfd656d46,Jawher Kl,2025-06-13T15:28:54Z,Create Nestjs.gitignore,24,0,24
+github/gitignore,7b268f627c2fa4bf87e7f0741bc3c2d61b465656,Mikaeil Mayeli,2025-06-12T18:13:20Z,Ignore marimo cache in Python.gitignore,5,0,5
+github/gitignore,f84aa8dcb17a42f91e5becf55ebdbf4aec83e19a,Tim Hunter,2025-06-11T17:29:31Z,Merge pull request #4478 from DecimalTurn/vba  Create VBA.gitignore,40,0,40
+github/gitignore,8bda061a46828484be3cf9546fbcdbc54c7cc880,Martin Leduc,2025-06-11T17:09:47Z,Update VBA.gitignore  Co-authored-by: Tim Hunter <thorrsson@github.com>,0,2,2
+github/gitignore,b224b3e8542f15c57ed9aa84415c3390ef301454,Tim Hunter,2025-06-11T16:26:57Z,Merge pull request #4100 from lkurzyniec/feature/ApprovalTests-result-files  Added Approval Tests result files,3,0,3
+github/gitignore,47d83d00c36aad6b3048ae64c92bb7e99e4a99cf,爱宇阳,2025-06-11T12:09:29Z,Update JetBrains.gitignore to ignore Apifox Helper cache  add Apifox Helper cache,4,0,4
+github/gitignore,af8cbe919e417abdc81d1b942651d83832c5edce,Devin Dooley,2025-06-10T20:17:43Z,Merge pull request #4210 from nagilson/patch-1,0,3,3
+github/gitignore,1d84c6b57c364adc20f344d2c18c8a000627db30,Noah Gilson,2025-06-10T20:09:42Z,Update VisualStudio.gitignore,1,1,2
+github/gitignore,ac81151c3312856c7723c8171a9c8b5360693335,Noah Gilson,2025-06-10T20:09:13Z,Update PR so it doesnt get deleted,1,1,2
+github/gitignore,3d94ab13a8b447fb9cc11e21d3a055e654dddfad,TobiasKnauss,2025-06-10T19:12:47Z,Merge branch 'main' into patch-1,1276,121,1397
+github/gitignore,6c11140087db2c8b0ec70a0187a079b75e63ae89,Devin Dooley,2025-06-10T18:01:39Z,Merge pull request #4394 from nielsbasjes/FixComments,7,4,11
+github/gitignore,6c855b59ddca40b97adbe673111457bad8a7a34a,Martin Leduc,2025-06-10T16:36:24Z,Update VBA.gitignore  Add DS_Store for mac users,3,0,3
+github/gitignore,c98e9024c19a3cf4653b7b460659251e87ee093c,Niels Basjes,2025-06-10T09:07:11Z,Merge branch 'main' into FixComments,1269,117,1386
+github/gitignore,f3729339d697cf2e8a46fd5f7ece1bf2e97b3c1b,Aaron Teo,2025-06-10T03:56:53Z,Merge branch 'main' into main,1269,117,1386
+github/gitignore,eb46073327293df0e5b138fd126386316611fb74,Qi Zhang,2025-06-10T00:41:04Z,Merge branch 'main' into patch-1,1269,117,1386
+github/gitignore,9cc0b706bfe10f6759a6325c20213b9eacdb2e43,arnav-42,2025-06-09T21:32:55Z,Update Expo.gitignore  removed MacOS specific line,0,3,3
+github/gitignore,622feeebce44b01e2f4b0d04966db32cf48c989b,Tim Hunter,2025-06-09T16:14:10Z,Merge pull request #4148 from Chaoses-Ib/patch-highlight  Highlight the gitignore block in README,1,1,2
+github/gitignore,5e1f6cef177bbc97b45988e066b85380239c3dc6,Tim Hunter,2025-06-09T15:51:18Z,Merge pull request #4117 from mathworks/main  Update Global/MATLAB.gitignore to include broader set of transitory files,15,13,28
+github/gitignore,c9a87f886cb74d02c1b0ea1bf04ead4a409fa407,Chaoses-Ib,2025-06-09T01:44:58Z,Merge branch 'main' into patch-highlight,1257,103,1360
+github/gitignore,7a0861672ac271544ef5406600a612c1d1e2b383,Miklós Márton,2023-03-17T09:02:38Z,Add #auto_saved_files# to the Kicad.gitignore,3,1,4
+github/gitignore,4b2245232c5d302a47c26942c725be8ceae38233,Daniel Johnson,2025-06-06T21:58:21Z,Merge pull request #3858 from maximetinu/fix-unreal-plugin-binaries  Fix Unreal Engine plugin binaries on subfolders,0,0,0
+github/gitignore,0493865adda3ba03cdd97d0cfed70f00a93080be,Daniel Johnson,2025-06-06T21:51:37Z,Merge pull request #3945 from thomasturrell/patch-1  Fixed APT generated tests location,1,1,2
+github/gitignore,0d1e93f1f4a705696f94b3d79aae3d02d6f2365b,Daniel Johnson,2025-06-06T21:48:42Z,"Merge pull request #3948 from alzee/main  /web/{modules,profiles,themes}/contrib are extends installed by composer…",3,0,3
+github/gitignore,34a20f44abca4918c64a1ade7e686db3cdff499d,Daniel Johnson,2025-06-06T21:46:03Z,Merge pull request #3962 from nopunin10did/ignore-kicad-6-backups  Update KiCad.gitignore to ignore KiCad 6.0 zip backups,3,0,3
+github/gitignore,a41cce355fa679b2be61dd3052d7310a37436738,Daniel Johnson,2025-06-06T21:43:40Z,Merge pull request #3977 from pvaleror/main  Create Katalon.gitignore,40,0,40
+github/gitignore,bbf1a672b2986e1254e7924464c41eb0ff7a76a1,Daniel Johnson,2025-06-06T21:36:20Z,Merge pull request #4537 from JawherKl/patch-1  Create Angular.gitignore,28,0,28
+github/gitignore,5aa96a579d1b4228cab41aefe4d6c57a21b95c57,Devin Dooley,2025-06-06T21:24:38Z,Merge pull request #4661 from github/300-stale-ops-per-run  Increase stale operations per run to 300,1,0,1
+github/gitignore,abfc5f1eb4b30a5d92360ab5e3a945670c29c018,Devin Dooley,2025-06-06T20:34:35Z,Increase stale operations per run to 300,1,0,1
+github/gitignore,f752d0799fb7e690bfb888d5cd4d453d2858a865,Devin Dooley,2025-06-03T22:45:59Z,Merge pull request #4654 from oxygen-dioxide/main  Add UTAU.gitignore,52,0,52
+github/gitignore,33555307a083c61b0a5bc4358f0e985f83f5a154,oxygen-dioxide,2025-06-03T22:36:29Z,Update UTAU.gitignore,6,6,12
+github/gitignore,8de5ff743c25312a627ef2fff5a253e2068deb0d,oxygen-dioxide,2025-06-03T22:30:32Z,Update community/UTAU.gitignore  Co-authored-by: Devin Dooley <dooleydevin@github.com>,0,1,1
+github/gitignore,153d94f1553a8a67860cd579324fce5c13941036,oxygen-dioxide,2025-06-03T22:30:18Z,Update community/UTAU.gitignore  Co-authored-by: Devin Dooley <dooleydevin@github.com>,1,1,2
+github/gitignore,a6cba8d437f67313b07b8f39695dcef41fc0bffe,oxygen-dioxide,2025-06-03T22:29:52Z,Update community/UTAU.gitignore  Co-authored-by: Devin Dooley <dooleydevin@github.com>,0,2,2
+github/gitignore,f23d10eddf8699ad5c7f8cf54ec6a769b03438f5,arnav-42,2025-06-03T19:40:50Z,Create Expo.gitignore,35,0,35
+github/gitignore,3741d6f73fbd3b5987c510a406a2ec37fe43abf0,oxygen-dioxide,2025-06-03T13:22:33Z,Update UTAU.gitignore,35,9,44
+github/gitignore,5235436d94cd4782f86e414fb792088c919c1eab,oxygen-dioxide,2025-06-03T13:21:29Z,Merge branch 'github:main' into main,1236,142,1378
+github/gitignore,136f98dd58a401fe63265e5afa4c4c058c6d915b,Devin Dooley,2025-06-02T20:21:04Z,Merge pull request #4653 from vicman7/add-poetry-toml  Add poetry.toml to Python.gitignore (optional Poetry config file),2,1,3
+github/gitignore,e478c8faf60ca172b0df4c450bf254c0cdee0119,Tim Hunter,2025-06-02T20:08:09Z,Merge pull request #3552 from armanbilge/sbt-bsp  [SBT] Ignore .bsp directory,1,0,1
+github/gitignore,9a656787d672d9e8fdc3791db8747527c462e9b2,Tim Hunter,2025-06-02T18:53:56Z,Merge pull request #3600 from tbeu/patch-1  Also ignore *.idb (to match C.gitignore),1,0,1
+github/gitignore,daf38183c7dd59e77a7de21e0cef55749ddfc4a4,vicman7,2025-05-31T21:00:30Z,Add poetry.toml to Python.gitignore,2,1,3
+github/gitignore,84c765dc71e59b8d115f1b7b162ee87a1d9b1158,Devin Dooley,2025-05-31T00:30:56Z,Merge pull request #4652 from nyoungstudios/python-gitignore-vscode-spelling  fixes spelling for word `entire` in Python.gitignore in the VS Code section,1,1,2
+github/gitignore,90c3bc712bc11378dd425d3d478df5032066696c,Nathaniel Young,2025-05-30T22:47:20Z,fixes spelling in  in Python.gitignore in VS Code section,1,1,2
+github/gitignore,dc7aaef6c0a513902f6fb3b3a1ebea93eb3f6fe6,Daniel Johnson,2025-05-29T19:18:22Z,Merge pull request #4536 from brunovcosta/main  Adding Abstra to Python.gitignore,7,1,8
+github/gitignore,094d21a4735911de10ab809563cf75d2a65ad84a,Daniel Johnson,2025-05-29T19:17:35Z,"Merge pull request #3540 from jumattos/vs-add-out  VisualStudio: add ""out"" folder to build results",1,0,1
+github/gitignore,3313644ca2c6d78230a42b8d8ef83d6046ce268a,Daniel Johnson,2025-05-29T19:15:43Z,Merge pull request #3455 from vonagam/create-haxe-gitignore  Create Haxe.gitignore,3,0,3
+github/gitignore,ef50fb9cadf514b653e003452a69a18a8e8db8ec,Bruno Vieira Costa,2025-05-28T12:31:12Z,Merge branch 'main' into main,915,46,961
+github/gitignore,db90803202c3d603bcbc81157873d1b1627576a2,Devin Dooley,2025-05-27T22:46:25Z,Merge pull request #4648 from oittaa/patch-1  Zig.gitignore add *.o,1,0,1
+github/gitignore,6bc658a1c703c9a296cec51bdce92c009867601a,oittaa,2025-05-25T19:22:56Z,"Zig.gitignore add *.o  $ zig version 0.14.1  If you run `zig build-exe myfile.zig` it will generate myfile.o in addition to the executable in the current directory. I think those should be ignored even though they are usually in the zig-out directory if you use the proper build system.",1,0,1
+github/gitignore,6578d74599385ec36ef4a6d8ff98e8c19b4149b8,Jawher Kl,2025-05-25T15:45:43Z,Update Angular.gitignore,9,75,84
+github/gitignore,107b0b483821a46f217a90321adf0f5307e09c50,Dmitry Maganov,2025-05-25T03:13:54Z,Add `.haxelsp/recording/`,1,0,1
+github/gitignore,eb414f229b62f840fbf33b6387305bbe1e5dd2fb,Daniel Johnson,2025-05-23T23:02:03Z,Merge pull request #4498 from katediadechko/ignore-rust-mutants  Ignore cargo-mutants output,5,1,6
+github/gitignore,9e5cc0ae9b18e516a6fc81dcc27cdb4942b04109,Daniel Johnson,2025-05-23T22:13:32Z,Merge pull request #4645 from max-hill-4/main  Update Python.gitignore,7,0,7
+github/gitignore,d4189b545e736ecbe012a6e3c222e24eb9784eee,Daniel Johnson,2025-05-23T22:09:55Z,Merge pull request #4517 from sctech-tr/wii  add libogc.gitignore (wii homebrew development),91,0,91
+github/gitignore,527b04e0d280045c8088bee752662ec65825ea29,Daniel Johnson,2025-05-23T22:09:06Z,Merge pull request #4518 from atulkumar2/jupyterlablsp-virtdocs  Jupyterlabs LSP virtual documents directory,4,0,4
+github/gitignore,7f1efb2ca91e23a6d515cdf267057a889a8b47b2,Daniel Johnson,2025-05-23T22:05:18Z,Merge pull request #4523 from vidbina/vidbina/intro-gleam  feat: Add Gleam (1.5.x) gitignore,4,0,4
+github/gitignore,089f8f4372f9ba37f234d02c31e134d457b6caf6,Daniel Johnson,2025-05-23T22:02:21Z,Merge pull request #4059 from kpowake/main  Change output.json to output-metadata.json,1,1,2
+github/gitignore,6ea41eeadff4462a0200cf612a1b63550051bb47,Daniel Johnson,2025-05-23T21:59:55Z,Merge pull request #4530 from BibbitM/ue-vsconfig  Add ignore for .vsconfig,1,0,1
+github/gitignore,64f68cd05aacf2e1044cdad5cf0868f3d903bcef,Daniel Johnson,2025-05-23T21:58:00Z,Merge pull request #4532 from CJMobileApps/cmake-ignore-cmake-build-debug  ignore `cmake-build-debug` generated by CMake in CLion IDE,7,0,7
+github/gitignore,6a02bb137fc087ec057ed5c54df4adfd407b283a,Daniel Johnson,2025-05-23T21:54:52Z,"Merge pull request #4535 from niklaswimmer/patch-1  Fix ""build"" source folder being ignored (Gradle)",1,1,2
+github/gitignore,823d71bb33d2daa81099329831e8c8d2af288497,Daniel Johnson,2025-05-23T21:49:39Z,Merge pull request #3277 from bamapookie/patch-2  Create PlatformIO.gitignore,6,0,6
+github/gitignore,72c8bc888ea44ede26ddccacad08e3437546dd49,Daniel Johnson,2025-05-23T21:41:21Z,Merge pull request #4237 from ZachTylerPruitt/Fix-Metals-gitignore  Fix Metals gitignore,4,3,7
+github/gitignore,55bb9508aec142dd6d6e85e6bd01a80fe50186a8,Max,2025-05-23T21:39:08Z,Update Python.gitignore,7,0,7
+github/gitignore,079abc81084e665beb7e581f5171b493f2898886,Daniel Johnson,2025-05-23T21:27:50Z,Merge pull request #4555 from brad-ellert/patch-1  Add latexindent.pl backups to TeX.gitignore,3,0,3
+github/gitignore,a820bb2c3ecf4b6aee8e1aec37cb5eb6c7501c8e,Daniel Johnson,2025-05-23T21:21:54Z,Merge pull request #4564 from ashwingopalsamy/patch-1  feat(Jetbrains.gitignore): Add GoLand thats missing in Jetbrains IDE …,1,1,2
+github/gitignore,3d35d21edba2596bfee940c99fef6921dd480456,Daniel Johnson,2025-05-23T21:21:25Z,Merge pull request #4565 from ashwingopalsamy/main  feat(go.gitignore): Add code coverage and IDE files,8,1,9
+github/gitignore,07224598fc1c954fbdd624328656a75ff1b2255e,Daniel Johnson,2025-05-23T21:20:09Z,Merge pull request #4644 from github/move-nix  Moves Nix.gitignore to root because popular,0,0,0
+github/gitignore,d7d254873b864eb72c3877ebb3bbf8463cdd9e0b,Daniel Johnson,2025-05-23T21:16:57Z,Merge pull request #4573 from koppor/patch-1  TeX: Add support for spelling package,4,0,4
+github/gitignore,9672d15dabdd5861793691f183ec9f05c2a2c953,Daniel Johnson,2025-05-23T21:11:31Z,Moves Nix.gitignore to root because popular  The Nix repo(https://github.com/NixOS/nix) has over 14k stars and over 1k clones. I believe this project is widely used and popular enough to move to the root now.,0,0,0
+github/gitignore,106e047d1ce6baa88f10a729076dd85d49aadde8,Daniel Johnson,2025-05-23T21:03:08Z,Merge pull request #4582 from WybrenKoelmans/patch-1  Unity Visual Scripting auto generated files,6,0,6
+github/gitignore,6136f2a8a21bc47dd0f3e055eb09db7ee93e77ba,Daniel Johnson,2025-05-23T21:02:17Z,Merge pull request #4584 from janisozaur/patch-1  Add ARM64EC support to VisualStudio.gitignore,1,0,1
+github/gitignore,4283b75156b1b911e52803d3e19d288f00db3fa0,Daniel Johnson,2025-05-23T21:00:07Z,Merge pull request #4589 from IBXCODECAT/main  Ignore unneeded *.blend1 blender files,4,0,4
+github/gitignore,cc71ef15778e72c0f7b472276fb55860894d2ae9,Daniel Johnson,2025-05-23T20:55:43Z,Merge pull request #4592 from dogyyds/main  Create new Nextjs.gitignore,36,0,36
+github/gitignore,e91006ea7626850870c195932153682ac2bedaf0,Daniel Johnson,2025-05-23T20:50:02Z,Merge pull request #4624 from grafst/ansible-folder  add .ansible/ folder to ansible.gitignore,1,0,1
+github/gitignore,eb58856858b662bac4e2a8eab3523c05d0a82e40,Daniel Johnson,2025-05-23T20:47:48Z,Merge pull request #4625 from mattnorris/langchain  feat(LangChain.gitignore): ignore LangGraph,6,0,6
+github/gitignore,a3a60ee1924a6fec009bc3c8fe93ded8175744d2,Daniel Johnson,2025-05-23T20:45:19Z,Merge pull request #4627 from guiarcoverde/add-aws-sam-to-gitignore  Add .aws-sam/ to VisualStudio.gitignore to ignore AWS SAM build artifacts,3,0,3
+github/gitignore,de259e20ffb1f309e32349139a6bd03231f5999c,Tim Hunter,2025-05-23T16:59:55Z,Merge pull request #2935 from ericoporto/master  Adds .gitignore for Adventure Game Studio Projects,31,0,31
+github/gitignore,c672d4aabef0f17ab8367ceb44c36973d9151961,Devin Dooley,2025-05-22T16:13:51Z,Merge pull request #4466 from frankebel/main  feat(Julia): ignore all Manifest files,1,1,2
+github/gitignore,b15785f9157fe2b6267b9b6821b53f2cdcb475e6,Devin Dooley,2025-05-22T16:07:02Z,Merge pull request #4639 from Wuhall/main  Add dedicated Cursor.gitignore template for Cursor AI editor exclusions,2,0,2
+github/gitignore,3cb11f3091334d08d8770ff2797a1e84211c8a7a,Frank Ebel,2025-05-22T12:56:38Z,feat(Julia): ignore all Manifest files,1,1,2
+github/gitignore,48b1054d9d2af3b3fc1a7161fe96e970a37b81a9,Wuhall,2025-05-22T00:41:23Z,Remove .vscode/*,0,1,1
+github/gitignore,9101f3d544cc207fdfdd740e63a4be66d8ddca18,Devin Dooley,2025-05-21T23:50:44Z,Merge pull request #4638 from github/remove-stale-debug-setting  Run stale workflow without debug-only mode,0,1,1
+github/gitignore,17441027c3376ecef5c8d8241c4ff424c6ef9122,Wuhall,2025-05-21T09:12:50Z,add Cursor.gitignore,3,0,3
+github/gitignore,bf0e0fdbfbf48930a02b631447a3919672631e66,Devin Dooley,2025-05-20T22:42:24Z,Run stale workflow without debug-only mode,0,1,1
+github/gitignore,7e6cd454e651aa28c810cb9a89eda9efb29593f7,Devin Dooley,2025-05-19T21:38:53Z,Merge pull request #4637 from github/restore-newline-python  Restore trailing newline in Python.gitignore,3,3,6
+github/gitignore,012a024a8d2a015c368ef2db54236818cc916fe8,Devin Dooley,2025-05-19T18:20:26Z,Restore trailing newline in Python.gitignore,3,3,6
+github/gitignore,81ceb66b6b9d32324c98fe1c51f27d2eb9451865,Devin Dooley,2025-05-17T20:14:20Z,Merge pull request #4636 from github/add-stale-yml  Move .github/workflow to .github/workflows,0,0,0
+github/gitignore,c682e17a2bdbaaef76289afd437b889b08bef078,Devin Dooley,2025-05-17T19:34:04Z,Move .github/workflow to .github/workflows,0,0,0
+github/gitignore,bfb9a300161a3800e5388b5be444c496559457c8,Devin Dooley,2025-05-17T19:29:44Z,Merge pull request #4634 from github/add-stale-yml  Configure stalebot in dry-run mode,32,0,32
+github/gitignore,426abd86128e3631c60918649b4aa91d360673d2,Devin Dooley,2025-05-16T20:22:27Z,Configure stalebot in dry-run mode,32,0,32
+github/gitignore,9cabb94d2ac2ce0884a114d45683d9be9a45080c,Devin Dooley,2025-05-15T16:18:31Z,Merge pull request #4633 from Wuhall/main  Add Cursor editor ignore files to Python.gitignore,7,0,7
+github/gitignore,a642376bb2baca1742c7061e47d9386dd18ade0c,Lucas Liu,2025-05-15T01:10:29Z,add .cursorignore,6,5,11
+github/gitignore,5577a312321be1fd88161207cee0a5a7dad6f376,Lucas Liu,2025-05-14T03:35:31Z,add .cursorrules,6,0,6
+github/gitignore,4d602a24bc5e4bbc2b8cedf08d4e982a80a7dfea,Daniel Johnson,2025-05-05T19:35:13Z,Merge pull request #4628 from github/wirecat-patch-1  Create CODEOWNERS,7,0,7
+github/gitignore,982fb519b37362d02028ab8588953a9a597d4c61,Daniel Johnson,2025-05-02T22:04:54Z,Create CODEOWNERS,7,0,7
+github/gitignore,10164d7048233e6e482e31bb3587784cfa4e2a5e,Guilherme Arcoverde,2025-05-02T15:51:41Z,Add .aws-sam/ to ignore AWS SAM build artifacts,3,0,3
+github/gitignore,7e9487fe98e57a7e0807d2487b0dddaff57467f6,matnorri,2025-04-30T13:32:09Z,"feat(LangChain.gitignore): ignore LangGraph  Ignore LangGraph artifacts, e.g., pickle files.",6,0,6
+github/gitignore,b71782331f15039c1ff14e6fa8594b24ad8f6bcd,grafst,2025-04-28T14:38:03Z,"add .ansible/ folder to ansible.gitignore  it is used for local caches, pws and tempfiles",1,0,1
+github/gitignore,6b4026c2f01379bd9a7649d08f575350a121c41e,Daniel Johnson,2025-04-25T22:08:33Z,Merge pull request #4619 from rux616/patch-1  Ignore all .terraform directories,1,1,2
+github/gitignore,696ace4289d6a7628f0579fa22dde86ce13f858f,Daniel Johnson,2025-04-25T20:24:31Z,Merge pull request #4596 from markjaquith/issue/Icon-macOS-carriage-return  Use a character class to ignore Icon\r directories,1,3,4
+github/gitignore,2689587a806c20c56f5784a1111a87474191a89f,Daniel Johnson,2025-04-25T20:22:27Z,Merge pull request #4603 from aakashjog/TeX-changes  Add .loc to TeX.gitignore,1,0,1
+github/gitignore,98d7e21025bbfc7f787edf47a153b2be60a1df01,Daniel Johnson,2025-04-25T20:21:34Z,Merge pull request #4604 from netbymatt/patch-1  Update TwinCAT3.gitignore,39,15,54
+github/gitignore,f59df77883de550406d106a3b8331ec516fa0457,Daniel Johnson,2025-04-25T20:20:21Z,Merge pull request #4607 from bartlaarhoven/patch-1  Ignore .idea/sonarlint.xml,1,0,1
+github/gitignore,81bbb607681e8a1e18ff64cda88eab989a99cb2c,Daniel Johnson,2025-04-25T20:19:30Z,Merge pull request #4608 from afcuttin/attachfile2  Added .atfi extension for package attachfile2,3,0,3
+github/gitignore,ba3e626089e6e8f486370f330e59e31f0e598eb8,Daniel Johnson,2025-04-25T20:18:47Z,Merge pull request #4609 from Shannja/main  Update Unity.gitignore,1,0,1
+github/gitignore,a79fb7199ea8942214205e6c1efeeb6d90283f8b,Daniel Johnson,2025-04-25T20:17:46Z,Merge pull request #4610 from barraponto/dotter  Add Dotter.gitnore,6,0,6
+github/gitignore,1c767fa3acd97e22caee37dca74ab76d1844a269,Daniel Johnson,2025-04-25T20:14:13Z,Merge pull request #4612 from syntaxerror247/patch-1  Add nomedia file to Godot.gitignore,1,0,1
+github/gitignore,43259f3ae2d6a85148c85f213176622013a5ac90,Daniel Johnson,2025-04-25T20:11:23Z,Merge pull request #4613 from koppor/patch-2  Refine minted rules,1,0,1
+github/gitignore,63f57203dea10122ae7442c992d5b3e93e9a8d49,Daniel Johnson,2025-04-25T20:10:18Z,Merge pull request #4614 from fuzzybair/ncrunch-update  Updated NCrunch cache path for v4.16+,1,0,1
+github/gitignore,4cc4b5741c808d1498e800f6449e8bd16429eb08,Daniel Johnson,2025-04-25T20:07:46Z,Merge pull request #4618 from NicholasWilsonDEV/patch-1  chore(links): replace URLs with HTTPS for better security,2,2,4
+github/gitignore,fc17de5482903fa520f14f288fbe9a3c773b899b,Daniel Johnson,2025-04-25T20:04:07Z,Merge pull request #4620 from ralphmcralph/remix-solidity-template  Add .gitignore template for Solidity + Remix,15,0,15
+github/gitignore,86a7d7dbadb8f8aa25943dfb9dd8911d154f4278,ralphmcralph,2025-04-25T08:23:37Z,Add .gitignore template for Solidity + Remix,15,0,15
+github/gitignore,4ed7892d1ad3dc647fee77004dc5a51a8d8184ea,Dan Cassidy,2025-04-23T23:35:50Z,Ignore all .terraform directories  Changes to using the `foo/` naming pattern to ensure that these directories will be ignored at all depths.,1,1,2
+github/gitignore,c831d190f681b00080d12bfe4982a3bceac5ddf7,Nicholas Wilson,2025-04-21T16:55:31Z,chore(links): replace URLs with HTTPS for better security,2,2,4
+github/gitignore,a0e5b9d545cdd063130cda2ffb22304eaa6d5f9a,Oliver Kopp,2025-04-12T09:32:16Z,Fix ordering,1,1,2
+github/gitignore,5c4badd74090fcdb9cc942ba0959718c84b3e1e1,Oliver Kopp,2025-04-12T09:29:59Z,Refine minted rules,1,0,1
+github/gitignore,010b77ba772d5e99185701aba47d0de681a87e1c,Daniel Johnson,2025-04-11T19:53:38Z,Merge pull request #1933 from ajalexander/test-complete  Add .gitignore for TestComplete,14,0,14
+github/gitignore,a40111717d8f2cd5ed7cf785f019896a7ba1e667,Daniel Johnson,2025-04-11T19:49:27Z,Merge pull request #4599 from JumpIn-Git/main  optimize and more readable obsidian extended gitignore,3,5,8
+github/gitignore,63d066391fe93f98871b9a43df0f10f8366b8c03,Anish Mishra,2025-04-07T17:42:04Z,Add nomedia file to Godot.gitignore  This file is only needed for Android Editor and automatically generated if missing. No need to track it.,1,0,1
+github/gitignore,76e40b7cecb059211e360822247bf0b6e585d1eb,Devin Dooley,2025-04-07T16:40:39Z,Merge pull request #4489 from mattalxndr/patch-1  Update Linux.gitignore,4,1,5
+github/gitignore,71558441e9df93c271ff3b07ea98ec064b775a06,Matt Alexander,2025-04-01T03:52:38Z,Update Linux.gitignore,1,4,5
+github/gitignore,c843504839b6b219fe1174afc7a25bf53483123a,Capi Etheriel,2025-03-31T18:39:25Z,Add Dotter.gitnore,6,0,6
+github/gitignore,5d9130efadbeb69bd91aed873ef50b579c14d635,Shannja,2025-03-31T01:08:36Z,Update Unity.gitignore,1,0,1
+github/gitignore,ab7e5f6994ef70b790f4800eb0ea82a9e11b665e,Alessandro Cuttin,2025-03-26T15:32:19Z,Added .atfi extension for package attachfile2,3,0,3
+github/gitignore,87d93eeb2e7d11e16f8e88d8b8150323e1e641b0,Bart Laarhoven,2025-03-24T09:06:41Z,"Ignore .idea/sonarlint.xml  As mentioned in https://community.sonarsource.com/t/is-the-file-idea-idea-idea-sonarlint-xml-intended-to-be-under-source-control/121119, the `sonarlint.xml` file should be in the `.gitignore`.",1,0,1
+github/gitignore,86d1826a9f3daf4744e7229a26187f81c081744c,Tim Hunter,2025-03-21T15:47:39Z,Merge pull request #4606 from tracetronic/update_ecu.test_ignore_up_to_2025_1  Update ecu.test ignore up to 2025 1,14,10,24
+github/gitignore,3dc0b4878cd8a8e061221c16b5a5a9293653ed84,Martin Grosche,2025-03-21T08:01:14Z,Update company naming,1,1,2
+github/gitignore,7a4a857dac945d78ab9d406b5158d9e8a7749125,Martin Grosche,2025-03-21T07:07:55Z,Update .gitignore to include additional workspace and Python library files up to ecu.test 2025.1,6,1,7
+github/gitignore,dcb59cbf161e310ff99fd8035f6e98fb0f4005ae,Martin Grosche,2025-03-19T14:33:24Z,Update tool naming,9,10,19
+github/gitignore,3400c8a214111a6b09826f693ef0215b4976c5a1,Ville Skyttä,2025-03-17T07:48:33Z,"Simplify mise ignores, make better applicable to monorepos",7,13,20
+github/gitignore,fdc1acb1bc77a8ba34b456a69dda84574f4c7c69,Matt Walsh,2025-03-13T18:07:41Z,"Update TwinCAT3.gitignore  A recent major revision from Beckhoff added several new suggested lines to gitignore. All existing items are still present, however the new file has been copied verbatim from TwinCAT documentation. https://infosys.beckhoff.com/english.php?content=../content/1033/tc3_sourcecontrol/14604066827.html&id=",39,15,54
+github/gitignore,5b0261b4675e803934284a1c37eb478c38a89030,Daniel Johnson,2025-03-12T17:49:09Z,Merge pull request #4597 from m4fh/luau  Create Luau.gitignore,14,0,14
+github/gitignore,016cd48bd44dea66914a64f03571c07bd17ff300,Aakash Jog,2025-03-10T19:52:37Z,Add .loc to TeX.gitignore  Add *.loc (auxiliary files generated by the `changes` package) to TeX.gitignore,1,0,1
+github/gitignore,03746360179f94ccda3aea942adc8245e4f65a25,Tim Hunter,2025-03-10T18:49:34Z,Merge pull request #4601 from maddymontaquila/maddy/dotnet  Modernized dotnet-specific gitignore,54,0,54
+github/gitignore,1235fcdff576dde1c0b92c5bb69979a53ac46660,Maddy Montaquila (Leger),2025-03-10T17:48:37Z,removing OS and IDE specific content,1,21,22
+github/gitignore,d4fe781ae8e0a4f93eff58a6f1e629200e7494fc,Math,2025-03-07T20:30:22Z,Add short description and link to Luau repo,5,0,5
+github/gitignore,8aa61b8d34fc231bc59c5af09f99f1767c7c9125,Ville Skyttä,2024-06-08T22:29:50Z,Add mise.gitignore  https://mise.jdx.dev/,17,0,17
+github/gitignore,dae35c0933f938c48b5fa96ebc8641c08974c0a2,Maddy Montaquila (Leger),2025-03-05T23:14:06Z,more tweaks,0,9,9
+github/gitignore,534b175305c50808e4ff7642c853bb7eff2e6364,Maddy Montaquila (Leger),2025-03-05T21:51:22Z,added rider .idea/ and removed obsolete vs files,9,8,17
+github/gitignore,9dec0796bfa298be973448191ee2d40c72c1c874,Maddy Montaquila (Leger),2025-03-05T20:09:09Z,MOAR,23,102,125
+github/gitignore,e82b7c85f37d66af2ec7166b93d4ebdd478a482e,Maddy Montaquila (Leger),2025-03-05T17:51:17Z,First pass at dotnet gitignore,161,0,161
+github/gitignore,aa95d6b79a275f8db58bb4433a862bdfe02d8bb9,Your Name,2025-03-05T12:00:09Z,optimize and more readable obsidian extended gitignore,3,5,8
+github/gitignore,1824e57c1d353ba610a3a2d9943d989582c12494,Math,2025-03-04T02:06:57Z,Create Luau.gitignore,9,0,9
+github/gitignore,9d66dabafaf4ee6ad5126363b7ace1a46ee07850,Tim Hunter,2025-03-03T18:20:18Z,Merge pull request #4593 from github/thorrsson-update-pr-template  Update PULL_REQUEST_TEMPLATE.md,16,5,21
+github/gitignore,54548843e3f5831a86721a403de1da59ed053cb7,Tim Hunter,2025-03-03T18:16:46Z,Update .github/PULL_REQUEST_TEMPLATE.md  Co-authored-by: Copilot <175728472+Copilot@users.noreply.github.com>,1,1,2
+github/gitignore,7b35656e7517d529f183f78c5ec33e3e741bd049,Mark Jaquith,2025-03-01T00:56:44Z,"Use a character class to ignore Icon\r directories  This prevents the rule from ending in whitespace, which will get stripped by tools like Ripgrep, causing any directory named ""Icon"" to be invisible.",1,3,4
+github/gitignore,d7348802cb6748ca528f1260a738862b57024213,Tim Hunter,2025-02-25T21:36:50Z,Update PULL_REQUEST_TEMPLATE.md  Updating the PR template to include a link to the contribution guidelines and a task list,16,5,21
+github/gitignore,b1c3c7b62b4c13de9ab394e4aa984e23994c30ce,Dogxi,2025-02-24T11:29:47Z,Merge pull request #1 from dogyyds/Nextjs  Create Nextjs.gitignore,36,0,36
+github/gitignore,8ff5b39b394b5fde3649d471e5c65abbcae6faa1,Dogxi,2025-02-24T11:22:59Z,Create Nextjs.gitignore  Create Nextjs.gitignore,36,0,36
+github/gitignore,e6b8c0e0df29c05f77a5f76ae551936d6a427622,Tim Hunter,2025-02-21T19:35:36Z,Merge pull request #4588 from sdepouw/patch-1  Update Godot.gitignore to ignore export_credentials.cfg,1,1,2
+github/gitignore,a3b250b638ccdae2b8b5eb19c543f961e10adcce,Nathan Schmitt,2025-02-21T03:57:42Z,"Ignore unneeded *.blend1 blender files  **Reasons for making this change:** By default, the Unity game engine supports the importing of Blender *.blend files and converts them to FBX internally (see documentation link below). Sometimes, blender stores *.blend1 files as a backup copy of your current blender file *.blend. Due to the nature of version control, redundant *.blend1 files do not need to be committed.  **Links to documentation supporting these rule changes:** [Unity supported file formats](https://docs.unity3d.com/Manual/3D-formats.html)",4,0,4
+github/gitignore,a69e6a8a147497d3a2911dd31485cce6ccb6d059,Scott DePouw,2025-02-21T01:08:23Z,"Update Godot.gitignore to ignore export_credentials.cfg  As of https://github.com/godotengine/godot/pull/76165, export_presets.cfg no longer contains sensitive information. Sensitive information now resides in export_credentials.cfg",1,1,2
+github/gitignore,471141b89c1d565a7da981ead53fe696d1901a49,Tim Hunter,2025-02-19T16:50:30Z,Merge pull request #4263 from jcs-PR/elisp  elisp: Ignore more build tools,7,1,8
+github/gitignore,20c397f71f2b1d8a97d03eb3daf17ec65fadae5d,Tim Hunter,2025-02-11T18:25:12Z,"Merge pull request #4567 from krewast/tex-bcf-save-error  Added ""*.bcf-SAVE-ERROR"" to TeX.gitignore",1,0,1
+github/gitignore,754920b804f212cf4e43425776b3289883af7085,Tim Hunter,2025-02-11T16:30:34Z,Merge pull request #4525 from StephenHodgson/patch-1  Update Unity.gitignore,1,0,1
+github/gitignore,aa8449f5bfd9da42a447a1598e6d56339a57ea46,Michał Janiszewski,2025-02-04T11:48:36Z,Add ARM64EC support to VisualStudio.gitignore,1,0,1
+github/gitignore,882b8cc98ef76d803d57a79b7cb16e20d213ef88,Wybren Koelmans,2025-02-01T13:59:00Z,Unity Visual Scripting auto generated files  https://docs.unity3d.com/Packages/com.unity.visualscripting@1.9/manual/vs-version-control.html,6,0,6
+github/gitignore,297239c101dcfdfae7e75757ed17ed993df0b4eb,Tim Hunter,2025-01-29T19:09:49Z,Merge pull request #4370 from chpatton013/main  Add Obsidian community gitignore files,58,0,58
+github/gitignore,d5ac09e92f96b4fe161d6086912f50d431c38926,Tim Hunter,2025-01-27T19:58:14Z,Merge pull request #4578 from quantum9Innovation/nix-direnv  feat(nix): add .direnv,3,0,3
+github/gitignore,3aa0c1a73b3d51b4230b19f5b8e1d7233468ee9a,Ananth Venkatesh,2025-01-25T02:07:42Z,feat(nix): add .direnv  very commonly used to enter Nix devshells (see https://github.com/nix-community/nix-direnv for more info),3,0,3
+github/gitignore,2466a63306cb6953e079fde8aa0129cbb68435e7,Tim Hunter,2025-01-23T18:03:52Z,Merge pull request #4281 from draco892/Feature/Flutter_GitIgnore  Add Flutter.gitignore file,119,0,119
+github/gitignore,05113e5183f7544b61d2acd1c137b67482ce7007,draco892,2025-01-23T16:53:16Z,"Update Flutter.gitignore  Remove ds_Store mac os related file  Co-authored-by: Tim Hunter <thorrsson@github.com>",0,1,1
+github/gitignore,40d480a1e91c51fa3717a67f3b49aa555343d6ec,draco892,2025-01-23T16:52:30Z,"Update Flutter.gitignore  Remove SVN related line  Co-authored-by: Tim Hunter <thorrsson@github.com>",0,1,1
+github/gitignore,4ba6b9dd42c97ed87ea7259536a61a62cdc41895,draco892,2025-01-23T16:52:11Z,"Update Flutter.gitignore  Remove Atom related line  Co-authored-by: Tim Hunter <thorrsson@github.com>",0,1,1
+github/gitignore,b607bcf970119625ef72032007ab2720e9f98f8c,draco892,2025-01-23T16:51:37Z,"Update Flutter.gitignore  Remove Visual Studio Code Setting related line  Co-authored-by: Tim Hunter <thorrsson@github.com>",1,2,3
+github/gitignore,558146d0f57f3e808a6e4273983f788226227e95,draco892,2025-01-23T16:51:02Z,"Update Flutter.gitignore  Removed Visual Studio Code related lines  Co-authored-by: Tim Hunter <thorrsson@github.com>",0,5,5
+github/gitignore,42995a40226e204452f6ff44e8dca5235e5e84c4,draco892,2025-01-23T16:50:38Z,"Update Flutter.gitignore  remove IntelliJ related lines  Co-authored-by: Tim Hunter <thorrsson@github.com>",0,5,5
+github/gitignore,8fac4a41b609fc443ce821f32f2ac2cbb01fc09f,draco892,2025-01-23T11:10:58Z,Merge branch 'github:main' into Feature/Flutter_GitIgnore,462,65,527
+github/gitignore,7a6c799a933e1430dee26b1741129a71fe376a80,Oliver Kopp,2025-01-20T10:18:40Z,Update TeX.gitignore,1,0,1
+github/gitignore,ab5cbc8521d2b3ad3ea59d40cfc40a278c0252cb,Oliver Kopp,2025-01-20T10:06:25Z,Refine pattern,1,1,2
+github/gitignore,8108d06ddd7624d740a15a38c1aec77e64762a4e,Oliver Kopp,2025-01-20T10:03:34Z,Add support for spelling package,3,0,3
+github/gitignore,d49bd6f0f797b97a4fe2bf09cecf4c2782f3ab6b,Devin Dooley,2025-01-17T21:20:13Z,Merge pull request #4289 from csauge/patch-1  Update Python.gitignore for .ruff_cache/,3,0,3
+github/gitignore,e8554d85bf62e38d6db966a50d2064ac025fd82a,Devin Dooley,2025-01-17T21:19:34Z,Merge branch 'main' into patch-1,459,65,524
+github/gitignore,f52d43edda64576954e5f60f28f17142f17636d5,krewast,2025-01-15T15:44:57Z,"Added ""*.bcf-SAVE-ERROR"" to TeX.gitignore",1,0,1
+github/gitignore,c6d141ddd4ceee0ad1cdab3b8421bbde78cdcd2d,Ashwin Gopalsamy,2025-01-12T03:30:52Z,feat(go.gitignore): ignore code coverage and IDE,8,1,9
+github/gitignore,1d7e3275a461a673b531d14a390c5238f04503a7,Ashwin Gopalsamy,2025-01-12T03:30:21Z,fix(go.gitignore): mark IDE-related ignore files as optional,2,2,4
+github/gitignore,b35b4c52e0c75db0b1f7ef521b00f9886cf0f8c8,Ashwin Gopalsamy,2025-01-12T03:17:34Z,feat(Jetbrains.gitignore): Add GoLand thats missing in Jetbrains IDE list,1,1,2
+github/gitignore,25c63fff04713b555799241a931758eb4e09cb07,Ashwin Gopalsamy,2025-01-12T03:04:53Z,feat(go.gitignore): ignore code coverage and IDE,8,1,9
+github/gitignore,a3259cbb0ad1a2c04123828f9433f361c5a30c2c,Mark Lazarides,2025-01-10T10:44:18Z,"modifies lib exclude, adds example lib include  explicitly excludes the `_Libraries` directory, and provides example of adding sub directories back in. Should be used for including custom and third party (non -Beckhoff shipped) libraries, improving maintainability",8,2,10
+github/gitignore,ceea7cab239eece5cb9fd9416e433a9497c2d747,Ben Sheldon [he/him],2025-01-09T22:49:50Z,Merge pull request #4350 from figsoda/rust  Remove Cargo.lock from Rust,0,4,4
+github/gitignore,4f5f531823580419fef9d607e3984ef4c9e9c13b,Daniel Johnson,2025-01-06T22:14:32Z,Merge pull request #4543 from NdagiStanley/patch-1  Update Node.gitignore to include VitePress,6,0,6
+github/gitignore,3800aff005a18b7f937fb6bbbdd4da2fc5261d24,Stanley M Ndagi,2024-12-23T11:16:03Z,Update Node.gitignore,4,5,9
+github/gitignore,0ce2e0628c82046e4fbc2918fb7dc28d6757b0db,Brad Ellert,2024-12-22T20:34:02Z,Add latexindent.pl backups to TeX.gitignore,3,0,3
+github/gitignore,47990e1d0aab82c7bdec85b3ba5e619d65448ab8,Stanley M Ndagi,2024-12-22T16:59:00Z,Update Node.gitignore,3,3,6
+github/gitignore,3aa43d91320bb827ebd9bd276489d02d01dd4d83,Stanley M Ndagi,2024-12-22T15:10:41Z,Update Node.gitignore,5,1,6
+github/gitignore,6eeebe6f49678aacd8311ce079842c971b3ebe96,Daniel Johnson,2024-12-18T18:15:09Z,Merge pull request #4458 from navan0/patch-1  Update Python.gitignore,3,0,3
+github/gitignore,e3e08c58b842beefa27d15e38b585c39c8ea6dba,Daniel Johnson,2024-12-17T21:32:38Z,Merge pull request #4424 from loupeteam/br-automation-studio  Add gitignore template for Automation Studio Projects,31,0,31
+github/gitignore,3491a70611762f4656b1e72af15c882b2f66044b,Daniel Johnson,2024-12-17T21:31:44Z,Merge pull request #4442 from zhiyuanzhai/patch-1  Add `*.bbl-SAVE-ERROR` TeX.gitignore,1,0,1
+github/gitignore,12f6772475d9b14459b6b0afdc9d5adc970e226e,Daniel Johnson,2024-12-17T21:14:38Z,Merge pull request #4539 from dietmarw/addModelica  Add gitignore for Modelica,42,0,42
+github/gitignore,218d0dcd59392545424195c569182ebe838197a0,Dietmar Winkler,2024-12-17T21:08:43Z,Remove OS specific settings covered by globals,0,3,3
+github/gitignore,1ea85c292d618e512727df55e64bb6bb0e2100b5,Tim Hunter,2024-12-17T18:46:58Z,Merge pull request #4542 from DrDead0/feature/firebase-gitignore  added gitignore for firebase,28,0,28
+github/gitignore,7111173b6b414609393d57e0d337afadcee6480a,DrDead0,2024-12-14T17:23:27Z,"Updated Firebase.gitignore based on feedback: scoped to Firebase, removed unrelated entries",1,17,18
+github/gitignore,077ec2d64ed63f9db51bba853ac9f1cd51654da1,Daniel Johnson,2024-12-06T20:03:00Z,Merge pull request #4544 from daniel-shuy/feature/kotlin-2  Update for Kotlin 2.x.x,27,1,28
+github/gitignore,1ed4f04303513eb78809b4541568cc0c12b721da,Daniel Johnson,2024-12-06T20:01:34Z,Merge pull request #4545 from KalleDK/patch-1  Added uv.lock alongside pdm and poetry,6,0,6
+github/gitignore,a38f687cecea81f63c55d4b05a6d3fcc88aa712a,Kalle Møller,2024-12-03T06:25:58Z,Added uv.lock alongside pdm and poetry,6,0,6
+github/gitignore,807578222ddd1dcef7d41c1dc9215751620f7246,Tim Hunter,2024-12-02T17:16:34Z,Merge pull request #4000 from tracetronic/create-ecu-test-gitignore,62,0,62
+github/gitignore,29d931584421f77a7d0bdaa43b0b75be50fae435,Daniel Shuy,2024-12-02T08:51:56Z,Update for Kotlin 2.x.x  Ignore Kotlin data directory for Kotlin Gradle plugin  Signed-off-by: Daniel Shuy <17351764+daniel-shuy@users.noreply.github.com>,27,1,28
+github/gitignore,5b3f2595aeaf5709211e27cb77a6a8139aea0a72,Stanley M Ndagi,2024-12-02T00:24:39Z,Update Node.gitignore  Include VitePress,4,1,5
+github/gitignore,b6ddf064dd1ffad9747164f333243bd6a7f4ce87,DrDead0,2024-12-01T15:47:36Z,added gitignore for firebase,44,0,44
+github/gitignore,ef51696ad769a2c7321ed16e9d92cf91335067a2,Tim Hunter,2024-11-27T19:10:03Z,Merge pull request #4540 from moser-jose/moserj  included lines in Laravel.gitignore file,7,0,7
+github/gitignore,77f5e60953b9473ef7c9841a2ebf829689a362d7,moser-jose,2024-11-27T02:40:25Z,remove lines /.fleet /.idea /.nova /.vscode /.zed,0,5,5
+github/gitignore,95c8bf079cf5600d967696c7f253e352ae77d83d,Tim Hunter,2024-11-24T00:51:50Z,Merge pull request #4173 from jmarsh411/main,1,0,1
+github/gitignore,78ad738f759ac42496be12a69af3776b80f8deae,moser-jose,2024-11-22T02:14:01Z,included lines in Laravel.gitignore file,12,0,12
+github/gitignore,b1ffcdbb332cf53a478f08f0db285e12c7f3d281,Tim Hunter,2024-11-19T23:10:04Z,Merge pull request #4520 from mediowen/main  Add OpenTofu to community,42,0,42
+github/gitignore,2254a873ce0b167a6ce8a18253ad596be0681115,Daniel Johnson,2024-11-19T20:36:20Z,Merge pull request #4512 from mergenci/fix-broken-links-to-git-book  Fix broken links to Git book,2,2,4
+github/gitignore,14c91a18cc0d7cecbee841f22be24293b91b0ced,Dietmar Winkler,2023-01-13T23:36:43Z,Adds some more OS specific file to the ignore list,8,1,9
+github/gitignore,6436b09caf3ea0f63674bf357e4846077addc6ad,Jawher Kl,2024-11-12T16:13:55Z,Create Angular.gitignore,94,0,94
+github/gitignore,5bb8f06fe633e88710d808fbe334bec384978e62,Bruno Vieira Costa,2024-11-11T16:37:11Z,Adding .abstra/,4,0,4
+github/gitignore,0c39deafa6f3488ff66e83a49e636b5302c37028,Niklas Wimmer,2024-11-09T21:36:51Z,"Fix ""build"" source folder being ignored (Gradle)",1,1,2
+github/gitignore,adf27650972ea7b4f798f815cfac70d0d2f8a909,Chris Jones,2024-11-04T03:46:37Z,Updated to match Python.gitignore,5,1,6
+github/gitignore,76bb00f3aaf817ba257ef68c3780770799911804,Chris Jones,2024-11-03T19:36:14Z,ignore `cmake-build-debug` generated by CMake in CLion IDE,3,0,3
+github/gitignore,51ae1adf9fb646b56f0b8f9a40f1dc685fb9d420,Michał Nowak,2024-10-30T21:24:40Z,Add ignore for .vsconfig  The engine generates the file during the build.,1,0,1
+github/gitignore,311418f087860f0a16e7f06a9245ef8f0d40eeef,Stephen Hodgson,2024-10-19T16:08:00Z,Update Unity.gitignore,1,0,1
+github/gitignore,76739a38b56907118c5a880d63250c99d5690a5a,Devin Dooley,2024-10-17T21:03:32Z,Merge pull request #4493 from MattKotsenas/patch-1  Exclude Directory.Build.rsp from VisualStudio.gitignore template,2,0,2
+github/gitignore,a3855f82b916b30d3e57805f4970ff6ef6a6fcb9,David Asabina,2024-10-17T19:37:53Z,feat: Add Gleam 1.5.x gitignore  this is useful for developers that init a gleam project into an existing git repo where the `gleam new` tool will refrain from populating the .gitignore file. This situation may occur for users of devenv.nix or flake.nix.,4,0,4
+github/gitignore,30ce81193f04e925167391a0ba65a9fe65c36c10,Owen Valentine,2024-10-16T15:20:16Z,Add OpenTofu to community,42,0,42
+github/gitignore,53cf297127b8c4613f5f3331b55cd7f465581e53,Devin Dooley,2024-10-15T16:55:18Z,Merge pull request #4408 from gregnazario/add-move  Adds Move language,6,0,6
+github/gitignore,c1469106b9552d07a4e8f07a27987cd05ecae336,Atul Kumar,2024-10-12T12:55:00Z,Jupyterlabs LSP virtual documents directory,4,0,4
+github/gitignore,92cceed6173076b0e5a52bb2417ca8cc1dd2abdf,Shane Reetz,2024-10-11T21:24:26Z,"Rename AutomationStudio4.gitignore to AutomationStudio, and move to Community folder",0,0,0
+github/gitignore,136e88cf4a96cc4f37828c77180ea123dd9f84c7,sctech,2024-10-11T20:13:01Z,combine community/libogc.gitignore with C.gitignore,58,7,65
+github/gitignore,5357b0df581a0c41d4004a46e370b81eca165105,sctech,2024-10-11T19:54:52Z,add libogc.gitignore (wii homebrew development),40,0,40
+github/gitignore,274c32303f1f86a42db55e2dab3107e560714010,Daniel Johnson,2024-10-04T19:44:36Z,Merge pull request #4388 from loozhengyuan/feat/update-kicad-temp-files  feat: add KiCad lock/autosave files,2,0,2
+github/gitignore,ad949c4f0161fcd1df070262cef7c70bdc1b3d4e,Greg Nazario,2024-02-06T19:43:00Z,Adds Move language  Move language is used for MoveVM based blockchains as the language native to them.  The compiler provides a folder build/ that holds the build artifacts.  The .aptos/ folder is ignored so people do not upload their private keys to a git repository.,6,0,6
+github/gitignore,e3e4933fa5594ebd69307ef573d882a077e2ddac,Cem Mergenci,2024-09-27T19:37:52Z,Fix broken links to Git book.,2,2,4
+github/gitignore,a8d08b1682cf72e8449e7f74566d8f7b93ac35da,Guillermo Rodríguez,2024-09-25T08:32:07Z,Add generated libtool file and .libs/ directories,2,0,2
+github/gitignore,9f181e93ce98cda0e200a02a13f7b017ad10f15f,Lamparter,2024-09-12T16:55:04Z,🙈 Update Cake comment line to match other comment lines,2,2,4

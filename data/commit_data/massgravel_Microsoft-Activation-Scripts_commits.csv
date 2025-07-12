@@ -1,0 +1,301 @@
+repo,sha,author,date,message,additions,deletions,total_changes
+massgravel/Microsoft-Activation-Scripts,5ad6226f37e7af75807819d669ff5ae0e3421a87,WindowsAddict,2025-06-03T13:07:59Z,Revert export-ignore,3,3,6
+massgravel/Microsoft-Activation-Scripts,ae9f4e34ffa18817ce3b7746094520dec5e2cf34,WindowsAddict,2025-06-03T13:01:39Z,export-ignore,3,3,6
+massgravel/Microsoft-Activation-Scripts,67abcd0c8925832fcf4365b9cf3706ab6fbf8571,WindowsAddict,2025-06-03T12:55:10Z,3.4,13,13,26
+massgravel/Microsoft-Activation-Scripts,faf3bf3a08f875d0f3df2ef8bb089d0ab5c42049,WindowsAddict,2025-06-03T11:53:00Z,Update KMS server list,4,4,8
+massgravel/Microsoft-Activation-Scripts,482600c890468cc1f818633ed0787589398a57a7,WindowsAddict,2025-06-03T11:14:13Z,Show info related to expired Office preview products,113,41,154
+massgravel/Microsoft-Activation-Scripts,dc90e1ff0fbf3d3a5dc47d3c54afb265a304e689,WindowsAddict,2025-06-03T09:25:20Z,Update info message related to ZCID,28,26,54
+massgravel/Microsoft-Activation-Scripts,f969378f6b6a958d9f0913c58315bb17cf54e88b,WindowsAddict,2025-06-03T08:05:40Z,Fix a bug in unattended mode in TSforge,4,0,4
+massgravel/Microsoft-Activation-Scripts,c89bebdee8880bb4d288f813cf4f4b32c3b80f79,WindowsAddict,2025-06-01T15:40:50Z,Revert export-ignore,3,3,6
+massgravel/Microsoft-Activation-Scripts,be7d101df5bf99d959b1f2d16557b88614ac7920,WindowsAddict,2025-06-01T15:27:31Z,Merge branch 'dev',2525,549,3074
+massgravel/Microsoft-Activation-Scripts,55b6fce50aba2229f8a071aa8de439d8d7f763b0,WindowsAddict,2025-06-01T15:16:56Z,Update readme,2,2,4
+massgravel/Microsoft-Activation-Scripts,6566bb53c12c9d9c3d892f8eb41340366bdf9d5d,WindowsAddict,2025-06-01T15:01:23Z,export-ignore,3,3,6
+massgravel/Microsoft-Activation-Scripts,2e44a4a77bc4564c6ad38fa09ff4e134765c6b31,WindowsAddict,2025-06-01T15:00:48Z,3.3,10,10,20
+massgravel/Microsoft-Activation-Scripts,9073a35fe00b7b40b8086a0036e4f13a20e9d4f4,WindowsAddict,2025-06-01T14:57:57Z,Add StaticCID and KMS4k method in TSforge,1887,260,2147
+massgravel/Microsoft-Activation-Scripts,9f244ddc179b3fd3479aebec58cbc26c1bebb78a,WindowsAddict,2025-05-27T16:40:02Z,Fix grammar,6,6,12
+massgravel/Microsoft-Activation-Scripts,8ed0c6874bf63f3b3c9499a7cd7546611f75be02,WindowsAddict,2025-05-27T16:34:35Z,Suggest TSforge for Office where Windows is not supposed to get feature upgrades,9,0,9
+massgravel/Microsoft-Activation-Scripts,a99acbb02557409e553f2e2c9cb906b8682cfb04,WindowsAddict,2025-05-27T15:13:23Z,Update Powershell error detection code,120,40,160
+massgravel/Microsoft-Activation-Scripts,be867f6616e7408342c00346bcee49268b966778,WindowsAddict,2025-05-27T14:02:44Z,Update links,45,25,70
+massgravel/Microsoft-Activation-Scripts,fc80735dacd135daf6f0f1821ff80773022b76a0,WindowsAddict,2025-05-24T19:08:43Z,Improve fix info in the script,8,32,40
+massgravel/Microsoft-Activation-Scripts,69c469a9971379b5c3eb955866896cf230e8a6bc,WindowsAddict,2025-05-23T13:26:14Z,Update old Office version detection with subscription license,4,4,8
+massgravel/Microsoft-Activation-Scripts,6e74d497218be8f47ab7e547c5eb60e677612360,WindowsAddict,2025-05-23T12:50:53Z,Minor fix,4,2,6
+massgravel/Microsoft-Activation-Scripts,ae93f547f58417191cbdc59f4d2be282cdd8ffe0,WindowsAddict,2025-05-23T12:24:17Z,Add the option to change Office update channel to VL and from VL to retail,354,104,458
+massgravel/Microsoft-Activation-Scripts,830755f6b606446225ca4535a6a0d45ba9f8c052,WindowsAddict,2025-05-18T12:41:04Z,Fix an issue in detecting Office preview licenses in TSforge,2,2,4
+massgravel/Microsoft-Activation-Scripts,a149fc5f2048b135c649a04da89e1b2f3178b449,WindowsAddict,2025-05-18T07:22:40Z,Change hash,1,1,2
+massgravel/Microsoft-Activation-Scripts,b75ba72bc5ff9ccd80a225a1f7410ab051949a6a,WindowsAddict,2025-05-18T07:22:40Z,Change hash,1,1,2
+massgravel/Microsoft-Activation-Scripts,206c31ece505276f62f0e1cb9f49f0811d264864,WindowsAddict,2025-05-18T06:39:25Z,Open mirror pages along with massgrave.dev,22,22,44
+massgravel/Microsoft-Activation-Scripts,133d3b9720c29d0d566f8e6bb117a802fda0c454,WindowsAddict,2025-05-18T05:16:12Z,Edit the info related to Mondo conversion,10,8,18
+massgravel/Microsoft-Activation-Scripts,fc2348bf53a13665bae3f869283798f6dca5373a,WindowsAddict,2025-05-17T22:09:29Z,Add some info related to O365 to Mondo conversion in TSforge,10,0,10
+massgravel/Microsoft-Activation-Scripts,966fbd14f6b4f17ee07c9ccc1d97dc499d16fc0f,WindowsAddict,2025-05-17T21:17:41Z,Don't ask to run other fixes if file infector malware is detected,6,6,12
+massgravel/Microsoft-Activation-Scripts,691e6088d516f25b61cd3de0362668de3be5199b,WindowsAddict,2025-05-17T21:11:47Z,Use user temp folder or random name in Windows/Temp,15,15,30
+massgravel/Microsoft-Activation-Scripts,74b7c74218f8f0f4fd87b2a71b985ed604fb380e,WindowsAddict,2025-05-17T20:10:41Z,Continue to activate in case of errors,4,4,8
+massgravel/Microsoft-Activation-Scripts,4c53e6231baeeb9985a7721a54c32e6fed854ce8,WindowsAddict,2025-05-08T00:01:04Z,Fix Microsoft links,40,40,80
+massgravel/Microsoft-Activation-Scripts,2d00dfa704c709b78303191c4b66fe9ae533dced,WindowsAddict,2025-05-06T17:40:58Z,Revert export-ignore,3,3,6
+massgravel/Microsoft-Activation-Scripts,bf28e4fbddb9d6362ebe17f5fb890ff5a3c92d35,WindowsAddict,2025-05-06T17:07:54Z,export-ignore,3,3,6
+massgravel/Microsoft-Activation-Scripts,2a2352428eb2735ceb973f1d3795948dddf71752,WindowsAddict,2025-05-06T17:06:13Z,3.2,13,13,26
+massgravel/Microsoft-Activation-Scripts,be9215b7284f2666175d7a55fea45ebdfe446e93,WindowsAddict,2025-05-06T14:31:06Z,Fix goback button in change Office edition script,2,0,2
+massgravel/Microsoft-Activation-Scripts,93cf3864f5a73e9b8f61487eafcbac18ea1bf2b9,WindowsAddict,2025-05-06T14:23:15Z,Directly go back when asked to press key to ignore opening support page,10,0,10
+massgravel/Microsoft-Activation-Scripts,d47a750badb43077fe13ee87db4464302e14712b,WindowsAddict,2025-05-06T13:59:19Z,Detect Powershell 1.0 on Server 2008 and ask to install Powershell 2.0,24,50,74
+massgravel/Microsoft-Activation-Scripts,817bfe84de80b15cc407e423872757ec0a258ec5,WindowsAddict,2025-05-06T12:56:33Z,Don't ask to run SFC scan if malware is found,20,0,20
+massgravel/Microsoft-Activation-Scripts,2b40259b335d6ac42f012fc368370c5e2aa032d8,WindowsAddict,2025-05-06T12:39:33Z,Add fixes for CAS,6,6,12
+massgravel/Microsoft-Activation-Scripts,a514a99d0e0e3e8337bae572fafb32d8ebddf37c,WindowsAddict,2025-05-06T12:17:27Z,Update an error message in KMS script,2,2,4
+massgravel/Microsoft-Activation-Scripts,2a806c2e0cb64cd600476261963b8b7a0f59951c,WindowsAddict,2025-05-06T12:09:26Z,Fix ARM32 Office detection,44,44,88
+massgravel/Microsoft-Activation-Scripts,b3aaff5110772927d0c4b6bdcb486d45b730a3aa,WindowsAddict,2025-05-06T11:44:27Z,Update Windows 7 ESU 4-6y info,4,2,6
+massgravel/Microsoft-Activation-Scripts,bcc4214e8ab8919d7cb81aad2ba1043b554f2cf0,WindowsAddict,2025-05-05T17:08:51Z,Add O365AppsBasicRetail conversion in KMS script,2,2,4
+massgravel/Microsoft-Activation-Scripts,9e80556df50d7273a6fbd4d28104ba635b7746a2,WindowsAddict,2025-05-05T16:55:54Z,Add O365AppsBasicRetail support,2,0,2
+massgravel/Microsoft-Activation-Scripts,b24bb9bde121a2fea55ac6c634f1bc510cdf3265,WindowsAddict,2025-05-04T11:34:06Z,Remove () from product name,6,6,12
+massgravel/Microsoft-Activation-Scripts,dfebdefebaf1b4ba3052b4ebe165482d7aaa13a4,WindowsAddict,2025-05-03T20:51:50Z,Add Office 2010 Publisher Retail key,2,2,4
+massgravel/Microsoft-Activation-Scripts,1bdee1ce6fd3ad64d1ae708daa7df65b54993ac2,WindowsAddict,2025-05-03T19:33:13Z,Improve edition package detection,13,0,13
+massgravel/Microsoft-Activation-Scripts,4e702068bea2cd5372904389ac687c75bc13223f,WindowsAddict,2025-04-29T17:36:43Z,Revert export-ignore,3,3,6
+massgravel/Microsoft-Activation-Scripts,69452365901e7686bc003cdf135af5fd8afee5ea,WindowsAddict,2025-04-29T17:15:01Z,Merge branch 'dev',9394,4748,14142
+massgravel/Microsoft-Activation-Scripts,5872b7df53cb1d0e4316860897a0725695dc4864,WindowsAddict,2025-04-29T17:10:56Z,3.1  Added Ohook support for OSPP based Office on Vista and later,1281,789,2070
+massgravel/Microsoft-Activation-Scripts,b8ad749bac256882fd5ec1c3b2924ff86e681c90,WindowsAddict,2025-04-21T14:52:13Z,Fix issue related to URL opening in unattended mode,7,7,14
+massgravel/Microsoft-Activation-Scripts,5090cde0a04698521979d48f28f670827a69d74e,WindowsAddict,2025-04-21T12:31:09Z,Use wmic.exe on builds below 9200,23,20,43
+massgravel/Microsoft-Activation-Scripts,af18bd773c1b4bb4dd1c4e055ab154cccfa7782f,WindowsAddict,2025-04-20T20:59:22Z,Fix a missing echo,1,1,2
+massgravel/Microsoft-Activation-Scripts,52ba9f138f2a256c4f95de464073fd2778595e56,WindowsAddict,2025-04-20T19:23:08Z,Ask to run DISM restore and SFC scan when system files are missing,36,0,36
+massgravel/Microsoft-Activation-Scripts,98ef9db3ceffd5fdb49e3a4433be4a76a9a986ca,WindowsAddict,2025-04-20T14:05:53Z,Add TSforge and Online KMS support for Vista/Server2008,1211,281,1492
+massgravel/Microsoft-Activation-Scripts,172fd7b1c521e84d721653e4c57bec2e321493ad,WindowsAddict,2025-04-16T21:41:21Z,Fix crash issue when scripts are running under a path with special characters,14,16,30
+massgravel/Microsoft-Activation-Scripts,372eb73a02260cf4bc6fd424bcc6216fa8a15be2,WindowsAddict,2025-04-16T20:17:13Z,Add updated TSforge code,5056,3274,8330
+massgravel/Microsoft-Activation-Scripts,a1614e128348a8e6953e318cc5f6522a1fa2621d,WindowsAddict,2025-04-16T02:33:58Z,Convert HomeStudentARM IDs to Mondo because phone license isn't available for them,22,0,22
+massgravel/Microsoft-Activation-Scripts,e8bf344f745358e140b75dff677bb745e4a8cafa,WindowsAddict,2025-04-16T00:44:40Z,Add support for O365 15.0 in TSforge because phone license exist,10,2,12
+massgravel/Microsoft-Activation-Scripts,70162c413026ec938f1049b1e4011ac64945e31e,WindowsAddict,2025-04-16T00:00:31Z,Add support for external LibTSforge.dll if found in BIN folder,38,18,56
+massgravel/Microsoft-Activation-Scripts,294837dfe0eed177b177954e7ba8b5841af55264,WindowsAddict,2025-04-15T22:17:15Z,Add the updated CAS by abbodi1406,1497,495,1992
+massgravel/Microsoft-Activation-Scripts,f5a0a63165d9e6b57719f48322baac60e29a2e6a,WindowsAddict,2025-04-15T03:09:39Z,Cleanup leftover branding.xml related code,12,120,132
+massgravel/Microsoft-Activation-Scripts,0d61475468de80b7f711038384e754331a14c7d8,WindowsAddict,2025-04-15T01:32:19Z,Fix an issue where Office doesn't need activation but TSforge would show phone license missing error,50,0,50
+massgravel/Microsoft-Activation-Scripts,c316b42e5cd166aa5c10a54d03ca0c5e5d63f4cd,WindowsAddict,2025-04-13T22:40:58Z,"Simplify the code related to ""disable quickedit and avoid Terminal app""",180,190,370
+massgravel/Microsoft-Activation-Scripts,3b739d7e2bac5ac01c0dac87855ca1fb72c6b54b,WindowsAddict,2025-04-12T22:55:10Z,Add malware check in Powershell test,110,10,120
+massgravel/Microsoft-Activation-Scripts,8673fbbfdabf9fdf34823c4e276ed3a4ef4095ba,WindowsAddict,2025-04-12T22:15:34Z,Add -nop -c with Powershell,22,22,44
+massgravel/Microsoft-Activation-Scripts,60dd549a4982c39f972271b638f3af2ab98c776e,WindowsAddict,2025-04-12T14:37:24Z,Don't add SharedComputerLicensing registry on Server for old Office versions,4,4,8
+massgravel/Microsoft-Activation-Scripts,1e3c0aaedfab33362007458996f38ba5de4c7192,WindowsAddict,2025-04-12T13:30:48Z,Fix MSI Office detection for Visio and few other products,614,510,1124
+massgravel/Microsoft-Activation-Scripts,fe001e6c39777cce8d059c0da35ea48a109ac929,WindowsAddict,2025-03-15T21:34:40Z,Elaborate help message,186,186,372
+massgravel/Microsoft-Activation-Scripts,c4f33e96c472484b89b81d6b29cb995ea8148bf1,WindowsAddict,2025-03-15T21:04:10Z,Update WPA keys check code,18,18,36
+massgravel/Microsoft-Activation-Scripts,313f240448953cd5fe3c5631f4e4de502f23fc9a,WindowsAddict,2025-03-14T09:57:57Z,Change file hash,1,1,2
+massgravel/Microsoft-Activation-Scripts,69f1a206fb17d2d101954ed221094295d8dc5d59,WindowsAddict,2025-03-14T09:57:57Z,Change file hash,1,1,2
+massgravel/Microsoft-Activation-Scripts,ab0cd24f89f5b16a35cc7a685b59d5fe5460289d,WindowsAddict,2025-02-23T19:06:35Z,Add more checks for powershell,190,70,260
+massgravel/Microsoft-Activation-Scripts,55afa30fcd9147fe54ad1a85193e9777df2bb63b,WindowsAddict,2025-02-23T15:06:55Z,Improve powershell test,250,220,470
+massgravel/Microsoft-Activation-Scripts,5e7e42a44655993b4975e9616b20ff2b8c8d0b59,WindowsAddict,2025-02-22T15:22:26Z,Add a backup url in update check,100,40,140
+massgravel/Microsoft-Activation-Scripts,a9eda8f572653ae1459757018f8a9691411635ef,WindowsAddict,2025-02-22T14:43:09Z,"Select 1 and 2Y ESU as well instead of only 3Y, just to be sure",12,4,16
+massgravel/Microsoft-Activation-Scripts,a5bcfdd3e66db80694b44f323e1f7e40e30364a4,WindowsAddict,2025-02-22T14:20:37Z,Update info in tsforge uninstall section,2,4,6
+massgravel/Microsoft-Activation-Scripts,8d67d62c1590a0e6808557ff32c5325462a16879,WindowsAddict,2025-02-17T23:14:35Z,Update esu info,4,4,8
+massgravel/Microsoft-Activation-Scripts,6adb247334ed7cff17cc7ce2089fd2d4e77771bf,WindowsAddict,2025-02-17T22:12:42Z,Update W10 ESU editions list as per 19045.5552,8,8,16
+massgravel/Microsoft-Activation-Scripts,6c8732dd06e8ea604232b8fbd17218526c6f9552,WindowsAddict,2025-02-17T22:05:32Z,Correct the chart link in readme,2,1,3
+massgravel/Microsoft-Activation-Scripts,9765e7d05f585fc2966547d75550841b17f52248,WindowsAddict,2025-02-13T17:47:18Z,Revert-export-ignore,3,3,6
+massgravel/Microsoft-Activation-Scripts,60c99742ce9ff1c675c6e381e17b0f4ccf1a57bd,WindowsAddict,2025-02-13T17:40:49Z,3.0,13907,421,14328
+massgravel/Microsoft-Activation-Scripts,8f3f3925177b26cf21b8dbd5cad6debf0e3b2e19,WindowsAddict,2025-02-03T18:27:37Z,Add updated CAS,18,58,76
+massgravel/Microsoft-Activation-Scripts,af69d79c5c1d05c56959a7f6266c893cb28a0cda,WindowsAddict,2025-02-03T14:02:03Z,check main domain,6,2,8
+massgravel/Microsoft-Activation-Scripts,63045afc708028e867f02a3cd135c6e7ebe5fa53,WindowsAddict,2025-02-02T13:51:01Z,Remove activation not required line in HWID,0,2,2
+massgravel/Microsoft-Activation-Scripts,19c6612a4709694630471a3de685dbe955dbe12d,WindowsAddict,2025-02-02T12:55:46Z,Optimize the tests,4,12,16
+massgravel/Microsoft-Activation-Scripts,9e6f386819c5c64287e25a8229107dcdd6d91c7e,WindowsAddict,2025-02-02T12:43:28Z,Fix licensing servers tests,12,22,34
+massgravel/Microsoft-Activation-Scripts,b5ba36c033f160a7e8814d6f96d33ebfc5105e67,WindowsAddict,2025-02-01T22:20:02Z,Remove UnQuickEdit in check activation script,0,36,36
+massgravel/Microsoft-Activation-Scripts,d10b6d691e4af66c22fc5038ef9c50ee4c197ab1,WindowsAddict,2025-02-01T15:48:21Z,Update licensing servers test section,54,34,88
+massgravel/Microsoft-Activation-Scripts,de812acdc5cfa814ba55dd4b6fb0780cb83f1906,WindowsAddict,2025-01-31T12:55:56Z,show error info on screen when unable to connect to licensing servers,2,0,2
+massgravel/Microsoft-Activation-Scripts,75c34cbf50acd9fb82fd16f6894f6d61b35bc288,WindowsAddict,2025-01-29T20:55:04Z,Add updated CAS by abbodi1406,711,427,1138
+massgravel/Microsoft-Activation-Scripts,0d533338a1c1bd55fbb76b2894f6e6a0464dcc7f,WindowsAddict,2025-01-29T20:38:55Z,Use installed licences edition ids list only from 17063,2,2,4
+massgravel/Microsoft-Activation-Scripts,411f38770516efbd0bef19e85ad2ac0fa731cfad,WindowsAddict,2025-01-29T20:29:45Z,Fix a bug on 7 where it can't list multiple ids,6,6,12
+massgravel/Microsoft-Activation-Scripts,be44b2d887e04ffcce3c987dbf3cc19ba695d912,WindowsAddict,2025-01-29T19:21:46Z,"Don't check tasks if csvlk is installed, don't show wlms in red",10,20,30
+massgravel/Microsoft-Activation-Scripts,0c88f6bc2c6b730ab2512bc5368173ea89c44657,WindowsAddict,2025-01-20T17:05:47Z,Change error detection for ImageState,10,10,20
+massgravel/Microsoft-Activation-Scripts,d31e4ab0cb813c59f55c3aff55b5118fec7d82bb,WindowsAddict,2025-01-17T16:28:29Z,Remove error variable from non-critical errors,15,20,35
+massgravel/Microsoft-Activation-Scripts,9fd5a661ab3d30412967aeb3845a0aa4bdf6013d,WindowsAddict,2025-01-17T14:54:54Z,Change some variable names,27,23,50
+massgravel/Microsoft-Activation-Scripts,b732e2c8d71d438228f82f0ac850a37b4f8ffb42,WindowsAddict,2025-01-17T11:58:44Z,Remove permanent activated IDs check in Office scripts,3,136,139
+massgravel/Microsoft-Activation-Scripts,8e2677b1f9b05aa3fe6bba3d900e1c2dfd852584,WindowsAddict,2025-01-16T23:04:03Z,Check license files instead of folder in change edition,2,2,4
+massgravel/Microsoft-Activation-Scripts,f2e40bf88e98c823de1efe81d8edeed97acbaf52,WindowsAddict,2025-01-08T19:14:02Z,Fix an issue where the script doesn't show fix licensing suggestion,5,5,10
+massgravel/Microsoft-Activation-Scripts,a4f9b219ab7ddf16312543a9a22728f165922074,WindowsAddict,2025-01-08T18:51:13Z,Change wordings,5,5,10
+massgravel/Microsoft-Activation-Scripts,7262a44ba2f22abd8fe712abcfc7e4fe62b1a300,WindowsAddict,2024-12-21T15:45:21Z,Add obscure product keys,44,6,50
+massgravel/Microsoft-Activation-Scripts,37ec96504a2983a5801c43e975ab78c8f9315d2a,WindowsAddict,2024-12-21T10:18:02Z,Fix registry count,4,4,8
+massgravel/Microsoft-Activation-Scripts,051b4f673f070c1fd2728c82a700ca26b168cb32,WindowsAddict,2024-12-20T23:07:12Z,Revert export-ignore,3,3,6
+massgravel/Microsoft-Activation-Scripts,3ef6d7292e0b45801827988445396ee477ff46ab,WindowsAddict,2024-12-20T23:02:25Z,export-ignore,3,3,6
+massgravel/Microsoft-Activation-Scripts,0d9ffd20521af00c4166eeb2ede92a60f5ba35af,WindowsAddict,2024-12-20T22:52:05Z,2.9,35,20,55
+massgravel/Microsoft-Activation-Scripts,9f00df5aeeb2e37ca648333f461e5953fc8152e9,WindowsAddict,2024-12-20T19:51:27Z,Add a link for service fix,34,9,43
+massgravel/Microsoft-Activation-Scripts,d6aa8b97d1052de1bd3bf59408151d61274b17a6,WindowsAddict,2024-12-20T15:34:56Z,Show update related troubleshooting when activation fails,34,8,42
+massgravel/Microsoft-Activation-Scripts,c00b076a86fdf3bde719c2f88ea626ee6a367460,WindowsAddict,2024-12-20T14:27:08Z,change label name,18,18,36
+massgravel/Microsoft-Activation-Scripts,8fff2ccb9c243e3fa15233fe50026ba34a6fc6b3,WindowsAddict,2024-12-20T12:29:19Z,Check all act ids for errors instead of installed key's act id,14,14,28
+massgravel/Microsoft-Activation-Scripts,5638898eaf3bd87df534cc67c94eeb5141cd82c2,WindowsAddict,2024-12-20T11:49:35Z,Update license cleanup,0,6,6
+massgravel/Microsoft-Activation-Scripts,22ed7a7a07e4187cef22194ff440df1b0fd6fc29,WindowsAddict,2024-12-20T11:19:21Z,Update subscription editon keys,8,8,16
+massgravel/Microsoft-Activation-Scripts,f1ddb83df092478741344fc55351a65cf6eeafd8,WindowsAddict,2024-11-11T08:58:28Z,Update link in read me,4,1,5
+massgravel/Microsoft-Activation-Scripts,4dd0215ccc181561a9b0d363080e693dd01fd337,WindowsAddict,2024-11-10T11:01:18Z,Remove the box,0,33,33
+massgravel/Microsoft-Activation-Scripts,ec259dfbd785bb2f6b6cc78d17b5fb62a9125d9a,WindowsAddict,2024-11-09T19:17:15Z,Fix a typo,2,2,4
+massgravel/Microsoft-Activation-Scripts,bbdc9bdfd8cb9d9a7cacb5a1d0e543c34f4e9bde,WindowsAddict,2024-11-09T16:22:43Z,Revert export-ignore,3,3,6
+massgravel/Microsoft-Activation-Scripts,7d036f57fd26a53269d4b64c789cbb1f5ebccf6a,WindowsAddict,2024-11-09T16:20:23Z,Export-ignore,3,3,6
+massgravel/Microsoft-Activation-Scripts,ab90514b0a4afd9fd711d2d79c6688d8296671b9,WindowsAddict,2024-11-09T15:43:50Z,2.8,13,13,26
+massgravel/Microsoft-Activation-Scripts,25abc1f457712275461fcc18aa884763cd0530fd,WindowsAddict,2024-11-09T15:12:20Z,Don't show other fixes when HKU\S-1-5-20 is missing,5,0,5
+massgravel/Microsoft-Activation-Scripts,873c4bc4d8fb735e100116782b63f4dd54c355f7,WindowsAddict,2024-11-09T15:05:41Z,Detect a potential script crash when user installs too many licenses for Office,48,0,48
+massgravel/Microsoft-Activation-Scripts,0b402d9afe04bc7d820b7337db28e62c1d2e15ad,WindowsAddict,2024-11-09T00:24:18Z,Update readme,1,1,2
+massgravel/Microsoft-Activation-Scripts,5141866f0a6c100023f64411720b7d634b2152b0,WindowsAddict,2024-11-09T00:19:07Z,Update ReadMe,4,1,5
+massgravel/Microsoft-Activation-Scripts,f0618824a4c631c39496ade0f4c2f40ad4c8413e,WindowsAddict,2024-11-09T00:10:56Z,Get edition ID from WMI,25,5,30
+massgravel/Microsoft-Activation-Scripts,03cc88193dadab2647966c308b715b57c27a0978,WindowsAddict,2024-11-08T22:55:44Z,Fix an issue in edition list when Windows sub license is present,14,16,30
+massgravel/Microsoft-Activation-Scripts,897a9db808acc5c7f3bd3af68125956abc155271,WindowsAddict,2024-11-08T21:13:31Z,Suggest repair_upgrade for HKU\S-1-5-20 error,10,10,20
+massgravel/Microsoft-Activation-Scripts,9bbd02cc91c44713af91f066bfa5ea5ed898f1fa,WindowsAddict,2024-11-08T16:46:51Z,Update PUP detection,55,25,80
+massgravel/Microsoft-Activation-Scripts,d1dca45710203de32fc7bfe0b3a67061dd135bbd,WindowsAddict,2024-11-08T15:36:48Z,Update ReadMe,43,18,61
+massgravel/Microsoft-Activation-Scripts,5e712529936ad1ef70cd682e76ee9eeac47ffafd,WindowsAddict,2024-11-08T14:40:19Z,Change DarkRed to Red,9,9,18
+massgravel/Microsoft-Activation-Scripts,1db017f1f1d8960cbd18afe384358bcf8ac6f5a2,WindowsAddict,2024-11-08T14:29:34Z,Better info when key is not found,80,28,108
+massgravel/Microsoft-Activation-Scripts,d06ba7fc4cd1c3dd650ca0ca020cfa6f64cfee4a,WindowsAddict,2024-11-07T23:51:08Z,Show info to read blue lines,62,0,62
+massgravel/Microsoft-Activation-Scripts,99954a905601654388199f1d71ca94d112dce191,WindowsAddict,2024-11-07T21:05:41Z,Add troubleshooting info for IMAGE_STATE_UNDEPLOYABLE,45,10,55
+massgravel/Microsoft-Activation-Scripts,fcb710a48aed6a69eacf574e6a16c559953de4e6,WindowsAddict,2024-11-05T16:53:02Z,Add an error code to detect WMI error,7,7,14
+massgravel/Microsoft-Activation-Scripts,0cbaa141c319958765d9a4d618d9f0b0b68f8b81,WindowsAddict,2024-11-05T12:13:20Z,Update keys,8,8,16
+massgravel/Microsoft-Activation-Scripts,9d1964cedaeb5486bf839083f342bf2b8d90fcc9,WindowsAddict,2024-11-03T03:01:56Z,Increase time out,40,40,80
+massgravel/Microsoft-Activation-Scripts,0477cf13e1f6cf9bb2e69d6416fefd295a1c5c07,WindowsAddict,2024-11-03T00:48:19Z,Fix repair setup detection on W10 ARM64,30,40,70
+massgravel/Microsoft-Activation-Scripts,9b568d4b4e4f1dea23e6ee2685f889525dc17195,WindowsAddict,2024-11-03T00:15:45Z,Mention all W10 keys in change edition because of issues with x86PS / pkeyhelper.dll on W10 ARM64,26,2,28
+massgravel/Microsoft-Activation-Scripts,1c9fe0815e81c38e4203d11ed556bcbb1c02194f,WindowsAddict,2024-11-02T23:31:19Z,Bug fix - Add a missing label in change edition section in AIO,11,0,11
+massgravel/Microsoft-Activation-Scripts,a5dd99ac0022b9e6a76d78888ff60264e46c2375,WindowsAddict,2024-11-02T21:02:03Z,Show info when latest office products are not in the list,22,2,24
+massgravel/Microsoft-Activation-Scripts,1849dd307500503bd5447daa13c5693017522b3d,WindowsAddict,2024-10-31T00:30:02Z,Show 3rd party AV list when Powershell check fails,18,9,27
+massgravel/Microsoft-Activation-Scripts,8fe0b24945b5df8462dba06b88d024e4a003b525,WindowsAddict,2024-10-30T14:49:09Z,Fix a bug Thanks to abbodi1406 for notifying,36,18,54
+massgravel/Microsoft-Activation-Scripts,7c69c471c54122e33976b256d5dad531b6525741,WindowsAddict,2024-10-30T04:59:31Z,Fix bugs due to x86 Powershell (No ARM64/x64) on Windows 10 ARM64,110,59,169
+massgravel/Microsoft-Activation-Scripts,f32cb934dcd1331018cfd3745f942147a44e830b,WindowsAddict,2024-10-28T06:48:04Z,"Remove W7 Embedded Standard activation with Volume:BA Even though it reports its activated, its wlms service doesn't accept it and the system gets shutdown after 1 hour",0,2,2
+massgravel/Microsoft-Activation-Scripts,7a6e63a462ba7b5929db91571cc02e819736bde7,WindowsAddict,2024-10-28T06:39:40Z,Improve WLMS service check,0,10,10
+massgravel/Microsoft-Activation-Scripts,d76b2ea57ea21f23ecefce1d698e32ced3b1b1be,WindowsAddict,2024-10-28T06:30:30Z,Remove update registry check in malware detection,0,45,45
+massgravel/Microsoft-Activation-Scripts,1f0e04519adbe3531d550f2af2f1387e0e0a39d6,WindowsAddict,2024-10-28T05:39:59Z,Add support for UWP Office activation in Online KMS,175,27,202
+massgravel/Microsoft-Activation-Scripts,d059952ecd10e79626da4630123c57a4f50b9808,WindowsAddict,2024-10-25T00:29:10Z,Improve SID detection in uninstall section,12,2,14
+massgravel/Microsoft-Activation-Scripts,6efb5d50fec167b3bf09d0122840c67c74508de8,WindowsAddict,2024-10-21T22:06:28Z,Suppress error output when screen size is smaller than the cmd window size,12,12,24
+massgravel/Microsoft-Activation-Scripts,b2831795a480a1bd9e23875576d0bee1a3cac013,WindowsAddict,2024-10-21T21:39:33Z,Show wlms service in red,20,0,20
+massgravel/Microsoft-Activation-Scripts,4e8ebecd3dbed5b0149cbe5df630b6b63812a81e,WindowsAddict,2024-10-21T21:29:36Z,Fix a bug where excluded apps name needs to be in lowercase,26,26,52
+massgravel/Microsoft-Activation-Scripts,d929cd8fa02c49fb1cd6cd8e48c98a9d1f2c91b1,WindowsAddict,2024-10-21T21:26:17Z,Add a separate option for add/remove apps,172,28,200
+massgravel/Microsoft-Activation-Scripts,d384c5f2f79f12f8d4aa18797452e8839cb99cf3,WindowsAddict,2024-09-29T23:57:33Z,Improve useraccounts SID check and don't show errors because it's not very important,96,114,210
+massgravel/Microsoft-Activation-Scripts,643d4f077fd2d46e9595aa1f845dfd051e51cddb,WindowsAddict,2024-09-29T22:29:35Z,Change clipsvc service failure info to gray color,4,4,8
+massgravel/Microsoft-Activation-Scripts,db26b75b64f4f55959186566e5c936f169c76bc0,WindowsAddict,2024-09-29T22:14:33Z,Merge branch 'master' into dev,1,1,2
+massgravel/Microsoft-Activation-Scripts,07ad5a208dbe0f4cb570c22a11b27d864c7905c6,WindowsAddict,2024-09-28T22:21:04Z,Add self-hosted Git repo,1,1,2
+massgravel/Microsoft-Activation-Scripts,b80a50208668e1cbb99a85f698f318d8fccc8379,WindowsAddict,2024-09-28T01:34:55Z,Merge branch 'master' into dev,1,1,2
+massgravel/Microsoft-Activation-Scripts,104d0b0ddace001e3c3b364027cc7f144847254d,WindowsAddict,2024-09-28T01:23:48Z,Add Azure DevOps repo and remove Bitbucket and Codeberg repos links,1,1,2
+massgravel/Microsoft-Activation-Scripts,db218720f33f2418a84bfe73ce937ab43f39e9ca,WindowsAddict,2024-09-27T02:34:25Z,"Change ""Troubleshoot Page"" to ""Support Webpage""",11,11,22
+massgravel/Microsoft-Activation-Scripts,b8504cc21ec9ed5f2de31d9d43e905e20116eab6,WindowsAddict,2024-09-27T02:14:11Z,Improve ImageState detection,10,10,20
+massgravel/Microsoft-Activation-Scripts,2e6bfa94c2285c4b613075f2673d818df2cb9137,WindowsAddict,2024-09-27T01:55:54Z,Fix blank SvcRestartTask status issue,5,0,5
+massgravel/Microsoft-Activation-Scripts,a1244dcb3b14070c690aed8de3a2fd807466b077,WindowsAddict,2024-09-26T15:33:34Z,"Use Official GVLK for Office 2024 ProPlus, ProjectPro and VisioPro",6,6,12
+massgravel/Microsoft-Activation-Scripts,06695612a8491ac7ccd324b3f01fa0a6523ecdb6,WindowsAddict,2024-09-26T15:26:02Z,Merge the changes in AIO,11,7,18
+massgravel/Microsoft-Activation-Scripts,323c6808af86acaea40e405e4691c111c7c83035,WindowsAddict,2024-09-26T15:19:49Z,Avoid using \> with findstr,11,7,18
+massgravel/Microsoft-Activation-Scripts,841d856a29cee0444e10302de8650097ee69c161,WindowsAddict,2024-09-26T15:13:21Z,Fix bugs in getting user accounts SID,76,51,127
+massgravel/Microsoft-Activation-Scripts,52d4c52dba8e29a3c1fb295c8946dbe6cf2f0239,WindowsAddict,2024-09-17T12:51:07Z,Evade AV's detection - 1 (v2.7),1,1,2
+massgravel/Microsoft-Activation-Scripts,c75cd29b9fda945df18a72bccf17fab56868a261,WindowsAddict,2024-09-07T02:37:44Z,Revert export-ignore,3,3,6
+massgravel/Microsoft-Activation-Scripts,b1b5299c4725d97349b18b59061647198f7cc59b,Ave,2024-09-07T01:51:27Z,Rename,0,0,0
+massgravel/Microsoft-Activation-Scripts,652092e9854bf3e5103cba2c17fbb97b5be47270,Ave,2024-09-07T01:50:37Z,Merge branch 'dev',15472,13302,28774
+massgravel/Microsoft-Activation-Scripts,b06c83622add745aed6d31149a79301664648437,WindowsAddict,2024-09-07T01:00:17Z,Update readme,15,15,30
+massgravel/Microsoft-Activation-Scripts,ce669809bf05777230e71505e095a1bb7fc39eab,WindowsAddict,2024-09-07T00:33:06Z,2.7,13,12,25
+massgravel/Microsoft-Activation-Scripts,0afb09cbd1f31f15f82f07b10eb2b5014c9c3dca,WindowsAddict,2024-09-04T23:41:08Z,Use IsOSBinary check,2,2,4
+massgravel/Microsoft-Activation-Scripts,5d8a4634754d632df13b697c4cae96aecc730480,WindowsAddict,2024-09-04T23:14:49Z,Check signature of clipup.exe in Server Cor/Acor editions,26,4,30
+massgravel/Microsoft-Activation-Scripts,7044f37b441faba28ad583a14391029befc34ae5,WindowsAddict,2024-09-04T22:20:03Z,Add a line in main menu,3,1,4
+massgravel/Microsoft-Activation-Scripts,08443039aa1211bad52197716e40a1d0e4925b56,WindowsAddict,2024-08-31T21:54:58Z,Reword again,4,4,8
+massgravel/Microsoft-Activation-Scripts,fd8b81411c14e08ba302f893fcc318a1318129fc,WindowsAddict,2024-08-31T21:20:49Z,Reword the restart line,23,23,46
+massgravel/Microsoft-Activation-Scripts,213bc50b4915baa4578c9501def2c3f1b27f849b,WindowsAddict,2024-08-31T21:11:55Z,Update asdcorp's Set-WindowsCbsEdition link,2,2,4
+massgravel/Microsoft-Activation-Scripts,00e81be52f4acc3a5e12be1e247797fa610108f9,WindowsAddict,2024-08-31T21:09:12Z,Reword some sentences,33,33,66
+massgravel/Microsoft-Activation-Scripts,2443e1e4713c0c8d9f2a5bf473f66bcc17c74309,WindowsAddict,2024-08-31T20:57:23Z,Remove preview keys It can cause issues with correct key detection and its not important anyways,0,208,208
+massgravel/Microsoft-Activation-Scripts,ec31fef9b9d4917ca5b99f68f18ab1c4a3e28c6b,WindowsAddict,2024-08-29T21:52:35Z,Fix line alignment in KMS38 menu,4,4,8
+massgravel/Microsoft-Activation-Scripts,84f5516632f905ac70b39db85273c6e3e9ddd49b,WindowsAddict,2024-08-29T21:41:05Z,Remove CRC32 from AIO name and use random letters in folder name (To avoid AV's detection in URL),0,0,0
+massgravel/Microsoft-Activation-Scripts,f9f386a896f1b4233b806d28d7901b942aff6329,WindowsAddict,2024-08-29T21:28:38Z,"Detect SPP's PerfOptions registry in IFEO, and remove it in troubleshoot script",63,15,78
+massgravel/Microsoft-Activation-Scripts,8e3b4135f56d14b86ccaa96014bc5eb9b6b5f80d,WindowsAddict,2024-08-28T03:00:14Z,Fix text alignment,4,3,7
+massgravel/Microsoft-Activation-Scripts,bacb32f4a127db08193714f9c11ca9bec84a45ab,WindowsAddict,2024-08-28T02:48:25Z,Update MAS AIO to 2.7,10331,10644,20975
+massgravel/Microsoft-Activation-Scripts,86c86c179a539457db04dcaedbdb86a98387a929,WindowsAddict,2024-08-27T20:45:43Z,LICENSE,0,1,1
+massgravel/Microsoft-Activation-Scripts,445a74ccea56cc76e7996b456e297d08022cce90,WindowsAddict,2024-08-27T13:30:10Z,Check unsupported language for Project/Visio,63,15,78
+massgravel/Microsoft-Activation-Scripts,69e6c9bf71a01410e341221da1d699ca6a696e2a,WindowsAddict,2024-08-26T14:17:33Z,Add change Office edition script,1291,0,1291
+massgravel/Microsoft-Activation-Scripts,0ced0f5d8eaabacb9b4e5d48678ad67a94b6696e,WindowsAddict,2024-08-26T14:16:19Z,Rename filename to Change_Windows_Edition.cmd,0,0,0
+massgravel/Microsoft-Activation-Scripts,19be25c02969cee1d8e896d012a42f586264f1e9,Lyssa,2024-08-20T17:15:06Z,"Fix many grammar/spelling issues in the script  (#543)  * Proof-read Change Edition script  * .  * Proof-read OEM folder script  * Update Change_Edition.cmd  * Update Troubleshoot.cmd  * Update Troubleshoot.cmd  * Update HWID_Activation.cmd  * Update HWID_Activation.cmd  * Update HWID_Activation.cmd  * Update KMS38_Activation.cmd  * Add files via upload  * Update Change_Edition.cmd  * I'm tired  * Update Extract_OEM_Folder.cmd  * Update Troubleshoot.cmd  * Update HWID_Activation.cmd  * Update HWID_Activation.cmd  * Update HWID_Activation.cmd  * finish with hwid  * Update KMS38_Activation.cmd  * final kms38 update  * Update Ohook_Activation_AIO.cmd  * start ohook  * Update Ohook_Activation_AIO.cmd  * Update Online_KMS_Activation.cmd  * Update HWID_Activation.cmd  * Update KMS38_Activation.cmd  * Update Ohook_Activation_AIO.cmd  * Update Online_KMS_Activation.cmd  * Update Change_Edition.cmd  * Update Extract_OEM_Folder.cmd  * Update Troubleshoot.cmd  ---------  Co-authored-by: nekoppai <109633131+nekoppai@users.noreply.github.com> Co-authored-by: WindowsAddict <windowsaddict@protonmail.com>",303,298,601
+massgravel/Microsoft-Activation-Scripts,d372b622807e45236d1ab0e71168f15e3045d399,WindowsAddict,2024-08-19T23:24:16Z,"Revert ""Merge pull request #542 from alouiadel/dev""  This reverts commit 1dfd3f662639ad6f16865be553eed8bf55e5eb30, reversing changes made to 79bc7b024214490aca891a12202475a22b3de482.",21,21,42
+massgravel/Microsoft-Activation-Scripts,9e5062e7cc3798e0e3da5a60d684ae37d12c47ff,WindowsAddict,2024-08-19T22:21:13Z,Update deletion of Office related keys,6,2,8
+massgravel/Microsoft-Activation-Scripts,ed3dace78fffc4ac3c28a04e1190a0d2b9b24099,WindowsAddict,2024-08-19T21:43:20Z,Cleanup some registry keys,10,0,10
+massgravel/Microsoft-Activation-Scripts,1f50e4ba98acf455967eadc11e6fc5719145e702,WindowsAddict,2024-08-19T14:23:05Z,Allow Office repair on ARM64 as well,15,15,30
+massgravel/Microsoft-Activation-Scripts,af7d204c9627c44e10fed6d85c363e59ccdd8630,WindowsAddict,2024-08-19T13:50:52Z,Rename file (- to _),0,0,0
+massgravel/Microsoft-Activation-Scripts,0d26ba046efae62c0002303313cc899ccdfa8f15,WindowsAddict,2024-08-19T13:37:39Z,Use %syspath%,9,9,18
+massgravel/Microsoft-Activation-Scripts,3fd16669264dc9c85c37957d949bb6f37021d9a1,WindowsAddict,2024-08-19T13:13:14Z,Fix color code,4,5,9
+massgravel/Microsoft-Activation-Scripts,bf814304c62cbeba6e18ddf83b023363f3857dce,WindowsAddict,2024-08-19T13:10:07Z,Add fix for issues caused by update KB971033 in Windows 7,22,0,22
+massgravel/Microsoft-Activation-Scripts,1dfd3f662639ad6f16865be553eed8bf55e5eb30,WindowsAddict,2024-08-19T11:14:46Z,Merge pull request #542 from alouiadel/dev  Rephrase text and fix issue #521,21,21,42
+massgravel/Microsoft-Activation-Scripts,79bc7b024214490aca891a12202475a22b3de482,WindowsAddict,2024-08-19T00:47:15Z,Avoid a potential crash in wmic.exe check,6,6,12
+massgravel/Microsoft-Activation-Scripts,ae48118ddb1742765709bbe3cf447766114db064,Adel Aloui,2024-08-19T00:22:08Z,Rephrase text and fix issue #521,21,21,42
+massgravel/Microsoft-Activation-Scripts,b983bd41dabe0d683c851e7e4d3d9f6c1a13904d,WindowsAddict,2024-08-18T23:59:19Z,Replace square brackets with double quotes in string comparison,48,48,96
+massgravel/Microsoft-Activation-Scripts,d55b9fa78c301672774a1fb4be13d55935871762,WindowsAddict,2024-08-17T23:38:35Z,Avoid using pause if Terminal is detected,26,4,30
+massgravel/Microsoft-Activation-Scripts,fb113c7c243190b267722d4a5fca48bc0a7a40e4,WindowsAddict,2024-08-17T23:18:57Z,Replace wmic.exe with Powershell in fix wmi,2,8,10
+massgravel/Microsoft-Activation-Scripts,9efc3e49b9aa988b7e74c00b4131fd7c6485911a,WindowsAddict,2024-08-17T22:45:20Z,Show perms error separately for folder and registry,28,4,32
+massgravel/Microsoft-Activation-Scripts,a62c3ac36d528343ca121b478c005175e86c73ce,WindowsAddict,2024-08-17T22:14:07Z,"Optimize checks and fixes for SPP perms, replace slmgr /rilc",169,37,206
+massgravel/Microsoft-Activation-Scripts,73eabbff59964ef0386c014e5256d33981211f1a,WindowsAddict,2024-08-17T01:47:04Z,Remove WPA check Already present in activation scripts,0,47,47
+massgravel/Microsoft-Activation-Scripts,bc5efae19d9b10efcdb1777489c03f4eaacf5f7e,WindowsAddict,2024-08-17T01:38:19Z,Remove Office vNext cleaning code Its already there in activation scripts,10,71,81
+massgravel/Microsoft-Activation-Scripts,deb74ab9b8d2652a4913683ed7e0cd63a8cc8d6f,WindowsAddict,2024-08-16T20:58:32Z,Optimize DISM restore and SFC scan log creation,24,14,38
+massgravel/Microsoft-Activation-Scripts,d08ed1bd389e10a1a5a40d7292b5ce7ef8d788b1,WindowsAddict,2024-08-16T20:11:42Z,Update Troubleshoot script with 2.7 structure,198,180,378
+massgravel/Microsoft-Activation-Scripts,5f5a51322d35aa3dae58cde5edb70e324cbf0ad8,WindowsAddict,2024-08-15T23:44:16Z,Realign lines related to dashboard app info,5,1,6
+massgravel/Microsoft-Activation-Scripts,fd0e25f477c79ce8dbf3c214db079270d777dd98,WindowsAddict,2024-08-15T23:04:19Z,Detect Ohook install in KMS script,22,0,22
+massgravel/Microsoft-Activation-Scripts,b33dcb2f722719d8ffe264850f57ac5180656ed2,WindowsAddict,2024-08-15T22:42:38Z,Update OEM folder script,166,79,245
+massgravel/Microsoft-Activation-Scripts,117ba004f0998354b4b4867baac01b8b4bdcbf41,WindowsAddict,2024-08-15T21:33:12Z,better check for malware if sppsvc.exe is not found,20,4,24
+massgravel/Microsoft-Activation-Scripts,b0d898973f48a5ce2272e4c883e6da2e6cc6ff58,WindowsAddict,2024-08-15T21:30:58Z,Change wording,1,1,2
+massgravel/Microsoft-Activation-Scripts,63b3c5097b5acbd1f6fa35a4483d585cac35ae17,WindowsAddict,2024-08-14T03:50:42Z,Show info regarding Office dashboard app in KMS script,3,2,5
+massgravel/Microsoft-Activation-Scripts,69430c6458c5a644a6dad74840555625c5d66674,WindowsAddict,2024-08-14T03:16:43Z,Don't create renewal task if VL IDs not found or OEMBIOS error is present and Office VL IDs not found,18,1,19
+massgravel/Microsoft-Activation-Scripts,9f57f585d508c3118bb967a8bcc6263b191d1d04,WindowsAddict,2024-08-14T01:14:43Z,Don't show fix licensing solution in some more cases,8,0,8
+massgravel/Microsoft-Activation-Scripts,52decdde18f6258a5ec4139e554e57ac22c2edfa,WindowsAddict,2024-08-13T00:06:51Z,Replace hyphen from evaluation-editions URL,14,14,28
+massgravel/Microsoft-Activation-Scripts,35e044ddc85eed60b27b37c48371bd19cdc678b7,WindowsAddict,2024-08-12T00:04:06Z,Evade AV's detection - 7,1,0,1
+massgravel/Microsoft-Activation-Scripts,601bd0e42006069cd0de2b58c09fbca34e1ec8d8,WindowsAddict,2024-08-05T01:12:49Z,Add old preview edition keys in KMS38,30,0,30
+massgravel/Microsoft-Activation-Scripts,5e4988a6348eb2daea82b57f7d507d7fbede04cf,WindowsAddict,2024-08-05T00:45:01Z,Add more KMS keys for old preview editions,20,0,20
+massgravel/Microsoft-Activation-Scripts,3a050f2da742f7b1ec347a3c563bde025094dc6b,WindowsAddict,2024-08-04T08:36:08Z,Fix eval edition change and show .net 3.5 status,5,5,10
+massgravel/Microsoft-Activation-Scripts,31b55fd0e3d90999b63a330cfea27567cb165a75,WindowsAddict,2024-07-31T16:08:39Z,Add two more preview editions and sort all of them EmbeddedIndustryE_TAP-CTP EmbeddedIndustryE_Beta,23,24,47
+massgravel/Microsoft-Activation-Scripts,62d5d5442e45a66889caa573c83bd33d5eaa9987,WindowsAddict,2024-07-31T10:22:49Z,Add old preview editions in KMS script,57,1,58
+massgravel/Microsoft-Activation-Scripts,f2e6e6e389a07ddb673933cba34b41bcbcabc07a,WindowsAddict,2024-07-31T09:49:32Z,Fix SID code in KMS script,1,1,2
+massgravel/Microsoft-Activation-Scripts,b5a305a14e2d1597c9b316daf4ee1c82eb162648,WindowsAddict,2024-07-31T01:05:36Z,Highlight options if unsupported product is detected,11,2,13
+massgravel/Microsoft-Activation-Scripts,6c71e82ef338a37ed912b11e06ccffb11e4ee304,WindowsAddict,2024-07-30T03:26:25Z,Fig a bug in server section,3,0,3
+massgravel/Microsoft-Activation-Scripts,66e8cda508671778f478d5577969abe2c0f274ec,WindowsAddict,2024-07-30T03:13:48Z,Add timeout,1,0,1
+massgravel/Microsoft-Activation-Scripts,98027af16deca9cc1183ba67031fa1eb0f94da72,WindowsAddict,2024-07-30T03:11:48Z,Compress generated logs,36,5,41
+massgravel/Microsoft-Activation-Scripts,be45752a216f20ba1d9766f35d752d49f7d1aaff,WindowsAddict,2024-07-30T00:51:01Z,Add info about edition ID difference,9,0,9
+massgravel/Microsoft-Activation-Scripts,a421b12ae46df0e64d2c3a50aa7986f6a0df16b8,WindowsAddict,2024-07-29T15:13:55Z,Add info about how to use a different sppc.dll file,7,1,8
+massgravel/Microsoft-Activation-Scripts,d06185d7f79b14dd3b4428dcd48bb3d973da53b2,WindowsAddict,2024-07-29T15:01:28Z,Highlight skipping of Office activation,2,2,4
+massgravel/Microsoft-Activation-Scripts,a46bb78e5e5c29edc3ce9b5d85ce2f2278d8734f,WindowsAddict,2024-07-28T20:18:14Z,Show info about buy button in Office dashboard app for Zoomers,1,1,2
+massgravel/Microsoft-Activation-Scripts,2470963537c81b6a8887d11280805a01da1f11c4,WindowsAddict,2024-07-28T17:06:55Z,Inform to check antivirus block if dll extraction fails,1,0,1
+massgravel/Microsoft-Activation-Scripts,89bff68b285e2dfecbcef09ac84e3eb8e80d5582,WindowsAddict,2024-07-28T17:03:18Z,Fix pkeyconfig path,1,1,2
+massgravel/Microsoft-Activation-Scripts,191121c3d48f445d2be7a7511bdf9bd51832fb3a,WindowsAddict,2024-07-28T16:55:36Z,Add more checks in checking user profile SID's,1,1,2
+massgravel/Microsoft-Activation-Scripts,7bf55fc6eefff3a165739c782cbea9f913ee3913,WindowsAddict,2024-07-28T13:52:13Z,Fix bug where 'NETWORK SERVICE' translation is needed,4,4,8
+massgravel/Microsoft-Activation-Scripts,816925bfef9715ff730190ee704b4dcde64d0cfc,WindowsAddict,2024-07-28T02:33:09Z,Ignore log deletion error,0,15,15
+massgravel/Microsoft-Activation-Scripts,ad45cf092677a4b9351e3da2940593fc318c63f9,WindowsAddict,2024-07-28T01:26:54Z,Add red color,8,0,8
+massgravel/Microsoft-Activation-Scripts,29eb5bd60d3bdc892f20bb0458a9a4bf8b2af1bb,WindowsAddict,2024-07-28T01:24:15Z,Generate clean logs on desktop on edition change failure and other fixes,455,321,776
+massgravel/Microsoft-Activation-Scripts,70b754657f5d396fd342d71c65bcef9f5c863520,WindowsAddict,2024-07-23T01:44:24Z,Use random GUID instead of %random%,3,2,5
+massgravel/Microsoft-Activation-Scripts,8b586964557cc1001aacf7592ffcff9f65e548a8,WindowsAddict,2024-07-23T01:24:47Z,Add a check for old renewal task detection,6,0,6
+massgravel/Microsoft-Activation-Scripts,5d47723d0711b9e477643e00f0088bd33268d5f0,WindowsAddict,2024-07-22T23:42:02Z,Show fix_powershell link,24,12,36
+massgravel/Microsoft-Activation-Scripts,2b786e3037e1f09a10b303755ccd74c4f18dc29f,WindowsAddict,2024-07-22T21:47:56Z,Correct a info line in KMS script,1,1,2
+massgravel/Microsoft-Activation-Scripts,4451a25e7f98e539ca6dd00718f8abf38cac4735,WindowsAddict,2024-07-20T23:32:51Z,Differentiate between new and old outlook detection,2,2,4
+massgravel/Microsoft-Activation-Scripts,886745f103738e5d9456047461a1276f8371c9fe,WindowsAddict,2024-07-20T23:01:33Z,Detect sandboxing,52,4,56
+massgravel/Microsoft-Activation-Scripts,5728ba26868a617b0fb8a7fb94c4821965544413,WindowsAddict,2024-07-19T21:43:45Z,Add check for NT SERVICE\sppsvc,4,4,8
+massgravel/Microsoft-Activation-Scripts,ddccc4025ff648abb2046a55de0d2bfd19f065cf,WindowsAddict,2024-07-19T16:02:28Z,Optimize the code Thanks to abbodi1406,2,10,12
+massgravel/Microsoft-Activation-Scripts,1567903b090343fa5802918a742d59fe0f46bae9,WindowsAddict,2024-07-19T14:51:27Z,Improve device-based-licensing cleaning,8,4,12
+massgravel/Microsoft-Activation-Scripts,f6125eaa5bad6e38e0819e49f8b232b25c6f162d,WindowsAddict,2024-07-19T14:36:52Z,Add comment about S-1-5-20 SPP registry issue,8,0,8
+massgravel/Microsoft-Activation-Scripts,07c4fcdc7466aca2c3d62a9c3f741f5d89d1606b,WindowsAddict,2024-07-17T23:06:50Z,Improve error check of SPP in HKU\S-1-5-20,68,56,124
+massgravel/Microsoft-Activation-Scripts,962f7e326afd53c1ac4e1d2bc1570c5fced07f8d,WindowsAddict,2024-07-16T22:24:38Z,Remove duplicacy of file infector checks,0,36,36
+massgravel/Microsoft-Activation-Scripts,6f88a4bf9021f54678ba944757d327e8ae4f0078,WindowsAddict,2024-07-16T19:49:06Z,More accurate check for Office Products in NoEditionChange mode,7,1,8
+massgravel/Microsoft-Activation-Scripts,dd3d788bfac0af29ccca04e062d741aeb3f606b0,WindowsAddict,2024-07-16T14:33:19Z,"Fix these bugs in checking activated products Issue when similar names products are installed, like O365ProPlusRetail and ProPlusRetail Issue in detecting SPDRetail 2013 because of different name in LicenseFamily",12,4,16
+massgravel/Microsoft-Activation-Scripts,3d16fc6a07952723cc7528f7b636927666d27659,WindowsAddict,2024-07-16T11:31:13Z,Improve/Fix error messages when key is not found,37,34,71
+massgravel/Microsoft-Activation-Scripts,e1b994222310dfa33fc78bd62f1d9d1416b6cdfc,WindowsAddict,2024-07-15T11:51:40Z,Remove unsupported EnterpriseSN keys,0,3,3
+massgravel/Microsoft-Activation-Scripts,53cda879c1772f0cd8f39fa2c6a7b885d79d672e,WindowsAddict,2024-07-13T22:12:48Z,Add VL IDs in ProductReleaseIds in old Office builds,11,2,13
+massgravel/Microsoft-Activation-Scripts,211835666b600793330f7895471acb14d0c2f576,WindowsAddict,2024-07-13T20:59:11Z,Separate label for malware check To also call it at the start,47,23,70
+massgravel/Microsoft-Activation-Scripts,bdb9875a6baf64321fb6789faf13f648c2a7854a,WindowsAddict,2024-07-12T23:16:38Z,Remove check activation status scripts and replace them with @abbodi1406's CAS https://gravesoft.dev/cas,1025,823,1848
+massgravel/Microsoft-Activation-Scripts,5b694779be1da1d05a838f64ca083568fb9a7c9e,WindowsAddict,2024-07-12T23:07:16Z,Remove notx86 check in KMS script and run /reg:32 regardless,14,34,48
+massgravel/Microsoft-Activation-Scripts,b7c3f9a98a8c932b52d3658148b636031e98cd09,WindowsAddict,2024-07-12T22:48:44Z,Shorten the Windows Subscription check code,33,75,108
+massgravel/Microsoft-Activation-Scripts,48fb5fc5fe9124554b2adac39bf498a6894ae26b,WindowsAddict,2024-07-12T22:26:18Z,2.7 Preview,5096,4629,9725
+massgravel/Microsoft-Activation-Scripts,d3f2cd88061ff66571628ea2342be21e6cd8ae64,WindowsAddict,2024-07-05T10:12:00Z, Evade AV's detection - 6,1,1,2
+massgravel/Microsoft-Activation-Scripts,8cdde879b2be8aff039783c8d96e2a431550ebd8,WindowsAddict,2024-06-09T00:54:56Z,Fix the broken Discord banner,2,2,4
+massgravel/Microsoft-Activation-Scripts,0884271c4fcdc72d95bce7c5c7bdf77ef4a9bcef,WindowsAddict,2024-05-30T21:03:47Z, Evade AV's detection - 5,2,2,4
+massgravel/Microsoft-Activation-Scripts,e752461568391d3b4d9fb100a7ab4b9a4f27d8ee,WindowsAddict,2024-05-27T02:24:12Z,Evade AV's detection - 4,1,3,4
+massgravel/Microsoft-Activation-Scripts,d14b3b46a0ba0b83a784ac046914abe789f7b824,WindowsAddict,2024-05-27T02:14:10Z,Update readme,12,2,14
+massgravel/Microsoft-Activation-Scripts,819140de461d6c49c9518989c9920e710fad7698,WindowsAddict,2024-05-20T18:58:31Z,Update the command with the new domain More info: https://massgrave.dev/news,1,1,2
+massgravel/Microsoft-Activation-Scripts,fc7e9f019d4932f57d5fce5c2bdb3cb5495456ff,WindowsAddict,2024-05-17T09:25:26Z,Add Tls12 info,8,7,15
+massgravel/Microsoft-Activation-Scripts,36f7291963f4264a9e5c9b8d82740ed5d625152a,WindowsAddict,2024-05-12T12:22:22Z,Evade AV's detection - 3,4,6,10
+massgravel/Microsoft-Activation-Scripts,9556ad2cbe87c222a28214cbce7d71b1470be764,WindowsAddict,2024-05-09T07:08:23Z,Evade AV's detection - 2,1,1,2
+massgravel/Microsoft-Activation-Scripts,71e575e7b6aae844d6367cf27271863358a6bec4,WindowsAddict,2024-04-30T12:33:32Z,Evade AV's detection - 1,6,6,12
+massgravel/Microsoft-Activation-Scripts,355ccb7f2984043911fc556de1f9c066f618932e,WindowsAddict,2024-04-20T12:40:49Z,Revert export-ignore,3,3,6
+massgravel/Microsoft-Activation-Scripts,984b384d9e5facc222eecaa07b78def265395321,WindowsAddict,2024-04-20T12:35:05Z,2.6,67,19,86
+massgravel/Microsoft-Activation-Scripts,4ce95f603497d1d2292591ad2ad1f543e8349928,WindowsAddict,2024-04-12T21:23:56Z,update logo url,1,1,2
+massgravel/Microsoft-Activation-Scripts,d59e2b0e6e7d97f7aa950bce7a00ee609a271fe8,WindowsAddict,2024-03-26T21:27:29Z,Evade AV's detection - 6,10,10,20
+massgravel/Microsoft-Activation-Scripts,54c1729d13f0c40d5ac03630da07eba2fbe2127b,WindowsAddict,2024-03-13T11:22:45Z,Add alts,3,3,6
+massgravel/Microsoft-Activation-Scripts,6a72dce047e7ab38ec87d00699df32e40efce2d0,WindowsAddict,2024-03-13T11:10:37Z,Update logo images again,8,16,24
+massgravel/Microsoft-Activation-Scripts,2075ab45bce2655789cc6950cc44734f25dfc3a8,WindowsAddict,2024-03-12T14:35:15Z,Update discord link,1,1,2
+massgravel/Microsoft-Activation-Scripts,6a197b5274888e63eb6f5c911ab5f0e76714f5e5,WindowsAddict,2024-03-12T14:20:45Z,Reorder logos,4,3,7
+massgravel/Microsoft-Activation-Scripts,1b80e556f9a170212be738bdb9decc658501df66,WindowsAddict,2024-03-12T14:16:08Z,Remove Telegram link,2,2,4
+massgravel/Microsoft-Activation-Scripts,fd65a85d06c74312fb0d9d7b0d7f1e6149054baa,WindowsAddict,2024-03-03T10:58:04Z,Evade AV's detection - 5,7,10,17
+massgravel/Microsoft-Activation-Scripts,5da6daa4023f74a0753206e7990492fab13c9c35,WindowsAddict,2024-02-28T08:54:00Z,Rename the file to add CRC32 hash,0,0,0
+massgravel/Microsoft-Activation-Scripts,604dc6d53ffc1813c5b396a4638bb13fa19e566c,WindowsAddict,2024-02-16T08:53:42Z,Sync the README with other repo,23,21,44
+massgravel/Microsoft-Activation-Scripts,eb02caa58c64bf070e1d6dd05ac5fc0d97743ee8,WindowsAddict,2024-02-12T14:25:54Z,Add help URL for change edition and module ID error,18,20,38
+massgravel/Microsoft-Activation-Scripts,c8f6bd65e8b835ed2495920faadab8648f33a0af,WindowsAddict,2024-01-01T03:59:27Z,Evade AV's detection - 4,259,250,509
+massgravel/Microsoft-Activation-Scripts,c84e4b181a41d317dcf836538b15f70e79096a99,WindowsAddict,2024-01-01T02:09:18Z,Evade AV's detection - 3,22,22,44
+massgravel/Microsoft-Activation-Scripts,1c4e85b3e29391567a6a0aa9f451780ab2093dd1,WindowsAddict,2024-01-01T01:56:49Z,Fix bug in pending reboot check,2,2,4
+massgravel/Microsoft-Activation-Scripts,0c1d091c7e9846090a049cecabf7e2097a45ebd4,WindowsAddict,2023-11-23T11:17:12Z,Add Bitbucket download link,1,1,2
+massgravel/Microsoft-Activation-Scripts,6b0310e1db7ab86133a5f45e7834417b7c708347,WindowsAddict,2023-11-20T11:34:13Z,Evade AV's detection - 2,1,1,2
+massgravel/Microsoft-Activation-Scripts,23f382f0e373c037b83184d7ed49f9904cf31c91,WindowsAddict,2023-11-19T11:11:21Z,Fix a minor bug in ohook,4,4,8
+massgravel/Microsoft-Activation-Scripts,481ed4dbd502c69a16494c7fd7ae995575bea4ad,WindowsAddict,2023-11-16T07:04:37Z,Evade AV's detection - 1,2,2,4
+massgravel/Microsoft-Activation-Scripts,2f97b1c28a3b2241866ed27f87e0c3fb675d49da,WindowsAddict,2023-11-15T21:28:18Z,Revert export-ignore,3,3,6
+massgravel/Microsoft-Activation-Scripts,066b135cfdd8716add8a159ce183011def0f888f,WindowsAddict,2023-11-15T21:03:20Z,2.5,1222,723,1945
+massgravel/Microsoft-Activation-Scripts,64e006703cdb21608150a4dce173294d69fb6036,WindowsAddict,2023-11-12T03:49:08Z,Change Logo URL,1,1,2
+massgravel/Microsoft-Activation-Scripts,8f6377f56b0ae2d058ad37c0dcd03ffc8e9c8311,WindowsAddict,2023-11-04T04:22:46Z,Evade AV's detection - 7,2,2,4
+massgravel/Microsoft-Activation-Scripts,e60f8ea4741c0055eb0598a6589b0e5a85e3a853,WindowsAddict,2023-10-31T10:05:11Z,Evade AV's detection - 6,10,10,20
+massgravel/Microsoft-Activation-Scripts,8d6ea50235fff365d847670f5cb34a1f834e4c3f,WindowsAddict,2023-10-30T04:49:00Z,Merge pull request #290 from BandhiyaHardik/Twitter-Logo-to-𝕏  misc: changed Twitter Logo to 𝕏,1,1,2
+massgravel/Microsoft-Activation-Scripts,43fb93c1f4e22b1a0f798f9b88fb50d80650a86b,HardikBandhiya,2023-10-29T06:39:14Z,Update README.md  updated logo,1,1,2
+massgravel/Microsoft-Activation-Scripts,b3c1efb54ad833c91c82b596333ae51f622b04c6,HardikBandhiya,2023-10-28T12:12:53Z,Update README.md  changeed Twitter Logo to 𝕏,1,1,2
+massgravel/Microsoft-Activation-Scripts,e16354561bee75fc9b01323cfd6a40cee43b6dbc,WindowsAddict,2023-10-24T20:44:51Z,Evade AV's detection - 5,6,16,22
+massgravel/Microsoft-Activation-Scripts,068903c63fa8633946758e1a08bb645d58d19e7a,WindowsAddict,2023-10-24T20:11:14Z,Evade AV's detection - 4,3,3,6

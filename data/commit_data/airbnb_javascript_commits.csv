@@ -1,0 +1,301 @@
+repo,sha,author,date,message,additions,deletions,total_changes
+airbnb/javascript,11f986fdc7d6b4c80e396437e9c45c939362bdee,ptmkenny,2024-12-07T04:03:23Z,[eslint config] [deps] update `eslint-plugin-react-hooks`,2,2,4
+airbnb/javascript,6499695ac11c4640ed0f77f8865a1adcb32d3239,Matheus Felipe,2023-10-13T07:58:10Z,[readme] update link to es5 and es6 compat table in readme,1,1,2
+airbnb/javascript,f45bd1ebc0549d370ccd7cb0ca039b40d3be768b,Anees Iqbal,2024-10-01T21:14:01Z,[eslint config] [*] [fix] fix crash in eslint invocation with TIMING env set,14,2,16
+airbnb/javascript,e6080c7beed96700a599e7d86f1517bdc8269366,Richard Klees,2023-05-11T15:30:30Z,[readme] add ILIAS to users,1,0,1
+airbnb/javascript,b912288e4bf7fa46d9254d3cdfa190e9b59f36c0,“naandalist”,2024-09-21T22:00:08Z,[readme] Remove dead URLs,0,4,4
+airbnb/javascript,39b970f7024006d34d40d5afdf763b32c9a8a074,Kim Minh Thắng,2024-09-24T07:42:47Z,Add Zit Software to `In the Wild`  Signed-off-by: Kim Minh Thắng <thangved02@gmail.com>,1,0,1
+airbnb/javascript,d1705c389ed3745f10139b32fca655c306dd56bb,Ngene Arinzechukwu,2024-02-19T15:47:10Z,[guide] [css] Added what BEM stands for (Block Element Modifier),1,1,2
+airbnb/javascript,e6f292286b1c03add35c98481337b5f26eebc06e,Jordan Harband,2024-09-21T05:39:53Z,[eslint config] [*] [deps] update deps,14,14,28
+airbnb/javascript,7a8f5687699bad856ca7bb7df0a731f0597a772a,Jordan Harband,2024-09-21T05:36:49Z,[eslint config] [patch] add new disabled react rules,8,2,10
+airbnb/javascript,c25bce83be4db06e6a221d79686c485cd2ed5d5d,Hadi,2024-04-07T18:18:29Z,[readme] replace dead link with archive.org link,1,1,2
+airbnb/javascript,f20eca9f646954f2ebb0375e3a99b85e7b7161ad,Riaz,2024-03-25T09:00:44Z,"[guide] fix compat table URL  https://kangax.github.io/compat-table/es6/ hit a 404 error,  URL: https://compat-table.github.io/compat-table/es6/",2,2,4
+airbnb/javascript,932951adc2d503d906c85b01179b4e1256c41896,Jordan Harband,2024-03-25T16:31:09Z,[eslint config] [deps] update `eslint-plugin-react`,9,2,11
+airbnb/javascript,5f019b1b11e69e7ee300ab15d5b0123c9c226bbe,Jordan Harband,2024-03-25T16:28:53Z,[eslint config] [*] [dev deps] update `tape`,2,2,4
+airbnb/javascript,b23992033ce67ace887044140efb2df70aa1766d,Jordan Harband,2024-01-30T18:59:47Z,[eslint config] [patch] `jsx-a11y/no-redundant-roles`: allow `nav` to have `navigation` role,3,1,4
+airbnb/javascript,09adc22031e545ef818a57fee3e8a88de3afb0f0,Jordan Harband,2024-01-30T18:59:23Z,[eslint config] [patch] `jsx-a11y/no-noninteractive-tabindex`: allow expression values,1,0,1
+airbnb/javascript,51a37d0fa5f334fdfae9fea39711402fb6eb3b34,Jordan Harband,2024-01-28T05:02:05Z,[eslint config] [*] [robustness] cache static builtins,20,12,32
+airbnb/javascript,0681a43e0a0181e8cafd0d3004f967a238411ba2,43081j,2024-01-04T19:14:38Z,[eslint config] [*] [refactor] remove `object.entries` dependency  This removes the `object.entries` package and uses the widely available built-in native `Object.entries`.,6,12,18
+airbnb/javascript,55899b57a6de826d8d762693d6d4f999d652ae2d,Jordan Harband,2024-01-28T05:08:54Z,[eslint config] [*] [deps] update deps,14,14,28
+airbnb/javascript,e95b1f2754258cf219ecfdfdf712b6de5657dd8a,Jordan Harband,2024-01-28T05:07:02Z,[eslint config] [base] add new disabled rules,5,0,5
+airbnb/javascript,11ab37144b7f846f04f64a29b5beb6e00d74e84b,Vahid Mohammadi,2023-08-21T14:43:54Z,[eslint config] [base] [patch] Add a message for `confusing-browser-globals`,4,1,5
+airbnb/javascript,46ae3e225673b6bbd52a49f78b9474cd282b8e4f,savalaram-redkar,2023-08-15T14:54:16Z,[readme] Add `Object.hasOwn` to section 3.7,6,2,8
+airbnb/javascript,cb191776dbdd2c8674fc81a6850c4c1377af46e6,hamzahuda,2023-08-12T11:19:30Z,"[readme] correct no-use-before-define justification  The recommendation is to declare the variables, classes and functions before. So the contrasting negative example should say after.",1,1,2
+airbnb/javascript,cda44dad403979d313a4b02ce55f0bb6cc3a24b2,Joe Mornin,2023-08-01T16:25:54Z,"[guide] Add commas to Truth, Equality, and JavaScript  Co-authored-by: Jordan Harband <ljharb@gmail.com>",1,1,2
+airbnb/javascript,2fc5e2d52c48c1dfc76f52f704c41dcfd28a0de7,Joe Mornin,2023-08-02T20:16:48Z,[guide] fix grammar,1,1,2
+airbnb/javascript,749f4c2bd0e2e890fed7f421ac39b8689fe00d99,Jordan Harband,2023-08-05T00:06:55Z,[eslint config] [deps] update `eslint-plugin-react`,2,2,4
+airbnb/javascript,4aee38f1e794ec846aa2d1120b80a1ac7ad4db12,Jordan Harband,2023-08-05T00:05:40Z,"[eslint config] [*] [deps] update `eslint-plugin-import`, `@babel/runtime`, `tape`",8,8,16
+airbnb/javascript,18a08b862b14ec8d8fd8bd70bcba2d8e9714c93b,Jordan Harband,2023-08-04T23:55:23Z,"[Dev Deps] update `markdownlint`, `markdownlint-cli`",2,2,4
+airbnb/javascript,fd77bbebb77362ddecfef7aba3bf6abf7bdd81f2,Khadija-Batool,2023-07-02T18:51:01Z,[guide] add nullish-coalescing-operator definition,27,0,27
+airbnb/javascript,7916d6f538028e91129e65fd5633b7d6fa85d000,Jordan Harband,2023-05-15T17:21:09Z,[guide] Add documentation for `no-use-before-define` rule under hoisting section,50,0,50
+airbnb/javascript,01f046dc0567e4495762e8e4fc4dde7b87dd5eb8,zhesha,2023-05-23T12:10:23Z,[guide] added second link to eslint rule for item 7.1,1,1,2
+airbnb/javascript,0f3ca32323b8d5770de3301036e65511c6d18e00,Jordan Harband,2023-05-15T17:21:09Z,[eslint config] [*] [deps] update `object.entries`,2,2,4
+airbnb/javascript,95b6b43d634814c3ea81a350a9ab9c0b7d12457e,Jordan Harband,2023-05-15T17:20:15Z,[eslint-config] [*] [dev deps] update `@babel/runtime`,2,2,4
+airbnb/javascript,240a3789db57dd285545e51d7484fcbc3cc2a3e1,Jordan Harband,2023-05-15T17:19:05Z,"[Dev Deps] update `markdownlint`, `markdownlint-cli`",2,2,4
+airbnb/javascript,0e627e2fa32e16296e309af314eb3cdaae00de66,Jordan Harband,2023-05-15T17:15:59Z,[readme] update eslint plugin repo URLs,106,106,212
+airbnb/javascript,7982931ba745c0f57ba6934fc7e6cc43901dac76,Christian Koop,2023-05-02T17:45:36Z,[readme] Updates ESLint rule in section 12.3 (exponentiation-operator)  The change itself has already been made in f3d3a075cda2acc02011e71991c10bb5b4a15278 (tracked in/acording to https://github.com/airbnb/javascript/issues/2421#issuecomment-1371305010).   #2421 Remove Math.pow from `no-restricted-properties` and use `prefer-exponentiation-operator` instead.,1,1,2
+airbnb/javascript,69fc1bf1953a9113f30f07ef93b69caaf498c689,Felipe Garcia Diaz,2023-04-28T07:33:28Z,"spell checking, fixed grammar error.",1,1,2
+airbnb/javascript,5c01a1094986c4dd50a6ee4d9f7617abdfabb58a,syedmouaazfarrukh,2023-02-07T19:17:51Z,[readme] added JavaScript Roadmap link,1,0,1
+airbnb/javascript,bf536566cee0b7f239e00f105ca422bb95be2d62,Jordan Harband,2023-02-09T06:59:18Z,"[eslint config] [deps] update `eslint-plugin-react`, `eslint-plugin-jsx-a11y`",31,4,35
+airbnb/javascript,917c8d92a30db5bc35ddef85ec417f1aad0dc2c1,Jordan Harband,2023-02-09T06:19:53Z,[*] [deps] update `eslint-plugin-import`,14,4,18
+airbnb/javascript,8091e39343b86ccc8524ed068cd218a3fd928105,Jordan Harband,2023-02-09T06:11:42Z,"[*] [dev deps] update `@babel/runtime`, `tape`",4,4,8
+airbnb/javascript,fd96a4fd57be26d4d9d2f2d24b373a2df7c23548,Jordan Harband,2022-12-30T22:48:36Z,[eslint config] [*] [refactor] use object spread instead of `Object.assign`,7,13,20
+airbnb/javascript,81157eec2309449b31f36bf8940493623f2530c6,Mustafa UZUN,2022-11-17T17:15:09Z,[guide] add `Object.hasOwn`,2,0,2
+airbnb/javascript,4ef69edc633972a559cb7418e8aee8172cc9fbad,Mert Can Altın,2022-12-03T21:32:01Z,[Tests] refactor test paths,6,4,10
+airbnb/javascript,d60170173096486bde4eff320a22148e79acff48,Mustafa UZUN,2022-10-29T23:00:29Z,"[readme] wayback machine, or remove, broken links",11,12,23
+airbnb/javascript,49d08a2f134f4d6524e99aacce57914b8957994e,Mustafa UZUN,2022-10-29T20:49:43Z,"[readme] prefer `const`/`let` over `var` in examples  2.1 Use const for all of your references; avoid using var. eslint: prefer-const, no-const-assign",26,26,52
+airbnb/javascript,0d747c6d96f94e54d24d8c005da0c87105bf0fd5,Pushpendra Pal,2022-11-13T23:24:20Z,[readme] add space before code blocks,4,0,4
+airbnb/javascript,1fb7d76adde6f0822471c924bfda4ccd49879bc0,Jordan Harband,2022-11-17T21:56:33Z,[eslint config] [patch] add new disabled core rules,10,0,10
+airbnb/javascript,38f1488918ef19f56191e855f624fa5da988d547,Maksim Ploski,2022-10-31T18:57:59Z,[guide] fix typo in `space-before-blocks`,1,1,2
+airbnb/javascript,c6b1a43c489d2c242f9c6c6d12966c95d27d9dfa,Mustafa UZUN,2022-10-26T10:44:17Z,[guide] rename `qux` to `quux`  Fixes #2661,2,2,4
+airbnb/javascript,6947138ee34319133da0e28a0e59abad987f1586,Mustafa UZUN,2022-10-26T13:17:38Z,[guide] add comma to the end of the property,5,5,10
+airbnb/javascript,6fb4f8e878264f7b913dc29bc6919520eb6be6c8,Mustafa UZUN,2022-10-25T21:06:26Z,[guide] add Optional Chaining,8,0,8
+airbnb/javascript,ca0ff97f17f355d10afc7ccd4f5ae11815d62637,Mustafa UZUN,2022-10-25T20:26:56Z,[guide] add Nullish Coalescing operator,2,0,2
+airbnb/javascript,0b1f62372ee0ce9e228a1a9a98d948d323d1737f,Mustafa UZUN,2022-10-25T13:03:37Z,[editorial] convert example to use single instead of double quotes,1,1,2
+airbnb/javascript,7dbb7b154ffe38297f451440e7f59e3876a18ef7,Jordan Harband,2022-10-25T16:42:25Z,[eslint config] [base] add disabled `logical-assignment-operators` rule,7,0,7
+airbnb/javascript,75a908aacfe9ad86a18f3930cfff9c4636ffd644,Jordan Harband,2022-09-19T05:21:48Z,"[eslint config] [deps] update `eslint-plugin-jsx-a11y`, `eslint-plugin-react`, `eslint-plugin-react-hooks`",6,6,12
+airbnb/javascript,f6f63b89f602006278eff0ba4ad3cae617705cc3,Jordan Harband,2022-09-19T05:18:57Z,[eslint config] [*] [deps] update `object.assign`,2,2,4
+airbnb/javascript,866f441d05ae07fccdd7e6c3946125875594d6f3,Jordan Harband,2022-09-19T05:18:17Z,"[eslint config] [*] update `@babel/runtime`, `tape`",4,4,8
+airbnb/javascript,5143a7a97a6969dd690fb905acee54d9f753667c,Jordan Harband,2022-09-19T05:16:08Z,"[Dev Deps] update `markdownlint`, `markdownlint-cli`",3,3,6
+airbnb/javascript,3cbf96de7cde974aab99f4ca85bd23ea0556c34a,Jordan Harband,2022-09-19T05:08:04Z,[eslint config] [base] `no-alert`: add TODO comment,1,0,1
+airbnb/javascript,5155aa5fc1ea9bb2c6493a06ddbd5c7a05414c86,Haoqun Jiang,2022-08-08T13:56:10Z,"[eslint config] [base] disable the deprecated `no-spaced-func` rule  This rule was deprecated since ESLint v3.3.0 and replaced by the `func-call-spacing` rule. https://eslint.org/docs/latest/rules/no-spaced-func  `func-call-spacing` was enabled in this package long ago: https://github.com/airbnb/javascript/commit/27dcb99c6d80718946d10017144b2aa68bed8b9e  So there's no need for it to stay in the ruleset.  Besides, it is causing some tricky issues when overriding the rules for TypeScript support (https://github.com/iamturns/eslint-config-airbnb-typescript/issues/246)",2,1,3
+airbnb/javascript,cbf9ade10a2f6f06c9da6dbfa25b344bee4bbef6,Michael Orzel,2021-07-02T13:40:46Z,[guide] Added period to 4.4 for formatting consistency.,1,1,2
+airbnb/javascript,206d25b55a9c6171499465cb38c8f09ea737d31f,Jordan Harband,2022-05-24T15:52:07Z,[eslint config] [deps] update `eslint-plugin-react`,7,2,9
+airbnb/javascript,a0e94052d542796bd756d3e2e0d563e5b392b804,Jordan Harband,2022-05-24T15:49:47Z,[eslint config] [*] [dev deps] update `@babel/runtime`,2,2,4
+airbnb/javascript,42c0e2ea13e30ae47a6ebad1e1b5d95a44ac7665,Joe Lencioni,2022-05-24T14:52:05Z,Fix typo in eslint-config-airbnb-base changelog,1,1,2
+airbnb/javascript,7fdc87a8be565fa1f1779dc1d6b6461b953f7d85,terrablue,2022-05-03T17:06:48Z,[guide] fix eslint core rule URLs   - fix broken eslint eol-last link  - remove .html ending in eslint urls,42,42,84
+airbnb/javascript,1677ba6c6a285366e38998e292d42a7eab64d18e,Jordan Harband,2022-05-03T17:41:03Z,[eslint config] [meta] update eslint-plugin-react repo URLs,103,103,206
+airbnb/javascript,7c0f28af8b9cdece524fa224cbddc4ac16e948fd,Jordan Harband,2022-05-03T17:33:40Z,"[eslint config] [deps] update `@babel/runtime`, `eslint-find-rules`, `eslint-plugin-import`, `eslint-plugin-react`, `eslint-plugin-react-hooks`, `tape`",19,9,28
+airbnb/javascript,fd2f5a1daed62e129de3fa909421568e9fa3e2e6,Jordan Harband,2022-05-03T17:29:37Z,"[eslint config] [base] [deps] update `@babel/runtime`, `confusing-browser-globals`, `eslint-find-rules`, `eslint-plugin-import`, `tape`",11,6,17
+airbnb/javascript,b4377fb03089dd7f08955242695860d47f9caab4,Jordan Harband,2022-01-11T20:09:40Z,[meta] better `eclint` command,2,2,4
+airbnb/javascript,34b5bc39f1a7b8b999e041db5c3b84c0ebe0f850,Jordan Harband,2021-12-25T20:34:37Z,[meta] revert changes from d4e39c9b10767cc77c7d0091f2eae06a6ccfc33e  Caused by https://github.com/npm/cli/issues/3619,2,2,4
+airbnb/javascript,d4e39c9b10767cc77c7d0091f2eae06a6ccfc33e,Jordan Harband,2021-12-25T15:34:29Z,v19.0.4,7,3,10
+airbnb/javascript,baaa5e8d26f869c2520f991b34e701f220a66313,Jordan Harband,2021-12-24T20:27:19Z,[eslint config] v19.0.3,6,1,7
+airbnb/javascript,274c8d570155a05b016980294d4204c5711bce86,David Petersen,2021-11-10T23:05:21Z,[eslint config] [patch] set `namedComponents` option to match style guide  Change the `namedComponents` option to `function-declaration` to match what the style guide requires.  https://github.com/airbnb/javascript/commit/019e0f7e07477e85249e1d584f22773120c41b91#r60060792,1,2,3
+airbnb/javascript,38bc026fe46f807627967bed1e5e7415182cba20,Jordan Harband,2021-12-22T23:12:04Z,[eslint config] [base] add disabled `prefer-object-has-own` rule,5,0,5
+airbnb/javascript,445322db64f0dbba35616ee68366f9d929970a3e,Jordan Harband,2021-12-22T23:09:25Z,[eslint config] [deps] update `eslint-plugin-react`,2,2,4
+airbnb/javascript,152bd5e85a9ba941d6a3f38643317bbfb6e1fbb3,Jordan Harband,2021-12-02T18:34:58Z,[eslint config] v19.0.2,6,1,7
+airbnb/javascript,afc2cc34327459dcda12ce0d0656a0ffecf100a0,Jordan Harband,2021-12-02T18:04:51Z,"[eslint config] [meta] fix ""exports"" path  Fixes #2524",1,1,2
+airbnb/javascript,371537f393da4862c624bdd90ae823bda0e251ec,Jordan Harband,2021-11-22T21:44:36Z,[Tests] re-enable tests disabled for the eslint 8 upgrade,28,42,70
+airbnb/javascript,c05ffb2417908650ec789aa442020e34669ad824,Jordan Harband,2021-11-22T21:32:11Z,[eslint config] v19.0.1,7,1,8
+airbnb/javascript,97a3238020ddf3d9ae8d7e0d46d542c960cfe93b,Jordan Harband,2021-11-22T19:12:36Z,[eslint config] [deps] update `eslint-plugin-react`,2,2,4
+airbnb/javascript,e0bb39351941fa06978dcf90ea57cf3923c19143,Jordan Harband,2021-11-22T19:12:26Z,[eslint config] [*] [dev deps] update `tape`,2,2,4
+airbnb/javascript,c4000b932a452a5d33663310b28ce7d11ea88f33,Jordan Harband,2021-11-22T19:07:00Z,[eslint config] [fix] `whitespace`: udpate to support eslint 8  Fixes #2517,158,95,253
+airbnb/javascript,31c6f21878a4aeb13e6d3547252a88aece6002b0,Jordan Harband,2021-11-22T19:06:19Z,[eslint config] [base] [refactor] make a single source of truth for whitespace rule names,53,98,151
+airbnb/javascript,91cab81f69d7b8258846e1256d06a11e544c0870,Yatin,2021-11-16T18:44:08Z,[readme] operator => parameter syntax,1,1,2
+airbnb/javascript,d8cb404da74c302506f91e5928f30cc75109e74d,华,2021-11-11T15:36:01Z,[eslint config] [base] remove unneeded eslint version check,2,6,8
+airbnb/javascript,52e710c14ec0197cfefe131061e1fe41c966f93b,Jordan Harband,2021-11-10T20:25:30Z,[eslint config] v19.0.0,14,1,15
+airbnb/javascript,1bc8cabd447ef9ce69d27ae70e67eb47daeffc21,Jordan Harband,2021-11-10T19:31:18Z,[eslint config] [breaking] support `eslint` 8; drop `eslint` < 7,38,20,58
+airbnb/javascript,37ebbba44cb1a7cf994c43f4b8e900b9fe7e6d22,Jordan Harband,2021-11-10T08:04:12Z,"[eslint config] [deps] update `eslint-config-airbnb-base`, `eslint-plugin-jsx-a11y`, `eslint-plugin-react`, `eslint-plugin-react-hooks`, `safe-publish-latest`",8,8,16
+airbnb/javascript,930a6f2e4c98df904ec748a6a2bd4928ef6218b1,Jordan Harband,2021-11-10T08:01:04Z,"[eslint config] [*] update `@babel/runtime`, `eslint-plugin-import`",6,6,12
+airbnb/javascript,366bfa66380c08304101c6add46355696e90b348,Jordan Harband,2021-11-09T06:59:44Z,[eslint config] [base] v15.0.0,20,1,21
+airbnb/javascript,f3d3a075cda2acc02011e71991c10bb5b4a15278,Jordan Harband,2021-11-09T02:27:29Z,"[eslint config] [base] [breaking] drop eslint < 7, add eslint 8",237,145,382
+airbnb/javascript,eac8cc605b0ee7acf32b9b3c7fa62fa66cd35de0,Jordan Harband,2021-11-09T02:48:04Z,[eslint config] [base] [breaking] add `exports`,14,0,14
+airbnb/javascript,be6966b2514c53097b98e218afb52e813859dfe1,Jordan Harband,2021-11-09T06:33:12Z,[eslint-config] [meta] add `--no-save` to link scripts,1,1,2
+airbnb/javascript,4fc997b97e39359c3699aa95c80586277ea565ca,Jordan Harband,2021-11-09T02:42:02Z,[readme] some updates,16,3,19
+airbnb/javascript,96f11d8c810de5712ba4f80adaa402057565a3be,Jordan Harband,2021-11-09T06:25:39Z,[actions] run prepublishOnly in prepublish tests,2,2,4
+airbnb/javascript,c12a08c479ba139718bf8ab7eb21a3a5d0c520d7,Jordan Harband,2021-11-09T02:27:29Z,[actions] fix action working directories,16,2,18
+airbnb/javascript,10a6d02c665f35826114d66ee8f37bda1d89f59e,Jordan Harband,2021-11-09T05:21:58Z,[meta] use `prepublishOnly` script for npm 7+,4,2,6
+airbnb/javascript,ef6c478a2b2b97ccc996ed6169f3f97bff2e5395,Jordan Harband,2021-11-09T02:06:45Z,[eslint config] [*] [dev deps] update `@babel/runtime`,2,2,4
+airbnb/javascript,6734b7891176ce5d2601e16f62b5c37a8479e6ae,Jordan Harband,2021-11-09T00:00:07Z,"[eslint config] [*] [deps] update `eslint-plugin-import`, `object.entries`",6,6,12
+airbnb/javascript,fdc812a0a5773449274f7c4d473e0841eca89614,Kai,2021-11-03T23:24:41Z,[Docs] HTTP => HTTPS,19,19,38
+airbnb/javascript,8aec65a4d385c49550bf7e53a18044d8f09d5c06,Joe Lencioni,2021-11-05T17:49:19Z,Merge pull request #2491 from airbnb/travis  [Tests] migrate tests to Github Actions,208,108,316
+airbnb/javascript,ea5b991a4f67264a7d3a2d783de67b29450f2779,Jordan Harband,2021-11-05T06:05:04Z,[Tests] migrate tests to Github Actions,208,108,316
+airbnb/javascript,2a6bec1132c937c3f512da083c759bbd7da4ce90,Augustus Buonviri,2021-09-15T02:12:31Z,[eslint config] [base] [patch] Improve `function-paren-newline` with `multiline-arguments` option  Related to #1731  Co-authored-by: Augustus Buonviri <augustus.buonviri@stratusgrid.com> Co-authored-by: Jordan Harband <ljharb@gmail.com>,7,3,10
+airbnb/javascript,82dbec3c995687fd6e08151c6d97768f6d970d56,Johnwesley R,2021-10-17T18:27:43Z,[guide] Fix 14.1 Temporal Dead Zones link,1,1,2
+airbnb/javascript,122788230acdc416e3168e07f7d0bf89a744dd94,Mustafa Haddara,2021-10-15T21:00:15Z,[eslint config] clarify hooks requirement,4,2,6
+airbnb/javascript,4ee732639396362c6981b1aa4730934c3baa7919,Marko Schulz,2021-09-24T09:26:03Z,[eslint-config-airbnb] [patch] Explain why `react/jsx-key` is turned off,1,0,1
+airbnb/javascript,7fbed3b55c9815251d1a9790f42ce7b278687a47,Jordan Harband,2021-09-29T04:44:21Z,[eslint-config-airbnb] [deps] update `eslint-plugin-react`,12,2,14
+airbnb/javascript,30927d25036805a36d15ca71742f5a17bc6a1642,Jordan Harband,2021-09-29T04:41:06Z,"[*] [deps] update `@babel/runtime`, `eslint-plugin-import`, `tape`",8,8,16
+airbnb/javascript,f5c14cae2ff58000cead98290b8ec4b54dda2f14,Luke Ingalls,2021-06-19T01:49:13Z,[readme] fixed typo and removed redundancy,2,2,4
+airbnb/javascript,428c9ddb7e27466c74fb3b02d20d427d8500f7c9,Jordan Harband,2021-06-29T17:03:15Z,"[*] [deps] update `@babel/runtime`, `eslint-plugin-import`, `eslint-plugin-react`",20,6,26
+airbnb/javascript,af8bdf17ddf7752021ef6cbfe5c23ac8fb307f26,Jordan Harband,2021-06-29T16:56:18Z,[*] [deps] update `object.entries`,2,2,4
+airbnb/javascript,d5d406a849f03b8ce1bc8848acb7ef1690d29c85,amirvatani,2021-05-09T07:10:31Z,"[readme] add AloPeyk to ""in the wild""",1,0,1
+airbnb/javascript,35914b14025cd52f53cd2ae2f353cdc7384087c0,Asher Hwang,2021-05-11T00:08:23Z,[guide] Spread operator => Spread syntax,3,3,6
+airbnb/javascript,1fb4592122ef94029b3ff2f361408f0681751253,Kiran S,2021-05-04T15:45:46Z,[guide] add references for eslint rules,47,1,48
+airbnb/javascript,5641278fa1df75ba3b6af2959a553bd682c0ad42,Kushang Shah,2021-04-23T03:42:07Z,[editorial] add `var` info to `let`/`const` section,5,1,6
+airbnb/javascript,dc3af3a90ebf56a5e9df2d4c7b40d6518200bb87,Kiran S,2021-05-03T16:09:00Z,[eslint config] [base] update default value for complexity,1,1,2
+airbnb/javascript,1eadb93e377da1e56c3f91f26610e5d0a00738a9,Mackenzie Morgan,2020-12-17T05:18:29Z,[eslint config] [fix] bump eslint-plugin-react-hooks peer dependency version  Fixes #2355,2,2,4
+airbnb/javascript,0cf78acab0fff90e9591dedd8783b62a72ffc118,Cong Zhang,2021-03-24T10:17:15Z,[guide] Fix 19.6 example code,1,1,2
+airbnb/javascript,730b74927432d5931f9047322e925fb7e1c07be6,Diane Ko,2021-03-25T01:38:08Z,"[eslint config] [patch] Alphabetize the rules for react-a11y.js  The ordering of the rules are currently not alphabetical, which can make it hard to tell whether there are rules missing or what's set for each rule from eslint-plugin-jsx-a11y.  This change alphabetizes the list so it's easier to compare to the [list of supported rules](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y#supported-rules)",132,128,260
+airbnb/javascript,4d837646b7ae2a37780f91423479e65949863570,Jordan Harband,2021-03-25T06:33:38Z,[eslint config] [deps] update `eslint-plugin-react`,8,3,11
+airbnb/javascript,1b540ba14ea15c28f4028e4216373d0eeb96dde0,Jordan Harband,2021-03-25T06:32:41Z,[*] [dev deps] update `tape`,2,2,4
+airbnb/javascript,711aeb650db14c3b8cc329511ac508ee05bc1af6,kimhanui,2021-03-17T23:43:41Z,[editorial] Complete 19.6 example code (cut in the middle)  Fixes #2403,4,0,4
+airbnb/javascript,9c181108a7f11be1b97191f17c9ab2dc98e28c6e,Ikko Ashimine,2021-01-08T11:40:02Z,[meta] Fix typo in .markdownlint.json  preceeding -> preceding,2,2,4
+airbnb/javascript,ea5ec0c5242a4b987eb4a2861d65298450fb05d0,marsonya,2020-12-30T05:14:32Z,[readme] removed dead links - 404 not found,0,13,13
+airbnb/javascript,db8b6ceb33289b542e8aca192a6aefaf21c4a14c,Jordan Harband,2020-12-30T05:37:48Z,"[eslint config] update `eslint-plugin-react`, add new rules, disabled",11,2,13
+airbnb/javascript,b9ff0aee71a31ebc5ec7b022c8a9fab49a589d7e,Jordan Harband,2020-12-30T05:34:18Z,[eslint-config] [base] add disabled `no-unsafe-optional-chaining` rule,5,0,5
+airbnb/javascript,fb3214c9d650ed66d7e363e8b2eed0f07e514d32,Jordan Harband,2020-12-30T05:32:29Z,[*] [deps] update `object.entries`,2,2,4
+airbnb/javascript,66cd156a489f2fb82aa55fd4d556ff1c0be9b4e4,Jordan Harband,2020-12-30T05:32:08Z,[*] [dev deps] update `tape`,2,2,4
+airbnb/javascript,63098cbb6c05376dbefc9a91351f5727540c1ce1,Hollow Man,2020-11-20T14:49:57Z,[eslint config] [base] [patch] arthmetic -> arithmetic,1,1,2
+airbnb/javascript,1f786e154f6c32385607e1688370d7f2d053f88f,Jeremy,2020-11-12T02:17:20Z,"[eslint config] [base] [patch] fix spelling of ""than""  you mean ""than"" not ""then"".",2,2,4
+airbnb/javascript,5620bd5620b17184f57cd97ebf03b0efee3cc464,Jordan Harband,2020-11-21T08:59:24Z,[eslint config] [base] add `no-nonoctal-decimal-escape` rule,5,0,5
+airbnb/javascript,f0df3a8680479ff0b897cd98a1eab6b156899214,Hugo Alliaume,2020-11-07T07:17:29Z,[eslint config] [base] `import/no-extraneous-dependencies`: Add .eslintrc.js to devDeps  Similar to #1168 and #1522.,2,1,3
+airbnb/javascript,37d48dbf6082bd8958fdc5db5df207bb1166d653,Jordan Harband,2020-11-06T22:20:24Z,[eslint config] v18.2.1,10,1,11
+airbnb/javascript,e5de51e55f56a68891f1cb95fe234649c015e279,Jordan Harband,2020-11-06T22:19:17Z,"[eslint config] [patch] re-add `jsx-a11y/accessible-emoji`, but disabled  See #2322",5,0,5
+airbnb/javascript,eee79a5455c93bb094d673cf194df5e6403d573e,Jordan Harband,2020-11-06T22:14:17Z,"[eslint config] [deps] update `eslint-plugin-jsx-a11y`, `eslint-plugin-react`",4,4,8
+airbnb/javascript,b7015dd0b3811e71b9423342124d5cf135f78785,Jordan Harband,2020-11-06T22:12:51Z,[eslint config] [deps] update `eslint-config-airbnb-base`,1,1,2
+airbnb/javascript,36f23d7886e42aaa5530d2da0541b1f3faf8b4a6,Jordan Harband,2020-11-06T18:10:00Z,[eslint config] [base] v14.2.1,9,1,10
+airbnb/javascript,e149b0536659a464c34dad19276f9db3e6c9a16c,Jordan Harband,2020-11-06T18:03:46Z,"[eslint config] [*] [deps] update `confusing-browser-globals`, `object.assign`",3,3,6
+airbnb/javascript,f0492d59bdee973ad1362b290a75016dea279953,Jordan Harband,2020-11-06T18:00:59Z,"[eslint config] [*] [dev deps] update `@babel/runtime`, `eslint-find-rules`, `eslint-plugin-import`",8,8,16
+airbnb/javascript,25b64d7f46a1efc85792dc250d0d1a2eb705a0d8,Jordan Harband,2020-11-06T17:59:46Z,"[dev deps] update `markdownlint`, `markdownlint-cli`",2,2,4
+airbnb/javascript,8996aa7c5369baef60c5c8c07df4b6eaae46279e,Kyℓe Hensel,2020-10-26T19:54:41Z,[eslint config] [patch] remove deprecated `jsx-a11y/accessible-emoji` rule,0,4,4
+airbnb/javascript,05c3bb0018fcd46a41fec07a1308075c7aaea197,Alex Mercier,2020-10-23T12:30:37Z,[eslint config] [patch] Fix ignoreNonDOM typo in jsx-a11y/aria-role rule  This should be `ignoreNonDOM` not `ignoreNonDom` according to [documentation](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/master/docs/rules/aria-role.md).,1,1,2
+airbnb/javascript,d3c7b84d9e513fc1388de28775574ed614ee33e6,alvyn le,2020-09-23T05:30:35Z,[eslint config] [patch] Fixed `handle` and `on` ordering in `sort-comp` rule  - fixes #2116,49,2,51
+airbnb/javascript,b30b0e4d917bf74d90cc39c4d74237957fe7b603,Samuel Scheiderich,2020-10-24T20:30:10Z,[eslint-config] [base] `no-restricted-globals`: add better messages,13,1,14
+airbnb/javascript,2c5c88d0487db3024e8a20bb20f46933a03dd8aa,Michael Flores,2020-10-22T04:10:31Z,"[guide] Update reason for preferring object destructuring  Fixes #2293  The reason for preferring object destructuring is quite narrow in scope. While this guide isn't intended to provide every possible reason for every preference, it perhaps should aim to provide a succinct and compelling reason. The current reasoning could be improved to meet this standard, so I'm proposing adding some additional information to clarify the benefits of what is an often controversial rule (controversial only because its introduction can require many changes in a mature codebase and has no auto fix available).",1,1,2
+airbnb/javascript,ee2f22a10c0b82a21eaa7743905712b6cb145fc2,Daniel Paz,2020-10-16T11:02:43Z,[guide] Better link reference to Drupal's linter  This link was taken from their Code standard page: https://www.drupal.org/docs/develop/standards/javascript/eslint-settings  The previous link wasn't very informative and required a download process in order to check their standards.,1,1,2
+airbnb/javascript,aa43bb23987a14baaa795cf795540a3f2eb41872,Daniel Paz,2020-10-14T15:48:40Z,"[guide] add explanation about why to use radix when using parseInt  I added an explanation at [22.3](https://github.com/airbnb/javascript/blob/master/README.md#coercion--numbers) why to use radix once parseInt, this explanation has been taken from [Mozilla's docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt#Octal_interpretations_with_no_radix).  I think it's not clear without an explanation since people can think that it's obvious that string will be parsed to 10 base number, but it's not always the case.",2,0,2
+airbnb/javascript,82170f91272bcda42556c91cb40056b309b999c7,Pirasis,2020-10-11T14:28:52Z,[guide] add eslint rule reference for `prefer-object-spread`,1,1,2
+airbnb/javascript,5ebfe3e5b8b72f301228cc1718685d1db9ae5f49,Pirasis,2020-10-06T14:36:29Z,[guide] add eslint rule reference for `default-param-last`,1,1,2
+airbnb/javascript,337f60706fcaeb4e897e8fe38f8af39e8ea410b9,Android Dev Notes,2020-09-05T20:32:14Z,[guide] Fix grammatical errors,1,1,2
+airbnb/javascript,6006d6d2dfe0a47fdd18acd6f2a9e207ef0cc8f8,Jordan Harband,2020-08-27T21:29:09Z,[guide] fix dead es-discourse link  Fixes #2274.,1,1,2
+airbnb/javascript,a24dc34a4a2748c99006a48e997aa0a06b1d4d94,Akshath Sivaprasad,2020-08-06T04:38:20Z,[guide] [react] Add examples for formatting multiline conditional components,21,0,21
+airbnb/javascript,1dc71d38395633f9f9099614765bd4361c9a9c64,Jordan Harband,2020-08-03T16:36:24Z,[guide] [react] add missing PascalCase guidance for prop names,2,1,3
+airbnb/javascript,973384be1b4ec2c58c5d9ba113a54a10cb757b96,Jordan Harband,2020-08-06T05:06:20Z,"[eslint config] [*] [dev deps] update `@babel/runtime`, `eslint-find-rules`, `eslint-plugin-jsx-a11y`, `eslint-plugin-react`",6,6,12
+airbnb/javascript,3dcc59112308211b6ac8478a4ad997ed3f17d9b1,Jordan Harband,2020-08-06T05:04:10Z,[eslint config] [base] add `id-denylist` rule,5,0,5
+airbnb/javascript,c5bee75b1b358a3749f1a6d38ee6fad73de28e29,Jordan Harband,2020-06-23T05:55:52Z,"[eslint config] [*] [deps] update `eslint-plugin-import`, use valid `import/no-cycle` `maxDepth` option",5,5,10
+airbnb/javascript,5124de23da0190b686850c9582e5a0960a607ae6,Jordan Harband,2020-06-27T20:22:33Z,[eslint config] [base] add new rules from v7.3,12,0,12
+airbnb/javascript,54955410ee53fd82e6caa5879ccd0c413640706a,Jordan Harband,2020-06-18T20:11:38Z,[eslint config] v18.2.0,12,1,13
+airbnb/javascript,197b50c07627863e5b3524504bf4f3240a0e2537,Jordan Harband,2020-06-18T18:57:41Z,"[eslint config] [deps] update `eslint-config-airbnb-base`, `eslint-plugin-jsx-a11y`",9,3,12
+airbnb/javascript,f550ded6dab8dac9d42f2dfa5f2ed9858f0fe045,Jordan Harband,2020-06-18T19:03:46Z,[eslint config] [tests] fix for eslint 7,3,3,6
+airbnb/javascript,562e3519b874d91b369c5c6fe8a94408a380758b,Jordan Harband,2020-06-18T18:53:53Z,"[Dev Deps] update `markdownlint`, `markdownlint-cli`",2,2,4
+airbnb/javascript,78457af2c55cc62cf4379c190b7621a341814692,Jordan Harband,2020-06-11T06:25:49Z,[eslint config] [base] v14.2.0,11,1,12
+airbnb/javascript,5b462a04cdfebba712a3df18926edfcb4103d2a9,Jordan Harband,2020-06-10T22:43:13Z,[eslint config] [*] [new] add `eslint` `v7`,67,6,73
+airbnb/javascript,22adc06f56a94437a533c4935d6706a511b3dc36,Kristóf Poduszló,2020-04-09T22:47:18Z,[eslint config] [minor] Allow using `eslint-plugin-react-hooks` v3 and v4  Co-authored-by: Kristóf Poduszló <kripod@protonmail.com> Co-authored-by: Jordan Harband <ljharb@gmail.com>,18,2,20
+airbnb/javascript,fe2e451ba75b2ebfedc1cf4f9bf217f104b06a1d,Jordan Harband,2020-06-10T21:58:23Z,"[Tests] add `node` `v14`; remove `v9`, `v11`",1,11,12
+airbnb/javascript,b58700607707c7e280e5e266a884115cbcea806c,Jordan Harband,2020-06-10T21:49:21Z,[eslint config] [*] [deps] update `eslint-plugin-import`,4,4,8
+airbnb/javascript,8aee3e160053d07b4c156f0885fb5a6da4e19603,Vlad Shcherbin,2020-05-20T10:21:10Z,[eslint config] [base] [patch] Include 'context' exception for `no-param-reassign`,1,0,1
+airbnb/javascript,cad3db31695631a7877cece8903eea1f41d59e03,Vlad Shcherbin,2020-06-06T21:01:51Z,[eslint config] [base] [minor] Disallow multiple empty lines,1,1,2
+airbnb/javascript,7aa0fa14d65d10e7bf259089d9964d41eb8ca5e0,Jordan Harband,2020-06-08T03:50:43Z,"[eslint config] [*] [deps] update `eslint-plugin-import`, `eslint-plugin-react`, `babel-preset-airbnb`, `eslint-find-rules`, `in-publish`, `tape`",14,14,28
+airbnb/javascript,d34f8074590e1497a9a90947181339435ce335d4,Jordan Harband,2020-06-08T03:05:48Z,[Deps] update `object.entries`,2,2,4
+airbnb/javascript,c48a060aff9a4ba66003b18e6a27fd899581f95a,Severiano Badajoz,2020-06-05T22:09:12Z,[eslint config] [patch] set `explicitSpread` to ignore for `react/jsx-props-no-spreading`,1,0,1
+airbnb/javascript,06b3ab11d9a443ff46f052dd00375e271e5146e6,Paul Matthew Barrameda,2020-02-20T06:56:52Z,"[eslint config] [minor] Fix typo in no-multiple-empty-lines rule   ## Why is the change being made?  This change is made because the Airbnb documentation states to ""avoid a newline at the beginning of files"", yet the code does not follow this.   ## What has changed to address the problem?  This change fixes the `no-multiple-empty-lines` rule by setting max beginning of file (`maxBOF`) to from 1 to 0.   ## How was this change tested?  This change was tested with `npm test`.   ## Related docs  https://github.com/airbnb/javascript#whitespace--no-multiple-empty-lines",2,2,4
+airbnb/javascript,c0ee2c492460ac7428286c2bb0b48b4a058430fa,小蚊酱,2020-03-31T09:41:38Z,[guide] unquote properties in whitespace key spacing section,3,3,6
+airbnb/javascript,e4f3dd4effd8e579427eeceb60d2f4e2ed5d08a7,Jiahao,2020-03-11T03:24:39Z,"[react] Update Chinese (Simplified) Translation  The translation for Chinese (Simplified) is outdated. Changed to an up-to-date translation that synced with current English version, enhanced expressions for better readability, and also added notes of technical terms for Chinese readers.",1,1,2
+airbnb/javascript,0375265cbd43635f8062615995a6a86f22fd0fc2,Nick Reiley,2020-03-16T18:27:49Z,[eslint config] [base] [patch] Allow triple-slash (///) comments,1,1,2
+airbnb/javascript,d3628e26003a602535b91a8951da7a692fc685ca,Nick Reiley,2020-03-16T18:39:16Z,[eslint config] [base] [patch] Disable `prefer-object-spread` for `airbnb-base/legacy`,1,0,1
+airbnb/javascript,f075a0db50f1fd6a798cb6e0c3677421deb7b522,Jordan Harband,2020-03-14T22:39:55Z,"[eslint config] [patch] relax `eslint-plugin-react-hooks` down to v2.3, due to a controversial change in v2.5  Fixes #2195.",2,2,4
+airbnb/javascript,d529ccaea3b3da1c1cfce686b119d662e8e05c69,David J. Bradshaw,2020-03-14T07:36:30Z,[eslint config] readme: fix typo,1,1,2
+airbnb/javascript,a3355f90c4b52445dbe828fd4e71a7e7d12ef202,Jordan Harband,2020-03-13T05:58:43Z,[eslint config] v18.1.0,14,1,15
+airbnb/javascript,e7062c32bbb032a721dedbc5982b8fefe8b6850a,Jordan Harband,2020-03-13T05:47:00Z,[eslint config] [deps] update `eslint-config-airbnb-base`,2,2,4
+airbnb/javascript,c75b66daa6e9f1bc0c80138465ad5115764fb18d,Jordan Harband,2020-03-12T23:45:56Z,[eslint config] [base] v14.1.0,13,1,14
+airbnb/javascript,e279b6d3a86aacbb03bd7059b899f12bfb201497,Jordan Harband,2020-03-12T22:58:42Z,"[eslint config] [*] [deps] update `eslint`, `eslint-plugin-react`, `eslint-plugin-react-hooks`",8,8,16
+airbnb/javascript,6924bd36041c59d7b248e47f31667dbe56a8aa55,Jordan Harband,2020-03-12T22:58:18Z,[Dev Deps] update `@babel/runtime`,2,2,4
+airbnb/javascript,165af9b6c881a0e413df824276aab4c7134dc4f9,Jordan Harband,2020-03-12T22:41:30Z,[Tests] actually run the linter on subpackages,4,0,4
+airbnb/javascript,e6e6414c973d6aa5f3672296fe3cf6c399ca570a,Dmitry Semigradsky,2020-03-09T09:55:31Z,[guide] Add link to eslint rule for https://github.com/airbnb/javascript#modules--multiline-imports-over-newlines,1,0,1
+airbnb/javascript,717ba5187af3b4c36877c2a7031edf202e72cf88,lagagain,2020-02-28T06:53:58Z,"[guide]: add ""bigint"" type to the primitives type section.  ```js var bn = 123n ``` (with ""n"" as suffix)",2,1,3
+airbnb/javascript,9890b4067700be1f2d045788f4ea5fbf12b5f8bf,Cain Hall,2020-03-02T05:27:57Z,guide: import/extensions rule documentation,17,0,17
+airbnb/javascript,3493b060ec5efddc8a06733b5dbfe9f33cbce63e,Julian Grinblat,2019-09-16T10:37:29Z,[eslint config] [minor] Support eslint-plugin-react-hooks@2,13,2,15
+airbnb/javascript,019e0f7e07477e85249e1d584f22773120c41b91,Jordan Harband,2020-02-14T01:42:08Z,[eslint config] add config for disabled new rules,29,0,29
+airbnb/javascript,41ca203e3e5afff7ccc74179caf72494c2e7bd01,Jordan Harband,2020-02-07T18:05:47Z,[Dev Deps] update `markdownlint-cli`,8,2,10
+airbnb/javascript,651280e5a22d08170187bea9a2b1697832c87ebc,Kévin Berthommier,2020-02-07T15:49:10Z,[eslint config] [base] Fix indentation with JSX Fragments,1,1,2
+airbnb/javascript,f86f19cefc3b1ce19c4bf473606c95de86779b68,Jordan Harband,2020-02-07T18:32:08Z,"[eslint config] [*] [deps] update `eslint-plugin-import`, `eslint-plugin-react`",6,6,12
+airbnb/javascript,4df908033fb52184ac58deacc19c00ceb11020d1,Jordan Harband,2020-02-07T18:29:46Z,"[eslint config] [*] [dev deps] update `@babel/runtime`, `babel-preset-airbnb`, `safe-publish-latest`, `tape`",8,8,16
+airbnb/javascript,377fbcac88728737dd8bd3180ec3819c3a2a5231,Jordan Harband,2020-02-07T18:25:49Z,[eslint config] [*] [deps] update `object.entries`,2,2,4
+airbnb/javascript,6d05dd898acfec3299cc2be8b6188be542824965,Geo Artemenko,2019-11-23T03:04:23Z,[eslint config] [*] [readme] normalize multiline word according to merriam-webster,6,6,12
+airbnb/javascript,b5954c32b34aab98d6713692fd33695fe8f7b12b,Jordan Harband,2019-12-11T00:47:51Z,"[eslint config] [base] [deps] [minor] add new disabled rules, update eslint",29,4,33
+airbnb/javascript,370793b3ddfecfef29c05a62bdf17ec3d1b0a8b3,Jordan Harband,2019-12-11T00:32:17Z,"[eslint-config] [*] [fix] `whitespace`: only set erroring rules to ""warn""  Fixes #2105",28,2,30
+airbnb/javascript,2e3adc98c784be7fa63c7a05271f7aa86c9d6bc7,Jonas Scheffner,2019-10-28T12:42:10Z,[eslint config] [base] [patch] `import/no-extraneous-dependencies`: Support karma config files,1,0,1
+airbnb/javascript,5927c7f706feee7542341faaa298176c2a82263d,Vse Mozhet Byt,2019-11-08T14:05:06Z,[guide] fix possible typo,1,1,2
+airbnb/javascript,56b75dc3592c2118cefc5296c94d5fce5923a487,Igor Gassmann,2019-11-03T20:00:57Z,[guide] Document `class-methods-use-this`  This PR documents the currently enforced `class-methods-use-this` ESlint rule as discussed in #2129,33,0,33
+airbnb/javascript,64b965efe0355c8290996ff5a675cd8fb30bf843,trg,2019-09-30T22:27:12Z,[guide] Fix Temporal dead zone link anchor,1,1,2
+airbnb/javascript,3fb312f18198364bacc07e61ca58ff89f9f0afa2,Alexander Wesolowski,2019-10-04T22:57:05Z,[eslint config] [patch] Add `static-variables` to `sort-comp` rule,1,0,1
+airbnb/javascript,8f78e1f44b9ca2f3a7da970771982694fa84fd72,Pirasis,2019-10-05T01:01:44Z,[tests] re-enable eslint rule `prefer-destructuring` internally,2,6,8
+airbnb/javascript,5a32c33bf2bf967ce32bae2fd33b3fea275a99be,Pirasis,2019-10-05T01:49:01Z,[eslint config] [base] [minor] enable `import/no-useless-path-segments` for commonjs  Fixes #2077.,1,1,2
+airbnb/javascript,df2c99c81474ab0fe9aecf0244d465785d3ee3df,Pirasis,2019-10-05T01:21:45Z,[tests] fix eslint errors from c66cfc3,2,2,4
+airbnb/javascript,ab72ab9e90f403e90590f8815e0563248af10470,Filipp Riabchun,2019-10-03T19:31:32Z,"[eslint config] [patch] Remove duplicate `componentDidCatch`  See https://github.com/airbnb/javascript/pull/2043#discussion_r331208075  I left the one before `cWU`, as in [defaults](https://github.com/airbnb/javascript/pull/2043#discussion_r331208075)",1,2,3
+airbnb/javascript,dee4f172e752f3e6180f88409aa4424de02f9d4c,Jordan Harband,2019-10-03T23:18:32Z,"[eslint config] [base] add new rules in eslint 6.x, disabled",16,0,16
+airbnb/javascript,c66cfc3f89335643b6fd89def665b959389b70ea,Jordan Harband,2019-10-03T23:20:10Z,[eslint config] [deps] update `eslint-plugin-react`,8,11,19
+airbnb/javascript,8c94d53bf88346cc4f55bfed769e3ee8c8247f80,Jordan Harband,2019-10-03T23:10:47Z,"[eslint config] [*] [dev deps] update `@babel/runtime`, `babel-preset-airbnb`, `safe-publish-latest`",6,6,12
+airbnb/javascript,79047a947000b4b328fb9a6579d00e538768629e,Jordan Harband,2019-10-03T23:10:12Z,[eslint config] [base] [deps] update `confusing-browser-globals`,1,1,2
+airbnb/javascript,7932a52e4b8f5a96089b245e2086769bf30cf0e4,Tom Prats,2019-09-04T18:11:39Z,Added Tomify and Traitify to the organizations,2,0,2
+airbnb/javascript,1ca21aba799699ba556bed058e3900514a9fbee3,Daniel Gray,2019-08-18T00:14:24Z,"[eslint config] clarify hooks section in readme  It took me too long to realize that `""extends"": ""airbnb/hooks""` won't cut it, and that you need to include both `""extends"": [""airbnb"", ""airbnb/hooks""]`. I think the docs should be explicit about this.",1,1,2
+airbnb/javascript,295d1e61cbebd33d06cbd287fc1d7ea59ba959f7,Jordan Harband,2019-08-14T15:46:20Z,[guide] clean up confusing example from bad rebase   ... from https://github.com/airbnb/javascript/commit/820745d61090139193cf9257b88974e36dfc9b35#diff-04c6e90faac2675aa89e2176d2eec7d8R963-R965 / #1863.  Fixes #2071.,0,3,3
+airbnb/javascript,a204cdf38a3e67a405c191773456d18296a9b37b,Jordan Harband,2019-08-13T19:30:37Z,[eslint config] v18.0.1,5,1,6
+airbnb/javascript,530278467f8b0a1b2aee632fbeee543e6732ef35,Jordan Harband,2019-08-13T19:29:20Z,[eslint config] [patch] `react/state-in-constructor`: fix incorrect configuration,2,2,4
+airbnb/javascript,bdba997ac704f7fdcebf4467babaa3f35828c0a5,Jordan Harband,2019-08-10T15:41:05Z,[eslint config] v18.0.0,22,1,23
+airbnb/javascript,1e0a696730256af82d284f37a66032681cf23387,Jordan Harband,2019-08-10T06:54:08Z,[eslint config] [breaking] disable `label-has-for`; enable `control-has-associated-label`,3,3,6
+airbnb/javascript,73f71d9ba4f9ae48054438420c27651fc924d196,Jordan Harband,2019-08-10T06:53:03Z,[eslint config] [breaking] enable `react/jsx-props-no-spreading`,1,2,3
+airbnb/javascript,089022aeff7b4d753c9f419c5b4e3a26cdf625b8,Jordan Harband,2019-08-10T06:52:44Z,[eslint config] [minor] enable `react/static-property-placement`,1,2,3
+airbnb/javascript,7f5a65832daf975b36426171ecbde97574c0ad3d,Jordan Harband,2019-08-10T06:52:29Z,[eslint config] [minor] enable `react/state-in-constructor`,1,2,3
+airbnb/javascript,25075b5f72bb6fad25fb4f72201aaee62b46fea6,Jordan Harband,2019-08-10T06:50:40Z,[eslint config] [minor] enable `react/jsx-curly-newline`,2,3,5
+airbnb/javascript,a23f93eb001ec398ff42f37945b01db2787f6c93,Jordan Harband,2019-08-10T06:48:45Z,[eslint config] [breaking] enable `react/jsx-fragments`,1,2,3
+airbnb/javascript,b447768ad322d87ca88a0ecb9e0d0d6168d19aca,Jordan Harband,2019-08-10T06:48:11Z,"[eslint config] [deps] update `eslint-config-airbnb-base`, `eslint-plugin-react`",3,3,6
+airbnb/javascript,b05573cae4282e643c432ae688f2eb4cef229991,Jordan Harband,2019-08-10T06:41:02Z,[eslint config] [base] v14.0.0,26,1,27
+airbnb/javascript,e6f591f660a16da51a8fe8a9239703b9bde82c13,Jordan Harband,2019-08-10T06:22:48Z,[Dev Deps] update babel-related deps to latest,6,4,10
+airbnb/javascript,282ef9ea9051dce725f382ac83cb5c3f2d4da0c2,Jordan Harband,2019-08-10T05:46:22Z,[eslint config] [base] [breaking] `no-self-assign`: enable `props` option,1,2,3
+airbnb/javascript,d490ee1806abdf07fe53f023384b223dab643b0b,Jordan Harband,2019-08-10T05:45:49Z,[eslint config] [base] [breaking] enable `no-useless-catch`,1,2,3
+airbnb/javascript,08f8093ed112306b360e6d5f21eb45bedf69f214,Jordan Harband,2019-08-10T05:45:27Z,[eslint config] [base] [breaking] enable `max-classes-per-file`,1,2,3
+airbnb/javascript,d03a712bba592da02631fb30824f6661788b2120,Jordan Harband,2019-08-10T05:44:01Z,[eslint config] [base] [breaking] enable `no-misleading-character-class`,1,2,3
+airbnb/javascript,f0c767fd398b7b10ee189a701823630d25100598,Jordan Harband,2019-08-10T05:43:20Z,[eslint config] [base] [breaking] enable `no-async-promise-executor`,1,2,3
+airbnb/javascript,88e71e6e5223701d353325035383c3a8d9fd88b2,Jordan Harband,2019-08-10T05:42:20Z,[eslint config] [base] [breaking] enable `prefer-object-spread`,1,2,3
+airbnb/javascript,11ede40d55734064f2d497e29cb7fde21d3df209,Jordan Harband,2019-08-10T05:41:33Z,[eslint config] [base] [breaking] `func-name-matching`: enable `considerPropertyDescriptor` option,2,2,4
+airbnb/javascript,e257deebd4544cf3609d5336f463688981897fe7,Jordan Harband,2019-08-10T05:40:53Z,[eslint config] [base] [patch] `camelcase`: enable ignoreDestructuring,1,2,3
+airbnb/javascript,6b5922ca2132980609fe217353162c2338b29ae2,Jordan Harband,2019-08-10T05:39:06Z,"[eslint config] [breaking] set react version to ""detect""  Fixes #1983.",1,1,2
+airbnb/javascript,a490005ddfbd73f96f0fc4335bf035cd554ad2e6,Behnam Mohammadi,2019-07-06T19:15:11Z,[react] event handlers should not return values,1,1,2
+airbnb/javascript,bb011c2f2f22e91399b2c5a0b90eb797b6e15d24,Jeff VanDyke,2018-11-29T14:13:54Z,[eslint config] [base] [patch] Add markers to spaced-comment block for Flow types  See <https://flow.org/en/docs/types/comments/>,1,1,2
+airbnb/javascript,8148bfce3c670a8a234ee71903ca020e32506884,Vladimir Kutepov,2017-10-10T15:21:50Z,[eslint config] [base] [patch] Do not prefer destructuring for object assignment expression  ```js let param = 'default value';  if (object)   param = object.param; // <= prefer-destructuring }  // ... ``` I think that `param = object.param;` is better than `({ param } = object);` because it is easier to read and tedious to write brackets by hand.  MDN: [Destructuring assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment),1,1,2
+airbnb/javascript,19e9ce31fe051c2232c90bf63dab0ee2fe0efbaf,amanjain,2017-01-12T06:45:39Z,[eslint config] [base] [breaking] `padded-blocks`: enable `allowSingleLineBlocks` option,2,2,4
+airbnb/javascript,61c7ae61895af2b3c7938015eaf72ca1e0fddb3e,Felipe Pinheiro,2019-06-17T15:58:54Z,[eslint config] Add missing/unsafe lifecycle methods to react/sort-comp rule,6,0,6
+airbnb/javascript,8c686eac4b93bff8710ab1c31b3223bc5dc2f18d,Rahil Vora,2019-07-22T16:27:02Z,[eslint config] add componentDidCatch to lifecycle for react/sort-comp,1,0,1
+airbnb/javascript,a344d6c8e7f21e6af107ed3e335068bf6a621c5d,JBallin,2019-06-10T20:49:58Z,[guide] [eslint config] [base] [breaking] `no-multiple-empty-lines`: Restrict empty lines at beginning of file,15,5,20
+airbnb/javascript,2160a77baa5eb62b78f0c2cfecfc37086e78c657,Waseem Dahman,2019-03-13T03:36:07Z,[eslint config] [breaking] [react] add `react-hooks` plugin,39,5,44
+airbnb/javascript,ad0c44c6affa87743419038682f00c0b9d0d9989,Ed Morley,2018-11-20T12:06:34Z,[eslint config] Remove rules/strict from 'extends'  Since the file is now imported in base instead.  Fixes #1582.,0,1,1
+airbnb/javascript,42c647f31b046fd56a51316caf681846100abd4f,Ed Morley,2018-11-20T12:04:17Z,"[eslint config] [base] [breaking] Set 'strict' to 'never'  Previously `rules/strict.js` was only used by `eslint-config-airbnb` and not base. This change reduces the duplication, and means the rule is now set to 'never' as opposed to the ESLint default of 'safe'.  For users that left the `sourceType` at this preset's default of `module` this change will be a no-op, since in module-mode the `strict` rule always behaves as though 'never' had been set.  See: https://eslint.org/docs/rules/strict#options",2,3,5
+airbnb/javascript,b96341fb86f28e421ec5a6674ab55d95f6f4c1ad,Ed Morley,2018-11-20T11:55:50Z,[eslint config] [base] [breaking] legacy: Enable 'strict'  This enables the `strict` rule in 'safe' mode: https://eslint.org/docs/rules/strict#safe,2,1,3
+airbnb/javascript,f6acb789a02a3295cfb2ae8c48f0e11060a0634c,Sharmila,2018-07-10T22:19:05Z,[guide] [eslint config] [base] [breaking] Simplifies `no-mixed-operators`  - adds warning on mixing `/` and `*` arithmetic operators - removes warnings on mixing `**` and arithmetic operators - removes warning on mixing `in` and `instanceof` - removes warning on mixing `~` with other bitwise operators - removes mixing of assignment operators with comparison operators,10,10,20
+airbnb/javascript,820745d61090139193cf9257b88974e36dfc9b35,Sharmila,2018-07-10T01:14:32Z,[guide] [eslint config] [base] [breaking] Require parens for arrow function args,30,24,54
+airbnb/javascript,8eacf24310f314abd40a1266e90818e11fefbdca,Jordan Harband,2019-08-09T21:18:55Z,"[eslint config] [*] [breaking] add eslint v6, drop eslint v4  See #2036",22,26,48
+airbnb/javascript,3b18fea1ede26833c432e96f4330edcddd2f12b7,Jordan Harband,2019-08-09T21:20:40Z,[Tests] only run tests in non-lint per-package travis job,2,2,4
+airbnb/javascript,945c62f22996d0fd3e7917d2769d60b1dd533e49,Jordan Harband,2019-08-09T21:11:27Z,[Tests] on `node` `v12`,1,0,1
+airbnb/javascript,820ccf7652f2f67a18b095a613ba99f9159eac93,Jordan Harband,2019-08-09T21:06:58Z,[eslint config] [*] [tests] use `eclint` instead of `editorconfig-tools`,10,13,23
+airbnb/javascript,792bb567e5d7437a381dfd9ab530b13fa2331c2e,Jordan Harband,2019-08-09T21:04:36Z,"[eslint config] [*] update `eslint-find-rules`, `eslint-plugin-import`",6,6,12
+airbnb/javascript,6c0a884179c5fcb7b52d516dcfb54c6bcf4dc6c1,Yohan Siguret,2019-08-02T22:57:12Z,[guide] fix dead jsperf links,3,3,6
+airbnb/javascript,030e23b13e9d21b0775239c475ea137ad13e8a64,Mathieu Dutto,2019-07-24T13:36:48Z,[guide] Fix npm package has usage example,2,2,4
+airbnb/javascript,036612ec3d8af223d2a3adc40aca70365b5612fd,Perttu Ristimella,2019-07-04T11:59:47Z,[inthewile] Add Happeo to users list,1,0,1
+airbnb/javascript,6a50516df70457d8b70fe4e6b2a02d5aaefb0f7d,Jordan Harband,2019-07-02T00:07:38Z,[eslint config] [meta] add disabled config for new react and a11y rules,63,0,63
+airbnb/javascript,21493ad7e93d19c133481f833c1d1a3bdfe30098,Jordan Harband,2019-07-01T23:26:52Z,"[eslint config] [base] [deps] update `confusing-browser-globals`, `eslint-plugin-import`, `tape`, `babel-preset-airbnb`",5,5,10
+airbnb/javascript,873f302b00398e59f8622e8193f2f47f66960066,Jordan Harband,2019-07-01T23:17:49Z,[eslint config] v17.1.1,11,1,12
+airbnb/javascript,7ea44cfc798b6789150ac7d22e7d6c399b3e6f18,Jordan Harband,2019-07-01T23:12:08Z,"[eslint config] [deps] update `eslint-config-airbnb-base`, `eslint-plugin-import`, `eslint-plugin-react`, `eslint-plugin-jsx-a11y`, `babel-preset-airbnb`, `tape`",9,9,18
+airbnb/javascript,9fbe07f282ddff9585423a4eee738022e4f7ea33,Jordan Harband,2019-07-01T22:05:02Z,[eslint-config] [base] v13.2.0,15,1,16
+airbnb/javascript,a9a83d9150ce2903032d64593243e3490f332b9f,Glenn Goossens,2019-06-27T09:37:32Z,[guide] add link to new version of Google Style Guide  Add link to a newer version of this guide that includes ECMAScript 6th Edition features,2,1,3
+airbnb/javascript,76ff7c7f793633596c262b78ae876da15839a65d,Christian Oliff,2019-06-24T13:45:35Z,[editorial] [docs] correct JavaScript capitalization,3,3,6
+airbnb/javascript,4539dbcf17b960ab650665bc95421dc8d0d3276e,Kevin Yue,2019-05-24T08:29:24Z,[guide] remove redundant spaces,6,6,12
+airbnb/javascript,19701d4a0cf69ff05e9a9b9c7e62c7126b0ea73f,Kimball Bighorse,2019-05-09T16:40:43Z,[inthewild] Add Coeur d'Alene Tribe,1,0,1
+airbnb/javascript,1310ade9d0e4d1e5625f29b89d4c902bebc8cc11,Joseph Nields,2019-04-27T21:00:50Z,"[eslint config] [base] [patch] Ignore property modifications of `staticContext` params  React Router passes a `staticContext` property to children to allow signalling status codes and redirected URLs, by allowing children to assign property values to it during render",1,0,1
+airbnb/javascript,5cd011dfa1e07e292444d3632d582ffb87fceec9,Jordan Harband,2019-04-28T06:51:44Z,[eslint config] [base] [deps] update `eslint-plugin-import`,11,2,13
+airbnb/javascript,117d4fce49096bec1cb5d3c030031aca994ddb5a,Jordan Harband,2019-04-28T06:27:07Z,[Tests] fix issue with eslint dev deps,1,1,2
+airbnb/javascript,447466681e9c38858ef81af7a84aada801630352,Kévin Berthommier,2019-04-10T08:22:57Z,[guide] remove extra blank line,0,1,1
+airbnb/javascript,60b96d322277c4c71a21a05caba8eb3320e0e3fa,Anton Honcharuk,2019-02-27T18:25:32Z,[guide] Add a 19.9 bullet in a Whitespace section  - with explanations about preventing two blank lines from  appearing consecutively in JavaScript code,66,11,77
+airbnb/javascript,b85baeafed8b66fdd9756439a0b8774860147913,Jordan Harband,2019-03-04T07:23:14Z,[eslint config] [base] [meta] add disabled `prefer-named-capture-group` rule,12,1,13
+airbnb/javascript,be07f7a020749b37ce35a966a5c11ce76d5756ac,Anton Honcharuk,2019-02-24T11:28:34Z,"[guide] [react] add more context about arrow functions, as props and in class fields",14,3,17
+airbnb/javascript,495a62aaa9c2110cb06e6243d91373aa4fb384da,Matthias Pries,2019-02-13T12:52:39Z,[guide] fix example 4.7 for arrays method callbacks,0,2,2
+airbnb/javascript,da0cf088316692b59751bfd64e99125a4acd3869,Jordan Harband,2019-02-17T22:21:15Z,[Tests] on `node` `v11`,1,0,1
+airbnb/javascript,a71c2d1ad3ff71627ea2848ae21ea35d5d7ef061,Jordan Harband,2019-02-17T22:20:53Z,[eslint config] add disabled `jsx-fragments` rule,5,0,5
+airbnb/javascript,834d717c7bfdd08fe0f9fad2920626eb0e179398,Jordan Harband,2019-02-17T22:14:54Z,"[eslint config] [*] [deps] update `eslint-plugin-import`, `eslint-plugin-jsx-a11y`, `tape`",6,6,12
+airbnb/javascript,8694a873783629c3461b05f4ba654904d3d1ac42,Jamie,2019-02-14T19:57:20Z,"[eslint config] [react] [patch] Turn off `react/no-multi-comp`  Splitting up a component into multiple components can be useful for many reasons, including making important performance optimizations.  This lint rule discourages splitting up components because it forces you to: create a new file, copy over all the relevant imports, move over any local functions/values (or move them into yet another shared module), export the component (which makes your split off component now a public export), and re-import it into the new module.  Having multiple components per file shouldn't be much different from having multiple functions per file. And you shouldn't be forced to make a component a public export if it's really just an internal implementation detail of another component.  There's an argument to be made about _exporting_ multiple components, but mostly just in the context of React.lazy because it can only import default exports and you don't want something else in that file being statically imported (because that will prevent it from being code-split).",1,1,2
+airbnb/javascript,4f15da6146fc00096a909e4c53808a3068a4d853,Pier-Luc Brault,2019-02-07T16:48:32Z,[eslint config] [*] [readme] Improve eslint config setup instructions for yarn,7,4,11
+airbnb/javascript,6ef45d4bab39813e1ff31e41112009ffcb62277c,Zeeshan Ahmad,2019-02-06T10:09:18Z,"[guide] make ""good"" example match ""bad"" example more closely",1,1,2
+airbnb/javascript,96f95fa35e23f015448445b8d5bb7ac8e03a739a,tclindner,2019-01-30T03:58:23Z,[eslint config] [base] [patch] `no-extraneous-dependencies`: Add jest.setup.js to devDeps,1,0,1
+airbnb/javascript,ebe96824e25c01ac37cdce29fc133077072fc91f,Sharmila Jesupaul,2019-02-05T19:51:09Z,Merge branch 'master' into translation-proposal,24,11,35
+airbnb/javascript,d78af391183e3d5e684bcc3e0abc1d4da2135316,Jordan Harband,2019-01-28T05:21:48Z,Merge pull request #1996 from remcohaszing/redux-devtools-extension-compose  [eslint config] [base] [patch] Allow use of `__REDUX_DEVTOOLS_EXTENSION_COMPOSE__`,9,0,9
+airbnb/javascript,d8256fc886717c758cc3830478e072d897bd68b9,Jordan Harband,2019-01-27T21:41:14Z,"[eslint config] [*] [deps] update `object.entries`, `eslint-plugin-import`, `eslint-plugin-jsx-a11y`, `eslint-plugin-react`",14,10,24
+airbnb/javascript,25f11fb31e787a055329bdfaf9c4ad572780ac99,Jordan Harband,2019-01-26T18:12:49Z,[eslint config] [patch] extend `no-underscore-dangle` to allow for redux dev tools in the main config instead,10,1,11
+airbnb/javascript,1439ebe78d043ed8c206367b23406da7ddb7c3ce,Telmen Munkhdalai,2019-01-26T08:55:34Z,[editorial] [react] fix typo,1,1,2
+airbnb/javascript,b6c56cb070445d62717913758d4b54f1efbdac77,Remco Haszing,2019-01-21T12:39:53Z,"[eslint config] [base] [patch] Allow use of `__REDUX_DEVTOOLS_EXTENSION_COMPOSE__`  This style guide disallows the use of underscores in properties. However, the Redux browser extension requires the use of a variable named `__REDUX_DEVTOOLS_EXTENSION_COMPOSE__`. Since Redux is so popular with React, it makes sense to allow this.",1,1,2
+airbnb/javascript,955f4e93b8ae0ace9c9e4c7c8934b37c12d300d6,Hoang,2019-01-13T11:55:49Z,Vietnamese translation,1,1,2
+airbnb/javascript,95286eb496acf09fb8360d5368f798b040a0b5c1,Rahil Vora,2019-01-07T16:24:16Z,[guide] [react] add note about `forbid-prop-types` rule,1,0,1
+airbnb/javascript,070e6200bb6c70fa31470ed7a6294f2497468b44,Jordan Harband,2018-12-28T22:32:02Z,[Dev Deps] update `markdownlint-cli`,1,1,2
+airbnb/javascript,387755e8feedf7288983c89fe79bc0c03a2a8bbc,Jordan Harband,2018-12-28T22:31:03Z,[meta] add disabled `no-useless-catch` config,5,0,5
+airbnb/javascript,218c4fefbb010922866c18ef88e34ec66bb962a5,Jordan Harband,2018-12-28T21:36:01Z,[eslint config] [base] [fix] disable `no-var` in legacy entry point  Fixes #1935.,1,0,1
+airbnb/javascript,80920a07c5144148d2987f39fb9558246552648e,Emily Rohrbough,2018-12-19T19:06:08Z,Add Terra to README list,1,0,1
+airbnb/javascript,5d25a2ee61ebe44a10617efed41dc54bb36fb625,Honza Javorek,2018-12-18T15:11:26Z,"capitalize means first letter uppercase, the rest lowercase  The examples and the reasoning indicates the author of the rule meant uppercase instead of capitalization. According to Wikipedia, capitalization is ""writing a word with its first letter as a capital letter (uppercase letter) and the remaining letters in lower case"", while the rule apparently tries to prevent exactly that.",1,1,2
+airbnb/javascript,064e3bf8d578736c38a7d74419ea6ba10ee46d8f,Michael Käfer,2018-11-27T19:51:21Z,:) conflicting with rule 8.2 :D,5,5,10
+airbnb/javascript,ffe4fe967c8e0635a5c21b9b0b62eed0b2aa655a,Kevin Weber,2018-08-26T05:12:12Z,[guide] Clarify wording,1,1,2
+airbnb/javascript,69e34378c603bac579ce16fd5d635d3589ca23d0,ernestodebesto,2018-09-14T15:20:22Z,"Examples more consistent with the guidline  comparison operator <= shows better the confusion when using arrow function, than just operator <",4,4,8
+airbnb/javascript,6ece1f58e91a06608145d03dbc949aa352cad5a8,NullDev (Chris),2018-11-21T09:51:20Z,Added NullDev  because why not,1,0,1
+airbnb/javascript,0d6d854b5c70c8440091253c2d1fcc84b6f8ee20,NullDev (Chris),2018-11-21T09:48:35Z,[17.2] Added second anchor https://github.com/airbnb/javascript/pull/1960  See requested changes here: https://github.com/airbnb/javascript/pull/1960#pullrequestreview-176797787,1,1,2
+airbnb/javascript,21b65e943c361f91af5a484460fb2c8d02e2ff92,Ed Morley,2018-11-20T09:40:02Z,"[eslint config] [base] [deps] Switch to confusing-browser-globals  The `eslint-restricted-globals` package author created an equivalent package `confusing-browser-globals` that now resides within the create-react-app monorepo. In sidoshi/eslint-restricted-globals#2 @sidoshi suggested that we change eslint-config-airbnb-base to depend on the CRA package instead, in an effort to consolidate the two.  Currently the two global lists are identical, so this does not change the generated eslint config: https://unpkg.com/eslint-restricted-globals@0.2.0/index.js https://unpkg.com/confusing-browser-globals@1.0.5/index.js",3,3,6
+airbnb/javascript,74deb81d1fa670a5a462f6ada29d9447cf61c7c0,KY3LxD,2018-11-13T07:38:19Z,[editorial] Improve conciseness of README.md,1,1,2
+airbnb/javascript,41a13e83eee02be3fcfc0657a6cb994018df700d,Bikram Sutar,2018-10-30T09:35:16Z,[19.16] changed Enforce to avoid  Good practice is to avoid spaces between functions and their invocations. But by mistake (I think so) you used the word Enforce instead of Avoid,1,1,2

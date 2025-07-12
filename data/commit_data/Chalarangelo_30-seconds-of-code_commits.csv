@@ -1,0 +1,301 @@
+repo,sha,author,date,message,additions,deletions,total_changes
+Chalarangelo/30-seconds-of-code,cea2f4938f06f12bc36d81331d563a5042796b87,Angelos Chalaris,2025-06-29T17:33:09Z,Add Cloudflare to the latest version of the website,4,2,6
+Chalarangelo/30-seconds-of-code,ee546efff0b62e9196b9cda49c4484991572ad7e,Angelos Chalaris,2025-06-29T17:18:04Z,Fix broken rules,8,14,22
+Chalarangelo/30-seconds-of-code,b35d96bcdc1d38529c0308b1a8daab8b61bc59e2,Angelos Chalaris,2025-06-29T17:14:17Z,Move dynamic redirects to the end of the list,51,51,102
+Chalarangelo/30-seconds-of-code,158c12ab60b3bf6e8506d3e4e28685b0bdfdd0d9,Angelos Chalaris,2025-06-29T16:22:23Z,Simplify redirects rules,9,9,18
+Chalarangelo/30-seconds-of-code,d9d72373e9270cd901df5d150da039454e0cd887,Angelos Chalaris,2025-06-29T16:21:03Z,Simplify redirects rules,14,191,205
+Chalarangelo/30-seconds-of-code,203f5b30071453d0a4c2c31ef2baac1687999487,Angelos Chalaris,2025-06-29T15:32:11Z,Change provider in Footer,2,2,4
+Chalarangelo/30-seconds-of-code,dcfdcc469804456adc7a43824a74314a2e8cd099,Angelos Chalaris,2025-06-29T15:31:33Z,Remove netlify.toml,0,4,4
+Chalarangelo/30-seconds-of-code,37e55682b559e7f57af6ebeefa4b2d6e8b4ad63d,Angelos Chalaris,2025-06-29T15:25:23Z,Switch build hook to Cloudflare,2,2,4
+Chalarangelo/30-seconds-of-code,d90c9e4b8cbd1a32c28ce80fe8496a9c3805bb1d,Angelos Chalaris,2025-06-29T15:24:48Z,Update redirects for CloudFlare,1130,1130,2260
+Chalarangelo/30-seconds-of-code,8e2d71e726040396fe6f7954c7c95d3a6e7a764e,Angelos Chalaris,2025-06-27T18:23:25Z,Fix language name,3,3,6
+Chalarangelo/30-seconds-of-code,b8d6b6c9fbe37620a230739dec3750627b0e577f,Angelos Chalaris,2025-06-27T18:03:02Z,Add the history of the project as an article,658,0,658
+Chalarangelo/30-seconds-of-code,d63aa37b26736248fdf6810c3bc44136c4add111,Angelos Chalaris,2025-06-27T18:02:43Z,Change date of an article,1,1,2
+Chalarangelo/30-seconds-of-code,7897ccc560369f401da6266ba165ddd92e33052d,Angelos Chalaris,2025-06-27T16:22:30Z,Round corners for figure > img elements,5,0,5
+Chalarangelo/30-seconds-of-code,1ca6547389781514fbd4948a68c72f24ec52df86,Angelos Chalaris,2025-06-27T15:27:18Z,"Allow optional subtitles in ToC matching  Add optional whitespace inside the title element (for custom HTML). Add an optional `small` element, that is not part of the title itself.",1,1,2
+Chalarangelo/30-seconds-of-code,bb1ae95eb3d67052e938e822f287dcc5fc941f04,Angelos Chalaris,2025-06-15T15:36:51Z,Repackage and re-release digitize number,56,3,59
+Chalarangelo/30-seconds-of-code,b1f901d0888646dfa32cda3717d2d03d9da85c46,Angelos Chalaris,2025-06-14T07:35:33Z,Link to new article,2,0,2
+Chalarangelo/30-seconds-of-code,ceeb0bfb3d0e789c2462a6ab0cac38cb04f6472f,Angelos Chalaris,2025-06-14T07:35:22Z,Add Sudoku solver wave function collapse,143,0,143
+Chalarangelo/30-seconds-of-code,487f4f790aaf3e628058bbdd31fd97af176c80ac,Angelos Chalaris,2025-06-13T10:01:54Z,Fix typo,1,1,2
+Chalarangelo/30-seconds-of-code,55f505ed36cd8573d3e1d19f79e4ddf44df59dff,Angelos Chalaris,2025-06-12T16:30:36Z,Fix typo,1,1,2
+Chalarangelo/30-seconds-of-code,1d3a1ade2ece305bdb6b96bd4b58c37a6964a3f3,Angelos Chalaris,2025-06-12T16:20:30Z,Update dictionary,2,0,2
+Chalarangelo/30-seconds-of-code,e066a313671ee419a1a9d34320d20346ac70123a,Angelos Chalaris,2025-06-12T16:20:25Z,Fix apostrophes,48,48,96
+Chalarangelo/30-seconds-of-code,85c45fba7dd6084116820184da4374a43d4b9b28,Angelos Chalaris,2025-06-12T16:19:55Z,Add new article,37,0,37
+Chalarangelo/30-seconds-of-code,6a619bfb0b26fd24bc6c7bfdf7e875938ca9f7d1,Angelos Chalaris,2025-06-12T16:19:41Z,Fix apostrophes,1,1,2
+Chalarangelo/30-seconds-of-code,904e0098d0b2b23084699660e8b317a4526c34e9,Angelos Chalaris,2025-06-12T16:19:30Z,Fix apostrophes,3,3,6
+Chalarangelo/30-seconds-of-code,8c0f9a5eb543361d2c3fe2055d0c589dda0dbd06,Angelos Chalaris,2025-06-12T16:19:12Z,Add some copilot instructions,1,0,1
+Chalarangelo/30-seconds-of-code,dff11ff1b2658e5c54783afd5e8459281728c698,Angelos Chalaris,2025-06-11T15:51:37Z,Bump sass to 1.89.2,5,5,10
+Chalarangelo/30-seconds-of-code,490fd166e5abc1e388b558f7af18b85a9bc99363,Angelos Chalaris,2025-06-11T15:47:07Z,Bump eslint to 9.28.0,30,23,53
+Chalarangelo/30-seconds-of-code,b7a7e3e57dc0fceefa6d18496f52940d0e451e85,Angelos Chalaris,2025-06-11T15:46:16Z,Run npm audit fix,4,3,7
+Chalarangelo/30-seconds-of-code,3038b93d15e3e52ac3ca36290b9c7f0ddc00eda7,Angelos Chalaris,2025-06-11T15:43:04Z,Bump sharp to 0.34.2,685,223,908
+Chalarangelo/30-seconds-of-code,8f123619c9829e41e0bdfa43d4d5acee6c098934,Angelos Chalaris,2025-06-11T15:41:08Z,Bump astro to 5.9.2,115,41,156
+Chalarangelo/30-seconds-of-code,a1d2e0a06731915519bec6d565a8630335d63623,Angelos Chalaris,2025-06-11T15:40:16Z,Bump shiki to 3.6.0,108,32,140
+Chalarangelo/30-seconds-of-code,3a520b084a10498c005f0f50870f3e3c7e7f54c2,Angelos Chalaris,2025-06-11T15:35:39Z,Expand sort by new to main listing,1,1,2
+Chalarangelo/30-seconds-of-code,a88c7e99a7a08db5123e397f92a51334fd8bcb13,Angelos Chalaris,2025-06-11T15:34:18Z,"Prefer scope over reordering  As the `CollectionSnippet` didn't have a `byNew` scope previously, this wasn't possible. Now, however, we can sort only once, as we have the proper scope on that model.",6,10,16
+Chalarangelo/30-seconds-of-code,499f3a58b6b902a5d62f3d1097166a6572a07c1b,Angelos Chalaris,2025-06-11T15:33:04Z,Add `byNew` scope to `CollectionSnippet`,4,0,4
+Chalarangelo/30-seconds-of-code,f799214d594da401603cd5e381ed781a933af2e0,Angelos Chalaris,2025-06-11T15:14:23Z,Make home snippets all new,2,2,4
+Chalarangelo/30-seconds-of-code,1845bcf6bc0fea224889a50ccb75b4e7e952c6db,Angelos Chalaris,2025-06-10T15:32:40Z,Link to new article,2,0,2
+Chalarangelo/30-seconds-of-code,895daca843ba1d2d69ab6e685b80d050bb0f98b0,Angelos Chalaris,2025-06-10T15:32:34Z,Add best-time-to-buy-and-sell-stock,84,0,84
+Chalarangelo/30-seconds-of-code,74947a0c7445308caf40c8d9495199840d1d55aa,Angelos Chalaris,2025-06-10T15:16:56Z,Remove unnecessary empty line,0,1,1
+Chalarangelo/30-seconds-of-code,9192e009649677d753e97fe6c829078176ebc3e2,Angelos Chalaris,2025-06-08T16:14:03Z,Add editorial about no code,45,0,45
+Chalarangelo/30-seconds-of-code,5820f1f5d8abb897cb937b401755c988ba0efe49,Angelos Chalaris,2025-06-07T12:04:23Z,Add Copilot instructions file,50,0,50
+Chalarangelo/30-seconds-of-code,b8a6d0cd1aaa3a5ebd70ae546994f3b39ab06bc6,Angelos Chalaris,2025-06-07T12:04:09Z,Add summer update log,26,0,26
+Chalarangelo/30-seconds-of-code,72bb3edcf0d89b4ad2cdc723ac1b62e1e52d28e4,Angelos Chalaris,2025-06-07T10:33:28Z,Link to new article,2,0,2
+Chalarangelo/30-seconds-of-code,60bf7ce2f6b9f84545475e849bb48b4d02228a60,Angelos Chalaris,2025-06-07T10:33:20Z,Add structuredClone article,255,0,255
+Chalarangelo/30-seconds-of-code,7eb31e9ac28d873f0e7d3bc87c322518c73140b7,Angelos Chalaris,2025-05-31T08:51:04Z,Fix typo,1,1,2
+Chalarangelo/30-seconds-of-code,7f37e6caebb794887fa80f90d28d58dd547175f5,Angelos Chalaris,2025-05-31T08:50:30Z,Spruce up Proxy pieces a little bit,30,11,41
+Chalarangelo/30-seconds-of-code,771b8d1bac688a723c5d8f68f1745815c91f897c,Angelos Chalaris,2025-05-31T08:34:19Z,Promote JS Proxy collection to top level tag,14,11,25
+Chalarangelo/30-seconds-of-code,fd48168c562cecfe87f56773564327a7be825743,Angelos Chalaris,2025-05-31T08:03:48Z,Introduce number collection,26,10,36
+Chalarangelo/30-seconds-of-code,a1c5c8a80591f51db8510c938cf682c8b41ee4bd,Angelos Chalaris,2025-05-31T07:45:36Z,Link to binary conversion article,2,0,2
+Chalarangelo/30-seconds-of-code,a544b452540bad60c0de28f32cc32c19027af7ac,Angelos Chalaris,2025-05-31T07:45:25Z,Add decimal to binary conversion,61,0,61
+Chalarangelo/30-seconds-of-code,2cb499ff0c7f650b87809033c66f6b11acaa493d,Angelos Chalaris,2025-05-30T19:02:33Z,Link back to start of series,2,0,2
+Chalarangelo/30-seconds-of-code,892764b5c33bf134aa0832ff0cd3cf3e844a4809,Angelos Chalaris,2025-05-30T19:01:48Z,Add undirected tree articles to collection,2,0,2
+Chalarangelo/30-seconds-of-code,d748f3b3e321c42d5475ba6e1e47ac2413066b11,Angelos Chalaris,2025-05-30T19:01:31Z,Add min height tree article,175,0,175
+Chalarangelo/30-seconds-of-code,1c4f01ffb22401e08f24378e22d7b5be1fb3938e,Angelos Chalaris,2025-05-30T17:11:48Z,Clarify a concept,1,1,2
+Chalarangelo/30-seconds-of-code,0448d8ba069476ada965e1d91aae7ca158aeac90,Angelos Chalaris,2025-05-30T17:09:35Z,Clarify code,9,8,17
+Chalarangelo/30-seconds-of-code,f90df4d4de73b34d226c4723c9bc413b8eec1cd0,Angelos Chalaris,2025-05-30T17:05:33Z,Add undirected tree diameter article,120,0,120
+Chalarangelo/30-seconds-of-code,383f1a5606664937b142b0eb666ab399add29edc,Angelos Chalaris,2025-05-30T17:03:10Z,Update article examples,8,8,16
+Chalarangelo/30-seconds-of-code,a292d5fd2b4af9731687d8c0f360f7be7333492c,Angelos Chalaris,2025-05-29T17:22:14Z,Fix typo,1,1,2
+Chalarangelo/30-seconds-of-code,1afa20e5c8b63166c195b9e70dade8d5816b02f4,Angelos Chalaris,2025-05-29T17:19:26Z,Add new articles to data structures collection,2,0,2
+Chalarangelo/30-seconds-of-code,a469a1a8a6d9241c4c513ea741f279941af49fad,Angelos Chalaris,2025-05-29T17:19:04Z,Fix typo,2,2,4
+Chalarangelo/30-seconds-of-code,54857740f57a906e007287b3ad7a8a0d43affc4e,Angelos Chalaris,2025-05-29T17:19:00Z,Add bipartite coloring article,108,0,108
+Chalarangelo/30-seconds-of-code,c5f4bbebbeb346ffdf13e475876fa912fce2d196,Angelos Chalaris,2025-05-29T16:40:03Z,Add DFS/BFS article,99,1,100
+Chalarangelo/30-seconds-of-code,15079334ce9cf36883c1a66619b6b00cb939256b,Angelos Chalaris,2025-05-29T16:14:24Z,Change article slug,2,2,4
+Chalarangelo/30-seconds-of-code,2e73359a6fbeb14eaef7f5dbb9766169ff0d592c,Angelos Chalaris,2025-05-29T16:06:26Z,Add undirected tree building article,155,0,155
+Chalarangelo/30-seconds-of-code,1a8b218a3563cc0c7152d8896b12897186caa143,Angelos Chalaris,2025-05-25T16:39:40Z,Add editorial on writing great code,177,0,177
+Chalarangelo/30-seconds-of-code,64a9a37497c45d54e755e66916f8f37c951b37b7,Angelos Chalaris,2025-05-24T08:49:39Z,Link to a newer article,2,0,2
+Chalarangelo/30-seconds-of-code,4cf20a21403389bfd441f4ba0d5af9d5c4f70abd,Angelos Chalaris,2025-05-24T08:49:32Z,Add indexes and cardinality article,645,0,645
+Chalarangelo/30-seconds-of-code,bc33b84ae121147b4033ae6ec96b2959954b9c6b,Angelos Chalaris,2025-05-24T08:19:17Z,Support line highlights with section folding,2,1,3
+Chalarangelo/30-seconds-of-code,9bb33eda1e12d3ed2611dd40d317beee11728638,Angelos Chalaris,2025-05-24T07:57:17Z,Allow code-tabs to have a selected tab  Specified using `data-selected-tab`,2,1,3
+Chalarangelo/30-seconds-of-code,30f147026dc5e00a38c2a8e046bbea8412a8929a,Angelos Chalaris,2025-05-21T17:15:08Z,Potential fix for code scanning alert no. 24: Workflow does not contain permissions (#2114)  Signed-off-by: Angelos Chalaris <chalarangelo@gmail.com> Co-authored-by: Copilot Autofix powered by AI <62310815+github-advanced-security[bot]@users.noreply.github.com>,2,0,2
+Chalarangelo/30-seconds-of-code,4b4c0c1baf2fdfd2c200689de74b45cf7c81cee5,dependabot[bot],2025-05-21T17:12:03Z,Bump vite from 6.2.6 to 6.3.4 (#2111)  Bumps [vite](https://github.com/vitejs/vite/tree/HEAD/packages/vite) from 6.2.6 to 6.3.4. - [Release notes](https://github.com/vitejs/vite/releases) - [Changelog](https://github.com/vitejs/vite/blob/main/packages/vite/CHANGELOG.md) - [Commits](https://github.com/vitejs/vite/commits/v6.3.4/packages/vite)  --- updated-dependencies: - dependency-name: vite   dependency-version: 6.3.4   dependency-type: indirect ...  Signed-off-by: dependabot[bot] <support@github.com> Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>,45,11,56
+Chalarangelo/30-seconds-of-code,27f05d36bd5f9063e69bd694f95ad7e8868c97fa,Angelos Chalaris,2025-05-21T17:10:04Z,Add longest-palindrome article,125,0,125
+Chalarangelo/30-seconds-of-code,448d0d7854d848417a72a9ba89788d307b72f40c,Angelos Chalaris,2025-05-17T11:09:37Z,Link to new article from binary search,2,0,2
+Chalarangelo/30-seconds-of-code,b615cebbe53045d33511ddbb7bf7061e1d1e19c5,Angelos Chalaris,2025-05-17T11:09:28Z,Add binary search insertion index article  Combines two previous articles,46,0,46
+Chalarangelo/30-seconds-of-code,88802f4c613bae5434b539f957dc68f4e648448f,Angelos Chalaris,2025-05-17T11:09:11Z,Link to binary search from linear search,2,0,2
+Chalarangelo/30-seconds-of-code,dee37bd7d66c27566d653a60fa41dbc2ddf99e58,Angelos Chalaris,2025-05-17T09:59:54Z,Add design systems article,57,0,57
+Chalarangelo/30-seconds-of-code,ce9347582db11e01b9e4ce59328466aea0980f28,Angelos Chalaris,2025-05-17T08:45:50Z,Add Sudoku validator,194,0,194
+Chalarangelo/30-seconds-of-code,4df3520e2149d35a22161bfc191265dfe86bd388,Angelos Chalaris,2025-05-17T07:27:31Z,Add Markdown cheatsheet,123,0,123
+Chalarangelo/30-seconds-of-code,531041788fa2a4279ddb0be23b7c938890b5c2c9,Angelos Chalaris,2025-05-12T18:09:38Z,Fix broken RSS feed  Fixes #2113,1,1,2
+Chalarangelo/30-seconds-of-code,33701569c200b58f38ed5702bc766c867a9d41b5,Angelos Chalaris,2025-05-10T10:54:23Z,Add an article on error handling,133,0,133
+Chalarangelo/30-seconds-of-code,acbdac1e2359af6fbc3c9b37deab20cce80cbe8d,Angelos Chalaris,2025-05-10T08:20:00Z,Link to new matrix article,6,0,6
+Chalarangelo/30-seconds-of-code,e8eb8328d71a341e910c3d800c29f3a5a92b120f,Angelos Chalaris,2025-05-10T08:19:50Z,Add matrix to collection,1,0,1
+Chalarangelo/30-seconds-of-code,3001f0ac277daa6e12b82b5cf47cf7eada79ca73,Angelos Chalaris,2025-05-10T08:19:41Z,Add new article (matrix),907,0,907
+Chalarangelo/30-seconds-of-code,7d63c15ad2ea511687c363da06651c54712d24c2,Angelos Chalaris,2025-05-10T08:19:19Z,Interlink articles,3,0,3
+Chalarangelo/30-seconds-of-code,11084b5db72714d82798aaa0b8420eaf54a28573,Angelos Chalaris,2025-05-10T08:19:05Z,Make section folds 1-indexed,4,2,6
+Chalarangelo/30-seconds-of-code,80685fc2b728c672c5ff6d3bc3d2039316e89120,Angelos Chalaris,2025-05-10T08:18:50Z,Add new terms,2,0,2
+Chalarangelo/30-seconds-of-code,1f91cb3f91c2f0d8ef8d778688a00ceb4910557d,Angelos Chalaris,2025-05-10T06:59:52Z,Hide folded section label when expanded,16,1,17
+Chalarangelo/30-seconds-of-code,fc50f63ae3d3ac78d0c906cbc53ed2361f5145b1,Angelos Chalaris,2025-05-09T17:54:47Z,Add folded section example,14,0,14
+Chalarangelo/30-seconds-of-code,6ed0a0a6c094714f42998d61cb51137ed425dd68,Angelos Chalaris,2025-05-09T17:54:36Z,Style folded sections for code blocks,52,0,52
+Chalarangelo/30-seconds-of-code,0060ba2357455386482f96b94faa465732a5c395,Angelos Chalaris,2025-05-09T17:00:23Z,Make code styles more lenient,1,1,2
+Chalarangelo/30-seconds-of-code,b28ae0fe06f151e8b9a078dcaeb70c9c7ff30c59,Angelos Chalaris,2025-05-09T16:59:57Z,Use section-folding transformer,2,0,2
+Chalarangelo/30-seconds-of-code,08a2313be3d5370d4a4b5cb2a8cfdcd9cd72f39e,Angelos Chalaris,2025-05-09T16:59:29Z,Add section folding trasnformer,137,0,137
+Chalarangelo/30-seconds-of-code,80220eac4d9342995720d46963547054063d0834,Angelos Chalaris,2025-05-09T16:52:33Z,Add foldedSections to metadata extraction,3,0,3
+Chalarangelo/30-seconds-of-code,70aed14382da28f4a82f2ce08eb5eeca8754d60d,Angelos Chalaris,2025-05-09T16:52:03Z,Add getMetaRangeBoundaries utility,23,0,23
+Chalarangelo/30-seconds-of-code,8916649a125f8c5cfc1d0b7370f934472bd12ed0,Angelos Chalaris,2025-05-07T18:38:37Z,Add new cover assets,0,0,0
+Chalarangelo/30-seconds-of-code,099a6458c93cb6c1b7a9a16921b40409178a523f,Angelos Chalaris,2025-05-07T15:53:06Z,Add a new update log,41,0,41
+Chalarangelo/30-seconds-of-code,f5c1b338ac3c378c84141f5f346cbf9e20e3eddf,Angelos Chalaris,2025-05-07T15:36:12Z,Update SECURITY,2,2,4
+Chalarangelo/30-seconds-of-code,ded89f3ff5e8930859df425510797618bb1fc600,Angelos Chalaris,2025-05-07T15:09:58Z,Add ESLint/Prettier config article,154,0,154
+Chalarangelo/30-seconds-of-code,6c9ba41ef25eebdcbd31a0c076d6eeb02a170336,Angelos Chalaris,2025-04-20T08:46:05Z,Fix TF-IDF mistake  Closes #2109,1,1,2
+Chalarangelo/30-seconds-of-code,58998a1eee04b628d2d794d8a6cddc3e53fe3585,Angelos Chalaris,2025-04-19T10:42:09Z,Add details tabbed content article,124,0,124
+Chalarangelo/30-seconds-of-code,975546fdacd3987c382846b41f3f456f016b2ecb,Angelos Chalaris,2025-04-19T10:42:01Z,Fix excerpt,1,1,2
+Chalarangelo/30-seconds-of-code,da44492c474ac6717afd1a6f2d1ac09ee1b4ebab,Angelos Chalaris,2025-04-19T10:24:55Z,Add details accordion,42,0,42
+Chalarangelo/30-seconds-of-code,2174e4b74f53266d936d05f03688535c12a8227b,Angelos Chalaris,2025-04-19T09:55:35Z,Update nested-border-radius,49,1,50
+Chalarangelo/30-seconds-of-code,cbf12251cdacd19fbe11a033c85f58a99cf209f1,Angelos Chalaris,2025-04-19T09:22:46Z,Add text centering technique comparison,67,0,67
+Chalarangelo/30-seconds-of-code,04ae8372385703ba5e7bae5e36d83086f6221a0d,Angelos Chalaris,2025-04-19T08:26:35Z,Add content component creation utility,74,0,74
+Chalarangelo/30-seconds-of-code,742524a6757216c288cbd3f04c0119230ef05b61,Angelos Chalaris,2025-04-19T08:05:14Z,Add CSS inset article,132,0,132
+Chalarangelo/30-seconds-of-code,8043eac7e0ad5a9101a213805209f0a68ee7e1e6,Angelos Chalaris,2025-04-19T07:27:12Z,Add logical to physical properties in CSS,171,0,171
+Chalarangelo/30-seconds-of-code,d90fe7c437bbbac006d808b9d320ec51086c74ac,Angelos Chalaris,2025-04-19T06:59:50Z,Add OPED about modularization,119,0,119
+Chalarangelo/30-seconds-of-code,f2282f1c9bfdbd21c76d7dc96c5d108e46049dd6,Angelos Chalaris,2025-04-18T17:35:11Z,Add nullish coalescing assignment,19,1,20
+Chalarangelo/30-seconds-of-code,8dd5c4e17a3fb4d6d331364dfdc8714cd573a264,Angelos Chalaris,2025-04-18T17:19:33Z,Update footer at the bottom article,13,2,15
+Chalarangelo/30-seconds-of-code,b14814348d110bb35e7b7587b8b433826be22d1e,Angelos Chalaris,2025-04-17T12:30:54Z,Modernize transformAdmonition,15,13,28
+Chalarangelo/30-seconds-of-code,39e4e58243a70665777864a5c457366b44a5b79a,Angelos Chalaris,2025-04-17T11:15:51Z,Add operator cheatsheet,323,0,323
+Chalarangelo/30-seconds-of-code,d266042a97634738625db03e913186e0fd14f420,Angelos Chalaris,2025-04-17T11:15:42Z,Link spread articles,2,0,2
+Chalarangelo/30-seconds-of-code,d8dd4b157b745b6316822d6953ff5a9c0b96c4e9,Angelos Chalaris,2025-04-17T10:50:11Z,Add additional reference to JS language,2,0,2
+Chalarangelo/30-seconds-of-code,bb90ed91564b861e1b20d2f3880b582d6ce1d468,Angelos Chalaris,2025-04-17T10:37:54Z,Exclude embedded previews from figcaption centering,1,1,2
+Chalarangelo/30-seconds-of-code,e49c4db0e7916cf555b1c6556cf81bcd71be44fd,Angelos Chalaris,2025-04-17T09:53:27Z,Add more highlights to the last article,10,10,20
+Chalarangelo/30-seconds-of-code,46220568f7e9c92aee687fb8e294fb7dd4fd56d3,Angelos Chalaris,2025-04-17T09:42:13Z,Add web components article,304,0,304
+Chalarangelo/30-seconds-of-code,40d897182813daa3f6ba8e2d1cf97e3b37893e9b,Angelos Chalaris,2025-04-17T09:42:02Z,Handle captioned images,12,0,12
+Chalarangelo/30-seconds-of-code,3b0bd849b3e5071eb07db258f5c3f3f30d386e4d,Angelos Chalaris,2025-04-17T09:41:48Z,Add md to grammars,1,0,1
+Chalarangelo/30-seconds-of-code,0a465c5795cb62225f9bf105f4a6638feb16d165,Angelos Chalaris,2025-04-17T07:50:23Z,Bump sharp to 0.33.5,126,195,321
+Chalarangelo/30-seconds-of-code,6f172b24f542be8b64731d9711bbeff51d7fa945,Angelos Chalaris,2025-04-17T07:46:41Z,Migrate code to latest Sass  Use `sass-migrator`.,57,73,130
+Chalarangelo/30-seconds-of-code,639c6369c6a221671bb198eebbfd7b981fd30feb,Angelos Chalaris,2025-04-17T07:28:59Z,Bump sass to 1.86.3,386,93,479
+Chalarangelo/30-seconds-of-code,8db34cb17c9936a83a4a817f5bdcac93e6d92ae4,Angelos Chalaris,2025-04-17T07:23:42Z,Bump eslint-config-prettier to 10.1.2,6,5,11
+Chalarangelo/30-seconds-of-code,2642d37513c628941d99df2c3c36ca5433bbc3e7,Angelos Chalaris,2025-04-17T07:22:41Z,Bump remark-rehype to 11.1.2,6,5,11
+Chalarangelo/30-seconds-of-code,31924b1f71fbf5a0528e5b978c6dc2f32aea80bd,Angelos Chalaris,2025-04-17T07:21:43Z,Bump shiki to 3.2.2,64,51,115
+Chalarangelo/30-seconds-of-code,55d8fd30de97960eeaa3a10bf70d1d48cccd5978,Angelos Chalaris,2025-04-17T07:18:59Z,Bump astro to 5.7.2,259,10,269
+Chalarangelo/30-seconds-of-code,4482f3ce0c24bc0896a9a63eb067d19910e70486,Angelos Chalaris,2025-04-17T06:05:36Z,Update README.md  Signed-off-by: Angelos Chalaris <chalarangelo@gmail.com>,1,1,2
+Chalarangelo/30-seconds-of-code,8479465938b186b46c8550c19527ef1149f1ca0b,Angelos Chalaris,2025-04-16T15:19:18Z,Add search collection,22,0,22
+Chalarangelo/30-seconds-of-code,a46607bbd4467352d7b547fafcdd1a2387dc9c1d,Angelos Chalaris,2025-04-16T14:06:00Z,Add baseline-support to some articles,45,6,51
+Chalarangelo/30-seconds-of-code,2475074de6bf799881321a35cd72568f1cce245b,Angelos Chalaris,2025-04-16T14:05:51Z,Make baseline-support span the entire width,3,0,3
+Chalarangelo/30-seconds-of-code,b399ce4ccd0be3e1affce0666afafe4b485167d8,Angelos Chalaris,2025-04-16T13:26:21Z,Create baseline-support component,43,0,43
+Chalarangelo/30-seconds-of-code,b6033ce946951d652ac6dca35533100b4528d6b6,Angelos Chalaris,2025-04-16T12:40:09Z,Fix preview blocks,6,0,6
+Chalarangelo/30-seconds-of-code,dc52bcd484c907a6befeef13ecc38217560f844a,Angelos Chalaris,2025-04-16T12:32:00Z,Make latex-expression GFM-compliant,70,5,75
+Chalarangelo/30-seconds-of-code,0699389b30bb49f038f03383a6f41e56308a0b11,Angelos Chalaris,2025-04-16T12:08:42Z,Add highlighting to code in some recent articles,31,29,60
+Chalarangelo/30-seconds-of-code,94c912d74c8c9ea32fbd20b02feb8574dbdc5de6,Angelos Chalaris,2025-04-16T10:59:14Z,Add additional test cases,19,1,20
+Chalarangelo/30-seconds-of-code,23a7938987790450e01bc09464f12c3f71843fac,Angelos Chalaris,2025-04-16T10:59:01Z,"Restructure line higlight styles  Remove styles from global tokens. Set customizable, reusable styles for highlights. Add support for `ins` and `mark`. Move all code styles, except tokens into `_code.scss`",61,21,82
+Chalarangelo/30-seconds-of-code,f736a8c747d3c6c7627405415b048423e6976ee8,Angelos Chalaris,2025-04-16T10:57:26Z,Add support for ins/del line highlights,52,15,67
+Chalarangelo/30-seconds-of-code,372c42aa342f9b235a09b9f259f47a2f077581e2,Angelos Chalaris,2025-04-16T10:57:07Z,Adjust line highlighting  Add support for labels and use semantic HTML elements (`mark`).,81,13,94
+Chalarangelo/30-seconds-of-code,4be9a58f8da5ced459f9bf7fa046c63f5834087d,Angelos Chalaris,2025-04-16T08:46:04Z,Handle escapes in range labels,21,9,30
+Chalarangelo/30-seconds-of-code,6b1ee46326b5b4349c2cd8cfbf849555d9b5a20e,Angelos Chalaris,2025-04-14T19:48:43Z,Rename description to label,21,24,45
+Chalarangelo/30-seconds-of-code,ef6edcd1871e25da8afba41bcb1a1a83edf98371,Angelos Chalaris,2025-04-14T19:47:34Z,Fix handling of special characters in range descriptions,140,52,192
+Chalarangelo/30-seconds-of-code,66636e6aa399e9d2aa0146d3f957a2fdf0faf9cc,dependabot[bot],2025-04-12T19:27:56Z,Bump vite from 6.2.5 to 6.2.6 (#2107)  Bumps [vite](https://github.com/vitejs/vite/tree/HEAD/packages/vite) from 6.2.5 to 6.2.6. - [Release notes](https://github.com/vitejs/vite/releases) - [Changelog](https://github.com/vitejs/vite/blob/v6.2.6/packages/vite/CHANGELOG.md) - [Commits](https://github.com/vitejs/vite/commits/v6.2.6/packages/vite)  --- updated-dependencies: - dependency-name: vite   dependency-version: 6.2.6   dependency-type: indirect ...  Signed-off-by: dependabot[bot] <support@github.com> Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>,3,3,6
+Chalarangelo/30-seconds-of-code,dda86b50796ba07ffad03fd38edc4589c1e9a1d2,Angelos Chalaris,2025-04-12T16:56:34Z,Add support for line highlights,65,6,71
+Chalarangelo/30-seconds-of-code,b83f3a3c256e550cbec2b803ce59c644f8aaa85e,Angelos Chalaris,2025-04-12T16:56:09Z,Move inline code padding to the line level,15,3,18
+Chalarangelo/30-seconds-of-code,c22a7ca6781f1b6ff1fbdded4cdd50d2a34b5441,Angelos Chalaris,2025-04-12T16:54:24Z,Add light code background token,2,0,2
+Chalarangelo/30-seconds-of-code,e8423cceb7b0c990d532d13d3350fb6801980df4,Angelos Chalaris,2025-04-12T16:32:24Z,Update color swatches transformer,4,6,10
+Chalarangelo/30-seconds-of-code,6abfd363cd3aab67d43cda834994fd05dee0ff79,Angelos Chalaris,2025-04-12T16:18:08Z,Fix sass import  `import sass from 'sass'` is deprecated.,1,1,2
+Chalarangelo/30-seconds-of-code,e6f6bf9481e4fffe463f730dc3ea6db6a5c84896,Angelos Chalaris,2025-04-12T16:02:35Z,"Fix a potential bug with duplicate segments  However improbable, the previous code would fail if two segments were the exact same.",4,7,11
+Chalarangelo/30-seconds-of-code,1bbc0f06bdf46fd1a30ebc0241f828974ec9bfb5,Angelos Chalaris,2025-04-12T16:00:57Z,Use new meta parsing strategy for tites,14,4,18
+Chalarangelo/30-seconds-of-code,f19faa47c389a30dc4d88320d390b7fe43f64155,Angelos Chalaris,2025-04-12T16:00:38Z,Update formatting of titled code blocks,287,287,574
+Chalarangelo/30-seconds-of-code,836f0030422cf599bee6e48d1455f064a43cb26a,Angelos Chalaris,2025-04-12T15:48:53Z,Create metaParser utility,463,0,463
+Chalarangelo/30-seconds-of-code,63c6f093150590a5fa2a23b0055f7fd883659480,Angelos Chalaris,2025-04-12T15:48:44Z,"Skip a test case  Not really very useful, may revisit later",1,1,2
+Chalarangelo/30-seconds-of-code,3184d474d2ce2324a81021b1f31e5266311fc66b,Angelos Chalaris,2025-04-11T10:18:32Z,Add additional cases to test snippet,13,0,13
+Chalarangelo/30-seconds-of-code,8b09830bd81bf73fc22df61a291dafc626ff16d6,Angelos Chalaris,2025-04-11T10:18:23Z,"Semantically wrap code blocks  Use `pre > code`, instead of single `pre` element. This is semantically better, but requires some styling changes to be compatible with the previous setup.",45,18,63
+Chalarangelo/30-seconds-of-code,6a3693f28ab0a211963b75636db7b346f8811949,Angelos Chalaris,2025-04-11T09:48:08Z,Fix latex-expression overflow,8,0,8
+Chalarangelo/30-seconds-of-code,d4980a5db817178787f5dcbcccb276eb06929b5b,Angelos Chalaris,2025-04-10T20:19:43Z,Add rich content example to admonition,4,0,4
+Chalarangelo/30-seconds-of-code,ee00e5c93a844bcae1692a3dbd7ee0291712105f,Angelos Chalaris,2025-04-10T20:19:20Z,"Add a preview indicator for Prism highlights  Highlighted blocks in ""preview"" mode (ie. Prism) will now have an indicator to the right of the block to inform the author that the highlights are not finalized.",13,0,13
+Chalarangelo/30-seconds-of-code,349a0c0e8f2dbdcb342bafd386566c5eb012e788,Angelos Chalaris,2025-04-10T19:54:37Z,Update `highlightCode` documentation,3,2,5
+Chalarangelo/30-seconds-of-code,8fd8cd359a022da53d6aef1a4928af6783a3ade8,Angelos Chalaris,2025-04-10T19:51:52Z,Add color swatch example to test snippet,10,0,10
+Chalarangelo/30-seconds-of-code,9ce26be52b8423da550268d0b929368edb4085a9,Angelos Chalaris,2025-04-10T19:51:41Z,"Add fast and slow modes  Fast mode uses Prism, for authoring. Slow mode uses Shiki, for development.",25,8,33
+Chalarangelo/30-seconds-of-code,a6927dfb19a5e9f13bd0f7d9b7c27cf239bf2cd5,Angelos Chalaris,2025-04-10T19:26:32Z,Remove Prism styles from global CSS,0,242,242
+Chalarangelo/30-seconds-of-code,7bb6498bc396c637d5fc473881fd9f57b663bc14,Angelos Chalaris,2025-04-10T19:26:21Z,Inject prism styles if necessary (highlighter-dependent),20,3,23
+Chalarangelo/30-seconds-of-code,ffb99b63643362088e62cc10fa275c495f1acf3e,Angelos Chalaris,2025-04-10T19:25:55Z,Add prism-code-highlight pseudo-component,244,0,244
+Chalarangelo/30-seconds-of-code,05ba1b64d87dbf89817e61a3baaf178f06c38e8e,Angelos Chalaris,2025-04-10T19:11:46Z,Restructure styles  Make sure that Prism styles are separated.,62,57,119
+Chalarangelo/30-seconds-of-code,f1fd19443fd9d4a2780d83b402e9dbc46b8f7cc8,Angelos Chalaris,2025-04-10T19:09:25Z,Make hex swatches token-agnostic  Support added for Shiki.,1,1,2
+Chalarangelo/30-seconds-of-code,bed3728ee731fa1f4c9a0110d6b8f0db93f1f54c,Angelos Chalaris,2025-04-10T19:09:04Z,Add new color to snippet palette,1,0,1
+Chalarangelo/30-seconds-of-code,de478d7b839f860bbac1a01966e0326d0fb1897c,Angelos Chalaris,2025-04-10T19:08:27Z,Add hex color highlight transformer for Shiki,56,1,57
+Chalarangelo/30-seconds-of-code,0fe006ccabea312ffacd198e59d6640df71a3139,Angelos Chalaris,2025-04-10T19:07:52Z,Remove old hex highlighting plugin  Prism now doesn't support hex code swatches.,0,9,9
+Chalarangelo/30-seconds-of-code,dc778d828180bac427e4c59e8b2ccba423fa2bab,Angelos Chalaris,2025-04-10T19:07:21Z,Add colorized brackets transformer to Shiki,13,0,13
+Chalarangelo/30-seconds-of-code,3776d71db69c274971cadda1c9e487905d18ef46,Angelos Chalaris,2025-04-10T19:06:34Z,Customize theme to use variables,47,50,97
+Chalarangelo/30-seconds-of-code,f0728020b190252509d06fa5a1a2631da84747ce,Angelos Chalaris,2025-04-09T19:58:54Z,Fix broken plugin,1,0,1
+Chalarangelo/30-seconds-of-code,9505db2a60ecb04c6e5cd7df3d4ac4072ef38dca,Angelos Chalaris,2025-04-09T19:41:08Z,"Create custom theme  Copy 'github-dark', only keep what's needed.",377,7,384
+Chalarangelo/30-seconds-of-code,155a2364a2ddcfb6ff8d089728347b26cac3b9ea,Angelos Chalaris,2025-04-09T17:27:41Z,Remove old remarkPlugins file,0,348,348
+Chalarangelo/30-seconds-of-code,60744b72169c05446d3420af9dcf063db1e2c395,Angelos Chalaris,2025-04-09T17:27:25Z,Add shiki as an alternative code highlighter,70,3,73
+Chalarangelo/30-seconds-of-code,16b2b33a4f93a0bb37c6a31364566946d5609999,Angelos Chalaris,2025-04-09T17:20:56Z,Pass down highlighter to highlightCode  Extract the Prism setup and use logic into a class.,35,22,57
+Chalarangelo/30-seconds-of-code,d021a394e73969ceb7da826ea4aae286f5471dca,Angelos Chalaris,2025-04-09T17:06:36Z,Make highlightCode async,78,44,122
+Chalarangelo/30-seconds-of-code,b7b31772b60757ddc0c12c90da44371bed821cdd,Angelos Chalaris,2025-04-09T16:46:14Z,Move markdown parser plugins to own directory,444,1,445
+Chalarangelo/30-seconds-of-code,99201853264ea3e3495454da456493ec94037eec,Angelos Chalaris,2025-04-09T16:02:59Z,Update grammars for shiki  `js-extras` & `css-extras` are not needed. `editorconfig` is now `properties`.,4,8,12
+Chalarangelo/30-seconds-of-code,d411ae205fe12c8941dd94fd8844d408c1529b75,Angelos Chalaris,2025-04-09T16:01:14Z,Install colorized-brackets transformer,12,0,12
+Chalarangelo/30-seconds-of-code,ded2c61890c5f4ec99fe0ab583abf057db2a3dca,Angelos Chalaris,2025-04-09T16:00:49Z,Install shiki,7,3,10
+Chalarangelo/30-seconds-of-code,ea464aeb57c7e1ffb76c73c1a356e5137de12eb9,Angelos Chalaris,2025-04-09T15:58:51Z,Switch languages  Fix `sh` -> now `shell` Replace `editorconfig` -> now `properties`,9,9,18
+Chalarangelo/30-seconds-of-code,f97ee016aacda06a10a9608f1c9b53916b7caae2,Angelos Chalaris,2025-04-09T10:03:35Z,Tidy up n-gram indexing,5,5,10
+Chalarangelo/30-seconds-of-code,c3cc5987d1496efe41d458de13fd807081d1169a,Angelos Chalaris,2025-04-09T10:03:01Z,Add fuzzy matching (n-grams) article,204,0,204
+Chalarangelo/30-seconds-of-code,e985eb6f4554d6404cf4ba697bbfe3706ec4c393,Angelos Chalaris,2025-04-09T09:56:26Z,Fix image name,0,0,0
+Chalarangelo/30-seconds-of-code,412b81714bebc957d9bdf03788b0ef984688a294,Angelos Chalaris,2025-04-08T18:37:56Z,Add a query timer for search in console,8,4,12
+Chalarangelo/30-seconds-of-code,b26c9f33137e8b787612c8781b8a1c5025fa01af,Angelos Chalaris,2025-04-08T18:37:47Z,Utilize index for ngrams in search,13,14,27
+Chalarangelo/30-seconds-of-code,2ef6f77c88278f909c79df7fcb105b61b49a1dc6,Angelos Chalaris,2025-04-08T18:37:33Z,Make ngram indexing more efficient,20,8,28
+Chalarangelo/30-seconds-of-code,21d88112c9449bccb104c4412a623540b5789022,Angelos Chalaris,2025-04-08T16:30:12Z,Add fuzzinness to the prepared query search,2,2,4
+Chalarangelo/30-seconds-of-code,a1347e49664eeadfe9da6c809a31ea094a0170b0,Angelos Chalaris,2025-04-08T16:29:56Z,"Add n-gram fuzzy matching strategy  n-grams are employed with a weight of 0.7, by default. They are used as a complementary means to match documents, but can also be employed as a fallback in case there are no matching documents via TF-IDF search.",51,3,54
+Chalarangelo/30-seconds-of-code,eecb6611bfebc5e152537887321875d22a1abdd0,Angelos Chalaris,2025-04-08T16:18:33Z,Include n-grams in document index,21,0,21
+Chalarangelo/30-seconds-of-code,c356b8b68b2eaf8b07651200912d3e2b5c9679d5,Angelos Chalaris,2025-04-08T16:18:12Z,Add n-grams generation function,13,0,13
+Chalarangelo/30-seconds-of-code,2112ae4aa263dc643e3ef4b94424685d22d0dd6d,Angelos Chalaris,2025-04-08T15:54:38Z,Remove deprecated ESLint rule,0,1,1
+Chalarangelo/30-seconds-of-code,cc10b6bda12a3e60a21eccf352d8388e47c29190,Angelos Chalaris,2025-04-08T15:36:24Z,Use LaTex expressions in more complex articles,67,1,68
+Chalarangelo/30-seconds-of-code,40458851b4a24b78e683cc86450de64a9c080ae6,Angelos Chalaris,2025-04-08T15:33:53Z,Add support for multiline LaTex expressions,5,0,5
+Chalarangelo/30-seconds-of-code,7c7b155afcf91db2409bc7fa54231271c7bf39b9,Angelos Chalaris,2025-04-08T15:24:37Z,"Add support for captions  We want the caption (i.e. supporting text) to be part of the component's `figure` element, and we want to ensure it's displayed with the component, or not at all.",15,1,16
+Chalarangelo/30-seconds-of-code,bcbd29be04856ebd35cc15841ba7eeae92704376,Angelos Chalaris,2025-04-08T15:23:45Z,Use latex-expression in some articles,30,0,30
+Chalarangelo/30-seconds-of-code,77c59bf72ca0caaf63b030745fa4cf9fee210042,Angelos Chalaris,2025-04-08T15:04:40Z,"Add experimental support for LaTex  Via KaTex, loaded as ESM. More info here: https://katex.org/docs/browser#ecmascript-module",54,3,57
+Chalarangelo/30-seconds-of-code,c2bd35c8dbdd8e4989079763870822e25db89592,Angelos Chalaris,2025-04-08T14:24:03Z,Use full-width code-tabs in react components,10,10,20
+Chalarangelo/30-seconds-of-code,0170ebce435f0e5ace688886600f721044215c88,Angelos Chalaris,2025-04-08T14:23:50Z,Add support for full-width code-tabs,5,0,5
+Chalarangelo/30-seconds-of-code,c77d10028cd416c9ec1910be16137f6bbc0eb9c0,Angelos Chalaris,2025-04-07T19:46:13Z,Add promise article embeds,12,0,12
+Chalarangelo/30-seconds-of-code,c6af9edd839f8feb9bb0d079c433e0ae043480d0,Angelos Chalaris,2025-04-07T19:37:41Z,Link event loop to timeout interval delay,2,0,2
+Chalarangelo/30-seconds-of-code,316b4344b8d36474150e7945192706fbd9c20de9,Angelos Chalaris,2025-04-07T19:37:25Z,Add JSON collection,25,0,25
+Chalarangelo/30-seconds-of-code,275b716e9658ce2bd33b649602f144c4dbf7a999,Angelos Chalaris,2025-04-06T15:40:08Z,Fix broken footer layout,25,25,50
+Chalarangelo/30-seconds-of-code,48b8fac184ed348ea1980dd24383e2eb04903a42,Angelos Chalaris,2025-04-06T15:36:08Z,Link to boolean function article from others,9,1,10
+Chalarangelo/30-seconds-of-code,e1a3fd85b73f72ac818a92f0dc3846002c95e7ae,Angelos Chalaris,2025-04-06T15:35:56Z,Link this to function bind,7,3,10
+Chalarangelo/30-seconds-of-code,c15f54c26fbf2989fd82d48ee45a831f1674347d,Angelos Chalaris,2025-04-06T15:35:37Z,Link closures article,2,0,2
+Chalarangelo/30-seconds-of-code,d84c42cb9df3c8a4f88365e34700ae2eca3634a6,Angelos Chalaris,2025-04-06T15:35:30Z,Interlink immutability articles,4,0,4
+Chalarangelo/30-seconds-of-code,3dee8920b7f2f9953909dca70ea54240ab74bdf2,Angelos Chalaris,2025-04-06T15:35:13Z,Interlink array iteration articles,25,7,32
+Chalarangelo/30-seconds-of-code,b4aa2d3bd9864a49366c6f472d0dbcbe90301bcd,Angelos Chalaris,2025-04-06T15:34:48Z,Fix shortTitle,1,1,2
+Chalarangelo/30-seconds-of-code,cf6b32904a55d70dca7552a6c1970a26799b310e,Angelos Chalaris,2025-04-06T15:34:42Z,Fix shortTitle,1,1,2
+Chalarangelo/30-seconds-of-code,17892f930bf42579332361006d4449162dd2e9f8,Angelos Chalaris,2025-04-06T15:31:02Z,Create immutability collection,21,0,21
+Chalarangelo/30-seconds-of-code,c70d46ab6a1de5b0a21b919ceaba797dbf0a44b7,Angelos Chalaris,2025-04-06T15:30:53Z,Add a word to the dictionary,1,0,1
+Chalarangelo/30-seconds-of-code,cb1d287cfd4e22f53c3a31b00b9c4b5d52609aef,Angelos Chalaris,2025-04-06T14:39:57Z,Fix mismatched parentheses,1,1,2
+Chalarangelo/30-seconds-of-code,a69d6f18003ef5e78374617756faa4597bd1a9d5,Angelos Chalaris,2025-04-06T14:37:37Z,Apply code-tabs to React components,314,275,589
+Chalarangelo/30-seconds-of-code,032175f644143ee745812cbeb15ab4e87992c5e4,Angelos Chalaris,2025-04-06T14:33:14Z,"Prevent the open tab from closing  It makes no sense for the open tab to be closed, as we always want at least one file to be open, so we'll only allow switching, instead.",10,0,10
+Chalarangelo/30-seconds-of-code,6181c3740610ada7a3b65def04e1dd95fe66e79d,Angelos Chalaris,2025-04-06T14:31:03Z,Add styles for code-tabs with few tabs  Center the title to make it look better.,1,0,1
+Chalarangelo/30-seconds-of-code,47cf5a656728b91e9acefa7ae432aa9b9fdb8405,Angelos Chalaris,2025-04-06T14:30:24Z,Expand code-tabs to non-details setups,1,1,2
+Chalarangelo/30-seconds-of-code,60ec8f57e1e88fcae392b1223ea0eedfaa262add,Angelos Chalaris,2025-04-05T11:26:15Z,"Prevent error flash when JS is enabled  When JS is enabled, there's a very brief moment when the content web components haven't loaded just yet, so the user sees a flash of the error message. To prevent this, we can use a `noscript` tag, along with the styles added into it, so that the error message will only appear for users with JS disabled completely.",27,20,47
+Chalarangelo/30-seconds-of-code,cd18ff69f06f2742a6eb4583349fabe62ee78766,Angelos Chalaris,2025-04-05T11:13:55Z,Use code-tabs component in the money article,2,0,2
+Chalarangelo/30-seconds-of-code,c5e33190d67f6c29d16d1b12b8da3df6e1715a76,Angelos Chalaris,2025-04-05T11:13:38Z,Add code-tabs to test,178,0,178
+Chalarangelo/30-seconds-of-code,7e5a8f3250d63952c1cac6130af0215509722158,Angelos Chalaris,2025-04-05T11:07:21Z,Switch component styles to Sass,190,110,300
+Chalarangelo/30-seconds-of-code,e492f24445931a9cf5400b9bbb836cc9b0b9af57,Angelos Chalaris,2025-04-05T11:07:17Z,Switch component styles to Sass,37,8,45
+Chalarangelo/30-seconds-of-code,5a99510ce23e7cdfaac645c18d4b223c41341c38,Angelos Chalaris,2025-04-05T10:47:15Z,Tidy up code-tabs,5,7,12
+Chalarangelo/30-seconds-of-code,4c48c7c80dfbd6d4c2f7f16726fa66487bc310ea,Angelos Chalaris,2025-04-05T10:45:58Z,Use code-block component in relevant articles,16,57,73
+Chalarangelo/30-seconds-of-code,acbba90f58edef0ec50bc63c6c6f9f4eac0ad142,Angelos Chalaris,2025-04-05T10:40:58Z,Add code-tabs web component,221,0,221
+Chalarangelo/30-seconds-of-code,fd7e5026d0ccf003061bcf378309ab11b7d60850,Angelos Chalaris,2025-04-05T07:59:02Z,Load styles prior to defining the component,1,1,2
+Chalarangelo/30-seconds-of-code,3c22c4eb7a7cc61d8d7be3d2352ca6d078c2c43e,Angelos Chalaris,2025-04-05T07:52:53Z,Improve interactive component error message  Add the message after the content and give it the correct layout.,4,1,5
+Chalarangelo/30-seconds-of-code,3aba13ad08a9edf1d86edf43410bd12cae82efcb,Angelos Chalaris,2025-04-05T07:48:55Z,Bump vitest to 3.1,70,51,121
+Chalarangelo/30-seconds-of-code,f6e8a8d6c7237ecb0564cfabb84fcc0d1839027c,Angelos Chalaris,2025-04-05T07:42:03Z,Bump eslint to 9.24,17,13,30
+Chalarangelo/30-seconds-of-code,f25684b7bffe65a41e04c790423d50071f88bc04,Angelos Chalaris,2025-04-05T07:40:46Z,Bump astro to 5.6,16,14,30
+Chalarangelo/30-seconds-of-code,3539498cafef9d567b05c1456be3cd99ecb224be,Angelos Chalaris,2025-04-05T07:39:54Z,Bump vite to 6.2.5  Fix CVE-2025-31486,3,3,6
+Chalarangelo/30-seconds-of-code,4226d5c040853f53dd3afe0c72266d79a8d7ad41,Angelos Chalaris,2025-04-04T18:45:49Z,Handle edge case scenarios in hotkeys,13,2,15
+Chalarangelo/30-seconds-of-code,24528fd0239c5772adf02ca5f5e24742608477a2,Angelos Chalaris,2025-04-04T16:38:13Z,Link to lookaheads from the regexp cheatsheet,2,0,2
+Chalarangelo/30-seconds-of-code,7a71adbbce0770343aa4aff0c8c3c643ae3cb605,Angelos Chalaris,2025-04-04T16:37:51Z,Link kebab and slug content,7,3,10
+Chalarangelo/30-seconds-of-code,d8542f76f86a7b5c44ec33457399b1e9f42514c0,Angelos Chalaris,2025-04-04T16:37:39Z,Add embeds to some older articles,4,0,4
+Chalarangelo/30-seconds-of-code,8bc28ef7d68078356730d143b8702a09ae0db59d,Angelos Chalaris,2025-04-04T16:34:09Z,Create recursion collection,19,0,19
+Chalarangelo/30-seconds-of-code,e0114e2a2083e894ab94bf57768815bab998403f,Angelos Chalaris,2025-04-04T16:21:32Z,Link to new articles from older ones via embeds,6,0,6
+Chalarangelo/30-seconds-of-code,2e64fe5dd246b9ec9eec91f17350bd53d8c02a5c,Angelos Chalaris,2025-04-04T16:20:52Z,Add embeds to some new articles,4,0,4
+Chalarangelo/30-seconds-of-code,74f9443ee6ad72c680085a373ffa41e19b554aa6,Angelos Chalaris,2025-04-04T16:20:36Z,Add an intersection query  Helpful when used in combination with queries that return record sets with snippets.,8,0,8
+Chalarangelo/30-seconds-of-code,7d982d3efe83dc059f7dc4009ab30cede8cbafdc,Angelos Chalaris,2025-04-04T16:20:04Z,Replace link with embed,6,1,7
+Chalarangelo/30-seconds-of-code,47bb232e29c0e5fc5a6706b70e2310cf95976a29,Angelos Chalaris,2025-04-04T16:10:52Z,Add content curation queries,13,0,13
+Chalarangelo/30-seconds-of-code,d6654f910e76f6b7b567e27b9c7f4be374fe2662,Angelos Chalaris,2025-04-04T16:09:09Z,Remove PerformanceTracking from loader,0,2,2
+Chalarangelo/30-seconds-of-code,f5548519a9eea6200c74a46819572b5724035e56,Angelos Chalaris,2025-04-04T16:06:47Z,Remove unused settings,0,1,1
+Chalarangelo/30-seconds-of-code,d26fcc6a287a49a7d81ce84a07622fe3c5c5776d,Angelos Chalaris,2025-04-04T16:06:38Z,Deprecate PerformanceTracking,0,39,39
+Chalarangelo/30-seconds-of-code,d2a076f7c34ce922846736ade28fe8e47557e944,Angelos Chalaris,2025-04-04T16:06:29Z,Remove performance queries,0,35,35
+Chalarangelo/30-seconds-of-code,172305b1897077da1fde2aebc1a75f4bac00dea0,Angelos Chalaris,2025-04-04T16:04:15Z,Fix some ancient blog references,11,9,20
+Chalarangelo/30-seconds-of-code,1ec9659820f2ea41fb00063e483c82c3a6c4a864,Angelos Chalaris,2025-04-04T16:02:29Z,Interlink some python articles,3,11,14
+Chalarangelo/30-seconds-of-code,9fa77c3aa81742ddea1ce28f7124724ebe6653fb,Angelos Chalaris,2025-04-04T15:56:22Z,Fix snippet title,1,1,2
+Chalarangelo/30-seconds-of-code,e342ddadde3a1dd67f193f371e4c2a413b3d3f39,Angelos Chalaris,2025-04-04T15:55:25Z,Update regexp tricks article description,2,2,4
+Chalarangelo/30-seconds-of-code,7eec6afc28e4c9cdc72e6fb7c3bb45126a272945,Angelos Chalaris,2025-04-04T15:47:02Z,Create RegExp collection  Link to MDN article in hero footer,21,0,21
+Chalarangelo/30-seconds-of-code,38e628de0f3cd253a3b1f4236051cfd82ec64d59,Angelos Chalaris,2025-04-04T15:46:49Z,Fix hero footer on small viewports,2,1,3
+Chalarangelo/30-seconds-of-code,ef1b5e85aef1f8d1c177a7a98fbf50cb9419ea0f,Angelos Chalaris,2025-04-04T15:34:58Z,Rename recursion optimization article,14,7,21
+Chalarangelo/30-seconds-of-code,25ba3b2739cfd804be8c382f2550f35a3ef62870,Angelos Chalaris,2025-04-04T15:28:45Z,Update test snippet with new authoring features,43,1,44
+Chalarangelo/30-seconds-of-code,cc185454247ac46c6a12b33329315e2bb02c2999,Angelos Chalaris,2025-04-04T15:28:27Z,Fix some visual bugs for embedded articles,6,2,8
+Chalarangelo/30-seconds-of-code,fe78123d188e59cfe67bad5bd84be947b0fdf83a,Angelos Chalaris,2025-04-04T15:13:26Z,Fix image sizing in embeddings,2,2,4
+Chalarangelo/30-seconds-of-code,b68c10158cf7262883ec38be6a72319a8130b167,Angelos Chalaris,2025-04-04T15:12:51Z,Add hash support to embeddings,2,2,4
+Chalarangelo/30-seconds-of-code,0655cf5038b688388f42318b792b5a2f0b3b705f,Angelos Chalaris,2025-04-04T15:12:43Z,Add hash support to enrichedContent,5,3,8
+Chalarangelo/30-seconds-of-code,7f28cfb447af95173a1ce1216e84d88f6694302c,Angelos Chalaris,2025-04-04T14:57:25Z,Style snippet embeds,130,0,130
+Chalarangelo/30-seconds-of-code,c030c51fd59f36a1144959c140694102a923e9b2,Angelos Chalaris,2025-04-04T14:57:02Z,Use enriched content for snippet context,1,1,2
+Chalarangelo/30-seconds-of-code,688137e859e6befd94e837022e510f3216d3f9c5,Angelos Chalaris,2025-04-04T14:56:51Z,Expose ContentModel in models,8,1,9
+Chalarangelo/30-seconds-of-code,f6bed18677b770ae7f14da4d4c71ec9aa8a9612f,Angelos Chalaris,2025-04-04T14:56:38Z,Add content enriching to snippets  Parses article embeds,16,0,16
+Chalarangelo/30-seconds-of-code,5edeaa19e0944359ab3788a80373f8939f83d3ab,Angelos Chalaris,2025-04-04T14:56:18Z,Make snippets & collections globally searchable,2,0,2
+Chalarangelo/30-seconds-of-code,22a0883fe5ac67fcc0f4426d3cbef35c4bdcbf0d,Angelos Chalaris,2025-04-04T14:55:59Z,Create embeddable trait for content models,28,0,28
+Chalarangelo/30-seconds-of-code,71596926f59630e7a6a194a8e80a3f0c961b6d70,Angelos Chalaris,2025-04-04T14:55:43Z,Add content model-wide search system,20,0,20
+Chalarangelo/30-seconds-of-code,a56818a6ce5fcc01a47c6d5b4a673c2331e0b0ad,Angelos Chalaris,2025-04-04T14:54:46Z,Add article embedding MD plugin,40,0,40
+Chalarangelo/30-seconds-of-code,7f77791862acaefb4970af22fa41b18da3a4e0f7,Angelos Chalaris,2025-04-03T16:04:17Z,Add fallback styles for step-visualizer,11,0,11
+Chalarangelo/30-seconds-of-code,dcaa2cfc347953cda8288699d3aeccaea46f5af0,Angelos Chalaris,2025-04-03T16:03:59Z,"Use step-visualizer in Math expression parser  This one has custom step labels, too.",14,77,91
+Chalarangelo/30-seconds-of-code,9ee3f6fbb84d48993e5c0cc4cc02f619194db2cc,Angelos Chalaris,2025-04-03T16:03:14Z,Use step-visualizer in LCS,2,47,49
+Chalarangelo/30-seconds-of-code,8305295c245defa08c900ba79a4d71b22ec8d3c5,Angelos Chalaris,2025-04-03T16:02:47Z,Add step visualizer component,33,9,42
+Chalarangelo/30-seconds-of-code,2072fe6a48f918677fc0a0ac09bb82e4c9d2c324,Angelos Chalaris,2025-04-03T16:02:34Z,Add a web component unavailable message,24,1,25
+Chalarangelo/30-seconds-of-code,ed7972e6b400d5a66d9cd00cf0dedc1e85e6f1dc,Angelos Chalaris,2025-04-03T16:02:05Z,Add default interactive attribute to web components,1,1,2
+Chalarangelo/30-seconds-of-code,760362746933ffb01f5cd8492d76a701e2de10be,Angelos Chalaris,2025-04-03T13:32:20Z,Add step-visualizer web component,88,0,88
+Chalarangelo/30-seconds-of-code,ed2dd5f6c360a9de3cdf69a516e79ac841ea8969,Angelos Chalaris,2025-04-03T13:31:30Z,Load web components in MarkdownParser,9,1,10
+Chalarangelo/30-seconds-of-code,244ef625fb14e873fe86864218e20c864bd2d5b0,Angelos Chalaris,2025-04-03T13:31:08Z,Add loadWebComponents plugin,19,0,19
+Chalarangelo/30-seconds-of-code,70b4bdd1a6df113581dd5d7ac90868296ef50b91,Angelos Chalaris,2025-04-03T13:27:25Z,Upgrade ESlint ES version to 2025  Adds support for import attributes.,1,1,2
+Chalarangelo/30-seconds-of-code,c39e68e2d1d54d48ee1bafbc22267419cef0ac7b,Angelos Chalaris,2025-04-03T12:38:56Z,Change component output directory,2,1,3
+Chalarangelo/30-seconds-of-code,40289ae6d6601b5d89962b91be5dfbdfbee33264,Angelos Chalaris,2025-04-03T12:37:28Z,Add ContentComponents to prepare script,15,3,18
+Chalarangelo/30-seconds-of-code,0d35ede1309c8b226439c765e0f6af3395403a59,Angelos Chalaris,2025-04-03T12:33:46Z,Add ContentComponents ib,14,0,14
+Chalarangelo/30-seconds-of-code,0526bcc6d377b663649370f985365c51217c332b,Angelos Chalaris,2025-04-03T12:32:36Z,Add content components settings,2,0,2
+Chalarangelo/30-seconds-of-code,f5641e4c929d3097af81b698e0205837be5aeb3c,dependabot[bot],2025-04-01T05:56:36Z,Bump vite from 6.2.3 to 6.2.4 (#2105)  Bumps [vite](https://github.com/vitejs/vite/tree/HEAD/packages/vite) from 6.2.3 to 6.2.4. - [Release notes](https://github.com/vitejs/vite/releases) - [Changelog](https://github.com/vitejs/vite/blob/v6.2.4/packages/vite/CHANGELOG.md) - [Commits](https://github.com/vitejs/vite/commits/v6.2.4/packages/vite)  --- updated-dependencies: - dependency-name: vite   dependency-type: indirect ...  Signed-off-by: dependabot[bot] <support@github.com> Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>,4,3,7
+Chalarangelo/30-seconds-of-code,9b62b3c99e652ba9a92e0f6f042fc6af47d8a041,Angelos Chalaris,2025-03-31T16:51:19Z,Add time formatter article,146,0,146
+Chalarangelo/30-seconds-of-code,740dce66ecb5ed9ec0a875f48636600afb3aca0d,Angelos Chalaris,2025-03-31T15:23:55Z,Add an article about OS detection,58,0,58
+Chalarangelo/30-seconds-of-code,3cce397486361dae30542e9bf6718aa715e6e83e,Angelos Chalaris,2025-03-29T11:12:37Z,Add partial search article,177,0,177
+Chalarangelo/30-seconds-of-code,61387a4c5f7c6cf0c5b484c38cb61f09ed4dc6e1,Angelos Chalaris,2025-03-29T11:12:02Z,Fix a typo,1,1,2
+Chalarangelo/30-seconds-of-code,1888f1e8c035230d2d06719966f1cb31526cb3d6,Angelos Chalaris,2025-03-29T10:25:10Z,"Switch out partial matching for a better implementation  Use the regular TF-IDF formula, except the frequency is calculated as the sum of the partially matched terms as seen in the index.",29,13,42
+Chalarangelo/30-seconds-of-code,419a25fa7ea65baaf4ceb6e8199d4281db712e77,Angelos Chalaris,2025-03-29T09:09:43Z,"Add partial matching to search  If there's an incompelte search term as the last term, the search will attempt to use the token strategy with a simulated IDF to partially match it to any document. This allows for incomplete search terms, e.g. `javasc` to be matched against any document proportionally to the partial search term's length, providing a better experience while typing a search term, instead of only matching when the query is complete.",22,3,25
+Chalarangelo/30-seconds-of-code,d15425676d9f3c28a97ad178af3fe07e1721b41e,Angelos Chalaris,2025-03-29T09:07:30Z,Load rawContent for documents,3,0,3
+Chalarangelo/30-seconds-of-code,95ee39c63a8c592f03e0f7040dd73224c5b3157d,Angelos Chalaris,2025-03-29T09:07:14Z,Preload documentIndex in console,2,0,2
+Chalarangelo/30-seconds-of-code,fd1a0658fa728df6374fe13db5c1030c768a6318,Angelos Chalaris,2025-03-29T08:22:28Z,Style scroll to top link,45,0,45
+Chalarangelo/30-seconds-of-code,768874fff244b6728e51198c79e50cd1739005fa,Angelos Chalaris,2025-03-29T08:22:21Z,Add scroll to top link,5,0,5
+Chalarangelo/30-seconds-of-code,f7caa2d0988f3621e452a0e6c8713db61eceeb22,Angelos Chalaris,2025-03-29T08:22:08Z,Change skip link id,2,2,4
+Chalarangelo/30-seconds-of-code,bf5a8b1ce3247ea0d99026ccba798b0a469d2027,Angelos Chalaris,2025-03-29T08:21:55Z,Add arrow-up icon,10,0,10
+Chalarangelo/30-seconds-of-code,0416061f20b809255977e28c94921858c85850b6,Angelos Chalaris,2025-03-28T18:00:34Z,Add a new update log,41,0,41
+Chalarangelo/30-seconds-of-code,d458ab1d825dd878829fc981f3d4f1267b862d7f,Angelos Chalaris,2025-03-28T17:18:21Z,Fix broken test,1,1,2
+Chalarangelo/30-seconds-of-code,09e0949b714fc67009b8277e9a38d9c5e9665b9a,Angelos Chalaris,2025-03-28T17:16:54Z,Enable scroll spy for ToC,2,0,2
+Chalarangelo/30-seconds-of-code,7afca7cdbf3116109225cf575a2373b9266bf61a,Angelos Chalaris,2025-03-28T17:16:45Z,Add scrollspy web component for ToC,56,0,56
+Chalarangelo/30-seconds-of-code,d9ec6dc03814c7717894d93b04efb9ced98a16e1,Angelos Chalaris,2025-03-28T17:16:30Z,Wrap ToC in custom element,2,2,4
+Chalarangelo/30-seconds-of-code,10b77f1f5db8863fe8c001545627b903719aef1e,Angelos Chalaris,2025-03-28T17:16:12Z,Style current ToC link,7,0,7
+Chalarangelo/30-seconds-of-code,20f6b841c7ec9278195242f573e4cbae3a6d5111,Angelos Chalaris,2025-03-27T19:38:50Z,Adjust behavior of hotkeys,15,3,18
+Chalarangelo/30-seconds-of-code,b57572c00b852b1981a2c8705b9c96fb254145f4,Angelos Chalaris,2025-03-27T19:33:06Z,Reset focused result on search open,1,0,1
+Chalarangelo/30-seconds-of-code,c974b0dc2fdcac38b4622a523c805c5fe3924095,Angelos Chalaris,2025-03-27T19:32:38Z,Display nav action hotkeys,68,0,68
