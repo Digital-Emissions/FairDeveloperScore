@@ -1,6 +1,10 @@
 import requests
+import os
+from dotenv import load_dotenv
 
-GITHUB_TOKEN = "PLACEHOLDER_TOKEN "
+load_dotenv()
+
+GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
 headers = {
     "Authorization": f"token {GITHUB_TOKEN}",
     "Accept": "application/vnd.github+json"
