@@ -10,7 +10,7 @@ headers = {
     "Accept": "application/vnd.github+json"
 }
 
-TOP_N = 500  # 300 is the number of most starred repos that We want to get on Github，can be changed to any number
+TOP_N = 500  # Number of most starred repos to fetch from GitHub, can be changed to any number
 PER_PAGE = 100 
 repo_list = []
 
