@@ -186,11 +186,6 @@ result = (
 )
 ```
 
-### Indentation
-- Use **4 spaces** for indentation
-- No tabs allowed
-- Consistent indentation throughout
-
 ### Blank Lines
 - Two blank lines between top-level functions and classes
 - One blank line between methods in a class

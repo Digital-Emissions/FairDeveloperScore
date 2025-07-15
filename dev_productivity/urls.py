@@ -19,6 +19,11 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path("", views.index, name="index"),
+    path("", views.dashboard_view, name="dashboard"),
+    path("developers/", views.developer_list_view, name="developer_list"),
+    path("developers/<int:developer_id>/", views.developer_detail_view, name="developer_detail"),
+    path("metrics/", views.productivity_metrics_view, name="productivity_metrics"),
+    path("projects/", views.projects_view, name="projects"),
+    path("api/productivity-data/", views.api_productivity_data, name="api_productivity_data"),
     path("admin/", admin.site.urls),
 ]
