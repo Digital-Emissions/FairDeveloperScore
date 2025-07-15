@@ -1,0 +1,178 @@
+{% extends 'base.html' %}
+
+{% block title %}Metrics - Developer Productivity{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h1><i class="fas fa-chart-bar me-2"></i>Productivity Metrics</h1>
+    <a href="/admin/dev_productivity/productivitymetric/add/" class="btn btn-primary">
+        <i class="fas fa-plus me-2"></i>Add Metric
+    </a>
+</div>
+
+<div class="card">
+    <div class="card-header">
+        <h5 class="card-title mb-0">
+            <i class="fas fa-table me-2"></i>
+            All Productivity Metrics
+        </h5>
+    </div>
+    <div class="card-body">
+        {% if metrics %}
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Developer</th>
+                            <th>Date</th>
+                            <th>Commits</th>
+                            <th>Lines Added</th>
+                            <th>Lines Deleted</th>
+                            <th>Total Changed</th>
+                            <th>Productivity Score</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for metric in metrics %}
+                            <tr>
+                                <td>
+                                    <strong>{{ metric.developer.name }}</strong>
+                                    <br>
+                                    <small class="text-muted">{{ metric.developer.email }}</small>
+                                </td>
+                                <td>{{ metric.date|date:"M d, Y" }}</td>
+                                <td>
+                                    <span class="badge bg-primary">
+                                        {{ metric.commit_count }}
+                                    </span>
+                                </td>
+                                <td>
+                                    <span class="text-success">
+                                        <i class="fas fa-plus me-1"></i>{{ metric.lines_added }}
+                                    </span>
+                                </td>
+                                <td>
+                                    <span class="text-danger">
+                                        <i class="fas fa-minus me-1"></i>{{ metric.lines_deleted }}
+                                    </span>
+                                </td>
+                                <td>
+                                    <span class="badge bg-info">
+                                        {{ metric.total_lines_changed }}
+                                    </span>
+                                </td>
+                                <td>
+                                    <span class="badge bg-success">
+                                        {{ metric.productivity_score }}
+                                    </span>
+                                </td>
+                                <td>
+                                    <div class="btn-group" role="group">
+                                        <a href="/admin/dev_productivity/productivitymetric/{{ metric.id }}/change/" 
+                                           class="btn btn-sm btn-outline-secondary">
+                                            <i class="fas fa-edit"></i>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+            
+            <!-- Pagination -->
+            {% if page_obj.has_other_pages %}
+                <nav aria-label="Metrics pagination">
+                    <ul class="pagination justify-content-center mt-4">
+                        {% if page_obj.has_previous %}
+                            <li class="page-item">
+                                <a class="page-link" href="?page=1">First</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="?page={{ page_obj.previous_page_number }}">Previous</a>
+                            </li>
+                        {% endif %}
+                        
+                        <li class="page-item active">
+                            <span class="page-link">
+                                Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}
+                            </span>
+                        </li>
+                        
+                        {% if page_obj.has_next %}
+                            <li class="page-item">
+                                <a class="page-link" href="?page={{ page_obj.next_page_number }}">Next</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="?page={{ page_obj.paginator.num_pages }}">Last</a>
+                            </li>
+                        {% endif %}
+                    </ul>
+                </nav>
+            {% endif %}
+            
+        {% else %}
+            <div class="text-center py-5">
+                <i class="fas fa-chart-bar fa-3x text-muted mb-3"></i>
+                <h5 class="text-muted">No metrics found</h5>
+                <p class="text-muted">Add some productivity metrics to get started.</p>
+                <a href="/admin/dev_productivity/productivitymetric/add/" class="btn btn-primary">
+                    <i class="fas fa-plus me-2"></i>Add First Metric
+                </a>
+            </div>
+        {% endif %}
+    </div>
+</div>
+
+{% if metrics %}
+<div class="row mt-4">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title mb-0">
+                    <i class="fas fa-chart-area me-2"></i>
+                    Metrics Summary
+                </h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="text-center">
+                            <h4 class="text-primary">{{ page_obj.paginator.count }}</h4>
+                            <small class="text-muted">Total Metrics</small>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="text-center">
+                            <h4 class="text-success">
+                                {% with total_commits=metrics|length %}
+                                    {% if total_commits > 0 %}
+                                        {{ metrics.0.commit_count|default:"0" }}
+                                    {% else %}
+                                        0
+                                    {% endif %}
+                                {% endwith %}
+                            </h4>
+                            <small class="text-muted">Recent Commits</small>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="text-center">
+                            <h4 class="text-info">{{ page_obj.paginator.num_pages }}</h4>
+                            <small class="text-muted">Total Pages</small>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="text-center">
+                            <h4 class="text-warning">50</h4>
+                            <small class="text-muted">Per Page</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
+{% endblock %} 

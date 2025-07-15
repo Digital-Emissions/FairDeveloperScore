@@ -1,0 +1,273 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ developer.name }} - Developer Details{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <div>
+        <h1><i class="fas fa-user me-2"></i>{{ developer.name }}</h1>
+        <p class="text-muted mb-0">{{ developer.email }}</p>
+    </div>
+    <div>
+        <a href="{% url 'developer_list' %}" class="btn btn-outline-secondary me-2">
+            <i class="fas fa-arrow-left me-1"></i>Back to List
+        </a>
+        <a href="/admin/dev_productivity/developer/{{ developer.id }}/change/" class="btn btn-primary">
+            <i class="fas fa-edit me-1"></i>Edit
+        </a>
+    </div>
+</div>
+
+<!-- Developer Info Card -->
+<div class="row mb-4">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title mb-0">
+                    <i class="fas fa-info-circle me-2"></i>
+                    Developer Information
+                </h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-4">
+                        <strong>Name:</strong><br>
+                        {{ developer.name }}
+                    </div>
+                    <div class="col-md-4">
+                        <strong>Email:</strong><br>
+                        <a href="mailto:{{ developer.email }}">{{ developer.email }}</a>
+                    </div>
+                    <div class="col-md-4">
+                        <strong>GitHub:</strong><br>
+                        {% if developer.github_username %}
+                            <a href="https://github.com/{{ developer.github_username }}" target="_blank">
+                                <i class="fab fa-github me-1"></i>{{ developer.github_username }}
+                            </a>
+                        {% else %}
+                            <span class="text-muted">Not specified</span>
+                        {% endif %}
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-md-6">
+                        <strong>Joined:</strong><br>
+                        {{ developer.created_at|date:"M d, Y" }}
+                    </div>
+                    <div class="col-md-6">
+                        <strong>Member for:</strong><br>
+                        {{ developer.created_at|timesince }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Statistics Cards -->
+{% if stats %}
+<div class="row mb-4">
+    <div class="col-md-3">
+        <div class="card metric-card">
+            <div class="card-body text-center">
+                <i class="fas fa-code-branch fa-2x mb-2"></i>
+                <h3>{{ stats.total_commits|default:"0" }}</h3>
+                <p class="mb-0">Total Commits (30d)</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card metric-card">
+            <div class="card-body text-center">
+                <i class="fas fa-chart-line fa-2x mb-2"></i>
+                <h3>{{ stats.avg_productivity|floatformat:2|default:"0.00" }}</h3>
+                <p class="mb-0">Avg Productivity</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card metric-card">
+            <div class="card-body text-center">
+                <i class="fas fa-plus fa-2x mb-2"></i>
+                <h3>{{ stats.total_lines_added|default:"0" }}</h3>
+                <p class="mb-0">Lines Added</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card metric-card">
+            <div class="card-body text-center">
+                <i class="fas fa-minus fa-2x mb-2"></i>
+                <h3>{{ stats.total_lines_deleted|default:"0" }}</h3>
+                <p class="mb-0">Lines Deleted</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
+
+<!-- Recent Metrics -->
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title mb-0">
+                    <i class="fas fa-history me-2"></i>
+                    Recent Activity (Last 30 Days)
+                </h5>
+            </div>
+            <div class="card-body">
+                {% if metrics %}
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Commits</th>
+                                    <th>Lines Added</th>
+                                    <th>Lines Deleted</th>
+                                    <th>Total Changed</th>
+                                    <th>Productivity Score</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for metric in metrics %}
+                                    <tr>
+                                        <td>{{ metric.date|date:"M d, Y" }}</td>
+                                        <td>
+                                            <span class="badge bg-primary">
+                                                {{ metric.commit_count }}
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <span class="text-success">
+                                                <i class="fas fa-plus me-1"></i>{{ metric.lines_added }}
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <span class="text-danger">
+                                                <i class="fas fa-minus me-1"></i>{{ metric.lines_deleted }}
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <span class="badge bg-info">
+                                                {{ metric.total_lines_changed }}
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <span class="badge bg-success">
+                                                {{ metric.productivity_score }}
+                                            </span>
+                                        </td>
+                                    </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                {% else %}
+                    <div class="text-center py-5">
+                        <i class="fas fa-chart-bar fa-3x text-muted mb-3"></i>
+                        <h5 class="text-muted">No recent activity</h5>
+                        <p class="text-muted">This developer has no recorded activity in the last 30 days.</p>
+                        <a href="/admin/dev_productivity/productivitymetric/add/" class="btn btn-primary">
+                            <i class="fas fa-plus me-2"></i>Add Metric
+                        </a>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+{% if metrics %}
+<!-- Performance Chart -->
+<div class="row mt-4">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title mb-0">
+                    <i class="fas fa-chart-area me-2"></i>
+                    Performance Trends
+                </h5>
+            </div>
+            <div class="card-body">
+                <canvas id="performanceChart" width="400" height="100"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
+{% endblock %}
+
+{% block scripts %}
+{% if metrics %}
+<script>
+// Performance chart for individual developer
+const ctx = document.getElementById('performanceChart').getContext('2d');
+new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: [
+            {% for metric in metrics reversed %}
+                '{{ metric.date|date:"M d" }}'{% if not forloop.last %},{% endif %}
+            {% endfor %}
+        ],
+        datasets: [{
+            label: 'Commits',
+            data: [
+                {% for metric in metrics reversed %}
+                    {{ metric.commit_count }}{% if not forloop.last %},{% endif %}
+                {% endfor %}
+            ],
+            borderColor: 'rgb(75, 192, 192)',
+            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+            tension: 0.1
+        }, {
+            label: 'Productivity Score',
+            data: [
+                {% for metric in metrics reversed %}
+                    {{ metric.productivity_score }}{% if not forloop.last %},{% endif %}
+                {% endfor %}
+            ],
+            borderColor: 'rgb(255, 99, 132)',
+            backgroundColor: 'rgba(255, 99, 132, 0.2)',
+            tension: 0.1,
+            yAxisID: 'y1'
+        }]
+    },
+    options: {
+        responsive: true,
+        scales: {
+            y: {
+                type: 'linear',
+                display: true,
+                position: 'left',
+                title: {
+                    display: true,
+                    text: 'Commits'
+                }
+            },
+            y1: {
+                type: 'linear',
+                display: true,
+                position: 'right',
+                title: {
+                    display: true,
+                    text: 'Productivity Score'
+                },
+                grid: {
+                    drawOnChartArea: false,
+                }
+            }
+        },
+        plugins: {
+            legend: {
+                position: 'top'
+            }
+        }
+    }
+});
+</script>
+{% endif %}
+{% endblock %} 
