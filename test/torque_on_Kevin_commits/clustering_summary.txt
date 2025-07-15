@@ -1,7 +1,7 @@
 Torque Clustering Analysis Summary
 ==================================================
 
-Input file: data/commit_data/Kevin_project_commits_data.csv
+Input file: data/commit_data/kevin_project_commits_data.csv
 Data dimensions: (210, 7)
 Feature columns used: ['add', 'del', 'total']
 Cleaned data dimensions: (210, 3)

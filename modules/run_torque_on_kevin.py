@@ -11,7 +11,7 @@ from doc.torque_clustering import torque_clustering
 print("Starting Torque Clustering analysis...")
 
 # Use Kevin's project commits data specifically
-selected_file = 'data/commit_data/Kevin_project_commits_data.csv'
+selected_file = 'data/commit_data/kevin_project_commits_data.csv'
 
 # Create output directory if it doesn't exist
 output_dir = 'torque_on_Kevin_commits'
@@ -51,7 +51,7 @@ if os.path.exists(selected_file):
         df_clean = df.dropna(subset=feature_cols).copy()
         df_clean['cluster_id'] = labels
         
-        output_file = os.path.join(output_dir, 'Kevin_project_commits_clustered.csv')
+        output_file = os.path.join(output_dir, 'kevin_project_commits_clustered.csv')
         df_clean.to_csv(output_file, index=False)
         print(f"\nResults saved to: {output_file}")
         
