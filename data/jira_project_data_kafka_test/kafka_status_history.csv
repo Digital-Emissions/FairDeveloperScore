@@ -15,8 +15,8 @@ KAFKA-19485,2025-07-10T09:29:56.648+0000,Shivsundar R,status,In Progress,Resolve
 KAFKA-19482,2025-07-10T00:39:08.778+0000,Matthias J. Sax,status,Open,In Progress,1,3
 KAFKA-19482,2025-07-10T22:10:51.046+0000,Matthias J. Sax,status,In Progress,Patch Available,3,10002
 KAFKA-19482,2025-07-15T00:14:11.731+0000,Matthias J. Sax,status,Patch Available,Resolved,10002,5
-KAFKA-19480,2025-07-08T11:34:27.510+0000,Gergely Harmadás,status,Open,In Progress,1,3
-KAFKA-19480,2025-07-08T11:37:11.790+0000,Gergely Harmadás,status,In Progress,Patch Available,3,10002
+KAFKA-19480,2025-07-08T11:34:27.510+0000,Gergely Harmad?s,status,Open,In Progress,1,3
+KAFKA-19480,2025-07-08T11:37:11.790+0000,Gergely Harmad?s,status,In Progress,Patch Available,3,10002
 KAFKA-19478,2025-07-07T10:42:18.396+0000,Lucas Brutschy,status,Open,In Progress,1,3
 KAFKA-19477,2025-07-07T08:38:21.343+0000,Lucas Brutschy,status,Open,Patch Available,1,10002
 KAFKA-19477,2025-07-09T11:58:55.801+0000,Lucas Brutschy,status,Patch Available,Resolved,10002,5
@@ -90,9 +90,9 @@ KAFKA-19221,2025-06-10T17:13:54.766+0000,Chia-Ping Tsai,status,Patch Available,R
 KAFKA-19221,2025-06-30T13:03:32.918+0000,Chia-Ping Tsai,status,Resolved,Reopened,5,4
 KAFKA-19221,2025-06-30T18:27:13.862+0000,Gaurav Narula,status,Reopened,Patch Available,4,10002
 KAFKA-19221,2025-07-05T19:07:07.659+0000,Chia-Ping Tsai,status,Patch Available,Resolved,10002,5
-KAFKA-19191,2025-04-24T15:02:19.397+0000,José Armando García Sancio,status,Open,Resolved,1,5
-KAFKA-19184,2025-06-30T14:42:38.765+0000,José Armando García Sancio,status,Open,In Progress,1,3
-KAFKA-19184,2025-06-30T16:22:05.329+0000,José Armando García Sancio,status,In Progress,Patch Available,3,10002
+KAFKA-19191,2025-04-24T15:02:19.397+0000,Jos? Armando Garc?a Sancio,status,Open,Resolved,1,5
+KAFKA-19184,2025-06-30T14:42:38.765+0000,Jos? Armando Garc?a Sancio,status,Open,In Progress,1,3
+KAFKA-19184,2025-06-30T16:22:05.329+0000,Jos? Armando Garc?a Sancio,status,In Progress,Patch Available,3,10002
 KAFKA-19184,2025-07-09T09:22:50.257+0000,Mickael Maison,status,Patch Available,Resolved,10002,5
 KAFKA-19152,2025-04-22T15:12:13.237+0000,Kirk True,status,Open,In Progress,1,3
 KAFKA-19152,2025-06-24T01:14:41.629+0000,Kirk True,status,In Progress,Patch Available,3,10002
@@ -178,7 +178,7 @@ KAFKA-10825,2020-12-08T19:13:21.578+0000,David Arthur,status,Open,In Progress,1,
 KAFKA-10409,2020-09-02T20:25:06.569+0000,bond_as,status,Open,In Progress,1,3
 KAFKA-10409,2024-11-20T01:14:16.136+0000,A. Sophie Blee-Goldman,status,In Progress,Resolved,3,5
 KAFKA-10409,2024-11-20T01:14:24.718+0000,A. Sophie Blee-Goldman,status,Resolved,Reopened,5,4
-KAFKA-10409,2024-11-27T18:02:13.017+0000,João Pedro Fonseca,status,Reopened,In Progress,4,3
-KAFKA-10409,2025-01-18T19:12:51.053+0000,João Pedro Fonseca,status,In Progress,Patch Available,3,10002
+KAFKA-10409,2024-11-27T18:02:13.017+0000,Jo?o Pedro Fonseca,status,Reopened,In Progress,4,3
+KAFKA-10409,2025-01-18T19:12:51.053+0000,Jo?o Pedro Fonseca,status,In Progress,Patch Available,3,10002
 KAFKA-9965,2024-12-27T14:28:12.128+0000,Chia-Ping Tsai,status,Open,Resolved,1,5
 KAFKA-7442,2025-07-08T16:17:33.962+0000,Jun Rao,status,Open,Resolved,1,5
