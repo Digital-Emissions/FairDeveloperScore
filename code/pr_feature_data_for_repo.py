@@ -3,7 +3,7 @@ from collections import defaultdict
 import time
 import csv
 
-# 初始化 GitHub API
+
 GITHUB_TOKEN = "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"
 REPO_NAME = "tensorflow/tensorflow"
 OUTPUT_CSV = "data/pr_data/tensorflow_tensorflow_pr_stats.csv"
@@ -14,18 +14,18 @@ g = Github(GITHUB_TOKEN)
 repo = g.get_repo(REPO_NAME)
 pulls = repo.get_pulls(state="closed", sort="created", direction="desc")
 
-# 统计结构：{user: {total, merged, reverted}}
+# stats structure: {user: {total, merged, reverted}}
 stats = defaultdict(lambda: {"total": 0, "merged": 0, "reverted": 0})
 
 print("⏳ Collecting PR stats from torvalds/linux...")
 
-MAX_PRS = 400  # 设置你想抓取的最大 PR 数量
+MAX_PRS = 400  # set the maximum number of PRs you want to collect
 counter = 0
 
 # ========== MAIN LOOP ==========
 for pr in pulls:
     if counter >= MAX_PRS:
-        break  # 达到最大数量后提前退出
+        break  # exit early if we've reached the maximum number of PRs
 
     if pr.user is None:
         continue
