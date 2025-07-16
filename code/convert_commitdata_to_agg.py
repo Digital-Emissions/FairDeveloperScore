@@ -1,7 +1,7 @@
 import pandas as pd
 
 
-df = pd.read_csv("data/commit_data2/tensorflow_tensorflow_commits.csv")
+df = pd.read_csv("data/commit_data/tensorflow_tensorflow_commits.csv")
 
 
 df["date"] = pd.to_datetime(df["date"])
@@ -28,5 +28,5 @@ dev_df.columns = [
 ]
 
 
-dev_df.to_csv("data/commit_data/tensorflow_tensorflow_developer_commit_profile.csv", index=False)
+dev_df.to_csv("data/commit_data2/tensorflow_tensorflow_developer_commit_profile.csv", index=False)
 print("✅ Developer commit profile exported!")
