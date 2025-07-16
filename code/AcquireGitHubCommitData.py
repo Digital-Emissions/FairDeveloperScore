@@ -33,8 +33,7 @@ GITHUB_TOKENS = [
 ]
 
 # 📄 Load repositories
-with open("top_500_repos.txt", "r") as f:
-    REPO_LIST = [line.strip() for line in f if line.strip()]
+REPO_LIST = ["tensorflow/tensorflow"]
 
 # 🔁 Token rate limit tracking
 token_states = {token: {"remaining": 5000, "reset": 0} for token in GITHUB_TOKENS}
@@ -105,11 +104,16 @@ async def fetch_commit_detail(repo, sha, client):
         return stats.get("additions", 0), stats.get("deletions", 0), stats.get("total", 0)
     return 0, 0, 0
 
+from datetime import datetime, timedelta
+
+# 📆 设置时间窗口（如最近 6 个月）
+SINCE_DATE = datetime.utcnow() - timedelta(days=180)
+
 # 📦 Collect up to ~300 recent commits for a repo
 async def fetch_commits_with_stats(repo, client):
     all_commits = []
     for page in range(1, 11):  # 10 pages × 30 commits = ~300
-        url = f"https://api.github.com/repos/{repo}/commits?per_page=30&page={page}"
+        url = f"https://api.github.com/repos/{repo}/commits?per_page=30&page={page}&since={SINCE_DATE.isoformat()}Z"
         data = await safe_get(client, url)
         if not data or len(data) == 0:
             break
@@ -118,12 +122,18 @@ async def fetch_commits_with_stats(repo, client):
             if "commit" in commit:
                 info = commit["commit"]
                 sha = commit.get("sha")
+                date_str = info["author"].get("date") if info.get("author") else ""
+                if date_str:
+                    commit_time = datetime.fromisoformat(date_str.replace("Z", "+00:00"))
+                    if commit_time < SINCE_DATE:
+                        continue  # 跳过旧的 commit
+
                 additions, deletions, total = await fetch_commit_detail(repo, sha, client)
                 all_commits.append({
                     "repo": repo,
                     "sha": sha,
                     "author": info["author"].get("name") if info.get("author") else "",
-                    "date": info["author"].get("date") if info.get("author") else "",
+                    "date": date_str,
                     "message": info.get("message", "").replace("\n", " "),
                     "additions": additions,
                     "deletions": deletions,
@@ -132,6 +142,7 @@ async def fetch_commits_with_stats(repo, client):
 
     print(f"📦 {repo}: {len(all_commits)} commits fetched")
     return all_commits
+
 
 # ✅ Save completed repo name to log file
 def log_completed_repo(repo_name):
