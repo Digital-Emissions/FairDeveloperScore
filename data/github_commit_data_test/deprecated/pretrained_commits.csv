@@ -1,0 +1,15 @@
+hash,author_name,author_email,commit_ts_utc,dt_prev_commit_sec,dt_prev_author_sec,files_changed,insertions,deletions,is_merge,dirs_touched,file_types,msg_subject
+8302f5072ffbca94ec66a1c54db96670ed9406cd,Chris Wang,chriswang2025@u.northwestern.edu,1752432398,,,32,28265,0,0,.gitignore;README.md;code;data;db.sqlite3;dev_productivity;docs;manage.py;modules;requirements.txt;templates;test,csv;html;md;noext;pdf;py;sqlite3;txt,Initial commit with clean history
+f03e2314774b6ebf846741079ef090a7884b4afa,Chris Wang,chriswang2025@u.northwestern.edu,1752432609,211,211,3,21,3,0,code;modules;reuirements.txt,py;txt,Initial commit with clean history
+1775c215c437a4c066813a9b7d0e6e50eb76d691,Chris Wang,chriswang2025@u.northwestern.edu,1752432737,128,128,1,0,5,0,reuirements.txt,txt,Remove misspelled requirements file
+c1bb9b8e7e575190985b12d920b5ea39b7035467,Chris Wang,chriswang2025@u.northwestern.edu,1752529196,96459,96459,15,782,67,0,.cursorignore;.gitignore;CODING_STYLE_GUIDE.md;DATABASE_SETUP.md;code;dev_productivity;docker-compose.yml;docs;modules;requirements.txt,md;noext;pdf;py;txt;yml,Add coding style guide and rename files to snake_case convention
+58368536c0a0ba21ec5bee3da786f0957a6c1f27,Chris Wang,chriswang2025@u.northwestern.edu,1752529250,54,54,2,184,0,0,.pre-commit-config.yaml;pyproject.toml,toml;yaml,Add development tools configuration
+3fc31e378b45844b2d7bea605e77c2d85a7afce3,Chris Wang,chriswang2025@u.northwestern.edu,1752550434,21184,21184,12,938,9,0,.cursorignore;CODING_STYLE_GUIDE.md;dev_productivity;templates,html;md;noext;py,feat: backend psql database connection with django orm
+ce11e743c273a262de01d52d3d00045c57d7b648,Chris Wang,chriswang2025@u.northwestern.edu,1752550644,210,210,3,609,0,0,templates,html,Fix template errors and remove hardcoded token
+6cf5a19c28f1403a8fa3c5564f29ab7d8ed2465b,Chris Wang,chriswang2025@u.northwestern.edu,1752550807,163,163,2,0,128,0,db.sqlite3;pyproject.toml,sqlite3;toml,feat: backend psql database connection with django orm
+48526b7c3be1e2a27d279700d65ab4a0260f3522,Chris Wang,chriswang2025@u.northwestern.edu,1752608286,57479,57479,3,4,4,0,modules;test,py;txt,Update file references to use snake_case naming
+aacbb419be7674305e767dbec0d42274d0a37b9e,Chris Wang,chriswang2025@u.northwestern.edu,1752609054,768,768,13,538,539,0,data;modules;test,csv;py,refactor: unify namespace & reorganize structure
+c7d32efc39937163c4c07570ef771c624fd38317,Chris Wang,chriswang2025@u.northwestern.edu,1752609953,899,899,18,8461,0,0,data;modules;requirements.txt,csv;json;log;md;py;txt,Add comprehensive Jira data acquisition module for Apache Kafka project
+8668738ac0e63619e2fe99c8c64d188b2be03a05,Chris Wang,chriswang2025@u.northwestern.edu,1752627189,17236,17236,33,4742,10669,0,data;modules,csv;json;log;md;py,feat: test acquiring data of Jira using Kafka's repo
+76b5100efcfe5e1de4632093b1712958c7cd2252,Chris Wang,chriswang2025@u.northwestern.edu,1752627277,88,88,1,142,90,0,README.md,md,docs: update readme
+d28e78a5c79cb42c4b29cbc2e82ba6e4958f3e21,Chris Wang,chriswang2025@u.northwestern.edu,1752628646,1369,1369,1,8,8,0,requirements.txt,txt,test: merging test

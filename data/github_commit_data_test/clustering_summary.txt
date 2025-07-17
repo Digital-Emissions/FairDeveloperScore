@@ -1,0 +1,13 @@
+TORQUE Clustering Summary
+========================
+
+Parameters:
+  alpha: 0.002
+  beta: 1.0
+  Gap threshold: 800.0
+  Break on merge: True
+
+Results:
+  Total commits: 1000
+  Total batches: 799
+  Average commits per batch: 1.25
