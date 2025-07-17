@@ -1,192 +1,123 @@
-"""
-GitHub Commit Collector (Last 300 Commits per Repo)
-
-This script asynchronously collects the most recent ~300 commits for each repository 
-listed in top_500_repos.txt. For each commit, it retrieves:
-- Commit SHA
-- Author name
-- Commit date
-- Commit message
-- Lines added, deleted, and total changes
-
-Each repo’s data is saved immediately into a separate CSV file under 'data/commit_data/'.
-If GitHub API tokens are exhausted, processed repo names are saved to completed_repos.txt
-to ensure resumability after restart.
-
-Requirements:
-- top_500_repos.txt (one line per repo: owner/repo)
-- GitHub personal access tokens with repo read access
-"""
-
-import asyncio
-import httpx
-import csv
+from github import Github
+import pandas as pd
+from collections import defaultdict
+from tqdm import tqdm
 import time
+import csv
 import os
-from datetime import datetime
 
-# 🔐 Your GitHub PATs (rotate for rate limiting)
+# ========== CONFIG ==========
 GITHUB_TOKENS = [
-    "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",
+    "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",
     "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",
-    "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"
+    "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"
 ]
+REPO_NAME = "microsoft/vscode"
+NUM_COMMITS = 300
+CSV_NAME = f"{REPO_NAME.replace('/', '_')}_commit_only.csv"
+FINAL_CSV = f"{REPO_NAME.replace('/', '_')}_commit_with_pr_stats_2.csv"
 
-# 📄 Load repositories
-REPO_LIST = ["tensorflow/tensorflow"]
+# ========== TOKEN ROTATOR ==========
+class TokenRotator:
+    def __init__(self, tokens):
+        self.tokens = tokens
+        self.index = 0
+        self.g = Github(self.tokens[self.index])
 
-# 🔁 Token rate limit tracking
-token_states = {token: {"remaining": 5000, "reset": 0} for token in GITHUB_TOKENS}
+    def get_client(self):
+        rate_limit = self.g.get_rate_limit().core
+        if rate_limit.remaining == 0:
+            print(f"⚠️ Token {self.index + 1} exhausted. Switching to next token...")
+            self.index += 1
+            if self.index >= len(self.tokens):
+                print("❌ All tokens exhausted. Waiting 60 seconds...")
+                time.sleep(60)
+                self.index = 0
+            self.g = Github(self.tokens[self.index])
+        return self.g
 
-def get_valid_token():
-    now = int(time.time())
-    for token in GITHUB_TOKENS:
-        state = token_states[token]
-        if state["remaining"] > 1 or now >= state["reset"]:
-            return token
-    return None
+# ========== SETUP ==========
+token_rotator = TokenRotator(GITHUB_TOKENS)
+g = token_rotator.get_client()
+repo = g.get_repo(REPO_NAME)
 
-async def update_token_state(token, client):
-    url = "https://api.github.com/rate_limit"
-    headers = {
-        "Authorization": f"Bearer {token}",
-        "Accept": "application/vnd.github+json"
-    }
-    try:
-        resp = await client.get(url, headers=headers)
-        if resp.status_code == 200:
-            data = resp.json()
-            core = data.get("rate", {})
-            token_states[token]["remaining"] = core.get("remaining", 0)
-            token_states[token]["reset"] = core.get("reset", int(time.time()) + 60)
-    except Exception as e:
-        print(f"⚠️ Failed to update token state: {e}")
+# ========== INIT CSV IF NOT EXIST ==========
+if not os.path.exists(CSV_NAME):
+    with open(CSV_NAME, mode='w', newline='', encoding='utf-8') as f:
+        writer = csv.writer(f)
+        writer.writerow([
+            "sha", "author_login", "date", "message", "additions", "deletions", "total_changes"
+        ])
 
-# 🌐 Safe GET with token rotation and retry
-async def safe_get(client, url, retries=3, delay=1.5):
-    for attempt in range(retries):
-        token = get_valid_token()
-        if not token:
-            reset_times = [state["reset"] for state in token_states.values()]
-            wait_time = min(reset_times) - int(time.time())
-            wait_time = max(wait_time, 5)
-            print(f"⏳ All tokens exhausted. Waiting {wait_time} seconds for reset...")
-            await asyncio.sleep(wait_time)
+# ========== COMMIT STAGE ==========
+print("🔍 Fetching commits...")
+commit_counts = defaultdict(int)
+authors_seen = set()
+commits = repo.get_commits()
+
+with open(CSV_NAME, mode='a', newline='', encoding='utf-8') as f:
+    writer = csv.writer(f)
+    for i, commit in enumerate(tqdm(commits, total=NUM_COMMITS)):
+        g = token_rotator.get_client()
+        if i >= NUM_COMMITS:
+            break
+        if commit.author is None or commit.author.login is None:
             continue
 
-        headers = {
-            "Authorization": f"Bearer {token}",
-            "Accept": "application/vnd.github+json"
-        }
+        author_login = commit.author.login
+        sha = commit.sha
+        date = commit.commit.author.date
+        message = commit.commit.message
+        stats = commit.stats
 
-        try:
-            resp = await client.get(url, headers=headers)
-            await update_token_state(token, client)
+        additions = stats.additions
+        deletions = stats.deletions
+        total_changes = stats.total
 
-            if resp.status_code == 200:
-                return resp.json()
-            elif resp.status_code == 403:
-                print(f"🚫 403 Forbidden from {url}")
-            else:
-                print(f"⚠️ Status {resp.status_code} on attempt {attempt+1} for {url}")
-        except Exception as e:
-            print(f"❌ Attempt {attempt+1} failed for {url}: {e}")
+        commit_counts[author_login] += 1
+        authors_seen.add(author_login)
 
-        await asyncio.sleep(delay * (attempt + 1))
-    return None
+        writer.writerow([
+            sha, author_login, date, message, additions, deletions, total_changes
+        ])
 
-# 🔍 Get stats (additions/deletions) for a single commit
-async def fetch_commit_detail(repo, sha, client):
-    url = f"https://api.github.com/repos/{repo}/commits/{sha}"
-    data = await safe_get(client, url)
-    if data and "stats" in data:
-        stats = data["stats"]
-        return stats.get("additions", 0), stats.get("deletions", 0), stats.get("total", 0)
-    return 0, 0, 0
+# ========== PR STAGE ==========
+print("📦 Fetching PR stats per author...")
+pr_stats_rows = []
 
-from datetime import datetime, timedelta
+for login in tqdm(authors_seen):
+    g = token_rotator.get_client()
+    total_pr = 0
+    merged_pr = 0
 
-# 📆 设置时间窗口（如最近 6 个月）
-SINCE_DATE = datetime.utcnow() - timedelta(days=180)
+    try:
+        query = f'repo:{REPO_NAME} is:pr author:{login}'
+        pr_results = g.search_issues(query=query, sort='created', order='desc')
+        for pr_issue in pr_results:
+            if pr_issue.pull_request:
+                pr = repo.get_pull(pr_issue.number)
+                total_pr += 1
+                if pr.is_merged():
+                    merged_pr += 1
+    except Exception as e:
+        print(f"❌ Failed to fetch PRs for {login}: {e}")
+        total_pr = 0
+        merged_pr = 0
 
-# 📦 Collect up to ~300 recent commits for a repo
-async def fetch_commits_with_stats(repo, client):
-    all_commits = []
-    for page in range(1, 11):  # 10 pages × 30 commits = ~300
-        url = f"https://api.github.com/repos/{repo}/commits?per_page=30&page={page}&since={SINCE_DATE.isoformat()}Z"
-        data = await safe_get(client, url)
-        if not data or len(data) == 0:
-            break
+    pr_stats_rows.append({
+        "author_login": login,
+        "commit_count": commit_counts[login],
+        "total_prs": total_pr,
+        "merged_prs": merged_pr,
+        "pr_acceptance_rate": round(merged_pr / total_pr, 2) if total_pr > 0 else None
+    })
 
-        for commit in data:
-            if "commit" in commit:
-                info = commit["commit"]
-                sha = commit.get("sha")
-                date_str = info["author"].get("date") if info.get("author") else ""
-                if date_str:
-                    commit_time = datetime.fromisoformat(date_str.replace("Z", "+00:00"))
-                    if commit_time < SINCE_DATE:
-                        continue  # 跳过旧的 commit
+# ========== MERGE AND SAVE ==========
+print("🧩 Merging commit + PR data...")
+commit_df = pd.read_csv(CSV_NAME)
+pr_df = pd.DataFrame(pr_stats_rows)
 
-                additions, deletions, total = await fetch_commit_detail(repo, sha, client)
-                all_commits.append({
-                    "repo": repo,
-                    "sha": sha,
-                    "author": info["author"].get("name") if info.get("author") else "",
-                    "date": date_str,
-                    "message": info.get("message", "").replace("\n", " "),
-                    "additions": additions,
-                    "deletions": deletions,
-                    "total_changes": total
-                })
+final_df = commit_df.merge(pr_df, on="author_login", how="left")
+final_df.to_csv(FINAL_CSV, index=False)
 
-    print(f"📦 {repo}: {len(all_commits)} commits fetched")
-    return all_commits
-
-
-# ✅ Save completed repo name to log file
-def log_completed_repo(repo_name):
-    with open("completed_repos.txt", "a") as f:
-        f.write(repo_name + "\n")
-
-# 🚀 Main async entry
-async def main():
-    SAVE_DIR = "data/commit_data"
-    os.makedirs(SAVE_DIR, exist_ok=True)
-
-    # Load previously completed repos
-    completed = set()
-    if os.path.exists("completed_repos.txt"):
-        with open("completed_repos.txt", "r") as f:
-            completed = set(line.strip() for line in f)
-
-    pending_repos = [r for r in REPO_LIST if r not in completed]
-
-    limits = httpx.Limits(max_connections=5, max_keepalive_connections=2)
-    async with httpx.AsyncClient(timeout=30, http2=False, limits=limits) as client:
-        await asyncio.gather(*[update_token_state(t, client) for t in GITHUB_TOKENS])
-
-        semaphore = asyncio.Semaphore(5)
-
-        async def limited_fetch_and_save(repo):
-            async with semaphore:
-                print(f"\n🔍 Processing {repo}")
-                commits = await fetch_commits_with_stats(repo, client)
-                if commits:
-                    filename = repo.replace("/", "_") + "_commits.csv"
-                    path = os.path.join(SAVE_DIR, filename)
-                    with open(path, mode="w", newline="", encoding="utf-8") as f:
-                        fieldnames = ["repo", "sha", "author", "date", "message", "additions", "deletions", "total_changes"]
-                        writer = csv.DictWriter(f, fieldnames=fieldnames)
-                        writer.writeheader()
-                        writer.writerows(commits)
-                    print(f"✅ Saved CSV for {repo}")
-                    log_completed_repo(repo)
-
-        tasks = [limited_fetch_and_save(repo) for repo in pending_repos]
-        await asyncio.gather(*tasks)
-
-    print("\n✅ All available repos processed. Results saved in data/commit_data/")
-
-if __name__ == "__main__":
-    asyncio.run(main())
+print(f"✅ Final dataset saved as {FINAL_CSV}")
