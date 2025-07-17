@@ -8,10 +8,9 @@ import os
 
 # ========== CONFIG ==========
 GITHUB_TOKENS = [
-    # "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",
-    # "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",
-    # "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"
-    "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"
+    "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",
+    "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",
+    "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"
 ]
 REPO_NAME = "microsoft/vscode"
 NUM_COMMITS = 300
