@@ -1,0 +1,1489 @@
+sha,author_login,date,message,additions,deletions,total_changes,commit_count,total_prs,merged_prs,pr_acceptance_rate
+e84793d7647510d0c1c2683efff88847680abbc3,reedwm,2025-07-17 00:37:36+00:00,"Rollback https://github.com/openxla/xla/commit/cf3dfa9723c4cd4e2b25a606207a201a95fe71db
+
+It breaks some TPU HLO modules.
+
+Reverts d5e9730378c34bb0634cc3fb3bd199f9d56467db
+
+PiperOrigin-RevId: 783958796",178,680,858,2,30,30,1.0
+06b5bcd5c650368253473111ff3e5393a2dc7381,ecalubaquib,2025-07-16 23:31:55+00:00,"No public description
+
+PiperOrigin-RevId: 783939624",378,24,402,2,0,0,
+21392a7966d96d6174419dbb23fea00e60debc19,rtg0795,2025-07-16 23:28:31+00:00,"Update release notes at HEAD
+
+PiperOrigin-RevId: 783938512",12,24,36,2,43,40,0.93
+044299a506483dc74aa7efbdc390f927a7532fc3,tensorflower-gardener,2025-07-16 23:13:08+00:00,"Support for nested while loops in while_loop_unroller.
+
+PiperOrigin-RevId: 783933392",126,34,160,86,0,0,
+79f66afd5b940e67c307c8ffad91f235714c5e09,tensorflower-gardener,2025-07-16 23:01:34+00:00,"Move op name longest prefix logic from annotation.cc to somewhere upper level
+Correct op name for command buffer execution
+
+PiperOrigin-RevId: 783928896",292,78,370,86,0,0,
+cf83eeedacc54465f564782251b5fdf1fe14804e,SiqiaoWu1993,2025-07-16 22:42:46+00:00,"Internal change only
+
+PiperOrigin-RevId: 783922916",11,40,51,2,0,0,
+07fa8d56945bdedcc99ae6003b021ec99a0d9b70,marialyu,2025-07-16 22:10:44+00:00,"Refactor optimized div for int8 and uint8
+
+PiperOrigin-RevId: 783911275",38,67,105,1,0,0,
+f7dfba3f742c47cd67327f50944b4dc55ee1398a,tensorflower-gardener,2025-07-16 22:10:38+00:00,"Add Hermetic C++ Toolchains for Linux x86_64 builds.
+
+Hermetic toolchains give us builds that are isolated from the host system, cutting down on unexpected dependencies and side effects.
+
+With these changes, TensorFlow will build for Linux x86_64 architectures (both CPU and CUDA-enabled GPU) using self-contained C++ toolchains. If you need to use a non-hermetic toolchain, you can do so by adding the flag --config=clang_local. For remote builds with a non-hermetic toolchain, simply append _clang_local to your existing RBE flag. For example, if your hermetic RBE build uses --config=rbe_linux_cpu, the non-hermetic version would be --config=rbe_linux_cpu_clang_local.
+
+    Example: Run CPU tests for Linux x86_64
+
+    For hermetic tests, run following command (no env variables like CC, CXX, BAZEL_COMPILER, CLANG_COMPILER_PATH):
+	bazel test \
+		--config=avx_linux \
+		--config=release_linux_base \
+		--config=linux_cpu_pycpp_test_filters \
+		--repo_env=HERMETIC_PYTHON_VERSION=3.11 \
+		//tensorflow/... -- -//tensorflow/compiler/tf2tensorrt/... -//tensorflow/core/tpu/... -//tensorflow/lite/...  -//tensorflow/tools/toolchains/...
+
+    For Linux x86_64 non-hermetic tests use commands with the flag ""--config=clang_local"" and env variables CC, CXX, BAZEL_COMPILER, CLANG_COMPILER_PATH, etc.:
+	bazel test \
+		--config=clang_local \
+		--config=avx_linux \
+		--config=release_linux_base \
+		--config=linux_cpu_pycpp_test_filters \
+		--repo_env=HERMETIC_PYTHON_VERSION=3.11 \
+		--action_env=CLANG_COMPILER_PATH=/usr/lib/llvm-18/bin/clang \
+		--host_action_env=CLANG_COMPILER_PATH=/usr/lib/llvm-18/bin/clang \
+		--repo_env=CC=/usr/lib/llvm-18/bin/clang \
+		--repo_env=CXX=/usr/lib/llvm-18/bin/clang++ \
+		--repo_env=BAZEL_COMPILER=/usr/lib/llvm-18/bin/clang \
+		//tensorflow/... -- -//tensorflow/compiler/tf2tensorrt/... -//tensorflow/core/tpu/... -//tensorflow/lite/...  -//tensorflow/tools/toolchains/...
+
+PiperOrigin-RevId: 783911228",70,35,105,86,0,0,
+3ee71d2c03b9733adaec1c88694b4a7905b1ea8d,ddunl,2025-07-16 21:55:21+00:00,"Migrate uses of `XLA_TEST_BACKEND` macros to use utilities in `xla_test_backend_predicates.h`
+
+PiperOrigin-RevId: 783906093",13,7,20,6,0,0,
+9f986b18d6d58ccba5dd180d8115dd5f8f2d634b,iumitakgun,2025-07-16 21:35:30+00:00,"[XLA] Refactoring Reduce Window Rewriter to reduce complexity
+
+Generate Reduce Window on outer scan (Complexity 43 -> 40)
+
+PiperOrigin-RevId: 783899692",59,31,90,2,0,0,
+0908582562a5f3b3e741ab04f3b8613f244b7696,pschuh,2025-07-16 21:28:21+00:00,"[JAX]: rollforward. Add ability to add a transfer server factory to override
+how transfers happen in xla::ifrt::PjRtClient.
+
+PiperOrigin-RevId: 783896862",69,15,84,8,0,0,
+209df15f06d48737250e178c0f26d6abd30cb1f6,tensorflower-gardener,2025-07-16 20:39:56+00:00,"Reverts changelist 783839015
+
+COPYBARA_INTEGRATE_REVIEW=https://github.com/tensorflow/tensorflow/pull/96866 from zqw86713:pr96430_ut2 1256fef37830cfccb09a1fea5532db00ecb4dd4a
+PiperOrigin-RevId: 783878611",300,196,496,86,0,0,
+9fb89b065c9675309c7e626bb2b1eea558c1604f,tomnatan30,2025-07-16 18:22:31+00:00,"#sdy Mark `xla.sdy.LocalToGlobalShape` custom call as side effecting so it isn't removed if unused.
+
+We also change `zero_sized_hlo_elimination` to eliminate `xla.sdy.LocalToGlobalShape` if it zero sized, so it's replaced with constants. This means `sdy-round-trip-shard-map-import` can see a manual computation call op with no uses, which we handle by erasing the op and called function.
+
+PiperOrigin-RevId: 783829783",109,31,140,6,0,0,
+71687388b35ca6bcea7513826f117715e4d475fa,tensorflower-gardener,2025-07-16 17:57:09+00:00,"Merge pull request #94881 from tensorflow:gaikwadrahul8-patch-1
+
+PiperOrigin-RevId: 783816935",8,8,16,86,0,0,
+6a4efbdc0c759c344e37a3f01aa62483ec431104,mwhittaker,2025-07-16 17:03:44+00:00,"Added `PjrtClient::UpdateGlobalProcessInfo` method.
+
+## Overview
+
+Recall that a [multi-controller JAX program][mcjax] involves multiple PjRt
+clients running across multiple processes. These clients perform collective
+operations, like AllReduce and AllGather, to execute a distributed program.
+
+This commit adds an `UpdateGlobalProcessInfo` method that updates a client with
+information about all processes. For example, if there are four processes, we
+might call `UpdateGlobalProcessInfo` on process 0 with the information that
+process 0, 1, and 2 are healthy but process 3 is dead.
+
+## Motivation
+
+I am currently working on making multi-controller JAX fault tolerant. Part of
+this work involves cancelling collectives where one of the participants of the
+collective has failed. The `UpdateGlobalProcessInfo` method will allow a PjRt
+client to notice when a peer process has failed and abort any collectives it is
+performing with this failed peer.
+
+Previously, I was using the [coordination service][coordination_service] to
+determine when processes failed, but PjRt clients executed via C plugins do not
+have access to the coordination service.
+
+## Future Work
+
+This commit introduces the new `UpdateGlobalProcessInfo` method and pipes it
+through the C++ sandwich, but it doesn't actually implement it yet. Nothing is
+calling the new method either. These things will come in future changes.
+
+## Alternatives
+
+Rather than introducing a new `PjRtClient` method, I could have piped a
+coordination service client through the C plugin API into `PjRtClient`s.
+However, this would be very complicated. The [code to pipe a key-value store
+client is complicated][kvs], and the API for the coordination service client is
+significantly more complex.
+
+I could shoehorn the new API into the existing key-value store. For example, I
+could establish a convention that the state of every process i is stored in
+some special key `process_{i}`  in the key-value store. This felt roundabout.
+
+[mcjax]: https://docs.jax.dev/en/latest/multi_process.html
+[coordination_service]: https://github.com/openxla/xla/tree/main/xla/tsl/distributed_runtime/coordination
+[kvs]: https://github.com/openxla/xla/blob/f5813dd522b9ef28eb58e638c45e60430b686d1a/xla/pjrt/c/pjrt_c_api.h#L324-L406
+
+PiperOrigin-RevId: 783799013",187,2,189,1,0,0,
+73a1fdaa39610ca5e0b1cb9fdbb0b1dd89b9b3ec,ezhulenev,2025-07-16 16:58:13+00:00,"[tf] Use non-owning ShapeTree to pass execution inputs to XLA
+
+PiperOrigin-RevId: 783796774",1,3,4,21,3,3,1.0
+fcef98c973771dfd94fdc5b212075ca75b2451d2,isharif168,2025-07-16 16:57:25+00:00,"PR #28877: [XLA]Clamp num_workers to avoid partition overflow
+
+Imported from GitHub PR https://github.com/openxla/xla/pull/28877
+
+When invoking Worker::Parallelize in parallel_for(), the number of workers was previously set to thread_pool_->NumThreads(), which could exceed the number of tasks (n). This mismatch could lead to out-of-bounds access when workers attempt to access partitions that don't exist.
+
+This ensures that:
+- The number of worker threads does not exceed the number of tasks
+- Each worker maps safely to a valid partition index
+- Partition and worker ranges stay aligned, preventing undefined behavior
+
+Change-Id: I5c3ab319f73009452d27b4db43f7905c5e136c2b
+Copybara import of the project:
+
+--
+d72f403a8312b995d5db6112d0e5cb8ad9befff1 by Sharif Inamdar <sharif.inamdar@arm.com>:
+
+[XLA]Clamp num_workers to avoid partition overflow
+
+When invoking Worker::Parallelize in parallel_for(), the number
+of workers was previously set to thread_pool_->NumThreads() in
+oneDNN, which could exceed the number of tasks (n). This mismatch
+could lead to out-of-bounds access when workers attempt to access
+partitions that don't exist.
+
+Fixed by moving the clamping logic to Worker::Parallelize for
+all paths.
+
+This ensures that:
+- The number of worker threads does not exceed the number of tasks
+- Each worker maps safely to a valid partition index
+- Partition and worker ranges stay aligned, preventing undefined
+  behavior
+
+Added simple unit test to test for all usecases.
+
+Change-Id: I5c3ab319f73009452d27b4db43f7905c5e136c2b
+
+Merging this change closes #28877
+
+PiperOrigin-RevId: 783796500",41,7,48,1,0,0,
+12e772253203ebe3fd323ac0edef79d6faabd989,pifon2a,2025-07-16 15:29:27+00:00,"[XLA:GPU] Disable horizontal loop fusion.
+
+PiperOrigin-RevId: 783767775",2,69,71,4,1,0,0.0
+9b0c13f9e92cfe18f129c324e697b11e5835d263,ezhulenev,2025-07-16 15:21:35+00:00,"[tf] Use non-owning ShapeTree to pass execution inputs to XLA
+
+PiperOrigin-RevId: 783765569",4,0,4,21,3,3,1.0
+812bb86d50b1cee5cf32ccb1629a49687e924ea5,mkuperst,2025-07-16 15:01:02+00:00,"[XLA] Be less aggressive about recursively updating metadata when inlining.
+
+* Metadata updates don't need to descend into embedded computations.
+* We should not descend into calls. First, there may be multiple call sites, which means we'll do the update incorrectly. Second, any calls will get inlined eventually, and will (recursively) get the right metadata then.
+
+PiperOrigin-RevId: 783758826",78,3,81,4,0,0,
+2aa452b9a17b5f4996f256b942442591abaabcef,WillFroom,2025-07-16 14:55:30+00:00,"[XLA:GPU]  Move IsIntermediate & FindHero to shared ir_emission_utils.
+
+PiperOrigin-RevId: 783757129",96,77,173,21,0,0,
+c27869029f32a63fb5923732b4623168b39e1ddd,blakehechtman,2025-07-16 14:48:15+00:00,"[XLA:ALGEBRAIC_SIMPLIFIER] If an optimization barrier has an unused side-effecting instruction, do not remove the optimization barrier
+
+PiperOrigin-RevId: 783755025",29,1,30,1,0,0,
+038d0ac3883df1ae76f914632ce6cab9ead41b5d,akuegel,2025-07-16 11:34:32+00:00,"Move HloAliasAnalysis out of HloModuleGroupMetadata (NFC).
+
+The metadata is used for different HloModuleGroup schedulers, but not all of
+them actually need HloAliasAnalysis.
+
+PiperOrigin-RevId: 783705181",0,19,19,12,0,0,
+0038ce9ed966dba3edf7044fa8eda36e785a8171,akuegel,2025-07-16 11:03:55+00:00,"Pass proper AliasInfo to HloAliasAnalysis::Run in tests (NFC).
+
+This makes sure that we can support backend-specific must-alias rules in the
+future.
+
+PiperOrigin-RevId: 783697398",14,9,23,12,0,0,
+ed07bd8192d3a500620acf2616c12028426c5062,pifon2a,2025-07-16 11:02:04+00:00,"[XLA:GPU] Update documentation for triton_xla.extract/insert.
+
+PiperOrigin-RevId: 783696654",10,15,25,4,1,0,0.0
+45d90c4d9835d3b982217d971a00524ca757c1e3,jossb-iso,2025-07-16 10:27:06+00:00,"[xla][gpu][triton] Temporarily disable triton squeeze dims pass, due to internal benchmark regression.
+
+Reverts a858a75481918a250bbd419ef1138ed9227c51af
+
+PiperOrigin-RevId: 783687860",0,2,2,1,0,0,
+10f5e3ce37c114b591c78e41acf4bc89f10b0c3f,akuegel,2025-07-16 09:38:51+00:00,"Remove unused HloAliasAnalysis instance (NFC).
+
+PiperOrigin-RevId: 783674629",0,2,2,12,0,0,
+ef627440040821b95eff8918abe0d75d1efd9c73,tensorflower-gardener,2025-07-16 09:03:08+00:00,"compat: Update forward compatibility horizon to 2025-07-16
+
+PiperOrigin-RevId: 783664816",1,1,2,86,0,0,
+938d5201e104cc787ce83ef75e3b1c4a7b5473a5,tensorflower-gardener,2025-07-16 09:02:56+00:00,"Update GraphDef version to 2290.
+
+PiperOrigin-RevId: 783664736",1,1,2,86,0,0,
+f38a2132bddb8b4aa7c4028d7d48922e95173d23,tensorflower-gardener,2025-07-16 08:30:45+00:00,"Skip TreeReductionRewriter for Slinky.
+
+PiperOrigin-RevId: 783654860",7,2,9,86,0,0,
+4e77762cb1da1c68fe064799813cb8efe4730b31,metaflow,2025-07-16 07:57:36+00:00,"[XLA:GPU] update triton test for generic emitter
+
+flag is not yet on for production, enabling it for test only
+
+dot algorithm test is duplicated as we will have legacy emitter active for a while making company to other ""..legacy"" tests
+
+PiperOrigin-RevId: 783645998",2072,14,2086,4,0,0,
+d5ac0b78d29e726d75bda86ed93bc9cff160f9d7,tensorflower-gardener,2025-07-16 06:27:42+00:00,"Automated Code Change
+
+PiperOrigin-RevId: 783621834",1,1,2,86,0,0,
+04826f7703de2916c337b9d94d81b264ec9e60e1,ezhulenev,2025-07-16 05:49:53+00:00,"[xla] Add benchmark for ShapeUtil::SubshapeCount
+
+---------------------------------------------------------------
+Benchmark                     Time             CPU   Iterations
+---------------------------------------------------------------
+BM_ShapeCount/2/8           583 ns          583 ns      2359625
+BM_ShapeCount/4/8         38721 ns        38699 ns        36068
+BM_ShapeCount/1/1000       7527 ns         7524 ns       186290
+
+PiperOrigin-RevId: 783612635",27,0,27,21,3,3,1.0
+2a45c5b0c326e20eafe833df055326b39edadcf2,tensorflower-gardener,2025-07-16 05:36:56+00:00,"Reverts e74d259786b388e8ff7af90d426e665c84388229
+
+PiperOrigin-RevId: 783609389",78,151,229,86,0,0,
+ed5fb6198674879d898a4cc44ee52e87e37dec79,tensorflower-gardener,2025-07-16 05:16:52+00:00,"Automated Code Change
+
+PiperOrigin-RevId: 783604614",20,1,21,86,0,0,
+4a267de297470c54d31f35be43483ffe16738a81,tensorflower-gardener,2025-07-16 03:48:12+00:00,"Automated Code Change
+
+PiperOrigin-RevId: 783582266",89,9,98,86,0,0,
+fd51c63414ba11e3570fc75e0f910be21096a422,ezhulenev,2025-07-16 01:57:35+00:00,"[xla] Change the order of std::variant types in MaybeOwningDeviceMemory
+
+Constructing and destroying trivially-destructible se::DeviceMemoryBase is about 2.5X faster that OwnedDeviceMemory. This code is on a hot path of invoking XLA from Tensorflow: we construct a vector of default-initialized ShapeTree<MaybeOwningDeviceMemory>.
+
+PiperOrigin-RevId: 783553450",79,21,100,21,3,3,1.0
+2495992e03accb76d84498c2500014f0ffc6df87,pschuh,2025-07-16 01:50:59+00:00,"The raw buffer CopyToMemorySpace don't seem to quite work yet cross client, so avoid
+them in that case.
+
+PiperOrigin-RevId: 783552018",3,3,6,8,0,0,
+3fddfb8721267ba4fd67ac818c189fad06e3a531,ezhulenev,2025-07-16 01:29:32+00:00,"[xla] Optimize constructing ShapeTree
+
+name                         cpu/op        cpu/op      vs base
+BM_Construct/2/8              8.041µ ± 1%   5.678µ ± 1%  -29.38% (p=0.000 n=20)
+BM_Construct/1/1000           48.71µ ± 1%   45.27µ ± 1%   -7.05% (p=0.000 n=20)
+BM_ConstructUnowned/2/8       4.465µ ± 1%   2.114µ ± 1%  -52.66% (p=0.000 n=20)
+BM_ConstructUnowned/1/1000    24.31µ ± 1%   21.59µ ± 0%  -11.19% (p=0.000 n=20)
+geomean                      14.36µ        10.41µ       -27.52%
+
+name                         time/op       time/op     vs base
+BM_Construct/2/8              8.063µ ± 1%   5.693µ ± 1%  -29.39% (p=0.000 n=20)
+BM_Construct/1/1000           48.82µ ± 1%   45.41µ ± 1%   -6.99% (p=0.000 n=20)
+BM_ConstructUnowned/2/8       4.477µ ± 1%   2.119µ ± 1%  -52.66% (p=0.000 n=20)
+BM_ConstructUnowned/1/1000    24.37µ ± 1%   21.64µ ± 0%  -11.20% (p=0.000 n=20)
+geomean                      14.40µ        10.44µ       -27.51%
+
+PiperOrigin-RevId: 783546322",60,23,83,21,3,3,1.0
+b1a6144a472945f8ffdfbcc56925fabead62b019,emilyfertig,2025-07-15 23:31:10+00:00,"[JAX] Cache transfer server connections for cross-host device_put.
+
+PiperOrigin-RevId: 783514915",31,6,37,3,0,0,
+f46f2c8e6d1cb3f0926316d8192adf8caa663411,tensorflower-gardener,2025-07-15 23:21:26+00:00,"Update target define states before we update ready list.
+
+PiperOrigin-RevId: 783511468",7,3,10,86,0,0,
+c268d82f68dc8bd2072670b945e4fccdaf88f337,tomnatan30,2025-07-15 21:37:11+00:00,"Reverts e8964b7d937c027100b0b4aed68f02ac57ea0333
+
+PiperOrigin-RevId: 783476445",12,23,35,6,0,0,
+13a8f0c2d5d75e2a1e8184489b885ef4394d65ef,tensorflower-gardener,2025-07-15 21:23:40+00:00,"Optimize xla::GlobalDecreasingSizeBestFitHeap::MakeFreeChunks when using power-of-2 memory alignments, and add 1024B alignment test to benchmark.
+
+PiperOrigin-RevId: 783471143",18,3,21,86,0,0,
+e595ee38d8f82e69f012c4f20b9f97a189866ae3,ddunl,2025-07-15 21:04:04+00:00,"Create `xla::test::Empty` for instantiating empty test suites.
+
+Needed to replace some uses of `XLA_TEST_BACKEND_` defines.
+
+PiperOrigin-RevId: 783463839",23,0,23,6,0,0,
+5abc0597bbb88ee332f412f6b397d8dfda206067,pschuh,2025-07-15 20:55:10+00:00,"Add ::GetReadyFuturePromise to be used in implementing
+CommonPjRtBufferImpl::GetReadyFuture.
+
+PiperOrigin-RevId: 783460634",75,52,127,8,0,0,
+1c12989a27af9e4fc2d113c8d7b9a0a279a3ce45,nvgrw,2025-07-15 19:54:47+00:00,"Add an option to do multiple executions of the same module to HloRunners.
+
+This way we don't have to transfer the input every time.
+
+PiperOrigin-RevId: 783439537",82,24,106,4,0,0,
+b1251d4f371e49948617cb106df5385788c5d22a,ezhulenev,2025-07-15 19:33:07+00:00,"[tf:xla] Avoid accidental copies of large Op attributes
+
+This change is NFC, it only moves expensive operation from a hot path, and precomputes everything at op instantiation time.
+
+1. Do not copy Op attributes on every call to Compute, as attribute might contain the whole XLA program
+2. Do not canonicalize function on every call to Compute, as again it has to canonicalize attributes that might contain serialized XLA program
+
+PiperOrigin-RevId: 783431842",129,32,161,21,3,3,1.0
+f3ec24a5e98484d317b5560fd241ec4430f02043,tensorflower-gardener,2025-07-15 19:33:05+00:00,"Add deprecation message for `TFLITE_XNNPACK_DELEGATE_FLAG_ENABLE_SUBGRAPH_RESHAPING`
+
+PiperOrigin-RevId: 783431821",8,0,8,86,0,0,
+852c853fd0657c13dc1d91741af5cd9ac5146717,akuegel,2025-07-15 19:23:48+00:00,"Pass proper AliasInfo to HloAliasAnalysis::Run (NFC).
+
+This makes sure that we can support backend-specific must-alias rules in the
+future.
+
+PiperOrigin-RevId: 783428736",97,69,166,12,0,0,
+3775e5cdaaa96ef7cecb8df0835ce4b473c0b0d0,jcai19,2025-07-15 19:16:29+00:00,"[XLA][Numerics][HLO Value Tracking] Add recovery modules when removing nested reshapes on TPU
+
+This adds recovery modules in the original value recovery table when a nested shape is removed.
+
+PiperOrigin-RevId: 783426439",46,14,60,4,0,0,
+39ea8074c32505de3688293697180fc9c4b7bca5,pschuh,2025-07-15 18:55:42+00:00,"Add CopyToMemorySpace which calls DirectCopyToMemorySpace or
+an aliasing version in CopyToCpuMemorySpace or falls back to using
+CreateBuffersForAsyncHostToDevice.
+
+PiperOrigin-RevId: 783418926",160,1,161,8,0,0,
+3ee8b1003b8b5bad01298670a44165bdeeb7676d,tensorflower-gardener,2025-07-15 18:54:27+00:00,"#HLODiff Remove text diff summary
+
+PiperOrigin-RevId: 783418496",0,10,10,86,0,0,
+650f05be415dab1749a65dae3d61103a76c3e184,tensorflower-gardener,2025-07-15 18:51:49+00:00,"#HLODiff Update print progress at the end of matcher to show 100%.
+
+PiperOrigin-RevId: 783417516",1,0,1,86,0,0,
+d882c8e21357f857bad9eeafcc6a4b852b00160f,WillFroom,2025-07-15 18:23:14+00:00,"[XLA:CPU] Don't expand tanh at the fusion level.
+
+PiperOrigin-RevId: 783406385",22,5,27,21,0,0,
+702f9d1926e0eceb8bd6f8ac7a0a7be65f567850,bartchr808,2025-07-15 18:06:16+00:00,"[IFRT] Do not set MHLO shardings if sdy partitioned
+
+PiperOrigin-RevId: 783399245",231,47,278,1,0,0,
+bf3672efbe1eec5c9c6bcf1301c0c99ea6a19065,tensorflower-gardener,2025-07-15 18:05:14+00:00,"Adds a new rematerialization method that focuses on rematerializing only the highest memory usage peak in the module at any given remat pass (instead of rematerializing the first point at which the memory limit is reached). Should result in more monotonic rematerialization and avoid rematerializing unecessary instructions. Usually not as efficient as regular rematerialization but can help in specific cases. The new mode is not enabled yet. Reworks Instruction List to use unique ptrs.
+
+PiperOrigin-RevId: 783398810",621,56,677,86,0,0,
+00732e36489268538fb3f3ccd92ca01424099398,tensorflower-gardener,2025-07-15 18:01:31+00:00,"Handle GetDonatableInputIndices() errors
+
+PiperOrigin-RevId: 783397185",8,5,13,86,0,0,
+b3a522c3b05a093b2a38bdaf0008b31744b61bcd,WillFroom,2025-07-15 17:55:12+00:00,"[XLA:CPU] Disable fusion level vectorization.
+
+PiperOrigin-RevId: 783394681",3,2,5,21,0,0,
+795fd4ea9489cfa4ffac033d243f467d0cc09301,allanrenucci,2025-07-15 17:43:35+00:00,"Add missing header.
+
+`platform.h` is currently included transitively via `logging.h`. Removing the header from `logging.h` breaks this target.
+
+PiperOrigin-RevId: 783390282",1,0,1,10,0,0,
+a3ce9d9dd9b550e44488293ba4b17d2af2740f20,WillFroom,2025-07-15 17:15:57+00:00,"[XLA:CPU][XLA:GPU] Set default alignment of vector load/store as that of the vector element type.
+
+PiperOrigin-RevId: 783379659",21,7,28,21,0,0,
+b92f6221bfd1d8022e4815992c695296cce8d787,tensorflower-gardener,2025-07-15 17:28:54+00:00,"Merge pull request #96906 from JohannesBuchner:master
+
+PiperOrigin-RevId: 783377141",82,46,128,86,0,0,
+36ba0f4cf40e61fa1fa4f4ff14df9025994a8d2a,tensorflower-gardener,2025-07-15 16:59:47+00:00,"#sdy Clean up `AddAxisOrMergeInserter` in dedup_meshes
+
+PiperOrigin-RevId: 783372996",1,31,32,86,0,0,
+66e197e56c13f295ba52838e829d5f74e0343f80,tensorflower-gardener,2025-07-15 16:54:55+00:00,"Update the link for hermetic CUDA documentation.
+
+PiperOrigin-RevId: 783371276",1,671,672,86,0,0,
+c9fa46fe07d946df60a6908ef8f243aa51f28f6b,petebu,2025-07-15 16:39:44+00:00,"[ifrt] Fix spelling in CopyArraysOp description.
+
+PiperOrigin-RevId: 783366396",1,1,2,1,0,0,
+253319b45579a8064781f10309ec9031e0e03df8,rtg0795,2025-07-15 16:26:11+00:00,"Disable failure_handler_test for Mac
+
+PiperOrigin-RevId: 783361990",1,0,1,2,43,40,0.93
+8a85a60c5a70fb897e3e21df41b29a07c40310da,terryysun,2025-07-15 16:21:49+00:00,"PR #28716: [GPU] Make fabric info test compatible with lower CUDA driver versions
+
+Imported from GitHub PR https://github.com/openxla/xla/pull/28716
+
+Existing fabric info test assumes sufficient CUDA driver version (550+), which is not always the case. This PR make the test compatible with lower driver version. The enforcement of getting empty fabric info on Hopper is also removed as there's no guarantee for the status quo.
+Copybara import of the project:
+
+--
+2dbfce61d6d2f0b563c2450b3db12b615172ca09 by Terry Sun <tesun@nvidia.com>:
+
+make an exception for insufficient CUDA driver version
+
+--
+d19576c0ca9cb458aba1ff5c449349618fada21b by Terry Sun <tesun@nvidia.com>:
+
+use matchers
+
+Merging this change closes #28716
+
+PiperOrigin-RevId: 783360398",9,6,15,1,0,0,
+e559d09a6f97bb44dadb34c07b294c1a807b91f3,tomnatan30,2025-07-15 15:27:25+00:00,"Remove MeshAttr builder that takes a single int
+
+PiperOrigin-RevId: 783342887",1,1,2,6,0,0,
+e8964b7d937c027100b0b4aed68f02ac57ea0333,tomnatan30,2025-07-15 15:22:30+00:00,"#sdy Mark `xla.sdy.LocalToGlobalShape` custom call as side effecting so it isn't removed if unused.
+
+We also make make sure `zero_sized_hlo_elimination` is called after Shardy since it won't eliminate custom calls with side effects.
+
+PiperOrigin-RevId: 783341280",23,12,35,6,0,0,
+b7d72c5ca2ab765863c402e8ecabeebf216429c9,tensorflower-gardener,2025-07-15 15:18:42+00:00,"Migrate away from ArrayRef(std::nullopt_t)
+
+The upstream LLVM has deprecated ArrayRef(std::nullopt_t).  This CL migrates away from that.
+
+PiperOrigin-RevId: 783340231",5,7,12,86,0,0,
+5a06f7319e04e3778245e45a3b8c11adffe46697,pifon2a,2025-07-15 14:32:20+00:00,"[XLA:GPU] Implement tiling for dot.
+
+PiperOrigin-RevId: 783326211",157,5,162,4,1,0,0.0
+26acc72d982e66bd1499cc04c51c801e21a68e4a,hmonishN,2025-07-15 14:31:54+00:00,"PR #28728: Add Nvidia benchmarks
+
+Imported from GitHub PR https://github.com/openxla/xla/pull/28728
+
+Copybara import of the project:
+
+--
+c269978e20fdf65d2e1b1ba555aa641309c7e67c by hmonishN <hmonish@nvidia.com>:
+
+adding nv benchmarks
+
+--
+e9c69091b1fc10f993274413b31754244786b3e9 by Harshit Monish <hmonish@nvidia.com>:
+
+Update default_registry.yml
+
+Fix xla flags format.
+--
+b079cc6efbb7248b1e234801f57eed9b82c40cd7 by hmonishN <hmonish@nvidia.com>:
+
+update benchmark numbers
+
+--
+48356fc72a84030a7dc1d073ec48e01b9e634b65 by hmonishN <hmonish@nvidia.com>:
+
+update config name
+
+Merging this change closes #28728
+
+PiperOrigin-RevId: 783326097",2241,1,2242,1,0,0,
+90a9f204641407d8495ed15fe11706149609f9e0,beckerhe,2025-07-15 14:25:21+00:00,"Make Thunk keep an instance of ThunkInfo directly (NFC)
+
+Previously Thunk was keeping a copy of all the members of ThunkInfo and was creating ThunkInfo on the fly if needed.
+
+This change makes `Thunk` keep an instance of `ThunkInfo` which allows us to move the `ThunkInfo` serialization method into `ThunkInfo` which helps with better separation of concerns and cleaner code.
+
+PiperOrigin-RevId: 783324387",38,36,74,4,0,0,
+89aa527dad3a4e4a8fc34b76400e09fdf2d76d88,d0k,2025-07-15 12:45:16+00:00,"Remove workarounds for missing ABSL_DEPRECATE_AND_INLINE
+
+TF OSS absl is now new enough to provide it unconditionally.
+
+PiperOrigin-RevId: 783297380",0,69,69,1,0,0,
+e68a01d707903438a5207b3cc40a6aa9ed2d625d,WillFroom,2025-07-15 11:35:18+00:00,"[XLA:CPU][XLA:GPU] Increase limit in number of iterations of UnswitchLoopsPass.
+
+PiperOrigin-RevId: 783280493",75,2,77,21,0,0,
+cd7564bff1e9f28816f4a66c9f04253a77d329d6,penpornk,2025-07-15 11:20:26+00:00,"[xla:cpu] Add DotLibraryRewriter rewrite options for oneDNN and XNNPACK.
+
+Also:
+* Add a template function `SetterForRepeatedEnum` to parse repeated field flags. Make `--xla_gpu_enable_command_buffer` and `--xla_gpu_unsupported_generic_triton_emitter_features` call this generic parser instead.
+* This fixes existing bugs when parsing `--xla_gpu_enable_command_buffer`:
+  * In add/remove mode, the existing setter only parses the first option and return. This PR makes it parse all options in the list.
+  * The existing setters allow duplicate options. This PR ensures each option appear once.
+* List the missing `XNN_GRAPH_FUSION_MODE_GREEDY_SLINKY` enum value in the description for `xla_cpu_experimental_xnn_graph_fusion_mode` flag.
+* Add more keep-sorted keywords to keep XLA:CPU flags sorted in `xla.proto`.
+* Remove unused headers and dependencies from `debug_options_flags`.
+PiperOrigin-RevId: 783276995",284,147,431,1,74,71,0.96
+63e34b6006b8b19526d27c33675ac7f18daafe20,tensorflower-gardener,2025-07-15 10:49:44+00:00,"Automated Code Change
+
+PiperOrigin-RevId: 783268803",22,22,44,86,0,0,
+293777bd44c93bde20fbb901ffed618cf7445282,tensorflower-gardener,2025-07-15 10:44:33+00:00,"Merge pull request #96429 from zqw86713:dev1
+
+PiperOrigin-RevId: 783263188",31,0,31,86,0,0,
+2ef96e299692f11c5f7e817ef46111712abec5d5,ezhulenev,2025-07-15 09:34:19+00:00,"[xla:cpu] Tiny improvements for documentation and function names
+
+PiperOrigin-RevId: 783249290",23,16,39,21,3,3,1.0
+63767b2fa74baf7b6812881335eb68de7acc9400,tomnatan30,2025-07-15 09:21:41+00:00,"Fix shardy_xla_pass_test that is failing
+
+PiperOrigin-RevId: 783245565",7,0,7,6,0,0,
+dd8f1997b75e25fcecf42321d36ce8e73440e354,WillFroom,2025-07-15 09:06:53+00:00,"[XLA:CPU][XLA:GPU] Fix missing layout on emitted constants.
+
+PiperOrigin-RevId: 783241016",41,0,41,21,0,0,
+bc8ee803e164ad44aaefb4ceaadbd0ce9a19cece,tensorflower-gardener,2025-07-15 09:05:23+00:00,"compat: Update forward compatibility horizon to 2025-07-15
+
+PiperOrigin-RevId: 783240562",1,1,2,86,0,0,
+433e343ba51f2cfdcaba5b7ff215984f67bce799,tensorflower-gardener,2025-07-15 09:03:03+00:00,"Update GraphDef version to 2289.
+
+PiperOrigin-RevId: 783239749",1,1,2,86,0,0,
+36fe692e544543804aa2b88af97640d344e3e9c2,tensorflower-gardener,2025-07-15 08:18:37+00:00,"Automated Code Change
+
+PiperOrigin-RevId: 783226440",1,1,2,86,0,0,
+72299716d449390e833fa1ab39dd1f170a410e88,beckerhe,2025-07-15 08:01:33+00:00,"Remove dependency on KernelArguments from CudnnThunk
+
+`KernelArguments` is a type used in code generation and shouldn't leak into thunks.
+
+Instead of taking `KernelArguments` and then converting these into `BufferAllocation::Slice`s in the constructor of `CudnnThunk` we can do this conversion on the call site instead.
+
+To achieve that this change adds a function `KernelArguments::GetArgumentBufferSlices()` for easy acces to the buffer slices.
+
+This also adds a test for `KernelArguments::GetArgumentBufferSlices`.
+
+PiperOrigin-RevId: 783221734",135,17,152,4,0,0,
+fd2dbd214ac0db272ae57c68f88178281d7bcb5f,thomasjoerg,2025-07-15 07:31:01+00:00,"[XLA:GPU] Do not multi-output fuse sibling transposes with reductions.
+
+A elemental (aka nested) transpose has a different read pattern than an unnested transpose or reduction, because the emitters for tiled transposes and parallel reductions ensure uniform read patterns.
+A multi-output fusion with roots that have different read patterns is generally not profitable. Input data will be read multiple times by different threads, which defeats the purpose of multi-output fusion. What is worse, increased register pressure can impact performance.
+
+PiperOrigin-RevId: 783214366",44,7,51,2,0,0,
+027cf3209c403524d723841630bbfd52db8080b6,tensorflower-gardener,2025-07-15 07:16:22+00:00,"Migrate away from ArrayRef(std::nullopt_t)
+
+The upstream LLVM has deprecated ArrayRef(std::nullopt_t).  This CL migrates away from that.
+
+PiperOrigin-RevId: 783210650",22,25,47,86,0,0,
+6cd8193c38e86113be922d74a3e1e51d80ac8db7,tensorflower-gardener,2025-07-15 07:03:08+00:00,"Fix incorrect per-channel scaling in fully_connected on Android
+
+PiperOrigin-RevId: 783206564",3,6,9,86,0,0,
+e4bba2131a793bafd22f52c1c2e38d271eda39ec,tensorflower-gardener,2025-07-15 07:00:38+00:00,"Automated Code Change
+
+PiperOrigin-RevId: 783205512",1,2,3,86,0,0,
+125c846225ea064406823c72b748e27cbabda221,amd-jianli12,2025-07-15 06:56:24+00:00,"PR #28401: [ROCm] Fix PackedTranspose for adapting to warp size 64
+
+Imported from GitHub PR https://github.com/openxla/xla/pull/28401
+
+Calculate ranges for dimensions in IndexingMap with kTileSize rather than WarpSize() since tile size is still expected to be vector_size * kNumShmemBanks which we preserve as 32.
+
+Fixed failing test:
+[  FAILED  ] Convolve2D_1x2x2x1024_2x2x128x512_Grouped_Valid/0.Types, where TypeParam = Eigen::half
+Copybara import of the project:
+
+--
+33e7ad3c96584471ff9b8732f6fdecf04ef9ed84 by Jian Li <Jian.Li@amd.com>:
+
+[ROCm] Fix PackedTranspose for adapting to warp size 64
+
+Calculate ranges for dimensions in IndexingMap with kNumShmemBanks
+rather than WarpSize() since tile size is still expected to be
+vector_size * kNumShmemBanks which we preserve as 32.
+
+Fixed failing test:
+[  FAILED  ] Convolve2D_1x2x2x1024_2x2x128x512_Grouped_Valid/0.Types, where TypeParam = Eigen::half
+
+Merging this change closes #28401
+
+PiperOrigin-RevId: 783204421",4,4,8,1,0,0,
+8ec79f73029b2845be06f6afe903d44cdcf465e2,Tixxx,2025-07-15 06:31:52+00:00,"PR #25914: [NVIDIA GPU] Add nvshmem communicator and runtime thunks
+
+Imported from GitHub PR https://github.com/openxla/xla/pull/25914
+
+Split from this [pr](https://github.com/openxla/xla/pull/21973)
+3: Add nvshmem runtime thunks
+4. communicator changes have been moved to this(https://github.com/openxla/xla/pull/26255)
+5. Base nvshmem thunk has been moved to (https://github.com/openxla/xla/pull/26568).
+Copybara import of the project:
+
+--
+e1121d162de8b6b09a1d44af54f88fc75a0a08ae by TJ Xu <tjx@nvidia.com>:
+
+Add nvshmem communicator and runtime thunks
+added thunk lowering and e2e test
+
+--
+18a4624c80a0a2a53fbfc2ced72ec725bb52a28d by TJ Xu <tjx@nvidia.com>:
+
+Addressed comments and remove duplicate methond in nvshmem ar thunk
+
+--
+7f0c5905c972e1157afae4e7429e43961af1d4d6 by TJ Xu <tjx@nvidia.com>:
+
+Rebase on the communicator and base thunk pr
+
+--
+d5ba27abdc1c721b6f1e3c1b664dd07c8dce1887 by TJ Xu <tjx@nvidia.com>:
+
+add barrier at the end of executable execution to avoid clashing with nccl init
+
+Merging this change closes #25914
+
+PiperOrigin-RevId: 783198258",644,76,720,2,3,3,1.0
+1335653ba98b07388a5770494cf9187e8c977c1f,bchetioui,2025-07-15 05:48:38+00:00,"[XLA] Propagate `op_name`s recursively in the `CallInliner`.
+
+PiperOrigin-RevId: 783187158",47,19,66,1,1,1,1.0
+400a350fa4629d06f88efdd218ea9e81c8359d5f,tensorflower-gardener,2025-07-15 05:47:39+00:00,"Fix test-case when NVML library is not available.
+
+PiperOrigin-RevId: 783186886",4,5,9,86,0,0,
+bc9ee1622f5cb4459ae285025e5f9452abcc1442,ezhulenev,2025-07-15 04:38:44+00:00,"[xla:cpu] Mark cpu_function_runtime alignment as deprecated
+
+PiperOrigin-RevId: 783171393",4,0,4,21,3,3,1.0
+599084a14d53d026462e1aa43c06d24facdd79db,tensorflower-gardener,2025-07-15 03:40:24+00:00,"initial implementation of send/recv static verification
+
+PiperOrigin-RevId: 783157695",487,5,492,86,0,0,
+0c1ee69c7961ceacdb3561e8d952adabf41c3ef2,nvgrw,2025-07-15 03:14:49+00:00,"Remove unused ExecutionProfile option.
+
+PiperOrigin-RevId: 783150801",76,142,218,4,0,0,
+e52a31e166af020e465c7494a6353f098a65155c,emilyfertig,2025-07-15 03:00:14+00:00,"[JAX] Use experimental DCN transfer library as a fallback for PjRt-IFRT cross-host device transfers when the PjRt plugin doesn't implement the cross-host transfer APIs.
+
+Reverts 196d590e258ed8da586cbc9bc90f51e51f28be23
+
+PiperOrigin-RevId: 783145286",69,15,84,3,0,0,
+c75fab3be3456039080a92a340bc7e75acf3c49f,tensorflower-gardener,2025-07-15 02:33:46+00:00,"Add `HloAsyncStartInstruction::AddCallOperand` to mirror `HloCallInstruction::AddCallOperand`.
+
+PiperOrigin-RevId: 783137746",45,0,45,86,0,0,
+7bf9c62222036f87b75ad3ccbace03e7e8a683a1,ezhulenev,2025-07-15 02:09:05+00:00,"[xla:codegen] Migrate Fptrunc to GetOrInsertDeclaration API
+
+PiperOrigin-RevId: 783131529",79,13,92,21,3,3,1.0
+498aef7d67c0caa7b70df5572b8ebdc7d7b6c547,tensorflower-gardener,2025-07-15 00:24:37+00:00,"Check shape rank is less than XNN_MAX_TENSOR_DIMS for TRANSPOSE
+
+This avoids failures in XNNPACK, but simply shifts the issue to TFlite:
+
+```
+ERROR: third_party/tensorflow/lite/kernels/transpose.cc Transpose op only supports 1D-6D input arrays.
+ERROR: Node number 0 (TRANSPOSE) failed to prepare.
+ Failed to AllocateTensors
+```
+PiperOrigin-RevId: 783103325",9,0,9,86,0,0,
+84c638859b44f4f152e36045a71fa75c5f798dff,iumitakgun,2025-07-15 00:18:07+00:00,"[XLA] Refactoring Reduce Window Rewriter to reduce complexity
+
+Generate Reduce Window on outer scan (Complexity 46 -> 43)
+
+PiperOrigin-RevId: 783101437",37,17,54,2,0,0,
+d60ac532dde3805555a04458c0fe7fe7c6f2f72d,tensorflower-gardener,2025-07-14 23:51:27+00:00,"Migrate away from ArrayRef(std::nullopt_t)
+
+The upstream LLVM has deprecated ArrayRef(std::nullopt_t).  This CL migrates away from that.
+
+PiperOrigin-RevId: 783092648",4,4,8,86,0,0,
+bfe78e16c1cd274a070340fd495c731e4c039871,ezhulenev,2025-07-14 23:47:53+00:00,"[xla:codegen] Use Intrinsic::Type in Fptruc::CreateDefinition
+
+PiperOrigin-RevId: 783091549",44,24,68,21,3,3,1.0
+d5e9730378c34bb0634cc3fb3bd199f9d56467db,reedwm,2025-07-14 23:46:58+00:00,"Add 'mode' attribute to AllReduce and ReduceScatter.
+
+This is an enum attribute which holds a CollectiveOpGroupMode. This enum determines how IDs in the replica_groups attribute are interpreted. Currently it is derived from the use_global_device_ids attribute and whether or not the channel_id attribute is present. The channel_id's integer value is not used in determine the mode: only whether it is present or not affects the mode. The channel_id's integer value is unused in all of XLA except for rare cases on TPUs.
+
+The long-term plan is to instead directly have instructions hold the CollectiveOpGroupMode, remove the use_global_device_ids attribute, and no longer use channel_id to determine the mode. An instruction will then only have a channel_id in the rare cases where it's value (and not just its presence) is used.
+
+This change is the first step of this plan. It adds the mode attribute to AllReduce and ReduceScatter. The constructor of such instructions takes an optional<CollectiveOpGroupMode> defaulting to nullopt, which causes the mode to be derived from channel_id and use_global_device_ids. The instructions store a non-optional CollectiveOpGroupMode. The HLO verifier will complain if the mode does not match channel_id and use_global_device_ids. The mode is optional in HLO text, and if not present, will be derived from channel_id and use_global_device_ids.
+
+CollectiveOpGroupMode is moved to its own file to avoid a circular dependency between collective_ops_utils.h and hlo_instructions.h. I created a duplicate CollectiveOpGroupModeProto enum, since we need a proto form for HloInstructionProto. Eventually we should get rid of the C++ enum and just use the proto enum.
+
+After this change, the next step is to add the attribute to other collectives. Then, change usages of functions like CreateAllReduce to pass the mode, and change passes and other code to directly use the instruction's mode rather than calculate it from channel_id and use_global_device IDs. The final step is to remove use_global_device_ids and to make channel_id unused except in the cases where its integer value, not just the existence of a nonzero int, is used.
+
+PiperOrigin-RevId: 783091244",680,178,858,2,30,30,1.0
+5cf8df86fda61572dda22c9f91426dfdd809bbe2,ICGog,2025-07-14 23:19:21+00:00,"[IFRT IR] Add IFRT IR program interpreter
+
+PiperOrigin-RevId: 783081283",1093,0,1093,4,0,0,
+ad7d3ddd41db84393487e60958c9d134db79e83b,tensorflower-gardener,2025-07-14 22:53:28+00:00,"Reverts d41335bc8404d9a347913fa9c776ca4a1bb7e94a
+
+PiperOrigin-RevId: 783072836",1,1,2,86,0,0,
+e2c8a6c427aa09cca89797df0c5441b552b6a30d,felixwqp,2025-07-14 21:28:34+00:00,"Extract `CheckUniformReplicaGroups` to verify that all replica groups in a collective instruction are of the same size, which is a precondition for many collective optimizations.
+
+PiperOrigin-RevId: 783043286",71,12,83,2,0,0,
+09403bc4586ea2e46b0643a6eeaee59e489158e9,tensorflower-gardener,2025-07-14 20:41:48+00:00,"[Efficiency]Cleanup unused metrics which track the pjrt compilation status.
+
+Cleanup two metrics which are not actively used for fleet efficiency analysis.
+1) '/pjrt/compiler/is_compiling_computation' which records if pjrt compiler is compiling computations.
+2) '/pjrt/compiler/is_compiling_module' which records if pjrt compiler is compiling modules.
+
+PiperOrigin-RevId: 783026182",2,105,107,86,0,0,
+66c90d7a6b2b4fd0b2d2338e3a66d219658eed4c,ICGog,2025-07-14 20:31:42+00:00,"[IFRT IR] Add pipeline for compiling IFRT IR programs
+
+PiperOrigin-RevId: 783022440",494,23,517,4,0,0,
+7ac4a1bdc0ab5c47eae67d1ee3504513318c55b7,metaflow,2025-07-14 19:07:09+00:00,"[XLA:GPU] update determenism test to use generic triton emitter
+
+PiperOrigin-RevId: 782993233",14,4,18,4,0,0,
+e74d259786b388e8ff7af90d426e665c84388229,majiddadashi,2025-07-14 18:52:07+00:00,"Allow biases with rank > 1 to be fused to FC
+
+This checks to see if the RHS of an add can be squeezed to a rank=1 tensor with the right number of elements. If so, it allows fusion of that as a bias to FC.
+
+This helps with models generated from Flax Dense. Also very important for quantization as it allows biases to be fused prior to FakeQuantized graph -> integer graph pass as this pass assumes there is just one op in between the FQ ops (add already fused).
+
+PiperOrigin-RevId: 782987660",151,78,229,2,0,0,
+1b290ebf9ac096406747cc8887b1f9fb8d3e32c1,tensorflower-gardener,2025-07-14 18:45:45+00:00,"code cleanup: shorten variable names
+
+PiperOrigin-RevId: 782985405",18,16,34,86,0,0,
+528b4b0f38ba6b8231e610412a0c4deb63a8c892,liepieshov,2025-07-14 18:41:25+00:00,"set layout assignment for the result correctly
+
+PiperOrigin-RevId: 782983897",110,78,188,2,0,0,
+dbcb3ab914d1137c58a05d5999a4dc36127dcaf9,pschuh,2025-07-14 18:37:40+00:00,"Add CloneWithControlDependency which is used to implement
+DonateWithControlDependency.
+
+PiperOrigin-RevId: 782982539",8,0,8,8,0,0,
+d41335bc8404d9a347913fa9c776ca4a1bb7e94a,tensorflower-gardener,2025-07-14 18:29:16+00:00,"Automated Code Change
+
+PiperOrigin-RevId: 782979430",1,1,2,86,0,0,
+5fb66e837b507a0916dd5d759801a8c08f481a19,sohaibiftikhar,2025-07-14 18:25:10+00:00,"[XLA:GPU]: Enable two-shot all reduce implementation for usage.
+
+PiperOrigin-RevId: 782978071",0,4,4,3,0,0,
+7e0f83054bf3e5dff451afcabfad51bfa9de9d2a,terryheo,2025-07-14 18:10:07+00:00,"Reverts e5982331c429fce7c9c4389f2d15eee5ff3e9791
+
+PiperOrigin-RevId: 782972511",68,19,87,4,26,16,0.62
+f6bd9fff243ff62f24b65428895b439eed4afc86,liepieshov,2025-07-14 17:48:54+00:00,"set default layout when exporting dense constants from HLO to MLIR
+
+PiperOrigin-RevId: 782964528",17,3,20,2,0,0,
+fc03ea5ccb5a376802713d1d196889e072734d8a,nvgrw,2025-07-14 17:29:51+00:00,"Re-enable precompilation for some tests.
+
+PiperOrigin-RevId: 782956820",0,8,8,4,0,0,
+c8733079dda5e112a877744e9e54cfb48bb393e0,metaflow,2025-07-14 17:10:45+00:00,"[XLA:GPU] enable nested fusion for autotuner test
+
+PiperOrigin-RevId: 782949634",45,1,46,4,0,0,
+9399c62f7cf118c315e7195301550c7a86843c35,jparkerh,2025-07-14 16:49:24+00:00,"quick fix for sigill on non-null device
+
+the device pointer was not initialized and set to non-null - this was causing sigills in the C API wrapper code.
+
+PiperOrigin-RevId: 782941135",1,0,1,2,0,0,
+72255d43b9cedca0755e9f7fe95f26db256db61d,allanrenucci,2025-07-14 16:26:00+00:00,"Align `AtLocation` signature with Abseil `LogMessage::AtLocation`.
+
+PiperOrigin-RevId: 782933722",12,5,17,10,0,0,
+5ca779c72616a05dae3a4354abf4b30d2855e910,berkinilbeyi,2025-07-14 16:24:36+00:00,"[XLA] Use ""edge time indices"" to skip some redundant calls to FindChunkCandidate.
+
+Edge time indices are the start and end times of buffers in the alternate memory
+space. Evict has a loop that iterates on end indices to find the latest possible
+point a copy-done of an eviction can be placed. However, the value returned by
+FindChunkCandidates would only be different at the ""edge time indices"", where
+there is another allocation at that interval. This eliminates a large portion of
+redundant FindChunkCandidate calls in Evict.
+
+PiperOrigin-RevId: 782933312",21,1,22,1,0,0,
+68d5b47d87ca23310ba201be508be3451086fe66,WillFroom,2025-07-14 16:17:50+00:00,"[XLA:CPU] Move erf32 approximation to mathlib.
+
+PiperOrigin-RevId: 782931399",437,86,523,21,0,0,
+2f43bfa52bc0f778c73c588944f6aa0536a8545e,adityakakarot,2025-07-14 15:52:53+00:00,"Removing stale function signature references from tensorflow that rely on old options of type variant<int, string>
+
+Also, Xprof plugin cache to be cleared only when the current plugin version is greater than the cache version.
+
+PiperOrigin-RevId: 782923059",37,81,118,1,0,0,
+802314d79fe9f3f2f4681111405b37e2675c16da,WillFroom,2025-07-14 15:40:18+00:00,"[XLA:CPU] Add expm1 expansion.
+
+PiperOrigin-RevId: 782919559",66,5,71,21,0,0,
+27767aeeceee809ab7a3cd79d33e5d21cb9ecb81,sohaibiftikhar,2025-07-14 15:26:30+00:00,"[XLA:GPU]: Calculate rank_offset and rotated_ranks outside the kernel.
+
+This avoids repeated calculations for each thread and copying this from outside
+is fairly cheap and needs to be done only once.
+
+PiperOrigin-RevId: 782915009",43,12,55,3,0,0,
+58ce31112919af83aca21fe97d616bea84ecd02e,WillFroom,2025-07-14 14:00:16+00:00,"[XLA:CPU] Move passes from expand_float_ops that lower to math lib.
+
+PiperOrigin-RevId: 782888731",189,168,357,21,0,0,
+6f20c178fb388cf609f539405af8445736f7d345,sohaibiftikhar,2025-07-14 13:42:09+00:00,"[XLA:GPU]: Calculate launch dimensions based on input size.
+
+Current launch dimensions were fixed to 8x512. Benchmarks suggest that we can do
+better if we can calculate this based on the replica_groups and the size of the
+input.
+
+PiperOrigin-RevId: 782884138",67,32,99,3,0,0,
+f3d0960e1587a230240080528864adf5e9b37cea,akuegel,2025-07-14 13:39:18+00:00,"Pass proper AliasInfo to HloAliasAnalysis::Run in HostOffloader (NFC).
+
+This makes sure that we can support backend-specific must-alias rules in the
+future.
+
+PiperOrigin-RevId: 782883223",32,14,46,12,0,0,
+ae995ef41cd00684896f21fe465db42872d06ccf,loislo,2025-07-14 12:09:41+00:00,"[XLA:GPU] Print fusion string when selecting the best result, instead of root string.
+
+With the original message it is hard to understand what exact hlo failed to be processed.
+
+PiperOrigin-RevId: 782859918",3,3,6,1,0,0,
+a858a75481918a250bbd419ef1138ed9227c51af,chsigg,2025-07-14 11:34:51+00:00,"[xla][gpu][triton] Do not duplicate code in squeeze dims pass, re-enable the pass.
+
+Replace remaining users of op ('siblings' of the matched `squeeze_dims` op) with `expand_dims`. In most cases, these will be cleaned up later. In cases where it doesn't (e.g. `reduce` op in softmax-like diamonds), it's still a win because `expand_dims` is easier to optimize than `reshape`.
+
+Reverts f0516ba9931ac21631dd2dc1a92d4ed2dfc8179b
+
+PiperOrigin-RevId: 782851402",51,56,107,3,2,1,0.5
+273ed4b2280a2323b7cc56c0b4add27c89756050,JohannesBuchner,2025-07-14 11:47:41+00:00,avoid failure when docstrings have been stripped (python -OO),50,35,85,1,1,1,1.0
+72d24d7680136ea22459fab41ccf233c07963a19,tensorflower-gardener,2025-07-14 11:30:28+00:00,"Disable NVSHMEM send-recv test-case due to flakiness.
+
+PiperOrigin-RevId: 782850366",4,3,7,86,0,0,
+e645d906967945cd7f6baf6d5aefcc537cfd2946,Tixxx,2025-07-14 11:22:25+00:00,"PR #28295: [NVIDIA GPU] Do out of place allreduce for nvshmem
+
+Imported from GitHub PR https://github.com/openxla/xla/pull/28295
+
+NVSHMEM's default one-shot allreduce algo requires separate buffers for input and output.
+In nvshmem 3.3, the heuristics will change to use 2-shot algo when input and output buffers are the same.
+This is a workaround before 3.3 upgrade.
+Copybara import of the project:
+
+--
+6c0ebe3d87df5deaecd40dd049f1fe7df487d26e by TJ Xu <tjx@nvidia.com>:
+
+Do out of place allreduce for nvshmem collectives
+
+--
+89075044f1dddaa4d126fd84b2e059f5151a5ed8 by TJ Xu <tjx@nvidia.com>:
+
+added test
+
+Merging this change closes #28295
+
+PiperOrigin-RevId: 782848449",44,2,46,2,3,3,1.0
+d6a85d98543433ee0d9a4ada31c01ef11407fa9e,pifon2a,2025-07-14 11:07:14+00:00,"[XLA:GPU] Remove code for horizontal_input_fusion.
+
+It was already disabled a couple of days ago.
+
+PiperOrigin-RevId: 782844519",0,548,548,4,1,0,0.0
+ec4069f397e24bc7f2a73126fd1f7c269304e591,derdrdirk,2025-07-14 10:55:28+00:00,"Update `StreamExecutorGpuClientTest.PropagateError` test to expect unpacked tuples
+
+PiperOrigin-RevId: 782840695",4,2,6,2,0,0,
+14a8bbe98e792ce332b25441208ee7edae8c410a,wsmoses,2025-07-14 10:28:33+00:00,"XLA:GPU: Fix method ambiguity on CUDA 12.4
+
+PiperOrigin-RevId: 782833885",3,1,4,1,0,0,
+a488399c1d330e804357cfee5448803503570af9,akuegel,2025-07-14 10:27:56+00:00,"Avoid using PointsToAnalysis in DFSMemoryScheduler (NFC).
+
+PointsToAnalysis is deprecated.
+
+PiperOrigin-RevId: 782833738",23,14,37,12,0,0,
+20dd93147c5d88fa4398a4b445f5a9aad528b1d0,akuegel,2025-07-14 09:37:24+00:00,"Apply patch to fix compile error on windows (NFC).
+
+PiperOrigin-RevId: 782820048",63,0,63,12,0,0,
+3c068b7870a92fdb0645c1876e515ce46b4ab93b,tensorflower-gardener,2025-07-14 09:03:38+00:00,"compat: Update forward compatibility horizon to 2025-07-14
+
+PiperOrigin-RevId: 782810077",1,1,2,86,0,0,
+84f673e80c1ab89a496a9c20a9b8309f4965d5b9,tensorflower-gardener,2025-07-14 09:03:24+00:00,"Update GraphDef version to 2288.
+
+PiperOrigin-RevId: 782810015",1,1,2,86,0,0,
+e56b2d952f5f9b9f832fb868dedf7a0cc876757c,pineapplejuice233,2025-07-14 04:28:28+00:00,"Always stage transfers when doing d2h copy to avoid memory corruption issue.
+
+PiperOrigin-RevId: 782740753",4,2,6,2,0,0,
+45ecc8b03b3f0f910c473c0a63d61bd3fc56e372,ezhulenev,2025-07-13 16:12:05+00:00,"[xla:codegen] Use Intrinsic::Type in Fptruc::GetOrInsertDeclaration
+
+PiperOrigin-RevId: 782601860",38,17,55,21,3,3,1.0
+f0516ba9931ac21631dd2dc1a92d4ed2dfc8179b,chsigg,2025-07-13 09:13:27+00:00,"Reverts 6503034148ab3c0469a32d20b9a3ea397457a8f8
+
+PiperOrigin-RevId: 782532723",0,2,2,3,2,1,0.5
+c159d0e57355e8ac3cfb41455f3e0c921b7e2f3d,tensorflower-gardener,2025-07-13 09:03:10+00:00,"compat: Update forward compatibility horizon to 2025-07-13
+
+PiperOrigin-RevId: 782530445",1,1,2,86,0,0,
+ca1dd22a6ab0073f052a74c54561dd99622a9273,tensorflower-gardener,2025-07-13 09:03:02+00:00,"Update GraphDef version to 2287.
+
+PiperOrigin-RevId: 782530395",1,1,2,86,0,0,
+a1300a0d39523da936d2cb1ac782c6231c2e46e0,tomnatan30,2025-07-12 18:04:15+00:00,"#sdy If auto partitioning is enabled and there is no registered auto partitioner, register Alpa as the default.
+
+PiperOrigin-RevId: 782366951",25,1,26,6,0,0,
+e160cc1133387ac270bbc90c944874e8f74a0aa3,tensorflower-gardener,2025-07-12 15:39:42+00:00,"Fix typo in xnn_fusion_thunk.cc.
+Should use ifdef rather than ifndef.
+
+PiperOrigin-RevId: 782343552",2,2,4,86,0,0,
+fcd3beec899135fed2d0c9b424634dccef9f1944,tensorflower-gardener,2025-07-12 09:02:59+00:00,"compat: Update forward compatibility horizon to 2025-07-12
+
+PiperOrigin-RevId: 782276814",1,1,2,86,0,0,
+27903d136d2e46d272a9cdf4042c4703f0078b0c,tensorflower-gardener,2025-07-12 09:02:45+00:00,"Update GraphDef version to 2286.
+
+PiperOrigin-RevId: 782276736",1,1,2,86,0,0,
+fc98507978d9b85f672a87fbbab19c2e582163f7,tensorflower-gardener,2025-07-12 05:55:34+00:00,"Automated Code Change
+
+PiperOrigin-RevId: 782239761",2,0,2,86,0,0,
+23c7c88f16e17790b90fd8af6ac8fe2f86c9007c,slackito,2025-07-12 04:10:47+00:00,"Integrate LLVM at llvm/llvm-project@f8cb7987c64d
+
+Updates LLVM usage to match
+[f8cb7987c64d](https://github.com/llvm/llvm-project/commit/f8cb7987c64d)
+
+PiperOrigin-RevId: 782220044",2876,863,3739,1,0,0,
+2b2e29fe4114dbe9426ca060ea5f317d982e533b,ICGog,2025-07-12 03:49:40+00:00,"[IFRT IR] Add pass for dumping IFRT IR graphs to dot representation
+
+PiperOrigin-RevId: 782216238",548,0,548,4,0,0,
+5e80edd2960e07cf33dda2a0ad2eb89683ca7309,ezhulenev,2025-07-12 02:41:33+00:00,"[xla:codegen] Introduce Intrinsic::Type class instead of an alias
+
+PiperOrigin-RevId: 782199950",194,41,235,21,3,3,1.0
+8644edb06c267988df551f73210aaa83dea36a5b,emilyfertig,2025-07-12 02:32:52+00:00,"[JAX] Add an interface for cross-host DCN transfers and a PjRt-IFRT/Linux implementation
+
+PiperOrigin-RevId: 782197772",577,0,577,3,0,0,
+71173ef36a931025ec918586748a7ae353370194,pschuh,2025-07-12 01:47:58+00:00,"Add CommonPjRtRawBuffer::ScheduleCopyTo which is an async version of
+CommonPjRtRawBuffer::CopyTo. This allows scheduling the copy async after
+some dependencies have completed. Backends which have to allocate resources
+to perform copies may want to override this instead to garuntee ordering.
+
+PiperOrigin-RevId: 782185871",104,24,128,8,0,0,
+49fca3935f065e1f91fdf791958647387aba3938,ezhulenev,2025-07-12 01:40:10+00:00,"[xla:codegen] Distinguish between scalar and vector arguments/results in XLA intrinsics
+
+PiperOrigin-RevId: 782184041",107,22,129,21,3,3,1.0
+eea6a3562a9b9380aea1f76533e3510001a9e64b,felixwqp,2025-07-12 01:35:57+00:00,"[XLA]  Extract `ExtractSplitDimSpec` from `MatchWithDynamicSlice` in collective_opt_utils.
+
+PiperOrigin-RevId: 782183029",266,44,310,2,0,0,
+c56972459d22e3ddc0c0e0ac04ae85d0b33270f9,ICGog,2025-07-12 00:52:53+00:00,"[IFRT IR] Use the auto-generate pass creation functions rather than custom defined funcs.
+
+PiperOrigin-RevId: 782172174",147,320,467,4,0,0,
+f1be0a349603f317bc8d019cc3f51dd15f956bf6,xinxinmo,2025-07-12 00:00:11+00:00,"[xla] Add back test targets in //xla/tools/hlo_diff on CI because the service outage
+
+errors (https://github.com/openxla/xla/actions/runs/16007180610/job/45156461568)
+
+have been fixed in https://github.com/openxla/xla/pull/28465.
+
+Reverts f590575b0ed93e703ec30b29f815bf5077ce5468
+
+PiperOrigin-RevId: 782158057",39,42,81,1,0,0,
+6bf187731ee3f19ad358a7b62e251b934657a68d,nafi3000,2025-07-11 23:57:09+00:00,"Optimize `GlobalDecreasingSizeBestFitHeap::MakeFreeChunks` by 1.2X to 1.4X.
+
+`BM_GlobalDecreasingSizeBestFitHeap` benchmark is optimized by up to 1.17X.
+
+PiperOrigin-RevId: 782157151",69,71,140,2,0,0,
+8abac72e9a1538f6e2a3e0f58b2ebddb059f6d6f,seantalts,2025-07-11 23:55:55+00:00,"[XLA:CPU] Use templated intrinsic helpers for log1p and fix intrinsic name.
+
+PiperOrigin-RevId: 782156735",24,28,52,3,0,0,
+71b19d1848d1b413479083e2b450554207a2a134,sdasgup3,2025-07-11 23:24:40+00:00,"[Phase Compilation] Part-4: Add C++ layers to test and interact with C PJRT API.
+
+PiperOrigin-RevId: 782147317",694,23,717,1,0,0,
+1b87c38dda842bedb5b01b7592b83292d7252cb3,SiqiaoWu1993,2025-07-11 22:47:53+00:00,"Fix sink invariant in tf.ifregion.
+
+PiperOrigin-RevId: 782135828",5,1,6,2,0,0,
+ce11edc4ef3e1e7a9cf75885a867b892d966d7c6,tensorflower-gardener,2025-07-11 22:18:11+00:00,"Reverts e4fccd6471306e8b4d4012a423376c170e6a6301
+
+PiperOrigin-RevId: 782126042",37,109,146,86,0,0,
+c3fe34a8b0e65586eff8ed6719e42da3120e785d,ddunl,2025-07-11 21:16:03+00:00,"Now that we don't steal from `tensorflow/third_party` don't do any post hoc Copybara for TensorFlow builds
+
+(*) Except for `tensorflow/third_party/py`
+
+PiperOrigin-RevId: 782106216",0,62,62,6,0,0,
+e1c72193da6cc88e11dbee81cf5fe19187ff1312,ddunl,2025-07-11 20:39:51+00:00,"Migrate uses of `XLA_TEST_BACKEND` macros to use utilities in `xla_test_backend_predicates.h`
+
+Reverts c9ca1c456e1032ba1e4d728fdda68bf9a46b4f92
+
+PiperOrigin-RevId: 782094674",50,52,102,6,0,0,
+976bca01cc803767a0dcba39ab4ca818d98639b5,GleasonK,2025-07-11 20:35:05+00:00,"[SDY] Refactor MHLO dependencies where possible
+
+PiperOrigin-RevId: 782093218",10,9,19,2,0,0,
+04b16a94c8fbe9b4a5366bfe3ced693b09b4f4c2,ezhulenev,2025-07-11 20:35:03+00:00,"[xla:codegen] Start migrating Ldexp to Intrinsic declaration
+
+PiperOrigin-RevId: 782093202",53,26,79,21,3,3,1.0
+e9a2f9de8dc960f6064c2acc518072c170f7e265,tensorflower-gardener,2025-07-11 20:16:48+00:00,"[XLA] Refactor HloDCE for improved readability.
+
+A minor modification is also made for dangling computations where `changed` is only set to `true` when a computation is actually removed to account for the possibility that a dangling computation might be filtered by execution_threads.
+
+PiperOrigin-RevId: 782086875",214,106,320,86,0,0,
+e4fccd6471306e8b4d4012a423376c170e6a6301,ezhulenev,2025-07-11 19:57:16+00:00,"[xla:cpu] Move memory allocation functions to tf2xla
+
+PiperOrigin-RevId: 782080412",109,37,146,21,3,3,1.0
+a5e5df512a42756cc9ae7cc7b9144672e922c4b0,tensorflower-gardener,2025-07-11 19:52:08+00:00,"Add traceme for IFRT executable launch
+
+PiperOrigin-RevId: 782078942",19,11,30,86,0,0,
+c386cae688f368970ffb0f22866b2af8f1e8fe62,seantalts,2025-07-11 19:48:55+00:00,"[XLA:CPU] Refactor Rsqrt intrinsic with new UnaryIntrinsicBase.
+
+PiperOrigin-RevId: 782077991",125,54,179,3,0,0,
+2a9a72198a3e411c5eac071c5f5abc29d84efa5c,zacmustin,2025-07-11 18:19:38+00:00,"Fix clang-tidy errors in `pjrt_c_api_helpers.cc`.
+
+PiperOrigin-RevId: 782047204",3,2,5,1,0,0,
+8229468def07caf1c7fcf4634cf79f97ef4c2fa4,apivovarov,2025-07-11 17:36:34+00:00,"[Autotuner] Add block level emitter backend for Triton fusion.
+
+This change introduces the Triton block-level fusion emitter backend, which enables autotuning of tile configurations for custom Triton fusions in XLA.
+
+This backend implements the following core interfaces:
+- GetSupportedConfigs:
+Enumerates all supported combinations of tile sizes for the output tensors. The generated configs can be used during autotuning to explore different performance candidates. (will be added in the next PR)
+- GetDefaultConfig:
+Provides a default tile configuration for a given Triton fusion, used as a fallback when no tuning data is available.
+- ApplyConfig:
+Applies a selected block-level fusion configuration to a Triton fusion instruction by updating its GpuBackendConfig. (will be added in the next PR)
+
+PiperOrigin-RevId: 782032163",583,0,583,1,5,3,0.6
+5615e58396c085e380de493e1c294195b6dedfe1,metaflow,2025-07-11 16:47:19+00:00,"[XLA:GPU] flag to control nested gemm fusion
+
+For more granular control over generic triton emitter.
+
+That replaces the binary `xla_gpu_unsupported_enable_generic_triton_emitter_for_gemms`.
+
+Sample usage `--xla_gpu_unsupported_generic_triton_emitter_features=enable_nested_gemm`
+
+Drive by update of the comment on xla_gpu_enable_llvm_module_compilation_parallelism.
+
+PiperOrigin-RevId: 782014919",423,75,498,4,0,0,
+767aba953a18097b5ded1a10d72fa658de5b32b8,tensorflower-gardener,2025-07-11 15:56:30+00:00,"Reverts 9b88203f15334e7e779bb2b3200448a07ad0245b
+
+PiperOrigin-RevId: 781999343",6,105,111,86,0,0,
+495583c4e765b39da4df68d82539264ea148c3dc,amd-songpiao,2025-07-11 15:31:02+00:00,"PR #28314: [ROCm] added allreduce kernel registration
+
+Imported from GitHub PR https://github.com/openxla/xla/pull/28314
+
+added the missing allreduce kernel registration on ROCm
+
+it fixes all the failed AllReduceTest/AllReduceTest.* in collective_ops_e2e_test. e.g.
+`bazel-bin/xla/tests/collective_ops_e2e_test_amdgpu_any --gtest_filter=AllReduceTest/AllReduceTest.AsyncAllReduce_F32_2GPUs/async_one_shot`
+
+@xla-rotation could you review my PR, please?
+Copybara import of the project:
+
+--
+6517bd88291374e9754838ac82a5d58fe4386c8d by songlin <Songlin.Piao@amd.com>:
+
+adapt allreduce kernel registration in rocm
+
+--
+6e255aa68932a42964c048dd24ecd944a7dbf0c9 by songlin <Songlin.Piao@amd.com>:
+
+adapt to get rid of macro usage
+
+--
+af96c9743ad6abbe323709d1721c013abb84e206 by songlin <Songlin.Piao@amd.com>:
+
+make PutSignalFlag and WaitSignalFlag as templates with specialization for ROCm and CUDA
+
+Merging this change closes #28314
+
+PiperOrigin-RevId: 781992142",186,41,227,1,0,0,
+6503034148ab3c0469a32d20b9a3ea397457a8f8,chsigg,2025-07-11 13:39:44+00:00,"[Triton] Add triton squeeze dims pass
+
+This pass removes size-1 dimensions from tensors to generate faster code
+through Triton.
+
+- `squeeze_dims` ops are extracted from each unit dimension of `tt.reshape`.
+- A series of patterns push `squeeze_dims` up through the graph, past element-wise ops, broadcast, transpose, join, reduce.
+- `squeeze_dims` are folded into `tt.load` and `tt.expand_dims`, or converted back to `tt.reshape`.
+
+PiperOrigin-RevId: 781962093",752,4,756,3,2,1,0.5
+8f1a89fbc96f41cbb5112d35ee655dbab53a1456,tensorflower-gardener,2025-07-11 13:14:28+00:00,"Move llvm() and llvm_setup() calls down one workspace*.bzl file.
+
+This makes XLA consistent with TF.
+
+PiperOrigin-RevId: 781955402",6,7,13,86,0,0,
+f4cc3725c3a570504ac9cb369dc6fb8e25316159,basioli-k,2025-07-11 12:54:14+00:00,"Reverts 55a3ba02a6b51595dea5efaf3dce7e44ab2409c1
+
+PiperOrigin-RevId: 781950054",11,0,11,6,0,0,
+934774e8f6bf7ce74e2c1597c4ded553dbbcfdba,akuegel,2025-07-11 12:44:43+00:00,"Remove dead code from TuplePointsToAnalysis (NFC).
+
+While there, also fix a few ClangTidy warnings.
+
+PiperOrigin-RevId: 781947527",10,89,99,12,0,0,
+ef6a3d4952cf23ff4c998b7a5c7a3ddc1b8edec4,WillFroom,2025-07-11 11:18:56+00:00,"[XLA:CPU] Add log1p math lib function.
+
+PiperOrigin-RevId: 781926524",433,49,482,21,0,0,
+82b30799748b9a1e3735c1c4f9dbd878d4aab3e3,akuegel,2025-07-11 10:01:24+00:00,"Remove mutable buffer accessor methods from HloAliasAnalysis (NFC).
+
+All current users don't actually need mutable access.
+
+PiperOrigin-RevId: 781905323",3,17,20,12,0,0,
+55918edf5b3e917d9f5e183a35af59ae2cb43caf,KanishAnand,2025-07-11 09:53:56+00:00,"Use unused sharding variable
+
+PiperOrigin-RevId: 781903248",1,2,3,1,0,0,
+0104643a0f902266b42d43471a3bc90d648844fb,allanrenucci,2025-07-11 09:48:54+00:00,"[XLA:GPU] Enable heuristic based synchronous and pipelined collective combining by default.
+
+This change only takes effect if the user does not set the `xla_gpu_{all_reduce,all_gather,reduce_scatter}_combine_threshold_bytes` flags.
+
+PiperOrigin-RevId: 781902147",1,1,2,10,0,0,
+c8be60b77f12e880d1fa462b548d348e4f3dd616,WillFroom,2025-07-11 09:15:57+00:00,"[XLA:CPU] Fix race condition in LowerXlaMathLibPass.
+
+PiperOrigin-RevId: 781894153",2,2,4,21,0,0,
+60f06ae24cba4d76da940cc6fdb55e9c5647793f,tensorflower-gardener,2025-07-11 09:04:50+00:00,"compat: Update forward compatibility horizon to 2025-07-11
+
+PiperOrigin-RevId: 781890727",1,1,2,86,0,0,
+e819acf37f8d4d26d0f400c40f35e8d9b94a729d,tensorflower-gardener,2025-07-11 09:02:49+00:00,"Update GraphDef version to 2285.
+
+PiperOrigin-RevId: 781890029",1,1,2,86,0,0,
+8335c0a33f0a5c8a436a032e50963db6df289690,WillFroom,2025-07-11 08:39:53+00:00,"[XLA:CPU] Use xla intrinsic f32 -> bf16 conversion.
+
+PiperOrigin-RevId: 781883075",63,51,114,21,0,0,
+6253ee144010e0a6dcef1d0413ea8b923a6439b4,tensorflower-gardener,2025-07-11 08:10:33+00:00,"Automated Code Change
+
+PiperOrigin-RevId: 781875010",1,1,2,86,0,0,
+569724c4412d49d55302f6b0208cb09e8935bc76,jerryxyj,2025-07-11 07:21:10+00:00,"No public description
+
+PiperOrigin-RevId: 781861930",3,0,3,1,0,0,
+cef9b5d8d0ad1d86b3b8d816446f4b86c675aa01,tensorflower-gardener,2025-07-11 07:08:27+00:00,"Automated Code Change
+
+PiperOrigin-RevId: 781858106",2,2,4,86,0,0,
+f202888354720561cff8bcef82a77b368ac3d3dd,tensorflower-gardener,2025-07-11 06:31:37+00:00,"Make `Execute*()` `const` for `*Executable` classes.
+
+We cache `*Executable` objects to reuse compilation results. This means that we may call `Execute*()` on such cached objects multiple times and expect that the calls won't affect the objects' behaviors. In other words, `*Executable()` should be `const`. Marking them `const` prevents the code from accidentally mutating cached executables and causing bugs.
+
+PiperOrigin-RevId: 781847420",74,54,128,86,0,0,
+55a3ba02a6b51595dea5efaf3dce7e44ab2409c1,ezhulenev,2025-07-11 06:13:32+00:00,"[xla:cpu] Remove XLA_ALIGN macro
+
+PiperOrigin-RevId: 781843003",0,11,11,21,3,3,1.0
+418d081cc8f8c5f28370236681f0f65bcd689eae,tensorflower-gardener,2025-07-11 05:35:13+00:00,"Automated Code Change
+
+PiperOrigin-RevId: 781832145",0,3,3,86,0,0,
+c9ca1c456e1032ba1e4d728fdda68bf9a46b4f92,tensorflower-gardener,2025-07-11 05:19:44+00:00,"Reverts 1d1309b2712b001b325962ee76972f14681913da
+
+PiperOrigin-RevId: 781828585",52,50,102,86,0,0,
+83290cdd2876d8862a1c53c7e52d242569f9cfa7,tensorflower-gardener,2025-07-11 04:24:53+00:00,"Automated Code Change
+
+PiperOrigin-RevId: 781814264",4,0,4,86,0,0,
+64e05953b9e35fe960442d65b2e5a0ed03b79084,juliagmt-google,2025-07-11 01:31:28+00:00,"[XLA:benchmarks] Remove comments related to testing
+
+PiperOrigin-RevId: 781766386",0,4,4,1,0,0,
+5cd3ff240232fb85faf67bd76c86e773ce68273d,ddunl,2025-07-11 01:19:23+00:00,"Move `tensorflow/third_party/llvm` to `xla/third_party/llvm`
+
+PiperOrigin-RevId: 781763691",8,8,16,6,0,0,
+1d1309b2712b001b325962ee76972f14681913da,ddunl,2025-07-10 23:57:27+00:00,"Migrate uses of `XLA_TEST_BACKEND` macros to use utilities in `xla_test_backend_predicates.h`
+
+PiperOrigin-RevId: 781737406",50,52,102,6,0,0,
+2b3356a042200027dfe534b606a8e25c2319f8e9,nvgrw,2025-07-10 23:18:11+00:00,"Reduce likelihood of collisions in precompilation using Default print options.
+
+PiperOrigin-RevId: 781724957",2,2,4,4,0,0,
+9b88203f15334e7e779bb2b3200448a07ad0245b,mkuperst,2025-07-10 23:08:51+00:00,"[XLA] CSE collectives with different channel IDs when it's safe to do so.
+
+PiperOrigin-RevId: 781721931",105,6,111,4,0,0,
+10205f8bf7c52d9af67be6cb34d10934c3eb205f,bixia1,2025-07-10 22:29:00+00:00,"[XLA] Implement operand-to-result layout propagation for custom calls
+
+This allows propagating layout from an operand to the result, based on output-to-operand-alias information.
+
+PiperOrigin-RevId: 781706746",88,1,89,3,0,0,
+06691176f4f4ffd96b76ac5a157fa38662e1dbee,bixia1,2025-07-10 22:09:14+00:00,"[xla:gpu] Handle buffer related custom calls.
+
+Add executable tests.
+
+PiperOrigin-RevId: 781699123",129,2,131,3,0,0,
+e3a0ebde0d387f408ca08d3417f17e8ed1656339,terryheo,2025-07-10 21:23:58+00:00,"Refactor delegate_test_util to simpler to use
+
+This change improves the usability of the test_utils::SimpleDelegate utility
+by replacing the long list of boolean parameters with readable Options enum.
+
+PiperOrigin-RevId: 781681590",126,115,241,4,26,16,0.62
+aa1ab63fea901c112c25f5ebc4b3bbe9f8c73492,WillFroom,2025-07-10 20:53:40+00:00,"[XLA:CPU][XLA:GPU] use correct alignment on transfer_write
+
+PiperOrigin-RevId: 781669338",36,3,39,21,0,0,
+68d963e4a3f5a2153b5d01959b26d8664604bfa6,majiddadashi,2025-07-10 20:52:13+00:00,"Fix bounds check for input offsets in quantized ops.
+
+The inputs offsets are negative of the zero points so that should be their acceptable ranges.
+
+PiperOrigin-RevId: 781668766",3,3,6,2,0,0,
+9bb1c74092011253c1d7ef869d4517dcd98c1cfb,tensorflower-gardener,2025-07-10 20:20:11+00:00,"Turn off auto sharding stablehlo test.
+
+PiperOrigin-RevId: 781656212",4,0,4,86,0,0,
+b26ceb28ed5b7eb66a5b7bb30e46afd7245c1faf,tensorflower-gardener,2025-07-10 19:39:50+00:00,"Return DeadlineExceededError when getting handler from the pool times out.
+
+PiperOrigin-RevId: 781641050",6,3,9,86,0,0,
+c76e9691e36e2d06a0aedb7886754967a42a6f6f,WillFroom,2025-07-10 19:21:17+00:00,"[XLA:CPU] Add expansion of math.cbrt to pow
+
+PiperOrigin-RevId: 781634299",47,1,48,21,0,0,
+5de05ad1f2871e2f82ab4d97aefc8b3854536ef7,ezhulenev,2025-07-10 18:55:21+00:00,"[xla:codegen] Use FpTrunc::CreateDefinition to create xla.fptrunc definitions
+
+PiperOrigin-RevId: 781624007",69,79,148,21,3,3,1.0
+5619e535abd9520f8ff2ac5053d4d64cb078e4dc,sgarciagoogle,2025-07-10 18:51:38+00:00,"Internal CI changes.
+
+PiperOrigin-RevId: 781622283",1,1,2,1,0,0,
+6590dd7b8ca25e54c9ad6022114104ab201b30b6,allanrenucci,2025-07-10 18:50:50+00:00,"[XLA:GPU] Restrict heuristics based collective combiners to multi-host topology.
+
+PiperOrigin-RevId: 781621893",8,1,9,10,0,0,
+38f76cbd922507e6a110ead117e93d450bd24e62,tensorflower-gardener,2025-07-10 18:49:08+00:00,"Set XNN_FLAG_SLINKY_NO_CHECKS in xnn_fusion_thunk.
+
+PiperOrigin-RevId: 781621183",8,4,12,86,0,0,
+d42d48b38075f789d701e05fa355fc5b2d21161a,mkuperst,2025-07-10 18:48:10+00:00,"[XLA] Factor out the ""do channel IDs carry semantic information"" check.
+
+Note that `!use_spmd_partitioning_` is likely not the right condition, but I want this to be a pure refactor first and we can adjust the condition later.
+
+PiperOrigin-RevId: 781620792",8,1,9,4,0,0,
+d7ae23d46cbc35ae20122383cf87293eb54fcccb,tensorflower-gardener,2025-07-10 18:35:44+00:00,"Removed an error emission for a failed legalization.
+
+PiperOrigin-RevId: 781616159",2,3,5,86,0,0,
+8b23732985283ac1a309f7cdb1f5459f60a47cf0,bmass02,2025-07-10 18:31:26+00:00,"Add StatType for input pipeline traces.
+
+PiperOrigin-RevId: 781614433",2,0,2,1,0,0,
+a63b460fc79e4cd6d996a5f43c328da8374e90fe,WillFroom,2025-07-10 17:30:01+00:00,"[XLA:CPU] Add conversion from math.erf f64 to libm call
+
+PiperOrigin-RevId: 781590068",86,11,97,21,0,0,
+30b848e73c2c86f464d18ac0f3626725fc51b5a8,seantalts,2025-07-10 17:22:58+00:00,"[XLA:CPU] Implement rsqrt with Newton-Raphson refinement.
+
+Design decisions:
+- rsqrt is the first and perhaps only function that uses x86-specific intrinsics.
+  - We choose the intrinsics we need based on the requested floating point type and vector width.
+  - This means we outsource cpu feature detection elsewhere (it will go in the VecDescs generation function).
+- Only some vector width + fp types are competitive with 1 / rsqrt.
+  - We will benchmark on the main architectures to see where to do the replacement
+  - We will add a more holistic hlo fusion benchmark with add, mul, rsqrt to better approximate the cost of the division op.
+
+```
+------------------------------------------------------------------------------------------------
+Benchmark                                                      Time             CPU   Iterations
+------------------------------------------------------------------------------------------------
+BM_RsqrtVectorized<4, F32, kRsqrt>/process_time           310412 ns       310495 ns         2271
+BM_RsqrtVectorized<4, F32, kOneOverSqrt>/process_time     222650 ns       222991 ns         3125
+BM_RsqrtVectorized<8, F32, kRsqrt>/process_time           312053 ns       312342 ns         2243
+BM_RsqrtVectorized<8, F32, kOneOverSqrt>/process_time     352200 ns       352706 ns         2010
+BM_RsqrtVectorized<8, F64, kRsqrt>/process_time           409729 ns       409382 ns         1714
+BM_RsqrtVectorized<8, F64, kOneOverSqrt>/process_time    1178363 ns      1177512 ns          582
+```
+
+PiperOrigin-RevId: 781587256",753,63,816,3,0,0,
+af757a4e6335119d22313de292d6050b45d6644b,tensorflower-gardener,2025-07-10 17:19:50+00:00,"Eliminate sdy.data_flow_edge before Shardy->HLO transformation.
+
+PiperOrigin-RevId: 781585969",43,2,45,86,0,0,
+678e12e32cdfa8705433035feee761755f4139a6,jparkerh,2025-07-10 17:15:26+00:00,"Example Extension with cpp dependency injection
+
+Trying to come up with a cleaner way to do dependency injection inside an extension that adds minimal additional apis for those who want to implement directly at the C api. This mechanism keeps the C API cleaner for pure C implementers, but also allows for implementation at CPP for easy composability/testability etc.
+
+PiperOrigin-RevId: 781584176",490,2,492,2,0,0,
+1b5a11a71805ff446673bcacb14c4067d6bb652d,ezhulenev,2025-07-10 16:23:00+00:00,"[xla:codegen] Use FpTrunc::Name to generate implementation
+
+PiperOrigin-RevId: 781563253",10,23,33,21,3,3,1.0
+579b12fa85995c5ad3daf0fdfc2245b328d7a8cd,jeffreyadean,2025-07-10 16:16:50+00:00,"Added benchmark for GlobalDecreasingSizeBestFitHeap that exercises
+MakeFreeChunks (indirectly by calling Alloc and Free to exercise
+different #s of allocated chunks and then calls Finish()).
+
+PiperOrigin-RevId: 781561398",35,0,35,1,0,0,
+82f48a1d8962fcb5c2ffcf73f94c519902d0ecde,allanrenucci,2025-07-10 16:07:47+00:00,"Fix formatting in `gpu_compiler.cc`.
+
+PiperOrigin-RevId: 781558486",11,11,22,10,0,0,
+fc2c45399cc24acdb8c89527b63193aecb3609dd,zqw86713,2025-07-10 15:49:57+00:00,test(proto_splitter): rename test for ProcessField error case to match naming convention,1,1,2,3,3,1,0.33
+4d9716db2f4f941913a4fa9bda25e8bda1fd4afc,pizzud,2025-07-10 16:00:38+00:00,"hlo_runner_agnostic_test_base: Compile both modules before executing either.
+
+RunAndCompareTwoModules compiles and executes two modules, and if we trigger an
+execution before we compile the second then we can't trace the compilations for
+caching purposes.
+
+Unfortunately RunAndCompareTwoModulesReplicated doesn't have a nice way to do
+the same thing, as decomposing it needs the fundamentally-hardware-dependent
+concept of the device assignment.
+
+PiperOrigin-RevId: 781555806",13,5,18,1,0,0,
+48f9ffe09b8984ee0d3c1b72ae127c05e43723f4,basioli-k,2025-07-10 15:32:50+00:00,"[XLA][host_offloading] Open source host offloading executable.
+
+PiperOrigin-RevId: 781547064",1537,0,1537,6,0,0,
+99f908a1328c366033a11171d87eb21ed2165913,zqw86713,2025-07-10 15:29:07+00:00,Add regression test for invalid field number in Merger,22,0,22,3,3,1,0.33
+8b2851dc818bb467b0793e4ff8863882d7887c9b,vsytch,2025-07-10 14:31:29+00:00,"[XLA] Make CSE customizable
+
+PiperOrigin-RevId: 781526169",158,40,198,2,0,0,
+17cfbf39f450439ada062a2026c238ebd361727c,zqw86713,2025-07-05 02:59:33+00:00,fix(proto_splitter): check null pointer after FindFieldByNumber in merge.cc,8,0,8,3,3,1,0.33
+a3bfe52f6bee06fbced74f06ce6d427d2aa81348,bixia1,2025-07-10 13:43:44+00:00,"[xla:layout_assignment] Support buffer types.
+
+Change Shape and ShapeUtil to support the query and modification to the layout of the array storage inside a buffer type.
+
+Enhance layout assignment to support buffer types. There are still problems, such as supporting operand_layout_constraints in layout assignment, which will be addressed in CLs in the sequence.
+
+PiperOrigin-RevId: 781512370",224,84,308,3,0,0,
+7dd8ff2aedae44af5c8fcfc3b56793b9bbd15ef9,akuegel,2025-07-10 13:33:52+00:00,"Make mutable GetValueSet private (NFC).
+
+Remove the unused variant of this method. Also rename it to GetMutableValueSet
+to avoid compile errors, somehow the compiler cannot figure out that it can use
+the non-mutable method in certain cases.
+
+PiperOrigin-RevId: 781509391",37,36,73,12,0,0,
+8e79172949070a3e8bc3b06a1fec4518951393a2,tensorflower-gardener,2025-07-10 12:37:07+00:00,"Only set `local_device_name_` once in the constructor to avoid data races
+
+PiperOrigin-RevId: 781493257",2,2,4,86,0,0,
+9cc442f8ef24b9a55f60a194f31d03e38c64d11d,WillFroom,2025-07-10 12:21:27+00:00,"[XLA:CPU] Add flag to flatten the call graph after fusion.
+
+PiperOrigin-RevId: 781489163",25,4,29,21,0,0,
+32b583973739f3f4aa09b7a5136de645fc59ada6,beckerhe,2025-07-10 11:57:51+00:00,"Introduce ELF section extraction code
+
+This adds code that can extract the contents of a section from an ELF file.
+
+For convenience reason the function also supports static libraries which are
+GNU AR archives containing multiple ELF files. In that case the function returns
+the first found matching ELF section.
+
+The code can be used to extract .nv_fatbin sections from CUDA libaries and will be
+needed to serialize CUDA C++ kernels into serialized GPU programs.
+
+PiperOrigin-RevId: 781482184",888,0,888,4,0,0,
+901e654521939d069f15e1bd4caf0802194624b2,golechwierowicz,2025-07-10 11:17:40+00:00,"[XLA:GPU] Bubble up status handling in unified latency estimator.
+
+PiperOrigin-RevId: 781470886",156,131,287,1,0,0,
+7cb0699ad086df9d7c24218203a08491a43e0554,beckerhe,2025-07-10 10:05:43+00:00,"Fix unoptimized HLO Snapshots
+
+A recent refactoring has changed the behaviour of the unoptimized HLO Snapshots in such a way that they were dumping optimized HLO. This change rectifies that and adds a test that protects that behaviour.
+
+PiperOrigin-RevId: 781451141",109,19,128,4,0,0,
+9c46514516ff47e6307361ff761fa16688e63772,allanrenucci,2025-07-10 09:49:16+00:00,"Manually migrate deprecated references to `strings::StrCat` and `strings::StrAppend`.
+
+`strings::StrCat` and `strings::StrAppend` should eventually forward to `absl::StrCat` and `absl::StrAppend`. Some references need to be rewritten as `absl::StrCat(absl::LegacyPrecision(...))` to avoid loss of precision.
+
+This is a no-op change.
+
+PiperOrigin-RevId: 781446485",45,21,66,10,0,0,
+78f4b7dc3130cd608f990f1235dcb3d68ec5fccd,WillFroom,2025-07-10 09:22:20+00:00,"[XLA:CPU] Use C style names when required in new fusions.
+
+PiperOrigin-RevId: 781439093",26,7,33,21,0,0,
+dd6a4188363ad2aa7add21e690da81a8979b4128,tensorflower-gardener,2025-07-10 09:14:30+00:00,"LOG(INFO) -> VLOG(4) for layout_canonicalization_callback.
+
+PiperOrigin-RevId: 781436550",1,1,2,86,0,0,
+2dbb92458abb5d96ef596acb37ffb6f49e3b5deb,tensorflower-gardener,2025-07-10 09:03:04+00:00,"compat: Update forward compatibility horizon to 2025-07-10
+
+PiperOrigin-RevId: 781432355",1,1,2,86,0,0,
+169bbeedb2c5440666ea2a3a71c36c71798a39b0,tensorflower-gardener,2025-07-10 09:03:02+00:00,"Update GraphDef version to 2284.
+
+PiperOrigin-RevId: 781432336",1,1,2,86,0,0,
+fa4e206d73bd51a26af3d547b2dd6bbcef8fecec,akuegel,2025-07-10 08:57:59+00:00,"Pass the correct backend-specific AliasInfo to HloMemoryScheduler
+
+The AliasInfo is needed to compute Peak Memory. Theoretically there could be
+users of HloMemorySchedule which don't want to compute peak memory, but it
+seems not worth it making AliasInfo optional depending on whether peak memory
+should be computed.
+Adapt direct and indirect users of HloMemoryScheduler accordingly.
+
+PiperOrigin-RevId: 781430019",391,225,616,12,0,0,
+fccd619d7646c5c3c83d0a10da80b40883325a14,tensorflower-gardener,2025-07-10 08:57:06+00:00,"Automated Code Change
+
+PiperOrigin-RevId: 781429676",11,0,11,86,0,0,
+b78a476d4babd3b92b03b695d6ef11f6efeb12b6,WillFroom,2025-07-10 08:51:27+00:00,"[XLA:CPU] Add pass to peel loop for workgroups that cross the constraints.
+
+PiperOrigin-RevId: 781427727",318,0,318,21,0,0,
+e5982331c429fce7c9c4389f2d15eee5ff3e9791,terryheo,2025-07-10 06:02:38+00:00,"Reverts a11dafed1c38656e665f258fb55da77e1c04eefb
+
+PiperOrigin-RevId: 781377322",140,196,336,4,26,16,0.62
+2fa59af8b6000d7520dbf747e5e96d8e1083de1e,tensorflower-gardener,2025-07-10 05:49:10+00:00,"Enabling XLA early exit after layout assignment
+
+PiperOrigin-RevId: 781373968",5,1,6,86,0,0,
+2e245e0e6b2fc5f40268d2af8dc985b12b8fa213,tensorflower-gardener,2025-07-10 05:38:12+00:00,"Automated Code Change
+
+PiperOrigin-RevId: 781370948",1,0,1,86,0,0,
+230150b8c479c6efba4aae504a33ba53a7bccccc,tensorflower-gardener,2025-07-10 05:27:16+00:00,"Automated Code Change
+
+PiperOrigin-RevId: 781367679",4,0,4,86,0,0,
+affbba93457588e5623f92fa2ecd6d21a941dead,tensorflower-gardener,2025-07-10 05:14:39+00:00,"Automated Code Change
+
+PiperOrigin-RevId: 781364124",1,1,2,86,0,0,
+00a69490cd18804969ce913dfa594785ab5fc740,nafi3000,2025-07-10 05:13:10+00:00,"Optimize `xla::HloInstruction::OperandIndices`.
+
+- Don't call `operand_count()` on each iteration. `InlinedVector::size` is more expensive than `vector::size`. It needs a branch first to understand where the storage is.
+- Use `InlinedVector::data` and pointer arithmetic instead of `InlinedVector::operator[]` which, again similar to `InlinedVector::size`, needs a branch on each call.
+- Motivation for the `s/int64_t/size_t/` change: https://godbolt.org/z/oW59K668a.
+
+PiperOrigin-RevId: 781363727",4,2,6,2,0,0,
+34d0d4e3410141beb2430f644f822cf5eb2c4777,tensorflower-gardener,2025-07-10 04:10:30+00:00,"Do not start XNNPACK fusions with widening converts.
+
+It's better to fuse widening converts into their consumer.
+
+PiperOrigin-RevId: 781346697",40,0,40,86,0,0,
+4b5efb7afe49180e14a90e1b39e063290354b2aa,ezhulenev,2025-07-10 03:31:13+00:00,"[xla:codegen] Add Intrinsic::GetOrInsertDeclaration
+
+PiperOrigin-RevId: 781335122",59,26,85,21,3,3,1.0
+e59873f52a4f9b08b45e334c11dcc610bfd30fd2,tensorflower-gardener,2025-07-10 01:43:20+00:00,"Expose Auto Sharding to StableHLO.
+
+PiperOrigin-RevId: 781300386",450,10,460,86,0,0,
+d469700dbe8c06c1eacaa8cc66b4e903eb8a71a6,tensorflower-gardener,2025-07-10 01:12:43+00:00,"[XLA] Add documentation for table lookup pattern.
+
+Adds comments to explain what a ""table lookup"" is and how it is used in the collective optimization passes.
+
+PiperOrigin-RevId: 781291908",29,1,30,86,0,0,
+eea069e8454160f3a8a793fe77446fdb12f72f41,vsytch,2025-07-10 01:12:27+00:00,"Allow single core embeddings
+
+PiperOrigin-RevId: 781291822",7,4,11,2,0,0,
+1773d87b768685a761bfcb3f2a4d66caeff7bdb2,pineapplejuice233,2025-07-10 00:22:46+00:00,"Use the dst device to do the d2d transfer. Instead of waiting for the src buffer definition event, we need to wait for the ready event.
+
+PiperOrigin-RevId: 781275073",3,3,6,2,0,0,
+7bc466b24424d96907d7797044f035b1ee8198ad,ezhulenev,2025-07-10 00:15:37+00:00,"[xla:codegen] Define XLA Intrinsics: initial commit with documentations and basic functionality
+
+PiperOrigin-RevId: 781272944",228,19,247,21,3,3,1.0
+a11dafed1c38656e665f258fb55da77e1c04eefb,terryheo,2025-07-09 23:26:58+00:00,"lite: Propagate an error during OpInit()
+
+Delegate kernels may fail during TfLiteRegistration.init(). In this case,
+Delegate kernel returns TfLiteKernelInitFailed() to notify. If it happens,
+user's call to InterpreterBuilder::operator() or
+Interpreter::ModifyGraphWithDelegate() will fail.
+
+Updated SimpleDelegate to use TfLiteKernelInitFailed() instead of nullptr.
+
+Also refactored delegate_test_util to simpler to use.
+
+PiperOrigin-RevId: 781256289",196,140,336,4,26,16,0.62
+c51798e3c791dfd9187dc0f0b625633fa824f783,ezhulenev,2025-07-09 22:38:53+00:00,"[xla:cpu] Port elemental ir emitter to use XLA intrinsic for f32 to bf16 truncation
+
+PiperOrigin-RevId: 781238590",253,28,281,21,3,3,1.0
+c176208f0754433f08552e5082a2e896e2efa62a,allanrenucci,2025-07-09 22:30:34+00:00,"Fix several LINT errors.
+
+PiperOrigin-RevId: 781235765",43,41,84,10,0,0,
+f017bc88147dd1ed5e255740bab77bbc5755f005,jcai19,2025-07-09 22:28:20+00:00,"[XOA][Numerics][HLO Value Tracking] Add a TODO
+
+PiperOrigin-RevId: 781234948",4,2,6,4,0,0,
+6686efd9667758d7e3dc0a3a337b4e842129dd76,tensorflower-gardener,2025-07-09 22:12:05+00:00,"Solve BUILD deps conflict for linear_solver
+
+PiperOrigin-RevId: 781229194",11,0,11,86,0,0,
+9c9dea42219bd88e9f3fe8147ae2ff6ee83bc09a,tensorflower-gardener,2025-07-09 21:34:36+00:00,"Implement LoadedExecutable::GetCompiledMemoryStats() and SizeOfGeneratedCodeInBytes() for proxy.
+
+PiperOrigin-RevId: 781214535",61,2,63,86,0,0,
+c8336ea133d6d3988223d4419d494de6909cc46f,GleasonK,2025-07-09 21:19:27+00:00,"[stablehlo] Support bounded dimensions in dot op type inference
+
+PiperOrigin-RevId: 781208712",90,0,90,2,0,0,
+4b4379d3bb4cfb8ca5c759e7d9fa26d96944a9bd,d4n1elchen,2025-07-09 21:06:50+00:00,"[ #HLODiff ] Synchronize scroll for textbox pair
+
+PiperOrigin-RevId: 781203248",31,7,38,1,0,0,
+b955de4b85700e218ec70b93c26543c9c124dab7,pschuh,2025-07-09 20:42:48+00:00,"Expose GetBufferWithHold as a public API.
+
+PiperOrigin-RevId: 781192893",2,2,4,8,0,0,
+825df80373fba0bd45672ffdbcf5498c39831aca,ecalubaquib,2025-07-09 20:02:59+00:00,"Fix converter copybara removal of learning for oss side
+
+PiperOrigin-RevId: 781176593",3,4,7,2,0,0,
+2acb69125bd2261ea3aa81e836fd2f486d2fcf35,WillFroom,2025-07-09 19:45:13+00:00,"[XLA:CPU] Add pass to add loop unroll flags to nested scf.ForOps
+
+PiperOrigin-RevId: 781170081",241,3,244,21,0,0,
+6fb8e909a9fbc9f773d316d29df54c2453ef739a,jcai19,2025-07-09 19:26:26+00:00,"[XLA][Numerics][HLO Value Tracking] Fix printing format of the recovery table
+
+PiperOrigin-RevId: 781162976",11,9,20,4,0,0,
+b1da58a55a9534e31d16aab64f0abbdd8509ad68,tensorflower-gardener,2025-07-09 19:06:40+00:00,"No public description
+
+PiperOrigin-RevId: 781155260",8,6,14,86,0,0,
+b8854bc9cdebaccc0e2fa22666e2d2d729b80ba3,pschuh,2025-07-09 18:48:43+00:00,"Add Delete() to CommonPjRtBufferImpl implemented via
+AbstractTrackedDeviceBuffer::Delete().
+
+PiperOrigin-RevId: 781147116",44,20,64,8,0,0,
+5d3b3b7e78b43f460214f3e238e17a29581354f6,junwhanahn,2025-07-09 18:28:20+00:00,"Remove the deprecated version of `Array::DisassembleIntoSingleDeviceArrays`
+
+PiperOrigin-RevId: 781138001",0,11,11,1,0,0,
+b97375818390d7ea4b0a81ee8b048f796076e06d,thomasjoerg,2025-07-09 17:48:16+00:00,"[XLA:GPU] Do not fuse sibling transpose fusions with different memory read patterns.
+
+PiperOrigin-RevId: 781120814",43,0,43,2,0,0,
+4b3df8be6ab7433ff7a9d60408e978769181052e,derdrdirk,2025-07-09 17:36:50+00:00,"Add AutotunerPass.
+
+The autotuner can be enabled by the --xla_gpu_use_autotuner_pass flag.
+The autotuner pass uses the new autotuning backends to autotune hlo instructions.
+The autotuner is currently placed next to the GemmFusionAutotuner, but will be moved close to Codegen after validating its functionality and performance.
+
+PiperOrigin-RevId: 781116016",364,29,393,2,0,0,
+4870a34f6b5be3eaacb22d674d2e4bbc0396d73b,jcai19,2025-07-09 17:20:26+00:00,"[XLA][Numerics][HLO Value Tracking] Copy original values when creating a clone with same shape
+
+PiperOrigin-RevId: 781108897",27,8,35,4,0,0,
+5fc10157f29f897d7975baa5985f5a506b656e16,basioli-k,2025-07-09 16:51:07+00:00,"[tfcompile] Use xla::cpu::Align instead of hardcoded constant.
+
+PiperOrigin-RevId: 781096209",5,10,15,6,0,0,
+037f5a46c5acae6d271dbc20ccb0bc12f899e7ff,tensorflower-gardener,2025-07-09 16:44:55+00:00,"Move xla_workspace4() and xla_workspace3() calls above Python init.
+
+python_init_repositories() loads its own version of bazel_skylib, which causes the http_archive() dep in xla_workspace3() to be ignored.
+
+This is how it's already done in TensorFlow.
+
+PiperOrigin-RevId: 781094000",8,8,16,86,0,0,
+b55fe5ec20006e340c0fcb14e9dbd0682c9b72b7,allanrenucci,2025-07-09 16:29:44+00:00,"Inline unique usage of `tsl::internal::LogString`.
+
+PiperOrigin-RevId: 781088440",8,21,29,10,0,0,
+bf866a300c8d3c1d895529cd986dddbd178f833c,WillFroom,2025-07-09 16:03:49+00:00,"[XLA:CPU][XLA:GPU] Add fast min/max rewrite pattern.
+
+PiperOrigin-RevId: 781078198",118,8,126,21,0,0,
+fc95419684a3bbfda985f00d4633b2db308a8a85,basioli-k,2025-07-09 16:01:43+00:00,"[XLA:CPU] Make cpu alignment header public in OSS.
+
+PiperOrigin-RevId: 781077271",1,0,1,6,0,0,
+860e226dad760acc6f0175d2ef8e18df67f82457,basioli-k,2025-07-09 15:49:13+00:00,"[XLA][host offllading] Open source host offloading hlo utils
+
+PiperOrigin-RevId: 781072721",610,0,610,6,0,0,
+37fdda33ae7ae1fd2c8cfb731f707f8806c06cde,mooskagh,2025-07-09 15:33:20+00:00,"[XLA:GPU] [NFC] Move Algebraic Simplifier configs to one place
+
+It was hard to track what simplification runs when, and when you want to enable and disable some transformation, it's hard to find all places you have to touch.
+
+The change is intended to be a NOOP change. The attempt to actually make configs more unified will come in a later change.
+
+PiperOrigin-RevId: 781066663",104,100,204,1,0,0,
+9b4ea517477ade201e38c83b61f1a274d1ab82c5,mkuperst,2025-07-09 14:59:40+00:00,"[XLA] Update comment.
+
+`IdenticalIgnoringChannelIdValues` passes `ignore_commutative_operand_order=true`, like `IdenticalIgnoringCommutativeOperandOrder` and unlike `Identical`.
+
+PiperOrigin-RevId: 781053824",3,2,5,4,0,0,
+fe988098276f38ef187742fbef5e3fc9478dc8b7,Moerafaat,2025-07-09 14:52:04+00:00,"[XLA:GPU/TMA] Extend current autotuner to add TMA optionality to Triton configs.
+
+We also extend block-level and triton-gemm configurations to include a flag for TMA. The flag will be used to enable/disable TMA for all arguments of the kernel, where physically possible.
+
+PiperOrigin-RevId: 781050886",295,87,382,1,0,0,
+be170e760b59697bd7aa63d78fad26fec90aca5f,allanrenucci,2025-07-09 14:35:03+00:00,"[XLA:GPU] Use an enum to represent the GPU topology type.
+
+PiperOrigin-RevId: 781045346",60,56,116,10,0,0,
+8352e38109abdc2198247e60bcd3480f449a9b45,WillFroom,2025-07-09 13:55:35+00:00,"[XLA:CPU] Don't enable verifier by default.
+
+PiperOrigin-RevId: 781031240",32,9,41,21,0,0,
+e0f843603918a21f1a068ec18552b537dd4a7c86,allanrenucci,2025-07-09 13:35:55+00:00,"Remove `third_party/absl/flags/flag.h` header export in TSL logging library.
+
+And fix transitive dependencies.
+
+PiperOrigin-RevId: 781024653",7,3,10,10,0,0,
+94e0f604809b8ddaa69a3fe34ed510d2c1807fbc,akuegel,2025-07-09 13:20:30+00:00,"[XLA:GPU] Handle nested tuples in FusionCanShareBufferHint.
+
+With DynamicSliceFusion enabled, we can have cases where a fusion has a nested
+tuple. So going one step up from the root may not be enough to get to the real
+output.
+Migrate AliasInfo related tests to their own test target.
+
+PiperOrigin-RevId: 781019728",897,835,1732,12,0,0,
+b05583861f895a3bdeb7c057706d00394fb06c3d,tensorflower-gardener,2025-07-09 12:47:57+00:00,"Go: Update generated wrapper functions for TensorFlow ops.
+
+PiperOrigin-RevId: 781009009",8,0,8,86,0,0,
+cc792635229ab2ba91d8a420fde0a86f58042c53,tensorflower-gardener,2025-07-09 12:27:09+00:00,"Reverts 24c2972bdcee3d159f4c72d57ff1c7be8a100e54
+
+PiperOrigin-RevId: 781003055",8,240,248,86,0,0,
+6c2d92fac3cb229f2ce6b10597b1910f6ef548e2,tensorflower-gardener,2025-07-09 12:19:47+00:00,"Update ops-related pbtxt files.
+
+PiperOrigin-RevId: 781000132",103,0,103,86,0,0,
+73e2e89cb12079034158c3ed045316a5f4e47d73,sergey-kozub,2025-07-09 12:17:19+00:00,"PR #28184: Extend `WhileLoopAllReduceCodeMotion` pass with a new pattern (DUS)
+
+Imported from GitHub PR https://github.com/openxla/xla/pull/28184
+
+We're seeing a pattern in Llama3 model (fp8) where all-reduce happens inside the loop, but the results are only used outside of the loop. When there are many participating devices, this could result in a slowdown.
+
+The pass now also matches all-reduces that are scattered into the loop output using ""dynamic-update-slice"" op with the loop induction variable as the index parameter.
+Copybara import of the project:
+
+--
+6075de4340b7273c8d63641aeca88fb5ffd7f4a7 by Sergey Kozub <skozub@nvidia.com>:
+
+Extend `WhileLoopAllReduceCodeMotion` pass with a new pattern (DUS)
+
+Merging this change closes #28184
+
+PiperOrigin-RevId: 780999371",1016,57,1073,1,0,0,
+c465a2d6af262f41a7c12c5eda8fc2fdc92284c4,basioli-k,2025-07-09 11:25:13+00:00,"[tfcompile] Improve initialization time for models compiled with the thunk runtime.
+
+Optimizations made
+- don't copy constants for initialization
+- don't allocate memory for constants (since we're not copying into it)
+- don't keep a copy of the function symbols hash map
+
+PiperOrigin-RevId: 780984664",36,21,57,6,0,0,
+54295f102bed36ab35d9355a84ed505daf1df160,gflegar,2025-07-09 11:21:15+00:00,"Reduce warning level for incompatible default tile set to info
+
+PiperOrigin-RevId: 780983462",4,4,8,1,0,0,
+0076e3e2a7183e8d39854bdbfad582eb0438ba8a,ZixuanJiang,2025-07-09 11:01:33+00:00,"Add `use_shardy_partitioner` in `tf.tpu.XlaOptions`, `TPUReplicateMetadata`. The default value is false.
+
+PiperOrigin-RevId: 780975971",41,11,52,1,0,0,
