@@ -1,157 +1,264 @@
 from django.shortcuts import render, get_object_or_404
 from django.http import JsonResponse
-from django.db.models import Avg, Sum, Count, Max, Min, Q
+from django.db.models import Count, Sum, Avg, Min, Max, Q
+from django.core.paginator import Paginator
 from django.utils import timezone
-from datetime import datetime, timedelta
-from .models import Developer, ProductivityMetric, Project
+from datetime import datetime
+import json
+
+from .models import LinuxKernelCommit, BatchStatistics
 
 
 def index(request):
-    return dashboard_view(request)
-
-
-def dashboard_view(request):
     """
-    Main dashboard view showing productivity overview.
+    Main dashboard showing TORQUE clustering overview.
     """
-    # Get recent metrics (last 30 days)
-    thirty_days_ago = timezone.now().date() - timedelta(days=30)
-    recent_metrics = ProductivityMetric.objects.filter(date__gte=thirty_days_ago)
+    # Get basic statistics
+    total_commits = LinuxKernelCommit.objects.count()
+    total_batches = LinuxKernelCommit.objects.values('batch_id').distinct().count()
+    total_authors = LinuxKernelCommit.objects.values('author_email').distinct().count()
+    
+    # Get recent batches for quick view
+    recent_batches = (
+        LinuxKernelCommit.objects
+        .values('batch_id')
+        .annotate(
+            commit_count=Count('hash'),
+            total_insertions=Sum('insertions'),
+            total_deletions=Sum('deletions'),
+            author_name=Min('author_name'),
+            start_time=Min('commit_timestamp'),
+            end_time=Max('commit_timestamp')
+        )
+        .order_by('-batch_id')[:10]
+    )
     
     # Calculate summary statistics
-    total_developers = Developer.objects.count()
-    total_projects = Project.objects.filter(is_active=True).count()
-    total_commits = recent_metrics.aggregate(Sum('commit_count'))['commit_count__sum'] or 0
-    avg_productivity = recent_metrics.aggregate(Avg('productivity_score'))['productivity_score__avg'] or 0
-    
-    # Get top performers
-    top_developers = Developer.objects.annotate(
-        total_commits=Sum('metrics__commit_count', filter=Q(metrics__date__gte=thirty_days_ago)),
-        avg_productivity=Avg('metrics__productivity_score', filter=Q(metrics__date__gte=thirty_days_ago))
-    ).filter(total_commits__gt=0).order_by('-avg_productivity')[:5]
-    
-    # Get recent activity
-    recent_activity = recent_metrics.select_related('developer').order_by('-date')[:10]
+    avg_commits_per_batch = total_commits / total_batches if total_batches > 0 else 0
     
     context = {
-        'total_developers': total_developers,
-        'total_projects': total_projects,
         'total_commits': total_commits,
-        'avg_productivity': round(avg_productivity, 2) if avg_productivity else 0,
-        'top_developers': top_developers,
-        'recent_activity': recent_activity,
+        'total_batches': total_batches,
+        'total_authors': total_authors,
+        'avg_commits_per_batch': round(avg_commits_per_batch, 2),
+        'recent_batches': recent_batches,
+        'page_title': 'TORQUE Clustering Dashboard'
     }
     
     return render(request, 'dashboard.html', context)
 
 
-def developer_list_view(request):
+def batch_list(request):
     """
-    View to display all developers with their statistics.
+    Display list of all batches with pagination and statistics.
     """
-    developers = Developer.objects.annotate(
-        total_commits=Sum('metrics__commit_count'),
-        avg_productivity=Avg('metrics__productivity_score'),
-        total_lines_added=Sum('metrics__lines_added'),
-        total_lines_deleted=Sum('metrics__lines_deleted'),
-        latest_activity=Max('metrics__date')
-    ).order_by('name')
-    
-    context = {
-        'developers': developers,
-    }
-    
-    return render(request, 'developer_list.html', context)
-
-
-def developer_detail_view(request, developer_id):
-    """
-    Detailed view for a specific developer.
-    """
-    developer = get_object_or_404(Developer, id=developer_id)
-    
-    # Get metrics for the last 30 days
-    thirty_days_ago = timezone.now().date() - timedelta(days=30)
-    metrics = developer.metrics.filter(date__gte=thirty_days_ago).order_by('-date')
-    
-    # Calculate statistics
-    stats = metrics.aggregate(
-        total_commits=Sum('commit_count'),
-        avg_productivity=Avg('productivity_score'),
-        total_lines_added=Sum('lines_added'),
-        total_lines_deleted=Sum('lines_deleted'),
-        max_productivity=Max('productivity_score'),
-        min_productivity=Min('productivity_score')
+    # Get batch statistics
+    batches = (
+        LinuxKernelCommit.objects
+        .values('batch_id')
+        .annotate(
+            commit_count=Count('hash'),
+            total_insertions=Sum('insertions'),
+            total_deletions=Sum('deletions'),
+            total_files=Sum('files_changed'),
+            author_name=Min('author_name'),
+            author_email=Min('author_email'),
+            start_time=Min('commit_timestamp'),
+            end_time=Max('commit_timestamp'),
+            merge_count=Count('hash', filter=Q(is_merge=True))
+        )
+        .order_by('batch_id')
     )
     
-    context = {
-        'developer': developer,
-        'metrics': metrics,
-        'stats': stats,
-    }
+    # Add calculated fields
+    for batch in batches:
+        batch['total_changes'] = batch['total_insertions'] + batch['total_deletions']
+        if batch['start_time'] and batch['end_time']:
+            duration = (batch['end_time'] - batch['start_time']).total_seconds()
+            batch['duration_minutes'] = round(duration / 60, 1)
+        else:
+            batch['duration_minutes'] = 0
+        
+        batch['avg_changes_per_commit'] = (
+            round(batch['total_changes'] / batch['commit_count'], 1) 
+            if batch['commit_count'] > 0 else 0
+        )
     
-    return render(request, 'developer_detail.html', context)
-
-
-def productivity_metrics_view(request):
-    """
-    View to display productivity metrics in a table format.
-    """
-    # Get all metrics ordered by date (most recent first)
-    metrics = ProductivityMetric.objects.select_related('developer').order_by('-date', 'developer__name')
-    
-    # Add pagination if needed
-    from django.core.paginator import Paginator
-    paginator = Paginator(metrics, 50)  # Show 50 metrics per page
+    # Pagination
+    paginator = Paginator(batches, 20)  # Show 20 batches per page
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
     
     context = {
         'page_obj': page_obj,
-        'metrics': page_obj.object_list,
+        'total_batches': len(batches),
+        'page_title': 'All Batches'
     }
     
-    return render(request, 'metrics.html', context)
+    return render(request, 'batch_list.html', context)
 
 
-def api_productivity_data(request):
+def batch_detail(request, batch_id):
     """
-    API endpoint to get productivity data for charts.
+    Display detailed view of a specific batch.
     """
-    # Get data for the last 30 days
-    thirty_days_ago = timezone.now().date() - timedelta(days=30)
-    metrics = ProductivityMetric.objects.filter(date__gte=thirty_days_ago)
+    # Get all commits in this batch
+    commits = (
+        LinuxKernelCommit.objects
+        .filter(batch_id=batch_id)
+        .order_by('commit_timestamp')
+    )
     
-    # Aggregate data by date
-    daily_data = metrics.values('date').annotate(
-        total_commits=Sum('commit_count'),
-        avg_productivity=Avg('productivity_score'),
-        total_lines_added=Sum('lines_added'),
-        total_lines_deleted=Sum('lines_deleted')
-    ).order_by('date')
+    if not commits.exists():
+        return render(request, '404.html', {'message': f'Batch {batch_id} not found'})
     
-    # Aggregate data by developer
-    developer_data = metrics.values('developer__name').annotate(
-        total_commits=Sum('commit_count'),
-        avg_productivity=Avg('productivity_score'),
-        total_lines_added=Sum('lines_added'),
-        total_lines_deleted=Sum('lines_deleted')
-    ).order_by('-avg_productivity')
+    # Calculate batch statistics
+    batch_stats = commits.aggregate(
+        commit_count=Count('hash'),
+        total_insertions=Sum('insertions'),
+        total_deletions=Sum('deletions'),
+        total_files=Sum('files_changed'),
+        start_time=Min('commit_timestamp'),
+        end_time=Max('commit_timestamp'),
+        merge_count=Count('hash', filter=Q(is_merge=True))
+    )
     
-    return JsonResponse({
-        'daily_data': list(daily_data),
-        'developer_data': list(developer_data),
-    })
-
-
-def projects_view(request):
-    """
-    View to display all projects.
-    """
-    projects = Project.objects.all().order_by('name')
+    # Get primary author (most commits in batch)
+    author_stats = (
+        commits.values('author_name', 'author_email')
+        .annotate(commit_count=Count('hash'))
+        .order_by('-commit_count')
+        .first()
+    )
+    
+    # Calculate duration
+    if batch_stats['start_time'] and batch_stats['end_time']:
+        duration = (batch_stats['end_time'] - batch_stats['start_time']).total_seconds()
+        batch_stats['duration_minutes'] = round(duration / 60, 1)
+    else:
+        batch_stats['duration_minutes'] = 0
+    
+    batch_stats['total_changes'] = batch_stats['total_insertions'] + batch_stats['total_deletions']
+    
+    # Get unique directories and file types
+    all_dirs = []
+    all_file_types = []
+    for commit in commits:
+        if commit.dirs_touched:
+            all_dirs.extend(commit.dirs_list)
+        if commit.file_types:
+            all_file_types.extend(commit.file_types_list)
+    
+    unique_dirs = list(set(all_dirs))
+    unique_file_types = list(set(all_file_types))
     
     context = {
-        'projects': projects,
+        'batch_id': batch_id,
+        'commits': commits,
+        'batch_stats': batch_stats,
+        'author_stats': author_stats,
+        'unique_dirs': sorted(unique_dirs),
+        'unique_file_types': sorted(unique_file_types),
+        'page_title': f'Batch {batch_id} Details'
     }
     
-    return render(request, 'projects.html', context) 
+    return render(request, 'batch_detail.html', context)
+
+
+def commit_detail(request, commit_hash):
+    """
+    Display detailed view of a specific commit.
+    """
+    commit = get_object_or_404(LinuxKernelCommit, hash=commit_hash)
+    
+    # Get related commits in the same batch
+    batch_commits = (
+        LinuxKernelCommit.objects
+        .filter(batch_id=commit.batch_id)
+        .exclude(hash=commit_hash)
+        .order_by('commit_timestamp')[:10]
+    )
+    
+    context = {
+        'commit': commit,
+        'batch_commits': batch_commits,
+        'page_title': f'Commit {commit.short_hash}'
+    }
+    
+    return render(request, 'commit_detail.html', context)
+
+
+def clustering_analytics(request):
+    """
+    Display clustering analytics and statistics.
+    """
+    # Batch size distribution
+    batch_sizes = list(
+        LinuxKernelCommit.objects
+        .values('batch_id')
+        .annotate(size=Count('hash'))
+        .values_list('size', flat=True)
+    )
+    
+    # Author productivity by batch
+    author_batch_stats = (
+        LinuxKernelCommit.objects
+        .values('author_name')
+        .annotate(
+            batch_count=Count('batch_id', distinct=True),
+            total_commits=Count('hash'),
+            avg_insertions=Avg('insertions'),
+            avg_deletions=Avg('deletions')
+        )
+        .order_by('-total_commits')[:20]
+    )
+    
+    # Timeline data for visualization
+    timeline_data = list(
+        LinuxKernelCommit.objects
+        .values('batch_id')
+        .annotate(
+            start_time=Min('commit_timestamp'),
+            commit_count=Count('hash'),
+            author=Min('author_name')
+        )
+        .order_by('start_time')
+    )
+    
+    # Convert datetime to timestamp for JavaScript
+    for item in timeline_data:
+        if item['start_time']:
+            item['timestamp'] = int(item['start_time'].timestamp() * 1000)
+    
+    context = {
+        'batch_sizes': batch_sizes,
+        'author_stats': author_batch_stats,
+        'timeline_data': json.dumps(timeline_data),
+        'page_title': 'Clustering Analytics'
+    }
+    
+    return render(request, 'analytics.html', context)
+
+
+def api_batch_data(request):
+    """
+    API endpoint for batch data (for charts/AJAX).
+    """
+    batches = list(
+        LinuxKernelCommit.objects
+        .values('batch_id')
+        .annotate(
+            commit_count=Count('hash'),
+            total_changes=Sum('insertions') + Sum('deletions'),
+            author=Min('author_name'),
+            start_time=Min('commit_timestamp')
+        )
+        .order_by('batch_id')
+    )
+    
+    # Convert datetime to string for JSON serialization
+    for batch in batches:
+        if batch['start_time']:
+            batch['start_time'] = batch['start_time'].isoformat()
+    
+    return JsonResponse({'batches': batches}) 

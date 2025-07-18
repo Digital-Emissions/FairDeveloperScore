@@ -1,0 +1,262 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ page_title }} - TORQUE Clustering{% endblock %}
+
+{% block content %}
+<div class="row mb-4">
+    <div class="col-12">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{% url 'index' %}">Dashboard</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'batch_list' %}">Batches</a></li>
+                <li class="breadcrumb-item active">Batch {{ batch_id }}</li>
+            </ol>
+        </nav>
+        
+        <h1 class="mb-0">
+            <i class="fas fa-layer-group text-primary me-2"></i>
+            Batch {{ batch_id }} Details
+        </h1>
+        <p class="text-muted">{{ batch_stats.commit_count }} commits by {{ author_stats.author_name }}</p>
+    </div>
+</div>
+
+<!-- Batch Statistics -->
+<div class="row mb-4">
+    <div class="col-md-3">
+        <div class="card bg-primary text-white">
+            <div class="card-body text-center">
+                <i class="fas fa-code-commit fa-2x mb-2"></i>
+                <h3>{{ batch_stats.commit_count }}</h3>
+                <p class="mb-0">Commits</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card bg-success text-white">
+            <div class="card-body text-center">
+                <i class="fas fa-file fa-2x mb-2"></i>
+                <h3>{{ batch_stats.total_files }}</h3>
+                <p class="mb-0">Files Changed</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card bg-info text-white">
+            <div class="card-body text-center">
+                <i class="fas fa-code fa-2x mb-2"></i>
+                <h3>{{ batch_stats.total_changes }}</h3>
+                <p class="mb-0">Total Changes</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card bg-warning text-white">
+            <div class="card-body text-center">
+                <i class="fas fa-clock fa-2x mb-2"></i>
+                <h3>{{ batch_stats.duration_minutes }}</h3>
+                <p class="mb-0">Minutes</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <!-- Batch Information -->
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">
+                    <i class="fas fa-info-circle me-2"></i>
+                    Batch Information
+                </h5>
+            </div>
+            <div class="card-body">
+                <dl class="row">
+                    <dt class="col-sm-5">Author:</dt>
+                    <dd class="col-sm-7">
+                        <strong>{{ author_stats.author_name }}</strong>
+                        <br>
+                        <small class="text-muted">{{ author_stats.author_email }}</small>
+                    </dd>
+                    
+                    <dt class="col-sm-5">Start Time:</dt>
+                    <dd class="col-sm-7">
+                        {{ batch_stats.start_time|date:"M d, Y H:i" }}
+                    </dd>
+                    
+                    <dt class="col-sm-5">End Time:</dt>
+                    <dd class="col-sm-7">
+                        {{ batch_stats.end_time|date:"M d, Y H:i" }}
+                    </dd>
+                    
+                    <dt class="col-sm-5">Duration:</dt>
+                    <dd class="col-sm-7">
+                        {% if batch_stats.duration_minutes > 0 %}
+                            {{ batch_stats.duration_minutes }} minutes
+                        {% else %}
+                            Instant
+                        {% endif %}
+                    </dd>
+                    
+                    <dt class="col-sm-5">Insertions:</dt>
+                    <dd class="col-sm-7">
+                        <span class="text-success">+{{ batch_stats.total_insertions }}</span>
+                    </dd>
+                    
+                    <dt class="col-sm-5">Deletions:</dt>
+                    <dd class="col-sm-7">
+                        <span class="text-danger">-{{ batch_stats.total_deletions }}</span>
+                    </dd>
+                    
+                    <dt class="col-sm-5">Merge Commits:</dt>
+                    <dd class="col-sm-7">
+                        {% if batch_stats.merge_count > 0 %}
+                            <span class="badge bg-warning">{{ batch_stats.merge_count }}</span>
+                        {% else %}
+                            <span class="text-muted">None</span>
+                        {% endif %}
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        
+        <!-- Directories & File Types -->
+        <div class="card mt-3">
+            <div class="card-header">
+                <h6 class="mb-0">
+                    <i class="fas fa-folder me-2"></i>
+                    Directories & File Types
+                </h6>
+            </div>
+            <div class="card-body">
+                <div class="mb-3">
+                    <strong>Directories:</strong>
+                    <div class="mt-1">
+                        {% for dir in unique_dirs %}
+                            <span class="badge bg-secondary me-1 mb-1">{{ dir }}</span>
+                        {% empty %}
+                            <span class="text-muted">None</span>
+                        {% endfor %}
+                    </div>
+                </div>
+                
+                <div>
+                    <strong>File Types:</strong>
+                    <div class="mt-1">
+                        {% for type in unique_file_types %}
+                            <span class="badge bg-info me-1 mb-1">{{ type }}</span>
+                        {% empty %}
+                            <span class="text-muted">None</span>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Commits List -->
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">
+                    <i class="fas fa-list me-2"></i>
+                    Commits in This Batch
+                </h5>
+            </div>
+            <div class="card-body">
+                {% if commits %}
+                    <div class="table-responsive">
+                        <table class="table table-sm">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>Hash</th>
+                                    <th>Message</th>
+                                    <th>Files</th>
+                                    <th>Changes</th>
+                                    <th>Time</th>
+                                    <th>Type</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for commit in commits %}
+                                <tr>
+                                    <td>
+                                        <a href="{% url 'commit_detail' commit.hash %}" 
+                                           class="commit-hash text-decoration-none">
+                                            {{ commit.short_hash }}
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <div class="text-truncate" style="max-width: 300px;" 
+                                             title="{{ commit.msg_subject }}">
+                                            {{ commit.msg_subject|truncatechars:60 }}
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="badge bg-light text-dark">{{ commit.files_changed }}</span>
+                                    </td>
+                                    <td>
+                                        <small>
+                                            <span class="text-success">+{{ commit.insertions }}</span>
+                                            <span class="text-danger">-{{ commit.deletions }}</span>
+                                        </small>
+                                    </td>
+                                    <td>
+                                        <small class="text-muted">
+                                            {{ commit.commit_timestamp|time:"H:i:s" }}
+                                        </small>
+                                    </td>
+                                    <td>
+                                        {% if commit.is_merge %}
+                                            <span class="badge bg-warning">Merge</span>
+                                        {% else %}
+                                            <span class="badge bg-secondary">Regular</span>
+                                        {% endif %}
+                                    </td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                {% else %}
+                    <p class="text-muted">No commits found in this batch.</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Action Buttons -->
+<div class="row mt-4">
+    <div class="col-12">
+        <div class="d-flex gap-2">
+            <a href="{% url 'batch_list' %}" class="btn btn-secondary">
+                <i class="fas fa-arrow-left me-2"></i>
+                Back to Batches
+            </a>
+            
+            {% if commits %}
+                <!-- Previous Batch -->
+                {% if batch_id > 0 %}
+                    <a href="{% url 'batch_detail' batch_id|add:'-1' %}" class="btn btn-outline-primary">
+                        <i class="fas fa-chevron-left me-2"></i>
+                        Previous Batch
+                    </a>
+                {% endif %}
+                
+                <!-- Next Batch -->
+                <a href="{% url 'batch_detail' batch_id|add:'1' %}" class="btn btn-outline-primary">
+                    Next Batch
+                    <i class="fas fa-chevron-right ms-2"></i>
+                </a>
+            {% endif %}
+            
+            <a href="{% url 'analytics' %}" class="btn btn-success">
+                <i class="fas fa-chart-bar me-2"></i>
+                View Analytics
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %} 

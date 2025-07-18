@@ -59,7 +59,7 @@ f8b53cc9174c5980549f60c972faad82b660b62d,Vitaly Kuznetsov,vkuznets@redhat.com,17
 51a4598ad5d9eb6be4ec9ba65bbfdf0ac302eb2e,Jens Axboe,axboe@kernel.dk,1750430025,10651,,1,1,1,0,io_uring,c,io_uring/net: always use current transfer count for buffer put
 417b8af2e30d7f131682a893ad79c506fd39c624,Gao Xiang,hsiangkao@linux.alibaba.com,1750434072,4047,,1,0,6,0,fs,c,erofs: remove a superfluous check for encoded extents
 89a33de314945c866b155d369f224fa552af1722,Kiran K,kiran.k@intel.com,1750434655,583,,1,31,2,0,drivers,c,Bluetooth: btintel_pcie: Fix potential race condition in firmware download
-042bb9603c44620dce98717a2d23235ca57a00d7,Frédéric Danis,frederic.danis@collabora.com,1750434888,233,,1,8,1,0,net,c,Bluetooth: L2CAP: Fix L2CAP MTU negotiation
+042bb9603c44620dce98717a2d23235ca57a00d7,Fr?d?ric Danis,frederic.danis@collabora.com,1750434888,233,,1,8,1,0,net,c,Bluetooth: L2CAP: Fix L2CAP MTU negotiation
 db0ff7e15923ffa7067874604ca275e92343f1b1,Shuai Zhang,quic_shuaz@quicinc.com,1750434903,15,,1,10,3,0,drivers,c,driver: bluetooth: hci_qca:fix unable to load the BT driver
 d41fef1ce2f3cd9df128d2c3cf6d91ce15130daf,Linus Torvalds,torvalds@linux-foundation.org,1750438464,3561,37489,4,7,4,1,Documentation;arch,c;rst,Merge tag 'arm64-fixes' of git://git.kernel.org/pub/scm/linux/kernel/git/arm64/linux
 299f489f5bad3554531f67335d1762225448ff39,Linus Torvalds,torvalds@linux-foundation.org,1750438760,296,296,19,207,37,1,Documentation;sound,c;h;noext;rst,Merge tag 'sound-6.16-rc3' of git://git.kernel.org/pub/scm/linux/kernel/git/tiwai/sound
@@ -145,16 +145,16 @@ aa485e8789d56a4573f7c8d000a182b749eaa64d,Yuan Chen,chenyuan@kylinos.cn,175070242
 f5990207026987a353d5a95204c4d9cb725637fd,Breno Leitao,leitao@debian.org,1750709691,7093,,1,1,1,0,net,c,net: netpoll: Initialize UDP checksum field before checksumming
 2b8be57fa0c88ac824a906f29c04d728f9f6047a,Zhe Qiao,qiaozhe@iscas.ac.cn,1750709745,54,,1,10,13,0,drivers,c,"Revert ""PCI/ACPI: Fix allocated memory release on error in pci_acpi_scan_root()"""
 cb0de0e220d2233a84a2ff1afb8ffba7597d02fa,Linus Torvalds,torvalds@linux-foundation.org,1750715740,5995,13142,2,38,1,1,fs,c,Merge tag 'f2fs-for-6.16-rc4' of git://git.kernel.org/pub/scm/linux/kernel/git/jaegeuk/f2fs
-002cc0ee90e6172ef40ae95c248bf6ce67fb3f3f,André Draszik,andre.draszik@linaro.org,1750715919,179,,1,6,4,0,drivers,c,rtc: s5m: cache device type during probe
-a57743bf009e788ada3607ac6b74ae9ebbd4ed74,André Draszik,andre.draszik@linaro.org,1750715919,0,0,1,45,36,0,drivers,c,rtc: s5m: prepare for external regmap
-e64180846e7e4397938bbd0acf0640836f0f8051,André Draszik,andre.draszik@linaro.org,1750715920,1,1,1,60,0,0,drivers,c,rtc: s5m: add support for S2MPG10 RTC
-972a3b47f6e191a0c5afcc45f4de74bf3d043a75,André Draszik,andre.draszik@linaro.org,1750715920,0,0,1,3,3,0,drivers,c,rtc: s5m: fix a typo: peding -> pending
-1dd609587414f8b2844e551d1fe0505f12871992,André Draszik,andre.draszik@linaro.org,1750715920,0,0,1,5,1,0,drivers,c,rtc: s5m: switch to devm_device_init_wakeup
-f5adb1fa04d08731a13db48afafd1a5f4384d3c9,André Draszik,andre.draszik@linaro.org,1750715920,0,0,1,4,6,0,drivers,c,rtc: s5m: replace regmap_update_bits with regmap_clear/set_bits
-b1248da008362323f75e8b84874586e9ea4c0b31,André Draszik,andre.draszik@linaro.org,1750715920,0,0,1,7,21,0,drivers,c,rtc: s5m: replace open-coded read/modify/write registers with regmap helpers
+002cc0ee90e6172ef40ae95c248bf6ce67fb3f3f,Andr? Draszik,andre.draszik@linaro.org,1750715919,179,,1,6,4,0,drivers,c,rtc: s5m: cache device type during probe
+a57743bf009e788ada3607ac6b74ae9ebbd4ed74,Andr? Draszik,andre.draszik@linaro.org,1750715919,0,0,1,45,36,0,drivers,c,rtc: s5m: prepare for external regmap
+e64180846e7e4397938bbd0acf0640836f0f8051,Andr? Draszik,andre.draszik@linaro.org,1750715920,1,1,1,60,0,0,drivers,c,rtc: s5m: add support for S2MPG10 RTC
+972a3b47f6e191a0c5afcc45f4de74bf3d043a75,Andr? Draszik,andre.draszik@linaro.org,1750715920,0,0,1,3,3,0,drivers,c,rtc: s5m: fix a typo: peding -> pending
+1dd609587414f8b2844e551d1fe0505f12871992,Andr? Draszik,andre.draszik@linaro.org,1750715920,0,0,1,5,1,0,drivers,c,rtc: s5m: switch to devm_device_init_wakeup
+f5adb1fa04d08731a13db48afafd1a5f4384d3c9,Andr? Draszik,andre.draszik@linaro.org,1750715920,0,0,1,4,6,0,drivers,c,rtc: s5m: replace regmap_update_bits with regmap_clear/set_bits
+b1248da008362323f75e8b84874586e9ea4c0b31,Andr? Draszik,andre.draszik@linaro.org,1750715920,0,0,1,7,21,0,drivers,c,rtc: s5m: replace open-coded read/modify/write registers with regmap helpers
 78f4e737a53e1163ded2687a922fce138aee73f5,Linus Torvalds,torvalds@linux-foundation.org,1750716177,257,437,4,14,5,1,drivers;include,c;h,Merge tag 'for-6.16/dm-fixes' of git://git.kernel.org/pub/scm/linux/kernel/git/device-mapper/linux-dm
 10357824151262636fda879845f8b64553541106,Chaoyi Chen,chaoyi.chen@rock-chips.com,1750717041,864,,1,5,2,0,drivers,c,drm/bridge-connector: Fix bridge in drm_connector_hdmi_audio_init()
-00a39d8652ff9088de07a6fe6e9e1893452fe0dd,Mateusz Jończyk,mat.jonczyk@o2.pl,1750717671,630,,1,6,4,0,drivers,c,rtc: cmos: use spin_lock_irqsave in cmos_interrupt
+00a39d8652ff9088de07a6fe6e9e1893452fe0dd,Mateusz Jo?czyk,mat.jonczyk@o2.pl,1750717671,630,,1,6,4,0,drivers,c,rtc: cmos: use spin_lock_irqsave in cmos_interrupt
 2f73c62d4e13df67380ff6faca39eec2bf08dd93,Nam Cao,namcao@linutronix.de,1750718289,618,43016,1,2,2,0,arch,c,"Revert ""riscv: misaligned: fix sleeping function called during misaligned access handling"""
 b0843f836126c980fb31923563c86ec52e8b9514,Alexandre Ghiti,alexghiti@rivosinc.com,1750719479,1190,,1,1,1,0,arch,c,riscv: Fix sparse warning in vendor_extensions/sifive.c
 890ba5be6335dbbbc99af14ea007befb5f83f174,Nam Cao,namcao@linutronix.de,1750719623,144,1334,1,0,1,0,arch,h,"Revert ""riscv: Define TASK_SIZE_MAX for __access_ok()"""
@@ -300,7 +300,7 @@ b160a5cc6ac761f341e58e48ae3f03a04d310677,Zijun Hu,zijun.hu@oss.qualcomm.com,1750
 c9e8efa0b384c43670852f955567b31a5eb4ac2b,Zijun Hu,zijun.hu@oss.qualcomm.com,1750892104,0,0,1,1,0,0,.mailmap,noext,mailmap: correct name for a historical account of Zijun Hu
 b6f5e748587063d4ad3294d07ca29886851d9cd7,Arnd Bergmann,arnd@arndb.de,1750892104,0,55908,1,1,0,0,kernel,kexec,crashdump: add CONFIG_KEYS dependency
 7c942f87cc0be5699b1ce434d369eccd8b5321d4,Dev Jain,dev.jain@arm.com,1750892104,0,500822,1,5,2,0,tools,c,selftests/mm: fix validate_addr() helper
-02d67850aecaf2306d849a3c804a125bb4f9c5f6,Duje Mihanović,duje@dujemihanovic.xyz,1750892104,0,,1,1,0,0,.mailmap,noext,mailmap: update Duje Mihanović's email address
+02d67850aecaf2306d849a3c804a125bb4f9c5f6,Duje Mihanovi?,duje@dujemihanovic.xyz,1750892104,0,,1,1,0,0,.mailmap,noext,mailmap: update Duje Mihanovi?'s email address
 c0cb210a87fcdda3c25f43b5a64420e6b07d3f53,Lorenzo Stoakes,lorenzo.stoakes@oracle.com,1750892104,0,1,1,1,1,0,MAINTAINERS,noext,MAINTAINERS: add Lorenzo as THP co-maintainer
 a433791aeaea6e84df709e0b9584b9bbe040cd1c,Kuniyuki Iwashima,kuniyu@google.com,1750895019,2915,142412,1,1,2,0,net,c,atm: Release atm_dev_mutex after removing procfs in atm_dev_deregister().
 c5c2a8b497d69fb01d2563e383615a4eb69c72bc,Linus Torvalds,torvalds@linux-foundation.org,1750909728,14709,32084,5,111,84,1,Documentation;fs;include;kernel,c;h;rst,Merge tag 'pull-fixes' of git://git.kernel.org/pub/scm/linux/kernel/git/viro/vfs
@@ -417,7 +417,7 @@ aaf724ed69264719550ec4f194d3ab17b886af9a,Linus Torvalds,torvalds@linux-foundatio
 80e08394377559ed5a2ccadd861e62d24b826911,SCHNEIDER Johannes,johannes.schneider@leica-geosystems.com,1751123996,16448,,1,1,1,0,drivers,c,usb: dwc3: gadget: Fix TRB reclaim logic for short transfers and ZLPs
 cbc889ab0122366f6cdbe3c28d477c683ebcebc2,Raju Rangoju,raju.rangoju@amd.com,1751123997,1,,3,30,0,0,drivers,c;h,usb: xhci: quirk for data loss in ISOC transfers
 cd65ee81240e8bc3c3119b46db7f60c80864b90b,Hongyu Xie,xiehongyu1@kylinos.cn,1751124001,4,,1,2,1,0,drivers,c,xhci: Disable stream for xHC controller with XHCI_BROKEN_STREAMS
-2b857d69a5e116150639a0c6c39c86cc329939ee,Łukasz Bartosik,ukaszb@chromium.org,1751124022,21,,1,1,0,0,drivers,c,xhci: dbctty: disable ECHO flag by default
+2b857d69a5e116150639a0c6c39c86cc329939ee,?ukasz Bartosik,ukaszb@chromium.org,1751124022,21,,1,1,0,0,drivers,c,xhci: dbctty: disable ECHO flag by default
 efe3e3ae5a66cb38ef29c909e951b4039044bae9,Mathias Nyman,mathias.nyman@linux.intel.com,1751124025,3,174166,1,4,0,0,drivers,c,xhci: dbc: Flush queued requests before stopping dbc
 45537926dd2aaa9190ac0fac5a0fbeefcadfea95,Niklas Schnelle,schnelle@linux.ibm.com,1751129939,5914,,1,11,0,0,arch,c,s390/pci: Fix stale function handles in error handling
 b97a7972b1f4f81417840b9a2ab0c19722b577d5,Niklas Schnelle,schnelle@linux.ibm.com,1751129939,0,0,1,4,0,0,arch,c,s390/pci: Do not try re-enabling load/store if device is disabled
@@ -426,10 +426,10 @@ b97a7972b1f4f81417840b9a2ab0c19722b577d5,Niklas Schnelle,schnelle@linux.ibm.com,
 ded779017ad78fc9df3e9d9ae0e39d2e73865851,Linus Torvalds,torvalds@linux-foundation.org,1751135964,253,253,1,7,7,1,kernel,c,Merge tag 'trace-v6.16-rc3' of git://git.kernel.org/pub/scm/linux/kernel/git/trace/linux-trace
 dfba48a70cb68888efb494c9642502efe73614ed,Linus Torvalds,torvalds@linux-foundation.org,1751149397,13433,13433,10,40,7,1,MAINTAINERS;drivers;include,c;h;noext,Merge tag 'i2c-for-6.16-rc4' of git://git.kernel.org/pub/scm/linux/kernel/git/wsa/linux
 14da58521ee5b31976f5b5b437438b8f28f9ba51,Kent Overstreet,kent.overstreet@linux.dev,1751172472,23075,261996,1,1,1,0,fs,c,bcachefs: fix btree_trans_peek_prev_journal()
-18665eaa2acbe17da11c2748ac43c2f4ec2fad85,Thomas Weißschuh,thomas.weissschuh@linutronix.de,1751183893,11421,,2,17,17,0,drivers,c,drm/exynos: Don't use %pK through printk
+18665eaa2acbe17da11c2748ac43c2f4ec2fad85,Thomas Wei?schuh,thomas.weissschuh@linutronix.de,1751183893,11421,,2,17,17,0,drivers,c,drm/exynos: Don't use %pK through printk
 b846350aa272de99bf6fecfa6b08e64ebfb13173,Kaustabh Chakraborty,kauschluss@disroot.org,1751183896,3,,1,4,0,0,drivers,c,drm/exynos: exynos7_drm_decon: add vblank check in IRQ handling
 5d91394f236167ac624b823820faf4aa928b889e,Marek Szyprowski,m.szyprowski@samsung.com,1751183896,0,,1,12,0,0,drivers,c,drm/exynos: fimd: Guard display clock control with runtime PM calls
-2ab3ba39153dcdc9de7d2eec42bf19f84d4844cf,Thomas Weißschuh,thomas.weissschuh@linutronix.de,1751187951,4055,4058,1,2,2,0,drivers,c,drm/bridge: samsung-dsim: Don't use %pK through printk
+2ab3ba39153dcdc9de7d2eec42bf19f84d4844cf,Thomas Wei?schuh,thomas.weissschuh@linutronix.de,1751187951,4055,4058,1,2,2,0,drivers,c,drm/bridge: samsung-dsim: Don't use %pK through printk
 e0a911ac86857a73182edde9e50d9b4b949b7f01,Daniel Dadap,ddadap@nvidia.com,1751188589,638,,1,19,0,0,sound,c,ALSA: hda: Add missing NVIDIA HDA codec IDs
 ce174b48aebb3fa18fe48c59a3d10a89c414fdf2,Edip Hazuri,edip@medip.dev,1751188622,33,,1,1,0,0,sound,c,ALSA: hda/realtek - Add mute LED support for HP Victus 15-fb2xxx
 e5d110fec068c7708002f4f372bf9ecdc1bc3da2,Johannes Berg,johannes.berg@intel.com,1751194889,6267,174776,1,4,2,0,drivers,c,wifi: iwlwifi: pcie: fix locking on invalid TOP reset
@@ -479,8 +479,8 @@ e1af6f0146d64fc4fb142504ba128a97cd171558,Pratap Nirujogi,pratap.nirujogi@amd.com
 b1c26e059536d8acbf9d508374f4b76537e20fb7,Mario Limonciello,mario.limonciello@amd.com,1751280131,5272,227836,4,3,3,0,arch;drivers;include,c;h,Move FCH header to a location accessible by all archs
 af14ed3fcb2703d1185bf10531fee87e6e1cc60b,Mario Limonciello,mario.limonciello@amd.com,1751280134,3,3,1,1,1,0,drivers,noext,i2c: Re-enable piix4 driver on non-x86
 644bec18e705ca41d444053407419a21832fcb2f,Alok Tiwari,alok.a.tiwari@oracle.com,1751281615,1481,16510,1,1,1,0,drivers,c,platform/mellanox: mlxreg-lc: Fix logic error in power state check
-2b95a7db6e0f75587bffddbb490399cbb87e4985,Christian König,christian.koenig@amd.com,1751282144,529,,1,7,5,0,drivers,c,dma-buf: fix timeout handling in dma_resv_wait_timeout v2
-97e000acf2e20a86a50a0ec8c2739f0846f37509,Christian König,christian.koenig@amd.com,1751282788,644,644,1,7,6,0,drivers,c,drm/ttm: fix error handling in ttm_buffer_object_transfer
+2b95a7db6e0f75587bffddbb490399cbb87e4985,Christian K?nig,christian.koenig@amd.com,1751282144,529,,1,7,5,0,drivers,c,dma-buf: fix timeout handling in dma_resv_wait_timeout v2
+97e000acf2e20a86a50a0ec8c2739f0846f37509,Christian K?nig,christian.koenig@amd.com,1751282788,644,644,1,7,6,0,drivers,c,drm/ttm: fix error handling in ttm_buffer_object_transfer
 4ec24e9601d5cfc9ac9798c0acb8e88c6ab61fc5,Mark Brown,broonie@kernel.org,1751283756,968,,3,50,4,1,drivers;include,c;h,spi: spi-qpic-snand: avoid memory corruption
 9e9b46672b1daac814b384286c21fb8332a87392,Youling Tang,tangyouling@kylinos.cn,1751285773,2017,,1,4,3,0,fs,c,xfs: add FALLOC_FL_ALLOCATE_RANGE to supported flags mask
 1fe44a86ff0ff483aa1f1332f2b08f431fa51ce8,Lachlan Hodges,lachlan.hodges@morsemicro.com,1751290426,4653,541731,1,5,2,0,net,c,wifi: cfg80211: fix S1G beacon head validation in nl80211
@@ -520,7 +520,7 @@ e39ed71c7a26e8e94c637e222bc373b511ca127f,Jiawen Wu,jiawenwu@trustnetic.com,17513
 a5aa7bc1fca78c7fa127d9e33aa94a0c9066c1d6,Janusz Krzysztofik,janusz.krzysztofik@linux.intel.com,1751346642,7231,,1,2,1,0,drivers,c,drm/i915/gt: Fix timeline left held on VMA alloc error
 8cadce97bf264ed478669c6f32d5603b34608335,Junxiao Chang,junxiao.chang@intel.com,1751346646,4,,1,1,1,0,drivers,c,drm/i915/gsc: mei interrupt top half should be in irq disabled context
 d6811074203b13f715ce2480ac64c5b1c773f2a5,Geliang Tang,tanggeliang@kylinos.cn,1751350622,3976,,1,2,1,0,drivers,c,nvme-multipath: fix suspicious RCU usage warning
-3ebb1b6522392f64902b4e96954e35927354aa27,Thomas Weißschuh,thomas.weissschuh@linutronix.de,1751374922,24300,186971,1,1,1,0,kernel,c,sched: Fix preemption string of preempt_dynamic_none
+3ebb1b6522392f64902b4e96954e35927354aa27,Thomas Wei?schuh,thomas.weissschuh@linutronix.de,1751374922,24300,186971,1,1,1,0,kernel,c,sched: Fix preemption string of preempt_dynamic_none
 009836b4fa52f92cba33618e773b1094affa8cd2,Peter Zijlstra,peterz@infradead.org,1751374923,1,,2,15,10,0,kernel,c,sched/core: Fix migrate_swap() vs. hotplug
 ccdd09e0fc0d5ce6dfc8360f0c88da9a5045b6ea,Heiko Carstens,hca@linux.ibm.com,1751374924,1,,1,1,0,0,tools,c,objtool: Add missing endian conversion to read_annotate()
 9a57c3773152a3ff2c35cc8325e088d011c9f83b,Sebastian Andrzej Siewior,bigeasy@linutronix.de,1751374925,1,691888,1,4,0,0,init,noext,futex: Temporary disable FUTEX_PRIVATE_HASH
@@ -587,7 +587,7 @@ b4911fb0b060899e4eebca0151eb56deb86921ec,Linus Torvalds,torvalds@linux-foundatio
 5186ff7e1d0e26aaef998ba18b31c79c28d1441f,Jiawen Wu,jiawenwu@trustnetic.com,1751492695,31,160142,1,1,0,0,drivers,c,net: libwx: fix the incorrect display of the queue number
 c2a2ff6b4db55647575260bf2227b0e09d46addb,Antoine Tenart,atenart@kernel.org,1751492804,109,,1,4,3,0,net,c,net: ipv4: fix stat increase when udp early demux drops the packet
 bd475eeaaf3cad1b183418fff7b19c9b1e3d1c4f,Jakub Kicinski,kuba@kernel.org,1751493145,341,158018,5,32,19,1,drivers,c;h,Merge branch '200GbE' of git://git.kernel.org/pub/scm/linux/kernel/git/tnguy/net-queue
-226862f50a7a88e4e4de9abbf36c64d19acd6fd0,Maíra Canal,mcanal@igalia.com,1751494091,946,,3,37,10,0,drivers,c;h,drm/v3d: Disable interrupts before resetting the GPU
+226862f50a7a88e4e4de9abbf36c64d19acd6fd0,Ma?ra Canal,mcanal@igalia.com,1751494091,946,,3,37,10,0,drivers,c;h,drm/v3d: Disable interrupts before resetting the GPU
 c80f2b047d5cc42fbd2dff9d1942d4ba7545100f,Qasim Ijaz,qasdev00@gmail.com,1751528285,34194,1125398,1,3,1,0,drivers,c,HID: appletb-kbd: fix memory corruption of input_handler_list
 50f9ff52c078d66053bba791ded6fafc64055524,Leonard Dizon,leonard@snekbyte.com,1751528331,46,,3,8,4,0,drivers,c;h,HID: elecom: add support for ELECOM HUGE 019B variant
 194808a1ea391e35d364d6c9406e2eccb6174525,Vicki Pfau,vi@endrift.com,1751528661,330,,1,2,2,0,drivers,c,"HID: Fix debug name for BTN_GEAR_DOWN, BTN_GEAR_UP, BTN_WHEEL"
@@ -683,7 +683,7 @@ c2b2c7d1da8f26c6db40de2bed142d66e238bd8a,Kent Overstreet,kent.overstreet@linux.d
 d67ed2ccd2d1dcfda9292c0ea8697a9d0f2f0d98,Wang Jinchao,wangjinchao600@gmail.com,1751714257,938,,1,1,0,0,drivers,c,md/raid1: Fix stack memory use after return in raid1_reshape
 43806c3d5b9bb7d74ba4e33a6a8a41ac988bde24,Nigel Croxon,ncroxon@redhat.com,1751715041,784,,1,8,2,0,drivers,c,raid10: cleanup memleak at raid10_make_request
 5fa31c49928139fa948f078b094d80f12ed83f5f,Zheng Qixing,zhengqixing@huawei.com,1751715226,185,,2,4,1,0,drivers,c,"md/raid1,raid10: strip REQ_NOWAIT from member bios"
-c17fb542dbd1db745c9feac15617056506dd7195,Håkon Bugge,haakon.bugge@oracle.com,1751715410,184,,1,1,2,0,drivers,c,md/md-bitmap: fix GPF in bitmap_get_stats()
+c17fb542dbd1db745c9feac15617056506dd7195,H?kon Bugge,haakon.bugge@oracle.com,1751715410,184,,1,1,2,0,drivers,c,md/md-bitmap: fix GPF in bitmap_get_stats()
 454706f1f8698eecc6cc00493c6dffbccdbbd416,Jens Axboe,axboe@kernel.dk,1751718779,3369,161452,3,14,5,1,drivers,c,Merge tag 'md-6.16-20250705' of gitolite.kernel.org:pub/scm/linux/kernel/git/mdraid/linux into block-6.16
 a77ffbe34d450dd685e55ba942b025ded2517aff,Kent Overstreet,kent.overstreet@linux.dev,1751733761,14982,48334,1,41,43,0,fs,c,bcachefs: btree node scan no longer uses btree cache
 14dd95647ea533c7d7c528b9bb7e163e433b47b9,Kent Overstreet,kent.overstreet@linux.dev,1751733761,0,0,3,4,7,0,fs,c;h,bcachefs: btree read retry fixes
@@ -702,8 +702,8 @@ a1639ce5e590300af45bebedfbacf8fabc1777ed,Linus Torvalds,torvalds@linux-foundatio
 772b78c2abd85586bb90b23adff89f7303c704c7,Linus Torvalds,torvalds@linux-foundation.org,1751825867,1308,1308,3,21,16,1,kernel,c,Merge tag 'sched_urgent_for_v6.16_rc5' of git://git.kernel.org/pub/scm/linux/kernel/git/tip/tip
 bab5cac627b36a96ffc344274953558906418495,Linus Torvalds,torvalds@linux-foundation.org,1751832639,6772,6772,2,12,8,1,fs,c,Merge tag 'pull-fixes' of git://git.kernel.org/pub/scm/linux/kernel/git/viro/vfs
 d7b8f8e20813f0179d8ef519541a3527e7661d3a,Linus Torvalds,torvalds@linux-foundation.org,1751836226,3587,3587,1,1,1,0,Makefile,noext,Linux 6.16-rc5
-9ee124caae1b0defd0e02c65686f539845a3ac9b,Uwe Kleine-König,u.kleine-koenig@baylibre.com,1751870024,33798,,1,1,1,0,drivers,c,pwm: Fix invalid state detection
-505b730ede7f5c4083ff212aa955155b5b92e574,Uwe Kleine-König,u.kleine-koenig@baylibre.com,1751870084,60,60,1,8,5,0,drivers,c,pwm: mediatek: Ensure to disable clocks in error path
+9ee124caae1b0defd0e02c65686f539845a3ac9b,Uwe Kleine-K?nig,u.kleine-koenig@baylibre.com,1751870024,33798,,1,1,1,0,drivers,c,pwm: Fix invalid state detection
+505b730ede7f5c4083ff212aa955155b5b92e574,Uwe Kleine-K?nig,u.kleine-koenig@baylibre.com,1751870084,60,60,1,8,5,0,drivers,c,pwm: mediatek: Ensure to disable clocks in error path
 fbe94be09fa81343d623a86ec64a742759b669b3,Francesco Dolcini,francesco.dolcini@toradex.com,1751873801,3717,,1,1,0,0,arch,dtsi,arm64: dts: freescale: imx8mm-verdin: Keep LDO5 always on
 c5fd399a24c8e2865524361f7dc4d4a6899be4f4,Lachlan Hodges,lachlan.hodges@morsemicro.com,1751877735,3934,587309,2,38,14,0,include;net,c;h,wifi: mac80211: correctly identify S1G short beacon
 8af596e8ae44c3bcf36d1aea09fc9a6f17c555e5,Johannes Berg,johannes.berg@intel.com,1751877756,21,682867,1,3,0,0,net,c,wifi: mac80211: clear frame buffer to never leak stack
@@ -749,8 +749,8 @@ c9a95dbe06102cf01afee4cd83ecb29f8d587a72,Matthew Brost,matthew.brost@intel.com,1
 daa099fed50a39256feb37d3fac146bf0d74152f,Matthew Brost,matthew.brost@intel.com,1751947037,0,0,1,0,1,0,drivers,c,"Revert ""drm/xe/xe2: Enable Indirect Ring State support for Xe2"""
 fee58ca135a7b979c8b75e6d2eac60d695f9209b,Matthew Auld,matthew.auld@intel.com,1751947037,0,1004692,1,1,1,0,drivers,c,drm/xe/bmg: fix compressed VRAM handling
 5300e5e24b8122ba3f60ce455e968379434f322e,Johannes Berg,johannes.berg@intel.com,1751959533,12496,81765,27,301,197,1,drivers,c;h,Merge tag 'mt76-fixes-2025-07-07' of https://github.com/nbd168/wireless
-70b9c0c11e55167b9552ef395bc00f4920299177,Thomas Weißschuh,thomas.weissschuh@linutronix.de,1751984593,25060,609671,2,4,4,0,include;tools,h,uapi: bitops: use UAPI-safe variant of BITS_PER_LONG again (2)
-1afc85deecd32ff0f9972b38ecfbddb8be63143e,Thomas Weißschuh,thomas.weissschuh@linutronix.de,1751984593,0,0,1,2,0,0,MAINTAINERS,noext,MAINTAINERS: bitmap: add UAPI headers
+70b9c0c11e55167b9552ef395bc00f4920299177,Thomas Wei?schuh,thomas.weissschuh@linutronix.de,1751984593,25060,609671,2,4,4,0,include;tools,h,uapi: bitops: use UAPI-safe variant of BITS_PER_LONG again (2)
+1afc85deecd32ff0f9972b38ecfbddb8be63143e,Thomas Wei?schuh,thomas.weissschuh@linutronix.de,1751984593,0,0,1,2,0,0,MAINTAINERS,noext,MAINTAINERS: bitmap: add UAPI headers
 8aed168bf7e6b4cbb4b46305f6fe9d8cbd6bd872,Paolo Bonzini,pbonzini@redhat.com,1751986000,1407,1542380,3,23,13,1,arch,c,Merge tag 'kvmarm-fixes-6.16-4' of https://git.kernel.org/pub/scm/linux/kernel/git/kvmarm/kvmarm into HEAD
 7e7a7bf212cfd31183bd8e64295607d8e3153a66,Paolo Bonzini,pbonzini@redhat.com,1751986101,101,101,4,23,34,1,arch,c;h,Merge tag 'kvmarm-fixes-6.16-5' of https://git.kernel.org/pub/scm/linux/kernel/git/kvmarm/kvmarm into HEAD
 5383fc057a0ea18e8eb9a0472ea853c24b59ee5e,Paolo Bonzini,pbonzini@redhat.com,1751986159,58,58,13,117,23,1,Documentation;arch;include;tools;virt,c;h;rst,Merge tag 'kvm-x86-fixes-6.16-rcN' of https://github.com/kvm-x86/linux into HEAD
@@ -931,7 +931,7 @@ f0f2b992d8185a0366be951685e08643aae17d6d,Sean Anderson,sean.anderson@linux.dev,1
 155a3c003e555a7300d156a5252c004c392ec6b0,Linus Torvalds,torvalds@linux-foundation.org,1752546328,5539,104370,1,5,1,1,drivers,c,Merge tag 'for-6.16/dm-fixes-2' of git://git.kernel.org/pub/scm/linux/kernel/git/device-mapper/linux-dm
 2aec790e666bf1f11d39bb50aa9df8febd58a548,Johannes Berg,johannes.berg@intel.com,1752567982,21654,608449,1,2,1,1,drivers,c,Merge tag 'ath-current-20250714' of git://git.kernel.org/pub/scm/linux/kernel/git/ath/ath
 444020f4bf06fb86805ee7e7ceec0375485fd94d,Johannes Berg,johannes.berg@intel.com,1752568041,59,59,1,1,1,0,include,h,wifi: cfg80211: remove scan request n_channels counted_by
-46345ed36296d965af1b6e68e62076d67521c55d,Ville Syrjälä,ville.syrjala@linux.intel.com,1752570820,2779,,1,4,4,0,drivers,c,wifi: iwlwifi: Fix botched indexing conversion
+46345ed36296d965af1b6e68e62076d67521c55d,Ville Syrj?l?,ville.syrjala@linux.intel.com,1752570820,2779,,1,4,4,0,drivers,c,wifi: iwlwifi: Fix botched indexing conversion
 0f97a7588db7a545ea07ee0d512789bfad4931d8,Brett Werling,brett.werling@garmin.com,1752573583,2763,,1,41,20,0,drivers,c,can: tcan4x5x: fix reset gpio usage during probe
 bbc19fef578970158847a41d9b6b6b218034b8c2,Johannes Berg,johannes.berg@intel.com,1752577663,4080,9622,5,15,9,1,drivers,c;h,Merge tag 'iwlwifi-fixes-2025-07-15' of https://git.kernel.org/pub/scm/linux/kernel/git/iwlwifi/iwlwifi-next
 75b63ce2c98b41c45ee3ff14c76f27c3238bc6d2,Rafael J. Wysocki,rafael.j.wysocki@intel.com,1752584066,6403,489680,1,0,1,0,kernel,c,PM: suspend: Drop a misplaced pm_restore_gfp_mask() call
@@ -945,7 +945,7 @@ e003ef2cb1de41edda508ea1fdb21974f9f18dfb,Linus Torvalds,torvalds@linux-foundatio
 bedd0330a19b3a4448e67941732153ce04d3fb9b,Michal Swiatkowski,michal.swiatkowski@linux.intel.com,1752609676,1,1226244,1,1,1,0,drivers,c,ice: check correct pointer in fwlog debugfs
 4c4ca3c46167518f8534ed70f6e3b4bf86c4d158,Oliver Neukum,oneukum@suse.com,1752620533,10857,,1,4,0,0,drivers,c,usb: net: sierra: check for no status endpoint
 ae2256f9677b3c784bad99d4198d27b1a62fabc9,Jakub Kicinski,kuba@kernel.org,1752620741,208,376434,1,41,20,1,drivers,c,Merge tag 'linux-can-fixes-for-6.16-20250715' of git://git.kernel.org/pub/scm/linux/kernel/git/mkl/linux-can
-e6176ab107ec6e57a752a97ba9f7c34a23034262,Markus Blöchl,markus@blochl.de,1752621719,978,,1,7,1,0,drivers,c,net: stmmac: intel: populate entire system_counterval_t in get_time_fn() callback
+e6176ab107ec6e57a752a97ba9f7c34a23034262,Markus Bl?chl,markus@blochl.de,1752621719,978,,1,7,1,0,drivers,c,net: stmmac: intel: populate entire system_counterval_t in get_time_fn() callback
 1b7e585c04cd5f0731dd25ffd396277e55fae0e6,Jiawen Wu,jiawenwu@trustnetic.com,1752625703,3984,1089403,2,0,12,0,drivers,c;h,net: libwx: remove duplicate page_pool_put_full_page()
 5fd77cc6bd9b368431a815a780e407b7781bcca0,Jiawen Wu,jiawenwu@trustnetic.com,1752625703,0,0,2,2,3,0,drivers,c;h,net: libwx: fix the using of Rx buffer DMA
 d992ed7e1b687ad7df0763d3e015a5358646210b,Jiawen Wu,jiawenwu@trustnetic.com,1752625703,0,0,2,8,4,0,drivers,c,net: libwx: properly reset Rx ring descriptor

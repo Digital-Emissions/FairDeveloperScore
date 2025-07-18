@@ -1,0 +1,221 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ page_title }} - TORQUE Clustering{% endblock %}
+
+{% block content %}
+<div class="row mb-4">
+    <div class="col-12">
+        <h1 class="mb-0">
+            <i class="fas fa-layer-group text-primary me-2"></i>
+            All Batches
+        </h1>
+        <p class="text-muted">Browse all TORQUE clustering batches ({{ total_batches }} total)</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">
+                    <i class="fas fa-list me-2"></i>
+                    Batch List
+                </h5>
+            </div>
+            <div class="card-body">
+                {% if page_obj.object_list %}
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>Batch ID</th>
+                                    <th>Author</th>
+                                    <th>Commits</th>
+                                    <th>Files Changed</th>
+                                    <th>Code Changes</th>
+                                    <th>Merge Commits</th>
+                                    <th>Duration</th>
+                                    <th>Start Time</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for batch in page_obj.object_list %}
+                                <tr>
+                                    <td>
+                                        <span class="badge bg-secondary fs-6">{{ batch.batch_id }}</span>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <strong>{{ batch.author_name }}</strong>
+                                            <br>
+                                            <small class="text-muted">{{ batch.author_email }}</small>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="badge bg-primary">{{ batch.commit_count }}</span>
+                                    </td>
+                                    <td>
+                                        <span class="badge bg-info">{{ batch.total_files }}</span>
+                                    </td>
+                                    <td>
+                                        <div class="small">
+                                            <span class="text-success">+{{ batch.total_insertions }}</span>
+                                            <span class="text-danger">-{{ batch.total_deletions }}</span>
+                                            <br>
+                                            <strong>{{ batch.total_changes }} total</strong>
+                                            <small class="text-muted">({{ batch.avg_changes_per_commit }}/commit)</small>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        {% if batch.merge_count > 0 %}
+                                            <span class="badge bg-warning">{{ batch.merge_count }}</span>
+                                        {% else %}
+                                            <span class="text-muted">-</span>
+                                        {% endif %}
+                                    </td>
+                                    <td>
+                                        {% if batch.duration_minutes > 0 %}
+                                            <small class="text-muted">{{ batch.duration_minutes }} min</small>
+                                        {% else %}
+                                            <small class="text-muted">Instant</small>
+                                        {% endif %}
+                                    </td>
+                                    <td>
+                                        <small class="text-muted">
+                                            {{ batch.start_time|date:"M d, Y" }}
+                                            <br>
+                                            {{ batch.start_time|time:"H:i" }}
+                                        </small>
+                                    </td>
+                                    <td>
+                                        <a href="{% url 'batch_detail' batch.batch_id %}" 
+                                           class="btn btn-sm btn-outline-primary" 
+                                           title="View batch details">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Pagination -->
+                    {% if page_obj.has_other_pages %}
+                        <nav aria-label="Batch pagination" class="mt-4">
+                            <ul class="pagination justify-content-center">
+                                {% if page_obj.has_previous %}
+                                    <li class="page-item">
+                                        <a class="page-link" href="?page=1">
+                                            <i class="fas fa-angle-double-left"></i>
+                                        </a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="?page={{ page_obj.previous_page_number }}">
+                                            <i class="fas fa-angle-left"></i>
+                                        </a>
+                                    </li>
+                                {% endif %}
+
+                                {% for num in page_obj.paginator.page_range %}
+                                    {% if page_obj.number == num %}
+                                        <li class="page-item active">
+                                            <span class="page-link">{{ num }}</span>
+                                        </li>
+                                    {% elif num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}
+                                        <li class="page-item">
+                                            <a class="page-link" href="?page={{ num }}">{{ num }}</a>
+                                        </li>
+                                    {% endif %}
+                                {% endfor %}
+
+                                {% if page_obj.has_next %}
+                                    <li class="page-item">
+                                        <a class="page-link" href="?page={{ page_obj.next_page_number }}">
+                                            <i class="fas fa-angle-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="?page={{ page_obj.paginator.num_pages }}">
+                                            <i class="fas fa-angle-double-right"></i>
+                                        </a>
+                                    </li>
+                                {% endif %}
+                            </ul>
+                        </nav>
+                        
+                        <div class="text-center text-muted">
+                            Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }} 
+                            ({{ page_obj.paginator.count }} total batches)
+                        </div>
+                    {% endif %}
+
+                {% else %}
+                    <div class="text-center py-5">
+                        <i class="fas fa-inbox fa-3x text-muted mb-3"></i>
+                        <h5 class="text-muted">No batches found</h5>
+                        <p class="text-muted">Import some clustering data to get started.</p>
+                        <a href="{% url 'index' %}" class="btn btn-primary">
+                            <i class="fas fa-home me-2"></i>
+                            Back to Dashboard
+                        </a>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Summary Statistics -->
+{% if page_obj.object_list %}
+<div class="row mt-4">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h6 class="mb-0">
+                    <i class="fas fa-chart-bar me-2"></i>
+                    Quick Statistics
+                </h6>
+            </div>
+            <div class="card-body">
+                <div class="row text-center">
+                    <div class="col-md-2">
+                        <h5 class="text-primary">{{ total_batches }}</h5>
+                        <small class="text-muted">Total Batches</small>
+                    </div>
+                    <div class="col-md-2">
+                        <h5 class="text-success">
+                            {% with total_commits=page_obj.object_list|length %}
+                                {{ total_commits }}
+                            {% endwith %}
+                        </h5>
+                        <small class="text-muted">Shown</small>
+                    </div>
+                    <div class="col-md-2">
+                        <h5 class="text-info">
+                            {% with avg_size=page_obj.object_list|first %}
+                                {% if avg_size %}1.3{% else %}0{% endif %}
+                            {% endwith %}
+                        </h5>
+                        <small class="text-muted">Avg Size</small>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                            <a href="{% url 'analytics' %}" class="btn btn-outline-primary btn-sm">
+                                <i class="fas fa-chart-line me-1"></i>
+                                View Analytics
+                            </a>
+                            <a href="{% url 'index' %}" class="btn btn-outline-secondary btn-sm">
+                                <i class="fas fa-home me-1"></i>
+                                Dashboard
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
+{% endblock %} 

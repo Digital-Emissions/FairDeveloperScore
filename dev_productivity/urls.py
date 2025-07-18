@@ -19,11 +19,21 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path("", views.dashboard_view, name="dashboard"),
-    path("developers/", views.developer_list_view, name="developer_list"),
-    path("developers/<int:developer_id>/", views.developer_detail_view, name="developer_detail"),
-    path("metrics/", views.productivity_metrics_view, name="productivity_metrics"),
-    path("projects/", views.projects_view, name="projects"),
-    path("api/productivity-data/", views.api_productivity_data, name="api_productivity_data"),
-    path("admin/", admin.site.urls),
+    path('admin/', admin.site.urls),
+    
+    # Main dashboard
+    path('', views.index, name='index'),
+    
+    # Batch-related views
+    path('batches/', views.batch_list, name='batch_list'),
+    path('batch/<int:batch_id>/', views.batch_detail, name='batch_detail'),
+    
+    # Commit details
+    path('commit/<str:commit_hash>/', views.commit_detail, name='commit_detail'),
+    
+    # Analytics
+    path('analytics/', views.clustering_analytics, name='analytics'),
+    
+    # API endpoints
+    path('api/batch-data/', views.api_batch_data, name='api_batch_data'),
 ]

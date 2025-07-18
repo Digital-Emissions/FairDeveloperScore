@@ -1,71 +1,140 @@
 from django.db import models
 from django.utils import timezone
+from django.core.validators import MinValueValidator
 
 
-class Developer(models.Model):
+class LinuxKernelCommit(models.Model):
     """
-    Model representing a developer and their productivity metrics.
+    Model representing Linux kernel commits with TORQUE clustering data.
+    Table name: test_pretrained_data_linux_kernel_commits
     """
-    name = models.CharField(max_length=100, verbose_name="Developer Name")
-    email = models.EmailField(unique=True, verbose_name="Email Address")
-    github_username = models.CharField(max_length=100, blank=True, verbose_name="GitHub Username")
-    created_at = models.DateTimeField(default=timezone.now, verbose_name="Created At")
+    # Primary commit information
+    hash = models.CharField(max_length=40, primary_key=True, verbose_name="Commit Hash")
+    author_name = models.CharField(max_length=255, verbose_name="Author Name")
+    author_email = models.EmailField(verbose_name="Author Email")
+    commit_timestamp = models.DateTimeField(verbose_name="Commit Timestamp")
     
-    class Meta:
-        ordering = ['name']
-        verbose_name = "Developer"
-        verbose_name_plural = "Developers"
-    
-    def __str__(self):
-        return self.name
-
-
-class ProductivityMetric(models.Model):
-    """
-    Model representing productivity metrics for a developer.
-    """
-    developer = models.ForeignKey(Developer, on_delete=models.CASCADE, related_name='metrics')
-    date = models.DateField(verbose_name="Date")
-    commit_count = models.IntegerField(default=0, verbose_name="Commit Count")
-    lines_added = models.IntegerField(default=0, verbose_name="Lines Added")
-    lines_deleted = models.IntegerField(default=0, verbose_name="Lines Deleted")
-    productivity_score = models.DecimalField(
-        max_digits=5, 
-        decimal_places=2, 
-        default=0.00,
-        verbose_name="Productivity Score"
+    # Time delta features
+    dt_prev_commit_sec = models.FloatField(
+        null=True, 
+        blank=True, 
+        verbose_name="Seconds Since Previous Commit"
     )
+    dt_prev_author_sec = models.FloatField(
+        null=True, 
+        blank=True, 
+        verbose_name="Seconds Since Author's Previous Commit"
+    )
+    
+    # File and code change metrics
+    files_changed = models.IntegerField(
+        default=0, 
+        validators=[MinValueValidator(0)],
+        verbose_name="Files Changed"
+    )
+    insertions = models.IntegerField(
+        default=0, 
+        validators=[MinValueValidator(0)],
+        verbose_name="Lines Inserted"
+    )
+    deletions = models.IntegerField(
+        default=0, 
+        validators=[MinValueValidator(0)],
+        verbose_name="Lines Deleted"
+    )
+    
+    # Commit characteristics
+    is_merge = models.BooleanField(default=False, verbose_name="Is Merge Commit")
+    dirs_touched = models.TextField(blank=True, verbose_name="Directories Touched")
+    file_types = models.TextField(blank=True, verbose_name="File Types")
+    msg_subject = models.CharField(max_length=255, verbose_name="Commit Message Subject")
+    
+    # TORQUE clustering result
+    batch_id = models.IntegerField(
+        validators=[MinValueValidator(0)],
+        verbose_name="Batch ID"
+    )
+    
+    # Metadata
     created_at = models.DateTimeField(default=timezone.now, verbose_name="Created At")
     
     class Meta:
-        ordering = ['-date']
-        unique_together = ['developer', 'date']
-        verbose_name = "Productivity Metric"
-        verbose_name_plural = "Productivity Metrics"
+        db_table = 'test_pretrained_data_linux_kernel_commits'
+        ordering = ['commit_timestamp']
+        verbose_name = "Linux Kernel Commit"
+        verbose_name_plural = "Linux Kernel Commits"
+        indexes = [
+            models.Index(fields=['author_email']),
+            models.Index(fields=['batch_id']),
+            models.Index(fields=['commit_timestamp']),
+            models.Index(fields=['is_merge']),
+        ]
     
     def __str__(self):
-        return f"{self.developer.name} - {self.date}"
+        return f"{self.hash[:8]} - {self.author_name} - Batch {self.batch_id}"
     
     @property
     def total_lines_changed(self):
-        """Calculate total lines changed (added + deleted)."""
-        return self.lines_added + self.lines_deleted
+        """Calculate total lines changed (insertions + deletions)."""
+        return self.insertions + self.deletions
+    
+    @property
+    def dirs_list(self):
+        """Return list of directories touched."""
+        return [d.strip() for d in self.dirs_touched.split(';') if d.strip()] if self.dirs_touched else []
+    
+    @property
+    def file_types_list(self):
+        """Return list of file types."""
+        return [t.strip() for t in self.file_types.split(';') if t.strip()] if self.file_types else []
+    
+    @property
+    def short_hash(self):
+        """Return shortened commit hash."""
+        return self.hash[:8]
+    
+    @property
+    def commit_date(self):
+        """Return just the date part of commit timestamp."""
+        return self.commit_timestamp.date()
 
 
-class Project(models.Model):
+class BatchStatistics(models.Model):
     """
-    Model representing a project.
+    Model for storing computed statistics for each batch.
     """
-    name = models.CharField(max_length=200, verbose_name="Project Name")
-    description = models.TextField(blank=True, verbose_name="Description")
-    repository_url = models.URLField(blank=True, verbose_name="Repository URL")
+    batch_id = models.IntegerField(unique=True, verbose_name="Batch ID")
+    commit_count = models.IntegerField(default=0, verbose_name="Number of Commits")
+    total_insertions = models.IntegerField(default=0, verbose_name="Total Insertions")
+    total_deletions = models.IntegerField(default=0, verbose_name="Total Deletions")
+    total_files_changed = models.IntegerField(default=0, verbose_name="Total Files Changed")
+    
+    # Time span of the batch
+    start_time = models.DateTimeField(verbose_name="Batch Start Time")
+    end_time = models.DateTimeField(verbose_name="Batch End Time")
+    duration_seconds = models.FloatField(verbose_name="Batch Duration (seconds)")
+    
+    # Author information
+    primary_author_email = models.EmailField(verbose_name="Primary Author Email")
+    primary_author_name = models.CharField(max_length=255, verbose_name="Primary Author Name")
+    
+    # Metadata
     created_at = models.DateTimeField(default=timezone.now, verbose_name="Created At")
-    is_active = models.BooleanField(default=True, verbose_name="Is Active")
     
     class Meta:
-        ordering = ['name']
-        verbose_name = "Project"
-        verbose_name_plural = "Projects"
+        ordering = ['batch_id']
+        verbose_name = "Batch Statistics"
+        verbose_name_plural = "Batch Statistics"
     
     def __str__(self):
-        return self.name 
+        return f"Batch {self.batch_id} - {self.commit_count} commits - {self.primary_author_name}"
+    
+    @property
+    def total_lines_changed(self):
+        """Calculate total lines changed in this batch."""
+        return self.total_insertions + self.total_deletions
+    
+    @property
+    def avg_lines_per_commit(self):
+        """Calculate average lines changed per commit."""
+        return self.total_lines_changed / self.commit_count if self.commit_count > 0 else 0 
