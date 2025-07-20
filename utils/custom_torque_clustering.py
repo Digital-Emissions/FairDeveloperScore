@@ -1,19 +1,17 @@
 import numpy as np
-import pandas as pd
 
-def compute_productivity_score(df):
+def auto_feature_weights(X):
     """
-    Compute productivity score for each developer and add it to the DataFrame.
+    Automatically compute feature weights as inverse of variance.
+    This prevents high-variance features from dominating the distance.
     """
-    df = df.copy()
-    df['productivity_score'] = (
-        df['commit_count'] * df['pr_acceptance_rate'].fillna(0) * (1 + df['weekend_commit_ratio'])
-    )
-    return df
+    variances = np.var(X, axis=0)
+    return 1 / (variances + 1e-8)
 
 def custom_distance_matrix(X, feature_weights):
     """
     Compute pairwise weighted Euclidean distance.
+    D_ij = sqrt( sum_k (w_k * (x_ik - x_jk))^2 )
     """
     Xw = X * feature_weights
     diff = Xw[:, None, :] - Xw[None, :, :]
@@ -21,23 +19,40 @@ def custom_distance_matrix(X, feature_weights):
     np.fill_diagonal(dist_matrix, np.inf)
     return dist_matrix
 
-def torque_clustering_custom(X, feature_weights=None, alpha=0.1):
+def torque_clustering(X, feature_weights=None):
     """
-    Torque Clustering with feature weighting and productivity-based tau adjustment.
+    Torque Clustering (TC) with optional feature weighting.
+
+    Parameters
+    ----------
+    X : np.ndarray, shape (n_samples, n_features)
+        Input dataset.
+    feature_weights : list or np.ndarray, optional
+        Custom weights for each feature. If None, weights are computed automatically.
+
+    Returns
+    -------
+    labels : np.ndarray, shape (n_samples,)
+        Cluster label assignment for each sample.
     """
     X = np.asarray(X)
     n_samples, n_features = X.shape
+
+    # Compute feature weights if not provided
     if feature_weights is None:
-        feature_weights = np.ones(n_features)
-    feature_weights = np.array(feature_weights)
+        feature_weights = auto_feature_weights(X)
+    else:
+        feature_weights = np.array(feature_weights)
+        if feature_weights.shape[0] != n_features:
+            raise ValueError("Length of feature_weights must match the number of features.")
 
     # Initialize clusters
     cluster_ids = list(range(n_samples))
     cluster_center = {i: X[i].copy() for i in cluster_ids}
     cluster_mass = {i: 1 for i in cluster_ids}
-    cluster_productivity = {i: X[i][-1] for i in cluster_ids}  # assume last feature is productivity_score
     connections = []
 
+    # Hierarchical merging
     while True:
         n_clusters = len(cluster_ids)
         if n_clusters <= 1:
@@ -58,6 +73,7 @@ def torque_clustering_custom(X, feature_weights=None, alpha=0.1):
         if not directed_edges:
             break
 
+        # Union-Find
         parent = {cid: cid for cid in cluster_ids}
         def find_set(a):
             if parent[a] != a:
@@ -75,31 +91,26 @@ def torque_clustering_custom(X, feature_weights=None, alpha=0.1):
         for cid, nid in directed_edges:
             M_val = cluster_mass[cid] * cluster_mass[nid]
             dist_sq = np.sum(((cluster_center[cid] - cluster_center[nid]) * feature_weights)**2)
-            avg_prod = (cluster_productivity[cid] + cluster_productivity[nid]) / 2
-            tau_val = M_val * dist_sq * (1 + alpha * avg_prod)
+            tau_val = M_val * dist_sq
             connections.append((tau_val, cid, nid))
             union_set(cid, nid)
 
         new_center = {}
         new_mass = {}
-        new_prod = {}
         for cid in cluster_ids:
             root = find_set(cid)
             if root not in new_center:
                 new_center[root] = np.zeros(n_features)
                 new_mass[root] = 0
-                new_prod[root] = 0
             new_center[root] += cluster_center[cid] * cluster_mass[cid]
             new_mass[root] += cluster_mass[cid]
-            new_prod[root] += cluster_productivity[cid] * cluster_mass[cid]
         for root in new_center:
             new_center[root] /= new_mass[root]
-            new_prod[root] /= new_mass[root]
         cluster_ids = list(new_center.keys())
         cluster_center = new_center
         cluster_mass = new_mass
-        cluster_productivity = new_prod
 
+    # Assign labels
     if not connections:
         return np.arange(n_samples)
 
@@ -133,4 +144,5 @@ def torque_clustering_custom(X, feature_weights=None, alpha=0.1):
             cluster_map[root] = next_label
             next_label += 1
         labels[i] = cluster_map[root]
+
     return labels
