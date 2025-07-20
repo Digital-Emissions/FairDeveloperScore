@@ -13,3 +13,4 @@ __pycache__/
 
 # PostgreSQL data directory
 data/postgres/
+.DS_Store
