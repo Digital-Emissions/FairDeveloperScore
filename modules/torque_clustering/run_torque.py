@@ -27,10 +27,11 @@ INPUT_CSV = "data/github_commit_data_test/linux_kernel_commits.csv"
 OUTPUT_CSV = "data/github_commit_data_test/linux_kernel_commits_clustered.csv"
 
 # TORQUE clustering parameters
-ALPHA = 0.002        # Time-weight α (seconds coefficient)
-BETA = 1.0          # LOC-weight β (lines of code coefficient)  
-GAP = 800.0         # Torque threshold for starting new batch
-BREAK_ON_MERGE = True  # Start new batch on merge commits
+ALPHA = 0.00001      # Time-weight α (seconds coefficient) - much lower for collaborative batches
+BETA = 0.1           # LOC-weight β (lines of code coefficient) - lower weight on LOC
+GAP = 7200.0         # Torque threshold for starting new batch (2 hours = 7200 seconds)
+BREAK_ON_MERGE = True    # Start new batch on merge commits
+BREAK_ON_AUTHOR = False  # Don't break batches just on author change - allow collaboration!
 
 # ==============================================================================
 
@@ -72,7 +73,7 @@ def load_commits_data(csv_path: str):
 
 
 def torque_cluster(df: pd.DataFrame, α: float, β: float,
-                   gap: float, break_on_merge: bool) -> pd.Series:
+                   gap: float, break_on_merge: bool, break_on_author: bool = False) -> pd.Series:
     """
     Apply TORQUE clustering algorithm to assign batch IDs.
     
@@ -102,8 +103,8 @@ def torque_cluster(df: pd.DataFrame, α: float, β: float,
             prev_row = row
             continue
 
-        # Author change starts new batch
-        author_changed = row["author_email"] != prev_row["author_email"]
+        # Author change starts new batch (only if break_on_author is True)
+        author_changed = row["author_email"] != prev_row["author_email"] if break_on_author else False
 
         # Δt may be blank (NaN/empty string) for first commit; coerce
         try:
@@ -187,7 +188,8 @@ def main():
                                     α=ALPHA,
                                     β=BETA,
                                     gap=GAP,
-                                    break_on_merge=BREAK_ON_MERGE)
+                                    break_on_merge=BREAK_ON_MERGE,
+                                    break_on_author=BREAK_ON_AUTHOR)
     
     # Analyze results
     analyze_clustering_results(df)
@@ -206,7 +208,8 @@ def main():
         f.write(f"  alpha: {ALPHA}\n")
         f.write(f"  beta: {BETA}\n")
         f.write(f"  Gap threshold: {GAP}\n")
-        f.write(f"  Break on merge: {BREAK_ON_MERGE}\n\n")
+        f.write(f"  Break on merge: {BREAK_ON_MERGE}\n")
+        f.write(f"  Break on author: {BREAK_ON_AUTHOR}\n\n")
         f.write(f"Results:\n")
         f.write(f"  Total commits: {len(df)}\n")
         f.write(f"  Total batches: {df['batch_id'].nunique()}\n")
