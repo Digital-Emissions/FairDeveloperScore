@@ -1,0 +1,237 @@
+{% extends 'dev_productivity/base.html' %}
+
+{% block title %}FDS Analyzer - Start New Analysis{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8 mx-auto">
+        <div class="card shadow">
+            <div class="card-header bg-primary text-white">
+                <h3 class="mb-0">🎯 Start New Fair Developer Score Analysis</h3>
+            </div>
+            <div class="card-body">
+                <p class="text-muted">
+                    Analyze any GitHub repository to calculate Fair Developer Scores (FDS) for all contributors. 
+                    Our algorithm evaluates developer effort and batch importance to provide meaningful productivity insights.
+                </p>
+                
+                <form method="post" class="needs-validation" novalidate>
+                    {% csrf_token %}
+                    
+                    <!-- Repository URL -->
+                    <div class="mb-3">
+                        <label for="id_repo_url" class="form-label">
+                            <strong>GitHub Repository URL</strong>
+                        </label>
+                        <div class="input-group">
+                            {{ form.repo_url }}
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Presets
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item preset" data-url="https://github.com/torvalds/linux">torvalds/linux</a></li>
+                                <li><a class="dropdown-item preset" data-url="https://github.com/facebook/react">facebook/react</a></li>
+                                <li><a class="dropdown-item preset" data-url="https://github.com/pallets/flask">pallets/flask</a></li>
+                                <li><a class="dropdown-item preset" data-url="https://github.com/huggingface/transformers">huggingface/transformers</a></li>
+                                <li><a class="dropdown-item preset" data-url="https://github.com/vercel/next.js">vercel/next.js</a></li>
+                            </ul>
+                        </div>
+                        <div class="form-text">{{ form.repo_url.help_text }}</div>
+                        {% if form.repo_url.errors %}
+                            <div class="invalid-feedback d-block">
+                                {% for error in form.repo_url.errors %}{{ error }}{% endfor %}
+                            </div>
+                        {% endif %}
+                    </div>
+                    
+                    <!-- Access Token -->
+                    <div class="mb-3">
+                        <label for="id_access_token" class="form-label">
+                            <strong>GitHub Access Token</strong>
+                        </label>
+                        {{ form.access_token }}
+                        <div class="form-text">
+                            {{ form.access_token.help_text }}
+                            <br>
+                            <small class="text-warning">
+                                ⚠️ Required for API access. Create one at 
+                                <a href="https://github.com/settings/tokens" target="_blank">GitHub Settings</a>
+                            </small>
+                        </div>
+                        {% if form.access_token.errors %}
+                            <div class="invalid-feedback d-block">
+                                {% for error in form.access_token.errors %}{{ error }}{% endfor %}
+                            </div>
+                        {% endif %}
+                    </div>
+                    
+                    <!-- Commit Limit -->
+                    <div class="mb-3">
+                        <label for="id_commit_limit" class="form-label">
+                            <strong>Number of Commits to Analyze</strong>
+                        </label>
+                        <div class="input-group">
+                            {{ form.commit_limit }}
+                            <button class="btn btn-outline-secondary" type="button" id="preset-50">50</button>
+                            <button class="btn btn-outline-secondary" type="button" id="preset-100">100</button>
+                            <button class="btn btn-outline-secondary" type="button" id="preset-300">300</button>
+                        </div>
+                        <div class="form-text">{{ form.commit_limit.help_text }}</div>
+                        {% if form.commit_limit.errors %}
+                            <div class="invalid-feedback d-block">
+                                {% for error in form.commit_limit.errors %}{{ error }}{% endfor %}
+                            </div>
+                        {% endif %}
+                    </div>
+                    
+                    <!-- Submit Button -->
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary btn-lg">
+                            🚀 Start Analysis
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <!-- Algorithm Info -->
+        <div class="card mt-4">
+            <div class="card-header">
+                <h5 class="mb-0">📊 What is Fair Developer Score (FDS)?</h5>
+            </div>
+            <div class="card-body">
+                <p>
+                    The Fair Developer Score is a sophisticated algorithm that measures developer productivity by considering:
+                </p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h6>🛠️ Developer Effort Components:</h6>
+                        <ul class="list-unstyled">
+                            <li><strong>Share:</strong> Collaboration level in batches</li>
+                            <li><strong>Scale:</strong> Code size and complexity</li>
+                            <li><strong>Reach:</strong> Cross-module impact</li>
+                            <li><strong>Centrality:</strong> Architectural importance</li>
+                            <li><strong>Novelty:</strong> New file creation</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h6>⭐ Batch Importance Components:</h6>
+                        <ul class="list-unstyled">
+                            <li><strong>Scale:</strong> Batch size and scope</li>
+                            <li><strong>Centrality:</strong> Directory importance</li>
+                            <li><strong>Complexity:</strong> Technical difficulty</li>
+                            <li><strong>Type:</strong> Change classification</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="alert alert-info">
+                    <strong>Formula:</strong> FDS = Developer Effort × Batch Importance
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Recent Analyses -->
+{% if recent_analyses %}
+<div class="row mt-5">
+    <div class="col-12">
+        <h4>📋 Recent Analyses</h4>
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Repository</th>
+                        <th>Status</th>
+                        <th>Commits</th>
+                        <th>Developers</th>
+                        <th>Created</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for analysis in recent_analyses %}
+                    <tr>
+                        <td>
+                            <a href="{{ analysis.repo_url }}" target="_blank" class="text-decoration-none">
+                                {{ analysis.repo_url|slice:"19:" }}
+                            </a>
+                        </td>
+                        <td>
+                            <span class="badge bg-{{ analysis.status|yesno:'success,warning,danger' }} status-{{ analysis.status }}">
+                                {{ analysis.get_status_display }}
+                            </span>
+                        </td>
+                        <td>{{ analysis.total_commits|default:"-" }}</td>
+                        <td>{{ analysis.total_developers|default:"-" }}</td>
+                        <td>{{ analysis.created_at|timesince }} ago</td>
+                        <td>
+                            <a href="{% url 'analysis_detail' analysis.id %}" class="btn btn-sm btn-outline-primary">
+                                View Details
+                            </a>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <div class="text-center">
+            <a href="{% url 'analysis_list' %}" class="btn btn-outline-secondary">View All Analyses</a>
+        </div>
+    </div>
+</div>
+{% endif %}
+
+{% endblock %}
+
+{% block extra_js %}
+<script>
+// Form validation
+(function() {
+    'use strict';
+    window.addEventListener('load', function() {
+        var forms = document.getElementsByClassName('needs-validation');
+        var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+                if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+            }, false);
+        });
+    }, false);
+})();
+
+// Auto-format GitHub URL
+document.getElementById('id_repo_url').addEventListener('blur', function() {
+    let url = this.value.trim();
+    if (url && !url.startsWith('http')) {
+        if (url.includes('/')) {
+            this.value = 'https://github.com/' + url;
+        }
+    }
+});
+
+// Preset repo handlers
+document.querySelectorAll('.preset').forEach(function(el) {
+    el.addEventListener('click', function(e) {
+        e.preventDefault();
+        var urlInput = document.getElementById('id_repo_url');
+        urlInput.value = this.getAttribute('data-url');
+        urlInput.dispatchEvent(new Event('blur'));
+    });
+});
+
+// Commit limit quick set
+document.getElementById('preset-50').addEventListener('click', function(){
+    document.getElementById('id_commit_limit').value = 50;
+});
+document.getElementById('preset-100').addEventListener('click', function(){
+    document.getElementById('id_commit_limit').value = 100;
+});
+document.getElementById('preset-300').addEventListener('click', function(){
+    document.getElementById('id_commit_limit').value = 300;
+});
+</script>
+{% endblock %}
