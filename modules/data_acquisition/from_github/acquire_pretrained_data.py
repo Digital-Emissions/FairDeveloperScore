@@ -30,7 +30,7 @@ REPO_URL = "torvalds/linux"  # Example: "torvalds/linux" or "https://github.com/
 OUTPUT_FILE = "data/github_commit_data_test/linux_kernel_commits.csv"
 
 # Limit number of commits to process (None for all commits, or set a number like 1000)
-COMMIT_LIMIT = 1000  # Set to None for all commits, or e.g., 1000 for testing
+COMMIT_LIMIT = 300  # Set to None for all commits, or e.g., 1000 for testing
 
 # GitHub API settings
 MAX_RETRIES = 3
@@ -39,7 +39,7 @@ RETRY_DELAY = 5  # seconds
 # ==============================================================================
 
 # GitHub API setup
-GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
+GITHUB_TOKEN = "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"
 if not GITHUB_TOKEN:
     print("Warning: No GITHUB_TOKEN found in environment. API rate limits will be lower.")
 
