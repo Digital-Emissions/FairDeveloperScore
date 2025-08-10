@@ -4,13 +4,13 @@ A Django web application that calculates Fair Developer Scores for GitHub reposi
 
 ## Features
 
-- 🎯 **Repository Analysis**: Input any GitHub repository URL for analysis
-- 🔐 **GitHub API Integration**: Secure token-based access to GitHub data
-- 📊 **Fair Developer Scoring**: Calculate FDS using our sophisticated algorithm
-- 🏆 **Developer Rankings**: View top contributors with detailed metrics
-- 📈 **Batch Analysis**: Understand collaborative work patterns
-- 🔄 **Real-time Updates**: Monitor analysis progress in real-time
-- 💾 **Result Storage**: Persistent storage of all analysis results
+-  **Repository Analysis**: Input any GitHub repository URL for analysis
+-  **GitHub API Integration**: Secure token-based access to GitHub data
+-  **Fair Developer Scoring**: Calculate FDS using our sophisticated algorithm
+-  **Developer Rankings**: View top contributors with detailed metrics
+-  **Batch Analysis**: Understand collaborative work patterns
+-  **Real-time Updates**: Monitor analysis progress in real-time
+-  **Result Storage**: Persistent storage of all analysis results
 
 ## Quick Start
 
