@@ -1,4 +1,5 @@
 {% extends 'dev_productivity/base.html' %}
+{% load filters %}
 
 {% block title %}Analysis Results - {{ analysis.repo_url|slice:"19:" }}{% endblock %}
 
@@ -10,6 +11,9 @@
         <span class="badge bg-{{ analysis.status|yesno:'success,warning,danger' }} fs-6 status-{{ analysis.status }}" id="analysis-status">
             {{ analysis.get_status_display }}
         </span>
+        {% if analysis.status == 'completed' %}
+        <a href="{% url 'dashboard' analysis.id %}" class="btn btn-success btn-sm">Open Dashboard</a>
+        {% endif %}
         <!-- Delete Button -->
         <button type="button" class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#deleteModal">
             🗑️ Delete
@@ -80,7 +84,7 @@
             <div class="card text-center metric-card">
                 <div class="card-body">
                     <h3 class="text-info">{{ analysis.total_batches }}</h3>
-                    <p class="text-muted">Work Batches</p>
+                    <p class="text-muted">Builds</p>
                 </div>
             </div>
         </div>
@@ -94,13 +98,16 @@
         </div>
     </div>
 
+    <div class="mb-4">
+        <a href="{% url 'download_analysis_csvs' analysis.id %}" class="btn btn-sm btn-outline-secondary">
+            Download All CSVs
+        </a>
+    </div>
+
     <!-- Developer Scores -->
     <div class="card mb-4">
         <div class="card-header d-flex justify-content-between align-items-center">
             <h5 class="mb-0">🏆 Top Developers by FDS Score</h5>
-            <a href="{% url 'compare_developers' analysis.id %}" class="btn btn-sm btn-outline-primary">
-                Compare Developers
-            </a>
         </div>
         <div class="card-body">
             {% if dev_page_obj %}
@@ -114,7 +121,7 @@
                                 <th>Avg Effort</th>
                                 <th>Avg Importance</th>
                                 <th>Commits</th>
-                                <th>Batches</th>
+                                <th>Builds</th>
                                 <th>Share</th>
                                 <th>Actions</th>
                             </tr>
@@ -139,15 +146,15 @@
                                 <td>{{ developer.avg_importance|floatformat:3 }}</td>
                                 <td>{{ developer.total_commits }}</td>
                                 <td>{{ developer.unique_batches }}</td>
-                                <td>
-                                    <div class="progress" style="width: 60px; height: 20px;">
-                                        <div class="progress-bar" role="progressbar" 
-                                             style="width: {{ developer.share_mean|floatformat:0|floatformat:0 }}%"
-                                             title="{{ developer.share_mean|floatformat:3 }}">
-                                        </div>
-                                    </div>
-                                    <small>{{ developer.share_mean|floatformat:2 }}</small>
-                                </td>
+                                 <td>
+                                     <div class="progress" style="width: 80px; height: 10px;">
+                                         <div class="progress-bar" role="progressbar" 
+                                              style="width: {{ developer.share_mean|mul:100|floatformat:0 }}%"
+                                              title="{{ developer.share_mean|floatformat:3 }} (0-1)">
+                                         </div>
+                                     </div>
+                                     <small>{{ developer.share_mean|floatformat:2 }}</small>
+                                 </td>
                                 <td>
                                     <a href="{% url 'developer_detail' analysis.id developer.author_email %}" 
                                        class="btn btn-sm btn-outline-info">Details</a>
@@ -194,11 +201,11 @@
         </div>
     </div>
 
-    <!-- Top Batches -->
+    <!-- Top Builds -->
     {% if top_batches %}
     <div class="card mb-4">
         <div class="card-header">
-            <h5 class="mb-0">⭐ Most Important Work Batches</h5>
+            <h5 class="mb-0">⭐ Most Important Builds</h5>
         </div>
         <div class="card-body">
             <div class="row">
@@ -206,7 +213,7 @@
                 <div class="col-md-6 mb-3">
                     <div class="batch-info">
                         <div class="d-flex justify-content-between">
-                            <strong>Batch {{ batch.batch_id }}</strong>
+                            <strong>Build {{ batch.batch_id }}</strong>
                             <span class="badge bg-success">{{ batch.total_contribution|floatformat:2 }}</span>
                         </div>
                         <div class="mt-2">

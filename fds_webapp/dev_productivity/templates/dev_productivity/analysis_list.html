@@ -22,7 +22,7 @@
                             <th>Status</th>
                             <th>Commits</th>
                             <th>Developers</th>
-                            <th>Batches</th>
+                        <th>Builds</th>
                             <th>Created</th>
                             <th>Duration</th>
                             <th>Actions</th>
@@ -46,7 +46,7 @@
                             </td>
                             <td>{{ analysis.total_commits|default:"-" }}</td>
                             <td>{{ analysis.total_developers|default:"-" }}</td>
-                            <td>{{ analysis.total_batches|default:"-" }}</td>
+                        <td>{{ analysis.total_batches|default:"-" }}</td>
                             <td>
                                 <span title="{{ analysis.created_at|date:'M d, Y H:i:s' }}">
                                     {{ analysis.created_at|timesince }} ago

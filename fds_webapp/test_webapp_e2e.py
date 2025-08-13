@@ -13,6 +13,7 @@ Usage:
 import os
 import sys
 from pathlib import Path
+import argparse
 
 PROJECT_ROOT = Path(__file__).parent
 sys.path.append(str(PROJECT_ROOT))
@@ -83,11 +84,41 @@ if __name__ == '__main__':
     if not token:
         print('Error: set GITHUB_TOKEN environment variable.')
         sys.exit(2)
+    
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--repo', action='append', help='GitHub repo URL. Can be passed multiple times.')
+    parser.add_argument('--limit', type=int, default=50, help='Commit limit per repo')
+    parser.add_argument('--batch', action='store_true', help='Run a batch of preset repos (>=800 commits each)')
+    args = parser.parse_args()
 
-    output = run_e2e(
-        repo_url='https://github.com/torvalds/linux',
-        token=token,
-        commit_limit=50,
-    )
-    print(f'SUCCESS. Saved analysis detail page to: {output}')
+    def run_batch(token: str, repos: list[str], commit_limit: int) -> list[Path]:
+        outputs: list[Path] = []
+        for repo in repos:
+            print(f"Running analysis for {repo} ({commit_limit} commits)...")
+            outputs.append(run_e2e(repo, token, commit_limit))
+        return outputs
+
+    if args.batch:
+        preset_repos = [
+            'https://github.com/tensorflow/tensorflow',
+            'https://github.com/microsoft/vscode',
+            'https://github.com/pytorch/pytorch',
+            'https://github.com/kubernetes/kubernetes',
+        ]
+        outputs = run_batch(token, preset_repos, commit_limit=max(args.limit, 800))
+        for out in outputs:
+            print(f'SAVED: {out}')
+        sys.exit(0)
+
+    if args.repo:
+        outputs = run_batch(token, args.repo, commit_limit=args.limit)
+        for out in outputs:
+            print(f'SAVED: {out}')
+    else:
+        output = run_e2e(
+            repo_url='https://github.com/torvalds/linux',
+            token=token,
+            commit_limit=args.limit,
+        )
+        print(f'SUCCESS. Saved analysis detail page to: {output}')
 

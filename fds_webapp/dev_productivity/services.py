@@ -146,11 +146,16 @@ class FDSAnalysisService:
                 
                 # Step 2: TORQUE Clustering
                 self._update_status(analysis, "Running TORQUE clustering...")
-                clustered_csv = self._run_torque_clustering(commits_csv, temp_path)
+                clustered_csv, summary_file = self._run_torque_clustering(commits_csv, temp_path)
                 
                 # Step 3: FDS Analysis
                 self._update_status(analysis, "Calculating Fair Developer Scores...")
-                results = self._run_fds_analysis(clustered_csv, temp_path)
+                results = self._run_fds_analysis(
+                    clustered_csv,
+                    temp_path,
+                    raw_commits_path=commits_csv,
+                    clustering_summary_path=summary_file,
+                )
                 
                 # Step 4: Save Results to Database
                 self._update_status(analysis, "Saving results...")
@@ -174,31 +179,62 @@ class FDSAnalysisService:
         pass
     
     def _run_torque_clustering(self, input_csv, temp_path):
-        """Run TORQUE clustering on commits"""
+        """Run TORQUE clustering on commits and write a summary file."""
         # Import the torque clustering module
         sys.path.append(str(Path(__file__).parent))
-        from torque_clustering.run_torque import torque_cluster, load_commits_data
-        
+        from torque_clustering.run_torque import torque_cluster
+
         # Load data
         df = pd.read_csv(input_csv)
-        
+
+        # Clustering parameters (keep in sync with dashboard display)
+        alpha = 0.001
+        beta = 0.1
+        gap = 30.0
+        break_on_merge = True
+        break_on_author = False
+
         # Run TORQUE clustering with collaborative settings
         df["batch_id"] = torque_cluster(
             df,
-            α=0.001,        # Higher time weight to respect time gaps
-            β=0.1,          # Moderate LOC weight
-            gap=30.0,       # Low threshold to create realistic sessions
-            break_on_merge=True,
-            break_on_author=False  # Allow collaboration
+            α=alpha,
+            β=beta,
+            gap=gap,
+            break_on_merge=break_on_merge,
+            break_on_author=break_on_author,
         )
-        
+
         # Save clustered data
         clustered_csv = temp_path / "commits_clustered.csv"
         df.to_csv(clustered_csv, index=False)
-        return clustered_csv
+
+        # Write clustering summary (ASCII only for Windows consoles)
+        summary_file = temp_path / "clustering_summary.txt"
+        try:
+            total_commits = int(len(df))
+            total_batches = int(df["batch_id"].nunique()) if not df.empty else 0
+            avg_per_batch = (total_commits / max(1, total_batches)) if total_commits else 0.0
+            with open(summary_file, "w", encoding="utf-8") as f:
+                f.write("TORQUE Clustering Summary\n")
+                f.write("========================\n\n")
+                f.write("Parameters:\n")
+                f.write(f"  alpha: {alpha}\n")
+                f.write(f"  beta: {beta}\n")
+                f.write(f"  Gap threshold: {gap}\n")
+                f.write(f"  Break on merge: {break_on_merge}\n")
+                f.write(f"  Break on author: {break_on_author}\n\n")
+                f.write("Results:\n")
+                f.write(f"  Total commits: {total_commits}\n")
+                f.write(f"  Total batches: {total_batches}\n")
+                f.write(f"  Average commits per batch: {avg_per_batch:.2f}\n")
+        except Exception:
+            # Non-fatal; continue without summary
+            pass
+
+        return clustered_csv, summary_file
     
-    def _run_fds_analysis(self, clustered_csv, temp_path):
-        """Run FDS analysis on clustered commits"""
+    def _run_fds_analysis(self, clustered_csv, temp_path, raw_commits_path=None, clustering_summary_path=None):
+        """Run FDS analysis on clustered commits and persist intermediates in temp_path."""
         # Import FDS modules
         sys.path.append(str(Path(__file__).parent))
         
@@ -213,8 +249,8 @@ class FDSAnalysisService:
             'whitespace_noise_factor': 0.99,
             'key_file_extensions': ['.py', '.js', '.java', '.cpp', '.c', '.h'],
             'pagerank_iterations': 100,
-            'min_batch_size': 1,
-            'min_batch_churn': 1,
+            'min_batch_size': 1,  # build size minimum (kept key for code compatibility)
+            'min_batch_churn': 1,  # build churn minimum
             'time_window_days': 365,  # Use 1 year window for repository analysis
             'min_contributions': 1,
             'contribution_threshold': 0.01,
@@ -228,14 +264,30 @@ class FDSAnalysisService:
         # Step 1: Preprocessing
         processor = DataProcessor(config)
         processed_df = processor.process_data(str(clustered_csv))
+        # Persist processed data
+        processed_csv = temp_path / "processed_data.csv"
+        try:
+            processed_df.to_csv(processed_csv, index=False)
+        except Exception:
+            pass
         
         # Step 2: Developer Effort
         effort_calc = DeveloperEffortCalculator(config)
         effort_df = effort_calc.process_all_batches(processed_df)
+        effort_csv = temp_path / "developer_effort.csv"
+        try:
+            effort_df.to_csv(effort_csv, index=False)
+        except Exception:
+            pass
         
         # Step 3: Batch Importance
         importance_calc = BatchImportanceCalculator(config)
         importance_df, batch_metrics_df = importance_calc.process_all_batches(processed_df)
+        importance_csv = temp_path / "batch_importance.csv"
+        try:
+            importance_df.to_csv(importance_csv, index=False)
+        except Exception:
+            pass
         
         # Step 4: Final FDS Calculation
         fds_calc = FDSCalculator(config)
@@ -247,6 +299,11 @@ class FDSAnalysisService:
             on=['hash', 'batch_id'], 
             suffixes=('', '_imp')
         )
+        merged_csv = temp_path / "merged_data.csv"
+        try:
+            merged_df.to_csv(merged_csv, index=False)
+        except Exception:
+            pass
         
         # Calculate individual contributions
         individual_contributions = fds_calc.calculate_contributions(merged_df)
@@ -268,6 +325,18 @@ class FDSAnalysisService:
             'total_commits': len(processed_df),
             'total_batches': processed_df['batch_id'].nunique(),
             'total_developers': processed_df['author_email'].nunique(),
+            'processed_df': processed_df,
+            # Intermediate artifacts and their file paths for persistence
+            'effort_df': effort_df,
+            'importance_df': importance_df,
+            'merged_df': merged_df,
+            'raw_commits_path': Path(raw_commits_path) if raw_commits_path else None,
+            'clustered_csv_path': Path(clustered_csv) if clustered_csv else None,
+            'clustering_summary_path': Path(clustering_summary_path) if clustering_summary_path else None,
+            'processed_csv_path': processed_csv,
+            'effort_csv_path': effort_csv,
+            'importance_csv_path': importance_csv,
+            'merged_csv_path': merged_csv,
         }
     
     def _save_results_to_db(self, analysis, results):
@@ -308,6 +377,69 @@ class FDSAnalysisService:
         analysis.total_developers = results['total_developers']
         analysis.save()
         
+        # Save artifacts into organized folder under fds_webapp/
+        try:
+            base_dir = Path(__file__).resolve().parents[1]
+            repo_sanitized = (analysis.repo_url or 'repo').rstrip('/').split('/')[-2:]  # owner/repo
+            repo_sanitized = '_'.join(repo_sanitized)
+            folder = base_dir / 'fds_results' / f"analysis_{analysis.id}_{repo_sanitized}"
+            folder.mkdir(parents=True, exist_ok=True)
+
+            # Persist CSVs for this analysis (full detailed set)
+            indiv = results.get('individual_contributions')
+            detailed = results.get('detailed_metrics')
+            fds_scores_df = results.get('fds_scores')
+            batch_df = results.get('batch_metrics')
+            processed_df = results.get('processed_df')
+            effort_df = results.get('effort_df')
+            importance_df = results.get('importance_df')
+            merged_df = results.get('merged_df')
+
+            # Raw/clustered inputs
+            raw_commits_path = results.get('raw_commits_path')
+            clustered_csv_path = results.get('clustered_csv_path')
+            clustering_summary_path = results.get('clustering_summary_path')
+
+            # Copy raw and clustered files if available
+            try:
+                if raw_commits_path and Path(raw_commits_path).exists():
+                    shutil.copyfile(raw_commits_path, folder / 'raw_commits.csv')
+            except Exception:
+                pass
+            try:
+                if clustered_csv_path and Path(clustered_csv_path).exists():
+                    shutil.copyfile(clustered_csv_path, folder / 'commits_clustered.csv')
+            except Exception:
+                pass
+            try:
+                if clustering_summary_path and Path(clustering_summary_path).exists():
+                    shutil.copyfile(clustering_summary_path, folder / 'clustering_summary.txt')
+            except Exception:
+                pass
+
+            # Intermediate dataframes
+            if processed_df is not None:
+                processed_df.to_csv(folder / 'processed_data.csv', index=False)
+            if effort_df is not None:
+                effort_df.to_csv(folder / 'developer_effort.csv', index=False)
+            if importance_df is not None:
+                importance_df.to_csv(folder / 'batch_importance.csv', index=False)
+            if merged_df is not None:
+                merged_df.to_csv(folder / 'merged_data.csv', index=False)
+
+            if fds_scores_df is not None:
+                fds_scores_df.to_csv(folder / 'fds_scores.csv', index=False)
+            if detailed is not None:
+                detailed.to_csv(folder / 'detailed_metrics.csv', index=False)
+            if batch_df is not None:
+                batch_df.to_csv(folder / 'batch_breakdown.csv', index=False)
+            if indiv is not None:
+                # Align name with local tool expectation
+                indiv.to_csv(folder / 'individual_contributions.csv', index=False)
+        except Exception:
+            # Non-fatal; DB remains source of truth
+            pass
+
         # Save developer scores
         fds_scores = results['fds_scores']
         detailed_metrics = results['detailed_metrics']
