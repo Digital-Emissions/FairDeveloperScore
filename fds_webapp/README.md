@@ -8,7 +8,7 @@ A Django web application that calculates Fair Developer Scores for GitHub reposi
 -  **GitHub API Integration**: Secure token-based access to GitHub data
 -  **Fair Developer Scoring**: Calculate FDS using our sophisticated algorithm
 -  **Developer Rankings**: View top contributors with detailed metrics
--  **Batch Analysis**: Understand collaborative work patterns
+-  **Build Analysis**: Understand collaborative work patterns
 -  **Real-time Updates**: Monitor analysis progress in real-time
 -  **Result Storage**: Persistent storage of all analysis results
 
@@ -32,8 +32,7 @@ A Django web application that calculates Fair Developer Scores for GitHub reposi
 4. **View results**:
    - Monitor progress in real-time
    - View detailed FDS scores for each developer
-   - Explore batch-level collaboration metrics
-   - Compare developers side-by-side
+   - Explore build-level collaboration metrics
 
 ## GitHub Token Setup
 
@@ -162,3 +161,32 @@ To modify the FDS algorithm:
 ## Support
 
 For questions about the FDS algorithm or web application, please refer to the main project documentation.
+
+## Disclaimers
+
+- The Fair Developer Score is intended for research and educational purposes only. Do not use it as the sole basis for HR, hiring, promotion, or compensation decisions.
+- Results depend on repository history and workflow conventions and may reflect dataset biases. Interpret with context and human judgment.
+- No warranty of accuracy or fitness for a particular purpose is provided. Use at your own risk.
+- Keep GitHub tokens secret. For production, store tokens securely (e.g., encrypted at rest) and always use HTTPS.
+
+## License (MIT)
+
+Copyright (c) 2025 FDS Contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
