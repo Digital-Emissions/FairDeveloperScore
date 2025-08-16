@@ -1,6 +1,6 @@
 # Fair Developer Score (FDS) Web Application
 
-A Django-based web application that analyzes GitHub repositories and computes a Fair Developer Score (FDS) per contributor. It clusters commits into meaningful Builds, evaluates Developer Effort and Build Importance, and combines them into a single interpretable score with rich, drill-down dashboards.
+A Django web application that calculates Fair Developer Scores for GitHub repositories using our advanced FDS algorithm.
 
 ## Features
 
@@ -8,7 +8,7 @@ A Django-based web application that analyzes GitHub repositories and computes a 
 -  **GitHub API Integration**: Secure token-based access to GitHub data
 -  **Fair Developer Scoring**: Calculate FDS using our sophisticated algorithm
 -  **Developer Rankings**: View top contributors with detailed metrics
--  **Build Analysis**: Understand collaborative work patterns at the Build level
+-  **Build Analysis**: Understand collaborative work patterns
 -  **Real-time Updates**: Monitor analysis progress in real-time
 -  **Result Storage**: Persistent storage of all analysis results
 
@@ -32,8 +32,7 @@ A Django-based web application that analyzes GitHub repositories and computes a 
 4. **View results**:
    - Monitor progress in real-time
    - View detailed FDS scores for each developer
-   - Explore build-level collaboration metrics and importance
-   - Open the integrated Dashboard for charts and developer cards
+   - Explore build-level collaboration metrics
 
 ## GitHub Token Setup
 
@@ -55,7 +54,7 @@ The Fair Developer Score combines two main components:
 - **Novelty**: New file creation (normalized)
 - **Speed**: Development velocity (normalized)
 
-### Build Importance
+### Batch Importance
 - **Scale**: Batch size and scope
 - **Centrality**: Directory architectural importance
 - **Complexity**: Technical difficulty assessment
@@ -63,7 +62,7 @@ The Fair Developer Score combines two main components:
 
 ### Final Formula
 ```
-FDS = Developer Effort × Build Importance
+FDS = Developer Effort × Batch Importance
 ```
 
 ## Project Structure
@@ -72,26 +71,25 @@ FDS = Developer Effort × Build Importance
 fds_webapp/
 ├── dev_productivity/           # Main Django app
 │   ├── models.py              # Database models
-│   ├── views.py               # View logic & JSON APIs (dashboard, downloads)
+│   ├── views.py               # View logic
 │   ├── forms.py               # Input forms
-│   ├── services.py            # FDS analysis service (data acquisition → clustering → scoring)
+│   ├── services.py            # FDS analysis service
 │   ├── templates/             # HTML templates
-│   ├── fds_algorithm/         # FDS algorithm modules (effort, importance, preprocessing)
+│   ├── fds_algorithm/         # FDS algorithm modules
 │   └── torque_clustering/     # TORQUE clustering module
 ├── fds_webapp/                # Django project settings
 └── manage.py                  # Django management script
 ```
 
-## API Endpoints (selected)
+## API Endpoints
 
 - `/` - Home page with analysis form
 - `/analyses/` - List all analyses
 - `/analysis/<id>/` - View analysis results
 - `/analysis/<id>/status/` - Get analysis status (JSON)
 - `/analysis/<id>/developer/<email>/` - Developer details
-- `/analysis/<id>/build/<build_id>/` - Build details
-- `/analysis/<id>/dashboard/` - Integrated dashboard (charts and developer cards)
-- `/analysis/<id>/download/` - Download all CSV artifacts as a zip
+- `/analysis/<id>/batch/<id>/` - Batch details
+- `/analysis/<id>/compare/` - Compare developers
 
 ## Database Models
 
@@ -99,7 +97,7 @@ fds_webapp/
 Stores analysis jobs and metadata:
 - Repository URL and access token
 - Analysis status (pending/running/completed/failed)
-- Summary statistics (commits, developers, builds)
+- Summary statistics (commits, developers, batches)
 - Execution time and error handling
 
 ### DeveloperScore
@@ -108,9 +106,9 @@ Stores individual developer FDS scores:
 - Effort metrics (share, scale, reach, etc.)
 - Activity metrics (commits, batches, churn)
 
-### BuildMetrics
-Stores build-level collaboration data:
-- Build composition and importance
+### BatchMetrics
+Stores batch-level collaboration data:
+- Batch composition and importance
 - Contributor information
 - Temporal data (start/end times)
 
@@ -160,51 +158,20 @@ To modify the FDS algorithm:
 - Use HTTPS in production environments
 - Implement rate limiting for public deployments
 
-## Installation & Setup
+## Support
 
-Prerequisites:
-- Python 3.10+ recommended
-- A GitHub Personal Access Token (classic), scope: `public_repo` or `repo`
+For questions about the FDS algorithm or web application, please refer to the main project documentation.
 
-Steps:
-1. Create and activate a virtual environment
-   - Windows (PowerShell):
-     ```bash
-     cd fds_webapp
-     python -m venv .venv
-     .venv\\Scripts\\Activate.ps1
-     ```
-   - macOS/Linux:
-     ```bash
-     cd fds_webapp
-     python3 -m venv .venv
-     source .venv/bin/activate
-     ```
-2. Install dependencies
-   ```bash
-   python -m pip install -U pip setuptools wheel
-   pip install django pandas numpy requests python-dateutil pytz scipy networkx tqdm
-   ```
-3. Run the development server
-   ```bash
-   python manage.py migrate
-   python manage.py runserver
-   ```
-4. Open `http://127.0.0.1:8000` and start an analysis
+## Disclaimers
 
-Optional utilities:
-- Local pipeline script (no web):
-  ```bash
-  python local_fds_analyzer.py
-  ```
-- Bulk queue multiple large analyses in background:
-  ```bash
-  python run_bulk_analyses.py
-  ```
+- The Fair Developer Score is intended for research and educational purposes only. Do not use it as the sole basis for HR, hiring, promotion, or compensation decisions.
+- Results depend on repository history and workflow conventions and may reflect dataset biases. Interpret with context and human judgment.
+- No warranty of accuracy or fitness for a particular purpose is provided. Use at your own risk.
+- Keep GitHub tokens secret. For production, store tokens securely (e.g., encrypted at rest) and always use HTTPS.
 
 ## License (MIT)
 
-Copyright (c) 2025 Fair Developer Score Contributors
+Copyright (c) 2025 FDS Contributors
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -223,15 +190,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-## Disclaimers
-
-- This tool provides heuristic analytics. It should not be the sole basis for HR, performance, compensation, promotion, or hiring decisions.
-- Scores may be sensitive to repository structure, commit practices, and data availability. Interpret trends in context.
-- GitHub API quotas and data gaps can affect completeness and timeliness of results.
-- Do not store or share personal tokens or sensitive repository data in plain text. Use environment variables or secret stores in production.
-- By using this software, you accept the MIT license terms above.
-
-## Support
-
-For questions about the FDS algorithm or web application, please refer to the main project documentation.

@@ -1,3 +1,65 @@
+# Fair Developer Score (FDS) – Overview
+
+Modern, end-to-end framework and web application for analyzing GitHub repositories and computing Fair Developer Scores (FDS) from commit history. It includes:
+
+- Django web app with a responsive dashboard (Bootstrap 5.3)
+- TORQUE-based commit clustering to form logical Builds (formerly “Batches”)
+- Developer Effort × Build Importance with robust MAD-Z normalization
+- CSV artifact persistence per analysis and one-click download
+- Local, scriptable analyzer for offline debugging
+
+See `fds_webapp/README.md` for detailed webapp usage and endpoints.
+
+## Quick Start
+
+1. Create a virtual environment and install dependencies:
+   ```bash
+   cd fds_webapp
+   python -m venv .venv
+   . .venv/Scripts/activate  # PowerShell: .venv\\Scripts\\Activate.ps1
+   pip install -r requirements.txt
+   ```
+2. Initialize DB and run the server:
+   ```bash
+   python manage.py migrate
+   python manage.py runserver
+   ```
+3. Open `http://127.0.0.1:8000` and start an analysis with:
+   - GitHub repository URL (e.g., `https://github.com/facebook/react`)
+   - GitHub personal access token (classic) with `repo` or `public_repo` scope
+   - Commit limit (start with 300 for testing)
+
+Artifacts are saved to `fds_webapp/fds_results/analysis_<id>_<owner_repo>/`.
+
+## Disclaimers
+
+- The FDS outputs are for research and educational purposes only and must not be used as the sole basis for HR, hiring, promotion, or compensation decisions.
+- Metrics can reflect biases in source data (repository history, review practices) and should be interpreted with context by qualified stakeholders.
+- No warranty of completeness or fitness for a particular purpose is provided. Use at your own risk.
+- Keep GitHub tokens secret and rotate regularly. For production, store tokens securely and use HTTPS.
+
+## License (MIT)
+
+Copyright (c) 2025 FDS Contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
 # Programmer Productivity Measurement
 
 Created: July 11, 2025 5:21 PM
