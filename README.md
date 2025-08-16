@@ -1,3 +1,199 @@
+# Fair Developer Score (FDS) — An Explainable Productivity Metric for Git Repos
+
+> A principled, auditable alternative to “commit-count” style metrics.
+> FDS quantifies a developer’s impact as **Effort × Batch Importance**, using only repository data and robust statistics.
+
+---
+
+## Why this project
+
+Most large orgs still rely on simplistic signals (commit counts, LOC) that reward noise and penalize deep work. FDS fixes that with a transparent framework that separates **how much a developer contributed** from **how much that work mattered**. The model is resistant to gaming, easy to explain, and ships with reproducible math.
+
+---
+
+## Core idea
+
+We first **cluster commits into batches** (logical working units), then score each developer–batch pair.
+
+```text
+Contribution(u, b) = Effort(u, b) × Importance(b)
+FDS(u)             = Σ_b Contribution(u, b)
+```
+
+Why batching? A tiny bug-fix isn’t equivalent to a cross-module refactor; batches let us weight work by the unit of value creation.
+
+---
+
+## Data inputs (Git-only)
+
+Each commit should provide:
+
+```
+hash, author_name, author_email,
+commit_ts_utc, insertions, deletions, files_changed,
+dirs_touched (top-level), is_merge, msg_subject
+```
+
+Optional and useful: file_paths; dt_prev_author_sec.
+
+---
+
+## Pre-processing
+
+- **Noise filtering**: down-weight vendor/generated, format-only, rename-only, and other low-value changes → effective_churn.
+- **Batching (torque-like)**: per author, start a new batch when `Δt > 2h` or `Jaccard(dir_sets) < 0.3`.
+- **Co-change graph**: build a directory graph from historical co-changes; compute PageRank with α = 0.85.
+- **Robust standardization**: per repo × quarter, convert raw metrics to **MAD-z** and clip to [-3, 3].
+
+---
+
+## Effort — per developer u in batch b
+
+```text
+Effort_{u,b}
+ = Share_{u,b} · (
+ 0.25 Z^{scale}_{u,b} + 0.15 Z^{reach}_{u,b} + 0.20 Z^{central}_{u,b}
++0.20 Z^{dom}_{u,b} + 0.15 Z^{novel}_{u,b} + 0.05 Z^{speed}_{u,b})
+```
+
+**Share**
+`author_effective_churn / batch_effective_churn`
+
+**Scale**
+`log(1 + author_churn_in_b)`
+
+**Reach (directory entropy)**
+`H = − Σ p_i log2 p_i`, where `p_i = churn_in_dir_i / total_author_churn`
+
+**Centrality**
+Mean PageRank of directories the author touched in the batch (optionally churn-weighted).
+
+**Dominance**
+`0.3·is_first + 0.3·is_last + 0.4·commit_count_share`
+
+**Novelty**
+`(new_file_lines + key_path_lines) / author_churn` (capped)
+
+**Speed**
+`exp( − hours_since_prev_author_commit / 24 )`
+
+All Effort components use MAD-z values before weighting.
+
+---
+
+## Batch Importance — per batch b
+
+```text
+Importance_b
+ = 0.30 Z^{scale}_b + 0.20 Z^{scope}_b + 0.15 Z^{central}_b
+ + 0.15 Z^{complex}_b + 0.10 Z^{type}_b + 0.10 Z^{release}_b
+```
+
+**Scale**
+`log(1 + total_churn_b)`
+
+**Scope**
+`0.5·files_changed + 0.3·H_dir + 0.2·unique_dirs`, where `H_dir` is entropy over the batch’s directory distribution.
+
+**Centrality**
+Mean PageRank of all directories touched by the batch.
+
+**Complexity**
+`sqrt(unique_dirs × log(1 + total_churn_b))`
+
+**Type Priority**
+Classifier on commit messages → coefficients:
+`security 1.20, hotfix 1.15, feature 1.10, perf 1.05, bugfix 1.00, refactor 0.90, doc 0.60, other 0.80`.
+
+**Release Proximity**
+`exp( − days_to_nearest_tag / 30 )`
+
+All six are MAD-z standardized before weighting.
+
+---
+
+## “Isn’t scale/centrality counted twice?”
+
+No. We measure two subjects on two scales: the developer’s slice (Effort) and the batch as a whole (Importance). This avoids “free rides” (tiny tweaks on critical batches) and “thankless marathons” (huge edits in peripheral code). Both bundles are MAD-z normalized, so their product remains stable.
+
+---
+
+## Worked example (from our Linux-kernel test)
+
+Effort(u,b) ≈ 0.47 using Share, Scale, Reach, Centrality, Dominance, Novelty, Speed.
+Importance(b) ≈ 0.54 from Scale, Scope, Centrality, Complexity, Type, Release.
+Contribution(u,b) ≈ 0.47 × 0.54 ≈ 0.26.
+
+Numbers, definitions, and equations match the project notes.
+
+---
+
+## Outputs
+
+The evaluation run emits CSVs ready for dashboards:
+
+- `detailed_evaluation.csv` — per developer-batch metrics, Effort, Importance, Contribution
+- `developer_summary.csv` — per developer totals (FDS) and distribution stats
+- `batch_summary.csv` — per batch Importance and components
+
+These names may vary by run; the schema follows the fields above.
+
+---
+
+## Quick start
+
+1. Export Git data with the required fields.
+2. Run the evaluator on a repo window (quarter or rolling 90 days).
+3. Inspect the CSVs and plug into your BI tool.
+
+> In our reference code we use `modules/evaluation/run_evaluation.py` to produce the three CSVs listed above.
+
+---
+
+## Configuration knobs
+
+```text
+TIME_GAP_HOURS = 2       # batching
+JACCARD_MIN    = 0.30    # batching
+alpha_pagerank = 0.85    # centrality
+tau_speed_h    = 24      # hours
+tau_release_d  = 30      # days
+MAD_clip       = [-3, 3] # robust z
+# Effort weights:   0.25, 0.15, 0.20, 0.20, 0.15, 0.05
+# Importance wts:   0.30, 0.20, 0.15, 0.15, 0.10, 0.10
+```
+
+Weights and thresholds can be tuned against internal ground truth (release notes, hotfix lists).
+
+---
+
+## Design principles (what makes this repo different)
+
+- **Explainable**: every score decomposes to concrete lines, directories, timestamps.
+- **Hard to game**: entropy, centrality, dominance, and novelty reward useful work, not just LOC.
+- **Context-aware**: batch importance bakes in business reality (type, release timing).
+- **Robust**: MAD-z standardization resists outliers and seasonality.
+- **Git-only**: no private telemetry required; easy to adopt across orgs.
+- **Extensible**: slots for test deltas, static-analysis metrics, runtime adoption.
+
+---
+
+## Reference
+
+Full derivations, equations, and worked examples live in the project notes PDF.
+
+---
+
+## License & contributions
+
+License: MIT. See the LICENSE file for details.
+
+Issues and PRs are welcome—especially around new type-classifiers, UI integrations, and benchmark datasets.
+
+---
+
+*If you use this in a paper or blog, please credit the project and link back to the repo.*
+
 # Fair Developer Score (FDS) – Overview
 
 Modern, end-to-end framework and web application for analyzing GitHub repositories and computing Fair Developer Scores (FDS) from commit history. It includes:
