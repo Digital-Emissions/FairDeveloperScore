@@ -25,6 +25,20 @@ Here `u` is a developer and `k` is a build. A tiny bug-fix build is not equivale
 
 ---
 
+## 🎥 Demo
+
+### Web Application Interface
+![FDS Web Application Demo](Demo1.gif)
+
+*Interactive dashboard showing developer contributions, build analysis, and real-time metrics*
+
+### Analysis Results Visualization  
+![FDS Analysis Results](Demo2.gif)
+
+*Detailed analysis results with charts, developer rankings, and build importance metrics*
+
+---
+
 ## Data inputs (Git-only)
 
 For each commit:
@@ -87,34 +101,38 @@ $$\text{Effort}(u, k) = \text{Share}(u, k) \cdot \left(
   `author_churn_in_build = Σ(insertions + deletions) (after noise)`
 
 * **Reach (directory entropy)**
-  $p_i = \text{churn\_in\_dir}_i / \text{total\_author\_churn}$;
+  ```
+  p_i = churn_in_dir_i / total_author_churn
+  ```
   
   $$H = -\sum_i p_i \log_2 p_i$$
   
   (0 if one directory). Then MAD-z.
 
 * **Centrality**
-  $\text{raw} = \text{mean}(C(\text{dir}))$ over dirs the author touched in the build
-  (recommended: churn-weighted mean). Then MAD-z.
+  ```
+  raw = mean(C(dir))
+  ```
+  over dirs the author touched in the build (recommended: churn-weighted mean). Then MAD-z.
 
 * **Dominance**
   
   $$\text{raw} = 0.3 \cdot \text{is\_first} + 0.3 \cdot \text{is\_last} + 0.4 \cdot \text{commit\_count\_share}$$
   
-  Cap to $[0,1]$. Then MAD-z.
+  Cap to [0,1]. Then MAD-z.
 
 * **Novelty**
   
-  $$\text{raw} = \frac{\text{new\_file\_lines} + \text{key\_path\_lines}}{\text{author\_churn}}$$
+  $$\text{raw} = \frac{\text{new file lines} + \text{key path lines}}{\text{author churn}}$$
   
-  Cap to $\leq 2.0$. Then MAD-z.
-  *(key\_path\_lines = lines in files under "hot" dirs or high-centrality nodes)*
+  Cap to ≤ 2.0. Then MAD-z.
+  *(key_path_lines = lines in files under "hot" dirs or high-centrality nodes)*
 
 * **Speed** *(optional if recency available)*
   
-  $$\text{raw} = \exp\left(-\frac{\text{hours\_since\_prev\_author\_commit}}{\tau_{\text{speed\_h}}}\right)$$
+  $$\text{raw} = \exp\left(-\frac{\text{hours since prev author commit}}{\tau_{\text{speed h}}}\right)$$
   
-  Default $\tau_{\text{speed\_h}} = 24$; then MAD-z.
+  Default τ_speed_h = 24; then MAD-z.
 
 ---
 
@@ -126,22 +144,25 @@ $$\text{Importance}(k) = 0.30 \cdot Z_{\text{scale}}(k) + 0.20 \cdot Z_{\text{sc
 
 * **Scale**
   
-  $$\text{raw} = \log(1 + \text{total\_churn}_k)$$
+  $$\text{raw} = \log(1 + \text{total churn}_k)$$
   
-  where $\text{total\_churn}_k = \sum \text{effective\_churn}$ (all authors); MAD-z.
+  where total_churn_k = Σ effective_churn (all authors); MAD-z.
 
 * **Scope**
   
-  $$\text{raw} = 0.5 \cdot \text{files\_changed} + 0.3 \cdot H_{\text{dir}} + 0.2 \cdot \text{unique\_dirs}$$
+  $$\text{raw} = 0.5 \cdot \text{files changed} + 0.3 \cdot H_{\text{dir}} + 0.2 \cdot \text{unique dirs}$$
   
-  Then MAD-z. $H_{\text{dir}}$ is directory entropy computed over the entire build's churn distribution.
+  Then MAD-z. H_dir is directory entropy computed over the entire build's churn distribution.
 
 * **Centrality**
-  $\text{raw} = \text{mean}(C(\text{dir}))$ over **all** dirs touched in the build (unweighted or churn-weighted); MAD-z.
+  ```
+  raw = mean(C(dir))
+  ```
+  over **all** dirs touched in the build (unweighted or churn-weighted); MAD-z.
 
 * **Complexity**
   
-  $$\text{raw} = \sqrt{\text{unique\_dirs} \times \log(1 + \text{total\_churn}_k)}$$
+  $$\text{raw} = \sqrt{\text{unique dirs} \times \log(1 + \text{total churn}_k)}$$
   
   MAD-z. (Square-root tempers growth while keeping multi-module × large edits higher.)
 
@@ -156,9 +177,9 @@ $$\text{Importance}(k) = 0.30 \cdot Z_{\text{scale}}(k) + 0.20 \cdot Z_{\text{sc
 
 * **Release Proximity**
   
-  $$\text{raw} = \exp\left(-\frac{\text{days\_to\_nearest\_tag\_or\_merge}}{\tau_{\text{release\_d}}}\right)$$
+  $$\text{raw} = \exp\left(-\frac{\text{days to nearest tag or merge}}{\tau_{\text{release d}}}\right)$$
   
-  Default $\tau_{\text{release\_d}} = 30$; MAD-z.
+  Default τ_release_d = 30; MAD-z.
   (Distance to nearest annotated tag or merge-to-main used as a release proxy.)
 
 ---
