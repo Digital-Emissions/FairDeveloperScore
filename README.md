@@ -17,10 +17,9 @@ Large organizations still lean on simplistic signals (commit counts, raw LOC). T
 
 We first **cluster commits into builds** (the smallest unit of value we measure), then score:
 
-```text
-Contribution(u, k) = Effort(u, k) × Importance(k)
-FDS(u)             = Σ_k Contribution(u, k)
-```
+$$\text{Contribution}(u, k) = \text{Effort}(u, k) \times \text{Importance}(k)$$
+
+$$\text{FDS}(u) = \sum_k \text{Contribution}(u, k)$$
 
 Here `u` is a developer and `k` is a build. A tiny bug-fix build is not equivalent to a cross-module refactor build; the math reflects that.
 
@@ -61,27 +60,21 @@ Jaccard(dir_set_curr, dir_set_prev) < JACCARD_MIN  (default 0.30)
 ```
 
 **Directory co-change graph & PageRank**
-Nodes = top-level directories; edge weight `w_ij` = co-change frequency.
-Compute PageRank with damping `α = 0.85`; store `C(dir)`.
+Nodes = top-level directories; edge weight $w_{ij}$ = co-change frequency.
+Compute PageRank with damping $\alpha = 0.85$; store $C(\text{dir})$.
 
 **Robust standardization (MAD-z)**
 For every raw feature (except Share), per **repo × quarter**:
 
-```
-z = clip( (x − median) / (1.4826 · MAD), −3, +3 )
-```
+$$z = \text{clip}\left(\frac{x - \text{median}}{1.4826 \cdot \text{MAD}}, -3, +3\right)$$
 
 ---
 
 ## Effort — per developer `u` in build `k`
 
-```text
-Effort(u, k)
- = Share(u, k) · (
-   0.25 · Z_scale(u, k) + 0.15 · Z_reach(u, k) + 0.20 · Z_central(u, k)
- + 0.20 · Z_dom(u, k)  + 0.15 · Z_novel(u, k)  + 0.05 · Z_speed(u, k)
- )
-```
+$$\text{Effort}(u, k) = \text{Share}(u, k) \cdot \left(
+0.25 \cdot Z_{\text{scale}}(u, k) + 0.15 \cdot Z_{\text{reach}}(u, k) + 0.20 \cdot Z_{\text{central}}(u, k) + 0.20 \cdot Z_{\text{dom}}(u, k) + 0.15 \cdot Z_{\text{novel}}(u, k) + 0.05 \cdot Z_{\text{speed}}(u, k)
+\right)$$
 
 ### Dimension settings (Effort)
 
@@ -94,48 +87,63 @@ Effort(u, k)
   `author_churn_in_build = Σ(insertions + deletions) (after noise)`
 
 * **Reach (directory entropy)**
-  `p_i = churn_in_dir_i / total_author_churn`;
-  `raw = H = − Σ p_i · log2 p_i` (0 if one directory). Then MAD-z.
+  $p_i = \text{churn\_in\_dir}_i / \text{total\_author\_churn}$;
+  
+  $$H = -\sum_i p_i \log_2 p_i$$
+  
+  (0 if one directory). Then MAD-z.
 
 * **Centrality**
-  `raw = mean( C(dir) )` over dirs the author touched in the build
+  $\text{raw} = \text{mean}(C(\text{dir}))$ over dirs the author touched in the build
   (recommended: churn-weighted mean). Then MAD-z.
 
 * **Dominance**
-  `raw = 0.3·is_first + 0.3·is_last + 0.4·commit_count_share`; cap to `[0,1]`. Then MAD-z.
+  
+  $$\text{raw} = 0.3 \cdot \text{is\_first} + 0.3 \cdot \text{is\_last} + 0.4 \cdot \text{commit\_count\_share}$$
+  
+  Cap to $[0,1]$. Then MAD-z.
 
 * **Novelty**
-  `raw = (new_file_lines + key_path_lines) / author_churn`; cap to `≤ 2.0`. Then MAD-z.
+  
+  $$\text{raw} = \frac{\text{new\_file\_lines} + \text{key\_path\_lines}}{\text{author\_churn}}$$
+  
+  Cap to $\leq 2.0$. Then MAD-z.
   *(key\_path\_lines = lines in files under "hot" dirs or high-centrality nodes)*
 
 * **Speed** *(optional if recency available)*
-  `raw = exp( − hours_since_prev_author_commit / τ_speed_h )`, default `τ_speed_h = 24`; then MAD-z.
+  
+  $$\text{raw} = \exp\left(-\frac{\text{hours\_since\_prev\_author\_commit}}{\tau_{\text{speed\_h}}}\right)$$
+  
+  Default $\tau_{\text{speed\_h}} = 24$; then MAD-z.
 
 ---
 
 ## Build Importance — per build `k`
 
-```text
-Importance(k)
- = 0.30 · Z_scale(k) + 0.20 · Z_scope(k) + 0.15 · Z_central(k)
- + 0.15 · Z_complex(k) + 0.10 · Z_type(k) + 0.10 · Z_release(k)
-```
+$$\text{Importance}(k) = 0.30 \cdot Z_{\text{scale}}(k) + 0.20 \cdot Z_{\text{scope}}(k) + 0.15 \cdot Z_{\text{central}}(k) + 0.15 \cdot Z_{\text{complex}}(k) + 0.10 \cdot Z_{\text{type}}(k) + 0.10 \cdot Z_{\text{release}}(k)$$
 
 ### Dimension settings (Importance)
 
 * **Scale**
-  `raw = log(1 + total_churn_k)` where `total_churn_k = Σ effective_churn (all authors)`; MAD-z.
+  
+  $$\text{raw} = \log(1 + \text{total\_churn}_k)$$
+  
+  where $\text{total\_churn}_k = \sum \text{effective\_churn}$ (all authors); MAD-z.
 
 * **Scope**
-  `raw = 0.5·files_changed + 0.3·H_dir + 0.2·unique_dirs`, then MAD-z.
-  `H_dir` is directory entropy computed over the entire build's churn distribution.
+  
+  $$\text{raw} = 0.5 \cdot \text{files\_changed} + 0.3 \cdot H_{\text{dir}} + 0.2 \cdot \text{unique\_dirs}$$
+  
+  Then MAD-z. $H_{\text{dir}}$ is directory entropy computed over the entire build's churn distribution.
 
 * **Centrality**
-  `raw = mean( C(dir) )` over **all** dirs touched in the build (unweighted or churn-weighted); MAD-z.
+  $\text{raw} = \text{mean}(C(\text{dir}))$ over **all** dirs touched in the build (unweighted or churn-weighted); MAD-z.
 
 * **Complexity**
-  `raw = sqrt( unique_dirs × log(1 + total_churn_k) )`; MAD-z.
-  (Square-root tempers growth while keeping multi-module × large edits higher.)
+  
+  $$\text{raw} = \sqrt{\text{unique\_dirs} \times \log(1 + \text{total\_churn}_k)}$$
+  
+  MAD-z. (Square-root tempers growth while keeping multi-module × large edits higher.)
 
 * **Type Priority**
   Lightweight message classifier → coefficient; then MAD-z.
@@ -147,17 +155,19 @@ Importance(k)
   ```
 
 * **Release Proximity**
-  `raw = exp( − days_to_nearest_tag_or_merge / τ_release_d )`, default `τ_release_d = 30`; MAD-z.
+  
+  $$\text{raw} = \exp\left(-\frac{\text{days\_to\_nearest\_tag\_or\_merge}}{\tau_{\text{release\_d}}}\right)$$
+  
+  Default $\tau_{\text{release\_d}} = 30$; MAD-z.
   (Distance to nearest annotated tag or merge-to-main used as a release proxy.)
 
 ---
 
 ## Final scoring
 
-```
-Contribution_{u,k} = Effort_{u,k} × Importance_k
-FDS(u)             = Σ_k Contribution_{u,k}     # over chosen window (e.g., quarter)
-```
+$$\text{Contribution}_{u,k} = \text{Effort}_{u,k} \times \text{Importance}_k$$
+
+$$\text{FDS}(u) = \sum_k \text{Contribution}_{u,k} \quad \text{# over chosen window (e.g., quarter)}$$
 
 Effort captures **who lifted how much**; Importance captures **how heavy the build actually is**. Using the same yardsticks (scale, centrality) at two levels prevents "free rides" on critical builds and "thankless marathons" on peripheral ones.
 
