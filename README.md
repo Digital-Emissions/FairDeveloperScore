@@ -48,7 +48,8 @@ $$\text{Effort}_{u,b}=\text{Share}_{u,b}\,\big(0.25\,Z^{\text{scale}}+0.15\,Z^{\
 
 #### 1. Share – Who Owns the Build?
 
-$$\text{Share}_{u,b}=\frac{\mathrm{EC}_{u,b}}{\sum_{v} \mathrm{EC}_{v,b}},\quad \mathrm{EC}=\text{effective\;churn}$$
+$$\text{Share}_{u,b}=\frac{\operatorname{EC}_{u,b}}{\sum_{v}\operatorname{EC}_{v,b}},\quad \operatorname{EC}:=\text{effective churn}$$
+
 
 - *Effective churn* = insertions + deletions after noise filtering
 - 1.0 ⇒ solo author; 0.25 ⇒ quarter of the work
