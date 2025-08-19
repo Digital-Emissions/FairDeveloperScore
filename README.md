@@ -194,7 +194,9 @@ $$\text{Importance}(k) = 0.30 \cdot Z_{\text{scale}}(k) + 0.20 \cdot Z_{\text{sc
 
 ## 🏆 Final scoring
 
-$$\text{Contribution}_{u,k} = \text{Effort}_{u,k} \times \text{Importance}_k$$
+```
+Contribution_{u,k} = Effort_{u,k} × Importance_k
+```
 
 ```
 FDS(u) = Σ_k Contribution_{u,k}    (over chosen window, e.g., quarter)
