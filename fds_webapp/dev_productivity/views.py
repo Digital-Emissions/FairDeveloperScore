@@ -1,15 +1,18 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib import messages
-from django.http import JsonResponse
+from django.contrib.auth.decorators import login_required
+from django.http import JsonResponse, HttpResponse
 from django.views.decorators.csrf import csrf_exempt
-from django.views.decorators.http import require_POST
+from django.views.decorators.http import require_POST, require_GET
 from django.utils import timezone
 from django.core.paginator import Paginator
-from .models import FDSAnalysis, DeveloperScore, BatchMetrics
-from .forms import FDSAnalysisForm
+from django.db import models
+from django.core.exceptions import PermissionDenied
+from .models import FDSAnalysis, DeveloperScore, BatchMetrics, User
+from .forms import FDSAnalysisForm, AnalysisSharingForm
 from .services import FDSAnalysisService
+from .utils import log_user_activity, get_user_preferences
 import json
-from django.views.decorators.http import require_GET
 from django.utils.safestring import mark_safe
 from pathlib import Path
 import io
@@ -19,41 +22,95 @@ import math
 
 
 def home(request):
-    """Home page with form to start new analysis"""
-    if request.method == 'POST':
-        form = FDSAnalysisForm(request.POST)
-        if form.is_valid():
-            analysis = form.save()
-            # Start analysis in background
-            service = FDSAnalysisService()
-            service.start_analysis(analysis.id)
-            messages.success(request, f'Analysis started for {analysis.repo_url}. Analysis ID: {analysis.id}')
-            return redirect('analysis_detail', analysis_id=analysis.id)
-        else:
-            messages.error(request, 'Please correct the errors below.')
-    else:
-        form = FDSAnalysisForm()
+    """Home page - redirect authenticated users to dashboard"""
+    if request.user.is_authenticated:
+        return redirect('user_dashboard')
     
-    # Show recent analyses
-    recent_analyses = FDSAnalysis.objects.all()[:5]
+    # Show public analyses for anonymous users
+    public_analyses = FDSAnalysis.objects.filter(is_public=True, status='completed')[:5]
     
     context = {
-        'form': form,
-        'recent_analyses': recent_analyses,
+        'public_analyses': public_analyses,
     }
     return render(request, 'dev_productivity/home.html', context)
 
 
-def analysis_list(request):
-    """List all analyses with pagination"""
-    analyses = FDSAnalysis.objects.all()
-    paginator = Paginator(analyses, 10)  # Show 10 analyses per page
+@login_required
+def create_analysis(request):
+    """Create new analysis (authenticated users only)"""
+    if request.method == 'POST':
+        form = FDSAnalysisForm(request.POST, user=request.user)
+        if form.is_valid():
+            analysis = form.save()
+            
+            # Start analysis in background
+            service = FDSAnalysisService()
+            service.start_analysis(analysis.id)
+            
+            # Log activity
+            log_user_activity(
+                request.user, 
+                'analysis_create', 
+                f'Created analysis for {analysis.repo_url}', 
+                request, 
+                analysis
+            )
+            
+            messages.success(request, f'Analysis started for {analysis.get_repo_name()}. Analysis ID: {analysis.id}')
+            return redirect('analysis_detail', analysis_id=analysis.id)
+        else:
+            messages.error(request, 'Please correct the errors below.')
+    else:
+        form = FDSAnalysisForm(user=request.user)
     
+    return render(request, 'dev_productivity/create_analysis.html', {'form': form})
+
+
+def analysis_list(request):
+    """List public analyses for all users, or user's analyses if authenticated"""
+    if request.user.is_authenticated:
+        # Show user's own analyses and public analyses
+        analyses = FDSAnalysis.objects.filter(
+            models.Q(user=request.user) | models.Q(is_public=True)
+        ).distinct()
+    else:
+        # Show only public analyses
+        analyses = FDSAnalysis.objects.filter(is_public=True)
+    
+    # Filter by status if requested
+    status_filter = request.GET.get('status')
+    if status_filter and status_filter in ['pending', 'running', 'completed', 'failed']:
+        analyses = analyses.filter(status=status_filter)
+    
+    # Search
+    search_query = request.GET.get('q')
+    if search_query:
+        analyses = analyses.filter(repo_url__icontains=search_query)
+    
+    paginator = Paginator(analyses, 20)  # Show 20 analyses per page
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
     
+    # Calculate summary statistics
+    total_analyses = analyses.count()
+    completed_analyses = analyses.filter(status='completed').count()
+    success_rate = (completed_analyses / total_analyses * 100) if total_analyses > 0 else 0
+    
+    # Calculate average duration for completed analyses
+    completed_with_time = analyses.filter(status='completed', execution_time__isnull=False)
+    avg_duration = completed_with_time.aggregate(models.Avg('execution_time'))['execution_time__avg'] or 0
+    
+    # Calculate total commits
+    total_commits = analyses.filter(total_commits__isnull=False).aggregate(models.Sum('total_commits'))['total_commits__sum'] or 0
+    
     context = {
         'page_obj': page_obj,
+        'total_analyses': total_analyses,
+        'success_rate': success_rate,
+        'avg_duration': avg_duration,
+        'total_commits': total_commits,
+        'status_filter': status_filter,
+        'search_query': search_query,
     }
     return render(request, 'dev_productivity/analysis_list.html', context)
 
@@ -61,6 +118,20 @@ def analysis_list(request):
 def analysis_detail(request, analysis_id):
     """Show detailed results of an analysis"""
     analysis = get_object_or_404(FDSAnalysis, id=analysis_id)
+    
+    # Check permissions
+    if not analysis.can_view(request.user):
+        raise PermissionDenied("You don't have permission to view this analysis.")
+
+    # Log activity for authenticated users
+    if request.user.is_authenticated:
+        log_user_activity(
+            request.user,
+            'analysis_view',
+            f'Viewed analysis {analysis.id}',
+            request,
+            analysis
+        )
 
     # Auto-backfill developer scores from saved artifacts if they are missing
     if analysis.status == 'completed' and analysis.developer_scores.count() == 0:
@@ -87,11 +158,15 @@ def analysis_detail(request, analysis_id):
                 'min_fds': min(scores),
             }
     
+    # Check if user can edit this analysis
+    can_edit = request.user.is_authenticated and analysis.user == request.user
+    
     context = {
         'analysis': analysis,
         'dev_page_obj': dev_page_obj,
         'top_batches': top_batches,
         'stats': stats,
+        'can_edit': can_edit,
     }
     return render(request, 'dev_productivity/analysis_detail.html', context)
 
@@ -304,21 +379,109 @@ def test_runner_page(request):
     return render(request, 'dev_productivity/test_runner.html', {})
 
 
+@login_required
 @require_POST
 def delete_analysis(request, analysis_id):
     """Delete an analysis and all related data"""
     analysis = get_object_or_404(FDSAnalysis, id=analysis_id)
     
+    # Check permissions - only owner can delete
+    if analysis.user != request.user:
+        raise PermissionDenied("You don't have permission to delete this analysis.")
+    
     try:
-        repo_name = analysis.repo_url.split('/')[-1] if analysis.repo_url else f"Analysis {analysis_id}"
+        repo_name = analysis.get_repo_name()
+        
+        # Clean up analysis folder
+        import shutil
+        analysis_folder = analysis.get_analysis_folder()
+        if analysis_folder.exists():
+            shutil.rmtree(analysis_folder)
+        
+        # Log activity before deletion
+        log_user_activity(
+            request.user,
+            'analysis_delete',
+            f'Deleted analysis for {repo_name}',
+            request,
+            analysis
+        )
+        
         analysis.delete()  # This will cascade delete related DeveloperScore and BatchMetrics
         
         messages.success(request, f'Analysis for "{repo_name}" has been successfully deleted.')
-        return redirect('analysis_list')
+        return redirect('user_analyses')
     
     except Exception as e:
         messages.error(request, f'Error deleting analysis: {str(e)}')
         return redirect('analysis_detail', analysis_id=analysis_id)
+
+
+@login_required
+def share_analysis(request, analysis_id):
+    """Share analysis with other users"""
+    analysis = get_object_or_404(FDSAnalysis, id=analysis_id)
+    
+    # Check permissions - only owner can share
+    if analysis.user != request.user:
+        raise PermissionDenied("You don't have permission to share this analysis.")
+    
+    if request.method == 'POST':
+        form = AnalysisSharingForm(request.POST)
+        if form.is_valid():
+            email_addresses = form.cleaned_data['email_addresses']
+            
+            shared_count = 0
+            for email in email_addresses:
+                try:
+                    user_to_share = User.objects.get(email=email)
+                    analysis.shared_with.add(user_to_share)
+                    shared_count += 1
+                except User.DoesNotExist:
+                    messages.warning(request, f'User with email {email} not found.')
+            
+            if shared_count > 0:
+                # Log activity
+                log_user_activity(
+                    request.user,
+                    'analysis_share',
+                    f'Shared analysis {analysis.id} with {shared_count} users',
+                    request,
+                    analysis
+                )
+                
+                messages.success(request, f'Analysis shared with {shared_count} users.')
+            
+            return redirect('analysis_detail', analysis_id=analysis.id)
+    else:
+        form = AnalysisSharingForm()
+    
+    context = {
+        'analysis': analysis,
+        'form': form,
+        'shared_users': analysis.shared_with.all(),
+    }
+    
+    return render(request, 'dev_productivity/share_analysis.html', context)
+
+
+@login_required
+@require_POST
+def toggle_analysis_privacy(request, analysis_id):
+    """Toggle analysis public/private status"""
+    analysis = get_object_or_404(FDSAnalysis, id=analysis_id)
+    
+    # Check permissions - only owner can change privacy
+    if analysis.user != request.user:
+        raise PermissionDenied("You don't have permission to modify this analysis.")
+    
+    analysis.is_public = not analysis.is_public
+    analysis.save(update_fields=['is_public'])
+    
+    status = "public" if analysis.is_public else "private"
+    messages.success(request, f'Analysis is now {status}.')
+    
+    return redirect('analysis_detail', analysis_id=analysis.id)
 
 
 # ===================== Frontend Dashboard Integration =====================

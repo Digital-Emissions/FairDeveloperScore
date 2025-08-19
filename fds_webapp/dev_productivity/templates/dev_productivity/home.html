@@ -35,9 +35,9 @@
   <div class="blob blob-2"></div>
   <div class="row align-items-center position-relative" style="z-index:1">
     <div class="col-lg-7 mb-4 mb-lg-0">
-      <div class="pill mb-2 d-inline-block">Commercial Edition</div>
+      <div class="pill mb-2 d-inline-block">{% if user.is_authenticated %}Welcome, {{ user.first_name }}{% else %}Open Source Edition{% endif %}</div>
       <h1 class="display-6 fw-bold mb-2" style="color:#111827">Fair Developer Score</h1>
-      <p class="lead mb-3" style="color:#374151">Run productivity assessments with one click. TORQUE build clustering + 6D FDS with MAD-Z normalization, presented in a beautiful dashboard.</p>
+      <p class="lead mb-3" style="color:#374151">{% if user.is_authenticated %}Run productivity assessments with one click{% else %}Explore example analyses and create your account to start analyzing your repositories{% endif %}. TORQUE build clustering + 6D FDS with MAD-Z normalization.</p>
       <div class="d-flex flex-wrap gap-2">
         <span class="badge bg-primary">Builds</span>
         <span class="badge bg-success">FDS</span>
@@ -47,40 +47,34 @@
     </div>
     <div class="col-lg-5">
       <div class="glass p-4 shadow-sm">
-        <h5 class="fw-semibold mb-3">Start new analysis</h5>
-        <form method="post" class="needs-validation" novalidate>
-          {% csrf_token %}
-          <div class="mb-3">
-            <label class="form-label">GitHub Repository URL</label>
-            <div class="input-group">
-              {{ form.repo_url }}
-              <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">Presets</button>
-              <ul class="dropdown-menu dropdown-menu-end">
-                <li><a class="dropdown-item preset" data-url="https://github.com/torvalds/linux">torvalds/linux</a></li>
-                <li><a class="dropdown-item preset" data-url="https://github.com/facebook/react">facebook/react</a></li>
-                <li><a class="dropdown-item preset" data-url="https://github.com/vercel/next.js">vercel/next.js</a></li>
-                <li><a class="dropdown-item preset" data-url="https://github.com/huggingface/transformers">huggingface/transformers</a></li>
-              </ul>
-            </div>
+        {% if user.is_authenticated %}
+          <h5 class="fw-semibold mb-3">Start new analysis</h5>
+          <div class="d-grid gap-2">
+            <a href="{% url 'create_analysis' %}" class="btn btn-primary" style="background:#6f42c1;border-color:#6f42c1">
+              <i class="bi bi-plus-circle me-2"></i>Create New Analysis
+            </a>
+            <a href="{% url 'user_analyses' %}" class="btn btn-outline-secondary">
+              <i class="bi bi-list me-2"></i>My Analyses
+            </a>
+            <a href="{% url 'user_dashboard' %}" class="btn btn-outline-primary">
+              <i class="bi bi-speedometer2 me-2"></i>Dashboard
+            </a>
           </div>
-          <div class="mb-3">
-            <label class="form-label">GitHub Access Token</label>
-            {{ form.access_token }}
-            <div class="form-text">Default token is prefilled for convenience.</div>
+        {% else %}
+          <h5 class="fw-semibold mb-3">Get Started</h5>
+          <p class="text-muted mb-3">Join the FDS community to analyze your repositories and get detailed developer insights.</p>
+          <div class="d-grid gap-2">
+            <a href="{% url 'register' %}" class="btn btn-primary" style="background:#6f42c1;border-color:#6f42c1">
+              <i class="bi bi-person-plus me-2"></i>Create Account
+            </a>
+            <a href="{% url 'login' %}" class="btn btn-outline-secondary">
+              <i class="bi bi-box-arrow-in-right me-2"></i>Sign In
+            </a>
+            <a href="{% url 'analysis_list' %}" class="btn btn-outline-info">
+              <i class="bi bi-eye me-2"></i>Browse Examples
+            </a>
           </div>
-          <div class="mb-3">
-            <label class="form-label">Commit Limit</label>
-            <div class="input-group">
-              {{ form.commit_limit }}
-              <button class="btn btn-outline-secondary" type="button" id="preset-50">50</button>
-              <button class="btn btn-outline-secondary" type="button" id="preset-100">100</button>
-              <button class="btn btn-outline-secondary" type="button" id="preset-300">300</button>
-            </div>
-          </div>
-          <div class="d-grid">
-            <button type="submit" class="btn btn-primary" style="background:#6f42c1;border-color:#6f42c1">Run FDS Assessment</button>
-          </div>
-        </form>
+        {% endif %}
       </div>
     </div>
   </div>
@@ -115,40 +109,50 @@
   </div>
   </section>
 
-{% if recent_analyses %}
+{% if public_analyses %}
 <section class="fade-in">
   <div class="card border-0 shadow-sm">
-    <div class="card-header bg-white fw-semibold">Recent Analyses</div>
+    <div class="card-header bg-white fw-semibold d-flex justify-content-between align-items-center">
+      <span><i class="bi bi-star-fill text-warning me-2"></i>Example Analyses</span>
+      <span class="badge bg-success">Public</span>
+    </div>
     <div class="card-body">
       <div class="table-responsive">
         <table class="table align-middle mb-0">
           <thead>
             <tr>
-              <th>Repository</th><th>Status</th><th>Builds</th><th>Developers</th><th>Actions</th>
+              <th>Repository</th><th>Status</th><th>Commits</th><th>Developers</th><th>Batches</th><th>Actions</th>
             </tr>
           </thead>
           <tbody>
-            {% for a in recent_analyses %}
+            {% for a in public_analyses %}
             <tr>
-              <td class="text-truncate" style="max-width:420px">{{ a.repo_url }}</td>
               <td>
-                {% if a.status == 'completed' %}<span class="badge bg-success">Completed</span>
-                {% elif a.status == 'running' %}<span class="badge bg-info text-dark">Running</span>
-                {% elif a.status == 'failed' %}<span class="badge bg-danger">Failed</span>
-                {% else %}<span class="badge bg-secondary">Pending</span>{% endif %}
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-github me-2"></i>
+                  <div>
+                    <div class="fw-medium">{{ a.get_owner_repo }}</div>
+                    <div class="small text-muted text-truncate" style="max-width:300px">{{ a.repo_url }}</div>
+                  </div>
+                </div>
               </td>
-              <td>{{ a.total_batches|default:'—' }}</td>
-              <td>{{ a.total_developers|default:'—' }}</td>
+              <td><span class="badge bg-success"><i class="bi bi-check-circle me-1"></i>Completed</span></td>
+              <td><strong>{{ a.total_commits }}</strong></td>
+              <td><strong>{{ a.total_developers }}</strong></td>
+              <td><strong>{{ a.total_batches }}</strong></td>
               <td class="d-flex gap-2">
                 <a href="{% url 'analysis_detail' a.id %}" class="btn btn-sm btn-outline-secondary">Open</a>
-                {% if a.status == 'completed' %}
                 <a href="{% url 'dashboard' a.id %}" class="btn btn-sm btn-primary">Dashboard</a>
-                {% endif %}
               </td>
             </tr>
             {% endfor %}
           </tbody>
         </table>
+      </div>
+      <div class="text-center mt-3">
+        <a href="{% url 'analysis_list' %}" class="btn btn-outline-primary">
+          <i class="bi bi-list me-2"></i>View All Public Analyses
+        </a>
       </div>
     </div>
   </div>

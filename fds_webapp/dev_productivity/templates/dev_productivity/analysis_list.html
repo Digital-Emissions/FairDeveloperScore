@@ -170,7 +170,7 @@
         <div class="col-md-3">
             <div class="card text-center">
                 <div class="card-body">
-                    <h4 class="text-primary">{{ page_obj.paginator.count }}</h4>
+                    <h4 class="text-primary">{{ total_analyses }}</h4>
                     <p class="text-muted">Total Analyses</p>
                 </div>
             </div>
@@ -178,9 +178,7 @@
         <div class="col-md-3">
             <div class="card text-center">
                 <div class="card-body">
-                    <h4 class="text-success">
-                        {% widthratio page_obj.object_list|length page_obj.paginator.count 100 %}%
-                    </h4>
+                    <h4 class="text-success">{{ success_rate|floatformat:0 }}%</h4>
                     <p class="text-muted">Success Rate</p>
                 </div>
             </div>
@@ -188,11 +186,7 @@
         <div class="col-md-3">
             <div class="card text-center">
                 <div class="card-body">
-                    <h4 class="text-info">
-                        {% for analysis in page_obj %}
-                            {% if analysis.execution_time %}{{ analysis.execution_time|add:0 }}{% endif %}
-                        {% endfor %}
-                    </h4>
+                    <h4 class="text-info">{{ avg_duration|floatformat:1 }}s</h4>
                     <p class="text-muted">Avg Duration</p>
                 </div>
             </div>
@@ -200,11 +194,7 @@
         <div class="col-md-3">
             <div class="card text-center">
                 <div class="card-body">
-                    <h4 class="text-warning">
-                        {% for analysis in page_obj %}
-                            {% if analysis.total_commits %}{{ analysis.total_commits|add:0 }}{% endif %}
-                        {% endfor %}
-                    </h4>
+                    <h4 class="text-warning">{{ total_commits|floatformat:0 }}</h4>
                     <p class="text-muted">Total Commits</p>
                 </div>
             </div>
