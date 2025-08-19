@@ -42,20 +42,13 @@ Rationale: A tiny bug-fix ≠ full subsystem refactor → credit must differ.
 
 ### Effort Formula
 
-$$\text{Effort}_{u,b} = \text{Share}_{u,b} \times \left(
-0.25\,Z^{\text{scale}} + 
-0.15\,Z^{\text{reach}} + 
-0.20\,Z^{\text{central}} + 
-0.20\,Z^{\text{dom}} + 
-0.15\,Z^{\text{novel}} + 
-0.05\,Z^{\text{speed}}
-\right)$$
+$$\text{Effort}_{u,b}=\text{Share}_{u,b}\,\big(0.25\,Z^{\text{scale}}+0.15\,Z^{\text{reach}}+0.20\,Z^{\text{central}}+0.20\,Z^{\text{dom}}+0.15\,Z^{\text{novel}}+0.05\,Z^{\text{speed}}\big)$$
 
 ### Effort Components
 
 #### 1. Share – Who Owns the Build?
 
-$$\text{Share}_{u,b} = \frac{\mathrm{EC}_{u,b}}{\sum_{v} \mathrm{EC}_{v,b}} \quad \text{where } \mathrm{EC}=\text{effective churn}$$
+$$\text{Share}_{u,b}=\frac{\mathrm{EC}_{u,b}}{\sum_{v} \mathrm{EC}_{v,b}},\quad \mathrm{EC}=\text{effective\;churn}$$
 
 - *Effective churn* = insertions + deletions after noise filtering
 - 1.0 ⇒ solo author; 0.25 ⇒ quarter of the work
@@ -85,7 +78,7 @@ Edits in hub modules receive higher scores.
 
 #### 5. Dominance – Who Leads?
 
-$$\text{Dom}_{u,b} = 0.3\,\mathbf{1}_{\text{first}} + 0.3\,\mathbf{1}_{\text{last}} + 0.4\,(\mathrm{commit\_share})$$
+$$\text{Dom}_{u,b}=0.3\,\mathbf{1}_{\text{first}}+0.3\,\mathbf{1}_{\text{last}}+0.4\,\operatorname{commit\_share}$$
 
 Rewards shepherding a build end-to-end.
 
