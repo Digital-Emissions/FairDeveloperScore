@@ -212,7 +212,7 @@ $$\text{Effort}_{u,b} \approx 0.47$$
 | Type Priority |  0.80 | -0.58 |
 | Release Prox. |  1.00 | -0.53 |
 
-$$\text{Importance}_{\#1} \approx 0.54$$
+$$\text{Importance}_{1} \approx 0.54$$
 
 #### Final Contribution Score
 
