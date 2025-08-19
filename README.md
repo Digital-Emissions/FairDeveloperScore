@@ -7,13 +7,13 @@
 
 ---
 
-## Why this project
+## 🚀 Why this project
 
 Large organizations still lean on simplistic signals (commit counts, raw LOC). Those are easy to game and ignore context. FDS separates **how much a developer contributed** from **how much that work mattered** by first grouping commits into **builds** (logical working units) and then scoring each developer–build pair with transparent math.
 
 ---
 
-## Core idea
+## 💡 Core idea
 
 We first **cluster commits into builds** (the smallest unit of value we measure), then score:
 
@@ -41,7 +41,7 @@ Here `u` is a developer and `k` is a build. A tiny bug-fix build is not equivale
 
 ---
 
-## Data inputs (Git-only)
+## 📊 Data inputs (Git-only)
 
 For each commit:
 
@@ -60,7 +60,7 @@ dt_prev_author_sec          # recency for Speed
 
 ---
 
-## Pre-processing
+## ⚙️ Pre-processing
 
 **Noise filtering → effective\_churn**
 Down-weight or drop vendor/generated files, format-only sweeps, pure renames, mass moves.
@@ -86,23 +86,27 @@ $z = \text{clip}\left(\frac{x - \text{median}}{1.4826 \cdot \text{MAD}}, -3, +3\
 
 ---
 
-## Effort — per developer `u` in build `k`
+## 💪 Effort — per developer `u` in build `k`
 
 $$$\text{Effort}(u, k) = \text{Share}(u, k) \cdot \left(
 0.25 \cdot Z_{\text{scale}}(u, k) + 0.15 \cdot Z_{\text{reach}}(u, k) + 0.20 \cdot Z_{\text{central}}(u, k) + 0.20 \cdot Z_{\text{dom}}(u, k) + 0.15 \cdot Z_{\text{novel}}(u, k) + 0.05 \cdot Z_{\text{speed}}(u, k)
 \right)$$
 
-### Dimension settings (Effort)
+### 🔧 Dimension settings (Effort)
 
-* **Share**
-  `Share(u, k) = author_effective_churn / build_effective_churn`.
+* **📊 Share** — *Who owns the build?*
+  ```
+  Share(u, k) = author_effective_churn / build_effective_churn
+  ```
   Range `[0,1]`. If denominator is 0, set Share=0.
 
-* **Scale**
-  `raw = log(1 + author_churn_in_build)`; then MAD-z.
-  `author_churn_in_build = Σ(insertions + deletions) (after noise)`
+* **📏 Scale** — *How big?*
+  ```
+  raw = log(1 + author_churn_in_build)
+  ```
+  Then MAD-z. `author_churn_in_build = Σ(insertions + deletions) (after noise)`
 
-* **Reach (directory entropy)**
+* **🌐 Reach** — *How wide?* (directory entropy)
   ```
   p_i = churn_in_dir_i / total_author_churn
   ```
@@ -111,26 +115,28 @@ $$$\text{Effort}(u, k) = \text{Share}(u, k) \cdot \left(
   
   (0 if one directory). Then MAD-z.
 
-* **Centrality**
+* **🎯 Centrality** — *How core?*
   ```
   raw = mean(C(dir))
   ```
   over dirs the author touched in the build (recommended: churn-weighted mean). Then MAD-z.
 
-* **Dominance**
+* **👑 Dominance** — *Who leads?*
   
-  $$\text{raw} = 0.3 \cdot \text{is\_first} + 0.3 \cdot \text{is\_last} + 0.4 \cdot \text{commit\_count\_share}$$
+  ```
+  raw = 0.3 × is_first + 0.3 × is_last + 0.4 × commit_count_share
+  ```
   
   Cap to [0,1]. Then MAD-z.
 
-* **Novelty**
+* **✨ Novelty** — *How new?*
   
   $$\text{raw} = \frac{\text{new file lines} + \text{key path lines}}{\text{author churn}}$$
   
   Cap to ≤ 2.0. Then MAD-z.
   *(key_path_lines = lines in files under "hot" dirs or high-centrality nodes)*
 
-* **Speed** *(optional if recency available)*
+* **⚡ Speed** — *How fast?* *(optional if recency available)*
   
   $$\text{raw} = \exp\left(-\frac{\text{hours since prev author commit}}{\tau_{\text{speed h}}}\right)$$
   
@@ -138,46 +144,46 @@ $$$\text{Effort}(u, k) = \text{Share}(u, k) \cdot \left(
 
 ---
 
-## Build Importance — per build `k`
+## ⭐ Build Importance — per build `k`
 
 $$\text{Importance}(k) = 0.30 \cdot Z_{\text{scale}}(k) + 0.20 \cdot Z_{\text{scope}}(k) + 0.15 \cdot Z_{\text{central}}(k) + 0.15 \cdot Z_{\text{complex}}(k) + 0.10 \cdot Z_{\text{type}}(k) + 0.10 \cdot Z_{\text{release}}(k)$$
 
-### Dimension settings (Importance)
+### 🎯 Dimension settings (Importance)
 
-* **Scale**
+* **📏 Scale** — *How large?*
   
   $$\text{raw} = \log(1 + \text{total churn}_k)$$
   
   where total_churn_k = Σ effective_churn (all authors); MAD-z.
 
-* **Scope**
+* **🌍 Scope** — *How broad?*
   
   $$\text{raw} = 0.5 \cdot \text{files changed} + 0.3 \cdot H_{\text{dir}} + 0.2 \cdot \text{unique dirs}$$
   
   Then MAD-z. H_dir is directory entropy computed over the entire build's churn distribution.
 
-* **Centrality**
+* **🎯 Centrality** — *How core?*
   ```
   raw = mean(C(dir))
   ```
   over **all** dirs touched in the build (unweighted or churn-weighted); MAD-z.
 
-* **Complexity**
+* **🧩 Complexity** — *How hard?*
   
   $$\text{raw} = \sqrt{\text{unique dirs} \times \log(1 + \text{total churn}_k)}$$
   
   MAD-z. (Square-root tempers growth while keeping multi-module × large edits higher.)
 
-* **Type Priority**
+* **🚨 Type Priority** — *How urgent?*
   Lightweight message classifier → coefficient; then MAD-z.
   Default mapping:
 
   ```
-  security 1.20, hotfix 1.15, feature 1.10, perf 1.05,
-  bugfix 1.00, refactor 0.90, doc 0.60, other 0.80
+  🔒 security 1.20  🚑 hotfix 1.15  ✨ feature 1.10  ⚡ perf 1.05
+  🐛 bugfix 1.00    🔧 refactor 0.90  📝 doc 0.60     ❓ other 0.80
   ```
 
-* **Release Proximity**
+* **🎯 Release Proximity** — *How late?*
   
   $$\text{raw} = \exp\left(-\frac{\text{days to nearest tag or merge}}{\tau_{\text{release d}}}\right)$$
   
@@ -186,26 +192,30 @@ $$\text{Importance}(k) = 0.30 \cdot Z_{\text{scale}}(k) + 0.20 \cdot Z_{\text{sc
 
 ---
 
-## Final scoring
+## 🏆 Final scoring
 
 $$\text{Contribution}_{u,k} = \text{Effort}_{u,k} \times \text{Importance}_k$$
 
-$$\text{FDS}(u) = \sum_k \text{Contribution}_{u,k} \quad \text{(over chosen window, e.g., quarter)}$$
+```
+FDS(u) = Σ_k Contribution_{u,k}    (over chosen window, e.g., quarter)
+```
 
 Effort captures **who lifted how much**; Importance captures **how heavy the build actually is**. Using the same yardsticks (scale, centrality) at two levels prevents "free rides" on critical builds and "thankless marathons" on peripheral ones.
 
 ---
 
-## Output artifacts
+## 📈 Output artifacts
 
-* `build_table.csv` — per build: each Importance component (raw & z) and final `importance`.
-* `effort_table.csv` — per developer–build: Share, each Effort component (raw & z), and final `effort`.
-* `contribution_table.csv` — per developer–build: `contribution = effort × importance`.
-* `fds_table.csv` — per developer: aggregated FDS over the configured time window.
+| File | Description | Content |
+|------|-------------|---------|
+| 🏗️ `build_table.csv` | **Build Analysis** | Per build: each Importance component (raw & z) and final `importance` |
+| 💪 `effort_table.csv` | **Developer Effort** | Per developer–build: Share, each Effort component (raw & z), and final `effort` |
+| 🤝 `contribution_table.csv` | **Contributions** | Per developer–build: `contribution = effort × importance` |
+| 🏆 `fds_table.csv` | **Final Scores** | Per developer: aggregated FDS over the configured time window |
 
 ---
 
-## Configuration knobs (defaults)
+## 🔧 Configuration knobs (defaults)
 
 ```text
 # Clustering
@@ -245,9 +255,18 @@ All thresholds/weights are configurable (YAML/JSON/env). Teams can tune them aga
 
 ---
 
-## License & contributions
+## 📄 License & contributions
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 Contributions are welcome—new message classifiers, better noise rules, UI integrations, and additional evaluation datasets.
-$$$
+
+---
+
+<div align="center">
+
+**⭐ Star this repo if FDS helps you build fairer developer evaluation systems! ⭐**
+
+Made with ❤️ for transparent and equitable software development
+
+</div>
