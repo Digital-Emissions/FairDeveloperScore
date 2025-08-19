@@ -6,13 +6,11 @@ A comprehensive framework for measuring programmer effort and build importance i
 
 The Fair Developer Score (FDS) system provides a quantitative approach to evaluate developer contributions by combining **Effort** and **Importance** metrics:
 
-```
-FDS(u) = Σ[Effort(u,b) × Importance(b)]  for all builds b
-```
+$$\boxed{\text{FDS}_u = \sum_{b} \text{Effort}_{u,b} \times \text{Importance}_{b}}$$
 
 Where:
-- `u` = developer
-- `b` = build (logical working unit)
+- $u$ = developer
+- $b$ = build (logical working unit)
 - Effort captures *how much* a developer pushed
 - Importance captures *how much that push matters*
 
@@ -44,29 +42,27 @@ Rationale: A tiny bug-fix ≠ full subsystem refactor → credit must differ.
 
 ### Effort Formula
 
-```
-Effort(u,b) = Share(u,b) × (
-  0.25×Z_scale + 0.15×Z_reach + 0.20×Z_central + 
-  0.20×Z_dom + 0.15×Z_novel + 0.05×Z_speed
-)
-```
+$$\text{Effort}_{u,b} = \text{Share}_{u,b} \times \left(
+0.25\,Z^{\text{scale}} + 
+0.15\,Z^{\text{reach}} + 
+0.20\,Z^{\text{central}} + 
+0.20\,Z^{\text{dom}} + 
+0.15\,Z^{\text{novel}} + 
+0.05\,Z^{\text{speed}}
+\right)$$
 
 ### Effort Components
 
 #### 1. Share – Who Owns the Build?
 
-```
-Share(u,b) = effective_churn(u,b) / Σ[effective_churn(v,b)] for all authors v
-```
+$$\text{Share}_{u,b} = \frac{\text{effective churn}_{u,b}}{\sum_{v} \text{effective churn}_{v,b}}$$
 
 - *Effective churn* = insertions + deletions after noise filtering
 - 1.0 ⇒ solo author; 0.25 ⇒ quarter of the work
 
 #### 2. Scale – How Big?
 
-```
-Scale = log(1 + author_churn)
-```
+$$\text{Scale} = \log(1 + \text{author churn})$$
 
 Log transform prevents monster commits from dominating.
 
@@ -74,44 +70,34 @@ Log transform prevents monster commits from dominating.
 
 Directory entropy:
 
-```
-H = -Σ[p_i × log2(p_i)]  where p_i = c_i / Σ[c_j]
-```
+$$H = -\sum_{i} p_i \log_2 p_i, \quad p_i = \frac{c_i}{\sum_j c_j}$$
 
-*Example:* 1,000 lines in one dir → H = 0; evenly in three dirs → H ≈ 1.59.
+*Example:* 1,000 lines in one dir → $H = 0$; evenly in three dirs → $H ≈ 1.59$.
 
 #### 4. Centrality – How Core?
 
-1. Build co-change graph `G = (V, E)`
-2. PageRank with `α = 0.85`:
-   ```
-   p = α × M^T × p + (1-α) × (1/|V|) × 1
-   ```
-3. Build/developer centrality = mean `p_i` over touched directories
+1. Build co-change graph $G = (V, E)$
+2. PageRank with $\alpha = 0.85$:
+   $$\mathbf{p} = \alpha M^{\top}\mathbf{p} + (1-\alpha)\frac{1}{|V|}\mathbf{1}$$
+3. Build/developer centrality = mean $p_i$ over touched directories
 
 Edits in hub modules receive higher scores.
 
 #### 5. Dominance – Who Leads?
 
-```
-Dom(u,b) = 0.3×is_first + 0.3×is_last + 0.4×commit_share
-```
+$$\text{Dom}_{u,b} = 0.3\,\mathbf{1}_{\text{first}} + 0.3\,\mathbf{1}_{\text{last}} + 0.4\,(\text{commit-share})$$
 
 Rewards shepherding a build end-to-end.
 
 #### 6. Novelty – How New?
 
-```
-Novelty = (new_file_lines + key_path_lines) / author_churn
-```
+$$\text{Novelty} = \frac{\text{new-file lines} + \text{key-path lines}}{\text{author churn}}$$
 
 Higher when creating new modules or APIs.
 
 #### 7. Speed – How Fast?
 
-```
-Speed = exp(-(hours_since_prev_commit / 24))
-```
+$$\text{Speed} = \exp\left(-\frac{\text{hours since prev commit}}{24}\right)$$
 
 Mild bonus for short feedback loops.
 
@@ -121,11 +107,13 @@ Mild bonus for short feedback loops.
 
 ### Importance Formula
 
-```
-Importance(b) = 
-  0.30×Z_scale + 0.20×Z_scope + 0.15×Z_central + 
-  0.15×Z_complex + 0.10×Z_type + 0.10×Z_release
-```
+$$\text{Importance}_b = 
+0.30\,Z^{\text{scale}} + 
+0.20\,Z^{\text{scope}} + 
+0.15\,Z^{\text{central}} + 
+0.15\,Z^{\text{complex}} + 
+0.10\,Z^{\text{type}} + 
+0.10\,Z^{\text{release}}$$
 
 Weights sum to 1 and can be re-tuned per organization.
 
@@ -133,9 +121,7 @@ Weights sum to 1 and can be re-tuned per organization.
 
 #### 1. Scale – How Large?
 
-```
-Scale = log(1 + total_churn_b)
-```
+$$\text{Scale} = \log(1 + \text{total churn}_b)$$
 
 Entire build churn (all authors). Log transform reins in mega-commits.
 
@@ -143,31 +129,25 @@ Entire build churn (all authors). Log transform reins in mega-commits.
 
 Weighted blend:
 
-```
-Scope = 0.5×files + 0.3×H_dir + 0.2×unique_dirs
-```
+$$0.5\,\text{files} + 0.3\,H_{\text{dir}} + 0.2\,\text{unique dirs}$$
 
 where:
 
-```
-H_dir = -Σ[p_i × log2(p_i)]
-```
+$$H_{\text{dir}} = -\sum_i p_i\log_2 p_i$$
 
 *Example:* 200 files in ten evenly hit dirs ⇒ higher score than 200 files in one dir.
 
 #### 3. Centrality – How Core?
 
-1. Build co-change graph `G = (V, E)`
-2. PageRank with `α = 0.85`
-3. Mean `p_i` over **all** dirs in the build
+1. Build co-change graph $G = (V, E)$
+2. PageRank with $\alpha = 0.85$
+3. Mean $p_i$ over **all** dirs in the build
 
 Touching architectural hubs inflates importance.
 
 #### 4. Complexity – How Hard?
 
-```
-Complexity = sqrt(unique_dirs × log(1 + total_churn))
-```
+$$\text{Complexity} = \sqrt{\text{unique dirs} \cdot \log(1 + \text{total churn})}$$
 
 Large × multi-module edits escalate coordination cost; square-root tames scale.
 
@@ -187,9 +167,7 @@ Higher coefficient ⇒ higher importance.
 
 #### 6. Release Proximity – How Late?
 
-```
-Release = exp(-(days_to_nearest_tag / 30))
-```
+$$\text{Release} = \exp\left(-\frac{\text{days to nearest tag}}{30}\right)$$
 
 Edits landed just before a release receive a large multiplier.
 
@@ -200,7 +178,7 @@ Edits landed just before a release receive a large multiplier.
 For both Effort and Importance metrics:
 
 - Compute median & MAD per **repo × quarter**
-- Convert each raw metric to MAD-z, clip to `[-3, 3]`
+- Convert each raw metric to MAD-z, clip to $[-3, 3]$
 - Aligns heterogeneous units on an outlier-resistant scale
 
 ---
@@ -221,7 +199,7 @@ For both Effort and Importance metrics:
 | Novelty    |  1.30 | +0.67 |
 | Speed      | 0.999 |  0.00 |
 
-**Effort(u,b) ≈ 0.47**
+$$\text{Effort}_{u,b} \approx 0.47$$
 
 #### Importance Calculation
 
@@ -234,15 +212,13 @@ For both Effort and Importance metrics:
 | Type Priority |  0.80 | -0.58 |
 | Release Prox. |  1.00 | -0.53 |
 
-**Importance(#1) ≈ 0.54**
+$$\text{Importance}_{\#1} \approx 0.54$$
 
 #### Final Contribution Score
 
 Combined calculation:
 
-```
-Contribution(u,b) = 0.47 (effort) × 0.54 (importance) ≈ 0.26
-```
+$$\text{Contribution}_{u,b} = 0.47\,(\text{effort}) \times 0.54\,(\text{importance}) \approx 0.26$$
 
 ---
 
