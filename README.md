@@ -17,9 +17,9 @@ Large organizations still lean on simplistic signals (commit counts, raw LOC). T
 
 We first **cluster commits into builds** (the smallest unit of value we measure), then score:
 
-$$\text{Contribution}(u, k) = \text{Effort}(u, k) \times \text{Importance}(k)$$
+$\text{Contribution}(u, k) = \text{Effort}(u, k) \times \text{Importance}(k)$
 
-$$\text{FDS}(u) = \sum_k \text{Contribution}(u, k)$$
+$\text{FDS}(u) = \sum_k \text{Contribution}(u, k)$
 
 Here `u` is a developer and `k` is a build. A tiny bug-fix build is not equivalent to a cross-module refactor build; the math reflects that.
 
@@ -28,11 +28,13 @@ Here `u` is a developer and `k` is a build. A tiny bug-fix build is not equivale
 ## 🎥 Demo
 
 ### Web Application Interface
+
 ![FDS Web Application Demo](Demo1.gif)
 
 *Interactive dashboard showing developer contributions, build analysis, and real-time metrics*
 
-### Analysis Results Visualization  
+### Analysis Results Visualization
+
 ![FDS Analysis Results](Demo2.gif)
 
 *Detailed analysis results with charts, developer rankings, and build importance metrics*
@@ -74,19 +76,19 @@ Jaccard(dir_set_curr, dir_set_prev) < JACCARD_MIN  (default 0.30)
 ```
 
 **Directory co-change graph & PageRank**
-Nodes = top-level directories; edge weight $w_{ij}$ = co-change frequency.
-Compute PageRank with damping $\alpha = 0.85$; store $C(\text{dir})$.
+Nodes = top-level directories; edge weight \$w\_{ij}\$ = co-change frequency.
+Compute PageRank with damping \$\alpha = 0.85\$; store \$C(\text{dir})\$.
 
 **Robust standardization (MAD-z)**
 For every raw feature (except Share), per **repo × quarter**:
 
-$$z = \text{clip}\left(\frac{x - \text{median}}{1.4826 \cdot \text{MAD}}, -3, +3\right)$$
+$z = \text{clip}\left(\frac{x - \text{median}}{1.4826 \cdot \text{MAD}}, -3, +3\right)$
 
 ---
 
 ## Effort — per developer `u` in build `k`
 
-$$\text{Effort}(u, k) = \text{Share}(u, k) \cdot \left(
+$$$\text{Effort}(u, k) = \text{Share}(u, k) \cdot \left(
 0.25 \cdot Z_{\text{scale}}(u, k) + 0.15 \cdot Z_{\text{reach}}(u, k) + 0.20 \cdot Z_{\text{central}}(u, k) + 0.20 \cdot Z_{\text{dom}}(u, k) + 0.15 \cdot Z_{\text{novel}}(u, k) + 0.05 \cdot Z_{\text{speed}}(u, k)
 \right)$$
 
@@ -188,7 +190,7 @@ $$\text{Importance}(k) = 0.30 \cdot Z_{\text{scale}}(k) + 0.20 \cdot Z_{\text{sc
 
 $$\text{Contribution}_{u,k} = \text{Effort}_{u,k} \times \text{Importance}_k$$
 
-$$\text{FDS}(u) = \sum_k \text{Contribution}_{u,k} \quad \text{# over chosen window (e.g., quarter)}$$
+$$\text{FDS}(u) = \sum_k \text{Contribution}_{u,k} \quad \text{(over chosen window, e.g., quarter)}$$
 
 Effort captures **who lifted how much**; Importance captures **how heavy the build actually is**. Using the same yardsticks (scale, centrality) at two levels prevents "free rides" on critical builds and "thankless marathons" on peripheral ones.
 
@@ -248,3 +250,4 @@ All thresholds/weights are configurable (YAML/JSON/env). Teams can tune them aga
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 Contributions are welcome—new message classifiers, better noise rules, UI integrations, and additional evaluation datasets.
+$$$
