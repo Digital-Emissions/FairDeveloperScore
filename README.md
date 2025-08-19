@@ -55,7 +55,7 @@ $$\text{Effort}_{u,b} = \text{Share}_{u,b} \times \left(
 
 #### 1. Share – Who Owns the Build?
 
-$$\text{Share}_{u,b} = \frac{\text{effective churn}_{u,b}}{\sum_{v} \text{effective churn}_{v,b}}$$
+$$\text{Share}_{u,b} = \frac{\mathrm{EC}_{u,b}}{\sum_{v} \mathrm{EC}_{v,b}} \quad \text{where } \mathrm{EC}=\text{effective churn}$$
 
 - *Effective churn* = insertions + deletions after noise filtering
 - 1.0 ⇒ solo author; 0.25 ⇒ quarter of the work
@@ -85,7 +85,7 @@ Edits in hub modules receive higher scores.
 
 #### 5. Dominance – Who Leads?
 
-$$\text{Dom}_{u,b} = 0.3\,\mathbf{1}_{\text{first}} + 0.3\,\mathbf{1}_{\text{last}} + 0.4\,(\text{commit-share})$$
+$$\text{Dom}_{u,b} = 0.3\,\mathbf{1}_{\text{first}} + 0.3\,\mathbf{1}_{\text{last}} + 0.4\,(\mathrm{commit\_share})$$
 
 Rewards shepherding a build end-to-end.
 
