@@ -42,18 +42,14 @@ Rationale: A tiny bug-fix ≠ full subsystem refactor → credit must differ.
 
 ### Effort Formula
 
-```
-Effort(u,b) = Share(u,b) × (0.25×Z_scale + 0.15×Z_reach + 0.20×Z_central + 0.20×Z_dom + 0.15×Z_novel + 0.05×Z_speed)
-```
+$$\text{Effort}_{u,b}=\text{Share}_{u,b}\,\big(0.25\,Z^{\text{scale}}+0.15\,Z^{\text{reach}}+0.20\,Z^{\text{central}}+0.20\,Z^{\text{dom}}+0.15\,Z^{\text{novel}}+0.05\,Z^{\text{speed}}\big)$$
 
 ### Effort Components
 
 #### 1. Share – Who Owns the Build?
 
-```
-Share(u,b) = EC(u,b) / Σ[EC(v,b)] for all authors v
-where EC = effective churn
-```
+$$\text{Share}_{u,b}=\frac{\operatorname{EC}_{u,b}}{\sum_{v}\operatorname{EC}_{v,b}},\quad \operatorname{EC}:=\text{effective churn}$$
+
 
 - *Effective churn* = insertions + deletions after noise filtering
 - 1.0 ⇒ solo author; 0.25 ⇒ quarter of the work
@@ -83,9 +79,7 @@ Edits in hub modules receive higher scores.
 
 #### 5. Dominance – Who Leads?
 
-```
-Dom(u,b) = 0.3×is_first + 0.3×is_last + 0.4×commit_share
-```
+$$\text{Dom}_{u,b}=0.3\,\mathbf{1}_{\text{first}}+0.3\,\mathbf{1}_{\text{last}}+0.4\,\operatorname{commit\_share}$$
 
 Rewards shepherding a build end-to-end.
 
