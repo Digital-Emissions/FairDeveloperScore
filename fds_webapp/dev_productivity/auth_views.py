@@ -102,13 +102,20 @@ def login_view(request):
         return redirect('user_dashboard')
     
     if request.method == 'POST':
-        form = CustomAuthenticationForm(request, data=request.POST)
-        if form.is_valid():
-            username = form.cleaned_data.get('username')
-            password = form.cleaned_data.get('password')
-            remember_me = form.cleaned_data.get('remember_me', False)
+        # Simple debug login - bypass custom form
+        username_or_email = request.POST.get('username', '').strip()
+        password = request.POST.get('password', '').strip()
+        remember_me = request.POST.get('remember_me', False)
+        
+        if username_or_email and password:
+            # Try authentication with email first, then username
+            user = None
+            if '@' in username_or_email:
+                user = authenticate(request, username=username_or_email, password=password)
             
-            user = authenticate(request, username=username, password=password)
+            if not user:
+                # Try with username
+                user = authenticate(request, username=username_or_email, password=password)
             
             if user is not None:
                 if user.is_active:
@@ -140,7 +147,7 @@ def login_view(request):
                     # Log activity
                     log_user_activity(user, 'login', 'User logged in', request)
                     
-                    messages.success(request, f'Welcome back, {user.first_name}!')
+                    messages.success(request, f'Welcome back, {user.first_name or user.username}!')
                     
                     # Redirect to next or dashboard
                     next_url = request.GET.get('next')
@@ -151,8 +158,11 @@ def login_view(request):
                     messages.error(request, 'Your account is inactive. Please contact support.')
             else:
                 messages.error(request, 'Invalid email/username or password.')
-    else:
-        form = CustomAuthenticationForm()
+        else:
+            messages.error(request, 'Please enter both email/username and password.')
+    
+    # Create a simple form for display
+    form = CustomAuthenticationForm()
     
     return render(request, 'dev_productivity/auth/login.html', {'form': form})
 
@@ -402,7 +412,8 @@ def user_settings(request):
     user = request.user
     
     # Get or create preferences
-    preferences, created = user.preferences.get_or_create() if hasattr(user, 'preferences') else (None, False)
+    from .models import UserPreference
+    preferences, created = UserPreference.objects.get_or_create(user=user)
     
     if request.method == 'POST':
         profile_form = UserProfileForm(request.POST, instance=user)

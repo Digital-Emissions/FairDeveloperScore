@@ -8,33 +8,33 @@ import re
 
 
 class CustomUserCreationForm(UserCreationForm):
-    """Custom user registration form with email and additional fields"""
+    """Custom user registration form with minimal requirements"""
     
     email = forms.EmailField(
-        required=True,
+        required=False,
         widget=forms.EmailInput(attrs={
             'class': 'form-control',
-            'placeholder': 'Enter your email address',
+            'placeholder': 'Enter your email address (optional)',
             'autocomplete': 'email'
         })
     )
     
     first_name = forms.CharField(
         max_length=30,
-        required=True,
+        required=False,
         widget=forms.TextInput(attrs={
             'class': 'form-control',
-            'placeholder': 'First name',
+            'placeholder': 'First name (optional)',
             'autocomplete': 'given-name'
         })
     )
     
     last_name = forms.CharField(
         max_length=30,
-        required=True,
+        required=False,
         widget=forms.TextInput(attrs={
             'class': 'form-control',
-            'placeholder': 'Last name',
+            'placeholder': 'Last name (optional)',
             'autocomplete': 'family-name'
         })
     )
@@ -47,7 +47,7 @@ class CustomUserCreationForm(UserCreationForm):
             'placeholder': 'Choose a username',
             'autocomplete': 'username'
         }),
-        help_text="Letters, digits and @/./+/-/_ only."
+        help_text="Required. Letters, digits and @/./+/-/_ only."
     )
     
     password1 = forms.CharField(
@@ -56,7 +56,7 @@ class CustomUserCreationForm(UserCreationForm):
             'placeholder': 'Create a password',
             'autocomplete': 'new-password'
         }),
-        help_text="Your password must contain at least 8 characters."
+        help_text="Required. Any password is acceptable."
     )
     
     password2 = forms.CharField(
@@ -88,9 +88,9 @@ class CustomUserCreationForm(UserCreationForm):
     )
     
     terms_accepted = forms.BooleanField(
-        required=True,
+        required=False,
         widget=forms.CheckboxInput(attrs={'class': 'form-check-input'}),
-        label="I agree to the Terms of Service and Privacy Policy"
+        label="I agree to the Terms of Service and Privacy Policy (optional)"
     )
     
     class Meta:
@@ -99,9 +99,11 @@ class CustomUserCreationForm(UserCreationForm):
     
     def clean_email(self):
         email = self.cleaned_data.get('email')
-        if email and User.objects.filter(email=email).exists():
-            raise ValidationError("A user with this email address already exists.")
-        return email
+        if email:
+            email = email.strip()
+            if User.objects.filter(email=email).exists():
+                raise ValidationError("A user with this email address already exists.")
+        return email or ''
     
     def clean_username(self):
         username = self.cleaned_data.get('username')
@@ -111,13 +113,13 @@ class CustomUserCreationForm(UserCreationForm):
     
     def save(self, commit=True):
         user = super().save(commit=False)
-        user.email = self.cleaned_data['email']
-        user.first_name = self.cleaned_data['first_name']
-        user.last_name = self.cleaned_data['last_name']
-        user.organization = self.cleaned_data.get('organization', '')
-        user.job_title = self.cleaned_data.get('job_title', '')
+        user.email = self.cleaned_data.get('email', '') or ''
+        user.first_name = self.cleaned_data.get('first_name', '') or ''
+        user.last_name = self.cleaned_data.get('last_name', '') or ''
+        user.organization = self.cleaned_data.get('organization', '') or ''
+        user.job_title = self.cleaned_data.get('job_title', '') or ''
         user.is_active = True
-        user.email_verified = False
+        user.email_verified = True if not user.email else False  # Auto-verify if no email provided
         
         if commit:
             user.save()

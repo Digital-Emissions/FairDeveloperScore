@@ -10,9 +10,9 @@ from django.conf import settings
 
 class User(AbstractUser):
     """Extended User model with additional fields for FDS application"""
-    email = models.EmailField(unique=True, validators=[EmailValidator()])
-    first_name = models.CharField(max_length=30)
-    last_name = models.CharField(max_length=30)
+    email = models.EmailField(blank=True, null=True, validators=[EmailValidator()])
+    first_name = models.CharField(max_length=30, blank=True, null=True)
+    last_name = models.CharField(max_length=30, blank=True, null=True)
     
     # Profile fields
     github_username = models.CharField(max_length=100, blank=True, null=True)
@@ -32,8 +32,8 @@ class User(AbstractUser):
     updated_at = models.DateTimeField(auto_now=True)
     last_login_ip = models.GenericIPAddressField(blank=True, null=True)
     
-    USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = ['username', 'first_name', 'last_name']
+    USERNAME_FIELD = 'username'
+    REQUIRED_FIELDS = []
     
     class Meta:
         db_table = 'auth_user'
