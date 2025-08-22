@@ -39,7 +39,7 @@ RETRY_DELAY = 5  # seconds
 # ==============================================================================
 
 # GitHub API setup
-GITHUB_TOKEN = "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"
+GITHUB_TOKEN = os.getenv("GITHUB_TOKEN", "")
 if not GITHUB_TOKEN:
     print("Warning: No GITHUB_TOKEN found in environment. API rate limits will be lower.")
 

@@ -39,7 +39,7 @@ def get_user_input():
     print()
     
     # Use hardcoded values for testing
-    token = "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"
+    token = os.getenv("GITHUB_TOKEN", "YOUR_GITHUB_TOKEN_HERE")
     repo_url = "https://github.com/facebook/react"
     commit_limit = 100
     

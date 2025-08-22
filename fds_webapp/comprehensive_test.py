@@ -46,7 +46,7 @@ class ComprehensiveFDSTest:
     def __init__(self):
         self.temp_dir = Path(tempfile.mkdtemp())
         self.test_repo = "octocat/Hello-World"  # Small public repo for testing
-        self.test_token = "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"  # User's token
+        self.test_token = os.getenv("GITHUB_TOKEN", "YOUR_TEST_TOKEN_HERE")  # User's token
         self.commit_limit = 20  # Small number for testing
         self.client = Client()
         self.factory = RequestFactory()
